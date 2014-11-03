@@ -2261,6 +2261,8 @@ namespace Moswar
             {
                 case "Начать погром!":
                     btnStart.Text = "Завершить погром!";
+                    Icon = Moswar.Properties.Resources.BotStarted;
+                    TrayIcon.Icon = Moswar.Properties.Resources.BotStarted;
                     if (sender != null || Bot.Me.Events.SessionStartDT == new DateTime()) Bot.Me.Events.SessionStartDT = DateTime.Now; //Зпуск произведён человеком или первый раз через командную строку.
                     STimer.Start();
                     if (BotThread.ThreadState == System.Threading.ThreadState.Aborted || BotThread.ThreadState == System.Threading.ThreadState.AbortRequested) BotThread = new Thread(new ThreadStart(Bot.StartBot));
@@ -2269,6 +2271,8 @@ namespace Moswar
                     break;
                 case "Завершить погром!":
                     btnStart.Text = "Начать погром!";
+                    Icon = Moswar.Properties.Resources.BotStopped;
+                    TrayIcon.Icon = Moswar.Properties.Resources.BotStopped;
                     STimer.Stop();
                     BotThread.Interrupt(); //Уничтожаем зависимости от таймеров внутри
                     BotThread.Abort(); //Убиваем поток!

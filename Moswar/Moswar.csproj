@@ -135,6 +135,8 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="Resources\BotStopped.ico" />
+    <None Include="Resources\BotStarted.ico" />
     <None Include="app.config" />
     <None Include="Moswar_TemporaryKey.pfx" />
     <None Include="Properties\app.manifest" />
