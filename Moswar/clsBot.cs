@@ -4797,6 +4797,12 @@ namespace Moswar
                     break;
             }
         }
+        public string ExpandCollapsedNumber(string str)
+        {
+            double factor = str.Contains("k") ? 1000 : str.Contains("M") ? 1000000 : 1;
+            double num = Convert.ToDouble(str.Replace("k", "").Replace("M", ""));
+            return Convert.ToString(Convert.ToInt32(num * factor));
+        }
         public void UpdateMyInfo(WebBrowser WB) //OK
         {
             BugReport("UpdateMyInfo");
@@ -6073,6 +6079,8 @@ namespace Moswar
                             #endregion
                             #region Считываем мои жизни
                             Me.Player.LifePkt = ((string)frmMain.GetJavaVar(MainWB, "$(\"#fightGroupForm .me .life\").text()")).Split('/');
+                            Me.Player.LifePkt[0] = ExpandCollapsedNumber(Me.Player.LifePkt[0]);
+                            Me.Player.LifePkt[1] = ExpandCollapsedNumber(Me.Player.LifePkt[1]);
                             double MyLifePrc = Convert.ToDouble(Me.Player.LifePkt[0]) / Convert.ToDouble(Me.Player.LifePkt[1]) * 100;
                             #endregion
                             #region Считываем чат
@@ -6209,6 +6217,8 @@ namespace Moswar
                                     if (HtmlEl != null) //У сбежавшего из боя Омоновца нет жизней!
                                     {
                                         string[] HP = HtmlEl.InnerText.Contains("%") ? new string[] { ((int)(Convert.ToInt32(Me.Player.LifePkt[1]) * Expert.RevengerPrc / 100 * Convert.ToInt32(HtmlEl.InnerText.Replace("%", "")) / 100)).ToString(), ((int)(Convert.ToInt32(Me.Player.LifePkt[1]) * Expert.RevengerPrc / 100)).ToString() } : HtmlEl.InnerText.Split('/'); //Выдираем жизни игрока если мститель делаем будто у него столько же жизней сколько и у меня!
+                                        HP[0] = ExpandCollapsedNumber(HP[0]);
+                                        HP[1] = ExpandCollapsedNumber(HP[1]);
                                         if (HP[0] != "0") //Ещё живой
                                         {
                                             if (myGroup[0] == 0 || Convert.ToInt32(HP[0]) < myGroup[0]) //Слабее прошлого?
@@ -6233,6 +6243,8 @@ namespace Moswar
                                     if (HtmlEl != null) //У сбежавшего из боя Омоновца нет жизней!
                                     {
                                         string[] HP = HtmlEl.InnerText.Contains("%") ? new string[] { ((int)(Convert.ToInt32(Me.Player.LifePkt[1]) * Expert.RevengerPrc / 100 * Convert.ToInt32(HtmlEl.InnerText.Replace("%", "")) / 100)).ToString(), ((int)(Convert.ToInt32(Me.Player.LifePkt[1]) * Expert.RevengerPrc / 100)).ToString() } : HtmlEl.InnerText.Split('/'); //Выдираем жизни игрока если мститель делаем будто у него столько же жизней сколько и у меня!
+                                        HP[0] = ExpandCollapsedNumber(HP[0]);
+                                        HP[1] = ExpandCollapsedNumber(HP[1]);
                                         if (HP[0] != "0") //Ещё живой
                                         {
                                             switch (vs)
