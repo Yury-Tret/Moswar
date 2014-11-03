@@ -569,6 +569,7 @@ namespace Moswar
         [Serializable()]
         public struct stcSettings
         {
+            public string BotName;
             public string Email;
             public string Password;
             public decimal HealMe50;

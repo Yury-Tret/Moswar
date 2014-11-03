@@ -1291,6 +1291,10 @@ namespace Moswar
             LoadExpertSettings();
             LoadSettings();
 
+            if (Bot.Settings.BotName != null)
+                Text = Bot.Settings.BotName;
+            TrayIcon.Text = Text;
+
             #region Дополнительный твикинг ИЕ через реестр
             clsWBEx.EmulateIEMode(ctrMainBrowser, (int)numMaxIEVersion.Value);
             clsWBEx.SetMaxIEConnections(ctrMainBrowser, (int)Bot.Expert.MaxWebSockets);
@@ -1420,8 +1424,6 @@ namespace Moswar
                 BotThread.Name = "MainBotThread";
                 BotThread.Start();
             }
-            Text = "BoT активен: " + (DateTime.Now - Bot.Me.Events.SessionStartDT).ToString("dd\\:hh\\:mm\\:ss");
-            TrayIcon.Text = Text.Replace("BoT", Bot.Me.Player.Name);
             #region Shutdown
             if (Bot.Me.Events.ShutdownRelease && Bot.Me.Events.ShutdownDT <= DateTime.Now)
             {
@@ -2271,7 +2273,6 @@ namespace Moswar
                     BotThread.Interrupt(); //Уничтожаем зависимости от таймеров внутри
                     BotThread.Abort(); //Убиваем поток!
                     Bot.UpdateStatus("© " + DateTime.Now + " Ай-ай Сэр! Стою вкопался, кругом ведь враги!");
-                    Text = "BoT";
                     break;
             }
         }
