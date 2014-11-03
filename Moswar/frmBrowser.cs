@@ -1355,7 +1355,7 @@ namespace Moswar
             frmMain.NavigateURL(ctrMainBrowser, (string)cboxServer.SelectedItem);
             #endregion
             #region CheckForUpdate
-            CheckForUpdate();
+//            CheckForUpdate();
             #endregion
         }
         private void frmBrowser_FormClosing(object sender, FormClosingEventArgs e)
@@ -1369,7 +1369,7 @@ namespace Moswar
         private void STimer_Tick(object sender, System.Timers.ElapsedEventArgs e)
         {
             #region Проверка наличия обновлений
-            if (LastUpdateCheckDT < DateTime.Now) CheckForUpdate();
+//            if (LastUpdateCheckDT < DateTime.Now) CheckForUpdate();
             #endregion
             #region Круговое верчение сообшений
             if (LastMessageUpdateDT < DateTime.Now)
