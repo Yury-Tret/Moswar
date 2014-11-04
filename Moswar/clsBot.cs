@@ -4370,7 +4370,7 @@ namespace Moswar
             object Info = frmMain.GetJavaVar(WB, "$(\"#personal .bubble\").html()");
             if (Analyse && Info != DBNull.Value) //DBNull ибо при ненахождении возврашается класс а не просто строка.
             {
-                Match match = Regex.Match((string)Info, "[']/(?<Area>([\\w])+)['].*[>](?<Text>([\\w ])+)[<](.*[>](?<Timeout>([0-9:])+))?"); //Извлекаем информацию о том где мы и чем заняты.
+                Match match = Regex.Match((string)Info, "[>](?<Text>([\\w ])+)[<](.*[>](?<Timeout>([0-9:])+))?"); //Извлекаем информацию о том где мы и чем заняты.
                 switch (match.Groups["Text"].Value)
                 {
                     case "На показе":
@@ -4420,6 +4420,7 @@ namespace Moswar
                         SW.WriteLine(Info);
                         SW.Close();                       
                         
+/*
                         switch (match.Groups["Area"].Value)
                         {
                             case "metro": Metro(MetroAction.Check); break; //Больше не занят в Метро, снова к дракам!
@@ -4428,6 +4429,7 @@ namespace Moswar
                             case "fight": GroupFight(GroupFightAction.Fight); break;
                             case "alley": Patrol(PatrolAction.Check); break; //Не патрулируем! снова к дракам!
                         }
+*/
                         #endregion
                         break;
                 }
