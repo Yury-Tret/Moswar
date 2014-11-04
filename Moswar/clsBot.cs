@@ -3019,6 +3019,7 @@ namespace Moswar
         private void CheckForPrizeBox() //OK
         {
             BugReport("CheckForPrizeBox");
+            UpdateStatus("* " + DateTime.Now + " Открываю сундучки");
 
             Match match;
 
@@ -3085,7 +3086,7 @@ namespace Moswar
                     {
                         if ((i == 3 || i == 4)) //Сундуки с ленинопровода и охоты на крыс
                         {
-                            if ((sBox.Contains("1-btn") || (i == 3 && !Me.OilLeninHunting.Stop) || (i == 4 && !Me.RatHunting.Stop)) && TempKey <= 0) break; //Пошли мелкие сундучки + открывать только при горящих ключах или законченной охоте!
+//                            if ((sBox.Contains("1-btn") || (i == 3 && !Me.OilLeninHunting.Stop) || (i == 4 && !Me.RatHunting.Stop)) && TempKey <= 0) break; //Пошли мелкие сундучки + открывать только при горящих ключах или законченной охоте!
                         }                        
                         if (KeyCount > 0)
                         {
