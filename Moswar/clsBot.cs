@@ -3591,7 +3591,8 @@ namespace Moswar
 
             //([a-z])*)*job/(?<jobNr>([0-9])+)/|(?<=')/nightclub/jobs/(?=';)
             regex = new Regex("(/([\\w/])+job/(?<jobNr>([0-9])+)/)|(?<=')/nightclub/jobs/(?=')"); //Выдераем ссылку на новый или старый Квэст для 2ого и 3ого прохода
-            match = regex.Match(URL == null ? frmMain.GetDocument(MainWB).GetElementById("statistics-accordion").InnerHtml : URL);             
+//            match = regex.Match(URL == null ? frmMain.GetDocument(MainWB).GetElementById("statistics-accordion").InnerHtml : URL);             
+            match = regex.Match(URL == null ? "'/nightclub/jobs/'" : URL); //Выполняем задания по порядку на 3 прохода сразу
             if (match.Success)
             {
                 frmMain.NavigateURL(MainWB, Settings.ServerURL + ((!Expert.QuestNotAll || URL != null) ? match.Value : "/nightclub/jobs/")); //Загружаем страничку с Квэстом
