@@ -5383,7 +5383,7 @@ namespace Moswar
                     }
                     #endregion  
                 }                
-                if (Me.Wallet.Money == 0 || IsTimeout(MainWB, false, false)) return false; //Закончились деньги, таймаут? ... невозможно напасть...
+                if (Me.Wallet.Money == 0 || IsTimeout(MainWB, true, false)) return false; //Закончились деньги, таймаут? ... невозможно напасть...
                 if (TimeToStopAtack(NextTimeout.Atack)) { UpdateStatus("@ " + DateTime.Now + " Драка отменяется иначе на встречу опоздаю, а у меня приказ свыше!"); return false; } //Необходимо остановить нападение!
                 goto ReTry;
             }
