@@ -1017,24 +1017,6 @@
   <data name="&gt;&gt;grpPyramid.ZOrder" xml:space="preserve">
     <value>7</value>
   </data>
-  <data name="label178.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label178.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label178.Location" type="System.Drawing.Point, System.Drawing">
-    <value>5, 18</value>
-  </data>
-  <data name="label178.Size" type="System.Drawing.Size, System.Drawing">
-    <value>60, 14</value>
-  </data>
-  <data name="label178.TabIndex" type="System.Int32, mscorlib">
-    <value>26</value>
-  </data>
-  <data name="label178.Text" xml:space="preserve">
-    <value>Имя бота:</value>
-  </data>
   <data name="&gt;&gt;label178.Name" xml:space="preserve">
     <value>label178</value>
   </data>
@@ -1046,24 +1028,6 @@
   </data>
   <data name="&gt;&gt;label178.ZOrder" xml:space="preserve">
     <value>0</value>
-  </data>
-  <data name="txtBotName.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Candara, 9pt</value>
-  </data>
-  <data name="txtBotName.Location" type="System.Drawing.Point, System.Drawing">
-    <value>66, 14</value>
-  </data>
-  <data name="txtBotName.Size" type="System.Drawing.Size, System.Drawing">
-    <value>135, 22</value>
-  </data>
-  <data name="txtBotName.TabIndex" type="System.Int32, mscorlib">
-    <value>21</value>
-  </data>
-  <data name="txtBotName.Text" xml:space="preserve">
-    <value>BoT</value>
-  </data>
-  <data name="txtBotName.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
-    <value>Center</value>
   </data>
   <data name="&gt;&gt;txtBotName.Name" xml:space="preserve">
     <value>txtBotName</value>
@@ -1077,24 +1041,6 @@
   <data name="&gt;&gt;txtBotName.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="label5.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label5.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>5, 64</value>
-  </data>
-  <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>50, 14</value>
-  </data>
-  <data name="label5.TabIndex" type="System.Int32, mscorlib">
-    <value>24</value>
-  </data>
-  <data name="label5.Text" xml:space="preserve">
-    <value>Пароль:</value>
-  </data>
   <data name="&gt;&gt;label5.Name" xml:space="preserve">
     <value>label5</value>
   </data>
@@ -1106,24 +1052,6 @@
   </data>
   <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
     <value>2</value>
-  </data>
-  <data name="label2.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>5, 41</value>
-  </data>
-  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>41, 14</value>
-  </data>
-  <data name="label2.TabIndex" type="System.Int32, mscorlib">
-    <value>24</value>
-  </data>
-  <data name="label2.Text" xml:space="preserve">
-    <value>E-Mail:</value>
   </data>
   <data name="&gt;&gt;label2.Name" xml:space="preserve">
     <value>label2</value>
@@ -1137,24 +1065,6 @@
   <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="txtPassword.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Candara, 9pt</value>
-  </data>
-  <data name="txtPassword.Location" type="System.Drawing.Point, System.Drawing">
-    <value>66, 60</value>
-  </data>
-  <data name="txtPassword.PasswordChar" type="System.Char, mscorlib" xml:space="preserve">
-    <value>#</value>
-  </data>
-  <data name="txtPassword.Size" type="System.Drawing.Size, System.Drawing">
-    <value>135, 22</value>
-  </data>
-  <data name="txtPassword.TabIndex" type="System.Int32, mscorlib">
-    <value>23</value>
-  </data>
-  <data name="txtPassword.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
-    <value>Center</value>
-  </data>
   <data name="&gt;&gt;txtPassword.Name" xml:space="preserve">
     <value>txtPassword</value>
   </data>
@@ -1166,21 +1076,6 @@
   </data>
   <data name="&gt;&gt;txtPassword.ZOrder" xml:space="preserve">
     <value>4</value>
-  </data>
-  <data name="txtEmail.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Candara, 9pt</value>
-  </data>
-  <data name="txtEmail.Location" type="System.Drawing.Point, System.Drawing">
-    <value>66, 37</value>
-  </data>
-  <data name="txtEmail.Size" type="System.Drawing.Size, System.Drawing">
-    <value>135, 22</value>
-  </data>
-  <data name="txtEmail.TabIndex" type="System.Int32, mscorlib">
-    <value>22</value>
-  </data>
-  <data name="txtEmail.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
-    <value>Center</value>
   </data>
   <data name="&gt;&gt;txtEmail.Name" xml:space="preserve">
     <value>txtEmail</value>
@@ -1786,7 +1681,7 @@
     <value>9</value>
   </data>
   <data name="TLayoutSettings.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1151, 614</value>
+    <value>1153, 616</value>
   </data>
   <data name="TLayoutSettings.TabIndex" type="System.Int32, mscorlib">
     <value>27</value>
@@ -7861,6 +7756,123 @@
   </data>
   <data name="&gt;&gt;label42.ZOrder" xml:space="preserve">
     <value>9</value>
+  </data>
+  <data name="label5.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label5.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 64</value>
+  </data>
+  <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 14</value>
+  </data>
+  <data name="label5.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="label5.Text" xml:space="preserve">
+    <value>Пароль:</value>
+  </data>
+  <data name="&gt;&gt;label5.Name" xml:space="preserve">
+    <value>label5</value>
+  </data>
+  <data name="&gt;&gt;label5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label5.Parent" xml:space="preserve">
+    <value>grpAutoLogin</value>
+  </data>
+  <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="label2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 41</value>
+  </data>
+  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>41, 14</value>
+  </data>
+  <data name="label2.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="label2.Text" xml:space="preserve">
+    <value>E-Mail:</value>
+  </data>
+  <data name="&gt;&gt;label2.Name" xml:space="preserve">
+    <value>label2</value>
+  </data>
+  <data name="&gt;&gt;label2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
+    <value>grpAutoLogin</value>
+  </data>
+  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="txtPassword.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Candara, 9pt</value>
+  </data>
+  <data name="txtPassword.Location" type="System.Drawing.Point, System.Drawing">
+    <value>66, 60</value>
+  </data>
+  <data name="txtPassword.PasswordChar" type="System.Char, mscorlib" xml:space="preserve">
+    <value>#</value>
+  </data>
+  <data name="txtPassword.Size" type="System.Drawing.Size, System.Drawing">
+    <value>135, 22</value>
+  </data>
+  <data name="txtPassword.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="txtPassword.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Center</value>
+  </data>
+  <data name="&gt;&gt;txtPassword.Name" xml:space="preserve">
+    <value>txtPassword</value>
+  </data>
+  <data name="&gt;&gt;txtPassword.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtPassword.Parent" xml:space="preserve">
+    <value>grpAutoLogin</value>
+  </data>
+  <data name="&gt;&gt;txtPassword.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="txtEmail.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Candara, 9pt</value>
+  </data>
+  <data name="txtEmail.Location" type="System.Drawing.Point, System.Drawing">
+    <value>66, 37</value>
+  </data>
+  <data name="txtEmail.Size" type="System.Drawing.Size, System.Drawing">
+    <value>135, 22</value>
+  </data>
+  <data name="txtEmail.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="txtEmail.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Center</value>
+  </data>
+  <data name="&gt;&gt;txtEmail.Name" xml:space="preserve">
+    <value>txtEmail</value>
+  </data>
+  <data name="&gt;&gt;txtEmail.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtEmail.Parent" xml:space="preserve">
+    <value>grpAutoLogin</value>
+  </data>
+  <data name="&gt;&gt;txtEmail.ZOrder" xml:space="preserve">
+    <value>5</value>
   </data>
   <data name="numMinTrainPetOil.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -34103,6 +34115,66 @@
   </data>
   <data name="TrayIcon.Text" xml:space="preserve">
     <value>moswarBro</value>
+  </data>
+  <data name="label178.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label178.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label178.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 18</value>
+  </data>
+  <data name="label178.Size" type="System.Drawing.Size, System.Drawing">
+    <value>60, 14</value>
+  </data>
+  <data name="label178.TabIndex" type="System.Int32, mscorlib">
+    <value>26</value>
+  </data>
+  <data name="label178.Text" xml:space="preserve">
+    <value>Имя бота:</value>
+  </data>
+  <data name="&gt;&gt;label178.Name" xml:space="preserve">
+    <value>label178</value>
+  </data>
+  <data name="&gt;&gt;label178.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label178.Parent" xml:space="preserve">
+    <value>grpAutoLogin</value>
+  </data>
+  <data name="&gt;&gt;label178.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="txtBotName.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Candara, 9pt</value>
+  </data>
+  <data name="txtBotName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>66, 14</value>
+  </data>
+  <data name="txtBotName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>135, 22</value>
+  </data>
+  <data name="txtBotName.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="txtBotName.Text" xml:space="preserve">
+    <value>BoT</value>
+  </data>
+  <data name="txtBotName.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Center</value>
+  </data>
+  <data name="&gt;&gt;txtBotName.Name" xml:space="preserve">
+    <value>txtBotName</value>
+  </data>
+  <data name="&gt;&gt;txtBotName.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtBotName.Parent" xml:space="preserve">
+    <value>grpAutoLogin</value>
+  </data>
+  <data name="&gt;&gt;txtBotName.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>

@@ -1059,7 +1059,6 @@
             // tpSettings
             // 
             this.tpSettings.BackColor = System.Drawing.SystemColors.Control;
-            this.tpSettings.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tpSettings.Controls.Add(this.TLayoutSettings);
             resources.ApplyResources(this.tpSettings, "tpSettings");
             this.tpSettings.Name = "tpSettings";
