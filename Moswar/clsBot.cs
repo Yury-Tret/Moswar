@@ -565,7 +565,7 @@ namespace Moswar
             public string Info;
             public bool Logging;
         }
-
+        
         [Serializable()]
         public struct stcSettings
         {

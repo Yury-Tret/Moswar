@@ -1043,7 +1043,6 @@
             // tabMainSettings
             // 
             resources.ApplyResources(this.tabMainSettings, "tabMainSettings");
-            this.tabMainSettings.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tabMainSettings.Controls.Add(this.tabSettings);
             this.tabMainSettings.Name = "tabMainSettings";
             this.tabMainSettings.UseVisualStyleBackColor = true;
