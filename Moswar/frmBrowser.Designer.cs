@@ -193,6 +193,8 @@
             this.label43 = new System.Windows.Forms.Label();
             this.label42 = new System.Windows.Forms.Label();
             this.grpAutoLogin = new System.Windows.Forms.GroupBox();
+            this.label178 = new System.Windows.Forms.Label();
+            this.txtBotName = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.txtPassword = new System.Windows.Forms.TextBox();
@@ -750,8 +752,7 @@
             this.btnSaveSet = new System.Windows.Forms.Button();
             this.btnLoadSet = new System.Windows.Forms.Button();
             this.TrayIcon = new System.Windows.Forms.NotifyIcon(this.components);
-            this.label178 = new System.Windows.Forms.Label();
-            this.txtBotName = new System.Windows.Forms.TextBox();
+            this.chkCheckForUpdate = new System.Windows.Forms.CheckBox();
             this.tabControl.SuspendLayout();
             this.tabMainBrowser.SuspendLayout();
             this.AutoApdateMessage.SuspendLayout();
@@ -2494,6 +2495,17 @@
             resources.ApplyResources(this.grpAutoLogin, "grpAutoLogin");
             this.grpAutoLogin.Name = "grpAutoLogin";
             this.grpAutoLogin.TabStop = false;
+            // 
+            // label178
+            // 
+            resources.ApplyResources(this.label178, "label178");
+            this.label178.Name = "label178";
+            // 
+            // txtBotName
+            // 
+            this.txtBotName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.txtBotName, "txtBotName");
+            this.txtBotName.Name = "txtBotName";
             // 
             // label5
             // 
@@ -4901,6 +4913,7 @@
             // 
             // crpAutoRestart
             // 
+            this.crpAutoRestart.Controls.Add(this.chkCheckForUpdate);
             this.crpAutoRestart.Controls.Add(this.numMaxRestartMemory);
             this.crpAutoRestart.Controls.Add(this.chkRestartDoping);
             this.crpAutoRestart.Controls.Add(this.chkRestartHidden);
@@ -7729,16 +7742,13 @@
             resources.ApplyResources(this.TrayIcon, "TrayIcon");
             this.TrayIcon.MouseClick += new System.Windows.Forms.MouseEventHandler(this.TrayIcon_MouseClick);
             // 
-            // label178
+            // chkCheckForUpdate
             // 
-            resources.ApplyResources(this.label178, "label178");
-            this.label178.Name = "label178";
-            // 
-            // txtBotName
-            // 
-            this.txtBotName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            resources.ApplyResources(this.txtBotName, "txtBotName");
-            this.txtBotName.Name = "txtBotName";
+            resources.ApplyResources(this.chkCheckForUpdate, "chkCheckForUpdate");
+            this.chkCheckForUpdate.Checked = true;
+            this.chkCheckForUpdate.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.chkCheckForUpdate.Name = "chkCheckForUpdate";
+            this.chkCheckForUpdate.UseVisualStyleBackColor = true;
             // 
             // frmMain
             // 
@@ -8773,7 +8783,8 @@
         private System.Windows.Forms.ComboBox cboxExpGrpFightPlanerEvent;
         private System.Windows.Forms.ComboBox cboxExpGrpFightPlanerArt;
         private System.Windows.Forms.Label label178;
-        private System.Windows.Forms.TextBox txtBotName;      
+        private System.Windows.Forms.TextBox txtBotName;
+        private System.Windows.Forms.CheckBox chkCheckForUpdate;      
     }
 }
 

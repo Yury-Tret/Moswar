@@ -618,6 +618,7 @@ namespace Moswar
             Bot.Settings.maxRestartMemory = numMaxRestartMemory.Value;
             Bot.Settings.RestartHidden = chkRestartHidden.Checked;
             Bot.Settings.RestartDoping = chkRestartDoping.Checked;
+            Bot.Settings.CheckForUpdate = chkCheckForUpdate.Checked;
 
             Bot.Settings.ServerURL = (string)cboxServer.SelectedItem;
 
@@ -986,6 +987,7 @@ namespace Moswar
                 numMaxRestartMemory.Value = Bot.Settings.maxRestartMemory;
                 chkRestartHidden.Checked = Bot.Settings.RestartHidden;
                 chkRestartDoping.Checked = Bot.Settings.RestartDoping;
+                chkCheckForUpdate.Checked = Bot.Settings.CheckForUpdate;
                 #region Загрузка допингов.
                 if (Bot.Settings.RestartDoping) //Загрузка допингов только если запуск был произведён без аргументов!
                 {
@@ -1360,7 +1362,8 @@ namespace Moswar
             frmMain.NavigateURL(ctrMainBrowser, (string)cboxServer.SelectedItem);
             #endregion
             #region CheckForUpdate
-//            CheckForUpdate();
+            if (Bot.Settings.CheckForUpdate)
+                CheckForUpdate();
             #endregion
         }
         private void frmBrowser_FormClosing(object sender, FormClosingEventArgs e)
@@ -1374,7 +1377,7 @@ namespace Moswar
         private void STimer_Tick(object sender, System.Timers.ElapsedEventArgs e)
         {
             #region Проверка наличия обновлений
-//            if (LastUpdateCheckDT < DateTime.Now) CheckForUpdate();
+            if (Bot.Settings.CheckForUpdate && LastUpdateCheckDT < DateTime.Now) CheckForUpdate();
             #endregion
             #region Круговое верчение сообшений
             if (LastMessageUpdateDT < DateTime.Now)

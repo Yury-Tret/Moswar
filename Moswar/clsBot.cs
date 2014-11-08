@@ -768,6 +768,7 @@ namespace Moswar
             public decimal maxRestartMemory;
             public bool RestartHidden;
             public bool RestartDoping;
+            public bool CheckForUpdate;
 
             public string ServerURL;
 
