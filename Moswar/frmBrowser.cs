@@ -359,6 +359,7 @@ namespace Moswar
         #endregion
         private void UpdateSettings()
         {
+            Bot.Settings.BotName = txtBotName.Text;
             Bot.Settings.Email = txtEmail.Text;
             Bot.Settings.Password = txtPassword.Text;
 
@@ -730,6 +731,7 @@ namespace Moswar
             {
                 Bot.LoadSettings();
 
+                txtBotName.Text = Bot.Settings.BotName;
                 txtEmail.Text = Bot.Settings.Email;
                 txtPassword.Text = Bot.Settings.Password;
 
@@ -1291,8 +1293,7 @@ namespace Moswar
             LoadExpertSettings();
             LoadSettings();
 
-            if (Bot.Settings.BotName != null)
-                Text = Bot.Settings.BotName;
+            Text = Bot.Settings.BotName;
             TrayIcon.Text = Text;
 
             #region Дополнительный твикинг ИЕ через реестр
