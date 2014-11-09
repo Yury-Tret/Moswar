@@ -4320,6 +4320,27 @@ namespace Moswar
             if (Settings.UseProxy) { WaitMinMs += (int)Expert.ProxyMin; WaitMaxMs += (int)Expert.ProxyMin; };
             #endregion
             Wait(WaitMinMs, WaitMaxMs);
+
+            #region Нас приглашают в группу для спуска в подземку?
+            HtmlElement HtmlEl = frmMain.GetDocument(MainWB).GetElementById("alert-groups-invited");
+            if (HtmlEl != null)
+            {
+                Regex regex = new Regex("Игрок (.+) приглашает");
+                MatchCollection matches = regex.Matches(HtmlEl.InnerText);
+                UpdateStatus("@ " + DateTime.Now + " " + matches[0].Value + " меня в подземку. Спасибо, как-нибудь в другой раз...");
+
+                foreach (HtmlElement elem in HtmlEl.GetElementsByTagName("div"))
+                {
+                    if (elem.InnerText == "Отклонить")
+                    {
+                        frmMain.InvokeMember(MainWB, elem, "click");
+                        IsWBComplete(MainWB);
+                        break;
+                    }
+                }
+            }
+            #endregion
+
             return true;
         }
         public void IsWBCompleteEx(WebBrowser WB)
