@@ -1385,7 +1385,8 @@ namespace Moswar
             {
                 case ImmunAction.Duels:
                     BugReport("CheckImmun.Duels");
-                    DateTime LastDT = GetServerTime(MainWB);
+                    DateTime ServerDT = GetServerTime(MainWB);
+                    DateTime LastDT = ServerDT;
                     if (!frmMain.GetDocumentURL(MainWB).EndsWith("/phone/duels/" + LastDT.ToString("yyyyMMdd") + "/"))
                     {
                         frmMain.NavigateURL(MainWB, Settings.ServerURL + "/phone/duels/");
@@ -1405,7 +1406,7 @@ namespace Moswar
                                 if (match.Success)
                                 {
                                     LastDT = Convert.ToDateTime(match.Groups["Time"].Value, CultureInfo.CreateSpecificCulture("ru-RU"));
-                                    if (LastDT > GetServerTime(MainWB).AddDays(-1))
+                                    if (LastDT > ServerDT.AddDays(-1))
                                     {
                                         Array.Resize<DateTime>(ref Me.ArrDuelsDT, (Me.ArrDuelsDT == null ? 1 : Me.ArrDuelsDT.Count<DateTime>() + 1));
                                         Me.ArrDuelsDT[Me.ArrDuelsDT.Count<DateTime>() - 1] = Convert.ToDateTime(match.Groups["Time"].Value, CultureInfo.CreateSpecificCulture("ru-RU"));
@@ -1427,7 +1428,7 @@ namespace Moswar
                         else frmMain.NavigateURL(MainWB, Settings.ServerURL + "/phone/duels/" + LastDT.ToString("yyyyMMdd") + "/" + PageNr++ + "/"); //else frmMain.NavigateURL(MainWB, Settings.ServerURL + "/phone/duels/" + (Me.ArrDuelsDT == null ? LastDT : Me.ArrDuelsDT[Me.ArrDuelsDT.Count<DateTime>() - 1]).ToString("yyyyMMdd") + "/" + PageNr++ + "/"); //
                         IsWBComplete(MainWB);
                         #endregion
-                    } while (LastDT.Date > GetServerTime(MainWB).AddDays(-2).Date); //Это уже позавчера, выходим!
+                    } while (LastDT.Date > ServerDT.AddDays(-2).Date); //Это уже позавчера, выходим!
                     break;
                 case ImmunAction.Mona:
                     BugReport("CheckImmun.Mona");
