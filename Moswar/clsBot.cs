@@ -4272,7 +4272,7 @@ namespace Moswar
                 HtmlElement HtmlEl = frmMain.GetDocument(WB).GetElementById("servertime");
                 if (HtmlEl != null)
                 {
-                    ServerDT = new DateTime(1970, 1, 1).AddMilliseconds((Convert.ToInt64(HtmlEl.GetAttribute("rel")) - (-240) * 60) * 1000); //Формулу выдрал из скрипта, фиг поймешь зачем тут 240...
+                    ServerDT = new DateTime(1970, 1, 1).AddSeconds(Convert.ToInt64(HtmlEl.GetAttribute("rel")) + 3 * 60 * 60); // Серверное (Московское) время опережает UTC на 3 часа
                 }
                 else AnalysePlace(WB);
             }
