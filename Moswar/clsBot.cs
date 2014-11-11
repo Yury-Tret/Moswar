@@ -91,16 +91,38 @@ namespace Moswar
         private struct stcBagFightItem
         {
             public string Title;
-            public string ItemID;            
-            public int ItemType;
+            public string ItemID;
+            public FightItemType ItemType;
             public int TotalCount;
             public int TimedCount;
             public DateTime LastDT;
 
             public override string ToString()
             {
-                return "Предмет=" + Title + ", Тип=" + ItemType + ", ID=" + ItemID + 
+                return "Предмет=" + Title + ", ID=" + ItemID + ", Тип=" + ItemType +
                     ", Всего=" + TotalCount + ", Временных=" + TimedCount + ", Срок=" + LastDT;
+            }
+
+            /* Определяет и возвращает тип предмета по тексту всплывающей подсказки */
+            public static FightItemType DetermineType(string Info)
+            {
+                Match match = Regex.Match(Info,
+                    "Мин. урон по врагам: (?<Bomb>([0-9])+(?<PrcBomb>%)?)" +
+                    "|(?<Cheese>Призыв крысомах в групповой бой)" +
+                    "|Жизни: (?<Heal>([0-9+])+(?<PrcHeal>%)?)" +
+                    "|(?<Helmet>Защита от урона)" +
+                    "|(?<Spring>Отражает урон)" +
+                    "|(?<Shield>Уменьшение урона от гранат)"
+                    );
+                if (match.Groups["PrcHeal"].Success) return FightItemType.ProcHeal;
+                if (match.Groups["Heal"].Success) return FightItemType.FixedHeal;
+                if (match.Groups["Cheese"].Success) return FightItemType.Cheese;
+                if (match.Groups["PrcBomb"].Success) return FightItemType.ProcBomb;
+                if (match.Groups["Bomb"].Success) return FightItemType.FixedBomb;
+                if (match.Groups["Helmet"].Success) return FightItemType.Helmet;
+                if (match.Groups["Spring"].Success) return FightItemType.Spring;
+                if (match.Groups["Shield"].Success) return FightItemType.Shield;
+                return FightItemType.None;
             }
         }
 
@@ -3206,70 +3228,46 @@ namespace Moswar
             }
             Me.Events.NextItemCheckDT = ServerDT.Add(new TimeSpan(1, new Random().Next(0, 30), new Random().Next(0, 60)));
         }
+
         private void CheckBagFightItems(GroupFightType GFT)
         {
             BugReport("CheckBagFightItems");
+            UpdateStatus("@ " + DateTime.Now + " Похоже руками махать придется, пойду проверю-ка я карманы!");
 
             object Info;
             Match match;
             MatchCollection matches;
 
             if (!frmMain.GetDocumentURL(MainWB).EndsWith("/player/")) GoToPlace(MainWB, Place.Player);
-            UpdateStatus("@ " + DateTime.Now + " Похоже руками махать придёться, пойду проверю-ка я карманы!");
 
-            #region Создание списка нужных предметов!
-            List<int> ArrItemType = new List<int>();
-            List<int> NeedItems = new List<int>();
+            #region Создание списка нужных предметов
+            List<FightItemType> ArrItemType = new List<FightItemType>();
             for (int i = 0; i < 6; i++)
-            {
-                ArrItemType.Add(Expert.FightSlotItemTypes[(int)GFT * 7 + i]);
-            }
-            NeedItems.AddRange(ArrItemType.Where(Item => Item != 0));
+                ArrItemType.Add((FightItemType)Expert.FightSlotItemTypes[(int)GFT * 7 + i]);
             BugReport("@ Согласно настройкам нам нужно заполнить слоты следующими типами предметов: " + String.Join(", ", ArrItemType));
             #endregion
 
-            #region Находим HTML элемент со списком боевых предметов, которые есть в инвентаре
-            HtmlElement BagFightItemsElem = null;
-            foreach (HtmlElement Div in frmMain.GetDocument(MainWB).GetElementById("content").GetElementsByTagName("div"))
-            {
-                if (Div.GetAttribute("htab") == "fight" && Div.GetAttribute("rel") == "fight")
-                {
-                    BagFightItemsElem = Div;
-                    break;
-                }
-            }
-            #endregion
-            
-            #region SLOT INFO
-            BugReport("@ Текущее состояние боевых слотов:");
+            #region Определяем текущее состояние боевых слотов
             List<stcSlotFightItem> SlotFightItems = new List<stcSlotFightItem>();
             HtmlElementCollection HC = frmMain.GetDocument(MainWB).GetElementById("slots-groupfight-place").GetElementsByTagName("img");
-            for (int i = 0; i < GetArrClassCount(MainWB, "$(\"#slots-groupfight-place .object-thumb .padding[title!='Дополнительный карман']\")"); i++)
+            int SlotCount = GetArrClassCount(MainWB, "$(\"#slots-groupfight-place .object-thumb .padding[title!='Дополнительный карман']\")");
+            BugReport("@ Текущее состояние боевых слотов:");
+            for (int i = 0; i < SlotCount; i++)
             {
                 stcSlotFightItem SlotItem = new stcSlotFightItem();
-                #region Пустой слот?
-                if (i >= HC.Count)
+                if (i >= HC.Count) //Пустой слот?
                 {
                     SlotFightItems.Add(SlotItem);
                     BugReport("* Слот " + (i + 1) + ": Пустой");
                     continue;
                 }
-                #endregion
                 match = Regex.Match(HC[i].OuterHtml, "src=\"(?<Image>([@/\\w.])+)\".*data-id=\"(?<ID>_([0-9])+)");
                 SlotItem.SlotItemID = match.Groups["ID"].Value;
                 SlotItem.Equipment.ItemID = (string)frmMain.GetJavaVar(MainWB, "$(\"#content div[htab='fight'][rel='fight'] .object-thumb .padding img[src$='" + match.Groups["Image"].Value + "']\").attr(\"data-id\");");
                 SlotItem.Equipment.TotalCount = Convert.ToInt32(Regex.Match((string)frmMain.GetJavaVar(MainWB, "m.items['" + SlotItem.SlotItemID + "'].count['0'].innerText"), "([0-9])+").Value);
                 SlotItem.Equipment.Title = (string)frmMain.GetJavaVar(MainWB, "m.items['" + SlotItem.SlotItemID + "'].info.title");
                 Info = frmMain.GetJavaVar(MainWB, "m.items['" + SlotItem.SlotItemID + "'].info.content");
-                match = Regex.Match((string)Info, "Мин. урон по врагам: (?<Bomb>([0-9])+(?<PrcBomb>%)?)|(?<Cheese>Призыв крысомах в групповой бой)|Жизни: (?<Heal>([0-9+])+(?<PrcHeal>%)?)|(?<Helmet>Защита от урона)|(?<Spring>Отражает урон)|(?<Shield>Уменьшение урона от гранат)");
-                if (match.Groups["Heal"].Success) SlotItem.Equipment.ItemType = 1;
-                if (match.Groups["PrcHeal"].Success) SlotItem.Equipment.ItemType = 2;
-                if (match.Groups["Cheese"].Success) SlotItem.Equipment.ItemType = 3;
-                if (match.Groups["Bomb"].Success) SlotItem.Equipment.ItemType = 4;
-                if (match.Groups["PrcBomb"].Success) SlotItem.Equipment.ItemType = 5;
-                if (match.Groups["Helmet"].Success) SlotItem.Equipment.ItemType = 6;
-                if (match.Groups["Spring"].Success) SlotItem.Equipment.ItemType = 7;
-                if (match.Groups["Shield"].Success) SlotItem.Equipment.ItemType = 8;
+                SlotItem.Equipment.ItemType = stcBagFightItem.DetermineType((string)Info);
                 if (SlotItem.Equipment.ItemType == 0) //Что-то иное нет смысла дальше изучать!
                 {
                     BugReport("* Слот " + (i + 1) + ": Неизвестный предмет");
@@ -3296,7 +3294,17 @@ namespace Moswar
             }
             #endregion
 
-            #region EQUIPMENT INFO
+            #region Составляем список предметов, которые есть в наличии
+            HtmlElement BagFightItemsElem = null;
+            foreach (HtmlElement Div in frmMain.GetDocument(MainWB).GetElementById("content").GetElementsByTagName("div"))
+            {
+                if (Div.GetAttribute("htab") == "fight" && Div.GetAttribute("rel") == "fight")
+                {
+                    BagFightItemsElem = Div;
+                    break;
+                }
+            }
+
             List<stcBagFightItem> BagFightItems = new List<stcBagFightItem>();
             foreach (HtmlElement BagItem in BagFightItemsElem.GetElementsByTagName("img"))
             {
@@ -3309,17 +3317,9 @@ namespace Moswar
                     FightItem.TotalCount = Convert.ToInt32(Regex.Match((string)frmMain.GetJavaVar(MainWB, "m.items['" + match.Groups["ID"].Value + "'].count['0'].innerText"), "([0-9])+").Value);
                     FightItem.Title = (string)frmMain.GetJavaVar(MainWB, "m.items['" + FightItem.ItemID + "'].info.title");
                     Info = frmMain.GetJavaVar(MainWB, "m.items['" + FightItem.ItemID + "'].info.content");
-                    match = Regex.Match((string)Info, "Мин. урон по врагам: (?<Bomb>([0-9])+(?<PrcBomb>%)?)|(?<Cheese>Призыв крысомах в групповой бой)|Жизни: (?<Heal>([0-9+])+(?<PrcHeal>%)?)|(?<Helmet>Защита от урона)|(?<Spring>Отражает урон)|(?<Shield>Уменьшение урона от гранат)");
-                    if (match.Groups["Heal"].Success) FightItem.ItemType = 1;
-                    if (match.Groups["PrcHeal"].Success) FightItem.ItemType = 2;
-                    if (match.Groups["Cheese"].Success) FightItem.ItemType = 3;
-                    if (match.Groups["Bomb"].Success) FightItem.ItemType = 4;
-                    if (match.Groups["PrcBomb"].Success) FightItem.ItemType = 5;
-                    if (match.Groups["Helmet"].Success) FightItem.ItemType = 6;
-                    if (match.Groups["Spring"].Success) FightItem.ItemType = 7;
-                    if (match.Groups["Shield"].Success) FightItem.ItemType = 8;
+                    FightItem.ItemType = stcBagFightItem.DetermineType((string)Info);
                     if (FightItem.ItemType == 0) 
-                        continue; //Чтото иное нет смысла дальше изучать!
+                        continue; //Что-то иное нет смысла дальше изучать!
                     matches = Regex.Matches((string)Info, "((?<Count>([0-9])+) шт. до (?<Date>([0-9 .:])+))|Срок годности: (?<Date>([0-9 .:])+)"); //Когда все предметы пропадают в один день может быть без количества!
                     foreach (Match m in matches)
                     {
@@ -3347,15 +3347,16 @@ namespace Moswar
             #region Укорачивание списка желаемых предметов под количество доступных слотов.
             if (ArrItemType.Count() > SlotFightItems.Count()) ArrItemType = ArrItemType.GetRange(0, SlotFightItems.Count());
             #endregion
+
             #region Оптимальные вещи для указанных слотов.
-            foreach (int ItemType in ArrItemType)
+            foreach (FightItemType ItemType in ArrItemType)
             {
                 stcBagFightItem FightItem = new stcBagFightItem();
                 foreach (stcBagFightItem BagItem in BagFightItems.Where(Item => Item.ItemType == ItemType))
                 {
                     if (!BestItems.Contains(BagItem) && (FightItem.ItemID == null ||
                         (FightItem.LastDT > BagItem.LastDT || FightItem.LastDT == new DateTime() ||
-                        (ItemType != 3 && FightItem.TimedCount < 3)) && BagItem.LastDT != new DateTime()))
+                        (ItemType != FightItemType.Cheese && FightItem.TimedCount < 3)) && BagItem.LastDT != new DateTime()))
                     {
                         FightItem = BagItem;
                     }
@@ -3370,6 +3371,7 @@ namespace Moswar
                     BugReport("* " + Item);
             }
             #endregion
+
             #region Не критичные слоты!
             foreach (stcSlotFightItem SlotItem in SlotFightItems.Where(Item => !BestItems.Exists(BestItem => BestItem.Equals(Item.Equipment)) || Item.Equipment.TotalCount == 0)) //Всё, что не в списке Best
             {
@@ -3380,6 +3382,7 @@ namespace Moswar
                 ReserveItems.Insert(0, FightItem);
             }
             #endregion
+
             #region Подмена слотов!
             foreach (stcBagFightItem BestItem in BestItems.Where(item => item.ItemType > 0))
             {
@@ -3406,11 +3409,12 @@ namespace Moswar
                 }
             }
             #endregion
+
             #region Закупка недостающих средств!
             bool bRet = false;
             foreach (stcBagFightItem BestItem in BestItems)
             {
-                if (Expert.BuyFightItemType[BestItem.ItemType]) //Разрешено докупать?
+                if (Expert.BuyFightItemType[(int)BestItem.ItemType]) //Разрешено докупать?
                 {
                     List<string> ItemToBuy = new List<string>();
                     if (BestItem.ItemID == null && BestItem.TotalCount == 0) //Нужно купить новый вид с учётом того, что уже в багаже!
@@ -3421,13 +3425,13 @@ namespace Moswar
                     else //Докупаем?
                     {
                         if (
-                            (BestItem.ItemType == 1
-                             || BestItem.ItemType == 2
-                             || BestItem.ItemType == 4
-                             || BestItem.ItemType == 5
-                             || BestItem.ItemType == 6
-                             || BestItem.ItemType == 7
-                             || BestItem.ItemType == 8
+                            (BestItem.ItemType == FightItemType.FixedHeal
+                             || BestItem.ItemType == FightItemType.ProcHeal
+                             || BestItem.ItemType == FightItemType.FixedBomb
+                             || BestItem.ItemType == FightItemType.ProcBomb
+                             || BestItem.ItemType == FightItemType.Helmet
+                             || BestItem.ItemType == FightItemType.Spring
+                             || BestItem.ItemType == FightItemType.Shield
                             ) && BestItem.TotalCount < 3 && !BestItem.Title.Contains("Ультра")
                            )
                             ItemToBuy.Add(BestItem.Title);
@@ -3436,16 +3440,18 @@ namespace Moswar
                     //таким образом сохранится работоспособнсть при внедрении новых элементов в массив ShopItems
                     if (ItemToBuy.Count == 1 || (ItemToBuy.Count > 1 && Expert.BuyMoreThenOneGranade))
                     {
-                        bRet |= BuyItems(MainWB, BestItem.ItemType - 1 + ShopItems.HealPlus, ItemToBuy.ToArray());
+                        bRet |= BuyItems(MainWB, (int)BestItem.ItemType - 1 + ShopItems.HealPlus, ItemToBuy.ToArray());
                         Me.Events.NextFightItemCheckDT = DateTime.Now.AddMinutes(10);
                     }
                 }
             }
             #endregion
+
             GoToPlace(MainWB, Place.Player);
             if (bRet) CheckBagFightItems(GFT); //Докупал, какие-то вещи ложим их в багажник!
             UpdateStatus("@ " + DateTime.Now + " Боевые слоты проверены");
         }
+
         private void Sovet(SovetAction SA) //OK
         {
             BugReport("CheckForWeekPrize");
