@@ -3471,7 +3471,7 @@ namespace Moswar
 
             #region Закупка недостающих средств!
             bool bRet = false;
-            foreach (stcBagFightItem BestItem in TakeItems)
+/*            foreach (stcBagFightItem BestItem in TakeItems)
             {
                 if (Expert.BuyFightItemType[(int)BestItem.ItemType]) //Разрешено докупать?
                 {
@@ -3503,7 +3503,7 @@ namespace Moswar
                         Me.Events.NextFightItemCheckDT = DateTime.Now.AddMinutes(10);
                     }
                 }
-            }
+            }*/
             #endregion
 
             GoToPlace(MainWB, Place.Player);
