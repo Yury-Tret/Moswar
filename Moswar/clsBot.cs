@@ -3240,7 +3240,7 @@ namespace Moswar
 
             if (!frmMain.GetDocumentURL(MainWB).EndsWith("/player/")) GoToPlace(MainWB, Place.Player);
 
-            #region Создание списка нужных предметов
+            #region Достаем из настроек список предметов, которые надо взять с собой
             List<FightItemType> ArrItemType = new List<FightItemType>();
             for (int i = 0; i < 6; i++)
                 ArrItemType.Add((FightItemType)Expert.FightSlotItemTypes[(int)GFT * 7 + i]);
@@ -3329,7 +3329,7 @@ namespace Moswar
                 }
                 BagFightItems.Add(FightItem);
             }
-            #region Добавление видов которые остались только в слоте, которых нет в багажнике!
+            #region Добавляем предметы, которые остались только в слотах и которых нет в инвентаре
             foreach (stcSlotFightItem SlotFightItem in SlotFightItems.Where(item => item.SlotItemID != null && item.Equipment.ItemID == null))
                 BagFightItems.Add(SlotFightItem.Equipment);
             #endregion
@@ -3344,24 +3344,97 @@ namespace Moswar
             List<stcBagFightItem> BestItems = new List<stcBagFightItem>();
             List<stcBagFightItem> ReserveItems = new List<stcBagFightItem>();
 
-            #region Укорачивание списка желаемых предметов под количество доступных слотов.
+            #region Укорачиваем список желаемых предметов под количество доступных слотов
             if (ArrItemType.Count() > SlotFightItems.Count()) ArrItemType = ArrItemType.GetRange(0, SlotFightItems.Count());
             #endregion
 
-            #region Оптимальные вещи для указанных слотов.
+            #region Составляем список предметов, которые мы возьмем с собой
             foreach (FightItemType ItemType in ArrItemType)
             {
+                if (ItemType == FightItemType.None)
+                    continue;
                 stcBagFightItem FightItem = new stcBagFightItem();
-                foreach (stcBagFightItem BagItem in BagFightItems.Where(Item => Item.ItemType == ItemType))
+                foreach (stcBagFightItem BagItem in BagFightItems)
                 {
-                    if (!BestItems.Contains(BagItem) && (FightItem.ItemID == null ||
-                        (FightItem.LastDT > BagItem.LastDT || FightItem.LastDT == new DateTime() ||
-                        (ItemType != FightItemType.Cheese && FightItem.TimedCount < 3)) && BagItem.LastDT != new DateTime()))
+                    // Сравниваем типы предметов
+                    switch (ItemType)
+                    {
+                        // Фиксированная и процентная еда взаимозаменяема
+                        case FightItemType.FixedHeal:
+                        case FightItemType.ProcHeal:
+                            if (BagItem.ItemType != FightItemType.FixedHeal && BagItem.ItemType != FightItemType.ProcHeal)
+                                continue;
+                            break;
+
+                        // Фиксированные и процентные грены взаимозаменяемы
+                        case FightItemType.FixedBomb:
+                        case FightItemType.ProcBomb:
+                            if (BagItem.ItemType != FightItemType.FixedBomb && BagItem.ItemType != FightItemType.ProcBomb)
+                                continue;
+                            break;
+
+                        // Тип остальных предметов должен в точности совпадать
+                        default:
+                            if (BagItem.ItemType != ItemType)
+                                continue;
+                            break;
+                    }
+
+                    // Если предмет уже запланирован для взятия в другой слот, пропускаем его
+                    if (BestItems.Contains(BagItem))
+                        continue;
+
+                    // Если у нас еще нет кандидата, сразу берем предмет
+                    if (FightItem.ItemType == FightItemType.None)
                     {
                         FightItem = BagItem;
+                        continue;
                     }
+
+                    // Если предметы не являются сыром и количество одного из предметов меньше трех
+                    // и не совпадает с количеством другого предмета, берем тот предмет, которого больше
+                    if ((BagItem.TotalCount < 3 || FightItem.TotalCount < 3) &&
+                        BagItem.TotalCount != FightItem.TotalCount && ItemType != FightItemType.Cheese)
+                    {
+                        if (BagItem.TotalCount > FightItem.TotalCount)
+                            FightItem = BagItem;
+                        continue;
+                    }
+
+                    // Если один предмет со сроком годности, а другой - без срока, то берем
+                    // предмет со сроком годности
+                    if (FightItem.LastDT == new DateTime() && BagItem.LastDT != new DateTime())
+                    {
+                        FightItem = BagItem;
+                        continue;
+                    }
+                    if (FightItem.LastDT != new DateTime() && BagItem.LastDT == new DateTime())
+                        continue;
+
+                    // Если оба предмета со сроком годности, то берем тот, у которого срок меньше
+                    if (FightItem.LastDT != new DateTime())
+                    {
+                        if (BagItem.LastDT < FightItem.LastDT)
+                            FightItem = BagItem;
+                        continue;
+                    }
+
+                    // Если тип нового и старого предмета не совпадает (для еды и грен), то берем
+                    // предмет с наиболее точным типом
+                    if (FightItem.ItemType != BagItem.ItemType)
+                    {
+                        if (BagItem.ItemType == ItemType)
+                            FightItem = BagItem;
+                        continue;
+                    }
+
+                    // Если дошли до этого места, значит новый предмет ничем не лучше старого
+                    // и мы его пропускаем
                 }
-                if (FightItem.ItemID == null) FightItem.ItemType = ItemType; //Запоминаем каких предметов не хватает!                
+
+                // Если подходящего предмета так и не нашли, запоминаем тип нужного предмета
+                if (FightItem.ItemType == FightItemType.None)
+                    FightItem.ItemType = ItemType;
                 BestItems.Add(FightItem);
             }
             if (DebugMode)
