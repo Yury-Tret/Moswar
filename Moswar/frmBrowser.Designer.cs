@@ -445,6 +445,7 @@
             this.chkQuest = new System.Windows.Forms.CheckBox();
             this.label83 = new System.Windows.Forms.Label();
             this.crpAutoRestart = new System.Windows.Forms.GroupBox();
+            this.chkCheckForUpdate = new System.Windows.Forms.CheckBox();
             this.numMaxRestartMemory = new System.Windows.Forms.NumericUpDown();
             this.chkRestartDoping = new System.Windows.Forms.CheckBox();
             this.chkRestartHidden = new System.Windows.Forms.CheckBox();
@@ -752,7 +753,7 @@
             this.btnSaveSet = new System.Windows.Forms.Button();
             this.btnLoadSet = new System.Windows.Forms.Button();
             this.TrayIcon = new System.Windows.Forms.NotifyIcon(this.components);
-            this.chkCheckForUpdate = new System.Windows.Forms.CheckBox();
+            this.btnOpenURL = new System.Windows.Forms.Button();
             this.tabControl.SuspendLayout();
             this.tabMainBrowser.SuspendLayout();
             this.AutoApdateMessage.SuspendLayout();
@@ -4922,6 +4923,14 @@
             this.crpAutoRestart.Name = "crpAutoRestart";
             this.crpAutoRestart.TabStop = false;
             // 
+            // chkCheckForUpdate
+            // 
+            resources.ApplyResources(this.chkCheckForUpdate, "chkCheckForUpdate");
+            this.chkCheckForUpdate.Checked = true;
+            this.chkCheckForUpdate.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.chkCheckForUpdate.Name = "chkCheckForUpdate";
+            this.chkCheckForUpdate.UseVisualStyleBackColor = true;
+            // 
             // numMaxRestartMemory
             // 
             resources.ApplyResources(this.numMaxRestartMemory, "numMaxRestartMemory");
@@ -7741,18 +7750,18 @@
             resources.ApplyResources(this.TrayIcon, "TrayIcon");
             this.TrayIcon.MouseClick += new System.Windows.Forms.MouseEventHandler(this.TrayIcon_MouseClick);
             // 
-            // chkCheckForUpdate
+            // btnOpenURL
             // 
-            resources.ApplyResources(this.chkCheckForUpdate, "chkCheckForUpdate");
-            this.chkCheckForUpdate.Checked = true;
-            this.chkCheckForUpdate.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.chkCheckForUpdate.Name = "chkCheckForUpdate";
-            this.chkCheckForUpdate.UseVisualStyleBackColor = true;
+            resources.ApplyResources(this.btnOpenURL, "btnOpenURL");
+            this.btnOpenURL.Name = "btnOpenURL";
+            this.btnOpenURL.UseVisualStyleBackColor = true;
+            this.btnOpenURL.Click += new System.EventHandler(this.btnOpenURL_Click);
             // 
             // frmMain
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            this.Controls.Add(this.btnOpenURL);
             this.Controls.Add(this.cboxWearSet);
             this.Controls.Add(this.btnSaveSettings);
             this.Controls.Add(this.btnLoadSet);
@@ -8783,7 +8792,8 @@
         private System.Windows.Forms.ComboBox cboxExpGrpFightPlanerArt;
         private System.Windows.Forms.Label label178;
         private System.Windows.Forms.TextBox txtBotName;
-        private System.Windows.Forms.CheckBox chkCheckForUpdate;      
+        private System.Windows.Forms.CheckBox chkCheckForUpdate;
+        private System.Windows.Forms.Button btnOpenURL;      
     }
 }
 
