@@ -3852,7 +3852,7 @@ namespace Moswar
             TimeSpan TSTimeout = new TimeSpan();
 
             #region Не дорос до мобильника?
-            if (Me.Player.Level < 9)
+            if (Me.Player.Level < 9 && MPA != MobilePhoneAction.ReadLogs)
             {
                 UpdateStatus("@ " + DateTime.Now + " Маловат я еще мобилу тягать, пойду иное потягаю...");
                 return new TimeSpan(2, 0, 0); //У меня походу нет телефона, заглянуть через 2 часа.
