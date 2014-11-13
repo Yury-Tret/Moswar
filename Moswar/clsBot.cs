@@ -7529,6 +7529,7 @@ namespace Moswar
                             Me.RatHunting.NextDT = Me.RatHunting.RestartDT.AddMinutes(1); //Следующее наподение, только после обвала!
                             Me.RatHunting.Lvl = 36;
                             Me.RatHunting.Stop = true;
+                            UpdateStatus("# " + DateTime.Now + " КРЫСОПРОВОД ПРОЙДЕН, до обвала осталось: " + match.Groups["Timeout"].Value);
                         }
                         #endregion
                     }
@@ -7572,7 +7573,13 @@ namespace Moswar
                                 IsWBComplete(MainWB); //IsAjaxComplete(MainWB);
                                 #region Допинг + Переодевание + Карманы!
                                 IsTimeout(MainWB, true, false); //Не даём сьесть допинги, если пользователь успел записаться в драку например. (сначала драка, затем вернёмся перекусить и напасть на крысу.)                        
-                                if (!Dopings(ref Me.ArrRatDoping, DopingAction.Check)) { UpdateStatus("@ " + DateTime.Now + " Трезвым я против Крысомахи[" + Me.RatHunting.Lvl + "] не пойду, схожу лучше штаны простирну!"); Me.RatHunting.Stop = true; return false; }
+                                if (!Dopings(ref Me.ArrRatDoping, DopingAction.Check))
+                                {
+                                    UpdateStatus("@ " + DateTime.Now + " Трезвым я против Крысомахи[" + Me.RatHunting.Lvl + "] не пойду, схожу лучше штаны простирну!");
+                                    Me.RatHunting.Stop = true;
+                                    UpdateStatus("# " + DateTime.Now + " КРЫСОПРОВОД ОСТАНОВЛЕН на уровне " + Me.RatHunting.Lvl + ": нет нужных допингов");
+                                    return false;
+                                }
                                 if (Settings.UseWearSet) WearSet(MainWB, ArrWearSet, Me.RatHunting.Lvl % 5 == 0 ? 4 : 1); //Одеваем крысиный сет!
                                 if (Settings.UseAutoFightBagSlots && Me.RatHunting.Lvl % 5 == 0) CheckBagFightItems(GroupFightType.Rat);                      
                                 #endregion
@@ -7589,6 +7596,7 @@ namespace Moswar
                             {
                                 Me.RatHunting.Stop = true;
                                 UpdateStatus("! " + DateTime.Now + " Шеф, мёда до финиша у нас нехватает, я бросаю это гиблое дело!");
+                                UpdateStatus("# " + DateTime.Now + " КРЫСОПРОВОД ОСТАНОВЛЕН на уровне " + Me.RatHunting.Lvl + ": не хватает меда");
                                 return false;
                             }
                         }
@@ -7602,7 +7610,13 @@ namespace Moswar
                     {
                         #region Допинг + Переодевание
                         IsTimeout(MainWB, true, false); //Не даём сьесть допинги, если пользователь успел записаться в драку например. (сначала драка, затем вернёмся перекусить и напасть на крысу.)                        
-                        if (!Dopings(ref Me.ArrRatDoping, DopingAction.Check)) { UpdateStatus("@ " + DateTime.Now + " Трезвым я против Крысомахи[" + Me.RatHunting.Lvl + "] не пойду, схожу лучше штаны простирну!"); Me.RatHunting.Stop = true; return false; }
+                        if (!Dopings(ref Me.ArrRatDoping, DopingAction.Check))
+                        {
+                            UpdateStatus("@ " + DateTime.Now + " Трезвым я против Крысомахи[" + Me.RatHunting.Lvl + "] не пойду, схожу лучше штаны простирну!");
+                            Me.RatHunting.Stop = true;
+                            UpdateStatus("# " + DateTime.Now + " КРЫСОПРОВОД ОСТАНОВЛЕН на уровне " + Me.RatHunting.Lvl + ": нет нужных допингов");
+                            return false;
+                        }
                         if (Settings.UseWearSet) WearSet(MainWB, ArrWearSet, Me.RatHunting.Lvl % 5 == 0 ? 4 : 1); //Одеваем крысиный сет!
                         if (Settings.UseAutoFightBagSlots && Me.RatHunting.Lvl % 5 == 0) CheckBagFightItems(GroupFightType.Rat);                       
                         if (!Regex.IsMatch(frmMain.GetDocumentURL(MainWB), "/metro/")) GoToPlace(MainWB, Place.Metro);
@@ -7869,7 +7883,11 @@ namespace Moswar
                                     else //Крысомахи из поиска
                                     {
                                         //Слишком много крыс которые нас побили, стоп поиск крыс!
-                                        if ((Me.RatHunting.Defeats >= Settings.maxSearchRatDefeats) || !Settings.SearchRat) Me.RatHunting.Stop = true;
+                                        if ((Me.RatHunting.Defeats >= Settings.maxSearchRatDefeats) || !Settings.SearchRat)
+                                        {
+                                            Me.RatHunting.Stop = true;
+                                            UpdateStatus("# " + DateTime.Now + " КРЫСОПРОВОД ОСТАНОВЛЕН на уровне " + RatLvl + ": слишком много поражений");
+                                        }
 
                                         GoToPlace(MainWB, Place.Metro);
                                         HtmlEl = frmMain.GetDocument(MainWB).GetElementById("timer-rat-fight");
@@ -7884,6 +7902,7 @@ namespace Moswar
                                                 Me.RatHunting.NextDT = Me.RatHunting.RestartDT.AddMinutes(1); //Следующее наподение, только после обвала!
                                                 Me.RatHunting.Lvl = 36;
                                                 Me.RatHunting.Stop = true;
+                                                UpdateStatus("# " + DateTime.Now + " КРЫСОПРОВОД ПРОЙДЕН, до обвала осталось: " + match.Groups["Timeout"].Value);
                                             }
                                             #endregion
                                         }
