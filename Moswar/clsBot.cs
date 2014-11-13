@@ -8703,7 +8703,13 @@ namespace Moswar
                             {
                                 if (IsHPLow(MainWB, 100) ? (HealMePlus() ? true : CheckHealthEx(99, 49, Settings.HealPet50, Settings.HealPet100)) : true) //Лечить в любом варианте до 100%
                                 {
-                                    if (!Dopings(ref Me.ArrOilLeninDoping, DopingAction.Check)) { UpdateStatus("@ " + DateTime.Now + " Трезвым я против Дружинника[" + Me.OilLeninHunting.Lvl + "] не пойду, и не просите!"); Me.OilLeninHunting.Stop = true; return false; }
+                                    if (!Dopings(ref Me.ArrOilLeninDoping, DopingAction.Check))
+                                    {
+                                        UpdateStatus("@ " + DateTime.Now + " Трезвым я против Дружинника[" + Me.OilLeninHunting.Lvl + "] не пойду, и не просите!");
+                                        Me.OilLeninHunting.Stop = true;
+                                        UpdateStatus("# " + DateTime.Now + " НЕФТЕПРОВОД ОСТАНОВЛЕН на уровне " + Me.OilLeninHunting.Lvl + ": нет нужных допингов");
+                                        return false;
+                                    }
                                     if (Me.OilLeninHunting.NextDT > DateTime.Now) { UpdateStatus("@ " + DateTime.Now + " Эх, придётся попозже заглянуть, что за слово такое \"синхронизация\"..."); return false; }
                                     if (!frmMain.GetDocumentURL(MainWB).Contains("/neftlenin/")) GoToPlace(MainWB, Place.Oil);
                                 }
@@ -8785,6 +8791,8 @@ namespace Moswar
                                                         {
                                                             Me.OilLeninHunting.Defeats += Settings.OilUseOhara ? -Me.OilLeninHunting.Defeats : 1; //Останавливаем побеги в ленинопровод, если только не просили усердно наезжать Охарой.
                                                             Me.OilLeninHunting.Stop = Me.OilLeninHunting.Defeats >= Settings.maxOilDefeats;
+                                                            if (Me.OilLeninHunting.Stop)
+                                                                UpdateStatus("# " + DateTime.Now + " НЕФТЕПРОВОД ОСТАНОВЛЕН на уровне " + Me.OilLeninHunting.Lvl + ": слишком много поражений");
                                                         }
                                                         if (!Me.OilLeninHunting.Stop) GoToPlace(MainWB, Place.Oil); //Продолжаем драки!
                                                     }
@@ -8892,7 +8900,11 @@ namespace Moswar
                             }
                             else //Слишком сильные вентили, больше не ходим
                             {
-                                if (Me.OilLeninHunting.Lvl == 31) Me.OilLeninHunting.NextDT = Me.OilLeninHunting.RestartDT; //Ленин повержен!
+                                if (Me.OilLeninHunting.Lvl == 31)
+                                {
+                                    Me.OilLeninHunting.NextDT = Me.OilLeninHunting.RestartDT; //Ленин повержен!
+                                    UpdateStatus("# " + DateTime.Now + " НЕФТЕПРОВОД ПРОЙДЕН");
+                                }
                                 UpdateStatus("@ " + DateTime.Now + (Me.OilLeninHunting.Lvl == 31 ? " Эх, чудик в кЭпке какой-то помятый лежит... моя работа с бодуна!?!" : " Эээ не, эт крутые, ещё нагнут под забором ..."));
                                 Me.OilLeninHunting.Stop = true;
                             }
