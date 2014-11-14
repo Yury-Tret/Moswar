@@ -1467,7 +1467,6 @@ namespace Moswar
             {
                 if (Keyboard.IsKeyDown(Key.H)) this.Visible = false;
                 if (Keyboard.IsKeyDown(Key.S)) this.Visible = true;
-                TrayIcon.Visible = false;
             }
             #endregion
         }
@@ -2970,7 +2969,6 @@ namespace Moswar
         private void TrayIcon_MouseClick(object sender, System.Windows.Forms.MouseEventArgs e)
         {
             this.Visible = true;
-            this.TrayIcon.Visible = false; 
         } 
        
         //###################### MULTITHREADING FUNCTIONS ####################################### 
