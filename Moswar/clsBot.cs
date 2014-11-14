@@ -3754,8 +3754,7 @@ namespace Moswar
                         }
                         else 
                         {
-                            UpdateStatus("! " + DateTime.Now + " Немогу найти где тут вход на это задание, сорри но в этот лабиринт я больше ни ногой!");
-                            Me.Events.StopQuest = true; //что-то не так, невозможно выполнять квэсты!
+                            UpdateStatus("! " + DateTime.Now + " Не могу найти где тут вход на это задание, зайду попозже");
                             return false;
                         }                        
                         #endregion
