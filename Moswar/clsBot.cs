@@ -1426,7 +1426,7 @@ namespace Moswar
                             foreach (HtmlElement H in frmMain.GetDocument(MainWB).GetElementById("content").GetElementsByTagName("table")[1].GetElementsByTagName("tr"))
                             {
                                 if (H.InnerHtml == null) break;
-                                Match match = Regex.Match(H.InnerHtml, "date\"?>(?<Time>([0-9. :])+)<([\\s\\S])+(Вы напали на|Вы вступили в схватку с)"); //Выискиваем все наши нападения
+                                Match match = Regex.Match(H.InnerHtml, "date\"?>(?<Time>([0-9. :])+)<([\\s\\S])+(Вы напали на)"); //Выискиваем все наши нападения
 
                                 if (match.Success)
                                 {
@@ -5175,14 +5175,17 @@ namespace Moswar
                 }
                 #endregion
                 #region Ведение контроля счётчика драк
-                if (Me.ArrDuelsDT == null) Me.ArrDuelsDT = new DateTime[] { GetServerTime(WB) };
-                else 
+                if (PI.URL != null) //URL равен null только у НПЦ!
                 {
-                    DateTime[] ArrDT = new DateTime[Me.ArrDuelsDT.Count<DateTime>() + 1]; //Создаём массив на 1 элемент больше прежнего, чтоб вставить новое время
-                    ArrDT[0] = GetServerTime(WB); //Заносим новое время последней драки.
-                    Array.ConstrainedCopy(Me.ArrDuelsDT, 0, ArrDT, 1, Me.ArrDuelsDT.Count<DateTime>()); //Переносим массив времён за позицию новой драки в новом массиве
-                    Me.ArrDuelsDT = ArrDT; //Пересохраняем
-                }                
+                    if (Me.ArrDuelsDT == null) Me.ArrDuelsDT = new DateTime[] { GetServerTime(WB) };
+                    else
+                    {
+                        DateTime[] ArrDT = new DateTime[Me.ArrDuelsDT.Count<DateTime>() + 1]; //Создаём массив на 1 элемент больше прежнего, чтоб вставить новое время
+                        ArrDT[0] = GetServerTime(WB); //Заносим новое время последней драки.
+                        Array.ConstrainedCopy(Me.ArrDuelsDT, 0, ArrDT, 1, Me.ArrDuelsDT.Count<DateTime>()); //Переносим массив времён за позицию новой драки в новом массиве
+                        Me.ArrDuelsDT = ArrDT; //Пересохраняем
+                    }
+                }
                 #endregion
                 return bRet;
             }
