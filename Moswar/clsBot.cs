@@ -818,6 +818,7 @@ namespace Moswar
 
             public bool PreferZefir;
             public bool PreferShokoZefir;
+            public bool PreferPryanik;
             public bool AllowCoctailAdv;
             public bool AllowPartBilet;
             public bool NoSauceNoProblem;
@@ -10769,7 +10770,7 @@ namespace Moswar
                                         {
                                             string Info = (string)frmMain.GetJavaVar(MainWB, "m.items['" + Regex.Match(H.Parent.InnerHtml, "(?<=data-id=(\")?)([0-9])+").Value + "'].info.content");
                                             Info = Regex.Match(Info, "(?<=[+])([0-9])+(?=%)").Value;
-                                            if ((Settings.PreferShokoZefir ? 25 : Settings.PreferZefir ? 20 : 15) >= Convert.ToInt32(Info))
+                                            if ((Settings.PreferPryanik ? 30 : Settings.PreferShokoZefir ? 25 : Settings.PreferZefir ? 20 : 15) >= Convert.ToInt32(Info))
                                             {
                                                 clsDoping.NeedToBuy[(int)clsDoping.DopingType.Gum1Ex] = false;
                                                 break;
@@ -10889,7 +10890,7 @@ namespace Moswar
                                         {
                                             string Info = (string)frmMain.GetJavaVar(MainWB, "m.items['" + Regex.Match(H.Parent.InnerHtml, "(?<=data-id=(\")?)([0-9])+").Value + "'].info.content");
                                             Info = Regex.Match(Info, "(?<=[+])([0-9])+(?=%)").Value;
-                                            if ((Settings.PreferShokoZefir ? 25 : Settings.PreferZefir ? 20 : 15) >= Convert.ToInt32(Info))
+                                            if ((Settings.PreferPryanik ? 30 : Settings.PreferShokoZefir ? 25 : Settings.PreferZefir ? 20 : 15) >= Convert.ToInt32(Info))
                                             {
                                                 clsDoping.NeedToBuy[(int)clsDoping.DopingType.Gum2Ex] = false;
                                                 break;
@@ -11009,7 +11010,7 @@ namespace Moswar
                                         {
                                             string Info = (string)frmMain.GetJavaVar(MainWB, "m.items['" + Regex.Match(H.Parent.InnerHtml, "(?<=data-id=(\")?)([0-9])+").Value + "'].info.content");
                                             Info = Regex.Match(Info, "(?<=[+])([0-9])+(?=%)").Value;
-                                            if ((Settings.PreferShokoZefir ? 25 : Settings.PreferZefir ? 20 : 15) >= Convert.ToInt32(Info))
+                                            if ((Settings.PreferPryanik ? 30 : Settings.PreferShokoZefir ? 25 : Settings.PreferZefir ? 20 : 15) >= Convert.ToInt32(Info))
                                             {
                                                 clsDoping.NeedToBuy[(int)clsDoping.DopingType.Gum3Ex] = false;
                                                 break;
@@ -11129,7 +11130,7 @@ namespace Moswar
                                         {
                                             string Info = (string)frmMain.GetJavaVar(MainWB, "m.items['" + Regex.Match(H.Parent.InnerHtml, "(?<=data-id=(\")?)([0-9])+").Value + "'].info.content");
                                             Info = Regex.Match(Info, "(?<=[+])([0-9])+(?=%)").Value;
-                                            if ((Settings.PreferShokoZefir ? 25 : Settings.PreferZefir ? 20 : 15) >= Convert.ToInt32(Info))
+                                            if ((Settings.PreferPryanik ? 30 : Settings.PreferShokoZefir ? 25 : Settings.PreferZefir ? 20 : 15) >= Convert.ToInt32(Info))
                                             {
                                                 clsDoping.NeedToBuy[(int)clsDoping.DopingType.Gum4Ex] = false;
                                                 break;
@@ -11249,7 +11250,7 @@ namespace Moswar
                                         {
                                             string Info = (string)frmMain.GetJavaVar(MainWB, "m.items['" + Regex.Match(H.Parent.InnerHtml, "(?<=data-id=(\")?)([0-9])+").Value + "'].info.content");
                                             Info = Regex.Match(Info, "(?<=[+])([0-9])+(?=%)").Value;
-                                            if ((Settings.PreferShokoZefir ? 25 : Settings.PreferZefir ? 20 : 15) >= Convert.ToInt32(Info))
+                                            if ((Settings.PreferPryanik ? 30 : Settings.PreferShokoZefir ? 25 : Settings.PreferZefir ? 20 : 15) >= Convert.ToInt32(Info))
                                             {
                                                 clsDoping.NeedToBuy[(int)clsDoping.DopingType.Gum5Ex] = false;
                                                 break;
@@ -11369,7 +11370,7 @@ namespace Moswar
                                         {
                                             string Info = (string)frmMain.GetJavaVar(MainWB, "m.items['" + Regex.Match(H.Parent.InnerHtml, "(?<=data-id=(\")?)([0-9])+").Value + "'].info.content");
                                             Info = Regex.Match(Info, "(?<=[+])([0-9])+(?=%)").Value;
-                                            if ((Settings.PreferShokoZefir ? 25 : Settings.PreferZefir ? 20 : 15) >= Convert.ToInt32(Info))
+                                            if ((Settings.PreferPryanik ? 30 : Settings.PreferShokoZefir ? 25 : Settings.PreferZefir ? 20 : 15) >= Convert.ToInt32(Info))
                                             {
                                                 clsDoping.NeedToBuy[(int)clsDoping.DopingType.Gum6Ex] = false;
                                                 break;
@@ -12651,7 +12652,7 @@ namespace Moswar
                                                 {
                                                     Info = frmMain.GetJavaVar(WB, "m.items['" + Regex.Match(H.Parent.InnerHtml, "(?<=data-id=(\")?)([0-9])+").Value + "'].info.content");
                                                     Info = Regex.Match((string)Info, "(?<=[+])([0-9])+(?=%)").Value;
-                                                    if ((Settings.PreferShokoZefir ? 25 : Settings.PreferZefir ? 20 : 15) >= Convert.ToInt32(Info)) HtmlEl = H; //Зефирки в багаже сами устанавливаются так, что сверху самые сильные!
+                                                    if ((Settings.PreferPryanik ? 30 : Settings.PreferShokoZefir ? 25 : Settings.PreferZefir ? 20 : 15) >= Convert.ToInt32(Info)) HtmlEl = H; //Зефирки в багаже сами устанавливаются так, что сверху самые сильные!
                                                 }                                                
                                                 break;
                                             #endregion

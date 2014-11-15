@@ -453,6 +453,7 @@
             this.label57 = new System.Windows.Forms.Label();
             this.grpDopingContainer = new System.Windows.Forms.GroupBox();
             this.grpDopingSettings = new System.Windows.Forms.GroupBox();
+            this.chkDopingPryanik = new System.Windows.Forms.CheckBox();
             this.btnShowDoping = new System.Windows.Forms.Button();
             this.chkDopingZefir = new System.Windows.Forms.CheckBox();
             this.chkDopingNoCandyNoProblem = new System.Windows.Forms.CheckBox();
@@ -4985,6 +4986,7 @@
             // 
             // grpDopingSettings
             // 
+            this.grpDopingSettings.Controls.Add(this.chkDopingPryanik);
             this.grpDopingSettings.Controls.Add(this.btnShowDoping);
             this.grpDopingSettings.Controls.Add(this.chkDopingZefir);
             this.grpDopingSettings.Controls.Add(this.chkDopingNoCandyNoProblem);
@@ -4995,6 +4997,12 @@
             resources.ApplyResources(this.grpDopingSettings, "grpDopingSettings");
             this.grpDopingSettings.Name = "grpDopingSettings";
             this.grpDopingSettings.TabStop = false;
+            // 
+            // chkDopingPryanik
+            // 
+            resources.ApplyResources(this.chkDopingPryanik, "chkDopingPryanik");
+            this.chkDopingPryanik.Name = "chkDopingPryanik";
+            this.chkDopingPryanik.UseVisualStyleBackColor = true;
             // 
             // btnShowDoping
             // 
@@ -8793,7 +8801,8 @@
         private System.Windows.Forms.Label label178;
         private System.Windows.Forms.TextBox txtBotName;
         private System.Windows.Forms.CheckBox chkCheckForUpdate;
-        private System.Windows.Forms.Button btnOpenURL;      
+        private System.Windows.Forms.Button btnOpenURL;
+        private System.Windows.Forms.CheckBox chkDopingPryanik;      
     }
 }
 

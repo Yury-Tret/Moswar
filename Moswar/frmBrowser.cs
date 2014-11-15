@@ -661,6 +661,7 @@ namespace Moswar
 
             Bot.Settings.PreferZefir = chkDopingZefir.Checked;
             Bot.Settings.PreferShokoZefir = chkDopingShokoZefir.Checked;
+            Bot.Settings.PreferPryanik = chkDopingPryanik.Checked;
             Bot.Settings.AllowCoctailAdv = chkDopingAllowCoctailAdv.Checked;
             Bot.Settings.AllowPartBilet = chkDopingAllowPartBilet.Checked;
             Bot.Settings.NoSauceNoProblem = chkDopingNoSauceNoProblem.Checked;
@@ -1052,6 +1053,7 @@ namespace Moswar
 
                 chkDopingZefir.Checked = Bot.Settings.PreferZefir;
                 chkDopingShokoZefir.Checked = Bot.Settings.PreferShokoZefir;
+                chkDopingPryanik.Checked = Bot.Settings.PreferPryanik;
                 chkDopingAllowCoctailAdv.Checked = Bot.Settings.AllowCoctailAdv;
                 chkDopingAllowPartBilet.Checked = Bot.Settings.AllowPartBilet;
                 chkDopingNoSauceNoProblem.Checked = Bot.Settings.NoSauceNoProblem;
