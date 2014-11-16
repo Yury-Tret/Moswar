@@ -755,6 +755,7 @@
             this.btnLoadSet = new System.Windows.Forms.Button();
             this.TrayIcon = new System.Windows.Forms.NotifyIcon(this.components);
             this.btnOpenURL = new System.Windows.Forms.Button();
+            this.btnRunJSCmd = new System.Windows.Forms.Button();
             this.tabControl.SuspendLayout();
             this.tabMainBrowser.SuspendLayout();
             this.AutoApdateMessage.SuspendLayout();
@@ -7765,10 +7766,18 @@
             this.btnOpenURL.UseVisualStyleBackColor = true;
             this.btnOpenURL.Click += new System.EventHandler(this.btnOpenURL_Click);
             // 
+            // btnRunJSCmd
+            // 
+            resources.ApplyResources(this.btnRunJSCmd, "btnRunJSCmd");
+            this.btnRunJSCmd.Name = "btnRunJSCmd";
+            this.btnRunJSCmd.UseVisualStyleBackColor = true;
+            this.btnRunJSCmd.Click += new System.EventHandler(this.btnRunJSCmd_Click);
+            // 
             // frmMain
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            this.Controls.Add(this.btnRunJSCmd);
             this.Controls.Add(this.btnOpenURL);
             this.Controls.Add(this.cboxWearSet);
             this.Controls.Add(this.btnSaveSettings);
@@ -8802,7 +8811,8 @@
         private System.Windows.Forms.TextBox txtBotName;
         private System.Windows.Forms.CheckBox chkCheckForUpdate;
         private System.Windows.Forms.Button btnOpenURL;
-        private System.Windows.Forms.CheckBox chkDopingPryanik;      
+        private System.Windows.Forms.CheckBox chkDopingPryanik;
+        private System.Windows.Forms.Button btnRunJSCmd;      
     }
 }
 

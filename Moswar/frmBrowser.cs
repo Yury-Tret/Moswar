@@ -3438,6 +3438,13 @@ namespace Moswar
             if (InputBox.Show("Переход на заданный URL", "Введите URL:", ref URL) == DialogResult.OK && URL != "")
                 ctrMainBrowser.Navigate(URL);
         }
+
+        private void btnRunJSCmd_Click(object sender, EventArgs e)
+        {
+            string cmd = "";
+            if (InputBox.Show("Выполнение команды JavaScript", "Введите команду:", ref cmd) == DialogResult.OK && cmd != "")
+                InvokeScript(Bot.MainWB, "eval", new object[] { cmd });
+        }
     }
 
     class InputBox
