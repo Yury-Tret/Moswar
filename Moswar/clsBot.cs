@@ -62,6 +62,7 @@ namespace Moswar
         //Используется для создания и чтения структур из XML файлов.
         private static XmlRootAttribute XmlRoot = new XmlRootAttribute("Settings:");
         private static XmlSerializer XmlSettingsSerializer = new XmlSerializer(typeof(stcSettings), XmlRoot);
+        private static XmlSerializer XmlPrivSettingsSerializer = new XmlSerializer(typeof(stcPrivSettings), XmlRoot);
         private static XmlSerializer XmlExpertSerializer = new XmlSerializer(typeof(stcExpert), XmlRoot);
 
         private object LockWriteLog = new object();
@@ -146,6 +147,7 @@ namespace Moswar
         public stcGrpFight GrpFight; // 0-> Выкл., 1-> PVP, 2-> NPC, 3-> Все.
         public clsTaskManager.stcTaskManagerEx GrpFightTaskManager;
         public stcPlayerEx Me;
+        public stcPrivSettings PrivSettings;
         public stcSettings Settings;
         public stcExpert Expert;
         public stcBug Bug;
@@ -589,13 +591,22 @@ namespace Moswar
             public string Info;
             public bool Logging;
         }
-        
+
         [Serializable()]
-        public struct stcSettings
+        public struct stcPrivSettings
         {
             public string BotName;
             public string Email;
             public string Password;
+
+            public string Proxy;
+            public string ProxyUserName;
+            public string ProxyPassword;
+        }
+        
+        [Serializable()]
+        public struct stcSettings
+        {
             public decimal HealMe50;
             public decimal HealMe100;
             public decimal AmountHealMe;
@@ -858,9 +869,6 @@ namespace Moswar
             public decimal MinFruitIgnoreAmount;
             public bool SellBadCoctail;
  
-            public string Proxy;
-            public string ProxyUserName;
-            public string ProxyPassword;
             public bool UseProxy;
 
             public decimal MaxIEVersion;
@@ -4353,12 +4361,12 @@ namespace Moswar
             IsWBComplete(WB);
             try
             {
-                if (Settings.Email == "" || Settings.Password == "")                   
+                if (PrivSettings.Email == "" || PrivSettings.Password == "")                   
                 {
                     if (frmMain.GetDocumentURL(WB).EndsWith(Settings.ServerURL + "/")) 
                     {
                         UpdateMessageInfo(" Вход в игру невозможен, ввиду отсутствия данных о Логин-Пароле!", true);
-                        while (Settings.Email == "" || Settings.Password == "")
+                        while (PrivSettings.Email == "" || PrivSettings.Password == "")
                         {
                             Wait(45000, 60000, "! Явка провалена, без логина не пускают, сижу курю бамбук до :");
                         }
@@ -4371,8 +4379,8 @@ namespace Moswar
                     if (frmMain.GetDocumentURL(WB).EndsWith(Settings.ServerURL + "/"))
                     {
                         UpdateStatus("@ " + DateTime.Now + " Бл@, снова фэйс контроль? - Вот мой логин, вот мой пароль, я войду?");
-                        frmMain.GetDocument(WB).GetElementById("login-email").InnerText = Settings.Email;
-                        frmMain.GetDocument(WB).GetElementById("login-password").InnerText = Settings.Password;
+                        frmMain.GetDocument(WB).GetElementById("login-email").InnerText = PrivSettings.Email;
+                        frmMain.GetDocument(WB).GetElementById("login-password").InnerText = PrivSettings.Password;
                         frmMain.InvokeMember(WB, frmMain.GetDocument(WB).Forms[0], "submit");
                         IsWBComplete(WB, 3000, 5000);
                         return frmMain.GetDocumentURL(WB).EndsWith("/player/");
@@ -13262,6 +13270,11 @@ namespace Moswar
             Stream FS = new FileStream("BotSettings.xml", FileMode.Create);
             XmlSettingsSerializer.Serialize(FS, Settings);
             FS.Close();
+
+            FS = new FileStream("PrivSettings.xml", FileMode.Create);
+            XmlPrivSettingsSerializer.Serialize(FS, PrivSettings);
+            FS.Close();
+
             UpdateStatus("- " + DateTime.Now + " Настройки бота удачно сохранены.");
         }                    
         public void LoadSettings()
@@ -13270,6 +13283,10 @@ namespace Moswar
 
             Stream FS = new FileStream("BotSettings.xml", FileMode.Open);
             Settings = (stcSettings)XmlSettingsSerializer.Deserialize(FS);
+            FS.Close();
+
+            FS = new FileStream("PrivSettings.xml", FileMode.Open);
+            PrivSettings = (stcPrivSettings)XmlPrivSettingsSerializer.Deserialize(FS);
             FS.Close();
 
             #region Инициализация времён

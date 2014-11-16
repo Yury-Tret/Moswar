@@ -172,8 +172,8 @@ namespace Moswar
         #region IAuthenticate Members
         public int Authenticate(ref IntPtr phwnd, ref IntPtr pszUsername, ref IntPtr pszPassword)
         {
-            IntPtr sUser = Marshal.StringToCoTaskMemAuto(Bot.Settings.ProxyUserName);
-            IntPtr sPassword = Marshal.StringToCoTaskMemAuto(Bot.Settings.ProxyPassword);
+            IntPtr sUser = Marshal.StringToCoTaskMemAuto(Bot.PrivSettings.ProxyUserName);
+            IntPtr sPassword = Marshal.StringToCoTaskMemAuto(Bot.PrivSettings.ProxyPassword);
 
             pszUsername = sUser;
             pszPassword = sPassword;
@@ -359,9 +359,9 @@ namespace Moswar
         #endregion
         private void UpdateSettings()
         {
-            Bot.Settings.BotName = txtBotName.Text;
-            Bot.Settings.Email = txtEmail.Text;
-            Bot.Settings.Password = txtPassword.Text;
+            Bot.PrivSettings.BotName = txtBotName.Text;
+            Bot.PrivSettings.Email = txtEmail.Text;
+            Bot.PrivSettings.Password = txtPassword.Text;
 
             Bot.Settings.HealMe50 = numHealMe50.Value;
             Bot.Settings.HealMe100 = numHealMe100.Value;
@@ -712,11 +712,11 @@ namespace Moswar
             Bot.Settings.MinFruitIgnoreAmount = numMinFruitIgnoreAmount.Value;
             Bot.Settings.SellBadCoctail = chkSellBadCoctail.Checked;
 
-            Bot.Settings.Proxy = mtxtProxy.Text;
-            Bot.Settings.ProxyUserName = txtProxyUserName.Text;
-            Bot.Settings.ProxyPassword = txtProxyPassword.Text;
+            Bot.PrivSettings.Proxy = mtxtProxy.Text;
+            Bot.PrivSettings.ProxyUserName = txtProxyUserName.Text;
+            Bot.PrivSettings.ProxyPassword = txtProxyPassword.Text;
             Bot.Settings.UseProxy = chkProxy.Checked;
-            Bot.WBEx.SetProxyServer(Bot.Settings.UseProxy ? Bot.Settings.Proxy : null);
+            Bot.WBEx.SetProxyServer(Bot.Settings.UseProxy ? Bot.PrivSettings.Proxy : null);
 
             if (Bot.Settings.MaxIEVersion != numMaxIEVersion.Value) clsWBEx.EmulateIEMode(ctrMainBrowser, (int)numMaxIEVersion.Value);
             Bot.Settings.MaxIEVersion = numMaxIEVersion.Value;
@@ -733,9 +733,9 @@ namespace Moswar
             {
                 Bot.LoadSettings();
 
-                txtBotName.Text = Bot.Settings.BotName;
-                txtEmail.Text = Bot.Settings.Email;
-                txtPassword.Text = Bot.Settings.Password;
+                txtBotName.Text = Bot.PrivSettings.BotName;
+                txtEmail.Text = Bot.PrivSettings.Email;
+                txtPassword.Text = Bot.PrivSettings.Password;
 
                 numHealMe50.Value = Bot.Settings.HealMe50;
                 numHealMe100.Value = Bot.Settings.HealMe100;
@@ -1110,11 +1110,11 @@ namespace Moswar
                 numMinFruitIgnoreAmount.Value = Bot.Settings.MinFruitIgnoreAmount == 0 ? 3500 : Bot.Settings.MinFruitIgnoreAmount;
                 chkSellBadCoctail.Checked = Bot.Settings.SellBadCoctail;
 
-                mtxtProxy.Text = Bot.Settings.Proxy;
-                txtProxyUserName.Text = Bot.Settings.ProxyUserName;
-                txtProxyPassword.Text = Bot.Settings.ProxyPassword;
+                mtxtProxy.Text = Bot.PrivSettings.Proxy;
+                txtProxyUserName.Text = Bot.PrivSettings.ProxyUserName;
+                txtProxyPassword.Text = Bot.PrivSettings.ProxyPassword;
                 chkProxy.Checked = Bot.Settings.UseProxy;
-                Bot.WBEx.SetProxyServer(Bot.Settings.UseProxy ? Bot.Settings.Proxy : null);
+                Bot.WBEx.SetProxyServer(Bot.Settings.UseProxy ? Bot.PrivSettings.Proxy : null);
 
                 numMaxIEVersion.Value = Bot.Settings.MaxIEVersion < 7 ? 11 : Bot.Settings.MaxIEVersion;
                 numGagIE.Value = Bot.Settings.GagIE < 30 ? 60 : Bot.Settings.GagIE; 
@@ -1297,7 +1297,7 @@ namespace Moswar
             LoadExpertSettings();
             LoadSettings();
 
-            Text = Bot.Settings.BotName;
+            Text = Bot.PrivSettings.BotName;
             TrayIcon.Text = Text;
 
             #region Дополнительный твикинг ИЕ через реестр
@@ -1479,7 +1479,7 @@ namespace Moswar
             {
                 HttpWebRequest httpRequest = (HttpWebRequest)WebRequest.Create("http://moswarbro.moy.su/version.txt");
                 WebProxy webProxy = !Bot.Settings.UseProxy ? null :
-                    new WebProxy(Regex.Replace(Bot.Settings.Proxy, "( |^0|(?<=[.])0{1,2})|(?<=:)0{1,4}", ""), true) { UseDefaultCredentials = false, Credentials = new NetworkCredential(Bot.Settings.ProxyUserName, Bot.Settings.ProxyPassword) };
+                    new WebProxy(Regex.Replace(Bot.PrivSettings.Proxy, "( |^0|(?<=[.])0{1,2})|(?<=:)0{1,4}", ""), true) { UseDefaultCredentials = false, Credentials = new NetworkCredential(Bot.PrivSettings.ProxyUserName, Bot.PrivSettings.ProxyPassword) };
                 httpRequest.Proxy = webProxy;
                 httpRequest.Timeout = 30000;     // 30 secs
                 httpRequest.KeepAlive = false;
