@@ -3057,11 +3057,23 @@ namespace Moswar
             #region Сбор информации о сундуках и ключах в багажнике
             foreach (string Info in ArrInfo)
             {
-                match = Regex.Match(Info, "(?<OldBox>inventory-box(_b)?([0-9])+-btn)|(?<NewBox>inventory-new_box([0-9])+-btn)|(?<FruitBox>inventory-box_fruit([a-z_])*-btn)|(?<CampBoss>inventory-campboss_superbox_([0-9])+-btn)|(?<MetroBox>inventory-rat_box_(?<RatSize>([0-9])+)-btn)|(?<EpicBox>inventory-epic_rat_box_([0-9])+-btn)|(?<LeninBox>inventory-box_lenin_(?<LeninSize>([0-9])+)-btn)|(?<SovetBox>inventory-box_sovet_fight_(?<SovetSize>(s|m|l))-btn)|(?<RaenBox>inventory-box_sovet_fight_r([0-9])+-btn)|((?<MetroKey>box_metro_)?key((?<KeyType>[0-9])|(?<SovetKey>_sovet_fight))?.png.+data-id=\"?(?<ID>([0-9])+)\"?)");
-                //                match = Regex.Match(Info, "(?<OldBox>inventory-box(_b)?([0-9])+-btn)|(?<NewBox>inventory-new_box([0-9])+-btn)|(?<FruitBox>inventory-box_fruit([a-z_])*-btn)|(?<CampBoss>inventory-campboss_superbox_([0-9])+-btn)|(?<MetroBox>inventory-rat_box_(?<RatSize>([0-9])+)-btn)|(?<EpicBox>inventory-epic_rat_box_([0-9])+-btn)|(?<LeninBox>inventory-box_lenin_(?<LeninSize>([0-9])+)-btn)|((?<MetroKey>box_metro_)?key(?<KeyType>[0-9])?.png.+data-id=\"?(?<ID>([0-9])+)\"?)");
+                match = Regex.Match(Info,
+                    "(?<SaperBook>inventory-saper_book_[a-z]-btn)|" +
+                    "(?<MFBook>inventory-mf_book_[a-z]-btn)|" +
+                    "(?<OldBox>inventory-box(_b)?([0-9])+-btn)|" +
+                    "(?<NewBox>inventory-new_box([0-9])+-btn)|" +
+                    "(?<FruitBox>inventory-box_fruit([a-z_])*-btn)|" +
+                    "(?<CampBoss>inventory-campboss_superbox_([0-9])+-btn)|" +
+                    "(?<MetroBox>inventory-rat_box_(?<RatSize>([0-9])+)-btn)|" +
+                    "(?<EpicBox>inventory-epic_rat_box_([0-9])+-btn)|" +
+                    "(?<LeninBox>inventory-box_lenin_(?<LeninSize>([0-9])+)-btn)|" +
+                    "(?<SovetBox>inventory-box_sovet_fight_(?<SovetSize>(s|m|l))-btn)|" +
+                    "(?<RaenBox>inventory-box_sovet_fight_r([0-9])+-btn)|" +
+                    "((?<MetroKey>box_metro_)?key((?<KeyType>[0-9])|" +
+                    "(?<SovetKey>_sovet_fight))?.png.+data-id=\"?(?<ID>([0-9])+)\"?)");
 
                 int Type = -1;
-                if (match.Groups["FruitBox"].Success || match.Groups["CampBoss"].Success || match.Groups["RaenBox"].Success) Type = 0;
+                if (match.Groups["SaperBook"].Success || match.Groups["MFBook"].Success || match.Groups["FruitBox"].Success || match.Groups["CampBoss"].Success || match.Groups["RaenBox"].Success) Type = 0;
                 if (match.Groups["OldBox"].Success || match.Groups["KeyType"].Value == "1") Type = 1;
                 if (match.Groups["NewBox"].Success || match.Groups["KeyType"].Value == "2") Type = 2;
                 if (match.Groups["LeninBox"].Success || match.Groups["KeyType"].Value == "3") Type = 3;
