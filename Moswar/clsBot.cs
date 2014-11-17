@@ -9539,6 +9539,8 @@ namespace Moswar
                             HtmlEl = frmMain.GetDocument(MainWB).GetElementById("direction-" + RidePlace).GetElementsByTagName("BUTTON")[0]; //Кнопка "поездка"
                             if (HtmlEl.GetAttribute("classname") == "button ride-button") //Можно поехать? (Если нет, то уже была произведена поездка!)
                             {
+                                string RideName = frmMain.GetDocument(MainWB).GetElementById("direction-" + RidePlace).GetElementsByTagName("h3")[0].InnerText;
+                                UpdateStatus("@ " + DateTime.Now + " Отправляюсь в поездку №" + RidePlace + ": " + RideName);
                                 frmMain.InvokeMember(MainWB, HtmlEl, "click");
                                 IsWBComplete(MainWB, 500, 1000);
                                 #region Закончилось горючее, и всё ешё нужно покататься?
