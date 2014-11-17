@@ -19,6 +19,7 @@ namespace Moswar
     [System.Runtime.InteropServices.ComVisibleAttribute(true)]
     public class clsBot
     {
+        #region Различные определения
         [DllImport("wininet.dll", SetLastError = true)]
         static extern bool InternetGetCookieEx(string pchURL, string pchCookieName, StringBuilder pchCookieData, ref uint pcchCookieData, int dwFlags, IntPtr lpReserved);
         const int INTERNET_COOKIE_HTTPONLY = 0x00002000;         
@@ -499,6 +500,7 @@ namespace Moswar
             public stcMafia Mafia;
             public bool Waiting;
         }
+
         public struct stcMafia
         {
             public DateTime LastCheckDT;
@@ -591,7 +593,10 @@ namespace Moswar
             public string Info;
             public bool Logging;
         }
+        #endregion
 
+        #region Настройки бота
+        #region Приватные настройки
         [Serializable()]
         public struct stcPrivSettings
         {
@@ -603,7 +608,9 @@ namespace Moswar
             public string ProxyUserName;
             public string ProxyPassword;
         }
-        
+        #endregion
+
+        #region Стандартные настройки
         [Serializable()]
         public struct stcSettings
         {
@@ -874,8 +881,9 @@ namespace Moswar
             public decimal MaxIEVersion;
             public decimal GagIE;
         }
-        
-        #region Настройки эксперт
+        #endregion
+
+        #region Экспертные настройки
         [Serializable()]
         public struct stcExpert
         {
@@ -906,7 +914,9 @@ namespace Moswar
             public bool BuyMoreThenOneGranade;
         } 
         #endregion
-        #region Конструктор
+        #endregion
+
+        #region Конструктор класса
         public clsBot()
         {
             Bug.Logging = true; //Логгирование ошибок.
@@ -4300,6 +4310,7 @@ namespace Moswar
             return sArrRet;
         }
         #endregion
+
         #region Main Functions
         public void SetAjaxTrap(WebBrowser WB, bool SetTrap = true)
         {         
@@ -7625,8 +7636,13 @@ namespace Moswar
                         }
                         #endregion
 
-                        //Прибежал слишком рано, но если не дождусь пролечу следующую возможность
-                        if (TimeToStopAtack(NextTimeout.Atack, StopTimeoutType.RatHunting)) Wait(Me.RatHunting.NextDT - DateTime.Now.AddSeconds(20 + (Settings.UseWearSet ? 25 : 0)), " Вот блин, обед у них! А по моим соломенным ..., ладно, прогуляюсь до: ", TimeOutAction.NoTask); //20 секунд резервируем под поедание допингов и 25 секунд на переодевание.
+                        // Прибежал слишком рано, но если не дождусь, пролечу следующую возможность
+                        if (TimeToStopAtack(NextTimeout.Atack, StopTimeoutType.RatHunting))
+                        {
+                            // 20 секунд резервируем под поедание допингов и 25 секунд на переодевание
+                            Wait(Me.RatHunting.NextDT - DateTime.Now.AddSeconds(20 + (Settings.UseWearSet ? 25 : 0)),
+                                " Вот блин, обед у них! А по моим соломенным ..., ладно, прогуляюсь до: ", TimeOutAction.NoTask);
+                        }
                         #endregion
                     }
                     if (Me.RatHunting.NextDT <= DateTime.Now.AddSeconds(20 + (Settings.UseWearSet ? 25 : 0)) && !Me.RatHunting.Stop) //20 секунд резервируем под поедание допингов и 25 секунд на переодевание.
@@ -13602,7 +13618,8 @@ namespace Moswar
             }             
         }
         #endregion
-         
+
+        #region Тестирование
         public void Test()
         {
             //http://www.moswar.ru/phone/call/#fight-phone
@@ -13778,6 +13795,7 @@ namespace Moswar
              */
 
         }
+        #endregion
     }
 }
         
