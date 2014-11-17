@@ -1407,6 +1407,8 @@ namespace Moswar
                 Obj[0] = frmMain.GetJavaVar(WB, "moswar.items['" + match.Value + "'].btn['0'].innerText");
                 if (((string) Obj[0]).Contains("уже")) return true; //Уже использовано, незачем продолжать.; //Выпить / Съесть
 
+                string Name = (string)frmMain.GetJavaVar(WB, "moswar.items['" + match.Value + "'].info.title");
+                UpdateStatus("@ " + DateTime.Now + " Кушаю " + Name);
                 Obj[0] = frmMain.GetJavaVar(WB, "moswar.items['" + match.Value + "'].count['0'].innerText"); //Запоминаем количество до поедания                
                 DateTime MonitorDT = DateTime.Now.AddSeconds((double)Settings.GagIE);
                 frmMain.InvokeMember(WB, HtmlEl, "click");  // HtmlEl.InvokeMember("click");              
