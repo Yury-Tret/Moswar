@@ -13508,7 +13508,8 @@ namespace Moswar
                 if (Me.ClanWarInfo.NextDT <= GetServerTime(MainWB)) ClanWar(ClanWarAction.Check);                
                 if (!Me.PigProtection.Stop) PigProtection(PigProtectionAction.Check);
                 if (!Me.Safe.Stop) Safe(SafeAction.Check);
-                if (Me.CarRide.Cars == null && Me.Player.Level >= 7) Automobile(AutomobileAction.Check);                
+                if (Me.CarRide.Cars == null && Me.Player.Level >= 7) Automobile(AutomobileAction.Check);
+                DumpInventory();
                 do
                 {
                     while (IsTimeout(MainWB, true, false) || Me.Police.Stop || TimeToStopAtack(NextTimeout.Atack) || (Ignore.PVPAttack && (Me.OilHunting.Stop || !Settings.GoOil) && (Me.NPCHunting.Stop || !Settings.AttackNPC))) //Таймаут между драками?
@@ -13620,6 +13621,7 @@ namespace Moswar
                         #endregion
                        
                         if (Settings.OpenPrizeBox) CheckForPrizeBox(); //Проверка на наличие ключей и сундуков.
+                        DumpInventory();
                         if (CheckHealthEx(99, Settings.HealMe100, Settings.HealPet50, Settings.HealPet100) ? (!Me.Trauma.Stop && !IsHPLow(MainWB, 99, false)) : false) //Пить сироп, если жизней менее 99% или микстуру по расписанию!
                         {
                             if (Settings.UseWearSet) WearSet(MainWB, ArrWearSet, 0); //Одеваем стандартный сет, на всякий случай!
