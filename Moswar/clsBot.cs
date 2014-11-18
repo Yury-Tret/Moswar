@@ -5183,7 +5183,7 @@ namespace Moswar
                         iM -= Convert.ToInt32(sWin.Replace(",", ""));
                     }
 
-                    UpdateStatus("! " + DateTime.Now + " В битве '" + Me.Player.Name + "[" + Me.Player.Level + "] vs " + PI.Name + "[" + PI.Level + "]', " + (match.Success ? "тупо проебал: " : "глупейшая ничья!"), iM);
+                    UpdateStatus("! " + DateTime.Now + " В битве '" + Me.Player.Name + "[" + Me.Player.Level + "] vs " + PI.Name + "[" + PI.Level + "]', " + (match.Success ? "тупо проиграл: " : "глупейшая ничья!"), iM);
                     if (Settings.UseVictims && PI.URL != null) Contact(WB, ContactAction.DeletePlayer, ContactType.Victim, null, new stcPlayerInfo[] { PI }); //URL равен null только у НПЦ!
                     bRet = false;
                 }
