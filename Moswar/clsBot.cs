@@ -13,6 +13,7 @@ using System.Net;
 using System.Text.RegularExpressions;
 using System.Windows.Input;
 using System.Runtime.InteropServices;
+using System.Reflection;
 
 namespace Moswar
 {
@@ -3138,7 +3139,7 @@ namespace Moswar
             #region Открытие сундучков
             for (int i = 0; i < Box.Count<string[]>(); i++)
             {
-                if (Box[i] != null && (i == 0 || Key[i] != null)) //Есть сундуки и ключи (при i=0 не нужны) этого вида?
+                if (Box[i] != null && (i == 0 || i == 1 || Key[i] != null)) //Есть сундуки и ключи этого вида? (при i=0 ключи не нужны, при i=1 купим ключи при открытии)
                 {  
                     int TempKey;
                     int KeyCount;
@@ -3148,6 +3149,9 @@ namespace Moswar
                         case 0: //Ключи не нужны
                             KeyCount = Box[i].Count<string>(); 
                             break;
+                        case 1: //Купим ключи при открытии
+                            KeyCount = Box[i].Count<string>();
+                            break;
                         case 2: //эти ключи не складываются
                             KeyCount = Key[i].Count<string>();
                             break;
@@ -3155,7 +3159,7 @@ namespace Moswar
                             KeyCount = Convert.ToInt32(((string)frmMain.GetJavaVar(MainWB, "m.items['" + Key[i][0] + "'].count[0].innerText")).Replace("#", ""));
                             break;
                     }
-                    if (i != 0)
+                    if (i != 0 && i != 1)
                     {
                         match = Regex.Match((string)frmMain.GetJavaVar(MainWB, "m.items['" + Key[i][0] + "'].info.content"), "(?<Count>([0-9])+) шт. до (?<Date>([0-9 .:])+)");
                         TempKey = match.Success ? (Convert.ToDateTime(match.Groups["Date"].Value, CultureInfo.CreateSpecificCulture("ru-RU")) - GetServerTime(MainWB) < new TimeSpan(2, 0, 0) ? Convert.ToInt32(match.Groups["Count"].Value) : 0) : 0;
@@ -3172,6 +3176,12 @@ namespace Moswar
                         {
                             frmMain.InvokeMember(MainWB, frmMain.GetDocument(MainWB).GetElementById(sBox), "click"); //Всё в порядке, вскрываем!
                             IsWBComplete(MainWB, 2000, 3500);
+                            if (i == 1)
+                            {
+                                object Obj = frmMain.GetJavaVar(MainWB, "$(\".help .button span[onclick]:contains('Купи и открой')\")");
+                                Obj.GetType().InvokeMember("click", BindingFlags.InvokeMethod, null, Obj, null);
+                                IsWBComplete(MainWB, 2000, 3500);
+                            }
                             TempKey--; //Сначала, наверняка был потрачен ключик с таймером
                             KeyCount--; //Уменьшаем общее количество ключей
                         }
