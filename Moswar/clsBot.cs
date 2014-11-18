@@ -7901,6 +7901,8 @@ namespace Moswar
                                                 if (RatDig) Me.Rat.Val++; //Если последняя крыса которая меня побила была более часа назад, скинуть счётчик крыс.
                                                 else Me.RatHunting.Defeats += Settings.SearchRatUseOhara ? -Me.RatHunting.Defeats : 1; //Останавливаем побеги в метрополитен, если только не просили усердно наезжать Охарой.                                                                     
                                             }
+                                            else if (!RatDig)
+                                                Me.RatHunting.Defeats = 0; // При переходе к следующему уровню крысопровода обнуляем счетчик поражений
                                         }
                                     }
                                     else //Убегаем от крысомахи 
@@ -8835,6 +8837,8 @@ namespace Moswar
                                                             if (Me.OilLeninHunting.Stop)
                                                                 UpdateStatus("# " + DateTime.Now + " НЕФТЕПРОВОД ОСТАНОВЛЕН на уровне " + Me.OilLeninHunting.Lvl + ": слишком много поражений");
                                                         }
+                                                        else
+                                                            Me.OilLeninHunting.Defeats = 0; // При переходе к следующему вентилю нефтепровода обнуляем счетчик поражений
                                                         if (!Me.OilLeninHunting.Stop) GoToPlace(MainWB, Place.Oil); //Продолжаем драки!
                                                     }
                                                     else Me.OilLeninHunting.NextDT = DateTime.Now.AddMinutes(15); //Сейчас нет денег на лечение и запасов нет ... попробуем через 15 минут
