@@ -593,6 +593,27 @@ namespace Moswar
             public string Info;
             public bool Logging;
         }
+
+        public struct stcInventoryItem : IComparable<stcInventoryItem>
+        {
+            public int Type;
+            public string Name;
+            public int TotalCount;
+            public int TempCount;
+
+            public stcInventoryItem(int Type, string Name, int TotalCount, int TempCount)
+            {
+                this.Type = Type;
+                this.Name = Name;
+                this.TotalCount = TotalCount;
+                this.TempCount = TempCount;
+            }
+
+            public int CompareTo(stcInventoryItem Other)
+            {
+                return Type.CompareTo(Other.Type);
+            }
+        }
         #endregion
 
         #region Настройки бота
@@ -4310,6 +4331,67 @@ namespace Moswar
                 sArrRet[i] = frmMain.GetJavaVar(WB, "$ArrClass[" + i + "]");
             }
             return sArrRet;
+        }
+
+        private void DumpInventory()
+        {
+            BugReport("DumpInventory");
+
+            if (!frmMain.GetDocumentURL(MainWB).EndsWith("/player/")) GoToPlace(MainWB, Place.Player);
+
+            List<stcInventoryItem> Items = new List<stcInventoryItem>();
+
+            // Анализируем предметы в инвентаре и различных слотах
+            foreach (HtmlElement Elem in frmMain.GetDocument(MainWB).GetElementById("content").GetElementsByTagName("img"))
+            {
+                string Tooltip = Elem.GetAttribute("tooltip");
+                string ItemID = Elem.GetAttribute("data-id");
+                string ItemType = Elem.GetAttribute("data-st");
+                if (Tooltip != "1" || ItemID == "" || ItemType == "" || Elem.Parent.GetAttribute("classname") != "padding")
+                    continue;
+
+                int Type = Convert.ToInt32(ItemType);
+                stcInventoryItem Item = Items.Find(It => It.Type == Type);
+                Items.Remove(Item);
+
+                Item.Type = Type;
+                Item.Name = (string)frmMain.GetJavaVar(MainWB, "m.items['" + ItemID + "'].info.title");
+                string Count = (string)frmMain.GetJavaVar(MainWB, "m.items['" + ItemID + "'].count['0'].innerText");
+                int TotalCount = (Count == null) ? 1 : Convert.ToInt32(Count.Replace("#", ""));
+                int TempCount = 0;
+
+                object Info = frmMain.GetJavaVar(MainWB, "m.items['" + ItemID + "'].info.content");
+                MatchCollection matches = Regex.Matches((string)Info, "((?<Count>([0-9])+) шт. до (?<Date>([0-9 .:])+))|Срок годности: (?<Date>([0-9 .:])+)"); //Когда все предметы пропадают в один день может быть без количества!
+                foreach (Match m in matches)
+                    TempCount += m.Groups["Count"].Success ? Convert.ToInt32(m.Groups["Count"].Value) : TotalCount;
+
+                Item.TotalCount += TotalCount;
+                Item.TempCount += TempCount;
+                Items.Add(Item);
+            }
+
+            // Добавляем ресурсы
+            GoToPlace(MainWB, Place.Berezka);
+            Me.Wallet = GetResources(MainWB, GetArrClassHtml(MainWB, "$(\"#content .borderdata [class]:visible\")", "outerHTML"), true);
+            Items.Add(new stcInventoryItem(-9, "Монеты", Me.Wallet.Money, 0));
+            Items.Add(new stcInventoryItem(-8, "Руда", Me.Wallet.Ore, 0));
+            Items.Add(new stcInventoryItem(-7, "Нефть", Me.Wallet.Oil, 0));
+            Items.Add(new stcInventoryItem(-6, "Мед", Me.Wallet.Honey, 0));
+            Items.Add(new stcInventoryItem(-5, "Медали петарены", Me.Wallet.PetGold, 0));
+            Items.Add(new stcInventoryItem(-4, "Державы", Me.Wallet.PowerGold, 0));
+
+            Items.Sort();
+
+            string FileName = "Inventory.txt";
+            string TmpFileName = FileName + ".tmp";
+            StreamWriter SW = new StreamWriter(TmpFileName);
+            foreach (stcInventoryItem Item in Items)
+                SW.WriteLine("Type=" + Item.Type + ", Name=\"" + Item.Name + "\", Total=" + Item.TotalCount + ", Perm=" + (Item.TotalCount - Item.TempCount) + ", Temp=" + Item.TempCount);
+            SW.Close();
+            if (File.Exists(FileName))
+                File.Replace(TmpFileName, FileName, null);
+            else
+                File.Move(TmpFileName, FileName);
         }
         #endregion
 
