@@ -12070,6 +12070,15 @@ namespace Moswar
                     if (ArrD[Index].Event == clsDoping.DopingEvent.Allways) ArrD[Index].StartDT = (ArrD[Index].StartDT < ServerDT || ArrD[Index].StartDT > ArrD[Index].StopDT) ? ArrD[Index].StopDT.AddMinutes(1) : ArrD[Index].StartDT;                                      
                     return true; //Проверка пройдена, все необходимые допинги имеются или будут докуплены
                 case DopingAction.Check:
+                    if (ArrD.Equals(Me.ArrUsualDoping))
+                        UpdateStatus("@ " + DateTime.Now + " Проверяю обычные допинги");
+                    else if (ArrD.Equals(Me.ArrRatDoping))
+                        UpdateStatus("@ " + DateTime.Now + " Проверяю допинги для крысопровода");
+                    else if (ArrD.Equals(Me.ArrOilLeninDoping))
+                        UpdateStatus("@ " + DateTime.Now + " Проверяю допинги для нефтепровода");
+                    else
+                        UpdateStatus("@ " + DateTime.Now + " Проверяю какие-то допинги");
+
                     #region Перед проверкой крысиных и ленинопроводных, проверяем обычные допинги.
                     if (ArrD.Equals(Me.ArrRatDoping) || ArrD.Equals(Me.ArrOilLeninDoping)) Dopings(ref Me.ArrUsualDoping, DopingAction.Check);
                     #endregion
