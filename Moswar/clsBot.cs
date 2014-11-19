@@ -10305,6 +10305,11 @@ namespace Moswar
 
             if (HtmlButton!= null && HtmlButton.GetAttribute("ClassName") == "button")
             {
+                // Определяем название покупаемого предмета
+                string Name = (string)frmMain.GetJavaVar(MainWB, "$(\"a[name='item_" + HtmlButton.Id  + "'] + :header\").text()");
+                if (Name != null)
+                    UpdateStatus("@ " + DateTime.Now + " Покупаю " + (Name != "" ? Name : "какую-то хрень..."));
+
                 //Для того, чтоб не палить контору покупаем не по одной бутылке, а по возможности...
                 if (Amount != 1) frmMain.GetDocument(WB).GetElementById("amount_" + HtmlButton.Id).InnerText = Amount.ToString(); //Устанавливаем желаемое значение            
                 frmMain.InvokeMember(WB, HtmlButton.All[0], "click"); //Класс после кнопки, click  на кнопке не срабатывает!                
