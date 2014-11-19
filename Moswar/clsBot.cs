@@ -3176,6 +3176,14 @@ namespace Moswar
                         }                        
                         if (KeyCount > 0)
                         {
+                            // Определяем название вскрываемого предмета
+                            string ItemID = frmMain.GetDocument(MainWB).GetElementById(sBox).GetAttribute("data-id");
+                            if (ItemID != "")
+                            {
+                                string Name = (string)frmMain.GetJavaVar(MainWB, "m.items['" + ItemID + "'].info.title");
+                                UpdateStatus("@ " + DateTime.Now + " Открываю " + (Name == null || Name == "" ? "какую-то хрень" : Name));
+                            }
+
                             frmMain.InvokeMember(MainWB, frmMain.GetDocument(MainWB).GetElementById(sBox), "click"); //Всё в порядке, вскрываем!
                             IsWBComplete(MainWB, 2000, 3500);
                             if (i == 1)
