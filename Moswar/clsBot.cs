@@ -601,13 +601,15 @@ namespace Moswar
             public string Name;
             public int TotalCount;
             public int TempCount;
+            public DateTime Expire;
 
-            public stcInventoryItem(int Type, string Name, int TotalCount, int TempCount)
+            public stcInventoryItem(int Type, string Name, int TotalCount, int TempCount = 0, DateTime Expire = new DateTime())
             {
                 this.Type = Type;
                 this.Name = Name;
                 this.TotalCount = TotalCount;
                 this.TempCount = TempCount;
+                this.Expire = Expire;
             }
 
             public int CompareTo(stcInventoryItem Other)
@@ -4369,26 +4371,34 @@ namespace Moswar
                 string Count = (string)frmMain.GetJavaVar(MainWB, "m.items['" + ItemID + "'].count['0'].innerText");
                 int TotalCount = (Count == null) ? 1 : Convert.ToInt32(Count.Replace("#", ""));
                 int TempCount = 0;
+                DateTime Expire = new DateTime();
 
                 object Info = frmMain.GetJavaVar(MainWB, "m.items['" + ItemID + "'].info.content");
-                MatchCollection matches = Regex.Matches((string)Info, "((?<Count>([0-9])+) шт. до (?<Date>([0-9 .:])+))|Срок годности: (?<Date>([0-9 .:])+)"); //Когда все предметы пропадают в один день может быть без количества!
+                // В некоторых случаях время идет перед датой и после парсинга время становится нулевым
+                MatchCollection matches = Regex.Matches((string)Info, "((?<Count>([0-9])+) шт. до (?<Date>([0-9 .:])+))|(Срок годности|Годен до): (?<Date>([0-9 .:])+)"); //Когда все предметы пропадают в один день может быть без количества!
                 foreach (Match m in matches)
+                {
+                    if (Expire == new DateTime())
+                        Expire = Convert.ToDateTime(m.Groups["Date"].Value, CultureInfo.CreateSpecificCulture("ru-RU"));
                     TempCount += m.Groups["Count"].Success ? Convert.ToInt32(m.Groups["Count"].Value) : TotalCount;
+                }
 
                 Item.TotalCount += TotalCount;
                 Item.TempCount += TempCount;
+                if (Expire != new DateTime() && (Item.Expire == new DateTime() || Expire < Item.Expire))
+                    Item.Expire = Expire;
                 Items.Add(Item);
             }
 
             // Добавляем ресурсы
             GoToPlace(MainWB, Place.Berezka);
             Me.Wallet = GetResources(MainWB, GetArrClassHtml(MainWB, "$(\"#content .borderdata [class]:visible\")", "outerHTML"), true);
-            Items.Add(new stcInventoryItem(-9, "Монеты", Me.Wallet.Money, 0));
-            Items.Add(new stcInventoryItem(-8, "Руда", Me.Wallet.Ore, 0));
-            Items.Add(new stcInventoryItem(-7, "Нефть", Me.Wallet.Oil, 0));
-            Items.Add(new stcInventoryItem(-6, "Мед", Me.Wallet.Honey, 0));
-            Items.Add(new stcInventoryItem(-5, "Медали петарены", Me.Wallet.PetGold, 0));
-            Items.Add(new stcInventoryItem(-4, "Державы", Me.Wallet.PowerGold, 0));
+            Items.Add(new stcInventoryItem(-9, "Монеты", Me.Wallet.Money));
+            Items.Add(new stcInventoryItem(-8, "Руда", Me.Wallet.Ore));
+            Items.Add(new stcInventoryItem(-7, "Нефть", Me.Wallet.Oil));
+            Items.Add(new stcInventoryItem(-6, "Мед", Me.Wallet.Honey));
+            Items.Add(new stcInventoryItem(-5, "Медали петарены", Me.Wallet.PetGold));
+            Items.Add(new stcInventoryItem(-4, "Державы", Me.Wallet.PowerGold));
 
             Items.Sort();
 
@@ -4396,7 +4406,7 @@ namespace Moswar
             string TmpFileName = FileName + ".tmp";
             StreamWriter SW = new StreamWriter(TmpFileName);
             foreach (stcInventoryItem Item in Items)
-                SW.WriteLine("Type=" + Item.Type + ", Name=\"" + Item.Name + "\", Total=" + Item.TotalCount + ", Perm=" + (Item.TotalCount - Item.TempCount) + ", Temp=" + Item.TempCount);
+                SW.WriteLine("Type=" + Item.Type + ", Name=\"" + Item.Name + "\", Total=" + Item.TotalCount + ", Perm=" + (Item.TotalCount - Item.TempCount) + ", Temp=" + Item.TempCount + ", Expire=\"" + Item.Expire + "\"");
             SW.Close();
             if (File.Exists(FileName))
                 File.Replace(TmpFileName, FileName, null);
