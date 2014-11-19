@@ -4357,7 +4357,7 @@ namespace Moswar
         {
             BugReport("DumpInventory");
 
-            if (!frmMain.GetDocumentURL(MainWB).EndsWith("/player/")) GoToPlace(MainWB, Place.Player);
+            GoToPlace(MainWB, Place.Player); // Даже если мы уже находимся на нужной странице, ее нужно обновить, чтобы убрать возможное окно с содержимым открытого ранее сундука
 
             List<stcInventoryItem> Items = new List<stcInventoryItem>();
 
