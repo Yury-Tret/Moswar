@@ -13174,6 +13174,36 @@
   <data name="&gt;&gt;crpAutoRestart.ZOrder" xml:space="preserve">
     <value>8</value>
   </data>
+  <data name="chkDopingNoCoctailNoProblem.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="chkDopingNoCoctailNoProblem.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="chkDopingNoCoctailNoProblem.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 177</value>
+  </data>
+  <data name="chkDopingNoCoctailNoProblem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>229, 18</value>
+  </data>
+  <data name="chkDopingNoCoctailNoProblem.TabIndex" type="System.Int32, mscorlib">
+    <value>73</value>
+  </data>
+  <data name="chkDopingNoCoctailNoProblem.Text" xml:space="preserve">
+    <value>Нет коктейлей - плевать, не проблема!</value>
+  </data>
+  <data name="&gt;&gt;chkDopingNoCoctailNoProblem.Name" xml:space="preserve">
+    <value>chkDopingNoCoctailNoProblem</value>
+  </data>
+  <data name="&gt;&gt;chkDopingNoCoctailNoProblem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkDopingNoCoctailNoProblem.Parent" xml:space="preserve">
+    <value>grpDopingSettings</value>
+  </data>
+  <data name="&gt;&gt;chkDopingNoCoctailNoProblem.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="chkDopingPryanik.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -13202,7 +13232,7 @@
     <value>grpDopingSettings</value>
   </data>
   <data name="&gt;&gt;chkDopingPryanik.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="btnShowDoping.Font" type="System.Drawing.Font, System.Drawing">
     <value>Candara, 9pt, style=Bold, Italic</value>
@@ -13232,7 +13262,7 @@
     <value>grpDopingSettings</value>
   </data>
   <data name="&gt;&gt;btnShowDoping.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="chkDopingZefir.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -13262,7 +13292,7 @@
     <value>grpDopingSettings</value>
   </data>
   <data name="&gt;&gt;chkDopingZefir.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="chkDopingNoCandyNoProblem.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -13292,7 +13322,7 @@
     <value>grpDopingSettings</value>
   </data>
   <data name="&gt;&gt;chkDopingNoCandyNoProblem.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="chkDopingNoSauceNoProblem.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -13322,7 +13352,7 @@
     <value>grpDopingSettings</value>
   </data>
   <data name="&gt;&gt;chkDopingNoSauceNoProblem.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="chkDopingAllowPartBilet.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -13352,7 +13382,7 @@
     <value>grpDopingSettings</value>
   </data>
   <data name="&gt;&gt;chkDopingAllowPartBilet.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>6</value>
   </data>
   <data name="chkDopingAllowCoctailAdv.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -13382,7 +13412,7 @@
     <value>grpDopingSettings</value>
   </data>
   <data name="&gt;&gt;chkDopingAllowCoctailAdv.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>7</value>
   </data>
   <data name="chkDopingShokoZefir.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -13412,7 +13442,7 @@
     <value>grpDopingSettings</value>
   </data>
   <data name="&gt;&gt;chkDopingShokoZefir.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>8</value>
   </data>
   <data name="grpDopingSettings.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
@@ -20964,7 +20994,7 @@
     <value>NoControl</value>
   </data>
   <data name="btnVictimHunting.Location" type="System.Drawing.Point, System.Drawing">
-    <value>5, 502</value>
+    <value>5, 503</value>
   </data>
   <data name="btnVictimHunting.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 3, 3, 3</value>
@@ -21162,7 +21192,7 @@
     <value>5</value>
   </data>
   <data name="grpPlayer2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>2, 264</value>
+    <value>2, 265</value>
   </data>
   <data name="grpPlayer2.Size" type="System.Drawing.Size, System.Drawing">
     <value>221, 233</value>
@@ -21624,7 +21654,7 @@
     <value>NoControl</value>
   </data>
   <data name="chkDebugMode.Location" type="System.Drawing.Point, System.Drawing">
-    <value>997, 591</value>
+    <value>995, 589</value>
   </data>
   <data name="chkDebugMode.Size" type="System.Drawing.Size, System.Drawing">
     <value>114, 18</value>

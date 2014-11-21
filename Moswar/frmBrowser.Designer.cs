@@ -756,6 +756,7 @@
             this.TrayIcon = new System.Windows.Forms.NotifyIcon(this.components);
             this.btnOpenURL = new System.Windows.Forms.Button();
             this.btnRunJSCmd = new System.Windows.Forms.Button();
+            this.chkDopingNoCoctailNoProblem = new System.Windows.Forms.CheckBox();
             this.tabControl.SuspendLayout();
             this.tabMainBrowser.SuspendLayout();
             this.AutoApdateMessage.SuspendLayout();
@@ -4987,6 +4988,7 @@
             // 
             // grpDopingSettings
             // 
+            this.grpDopingSettings.Controls.Add(this.chkDopingNoCoctailNoProblem);
             this.grpDopingSettings.Controls.Add(this.chkDopingPryanik);
             this.grpDopingSettings.Controls.Add(this.btnShowDoping);
             this.grpDopingSettings.Controls.Add(this.chkDopingZefir);
@@ -7773,6 +7775,12 @@
             this.btnRunJSCmd.UseVisualStyleBackColor = true;
             this.btnRunJSCmd.Click += new System.EventHandler(this.btnRunJSCmd_Click);
             // 
+            // chkDopingNoCoctailNoProblem
+            // 
+            resources.ApplyResources(this.chkDopingNoCoctailNoProblem, "chkDopingNoCoctailNoProblem");
+            this.chkDopingNoCoctailNoProblem.Name = "chkDopingNoCoctailNoProblem";
+            this.chkDopingNoCoctailNoProblem.UseVisualStyleBackColor = true;
+            // 
             // frmMain
             // 
             resources.ApplyResources(this, "$this");
@@ -8812,7 +8820,8 @@
         private System.Windows.Forms.CheckBox chkCheckForUpdate;
         private System.Windows.Forms.Button btnOpenURL;
         private System.Windows.Forms.CheckBox chkDopingPryanik;
-        private System.Windows.Forms.Button btnRunJSCmd;      
+        private System.Windows.Forms.Button btnRunJSCmd;
+        private System.Windows.Forms.CheckBox chkDopingNoCoctailNoProblem;      
     }
 }
 

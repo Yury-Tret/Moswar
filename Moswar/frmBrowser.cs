@@ -666,6 +666,7 @@ namespace Moswar
             Bot.Settings.AllowPartBilet = chkDopingAllowPartBilet.Checked;
             Bot.Settings.NoSauceNoProblem = chkDopingNoSauceNoProblem.Checked;
             Bot.Settings.NoCandyNoProblem = chkDopingNoCandyNoProblem.Checked;
+            Bot.Settings.NoCoctailNoProblem = chkDopingNoCoctailNoProblem.Checked;
 
             Bot.Settings.RepairMobile = chkRepairMobile.Checked;
             Bot.Settings.SellRepairMobile = chkSellRepairMobile.Checked;
@@ -1058,6 +1059,7 @@ namespace Moswar
                 chkDopingAllowPartBilet.Checked = Bot.Settings.AllowPartBilet;
                 chkDopingNoSauceNoProblem.Checked = Bot.Settings.NoSauceNoProblem;
                 chkDopingNoCandyNoProblem.Checked = Bot.Settings.NoCandyNoProblem;
+                chkDopingNoCoctailNoProblem.Checked = Bot.Settings.NoCoctailNoProblem;
 
                 chkRepairMobile.Checked = Bot.Settings.RepairMobile;
                 chkSellRepairMobile.Checked = Bot.Settings.SellRepairMobile;

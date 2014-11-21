@@ -865,6 +865,7 @@ namespace Moswar
             public bool AllowPartBilet;
             public bool NoSauceNoProblem;
             public bool NoCandyNoProblem;
+            public bool NoCoctailNoProblem;
 
             public bool RepairMobile;
             public bool SellRepairMobile;
@@ -10979,7 +10980,7 @@ namespace Moswar
                                             }
                                         }
                                     }
-                                    if (clsDoping.NeedToBuy[(int)clsDoping.DopingType.Coctail1]) return false; //Коктейль не найден, купить не можем, допы не кушать!
+                                    if (clsDoping.NeedToBuy[(int)clsDoping.DopingType.Coctail1] && !Settings.NoCoctailNoProblem) return false; //Не разрешено игнорировать эти допинги и их нет ...
                                     #endregion
                                 }
                                 break;
@@ -11099,7 +11100,7 @@ namespace Moswar
                                             }
                                         }
                                     }
-                                    if (clsDoping.NeedToBuy[(int)clsDoping.DopingType.Coctail2]) return false; //Коктейль не найден, купить не можем, допы не кушать!
+                                    if (clsDoping.NeedToBuy[(int)clsDoping.DopingType.Coctail2] && !Settings.NoCoctailNoProblem) return false; //Не разрешено игнорировать эти допинги и их нет ...
                                     #endregion
                                 }
                                 break;
@@ -11219,7 +11220,7 @@ namespace Moswar
                                             }
                                         }
                                     }
-                                    if (clsDoping.NeedToBuy[(int)clsDoping.DopingType.Coctail3]) return false; //Коктейль не найден, купить не можем, допы не кушать!
+                                    if (clsDoping.NeedToBuy[(int)clsDoping.DopingType.Coctail3] && !Settings.NoCoctailNoProblem) return false; //Не разрешено игнорировать эти допинги и их нет ...
                                     #endregion
                                 }
                                 break;
@@ -11339,7 +11340,7 @@ namespace Moswar
                                             }
                                         }
                                     }
-                                    if (clsDoping.NeedToBuy[(int)clsDoping.DopingType.Coctail4]) return false; //Коктейль не найден, купить не можем, допы не кушать!
+                                    if (clsDoping.NeedToBuy[(int)clsDoping.DopingType.Coctail4] && !Settings.NoCoctailNoProblem) return false; //Не разрешено игнорировать эти допинги и их нет ...
                                     #endregion
                                 }
                                 break;
@@ -11459,7 +11460,7 @@ namespace Moswar
                                             }
                                         }
                                     }
-                                    if (clsDoping.NeedToBuy[(int)clsDoping.DopingType.Coctail5]) return false; //Коктейль не найден, купить не можем, допы не кушать!
+                                    if (clsDoping.NeedToBuy[(int)clsDoping.DopingType.Coctail5] && !Settings.NoCoctailNoProblem) return false; //Не разрешено игнорировать эти допинги и их нет ...
                                     #endregion
                                 }
                                 break;
@@ -11579,7 +11580,7 @@ namespace Moswar
                                             }
                                         }
                                     }
-                                    if (clsDoping.NeedToBuy[(int)clsDoping.DopingType.Coctail6]) return false; //Коктейль не найден, купить не можем, допы не кушать!
+                                    if (clsDoping.NeedToBuy[(int)clsDoping.DopingType.Coctail6] && !Settings.NoCoctailNoProblem) return false; //Не разрешено игнорировать эти допинги и их нет ...
                                     #endregion
                                 }
                                 break;
@@ -12307,7 +12308,7 @@ namespace Moswar
                                             bRet &= clsDoping.AlreadyEated[(int)clsDoping.DopingType.Gum1Ex] || EatDrog(MainWB, ShopItems.Gum1Ex);
                                             break;
                                         case clsDoping.DopingType.Coctail1:
-                                            bRet &= clsDoping.AlreadyEated[(int)clsDoping.DopingType.Coctail1] || EatDrog(MainWB, ShopItems.Coctail1);
+                                            bRet &= clsDoping.AlreadyEated[(int)clsDoping.DopingType.Coctail1] || (!clsDoping.NeedToBuy[(int)clsDoping.DopingType.Coctail1] && EatDrog(MainWB, ShopItems.Coctail1)) || Settings.NoCoctailNoProblem;
                                             break;
                                         case clsDoping.DopingType.Car4:
                                             bRet &= clsDoping.AlreadyEated[(int)clsDoping.DopingType.Car4] || Automobile(AutomobileAction.Ride, 4);
@@ -12330,7 +12331,7 @@ namespace Moswar
                                             bRet &= clsDoping.AlreadyEated[(int)clsDoping.DopingType.Gum2Ex] || EatDrog(MainWB, ShopItems.Gum2Ex);
                                             break;
                                         case clsDoping.DopingType.Coctail2:
-                                            bRet &= clsDoping.AlreadyEated[(int)clsDoping.DopingType.Coctail2] || EatDrog(MainWB, ShopItems.Coctail2);
+                                            bRet &= clsDoping.AlreadyEated[(int)clsDoping.DopingType.Coctail2] || (!clsDoping.NeedToBuy[(int)clsDoping.DopingType.Coctail2] && EatDrog(MainWB, ShopItems.Coctail2)) || Settings.NoCoctailNoProblem;
                                             break;
                                         case clsDoping.DopingType.Car6:
                                             bRet &= clsDoping.AlreadyEated[(int)clsDoping.DopingType.Car6] || Automobile(AutomobileAction.Ride, 6);
@@ -12353,7 +12354,7 @@ namespace Moswar
                                             bRet &= clsDoping.AlreadyEated[(int)clsDoping.DopingType.Gum3Ex] || EatDrog(MainWB, ShopItems.Gum3Ex);
                                             break;
                                         case clsDoping.DopingType.Coctail3:
-                                            bRet &= clsDoping.AlreadyEated[(int)clsDoping.DopingType.Coctail3] || EatDrog(MainWB, ShopItems.Coctail3);
+                                            bRet &= clsDoping.AlreadyEated[(int)clsDoping.DopingType.Coctail3] || (!clsDoping.NeedToBuy[(int)clsDoping.DopingType.Coctail3] && EatDrog(MainWB, ShopItems.Coctail3)) || Settings.NoCoctailNoProblem;
                                             break;
                                         case clsDoping.DopingType.Car5:
                                             bRet &= clsDoping.AlreadyEated[(int)clsDoping.DopingType.Car5] || Automobile(AutomobileAction.Ride, 5);
@@ -12376,7 +12377,7 @@ namespace Moswar
                                             bRet &= clsDoping.AlreadyEated[(int)clsDoping.DopingType.Gum4Ex] || EatDrog(MainWB, ShopItems.Gum4Ex);
                                             break;
                                         case clsDoping.DopingType.Coctail4:
-                                            bRet &= clsDoping.AlreadyEated[(int)clsDoping.DopingType.Coctail4] || EatDrog(MainWB, ShopItems.Coctail4);
+                                            bRet &= clsDoping.AlreadyEated[(int)clsDoping.DopingType.Coctail4] || (!clsDoping.NeedToBuy[(int)clsDoping.DopingType.Coctail4] && EatDrog(MainWB, ShopItems.Coctail4)) || Settings.NoCoctailNoProblem;
                                             break;
                                         case clsDoping.DopingType.Car2:
                                             bRet &= clsDoping.AlreadyEated[(int)clsDoping.DopingType.Car2] || Automobile(AutomobileAction.Ride, 2);
@@ -12399,7 +12400,7 @@ namespace Moswar
                                             bRet &= clsDoping.AlreadyEated[(int)clsDoping.DopingType.Gum5Ex] || EatDrog(MainWB, ShopItems.Gum5Ex);
                                             break;
                                         case clsDoping.DopingType.Coctail5:
-                                            bRet &= clsDoping.AlreadyEated[(int)clsDoping.DopingType.Coctail5] || EatDrog(MainWB, ShopItems.Coctail5);
+                                            bRet &= clsDoping.AlreadyEated[(int)clsDoping.DopingType.Coctail5] || (!clsDoping.NeedToBuy[(int)clsDoping.DopingType.Coctail5] && EatDrog(MainWB, ShopItems.Coctail5)) || Settings.NoCoctailNoProblem;
                                             break;
                                         case clsDoping.DopingType.Car3:
                                             bRet &= clsDoping.AlreadyEated[(int)clsDoping.DopingType.Car3] || Automobile(AutomobileAction.Ride, 3);
@@ -12422,7 +12423,7 @@ namespace Moswar
                                             bRet &= clsDoping.AlreadyEated[(int)clsDoping.DopingType.Gum6Ex] || EatDrog(MainWB, ShopItems.Gum6Ex);
                                             break;
                                         case clsDoping.DopingType.Coctail6:
-                                            bRet &= clsDoping.AlreadyEated[(int)clsDoping.DopingType.Coctail6] || EatDrog(MainWB, ShopItems.Coctail6);
+                                            bRet &= clsDoping.AlreadyEated[(int)clsDoping.DopingType.Coctail6] || (!clsDoping.NeedToBuy[(int)clsDoping.DopingType.Coctail6] && EatDrog(MainWB, ShopItems.Coctail6)) || Settings.NoCoctailNoProblem;
                                             break;
                                         case clsDoping.DopingType.Car1:
                                             bRet &= clsDoping.AlreadyEated[(int)clsDoping.DopingType.Car1] || Automobile(AutomobileAction.Ride, 1);
