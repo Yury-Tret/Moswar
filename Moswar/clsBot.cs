@@ -3165,7 +3165,7 @@ namespace Moswar
                     if (i != 0 && i != 1)
                     {
                         match = Regex.Match((string)frmMain.GetJavaVar(MainWB, "m.items['" + Key[i][0] + "'].info.content"), "(?<Count>([0-9])+) шт. до (?<Date>([0-9 .:])+)");
-                        TempKey = match.Success ? (Convert.ToDateTime(match.Groups["Date"].Value, CultureInfo.CreateSpecificCulture("ru-RU")) - GetServerTime(MainWB) < new TimeSpan(2, 0, 0) ? Convert.ToInt32(match.Groups["Count"].Value) : 0) : 0;
+                        TempKey = match.Success ? (Convert.ToDateTime(match.Groups["Date"].Value, CultureInfo.CreateSpecificCulture("ru-RU")) - GetServerTime(MainWB) < new TimeSpan(1, 0, 0, 0) ? Convert.ToInt32(match.Groups["Count"].Value) : 0) : 0;
                     }
                     else TempKey = 0;
                     
