@@ -10326,7 +10326,7 @@ namespace Moswar
             {
                 // Определяем название покупаемого предмета
                 string ItemID = HtmlButton.GetAttribute("data-button-for-id");
-                string Name = (string)frmMain.GetJavaVar(MainWB, "$(\".object[rel='" + ItemID + "'] :header\").text()");
+                string Name = (string)frmMain.GetJavaVar(MainWB, "$(\".object[rel='" + ItemID + "'] h2\").text()");
                 UpdateStatus("@ " + DateTime.Now + " Покупаю " + (Name == null || Name == "" ? "какую-то хрень" : Name));
 
                 //Для того, чтоб не палить контору покупаем не по одной бутылке, а по возможности...
