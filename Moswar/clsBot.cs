@@ -5404,12 +5404,8 @@ namespace Moswar
                     return GoToPlace(WB, Place.Player);
 
                 case "/closed.html": //Сервер закрыт, для обновления или тех. работы.
-                    UpdateStatus("! " + DateTime.Now + " Идёт обновление... небоись Начальство, мимо меня не проскочит!");
-                    do {
-                        Wait(60000, 120000);
-                        IsWBComplete(WB);
-                    } while (frmMain.GetDocumentURL(WB).Contains("/closed.html"));
-                    return true;
+                    Wait(60000, 120000, "! Идёт обновление игры, жду до: ");
+                    return GoToPlace(WB, Place.Player);
 
                 case "res:/": //Пробуем открыть страничку, что не открылась!
                     Wait(60000, 180000, "! Проблемы интернет соединения, жду до: ");
