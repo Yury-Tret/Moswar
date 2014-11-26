@@ -4540,6 +4540,8 @@ namespace Moswar
         }        
         public bool IsWBComplete(WebBrowser WB, int WaitMinMs = 0, int WaitMaxMs = 0) //OK 
         {
+            BugReport("IsWBComplete");
+
             #region Инициализация
             int Retries = 0; //
             #endregion
@@ -4604,6 +4606,8 @@ namespace Moswar
         }
         public void IsWBCompleteEx(WebBrowser WB)
         {
+            BugReport("IsWBCompleteEx");
+
             #region Инициализация
             int Retries = 0; //
             #endregion
@@ -5359,27 +5363,63 @@ namespace Moswar
             Regex regex = new Regex("^res:/|" + Settings.ServerURL + "/$|#logout|/player/|/quest/|/alley/|/metro/|/thimble/|/shaurburgers/|/police/|/fight/|/phone/|/petrun/race/|/huntclub/wanted/|/bunker/|/closed.html|tell-my-ip.com");
             switch (regex.Match(URL).Value)
             {
-                case "tell-my-ip.com": return GoToPlace(WB, Place.Player);
+                case "tell-my-ip.com":
+                    return GoToPlace(WB, Place.Player);
+
                 case "#logout":
                 case "moswar.mail.ru":
                 case "www.moswar.eu/":
                 case "www.moswar.net/":
-                case "www.moswar.ru/": return WebLogin(WB); //Автологин, если выбросило
+                case "www.moswar.ru/":
+                    return WebLogin(WB); //Автологин, если выбросило
+
                 case "/phone/":                
                 case "/petrun/race/":
                 case "/huntclub/wanted/":
-                case "/player/": return true;
-                case "/quest/": return LevelUP(WB);
-                case "/alley/": return !IsTimeout(WB, true); //Патруль, нельзя ничего делать пока время тикает
+                case "/player/":
+                    return true;
+
+                case "/quest/":
+                    return LevelUP(WB);
+
+                case "/alley/": //Патруль, нельзя ничего делать пока время тикает
+                    return !IsTimeout(WB, true);
+
                 case "/thimble/":
-                case "/metro/": return Metro(MetroAction.Check);
-                case "/shaurburgers/": return !IsTimeout(WB, true);
-                case "/police/": return Police(PoliceAction.Check);
-                case "/fight/": GroupFight(GroupFightAction.Fight); return true; //Груповой или хаоточеский бой
-                case "/bunker/": Wait(60000, 180000, " Ого, начальник как глубоко же ты закопался, я тебя снаружи подожду до: "); return GoToPlace(WB, Place.Player); //Мы в бункере
-                case "/closed.html": UpdateStatus("! " + DateTime.Now + " Идёт обновление... небоись Начальство, мимо меня не проскочит!"); do { Wait(60000, 120000); IsWBComplete(WB); } while (frmMain.GetDocumentURL(WB).Contains("/closed.html")); return true; //Сервер закрыт, для обновления или тех. работы.
-                case "res:/": Wait(60000, 180000, "! Проблемы интернет соединения, жду до: "); frmMain.NavigateURL(WB, Regex.Match(URL, "(?<=#).*").Value); return true; //Пробуем открыть страничку, что не открылась!
-                default: UpdateStatus("? " + DateTime.Now + " Нихрена не пойму, где же я нахожусь? URL-> " + URL); Wait(60000, 180000, " Незнаю что делать, отсиживаюсь до: "); return GoToPlace(WB, Place.Player);
+                case "/metro/":
+                    return Metro(MetroAction.Check);
+
+                case "/shaurburgers/":
+                    return !IsTimeout(WB, true);
+
+                case "/police/":
+                    return Police(PoliceAction.Check);
+
+                case "/fight/": //Груповой или хаоточеский бой
+                    GroupFight(GroupFightAction.Fight);
+                    return true;
+
+                case "/bunker/": //Мы в бункере
+                    Wait(60000, 180000, " Ого, начальник как глубоко же ты закопался, я тебя снаружи подожду до: ");
+                    return GoToPlace(WB, Place.Player);
+
+                case "/closed.html": //Сервер закрыт, для обновления или тех. работы.
+                    UpdateStatus("! " + DateTime.Now + " Идёт обновление... небоись Начальство, мимо меня не проскочит!");
+                    do {
+                        Wait(60000, 120000);
+                        IsWBComplete(WB);
+                    } while (frmMain.GetDocumentURL(WB).Contains("/closed.html"));
+                    return true;
+
+                case "res:/": //Пробуем открыть страничку, что не открылась!
+                    Wait(60000, 180000, "! Проблемы интернет соединения, жду до: ");
+                    frmMain.NavigateURL(WB, Regex.Match(URL, "(?<=#).*").Value);
+                    return true;
+
+                default:
+                    UpdateStatus("? " + DateTime.Now + " Нихрена не пойму, где же я нахожусь? URL-> " + URL);
+                    Wait(60000, 180000, " Незнаю что делать, отсиживаюсь до: ");
+                    return GoToPlace(WB, Place.Player);
             }
         }
         public void GetMyStats(WebBrowser WB) //OK
