@@ -453,6 +453,7 @@
             this.label57 = new System.Windows.Forms.Label();
             this.grpDopingContainer = new System.Windows.Forms.GroupBox();
             this.grpDopingSettings = new System.Windows.Forms.GroupBox();
+            this.chkDopingNoCoctailNoProblem = new System.Windows.Forms.CheckBox();
             this.chkDopingPryanik = new System.Windows.Forms.CheckBox();
             this.btnShowDoping = new System.Windows.Forms.Button();
             this.chkDopingZefir = new System.Windows.Forms.CheckBox();
@@ -756,7 +757,6 @@
             this.TrayIcon = new System.Windows.Forms.NotifyIcon(this.components);
             this.btnOpenURL = new System.Windows.Forms.Button();
             this.btnRunJSCmd = new System.Windows.Forms.Button();
-            this.chkDopingNoCoctailNoProblem = new System.Windows.Forms.CheckBox();
             this.tabControl.SuspendLayout();
             this.tabMainBrowser.SuspendLayout();
             this.AutoApdateMessage.SuspendLayout();
@@ -5001,6 +5001,12 @@
             this.grpDopingSettings.Name = "grpDopingSettings";
             this.grpDopingSettings.TabStop = false;
             // 
+            // chkDopingNoCoctailNoProblem
+            // 
+            resources.ApplyResources(this.chkDopingNoCoctailNoProblem, "chkDopingNoCoctailNoProblem");
+            this.chkDopingNoCoctailNoProblem.Name = "chkDopingNoCoctailNoProblem";
+            this.chkDopingNoCoctailNoProblem.UseVisualStyleBackColor = true;
+            // 
             // chkDopingPryanik
             // 
             resources.ApplyResources(this.chkDopingPryanik, "chkDopingPryanik");
@@ -7774,12 +7780,6 @@
             this.btnRunJSCmd.Name = "btnRunJSCmd";
             this.btnRunJSCmd.UseVisualStyleBackColor = true;
             this.btnRunJSCmd.Click += new System.EventHandler(this.btnRunJSCmd_Click);
-            // 
-            // chkDopingNoCoctailNoProblem
-            // 
-            resources.ApplyResources(this.chkDopingNoCoctailNoProblem, "chkDopingNoCoctailNoProblem");
-            this.chkDopingNoCoctailNoProblem.Name = "chkDopingNoCoctailNoProblem";
-            this.chkDopingNoCoctailNoProblem.UseVisualStyleBackColor = true;
             // 
             // frmMain
             // 

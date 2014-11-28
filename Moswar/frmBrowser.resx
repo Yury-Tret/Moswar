@@ -13445,7 +13445,7 @@
     <value>8</value>
   </data>
   <data name="grpDopingSettings.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
+    <value>-200, 0</value>
   </data>
   <data name="grpDopingSettings.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
@@ -20994,7 +20994,7 @@
     <value>NoControl</value>
   </data>
   <data name="btnVictimHunting.Location" type="System.Drawing.Point, System.Drawing">
-    <value>5, 503</value>
+    <value>5, 504</value>
   </data>
   <data name="btnVictimHunting.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 3, 3, 3</value>
@@ -21192,7 +21192,7 @@
     <value>5</value>
   </data>
   <data name="grpPlayer2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>2, 265</value>
+    <value>2, 266</value>
   </data>
   <data name="grpPlayer2.Size" type="System.Drawing.Size, System.Drawing">
     <value>221, 233</value>
@@ -21654,7 +21654,7 @@
     <value>NoControl</value>
   </data>
   <data name="chkDebugMode.Location" type="System.Drawing.Point, System.Drawing">
-    <value>995, 589</value>
+    <value>993, 587</value>
   </data>
   <data name="chkDebugMode.Size" type="System.Drawing.Size, System.Drawing">
     <value>114, 18</value>
