@@ -1575,7 +1575,13 @@ namespace Moswar
             HtmlElement HtmlEl;
 
             HtmlEl = frmMain.GetDocument(WB).GetElementsByTagName("Form")[0];
-            if (HtmlEl.InnerText.Contains("Вперед, к новым победам!")) { frmMain.InvokeMember(WB, HtmlEl, "submit"); IsWBComplete(WB); Me.Player.Level++; return true; }
+            if (HtmlEl.InnerText.Contains("Вперед, к новым победам!") || HtmlEl.InnerText.Contains("Посетить этот завод"))
+            {
+                frmMain.InvokeMember(WB, HtmlEl, "submit");
+                IsWBComplete(WB);
+                Me.Player.Level++;
+                return true;
+            }
             return false;
         }
         private bool Safe(SafeAction SA)
