@@ -181,7 +181,6 @@ namespace Moswar
         public enum FactoryAction { Petriki, UpdateChain }
         public enum GroupFightAction { Fight, Check }
         public enum GroupFightType { Chaos, Ore, Clan, PVP, Mafia, Rat, Oil, Group, All }
-        public enum PatrolAction { Patrol, Check }
         public enum OilAction { LeninFight, Fight, OilTower }
         public enum TimeOutAction { All, NoTask, Free, Busy, Blocked }
         public enum PetAction { SetWarPet, TrainWarPet, Run, TrainRunPet }
@@ -196,7 +195,7 @@ namespace Moswar
         public enum TraumaAction { Heal, Check }
         public enum SovetAction { SellPoints, Patriot, Vote }
         public enum MajorAction { Buy, Check }
-        public enum NextTimeout { Patrol, Metro, Rat, Atack, Fight, Chain, OilLeninFight }
+        public enum NextTimeout { Metro, Rat, Atack, Fight, Chain, OilLeninFight }
         public enum TaborPetAction { Feed, Check }
         public enum SovetAgitatorAction { Buy, Check }
         public enum MobilePhoneAction { CheckBattery, MafiaFight, MafiaTrade, Repair, ReadLogs }
@@ -1379,9 +1378,6 @@ namespace Moswar
                 case NextTimeout.Chain:
                     Timeout = (int)Settings.FactoryChainCount;
                     break;
-                case NextTimeout.Patrol:
-                    Timeout = (int)Settings.PatrolTime;
-                    break;
                 case NextTimeout.Metro:
                     Timeout = 10;
                     break;
@@ -1414,7 +1410,7 @@ namespace Moswar
                     break;
             }
 
-            return (   ((STT == StopTimeoutType.GrpFight || STT == StopTimeoutType.All) && TimeToGoGrpFight(GroupFightType.All, new DateTime(), GrpFight.Price, (NT == NextTimeout.Chain || NT == NextTimeout.Metro || NT == NextTimeout.Patrol || NT == NextTimeout.Rat) ? Timeout : 0))
+            return (   ((STT == StopTimeoutType.GrpFight || STT == StopTimeoutType.All) && TimeToGoGrpFight(GroupFightType.All, new DateTime(), GrpFight.Price, (NT == NextTimeout.Chain || NT == NextTimeout.Metro || NT == NextTimeout.Rat) ? Timeout : 0))
                     || ((STT == StopTimeoutType.RatHunting || STT == StopTimeoutType.All) && Settings.SearchRat && Settings.SearchRatIgnoreAll && DateTime.Now.AddMinutes(Timeout) >= Me.RatHunting.NextDT && (!Me.RatHunting.Stop || DateTime.Now.AddMinutes(Timeout) >= Me.RatHunting.RestartDT))
                     || ((STT == StopTimeoutType.OilLenin || STT == StopTimeoutType.All) && Settings.GoOilLenin && DateTime.Now.AddMinutes(Timeout) >= Me.OilLeninHunting.RestartDT && !Me.OilLeninHunting.RestartDT.Equals(new DateTime()))
                     || ((STT == StopTimeoutType.Mafia || STT == StopTimeoutType.All) && Settings.GoGroupFightMafia && GrpFight.Mafia.FightFound)
@@ -1738,7 +1734,7 @@ namespace Moswar
             #region Вычисление максимального таймаута
             TimeSpan TSTimeout = new TimeSpan();
             TimeSpan.TryParse(frmMain.GetDocument(MainWB).GetElementById("timeout").InnerText, out TSTimeout); //Запоминаем сколько ещё продлится таймаут                        
-            if (TimeToStopAtack(Settings.GoPatrol && !Me.Patrol.Stop ? NextTimeout.Patrol : (Settings.GoMetro && !Me.Rat.Stop ? NextTimeout.Metro : NextTimeout.Atack), StopTimeoutType.RatHunting))
+            if (TimeToStopAtack(Settings.GoMetro && !Me.Rat.Stop ? NextTimeout.Metro : NextTimeout.Atack, StopTimeoutType.RatHunting))
             {
                 TSTimeout = ((TSTimeout > Me.RatHunting.NextDT - DateTime.Now) ? TSTimeout : Me.RatHunting.NextDT - DateTime.Now).Subtract(new TimeSpan(0, 0, 20 + (Settings.UseWearSet ? 25 : 0))); //Ждать либо (до конца текущего таймаута либо до крысиного) + 20 секунд резервируем под поедание крысиных допингов и 25 секунд переодевание               
             }
@@ -4698,9 +4694,6 @@ namespace Moswar
                     case "Игра с Моней Шацом":
                         Metro(MetroAction.Check);
                         break;
-                    case "В патруле":
-                        Patrol(PatrolAction.Check);
-                        break;
                     case "В бункере":
                         break;
                     case "Задержан за бои":
@@ -4719,7 +4712,6 @@ namespace Moswar
                             case "shaurburgers": MC(MCAction.Check); break; //Больше не занят в MC, снова к дракам!
                             case "police": Police(PoliceAction.Check); break; //Больше не в Милиции, снова к дракам!
                             case "fight": GroupFight(GroupFightAction.Fight); break;
-                            case "alley": Patrol(PatrolAction.Check); break; //Не патрулируем! снова к дракам!
                         }
 */
                         #endregion
@@ -4821,10 +4813,6 @@ namespace Moswar
                                 }
                                 #endregion
                             }
-                            #region Patrol
-                            if (Me.Patrol.LastDT.Date != GetServerTime(MainWB).Date) Me.Patrol.Stop = false;  //Обнуление!
-                            if (Settings.GoPatrol && !Me.Patrol.Stop && !TimeToStopAtack(NextTimeout.Patrol)) bRet = Patrol(PatrolAction.Patrol); //Иду в патруль? (Больше не нападаем на крыс или последняя была более 30 минут назад!)
-                            #endregion
                             #region Metro
                             if (Me.Rat.LastDT.Date != GetServerTime(MainWB).Date) { Me.Rat.Val = 0; Me.Rat.Stop = false; } //Обнуление побегов от крыс в метро!
                             if (Settings.GoMetro && !Me.Rat.Stop && Me.Player.Level >= 4 && !bRet //Закончился патруль и стоит галка бегать в метро?
@@ -4915,7 +4903,7 @@ namespace Moswar
                         }                       
                     }                                                    
                     #endregion                                           
-                    #region Major + Fitness + Taxi + Pyramid + Casino + Pet + Sovet + Factory + Quest
+                    #region Major + Fitness + Taxi + Patrol + Pyramid + Casino + Pet + Sovet + Factory + Quest
                     UseTimeOut(TimeOutAction.Busy); //Пора тренировать Пэта или варить петрики?
                     #endregion
                     #region OilLenin
@@ -4961,6 +4949,13 @@ namespace Moswar
                     {                        
                         if (Me.Automobile.LastDT.Date != ServerDT.Date) Me.Automobile.Stop = false;
                         if (Me.Automobile.LastDT <= ServerDT & !Me.Automobile.Stop) Automobile(AutomobileAction.Taxi);
+                    }
+                    #endregion
+                    #region Patrol
+                    if (Settings.GoPatrol)
+                    {
+                        if (Me.Patrol.LastDT.Date != ServerDT.Date) Me.Patrol.Stop = false;
+                        if (Me.Patrol.LastDT <= ServerDT && !Me.Patrol.Stop) Patrol();
                     }
                     #endregion
                     #region Pyramid
@@ -5042,9 +5037,9 @@ namespace Moswar
                     UpdateMyInfo(MainWB);
                     if (Settings.MakePetriki && (Me.Wallet.Money - Me.Petriki.Money) >= Settings.minPetrikiMoney && (Me.Wallet.Ore - Me.Petriki.Ore) >= Settings.minPetrikiOre && Me.Petriki.RestartDT <= DateTime.Now && Me.Player.Level >= 5) Factory(FactoryAction.Petriki); //Пора варить петрики?
                     #region Разрешение модернизировать цепочки
-                    HtmlElement HtmlEl = frmMain.GetDocument(MainWB).GetElementById("timeout");                                                                      //Не модить во время караванов!
-                    ChainUpgrade.Release = (Settings.GoFactory && !TimeToStopAtack(NextTimeout.Chain, StopTimeoutType.GrpFight) && ((HtmlEl.GetAttribute("href") != null && Regex.IsMatch(HtmlEl.GetAttribute("href"), "/metro/$|/alley/$") && Me.Patrol.Val == 0)  
-                        || ((!Settings.GoPatrol || Me.Patrol.Stop) && (!Settings.GoMetro || Me.Rat.Stop)))
+                    HtmlElement HtmlEl = frmMain.GetDocument(MainWB).GetElementById("timeout");
+                    ChainUpgrade.Release = (Settings.GoFactory && !TimeToStopAtack(NextTimeout.Chain, StopTimeoutType.GrpFight) && ((HtmlEl.GetAttribute("href") != null && Regex.IsMatch(HtmlEl.GetAttribute("href"), "/metro/$|/alley/$"))  
+                        || (!Settings.GoMetro || Me.Rat.Stop))
                         && HtmlEl.InnerText != null && TimeSpan.Parse(HtmlEl.InnerText) >= new TimeSpan(0, 0, Settings.FactoryChainCount > 8 ? 480 : (int)Settings.FactoryChainCount * 45));
                     #endregion
                     if (ChainUpgrade.Release && !ChainUpgrade.Stop && Me.Wallet.Money >= Settings.FactoryChainCount * 437 + Settings.minFactoryMoney && Me.Wallet.Ore >= Settings.FactoryChainCount * 12 + Settings.minFactoryOre && Me.Player.Level >= 7) Factory(FactoryAction.UpdateChain); //Mодернизировать цепочки?
@@ -7279,49 +7274,42 @@ namespace Moswar
                 break;
             }            
         }        
-        public bool Patrol(PatrolAction PA) //OK
+        public bool Patrol()
         {
             BugReport("Patrol");
 
             HtmlElement HtmlEl;                        
 
-            #region Инициализация
-            Me.Patrol.Val = 0; //Каравана нет.
-            #endregion            
             GoToPlace(MainWB, Place.Alley);
             if (frmMain.GetDocument(MainWB).GetElementById("alley-patrol-button") != null || frmMain.GetDocument(MainWB).GetElementById("leave-patrol-button") != null) //Есть ли ещё время патруля? (По кнопкам начать и улизнуть)
             {
                 #region Патруль
                 if (frmMain.GetDocument(MainWB).GetElementById("patrolbar") == null) //Я сейчас не патрулирую?
                 {
-                    switch (PA)
+                    #region Переодевание
+                    if (Settings.UseWearSet)
                     {
-                        case PatrolAction.Check: return false;
-                        case PatrolAction.Patrol:
-                            #region Переодевание
-                            if (Settings.UseWearSet)
-                            {
-                                WearSet(MainWB, ArrWearSet, 2);
-                                GoToPlace(MainWB, Place.Alley);
-                            }
-                            #endregion
-                            if (frmMain.GetDocument(MainWB).GetElementById("patrolForm").All[1].InnerText.Contains("свои районы")) //Проверка, не малыш ли ещё, могу выбирать раёны?? У малышей "улицы".
-                            {
-                                #region Поиск нужного для патруля региона!
-                                string CurrRegion;
-                                string DoRegionID;
-                                string[] ArrRegion;
-                                string[] MyArrRegion = GetArrClassHtml(MainWB, "$(\".regions-choose ul li\")", "getAttribute(\"data-metro-id\")");
-                                #region Инизиализация
-                                HtmlEl = frmMain.GetDocument(MainWB).GetElementById("region");
-                                CurrRegion = HtmlEl == null ? "0" : HtmlEl.GetAttribute("value"); //У меня есть хоть один район на выбор?)
-                                DoRegionID = CurrRegion;
-                                #endregion
-                                if (MyArrRegion.Count() != 0) //Вообще есть из чего выбирать?
-                                {
-                                    #region Матрица регионов для выбранного типа патруля.
-                                    #region Info
-                                    /*
+                        WearSet(MainWB, ArrWearSet, 2);
+                        GoToPlace(MainWB, Place.Alley);
+                    }
+                    #endregion
+                    if (frmMain.GetDocument(MainWB).GetElementById("patrolForm").All[1].InnerText.Contains("свои районы")) //Проверка, не малыш ли ещё, могу выбирать раёны?? У малышей "улицы".
+                    {
+                        #region Поиск нужного для патруля региона!
+                        string CurrRegion;
+                        string DoRegionID;
+                        string[] ArrRegion;
+                        string[] MyArrRegion = GetArrClassHtml(MainWB, "$(\".regions-choose ul li\")", "getAttribute(\"data-metro-id\")");
+                        #region Инизиализация
+                        HtmlEl = frmMain.GetDocument(MainWB).GetElementById("region");
+                        CurrRegion = HtmlEl == null ? "0" : HtmlEl.GetAttribute("value"); //У меня есть хоть один район на выбор?)
+                        DoRegionID = CurrRegion;
+                        #endregion
+                        if (MyArrRegion.Count() != 0) //Вообще есть из чего выбирать?
+                        {
+                            #region Матрица регионов для выбранного типа патруля.
+                            #region Info
+                            /*
                                  * Кремлевский
                                  * Звериный
                                  * Вокзальный
@@ -7341,67 +7329,63 @@ namespace Moswar
                                  * Лосинск
                                  * Внучатово
                                  */
-                                    #endregion
-                                    switch (Settings.PatrolType)
-                                    {
-                                        case 0: //Руда 2, 7, 13, 8
-                                            ArrRegion = new string[] { "2", "7", "13", "8", MyArrRegion[new Random().Next(0, MyArrRegion.Count())] };
-                                            break;
-                                        case 1: //Нефть 5, 15, 12
-                                            ArrRegion = new string[] { "5", "15", "12", MyArrRegion[new Random().Next(0, MyArrRegion.Count())] };
-                                            break;
-                                        case 2: //Деньги 6, 16, 11, 17
-                                            ArrRegion = new string[] { "6", "16", "11", "17", MyArrRegion[new Random().Next(0, MyArrRegion.Count())] };
-                                            break;
-                                        case 3: //Жетоны 1, 3, 18, 9
-                                            ArrRegion = new string[] { "1", "3", "18", "9", MyArrRegion[new Random().Next(0, MyArrRegion.Count())] };
-                                            break;
-                                        case 4: //Партбилеты 1, 4, 14, 10
-                                            ArrRegion = new string[] { "1", "4", "14", "10", MyArrRegion[new Random().Next(0, MyArrRegion.Count())] };
-                                            break;
-                                        default:
-                                            ArrRegion = new string[] { };
-                                            break;
-                                    }
-                                    #endregion
-                                    #region Поиск наиболее выгодного для патруля региона.
-                                    for (int i = 0; i < ArrRegion.Count(); i++)
-                                    {
-                                        if (MyArrRegion.Contains(ArrRegion[i])) { DoRegionID = ArrRegion[i]; break; }
-                                    }
-                                    #endregion
-                                    #region Листание регионов
-                                    while (DoRegionID != CurrRegion)
-                                    {
-                                        frmMain.GetDocument(MainWB).GetElementById("region-choose-arrow-right").InvokeMember("click");
-                                        IsWBComplete(MainWB, 300, 1000);
-                                        CurrRegion = frmMain.GetDocument(MainWB).GetElementById("region").GetAttribute("value");
-                                    }
-                                    #endregion                               
-                                }                               
-                                #endregion
-                            }
-                            #region Старт патруля
-                            HtmlElementCollection HC = frmMain.GetDocument(MainWB).GetElementById("time").GetElementsByTagName("option"); //Проверка, есть ли необходимое для действия время.
-                            frmMain.GetDocument(MainWB).GetElementById("time").SetAttribute("value", Convert.ToInt32(HC[HC.Count - 1].GetAttribute("value")) >= Settings.PatrolTime ? Settings.PatrolTime.ToString() : HC[HC.Count - 1].GetAttribute("value"));
-                            frmMain.InvokeMember(MainWB, frmMain.GetDocument(MainWB).GetElementById("patrolForm"), "submit");
                             #endregion
-                            break;
+                            switch (Settings.PatrolType)
+                            {
+                                case 0: //Руда 2, 7, 13, 8
+                                    ArrRegion = new string[] { "2", "7", "13", "8", MyArrRegion[new Random().Next(0, MyArrRegion.Count())] };
+                                    break;
+                                case 1: //Нефть 5, 15, 12
+                                    ArrRegion = new string[] { "5", "15", "12", MyArrRegion[new Random().Next(0, MyArrRegion.Count())] };
+                                    break;
+                                case 2: //Деньги 6, 16, 11, 17
+                                    ArrRegion = new string[] { "6", "16", "11", "17", MyArrRegion[new Random().Next(0, MyArrRegion.Count())] };
+                                    break;
+                                case 3: //Жетоны 1, 3, 18, 9
+                                    ArrRegion = new string[] { "1", "3", "18", "9", MyArrRegion[new Random().Next(0, MyArrRegion.Count())] };
+                                    break;
+                                case 4: //Партбилеты 1, 4, 14, 10
+                                    ArrRegion = new string[] { "1", "4", "14", "10", MyArrRegion[new Random().Next(0, MyArrRegion.Count())] };
+                                    break;
+                                default:
+                                    ArrRegion = new string[] { };
+                                    break;
+                            }
+                            #endregion
+                            #region Поиск наиболее выгодного для патруля региона.
+                            for (int i = 0; i < ArrRegion.Count(); i++)
+                            {
+                                if (MyArrRegion.Contains(ArrRegion[i])) { DoRegionID = ArrRegion[i]; break; }
+                            }
+                            #endregion
+                            #region Листание регионов
+                            while (DoRegionID != CurrRegion)
+                            {
+                                frmMain.GetDocument(MainWB).GetElementById("region-choose-arrow-right").InvokeMember("click");
+                                IsWBComplete(MainWB, 300, 1000);
+                                CurrRegion = frmMain.GetDocument(MainWB).GetElementById("region").GetAttribute("value");
+                            }
+                            #endregion
+                        }
+                        #endregion
                     }
+                    #region Старт патруля
+                    HtmlElementCollection HC = frmMain.GetDocument(MainWB).GetElementById("time").GetElementsByTagName("option"); //Проверка, есть ли необходимое для действия время.
+                    frmMain.GetDocument(MainWB).GetElementById("time").SetAttribute("value", Convert.ToInt32(HC[HC.Count - 1].GetAttribute("value")) >= Settings.PatrolTime ? Settings.PatrolTime.ToString() : HC[HC.Count - 1].GetAttribute("value"));
+                    frmMain.InvokeMember(MainWB, frmMain.GetDocument(MainWB).GetElementById("patrolForm"), "submit");
+                    #endregion
                 }                
                 IsWBComplete(MainWB);
                 HtmlEl = frmMain.GetDocument(MainWB).GetElementById("patrolForm").All["Patrol"];
                 TimeSpan TS = new TimeSpan();
                 TimeSpan.TryParse(HtmlEl.InnerText, out TS);
-                Me.Patrol.LastDT = GetServerTime(MainWB).Add(TS); //Временно запоминаем время окончания патруля
+                Me.Patrol.LastDT = GetServerTime(MainWB).Add(TS).AddMinutes(1); //Запоминаем время окончания патруля плюс одна минута на возможные лаги
                 UpdateStatus("# " + DateTime.Now + " Купил свисток, патрулирую до: " + DateTime.Now.Add(TS).ToString("HH:mm:ss")); //Выводим текст о патруле
 
                 #region Караван
                 if (frmMain.GetDocument(MainWB).GetElementById("patrolForm").InnerText.Contains("Ваши действия привлекли уличного мага Девида Блейна."))
                 {
-                    Me.Patrol.Val = 1; //Караван                    
-                    if (Settings.PatrolTime < 30) Wait(TS - new TimeSpan(0,2,0), " Похоже я заметил караванчег, ныряю в зассаду до: ", TimeOutAction.Busy); //За 2 минуты до конца пробуем ограбить караван!
-                    else UpdateStatus("# " + DateTime.Now + " Нырнув в засаду, точно просплю! Махмуд, деньги на стол!");
+                    UpdateStatus("# " + DateTime.Now + " Похоже я заметил караванчег. Махмуд, деньги на стол!");
                     #region Переодевание
                     if (Settings.UseWearSet) WearSet(MainWB, ArrWearSet, 2);
                     #endregion
@@ -7414,15 +7398,9 @@ namespace Moswar
                         if (match.Success) UpdateStatus("$ " + DateTime.Now + " Выскакиваю из кустов, хватаю одного, второго, третьего верблюда и убегаю прихватив: ", Convert.ToInt32(match.Value)); //Ограбил караван!
                         else UpdateStatus("* " + DateTime.Now + " Выскакиваю из кустов, а там снова кусты, и снова, и снова?!? -Шеф, ну ты понял!"); //Караван упущен
                     }
-                    Me.Patrol.Val = 0; //Каравана больше нет.
                 }
                 #endregion
 
-                //Пока идёт патруль, ожидаем в режиме частичной блокировки UseTimeout
-                Wait(Me.Patrol.LastDT - GetServerTime(MainWB), "", TimeOutAction.Busy); //Прождать последние 2 минуты после ограбления или полный патруль, если время патруля не позволяет грабить караваны в конце.
-                
-                IsTimeout(MainWB, false, true, "", TimeOutAction.Free); //Ожидание окончания патруля + ожидаем в режиме почти полного использования UseTimeout
-                Wait(1000, 30000, " Активирована задержка до: ");
                 #endregion
                 return true;
             }
@@ -13625,7 +13603,6 @@ namespace Moswar
                         UpdateMessageInfo(" Согласно Вашим настройкам дуеэли приостановлены!", Ignore.PVPAttack);
                         #endregion
                         
-                        if (Me.Patrol.LastDT.Date != ServerDT.Date) Me.Patrol.Stop = false;  //Обнуление!
                         if (Me.RatHunting.RestartDT < DateTime.Now.AddMinutes(Me.Major.LastDT > ServerDT ? 5 : 15)) { Me.RatHunting.Defeats = 0; Me.RatHunting.Stop = false; } //Охота обновляется каждые 24 часа, на сей раз учитываем конец прошлого обвала
                         if (Me.OilLeninHunting.RestartDT < DateTime.Now) { Me.OilLeninHunting.Defeats = 0; Me.OilLeninHunting.Stop = false; } //Охота обновляется каждые 24 часа
                         //При необходимости проводим драку в метро, и пробуем пойти в стенку или мирно покидаем таймаут ...
@@ -13636,7 +13613,7 @@ namespace Moswar
                             HtmlElement HtmlEl = frmMain.GetDocument(MainWB).GetElementById("timeout");
                             //Таймаут на самом деле существует?
                             if (HtmlEl.Style != "display: none;") TimeSpan.TryParse(frmMain.GetDocument(MainWB).GetElementById("timeout").InnerText, out TSTimeout); //Запоминаем сколько ещё продлится таймаут
-                            if (TimeToStopAtack(Settings.GoPatrol && !Me.Patrol.Stop ? NextTimeout.Patrol : (Settings.GoMetro && !Me.Rat.Stop ? NextTimeout.Metro : NextTimeout.Atack), StopTimeoutType.RatHunting))
+                            if (TimeToStopAtack(Settings.GoMetro && !Me.Rat.Stop ? NextTimeout.Metro : NextTimeout.Atack, StopTimeoutType.RatHunting))
                             {
                                 if (TSTimeout < Me.RatHunting.NextDT - DateTime.Now) //Таймаут меньше интервала до новой крысы?
                                 {
@@ -13658,7 +13635,7 @@ namespace Moswar
                                 #region Допинг
                                 Dopings(ref Me.ArrUsualDoping, DopingAction.Check);
                                 #endregion
-                                #region ClanWar + Police + Thimbles + Major + Fitness + Automobile + Pyramid + Casino + Pet + Sovet + Factory + Quest + Patrol + Metro + Chaos
+                                #region ClanWar + Police + Thimbles + Major + Fitness + Automobile + Pyramid + Casino + Pet + Sovet + Factory + Quest + Metro + Chaos
                                 UseTimeOut(TimeOutAction.All);
                                 #endregion
                             }
