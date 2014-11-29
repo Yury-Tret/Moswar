@@ -184,7 +184,6 @@ namespace Moswar
         public enum OilAction { LeninFight, Fight, OilTower }
         public enum TimeOutAction { All, NoTask, Free, Busy, Blocked }
         public enum PetAction { SetWarPet, TrainWarPet, Run, TrainRunPet }
-        public enum MCAction { Work, Check }
         public enum ClanWarAction { Check, Tooth, Pacifism }
         public enum CasinoAction { Kubovich, Slots, Loto, BuyFishki, SellFishki }
         public enum PyramidAction { Buy, Sell, Check }
@@ -3055,7 +3054,7 @@ namespace Moswar
             do
             {
                 UseTimeOut(TimeOutAction.Free);
-                if (Settings.WantedGoMC) MC(MCAction.Work, Settings.MCWorkTime);
+                if (Settings.WantedGoMC) MC(Settings.MCWorkTime);
                 CheckHealthEx(0, 0, Settings.HealPet50, Settings.HealPet100); //Проверка всё ли ешё заказан? и по 0% дабы меня не лечил, только пэта!
             } while (Me.Wanted && Settings.WantedGoMC);
         }        
@@ -4663,9 +4662,6 @@ namespace Moswar
                 {
                     case "На показе":
                         break;
-                    case "В Шаурбургерсе":
-                        MC(MCAction.Check);
-                        break;
                     case "Ожидание боя":                        
                         #region Переодевание
                         if (Settings.UseWearSet) WearSet(WB, ArrWearSet, 0);
@@ -4709,7 +4705,6 @@ namespace Moswar
                         switch (match.Groups["Area"].Value)
                         {
                             case "metro": Metro(MetroAction.Check); break; //Больше не занят в Метро, снова к дракам!
-                            case "shaurburgers": MC(MCAction.Check); break; //Больше не занят в MC, снова к дракам!
                             case "police": Police(PoliceAction.Check); break; //Больше не в Милиции, снова к дракам!
                             case "fight": GroupFight(GroupFightAction.Fight); break;
                         }
@@ -4773,7 +4768,7 @@ namespace Moswar
                             {
                                 #region MC min money or MC after xx Hours online + Attack + UseTimeOut(Free)
 
-                                if (Settings.GoMC && Me.Wallet.Money <= Settings.minMoneyMC & Me.Player.Level >= 2) MC(clsBot.MCAction.Work, Settings.MCWorkTime); //Нужно ходить в MC, если мало денег?
+                                if (Settings.GoMC && Me.Wallet.Money <= Settings.minMoneyMC & Me.Player.Level >= 2) MC(Settings.MCWorkTime); //Нужно ходить в MC, если мало денег?
                                 if (DateTime.Now >= Me.Events.SessionStartDT.AddHours(Convert.ToInt32(Settings.MCAfterOnline)) && Me.Player.Level >= 2)
                                 {   //Так, как сюда заходит уже по истечению макс времени онлайн, то его тоже нужнно учитывать, ибо обнуление только в конце!
                                     UpdateStatus("# " + DateTime.Now + " УУУУУУаах *зевая* засиделся я тут с вами, схожу ка в MC!");
@@ -4781,7 +4776,7 @@ namespace Moswar
                                     while (DateTime.Now < Me.MC.LastDT)
                                     {
                                         Me.MC.Stop = false; //Макдачу, блокируем использование Иммунитета у мони.
-                                        MC(clsBot.MCAction.Work, Settings.MCWorkTime);                                    
+                                        MC(Settings.MCWorkTime);                                    
                                         #region Проводим драку между походами в MC
                                         #region Охота на крысомах
                                         if (Me.RatHunting.RestartDT < DateTime.Now) { Me.RatHunting.Defeats = 0; Me.RatHunting.Stop = false; } //Охота обновляется каждые 24 часа
@@ -4956,6 +4951,13 @@ namespace Moswar
                     {
                         if (Me.Patrol.LastDT.Date != ServerDT.Date) Me.Patrol.Stop = false;
                         if (Me.Patrol.LastDT <= ServerDT && !Me.Patrol.Stop) Patrol();
+                    }
+                    #endregion
+                    #region MC
+                    if (Settings.GoMC)
+                    {
+                        if (Me.MC.LastDT.Date != ServerDT.Date) Me.MC.Stop = false;
+                        if (Me.MC.LastDT <= ServerDT && !Me.MC.Stop) MC(Settings.MCWorkTime);
                     }
                     #endregion
                     #region Pyramid
@@ -6979,46 +6981,41 @@ namespace Moswar
             }
             return true; //Всё в порядке
         }
-        public bool MC(MCAction MA, decimal WT = 1) //OK
+        public bool MC(decimal WT = 1)
         {
             BugReport("MC");
 
             HtmlElement HtmlEl;
-            #region Переодевание
-            if (MA == MCAction.Work && Settings.UseWearSet) WearSet(MainWB, ArrWearSet, 2);
-            #endregion
-            GoToPlace(MainWB, Place.Shaurburgers);
-            switch (MA)
-            {
-                case MCAction.Work:
-                    if (!MC(MCAction.Check))
-                    {
-                        if (Me.Wanted) UpdateStatus("! " + DateTime.Now + " Пора играть в прятки...");
-                        HtmlElementCollection HC = frmMain.GetDocument(MainWB).GetElementById("time").GetElementsByTagName("option"); //Проверка, есть ли необходимое для действия время.
-                        frmMain.GetDocument(MainWB).GetElementById("time").SetAttribute("value", Convert.ToInt32(HC[HC.Count - 1].GetAttribute("value")) >= WT ? WT.ToString() : HC[HC.Count - 1].GetAttribute("value"));
-                        frmMain.InvokeMember(MainWB, frmMain.GetDocument(MainWB).GetElementById("workForm"), "submit");
-                        IsWBComplete(MainWB);
-                        if (Thread.CurrentThread.Name == "MainBotThread") MC(MCAction.Check); //Не проделывать при Shutdown
-                    }
-                    return true;
-                case MCAction.Check:
-                    HtmlEl = frmMain.GetDocument(MainWB).GetElementById("shaurma");
-                    if (HtmlEl != null)
-                    {
-                        if (HtmlEl.InnerText == null)
-                        {
-                            UpdateStatus("! " + DateTime.Now + " Ааааааай, чуть ни ёпнулся ... чертовы лаги!");
-                            Wait(new TimeSpan(Convert.ToInt32(Settings.MCWorkTime),0,0), " Устроился на работу в Шаурбургерс до: ", TimeOutAction.Blocked);
-                        }
-                        else Wait(TimeSpan.Parse(HtmlEl.InnerText), " Устроился на работу в Шаурбургерс до: ", TimeOutAction.Blocked); //Wait(Convert.ToDateTime(HtmlEl.InnerText), " Устроился на работу в Шаурбургерс до: ", TimeOutAction.Blocked);
 
-                        Random rndWait = new Random();
-                        Wait(new TimeSpan(0, rndWait.Next(1, 20), rndWait.Next(0, 60)), " Активирована задержка до: ", TimeOutAction.Blocked);
-                        return true;
+            GoToPlace(MainWB, Place.Shaurburgers);
+            if (frmMain.GetDocument(MainWB).GetElementById("shaurma-btn") != null || frmMain.GetDocument(MainWB).GetElementById("shaurma") != null) //Есть ли ещё время работы?
+            {
+                if (frmMain.GetDocument(MainWB).GetElementById("shaurma") == null) //Я сейчас не работаю?
+                {
+                    #region Переодевание
+                    if (Settings.UseWearSet)
+                    {
+                        WearSet(MainWB, ArrWearSet, 2);
+                        GoToPlace(MainWB, Place.Shaurburgers);
                     }
-                    return false;
+                    #endregion
+                    #region Старт смены
+                    HtmlElementCollection HC = frmMain.GetDocument(MainWB).GetElementById("time").GetElementsByTagName("option"); //Проверка, есть ли необходимое для действия время.
+                    frmMain.GetDocument(MainWB).GetElementById("time").SetAttribute("value", Convert.ToInt32(HC[HC.Count - 1].GetAttribute("value")) >= WT ? WT.ToString() : HC[HC.Count - 1].GetAttribute("value"));
+                    frmMain.InvokeMember(MainWB, frmMain.GetDocument(MainWB).GetElementById("workForm"), "submit");
+                    #endregion
+                }
+                IsWBComplete(MainWB);
+                HtmlEl = frmMain.GetDocument(MainWB).GetElementById("workForm").All["shaurma"];
+                TimeSpan TS = new TimeSpan();
+                TimeSpan.TryParse(HtmlEl.InnerText, out TS);
+                Me.MC.LastDT = GetServerTime(MainWB).Add(TS).AddMinutes(3); //Запоминаем время окончания смены плюс 3 минуты на возможные лаги
+                UpdateStatus("# " + DateTime.Now + " Устроился на работу в Шаурбургерс до: " + DateTime.Now.Add(TS).ToString("HH:mm:ss"));
+                return true;
             }
-            return true;
+            Me.MC.LastDT = GetServerTime(MainWB);
+            Me.MC.Stop = true;
+            return false;
         }
         public void Factory(FactoryAction FA) //OK
         {
@@ -13539,7 +13536,7 @@ namespace Moswar
             if (Me.Wallet.Money >= Settings.SDThimblesMoney & Me.Player.Level >= 5) Metro(MetroAction.Game); //Пора играть с Моней?
             #endregion
             #region MC
-            if (Me.Player.Level >= 2) MC(MCAction.Work, Settings.SDWorkTime);
+            if (Me.Player.Level >= 2) MC(Settings.SDWorkTime);
             #endregion
             #region ShutDown
             clsExitWindows.ShutDown();
@@ -13745,7 +13742,7 @@ namespace Moswar
                             Me.MC.Stop = false; //Макдачу пока травма, блокируем использование Иммунитета у мони.
                             UseTimeOut(TimeOutAction.Free);                            
                             ServerDT = GetServerTime(MainWB);
-                            if (Me.Trauma.LastDT > ServerDT.AddMinutes(20)) MC(clsBot.MCAction.Work, Settings.MCWorkTime); //Если уже мало времени до окончания, травмы не устраиваться в макдональдс.
+                            if (Me.Trauma.LastDT > ServerDT.AddMinutes(20)) MC(Settings.MCWorkTime); //Если уже мало времени до окончания, травмы не устраиваться в макдональдс.
                             else Wait(Me.Trauma.LastDT - ServerDT, " Болячка сама во-вот отвалится, жду до: ", TimeOutAction.Free);
                             ServerDT = GetServerTime(MainWB);
                         } while (ServerDT < Me.Trauma.LastDT);
