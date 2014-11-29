@@ -467,8 +467,6 @@ namespace Moswar
             Bot.Settings.minFactoryOre = numMinFactoryOre.Value;
 
             Bot.Settings.GoMC = chkMC.Checked;
-            Bot.Settings.maxMCWorkTime = numMaxMCTime.Value;
-            Bot.Settings.MCAfterOnline = numMCAfterOnline.Value;
             Bot.Settings.MCWorkTime = numMCWorkTime.Value;
 
             Bot.Settings.SDWorkTime = numSDWorkTime.Value;
@@ -838,8 +836,6 @@ namespace Moswar
                 numMinFactoryOre.Value = Bot.Settings.minFactoryOre;
 
                 chkMC.Checked = Bot.Settings.GoMC;
-                numMaxMCTime.Value = Bot.Settings.maxMCWorkTime;
-                numMCAfterOnline.Value = Bot.Settings.MCAfterOnline;
                 numMCWorkTime.Value = Bot.Settings.MCWorkTime;
 
                 numSDWorkTime.Value = Bot.Settings.SDWorkTime;

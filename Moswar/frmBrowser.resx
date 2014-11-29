@@ -2092,30 +2092,6 @@
   <data name="&gt;&gt;btnShowShutdown.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="numMaxMCTime.Location" type="System.Drawing.Point, System.Drawing">
-    <value>60, 52</value>
-  </data>
-  <data name="numMaxMCTime.Size" type="System.Drawing.Size, System.Drawing">
-    <value>39, 22</value>
-  </data>
-  <data name="numMaxMCTime.TabIndex" type="System.Int32, mscorlib">
-    <value>66</value>
-  </data>
-  <data name="numMaxMCTime.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
-    <value>Center</value>
-  </data>
-  <data name="&gt;&gt;numMaxMCTime.Name" xml:space="preserve">
-    <value>numMaxMCTime</value>
-  </data>
-  <data name="&gt;&gt;numMaxMCTime.Type" xml:space="preserve">
-    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;numMaxMCTime.Parent" xml:space="preserve">
-    <value>grpShaurburgers</value>
-  </data>
-  <data name="&gt;&gt;numMaxMCTime.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
   <data name="numMCWorkTime.Location" type="System.Drawing.Point, System.Drawing">
     <value>141, 18</value>
   </data>
@@ -2138,91 +2114,7 @@
     <value>grpShaurburgers</value>
   </data>
   <data name="&gt;&gt;numMCWorkTime.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="numMCAfterOnline.Location" type="System.Drawing.Point, System.Drawing">
-    <value>243, 52</value>
-  </data>
-  <data name="numMCAfterOnline.Size" type="System.Drawing.Size, System.Drawing">
-    <value>39, 22</value>
-  </data>
-  <data name="numMCAfterOnline.TabIndex" type="System.Int32, mscorlib">
-    <value>68</value>
-  </data>
-  <data name="numMCAfterOnline.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
-    <value>Center</value>
-  </data>
-  <data name="&gt;&gt;numMCAfterOnline.Name" xml:space="preserve">
-    <value>numMCAfterOnline</value>
-  </data>
-  <data name="&gt;&gt;numMCAfterOnline.Type" xml:space="preserve">
-    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;numMCAfterOnline.Parent" xml:space="preserve">
-    <value>grpShaurburgers</value>
-  </data>
-  <data name="&gt;&gt;numMCAfterOnline.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="label32.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label32.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label32.Location" type="System.Drawing.Point, System.Drawing">
-    <value>2, 53</value>
-  </data>
-  <data name="label32.Size" type="System.Drawing.Size, System.Drawing">
-    <value>56, 14</value>
-  </data>
-  <data name="label32.TabIndex" type="System.Int32, mscorlib">
-    <value>61</value>
-  </data>
-  <data name="label32.Text" xml:space="preserve">
-    <value>Работать</value>
-  </data>
-  <data name="&gt;&gt;label32.Name" xml:space="preserve">
-    <value>label32</value>
-  </data>
-  <data name="&gt;&gt;label32.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label32.Parent" xml:space="preserve">
-    <value>grpShaurburgers</value>
-  </data>
-  <data name="&gt;&gt;label32.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="label33.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label33.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label33.Location" type="System.Drawing.Point, System.Drawing">
-    <value>97, 56</value>
-  </data>
-  <data name="label33.Size" type="System.Drawing.Size, System.Drawing">
-    <value>139, 14</value>
-  </data>
-  <data name="label33.TabIndex" type="System.Int32, mscorlib">
-    <value>62</value>
-  </data>
-  <data name="label33.Text" xml:space="preserve">
-    <value>, при работе бота более:</value>
-  </data>
-  <data name="&gt;&gt;label33.Name" xml:space="preserve">
-    <value>label33</value>
-  </data>
-  <data name="&gt;&gt;label33.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label33.Parent" xml:space="preserve">
-    <value>grpShaurburgers</value>
-  </data>
-  <data name="&gt;&gt;label33.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>2</value>
   </data>
   <data name="label36.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2252,37 +2144,7 @@
     <value>grpShaurburgers</value>
   </data>
   <data name="&gt;&gt;label36.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="label34.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label34.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label34.Location" type="System.Drawing.Point, System.Drawing">
-    <value>283, 56</value>
-  </data>
-  <data name="label34.Size" type="System.Drawing.Size, System.Drawing">
-    <value>16, 14</value>
-  </data>
-  <data name="label34.TabIndex" type="System.Int32, mscorlib">
-    <value>63</value>
-  </data>
-  <data name="label34.Text" xml:space="preserve">
-    <value>ч.</value>
-  </data>
-  <data name="&gt;&gt;label34.Name" xml:space="preserve">
-    <value>label34</value>
-  </data>
-  <data name="&gt;&gt;label34.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label34.Parent" xml:space="preserve">
-    <value>grpShaurburgers</value>
-  </data>
-  <data name="&gt;&gt;label34.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>3</value>
   </data>
   <data name="grpShaurburgers.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
@@ -20940,7 +20802,7 @@
     <value>NoControl</value>
   </data>
   <data name="btnVictimHunting.Location" type="System.Drawing.Point, System.Drawing">
-    <value>5, 505</value>
+    <value>5, 506</value>
   </data>
   <data name="btnVictimHunting.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 3, 3, 3</value>
@@ -21138,7 +21000,7 @@
     <value>5</value>
   </data>
   <data name="grpPlayer2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>2, 267</value>
+    <value>2, 268</value>
   </data>
   <data name="grpPlayer2.Size" type="System.Drawing.Size, System.Drawing">
     <value>221, 233</value>
@@ -21600,7 +21462,7 @@
     <value>NoControl</value>
   </data>
   <data name="chkDebugMode.Location" type="System.Drawing.Point, System.Drawing">
-    <value>991, 585</value>
+    <value>989, 583</value>
   </data>
   <data name="chkDebugMode.Size" type="System.Drawing.Size, System.Drawing">
     <value>114, 18</value>

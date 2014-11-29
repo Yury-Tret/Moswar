@@ -99,13 +99,8 @@
             this.grpShaurburgers = new System.Windows.Forms.GroupBox();
             this.chkMC = new System.Windows.Forms.CheckBox();
             this.btnShowShutdown = new System.Windows.Forms.Button();
-            this.numMaxMCTime = new System.Windows.Forms.NumericUpDown();
             this.numMCWorkTime = new System.Windows.Forms.NumericUpDown();
-            this.numMCAfterOnline = new System.Windows.Forms.NumericUpDown();
-            this.label32 = new System.Windows.Forms.Label();
-            this.label33 = new System.Windows.Forms.Label();
             this.label36 = new System.Windows.Forms.Label();
-            this.label34 = new System.Windows.Forms.Label();
             this.grpThimbles = new System.Windows.Forms.GroupBox();
             this.grpThimbleSettings = new System.Windows.Forms.GroupBox();
             this.label72 = new System.Windows.Forms.Label();
@@ -780,9 +775,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.numSDPlayThimbles)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numSDWorkTime)).BeginInit();
             this.grpShaurburgers.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numMaxMCTime)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numMCWorkTime)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numMCAfterOnline)).BeginInit();
             this.grpThimbles.SuspendLayout();
             this.grpThimbleSettings.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numMonaMinStars)).BeginInit();
@@ -1591,13 +1584,8 @@
             // 
             this.grpShaurburgers.Controls.Add(this.chkMC);
             this.grpShaurburgers.Controls.Add(this.btnShowShutdown);
-            this.grpShaurburgers.Controls.Add(this.numMaxMCTime);
             this.grpShaurburgers.Controls.Add(this.numMCWorkTime);
-            this.grpShaurburgers.Controls.Add(this.numMCAfterOnline);
-            this.grpShaurburgers.Controls.Add(this.label32);
-            this.grpShaurburgers.Controls.Add(this.label33);
             this.grpShaurburgers.Controls.Add(this.label36);
-            this.grpShaurburgers.Controls.Add(this.label34);
             resources.ApplyResources(this.grpShaurburgers, "grpShaurburgers");
             this.grpShaurburgers.Name = "grpShaurburgers";
             this.grpShaurburgers.TabStop = false;
@@ -1616,26 +1604,6 @@
             this.btnShowShutdown.Name = "btnShowShutdown";
             this.btnShowShutdown.UseVisualStyleBackColor = true;
             this.btnShowShutdown.Click += new System.EventHandler(this.Animation);
-            // 
-            // numMaxMCTime
-            // 
-            resources.ApplyResources(this.numMaxMCTime, "numMaxMCTime");
-            this.numMaxMCTime.Maximum = new decimal(new int[] {
-            72,
-            0,
-            0,
-            0});
-            this.numMaxMCTime.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.numMaxMCTime.Name = "numMaxMCTime";
-            this.numMaxMCTime.Value = new decimal(new int[] {
-            8,
-            0,
-            0,
-            0});
             // 
             // numMCWorkTime
             // 
@@ -1657,40 +1625,10 @@
             0,
             0});
             // 
-            // numMCAfterOnline
-            // 
-            resources.ApplyResources(this.numMCAfterOnline, "numMCAfterOnline");
-            this.numMCAfterOnline.Maximum = new decimal(new int[] {
-            120,
-            0,
-            0,
-            0});
-            this.numMCAfterOnline.Name = "numMCAfterOnline";
-            this.numMCAfterOnline.Value = new decimal(new int[] {
-            10,
-            0,
-            0,
-            0});
-            // 
-            // label32
-            // 
-            resources.ApplyResources(this.label32, "label32");
-            this.label32.Name = "label32";
-            // 
-            // label33
-            // 
-            resources.ApplyResources(this.label33, "label33");
-            this.label33.Name = "label33";
-            // 
             // label36
             // 
             resources.ApplyResources(this.label36, "label36");
             this.label36.Name = "label36";
-            // 
-            // label34
-            // 
-            resources.ApplyResources(this.label34, "label34");
-            this.label34.Name = "label34";
             // 
             // grpThimbles
             // 
@@ -7807,9 +7745,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.numSDWorkTime)).EndInit();
             this.grpShaurburgers.ResumeLayout(false);
             this.grpShaurburgers.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numMaxMCTime)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numMCWorkTime)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numMCAfterOnline)).EndInit();
             this.grpThimbles.ResumeLayout(false);
             this.grpThimbleSettings.ResumeLayout(false);
             this.grpThimbleSettings.PerformLayout();
@@ -8210,13 +8146,8 @@
         private System.Windows.Forms.GroupBox grpShaurburgers;
         private System.Windows.Forms.CheckBox chkMC;
         private System.Windows.Forms.Button btnShowShutdown;
-        private System.Windows.Forms.NumericUpDown numMaxMCTime;
         private System.Windows.Forms.NumericUpDown numMCWorkTime;
-        private System.Windows.Forms.NumericUpDown numMCAfterOnline;
-        private System.Windows.Forms.Label label32;
-        private System.Windows.Forms.Label label33;
         private System.Windows.Forms.Label label36;
-        private System.Windows.Forms.Label label34;
         private System.Windows.Forms.GroupBox grpThimbles;
         private System.Windows.Forms.GroupBox grpThimbleSettings;
         private System.Windows.Forms.Label label72;

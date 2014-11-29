@@ -717,8 +717,6 @@ namespace Moswar
             public decimal minFactoryMoney;
             public decimal minFactoryOre;
             public bool GoMC;
-            public decimal MCAfterOnline;
-            public decimal maxMCWorkTime;
             public decimal MCWorkTime;
             public decimal SDWorkTime;
             public decimal SDThimblesMoney;
@@ -4751,7 +4749,6 @@ namespace Moswar
             {
                 case TimeOutAction.All:
                     BugReport("UseTimeOut.All");
-                    Me.MC.Stop = true; //Разрешаем использование Иммунитета у мони, ибо както выбрались из циклов работы MC (тут только если что-то происходило с циклами или инициализация)
                     if (GrpFight.NextCheckDT < DateTime.Now) GroupFight(GroupFightAction.Check, GroupFightType.All); //На всякий случай проверяю не вишу ли во время таймаута в какой нибудь записи в стенку!
                     #region ClanWar + Police + Thimbles + Major + Fitness + Automobile + Pyramid + Casino + Pet + Sovet + Factory + Quest + OilLenin
                         UseTimeOut(TimeOutAction.Free);
@@ -4763,49 +4760,6 @@ namespace Moswar
                             #region Инициализация
                             ServerDT = GetServerTime(MainWB);
                             #endregion
-                            if ((!Settings.GoMetro || Me.Rat.Stop || Me.Rat.LastDT.AddMinutes(30) < ServerDT) && (!Settings.SearchRat || Me.RatHunting.Stop)) //Блокировка MC и Патруля во время драк с крысомахами!
-                            {
-                                #region MC after xx Hours online + Attack + UseTimeOut(Free)
-
-                                if (DateTime.Now >= Me.Events.SessionStartDT.AddHours(Convert.ToInt32(Settings.MCAfterOnline)) && Me.Player.Level >= 2)
-                                {   //Так, как сюда заходит уже по истечению макс времени онлайн, то его тоже нужнно учитывать, ибо обнуление только в конце!
-                                    UpdateStatus("# " + DateTime.Now + " УУУУУУаах *зевая* засиделся я тут с вами, схожу ка в MC!");
-                                    Me.MC.LastDT = DateTime.Now.AddHours(Convert.ToInt32(Settings.maxMCWorkTime));
-                                    while (DateTime.Now < Me.MC.LastDT)
-                                    {
-                                        Me.MC.Stop = false; //Макдачу, блокируем использование Иммунитета у мони.
-                                        MC(Settings.MCWorkTime);                                    
-                                        #region Проводим драку между походами в MC
-                                        #region Охота на крысомах
-                                        if (Me.RatHunting.RestartDT < DateTime.Now) { Me.RatHunting.Defeats = 0; Me.RatHunting.Stop = false; } //Охота обновляется каждые 24 часа
-                                        if (Settings.SearchRat && !Me.RatHunting.Stop && Me.RatHunting.NextDT < DateTime.Now) Metro(MetroAction.SearchRat);
-                                        #endregion
-                                        #region Ленинопровод
-                                        if (Me.OilLeninHunting.RestartDT < DateTime.Now) { Me.OilLeninHunting.Defeats = 0; Me.OilLeninHunting.Stop = false; } //Охота обновляется каждые 24 часа
-                                        if (Settings.GoOilLenin && !Me.OilLeninHunting.Stop && Me.OilLeninHunting.NextDT < DateTime.Now) Oil(OilAction.LeninFight); 
-                                        #endregion
-                                        if (CheckHealthEx(99, Settings.HealMe100, Settings.HealPet50, Settings.HealPet100) && !Me.Trauma.Stop)
-                                        {
-                                            if (Me.ClanWarInfo.WarStep == 1 & Settings.RemoveEnemy & !CheckImmun(ImmunAction.Tooth)) ClanWar(ClanWarAction.Tooth); //Стадия выбивания зубов, и стоит галочка?
-                                            #region Использовать орудия пыток только если будем бить жертв!
-                                            if (Settings.AlleyOpponent == Opponent.Victim && (Settings.UseAgent ? Me.AgentHunting.Stop : true) &&
-                                                !(Me.ClanWarInfo.Now && Settings.AddClan && (Settings.FarmClan || (Me.ClanWarInfo.WarStep == 1 ? !CheckImmun(ImmunAction.Tooth) : false)))
-                                                ) Torture(true);
-                                            else Torture(false);
-                                            #endregion                                            
-                                            #region Переодевание
-                                            if (Settings.UseWearSet) WearSet(MainWB, ArrWearSet, 0);
-                                            #endregion
-                                            Attack(Settings.AlleyOpponent, Settings.minAlleyLvl, Settings.maxAlleyLvl);
-                                        }
-                                        #endregion
-                                        UseTimeOut(TimeOutAction.Free);
-                                    }
-                                    Me.MC.Stop = true; //Работы в Шаурбургесе закончены, разрешаем использование Иммунитета у мони.
-                                    Me.Events.SessionStartDT = DateTime.Now; //Закончились работы в Шаурбургесе, начинается новый отсчет драк.
-                                }
-                                #endregion
-                            }
                             #region Metro
                             if (Me.Rat.LastDT.Date != GetServerTime(MainWB).Date) { Me.Rat.Val = 0; Me.Rat.Stop = false; } //Обнуление побегов от крыс в метро!
                             if (Settings.GoMetro && !Me.Rat.Stop && Me.Player.Level >= 4 && !bRet //Закончился патруль и стоит галка бегать в метро?
