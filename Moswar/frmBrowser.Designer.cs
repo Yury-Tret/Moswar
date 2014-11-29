@@ -102,9 +102,7 @@
             this.numMaxMCTime = new System.Windows.Forms.NumericUpDown();
             this.numMCWorkTime = new System.Windows.Forms.NumericUpDown();
             this.numMCAfterOnline = new System.Windows.Forms.NumericUpDown();
-            this.numMinMCMoney = new System.Windows.Forms.NumericUpDown();
             this.label32 = new System.Windows.Forms.Label();
-            this.label35 = new System.Windows.Forms.Label();
             this.label33 = new System.Windows.Forms.Label();
             this.label36 = new System.Windows.Forms.Label();
             this.label34 = new System.Windows.Forms.Label();
@@ -785,7 +783,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.numMaxMCTime)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numMCWorkTime)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numMCAfterOnline)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numMinMCMoney)).BeginInit();
             this.grpThimbles.SuspendLayout();
             this.grpThimbleSettings.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numMonaMinStars)).BeginInit();
@@ -1597,9 +1594,7 @@
             this.grpShaurburgers.Controls.Add(this.numMaxMCTime);
             this.grpShaurburgers.Controls.Add(this.numMCWorkTime);
             this.grpShaurburgers.Controls.Add(this.numMCAfterOnline);
-            this.grpShaurburgers.Controls.Add(this.numMinMCMoney);
             this.grpShaurburgers.Controls.Add(this.label32);
-            this.grpShaurburgers.Controls.Add(this.label35);
             this.grpShaurburgers.Controls.Add(this.label33);
             this.grpShaurburgers.Controls.Add(this.label36);
             this.grpShaurburgers.Controls.Add(this.label34);
@@ -1677,30 +1672,10 @@
             0,
             0});
             // 
-            // numMinMCMoney
-            // 
-            resources.ApplyResources(this.numMinMCMoney, "numMinMCMoney");
-            this.numMinMCMoney.Maximum = new decimal(new int[] {
-            1000000,
-            0,
-            0,
-            0});
-            this.numMinMCMoney.Name = "numMinMCMoney";
-            this.numMinMCMoney.Value = new decimal(new int[] {
-            10,
-            0,
-            0,
-            0});
-            // 
             // label32
             // 
             resources.ApplyResources(this.label32, "label32");
             this.label32.Name = "label32";
-            // 
-            // label35
-            // 
-            resources.ApplyResources(this.label35, "label35");
-            this.label35.Name = "label35";
             // 
             // label33
             // 
@@ -7835,7 +7810,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.numMaxMCTime)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numMCWorkTime)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numMCAfterOnline)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numMinMCMoney)).EndInit();
             this.grpThimbles.ResumeLayout(false);
             this.grpThimbleSettings.ResumeLayout(false);
             this.grpThimbleSettings.PerformLayout();
@@ -8239,9 +8213,7 @@
         private System.Windows.Forms.NumericUpDown numMaxMCTime;
         private System.Windows.Forms.NumericUpDown numMCWorkTime;
         private System.Windows.Forms.NumericUpDown numMCAfterOnline;
-        private System.Windows.Forms.NumericUpDown numMinMCMoney;
         private System.Windows.Forms.Label label32;
-        private System.Windows.Forms.Label label35;
         private System.Windows.Forms.Label label33;
         private System.Windows.Forms.Label label36;
         private System.Windows.Forms.Label label34;

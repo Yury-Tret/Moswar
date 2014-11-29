@@ -2042,13 +2042,13 @@
     <value>5, 19</value>
   </data>
   <data name="chkMC.Size" type="System.Drawing.Size, System.Drawing">
-    <value>207, 18</value>
+    <value>135, 18</value>
   </data>
   <data name="chkMC.TabIndex" type="System.Int32, mscorlib">
     <value>69</value>
   </data>
   <data name="chkMC.Text" xml:space="preserve">
-    <value>Работать, если денег меньше чем:</value>
+    <value>Работать сменами в:</value>
   </data>
   <data name="&gt;&gt;chkMC.Name" xml:space="preserve">
     <value>chkMC</value>
@@ -2117,7 +2117,7 @@
     <value>2</value>
   </data>
   <data name="numMCWorkTime.Location" type="System.Drawing.Point, System.Drawing">
-    <value>127, 81</value>
+    <value>141, 18</value>
   </data>
   <data name="numMCWorkTime.Size" type="System.Drawing.Size, System.Drawing">
     <value>39, 22</value>
@@ -2164,30 +2164,6 @@
   <data name="&gt;&gt;numMCAfterOnline.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
-  <data name="numMinMCMoney.Location" type="System.Drawing.Point, System.Drawing">
-    <value>225, 20</value>
-  </data>
-  <data name="numMinMCMoney.Size" type="System.Drawing.Size, System.Drawing">
-    <value>57, 22</value>
-  </data>
-  <data name="numMinMCMoney.TabIndex" type="System.Int32, mscorlib">
-    <value>67</value>
-  </data>
-  <data name="numMinMCMoney.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
-    <value>Center</value>
-  </data>
-  <data name="&gt;&gt;numMinMCMoney.Name" xml:space="preserve">
-    <value>numMinMCMoney</value>
-  </data>
-  <data name="&gt;&gt;numMinMCMoney.Type" xml:space="preserve">
-    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;numMinMCMoney.Parent" xml:space="preserve">
-    <value>grpShaurburgers</value>
-  </data>
-  <data name="&gt;&gt;numMinMCMoney.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
   <data name="label32.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -2216,37 +2192,7 @@
     <value>grpShaurburgers</value>
   </data>
   <data name="&gt;&gt;label32.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="label35.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label35.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label35.Location" type="System.Drawing.Point, System.Drawing">
-    <value>2, 85</value>
-  </data>
-  <data name="label35.Size" type="System.Drawing.Size, System.Drawing">
-    <value>116, 14</value>
-  </data>
-  <data name="label35.TabIndex" type="System.Int32, mscorlib">
-    <value>60</value>
-  </data>
-  <data name="label35.Text" xml:space="preserve">
-    <value>Работать сменами в:</value>
-  </data>
-  <data name="&gt;&gt;label35.Name" xml:space="preserve">
-    <value>label35</value>
-  </data>
-  <data name="&gt;&gt;label35.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label35.Parent" xml:space="preserve">
-    <value>grpShaurburgers</value>
-  </data>
-  <data name="&gt;&gt;label35.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>5</value>
   </data>
   <data name="label33.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2276,7 +2222,7 @@
     <value>grpShaurburgers</value>
   </data>
   <data name="&gt;&gt;label33.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>6</value>
   </data>
   <data name="label36.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2285,7 +2231,7 @@
     <value>NoControl</value>
   </data>
   <data name="label36.Location" type="System.Drawing.Point, System.Drawing">
-    <value>168, 85</value>
+    <value>182, 22</value>
   </data>
   <data name="label36.Size" type="System.Drawing.Size, System.Drawing">
     <value>16, 14</value>
@@ -2306,7 +2252,7 @@
     <value>grpShaurburgers</value>
   </data>
   <data name="&gt;&gt;label36.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>7</value>
   </data>
   <data name="label34.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2336,7 +2282,7 @@
     <value>grpShaurburgers</value>
   </data>
   <data name="&gt;&gt;label34.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>8</value>
   </data>
   <data name="grpShaurburgers.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
@@ -20994,7 +20940,7 @@
     <value>NoControl</value>
   </data>
   <data name="btnVictimHunting.Location" type="System.Drawing.Point, System.Drawing">
-    <value>5, 504</value>
+    <value>5, 505</value>
   </data>
   <data name="btnVictimHunting.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 3, 3, 3</value>
@@ -21192,7 +21138,7 @@
     <value>5</value>
   </data>
   <data name="grpPlayer2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>2, 266</value>
+    <value>2, 267</value>
   </data>
   <data name="grpPlayer2.Size" type="System.Drawing.Size, System.Drawing">
     <value>221, 233</value>
@@ -21654,7 +21600,7 @@
     <value>NoControl</value>
   </data>
   <data name="chkDebugMode.Location" type="System.Drawing.Point, System.Drawing">
-    <value>993, 587</value>
+    <value>991, 585</value>
   </data>
   <data name="chkDebugMode.Size" type="System.Drawing.Size, System.Drawing">
     <value>114, 18</value>

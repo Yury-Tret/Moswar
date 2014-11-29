@@ -717,7 +717,6 @@ namespace Moswar
             public decimal minFactoryMoney;
             public decimal minFactoryOre;
             public bool GoMC;
-            public decimal minMoneyMC;
             public decimal MCAfterOnline;
             public decimal maxMCWorkTime;
             public decimal MCWorkTime;
@@ -4766,9 +4765,8 @@ namespace Moswar
                             #endregion
                             if ((!Settings.GoMetro || Me.Rat.Stop || Me.Rat.LastDT.AddMinutes(30) < ServerDT) && (!Settings.SearchRat || Me.RatHunting.Stop)) //Блокировка MC и Патруля во время драк с крысомахами!
                             {
-                                #region MC min money or MC after xx Hours online + Attack + UseTimeOut(Free)
+                                #region MC after xx Hours online + Attack + UseTimeOut(Free)
 
-                                if (Settings.GoMC && Me.Wallet.Money <= Settings.minMoneyMC & Me.Player.Level >= 2) MC(Settings.MCWorkTime); //Нужно ходить в MC, если мало денег?
                                 if (DateTime.Now >= Me.Events.SessionStartDT.AddHours(Convert.ToInt32(Settings.MCAfterOnline)) && Me.Player.Level >= 2)
                                 {   //Так, как сюда заходит уже по истечению макс времени онлайн, то его тоже нужнно учитывать, ибо обнуление только в конце!
                                     UpdateStatus("# " + DateTime.Now + " УУУУУУаах *зевая* засиделся я тут с вами, схожу ка в MC!");

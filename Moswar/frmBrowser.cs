@@ -467,7 +467,6 @@ namespace Moswar
             Bot.Settings.minFactoryOre = numMinFactoryOre.Value;
 
             Bot.Settings.GoMC = chkMC.Checked;
-            Bot.Settings.minMoneyMC = numMinMCMoney.Value;
             Bot.Settings.maxMCWorkTime = numMaxMCTime.Value;
             Bot.Settings.MCAfterOnline = numMCAfterOnline.Value;
             Bot.Settings.MCWorkTime = numMCWorkTime.Value;
@@ -839,7 +838,6 @@ namespace Moswar
                 numMinFactoryOre.Value = Bot.Settings.minFactoryOre;
 
                 chkMC.Checked = Bot.Settings.GoMC;
-                numMinMCMoney.Value = Bot.Settings.minMoneyMC;
                 numMaxMCTime.Value = Bot.Settings.maxMCWorkTime;
                 numMCAfterOnline.Value = Bot.Settings.MCAfterOnline;
                 numMCWorkTime.Value = Bot.Settings.MCWorkTime;
