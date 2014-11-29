@@ -1413,6 +1413,7 @@ namespace Moswar
                     + (Bot.Settings.GoGroupFightChaos || Bot.Settings.GoGroupFightOre || Bot.Settings.GoClanFight ? "Стенки:\nСледующая планируемая: " + Bot.GrpFight.NextFightType + "\nСтарт в: " + Bot.GrpFight.NextFightDT + "\n\n" : "")
                     + (Bot.Settings.Quest ? "Квесты:\nСтоп: " + Bot.Me.Events.StopQuest + "\n\n" : "")
                     + (Bot.Settings.GoPatrol ? "Патруль:\nПоследняя проверка: " + Bot.Me.Patrol.LastDT + "\nСтоп: " + Bot.Me.Patrol.Stop + "\n\n" : "")
+                    + (Bot.Settings.GoMC ? "Шаурбургерс:\nПоследняя проверка: " + Bot.Me.MC.LastDT + "\nСтоп: " + Bot.Me.MC.Stop + "\n\n" : "")
                     + (Bot.Me.Trauma.Stop ? "Травма:\nСпадёт в: " + Bot.Me.Trauma.LastDT + "\n\n" : "")
                     + (Bot.Settings.GetMetroWarPrize ? "Метровар:\nПроверка доступности жетонов: " + Bot.Me.MetroWarPrizeDT + "\n\n" : "")
                     + "Данные считаны: " + LastCheckDT
