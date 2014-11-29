@@ -960,7 +960,6 @@ namespace Moswar
             Settings.StopHC = DateTime.Now.Date.Add(new TimeSpan(23, 59, 59));
 
 
-            Me.MC.Stop = true;
             Me.SetInfo.LastSetIndex = -1;
             #endregion
             Me.ClanWarInfo.vsClan = new stcClan[3]; //Максимальное количество одновременных кланвойн.
@@ -4837,7 +4836,7 @@ namespace Moswar
                     #region Thimbles
                     //Проверяем каждые 2 часа + резет в 00:00, быть может мы смогли надыбать билетик.
                     if (ServerDT >= Me.Thimbles.LastDT.AddHours(2) || Me.Thimbles.LastDT.Date != ServerDT.Date) Me.Thimbles.Stop = false;
-                    if ((Settings.ThimblesImmunity || Settings.HCRevenge) && Me.MC.Stop) CheckImmun(ImmunAction.Mona); //Проверяем иммунитет от нападений только тут дабы во время МС всегда ходил к моне/банк.
+                    if (Settings.ThimblesImmunity || Settings.HCRevenge) CheckImmun(ImmunAction.Mona); //Проверяем иммунитет от нападений только тут дабы во время МС всегда ходил к моне/банк.
                     if (!Me.Thimbles.Stop && Me.Player.Level >= 5 && ServerDT > Me.Thimbles.StartDT &&
                         ((Me.Wallet.Money >= Settings.PlayThimbles + Settings.minThimblesMoney && (!Settings.GoPyramid || !Me.Pyramid.BlockMonya || !Settings.BlockThimbles) && (Me.BankDeposit.StartDT >= ServerDT.AddHours(2) || !Settings.UseBankDeposit))
                          || (Me.Wallet.Money >= Settings.minWantedPlayThimbles + Settings.minThimblesMoney && Me.Wanted && Settings.WantedPlayThimbles))
@@ -4929,7 +4928,7 @@ namespace Moswar
                     {
                         UpdateMyInfo(MainWB);
                         if (((Settings.UseBankDeposit && Me.Wallet.Money + Me.BankDeposit.MyMoney >= Settings.DepositMoney) || (!Settings.UseBankDeposit && Me.BankDeposit.MyMoney != 0)) && Me.BankDeposit.StartDT < ServerDT) Bank(BankAction.Deposit);
-                        if ((Settings.ThimblesImmunity || Settings.HCRevenge) && Me.MC.Stop) CheckImmun(ImmunAction.Mona); //Проверяем иммунитет от нападений только тут дабы во время МС всегда ходил к моне/банк.
+                        if (Settings.ThimblesImmunity || Settings.HCRevenge) CheckImmun(ImmunAction.Mona); //Проверяем иммунитет от нападений только тут дабы во время МС всегда ходил к моне/банк.
                         if (Settings.UseBank && Me.Wallet.Money >= Settings.ExchangeBankMoney + Settings.minThimblesMoney
                             && (!Settings.GoPyramid || !Me.Pyramid.BlockMonya || !Settings.BlockThimbles) && (Me.BankDeposit.StartDT >= ServerDT.AddHours(2) || !Settings.UseBankDeposit)
                             && ServerDT > Me.Thimbles.BankStartDT && ServerDT > Me.Thimbles.StartDT) Bank(BankAction.Exchange); //Пора менять бабки в банке?
@@ -7676,10 +7675,6 @@ namespace Moswar
                                 if (Me.RatHunting.NextDT > DateTime.Now) UpdateStatus("@ " + DateTime.Now + " Пытаюсь синхронизировать ленино-крысопровод, скоро буду!");
                             }
                         }
-                        #endregion
-
-                        #region Заход на крыс между Макдольнадсами
-                        if (Me.MC.Stop == false && Me.RatHunting.Lvl > 10) return false; //Зашел сюда в перерывах Макдональдса, не давать кушать допы, дерёмся только с мелкими крысами!
                         #endregion
 
                         #region Быстрый спуск
@@ -13685,22 +13680,18 @@ namespace Moswar
                     }
                     else
                     {
-                        #region MC при травме
-                        UpdateStatus("# " + DateTime.Now + " Проооопустите ка инвалида! Я у вас тут в Макдаке поторчу?!?!");
+                        #region Ожидание при травме
+                        UpdateStatus("# " + DateTime.Now + " Получил травму. Больно блин!");
                         DateTime ServerDT;
                         do
                         {
                             if (!Trauma(TraumaAction.Check)) break;
-                            Me.MC.Stop = false; //Макдачу пока травма, блокируем использование Иммунитета у мони.
                             UseTimeOut(TimeOutAction.Free);                            
                             ServerDT = GetServerTime(MainWB);
-                            if (Me.Trauma.LastDT > ServerDT.AddMinutes(20)) MC(Settings.MCWorkTime); //Если уже мало времени до окончания, травмы не устраиваться в макдональдс.
-                            else Wait(Me.Trauma.LastDT - ServerDT, " Болячка сама во-вот отвалится, жду до: ", TimeOutAction.Free);
+                            Wait(Me.Trauma.LastDT > ServerDT.AddMinutes(20) ? new TimeSpan(0, 20, 0) : Me.Trauma.LastDT - ServerDT, " Пока есть травма, жду до: ", TimeOutAction.Free);
                             ServerDT = GetServerTime(MainWB);
                         } while (ServerDT < Me.Trauma.LastDT);
                         Me.Trauma.Stop = false; //Была травма, но время истекло!
-                        Me.MC.Stop = true; //Работы в Шаурбургесе закончены, разрешаем использование Иммунитета у мони.
-                        Me.Events.SessionStartDT = DateTime.Now; //Закончились работы в Шаурбургесе, начинается новый отсчет драк.                    
                         #endregion
                     }
                 } while (true);
