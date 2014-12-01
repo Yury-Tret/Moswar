@@ -247,6 +247,7 @@ namespace Moswar
             public stcStop Police;
             public stcStop Patrol;
             public stcStop MC;
+            public stcStop Quest;
             public stcStop Rat;
             public stcStop OilHunting;
             public stcStop NPCHunting;                        
@@ -3830,7 +3831,8 @@ namespace Moswar
                         }
                         else 
                         {
-                            UpdateStatus("! " + DateTime.Now + " Не могу найти где тут вход на это задание, зайду попозже");
+                            UpdateStatus("! " + DateTime.Now + " Не могу найти где тут вход на это задание, зайду через полчаса");
+                            Me.Quest.LastDT = GetServerTime(MainWB).AddMinutes(30);
                             return false;
                         }                        
                         #endregion
@@ -5001,7 +5003,7 @@ namespace Moswar
                     #endregion
                     #region Quest
                     if (Me.QuestFillTonus.LastDT.Date != ServerDT.Date) Me.QuestFillTonus.Stop = false;
-                    if (Settings.Quest && !Me.Events.StopQuest && Convert.ToInt32(Me.Player.Energy[0]) >= ((Settings.QuestFillTonusPlus && !Me.QuestFillTonus.Stop) || Settings.QuestFillTonusBottle ? Me.QuestFillTonus.Val : Convert.ToInt32(Me.Player.Energy[1]) / 2)) CheckQuest(); //При не мении 50% энергии делать Квэсты
+                    if (Settings.Quest && Me.Quest.LastDT <= ServerDT && !Me.Events.StopQuest && Convert.ToInt32(Me.Player.Energy[0]) >= ((Settings.QuestFillTonusPlus && !Me.QuestFillTonus.Stop) || Settings.QuestFillTonusBottle ? Me.QuestFillTonus.Val : Convert.ToInt32(Me.Player.Energy[1]) / 2)) CheckQuest(); //При не мении 50% энергии делать Квэсты
                     #endregion
                     #region CookCoctail
                     if (Settings.UseCookCoctail && Me.CocktailRecipe.LastCook.AddHours(3) < ServerDT) CookCoctail(CoctailAction.CheckMissing);
