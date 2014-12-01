@@ -6950,18 +6950,40 @@ namespace Moswar
                         GoToPlace(MainWB, Place.Shaurburgers);
                     }
                     #endregion
+
                     #region Старт смены
                     HtmlElementCollection HC = frmMain.GetDocument(MainWB).GetElementById("time").GetElementsByTagName("option"); //Проверка, есть ли необходимое для действия время.
                     frmMain.GetDocument(MainWB).GetElementById("time").SetAttribute("value", Convert.ToInt32(HC[HC.Count - 1].GetAttribute("value")) >= WT ? WT.ToString() : HC[HC.Count - 1].GetAttribute("value"));
                     frmMain.InvokeMember(MainWB, frmMain.GetDocument(MainWB).GetElementById("workForm"), "submit");
+                    IsWBComplete(MainWB);
                     #endregion
+
+                    #region Шаурбургерс захвачен вождем?
+                    HtmlElement[] Alerts = frmMain.GetElementsById(MainWB, "alert-text");
+                    if (Alerts != null)
+                    {
+                        foreach (HtmlElement Alert in Alerts)
+                        {
+                            if (Alert.InnerText.Contains("Шаурбургерс закрыт"))
+                            {
+                                Me.MC.LastDT = GetServerTime(MainWB).AddMinutes(30); //Зайдем через полчаса
+                                UpdateStatus("# " + DateTime.Now + " Шаурбургерс закрыт, зайду через полчаса");
+                                return false;
+                            }
+                        }
+                    }
+                    #endregion
+
+                    UpdateStatus("# " + DateTime.Now + " Устроился на работу в Шаурбургерс");
                 }
-                IsWBComplete(MainWB);
                 HtmlEl = frmMain.GetDocument(MainWB).GetElementById("workForm").All["shaurma"];
                 TimeSpan TS = new TimeSpan();
                 TimeSpan.TryParse(HtmlEl.InnerText, out TS);
-                Me.MC.LastDT = GetServerTime(MainWB).Add(TS).AddMinutes(3); //Запоминаем время окончания смены плюс 3 минуты на возможные лаги
-                UpdateStatus("# " + DateTime.Now + " Устроился на работу в Шаурбургерс до: " + DateTime.Now.Add(TS).ToString("HH:mm:ss"));
+                TS = TS.Add(new TimeSpan(0, 3, 0));  //Добавляем три минуты на возможные лаги
+                if (TS > new TimeSpan(0, 30, 0))
+                    TS = new TimeSpan(0, 30, 0);    // В любом случае проверим не позднее, чем через полчаса
+                Me.MC.LastDT = GetServerTime(MainWB).Add(TS);
+                UpdateStatus("# " + DateTime.Now + " Работаю в Шаурбургерсе, зайду проверить в: " + DateTime.Now.Add(TS).ToString("HH:mm:ss"));
                 return true;
             }
             Me.MC.LastDT = GetServerTime(MainWB);
