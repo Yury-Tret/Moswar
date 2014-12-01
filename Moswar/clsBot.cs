@@ -3094,8 +3094,8 @@ namespace Moswar
 
             if (!frmMain.GetDocumentURL(MainWB).EndsWith("/player/")) GoToPlace(MainWB, Place.Player);
             string[] ArrInfo = GetArrClassHtml(MainWB, "$(\"#content .equipment-cell .object-thumbs .object-thumb\");", "innerHTML");
-            string[][] Box = new string[6][];
-            string[][] Key = new string[6][];
+            string[][] Box = new string[7][];
+            string[][] Key = new string[7][];
             #region Сбор информации о сундуках и ключах в багажнике
             foreach (string Info in ArrInfo)
             {
@@ -3111,8 +3111,9 @@ namespace Moswar
                     "(?<LeninBox>inventory-box_lenin_(?<LeninSize>([0-9])+)-btn)|" +
                     "(?<SovetBox>inventory-box_sovet_fight_(?<SovetSize>(s|m|l))-btn)|" +
                     "(?<RaenBox>inventory-box_sovet_fight_r([0-9])+-btn)|" +
-                    "((?<MetroKey>box_metro_)?key((?<KeyType>[0-9])|" +
-                    "(?<SovetKey>_sovet_fight))?.png.+data-id=\"?(?<ID>([0-9])+)\"?)");
+                    "(?<PatrolBox>inventory-box_patrol-btn)|" +
+                    "(((?<MetroKey>box_metro_)|(?<PatrolKey>box_patrol_))?key((?<KeyType>[0-9])|(?<SovetKey>_sovet_fight))?.png.+data-id=\"?(?<ID>([0-9])+)\"?)"
+                    );
 
                 int Type = -1;
                 if (match.Groups["SaperBook"].Success || match.Groups["MFBook"].Success || match.Groups["FruitBox"].Success || match.Groups["CampBoss"].Success || match.Groups["RaenBox"].Success) Type = 0;
@@ -3121,9 +3122,10 @@ namespace Moswar
                 if (match.Groups["LeninBox"].Success || match.Groups["KeyType"].Value == "3") Type = 3;
                 if (match.Groups["EpicBox"].Success || match.Groups["MetroBox"].Success || match.Groups["MetroKey"].Success) Type = 4;
                 if (match.Groups["SovetBox"].Success || match.Groups["SovetKey"].Success) Type = 5;
+                if (match.Groups["PatrolBox"].Success || match.Groups["PatrolKey"].Success) Type = 6;
                 if (Type != -1)
                 {
-                    if (match.Groups["KeyType"].Success || match.Groups["MetroKey"].Success || match.Groups["SovetKey"].Success)
+                    if (match.Groups["KeyType"].Success || match.Groups["MetroKey"].Success || match.Groups["SovetKey"].Success || match.Groups["PatrolKey"].Success)
                     {
                         Array.Resize<string>(ref Key[Type], Key[Type] == null ? 1 : Key[Type].Count<string>() + 1);
                         Key[Type][Key[Type].Count<string>() - 1] = match.Groups["ID"].Value;
