@@ -3798,7 +3798,7 @@ namespace Moswar
                     string BonusQuestURL = "";
                     #region Определение поля деятельности 2-3 круг или бонусная линейка!
                     int QLines = GetArrClassCount(MainWB, "$(\"#content .jobs-map .block-rounded\");");
-                    bool BonusLine = !Enumerable.Range(0, Me.Player.Level > 10 ? 10 : Me.Player.Level).Contains(QLines) && !Expert.QuestIgnoreBonus;
+                    bool BonusLine = !Enumerable.Range(1, Me.Player.Level > 10 ? 10 : Me.Player.Level).Contains(QLines) && !Expert.QuestIgnoreBonus;
                     if (BonusLine) //Обнаружена бонусная линейка квестов!
                     {
                         ArrInfo = GetArrClassHtml(MainWB, "$(\"#content .jobs-map .block-rounded:eq(" + (QLines - 1) + ") .padding\");", "innerHTML");
