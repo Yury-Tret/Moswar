@@ -8199,8 +8199,16 @@ namespace Moswar
                     matches = regex.Matches(frmMain.GetElementsById(MainWB, "equipment-accordion")[0].InnerHtml); //0-> Боевые питомцы, 1-> Беговые питомцы
                     BugReport("@ Обнаружено боевых петов: " + matches.Count);
                     #region Определение типа боевого питомца
-                    UsePetType = getWarPetInformation(Settings.SetWarPetType).type;
-                    MaxStat = getWarPetInformation(Settings.SetWarPetType).maxState;
+                    if (PA == PetAction.SetWarPet)
+                    {
+                        UsePetType = getWarPetInformation(Settings.SetWarPetType).type;
+                        MaxStat = getWarPetInformation(Settings.SetWarPetType).maxState;
+                    }
+                    else
+                    {
+                        UsePetType = getWarPetInformation(Settings.TrainWarPetType).type;
+                        MaxStat = getWarPetInformation(Settings.TrainWarPetType).maxState;
+                    }
                     #endregion
                     BugReport("@ Выбираем боевого пета с типом " + UsePetType);
                     foreach (Match m in matches)
