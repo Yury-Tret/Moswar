@@ -997,160 +997,156 @@ namespace Moswar
             public int type;
             public int maxState;
         }
-        enum stcPetType
-        {
-            War,
-            Run
-        }
 
-        private stcPetState getPetInformation(stcPetType petType)
+        private stcPetState getWarPetInformation(int PetType)
         {
             stcPetState data = new stcPetState();
+            data.type = 0;
+            data.maxState = 500;
 
-            if (petType == stcPetType.War)
+            switch (PetType)
             {
-                data.type = 0;
-                data.maxState = 500;
-
-                switch (Settings.SetWarPetType)
-                {
-                    case 1:
-                        #region Попугайчик
-                        data.type = 3;
-                        break;
-                        #endregion
-                    case 2:
-                        #region Кошечка
-                        data.type = 1;
-                        break;
-                        #endregion
-                    case 3:
-                        #region Чихуахуа
-                        data.type = 2;
-                        break;
-                        #endregion
-                    case 4:
-                        #region Доберман
-                        data.type = 4;
-                        break;
-                        #endregion
-                    case 5:
-                        #region Овчарка
-                        data.type = 7;
-                        break;
-                        #endregion
-                    case 6:
-                        #region Ротвейлер
-                        data.type = 8;
-                        break;
-                        #endregion
-                    case 7:
-                        #region Мраморный дог
-                        data.type = 21;
-                        break;
-                        #endregion
-                    case 8:
-                        #region Волк
-                        data.type = 22;
-                        break;
-                        #endregion
-                    case 9:
-                        #region Лев
-                        data.type = 80;
-                        break;
-                        #endregion
-                    case 10:
-                        #region Пантера
-                        data.type = 23;
-                        break;
-                        #endregion
-                    case 11:
-                        #region Котёнок "Гаф"
-                        data.type = 24;
-                        data.maxState = 700;
-                        break;
-                        #endregion
-                    case 12:
-                        #region Чёрный дог
-                        data.type = 26;
-                        data.maxState = 700;
-                        break;
-                        #endregion
-                    case 13:
-                        #region Хомячок
-                        data.type = 25;
-                        data.maxState = 700;
-                        break;
-                        #endregion
-                }
+                case 1:
+                    #region Попугайчик
+                    data.type = 3;
+                    break;
+                    #endregion
+                case 2:
+                    #region Кошечка
+                    data.type = 1;
+                    break;
+                    #endregion
+                case 3:
+                    #region Чихуахуа
+                    data.type = 2;
+                    break;
+                    #endregion
+                case 4:
+                    #region Доберман
+                    data.type = 4;
+                    break;
+                    #endregion
+                case 5:
+                    #region Овчарка
+                    data.type = 7;
+                    break;
+                    #endregion
+                case 6:
+                    #region Ротвейлер
+                    data.type = 8;
+                    break;
+                    #endregion
+                case 7:
+                    #region Мраморный дог
+                    data.type = 21;
+                    break;
+                    #endregion
+                case 8:
+                    #region Волк
+                    data.type = 22;
+                    break;
+                    #endregion
+                case 9:
+                    #region Лев
+                    data.type = 80;
+                    break;
+                    #endregion
+                case 10:
+                    #region Пантера
+                    data.type = 23;
+                    break;
+                    #endregion
+                case 11:
+                    #region Котёнок "Гаф"
+                    data.type = 24;
+                    data.maxState = 700;
+                    break;
+                    #endregion
+                case 12:
+                    #region Чёрный дог
+                    data.type = 26;
+                    data.maxState = 700;
+                    break;
+                    #endregion
+                case 13:
+                    #region Хомячок
+                    data.type = 25;
+                    data.maxState = 700;
+                    break;
+                    #endregion
             }
-            else
-            {
-                data.maxState = 750;
 
-                switch (Settings.TrainRunPetType)
-                {
-                    case 1:
-                        #region Кошечка
-                        data.type = 19;
-                        break;
-                        #endregion
-                    case 2:
-                        #region Собачка
-                        data.type = 20;
-                        break;
-                        #endregion
-                    case 3:
-                        #region Белочка
-                        data.type = 18;
-                        break;
-                        #endregion
-                    case 4:
-                        #region Енот
-                        data.type = 17;
-                        break;
-                        #endregion
-                    case 5:
-                        #region Лиса
-                        data.type = 16;
-                        break;
-                        #endregion
-                    case 6:
-                        #region Волк
-                        data.type = 15;
-                        break;
-                        #endregion
-                    case 7:
-                        #region Медведь
-                        data.type = 13;
-                        break;
-                        #endregion
-                    case 8:
-                        #region Тигр
-                        data.type = 14;
-                        break;
-                        #endregion
-                    case 9:
-                        #region Страус
-                        data.type = 11;
-                        break;
-                        #endregion
-                    case 10:
-                        #region Кенгуру
-                        data.type = 12;
-                        break;
-                        #endregion
-                    case 11:
-                        #region Единорог
-                        data.type = 9;
-                        break;
-                        #endregion
-                    case 12:
-                        #region Пегас
-                        data.type = 10;
-                        break;
-                        #endregion
-                }
+            return data;
+        }
+
+        private stcPetState getRunPetInformation(int PetType)
+        {
+            stcPetState data = new stcPetState();
+            data.type = 0;
+            data.maxState = 750;
+
+            switch (PetType)
+            {
+                case 1:
+                    #region Кошечка
+                    data.type = 19;
+                    break;
+                    #endregion
+                case 2:
+                    #region Собачка
+                    data.type = 20;
+                    break;
+                    #endregion
+                case 3:
+                    #region Белочка
+                    data.type = 18;
+                    break;
+                    #endregion
+                case 4:
+                    #region Енот
+                    data.type = 17;
+                    break;
+                    #endregion
+                case 5:
+                    #region Лиса
+                    data.type = 16;
+                    break;
+                    #endregion
+                case 6:
+                    #region Волк
+                    data.type = 15;
+                    break;
+                    #endregion
+                case 7:
+                    #region Медведь
+                    data.type = 13;
+                    break;
+                    #endregion
+                case 8:
+                    #region Тигр
+                    data.type = 14;
+                    break;
+                    #endregion
+                case 9:
+                    #region Страус
+                    data.type = 11;
+                    break;
+                    #endregion
+                case 10:
+                    #region Кенгуру
+                    data.type = 12;
+                    break;
+                    #endregion
+                case 11:
+                    #region Единорог
+                    data.type = 9;
+                    break;
+                    #endregion
+                case 12:
+                    #region Пегас
+                    data.type = 10;
+                    break;
+                    #endregion
             }
 
             return data;
@@ -8203,8 +8199,8 @@ namespace Moswar
                     matches = regex.Matches(frmMain.GetElementsById(MainWB, "equipment-accordion")[0].InnerHtml); //0-> Боевые питомцы, 1-> Беговые питомцы
                     BugReport("@ Обнаружено боевых петов: " + matches.Count);
                     #region Определение типа боевого питомца
-                    UsePetType = getPetInformation(stcPetType.War).type;
-                    MaxStat = getPetInformation(stcPetType.War).maxState;
+                    UsePetType = getWarPetInformation(Settings.SetWarPetType).type;
+                    MaxStat = getWarPetInformation(Settings.SetWarPetType).maxState;
                     #endregion
                     BugReport("@ Выбираем боевого пета с типом " + UsePetType);
                     foreach (Match m in matches)
@@ -8361,8 +8357,8 @@ namespace Moswar
                     regex = new Regex("(/obj/pets/(?<PetType>([0-9])+)-[0-9].png)([^'])+[']/petarena(?<URL>/train/([0-9])+/arena)/"); //.*/r/n.*/petarena(?<URL>/train/([0-9])*.)/
                     matches = regex.Matches(frmMain.GetElementsById(MainWB, "equipment-accordion")[1].InnerHtml); //0-> Боевые питомцы, 1-> Беговые питомцы
                     #region Определение типа бегового питомца
-                    UsePetType = getPetInformation(stcPetType.Run).type;
-                    MaxStat = getPetInformation(stcPetType.Run).maxState;
+                    UsePetType = getRunPetInformation(Settings.TrainRunPetType).type;
+                    MaxStat = getRunPetInformation(Settings.TrainRunPetType).maxState;
                     #endregion 
                     foreach (Match m in matches)
                     {
@@ -9709,7 +9705,7 @@ namespace Moswar
             match = Regex.Match(HC[HC.Count - 2].InnerHtml, "/pets/(?<PetType>([0-9])+)-[0-9].png"); //Именно этот питомец сейчас со мной (Картинка с боевым питомцем в предпоследнем элементе, последний беговой при условии показывать)
             if (!match.Success) match = Regex.Match(HC[HC.Count - 1].InnerHtml, "/pets/(?<PetType>([0-9])+)-[0-9].png"); //Именно этот питомец сейчас со мной (Картинка с питомцем в последнем элементе коллекции)
             #region Определение типа боевого питомца
-                int UsePetType = getPetInformation(stcPetType.War).type;
+            int UsePetType = getWarPetInformation(Settings.SetWarPetType).type;
             #endregion
             #region Проверка любимый ли с нами питомец?
             if (UsePetType != 0 && UsePetType != Convert.ToInt32(match.Groups["PetType"].Value) && Me.Events.NextSetWarPetDT < GetServerTime(MainWB))
