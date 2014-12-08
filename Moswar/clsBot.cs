@@ -8370,20 +8370,22 @@ namespace Moswar
                     GoToPlace(MainWB, Place.Petarena);
                     regex = new Regex("(/obj/pets/(?<PetType>([0-9])+)-[0-9].png)([^'])+[']/petarena(?<URL>/train/([0-9])+/arena)/"); //.*/r/n.*/petarena(?<URL>/train/([0-9])*.)/
                     matches = regex.Matches(frmMain.GetElementsById(MainWB, "equipment-accordion")[1].InnerHtml); //0-> Боевые питомцы, 1-> Беговые питомцы
+                    BugReport("@ Обнаружено беговых петов: " + matches.Count);
                     #region Определение типа бегового питомца
                     UsePetType = getRunPetInformation(Settings.TrainRunPetType).type;
                     MaxStat = getRunPetInformation(Settings.TrainRunPetType).maxState;
                     #endregion 
+                    BugReport("@ Выбираем бегового пета с типом " + UsePetType);
                     foreach (Match m in matches)
                     {
-                        if (m.Groups["PetType"].Value.Equals(UsePetType)) 
+                        if (m.Groups["PetType"].Value.Equals(Convert.ToString(UsePetType)))
                         {
                             GoToPlace(MainWB, Place.Petarena, m.Groups["URL"].Value); //Переходим в тренажерный зал выбранного питомца.
                             break; //Нужный питомец уже найден!
                         } 
                     }
                     #region Нет или не найден нужный питомец?
-                    if (Regex.IsMatch(frmMain.GetDocumentURL(MainWB), "/petarena/$"))
+                    if (frmMain.GetDocumentURL(MainWB).EndsWith("/petarena/"))
                     {
                         Me.RunPet.RunTimeOutDT = GetServerTime(MainWB).AddHours(2);
                         return;
