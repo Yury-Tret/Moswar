@@ -678,6 +678,7 @@
             this.TrayIcon = new System.Windows.Forms.NotifyIcon(this.components);
             this.btnOpenURL = new System.Windows.Forms.Button();
             this.btnRunJSCmd = new System.Windows.Forms.Button();
+            this.groupBox6 = new System.Windows.Forms.GroupBox();
             this.tabControl.SuspendLayout();
             this.tabMainBrowser.SuspendLayout();
             this.AutoApdateMessage.SuspendLayout();
@@ -859,6 +860,7 @@
             this.grpPic.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.statusStrip.SuspendLayout();
+            this.groupBox6.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnStart
@@ -5938,17 +5940,8 @@
             // tabPetarena
             // 
             resources.ApplyResources(this.tabPetarena, "tabPetarena");
-            this.tabPetarena.Controls.Add(this.cboxTrainRunPetType);
-            this.tabPetarena.Controls.Add(this.numMaxTrainPetDexterity);
-            this.tabPetarena.Controls.Add(this.chkTrainRunPet);
-            this.tabPetarena.Controls.Add(this.numMaxTrainPetEndurance);
+            this.tabPetarena.Controls.Add(this.groupBox6);
             this.tabPetarena.Controls.Add(this.chkUseRunPet);
-            this.tabPetarena.Controls.Add(this.chkTrainRunPetSpeed);
-            this.tabPetarena.Controls.Add(this.numMaxTrainPetSpeed);
-            this.tabPetarena.Controls.Add(this.chkTrainRunPetAcceleration);
-            this.tabPetarena.Controls.Add(this.chkTrainRunPetDexterity);
-            this.tabPetarena.Controls.Add(this.chkTrainRunPetEndurance);
-            this.tabPetarena.Controls.Add(this.numMaxTrainPetAcceleration);
             this.tabPetarena.Name = "tabPetarena";
             this.tabPetarena.UseVisualStyleBackColor = true;
             // 
@@ -7033,6 +7026,22 @@
             this.btnRunJSCmd.UseVisualStyleBackColor = true;
             this.btnRunJSCmd.Click += new System.EventHandler(this.btnRunJSCmd_Click);
             // 
+            // groupBox6
+            // 
+            this.groupBox6.Controls.Add(this.chkTrainRunPet);
+            this.groupBox6.Controls.Add(this.cboxTrainRunPetType);
+            this.groupBox6.Controls.Add(this.numMaxTrainPetAcceleration);
+            this.groupBox6.Controls.Add(this.numMaxTrainPetDexterity);
+            this.groupBox6.Controls.Add(this.chkTrainRunPetEndurance);
+            this.groupBox6.Controls.Add(this.chkTrainRunPetDexterity);
+            this.groupBox6.Controls.Add(this.numMaxTrainPetEndurance);
+            this.groupBox6.Controls.Add(this.chkTrainRunPetAcceleration);
+            this.groupBox6.Controls.Add(this.numMaxTrainPetSpeed);
+            this.groupBox6.Controls.Add(this.chkTrainRunPetSpeed);
+            resources.ApplyResources(this.groupBox6, "groupBox6");
+            this.groupBox6.Name = "groupBox6";
+            this.groupBox6.TabStop = false;
+            // 
             // frmMain
             // 
             resources.ApplyResources(this, "$this");
@@ -7297,6 +7306,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.statusStrip.ResumeLayout(false);
             this.statusStrip.PerformLayout();
+            this.groupBox6.ResumeLayout(false);
+            this.groupBox6.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -7951,7 +7962,8 @@
         private System.Windows.Forms.TabPage tabMoneyToOre;
         private System.Windows.Forms.TabPage tabHeal;
         private System.Windows.Forms.GroupBox groupBox5;
-        private System.Windows.Forms.GroupBox groupBox4;      
+        private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.GroupBox groupBox6;      
     }
 }
 
