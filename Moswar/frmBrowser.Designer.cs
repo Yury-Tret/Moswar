@@ -132,31 +132,40 @@
             this.grpElektrik = new System.Windows.Forms.GroupBox();
             this.rbLoveLamp = new System.Windows.Forms.RadioButton();
             this.rbHateLamp = new System.Windows.Forms.RadioButton();
-            this.tabDopings = new System.Windows.Forms.TabPage();
-            this.lstDoping = new System.Windows.Forms.ListBox();
-            this.chkRestartDoping = new System.Windows.Forms.CheckBox();
-            this.grpDoping = new System.Windows.Forms.GroupBox();
-            this.numRatSyncLvlDoping = new System.Windows.Forms.NumericUpDown();
-            this.numLvlDoping = new System.Windows.Forms.NumericUpDown();
-            this.dtDoping = new System.Windows.Forms.DateTimePicker();
-            this.label62 = new System.Windows.Forms.Label();
-            this.label61 = new System.Windows.Forms.Label();
-            this.btnDopingRemove = new System.Windows.Forms.Button();
-            this.btnDopingAdd = new System.Windows.Forms.Button();
-            this.btnDopingLoad = new System.Windows.Forms.Button();
-            this.btnDopingSave = new System.Windows.Forms.Button();
-            this.cboxDopingType = new System.Windows.Forms.ComboBox();
-            this.cboxDopingArt = new System.Windows.Forms.ComboBox();
-            this.cboxDopingEvent = new System.Windows.Forms.ComboBox();
-            this.grpDopingSettings = new System.Windows.Forms.GroupBox();
-            this.chkDopingNoCoctailNoProblem = new System.Windows.Forms.CheckBox();
-            this.chkDopingPryanik = new System.Windows.Forms.CheckBox();
-            this.chkDopingZefir = new System.Windows.Forms.CheckBox();
-            this.chkDopingNoCandyNoProblem = new System.Windows.Forms.CheckBox();
-            this.chkDopingNoSauceNoProblem = new System.Windows.Forms.CheckBox();
-            this.chkDopingAllowPartBilet = new System.Windows.Forms.CheckBox();
-            this.chkDopingAllowCoctailAdv = new System.Windows.Forms.CheckBox();
-            this.chkDopingShokoZefir = new System.Windows.Forms.CheckBox();
+            this.tabHeal = new System.Windows.Forms.TabPage();
+            this.label76 = new System.Windows.Forms.Label();
+            this.chkHealTrauma = new System.Windows.Forms.CheckBox();
+            this.chkHealInjuredSlot = new System.Windows.Forms.CheckBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.chkBuyHealMe = new System.Windows.Forms.CheckBox();
+            this.numAmountHealMe = new System.Windows.Forms.NumericUpDown();
+            this.label6 = new System.Windows.Forms.Label();
+            this.numHealMe100 = new System.Windows.Forms.NumericUpDown();
+            this.label8 = new System.Windows.Forms.Label();
+            this.numHealMe50 = new System.Windows.Forms.NumericUpDown();
+            this.label48 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.tabMoneyToOre = new System.Windows.Forms.TabPage();
+            this.numExchangeBankMoney = new System.Windows.Forms.NumericUpDown();
+            this.label72 = new System.Windows.Forms.Label();
+            this.label111 = new System.Windows.Forms.Label();
+            this.label58 = new System.Windows.Forms.Label();
+            this.label110 = new System.Windows.Forms.Label();
+            this.label108 = new System.Windows.Forms.Label();
+            this.numMonaMinStars = new System.Windows.Forms.NumericUpDown();
+            this.numMinThimbles = new System.Windows.Forms.NumericUpDown();
+            this.label78 = new System.Windows.Forms.Label();
+            this.label109 = new System.Windows.Forms.Label();
+            this.numMonaMinTeeth = new System.Windows.Forms.NumericUpDown();
+            this.label105 = new System.Windows.Forms.Label();
+            this.chkMonaTicketTooth = new System.Windows.Forms.CheckBox();
+            this.label18 = new System.Windows.Forms.Label();
+            this.chkThimblesImmunity = new System.Windows.Forms.CheckBox();
+            this.chkMonaTicketStar = new System.Windows.Forms.CheckBox();
+            this.chkThimblesTicket = new System.Windows.Forms.CheckBox();
+            this.numPlayThimbles = new System.Windows.Forms.NumericUpDown();
+            this.label20 = new System.Windows.Forms.Label();
+            this.chkUseBank = new System.Windows.Forms.CheckBox();
             this.tabDuels = new System.Windows.Forms.TabPage();
             this.grpDuelControl = new System.Windows.Forms.GroupBox();
             this.numMaxDuels = new System.Windows.Forms.NumericUpDown();
@@ -278,67 +287,31 @@
             this.grpExpGrpFightSettings = new System.Windows.Forms.GroupBox();
             this.cboxExpGrpFightPet = new System.Windows.Forms.ComboBox();
             this.label90 = new System.Windows.Forms.Label();
-            this.tabHeal = new System.Windows.Forms.TabPage();
-            this.label76 = new System.Windows.Forms.Label();
-            this.chkHealTrauma = new System.Windows.Forms.CheckBox();
-            this.chkHealInjuredSlot = new System.Windows.Forms.CheckBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.chkBuyHealMe = new System.Windows.Forms.CheckBox();
-            this.numAmountHealMe = new System.Windows.Forms.NumericUpDown();
-            this.label6 = new System.Windows.Forms.Label();
-            this.numHealMe100 = new System.Windows.Forms.NumericUpDown();
-            this.label8 = new System.Windows.Forms.Label();
-            this.numHealMe50 = new System.Windows.Forms.NumericUpDown();
-            this.label48 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.tabMoneyToOre = new System.Windows.Forms.TabPage();
-            this.numExchangeBankMoney = new System.Windows.Forms.NumericUpDown();
-            this.label72 = new System.Windows.Forms.Label();
-            this.label111 = new System.Windows.Forms.Label();
-            this.label58 = new System.Windows.Forms.Label();
-            this.label110 = new System.Windows.Forms.Label();
-            this.label108 = new System.Windows.Forms.Label();
-            this.numMonaMinStars = new System.Windows.Forms.NumericUpDown();
-            this.numMinThimbles = new System.Windows.Forms.NumericUpDown();
-            this.label78 = new System.Windows.Forms.Label();
-            this.label109 = new System.Windows.Forms.Label();
-            this.numMonaMinTeeth = new System.Windows.Forms.NumericUpDown();
-            this.label105 = new System.Windows.Forms.Label();
-            this.chkMonaTicketTooth = new System.Windows.Forms.CheckBox();
-            this.label18 = new System.Windows.Forms.Label();
-            this.chkThimblesImmunity = new System.Windows.Forms.CheckBox();
-            this.chkMonaTicketStar = new System.Windows.Forms.CheckBox();
-            this.chkThimblesTicket = new System.Windows.Forms.CheckBox();
-            this.numPlayThimbles = new System.Windows.Forms.NumericUpDown();
-            this.label20 = new System.Windows.Forms.Label();
-            this.chkUseBank = new System.Windows.Forms.CheckBox();
-            this.tabSkills = new System.Windows.Forms.TabPage();
-            this.grpFactory = new System.Windows.Forms.GroupBox();
-            this.numMinFactoryOre = new System.Windows.Forms.NumericUpDown();
-            this.numMinFactoryMoney = new System.Windows.Forms.NumericUpDown();
-            this.label82 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label26 = new System.Windows.Forms.Label();
-            this.label81 = new System.Windows.Forms.Label();
-            this.numFactoryChainCount = new System.Windows.Forms.NumericUpDown();
-            this.chkFactory = new System.Windows.Forms.CheckBox();
-            this.cboxFactoryRang = new System.Windows.Forms.ComboBox();
-            this.tabAzazella = new System.Windows.Forms.TabPage();
-            this.chkAzazellaFastPlay = new System.Windows.Forms.CheckBox();
-            this.numAzazellaTreasureChance = new System.Windows.Forms.NumericUpDown();
-            this.chkAzazella75 = new System.Windows.Forms.CheckBox();
-            this.label177 = new System.Windows.Forms.Label();
-            this.label157 = new System.Windows.Forms.Label();
-            this.label175 = new System.Windows.Forms.Label();
-            this.chkAzazellaTreasure = new System.Windows.Forms.CheckBox();
-            this.chkAzazella25 = new System.Windows.Forms.CheckBox();
-            this.label176 = new System.Windows.Forms.Label();
-            this.label95 = new System.Windows.Forms.Label();
-            this.label156 = new System.Windows.Forms.Label();
-            this.numMinAzazellaGold = new System.Windows.Forms.NumericUpDown();
-            this.tabGorbushka = new System.Windows.Forms.TabPage();
-            this.chkSellRepairMobile = new System.Windows.Forms.CheckBox();
-            this.chkRepairMobile = new System.Windows.Forms.CheckBox();
+            this.tabDopings = new System.Windows.Forms.TabPage();
+            this.lstDoping = new System.Windows.Forms.ListBox();
+            this.chkRestartDoping = new System.Windows.Forms.CheckBox();
+            this.grpDoping = new System.Windows.Forms.GroupBox();
+            this.numRatSyncLvlDoping = new System.Windows.Forms.NumericUpDown();
+            this.numLvlDoping = new System.Windows.Forms.NumericUpDown();
+            this.dtDoping = new System.Windows.Forms.DateTimePicker();
+            this.label62 = new System.Windows.Forms.Label();
+            this.label61 = new System.Windows.Forms.Label();
+            this.btnDopingRemove = new System.Windows.Forms.Button();
+            this.btnDopingAdd = new System.Windows.Forms.Button();
+            this.btnDopingLoad = new System.Windows.Forms.Button();
+            this.btnDopingSave = new System.Windows.Forms.Button();
+            this.cboxDopingType = new System.Windows.Forms.ComboBox();
+            this.cboxDopingArt = new System.Windows.Forms.ComboBox();
+            this.cboxDopingEvent = new System.Windows.Forms.ComboBox();
+            this.grpDopingSettings = new System.Windows.Forms.GroupBox();
+            this.chkDopingNoCoctailNoProblem = new System.Windows.Forms.CheckBox();
+            this.chkDopingPryanik = new System.Windows.Forms.CheckBox();
+            this.chkDopingZefir = new System.Windows.Forms.CheckBox();
+            this.chkDopingNoCandyNoProblem = new System.Windows.Forms.CheckBox();
+            this.chkDopingNoSauceNoProblem = new System.Windows.Forms.CheckBox();
+            this.chkDopingAllowPartBilet = new System.Windows.Forms.CheckBox();
+            this.chkDopingAllowCoctailAdv = new System.Windows.Forms.CheckBox();
+            this.chkDopingShokoZefir = new System.Windows.Forms.CheckBox();
             this.tabHunterClub = new System.Windows.Forms.TabPage();
             this.label104 = new System.Windows.Forms.Label();
             this.chkWantedGoMC = new System.Windows.Forms.CheckBox();
@@ -363,15 +336,6 @@
             this.numMaxHCLvl = new System.Windows.Forms.NumericUpDown();
             this.label4 = new System.Windows.Forms.Label();
             this.label138 = new System.Windows.Forms.Label();
-            this.tabClanWars = new System.Windows.Forms.TabPage();
-            this.grpClanWarEx = new System.Windows.Forms.GroupBox();
-            this.chkUseSnikersEnemy = new System.Windows.Forms.CheckBox();
-            this.chkClanWars = new System.Windows.Forms.CheckBox();
-            this.chkBerserker = new System.Windows.Forms.CheckBox();
-            this.chkFarmClan = new System.Windows.Forms.CheckBox();
-            this.chkRemoveEnemy = new System.Windows.Forms.CheckBox();
-            this.chkAddClan = new System.Windows.Forms.CheckBox();
-            this.label60 = new System.Windows.Forms.Label();
             this.tabRatPipeline = new System.Windows.Forms.TabPage();
             this.numMaxSearchRatDefeats = new System.Windows.Forms.NumericUpDown();
             this.lblSearchRatMaxDefeats = new System.Windows.Forms.Label();
@@ -447,23 +411,15 @@
             this.chkGetOil = new System.Windows.Forms.CheckBox();
             this.chkGoOil = new System.Windows.Forms.CheckBox();
             this.cboxOilLvl = new System.Windows.Forms.ComboBox();
-            this.tabPyramid = new System.Windows.Forms.TabPage();
-            this.label155 = new System.Windows.Forms.Label();
-            this.numPyramidWanted = new System.Windows.Forms.NumericUpDown();
-            this.numPyramidAmount = new System.Windows.Forms.NumericUpDown();
-            this.label44 = new System.Windows.Forms.Label();
-            this.label52 = new System.Windows.Forms.Label();
-            this.numMaxPyramidPrice = new System.Windows.Forms.NumericUpDown();
-            this.chkPyramid = new System.Windows.Forms.CheckBox();
-            this.chkBlockThimbles = new System.Windows.Forms.CheckBox();
-            this.label43 = new System.Windows.Forms.Label();
-            this.label42 = new System.Windows.Forms.Label();
-            this.tabBank = new System.Windows.Forms.TabPage();
-            this.numBankDeposit = new System.Windows.Forms.NumericUpDown();
-            this.label120 = new System.Windows.Forms.Label();
-            this.chkBuyBankSafe = new System.Windows.Forms.CheckBox();
-            this.label121 = new System.Windows.Forms.Label();
-            this.chkBankDeposit = new System.Windows.Forms.CheckBox();
+            this.tabClanWars = new System.Windows.Forms.TabPage();
+            this.grpClanWarEx = new System.Windows.Forms.GroupBox();
+            this.chkUseSnikersEnemy = new System.Windows.Forms.CheckBox();
+            this.chkClanWars = new System.Windows.Forms.CheckBox();
+            this.chkBerserker = new System.Windows.Forms.CheckBox();
+            this.chkFarmClan = new System.Windows.Forms.CheckBox();
+            this.chkRemoveEnemy = new System.Windows.Forms.CheckBox();
+            this.chkAddClan = new System.Windows.Forms.CheckBox();
+            this.label60 = new System.Windows.Forms.Label();
             this.tabQuests = new System.Windows.Forms.TabPage();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.chkExpUseAllTonusBottle = new System.Windows.Forms.CheckBox();
@@ -490,6 +446,13 @@
             this.chkMC = new System.Windows.Forms.CheckBox();
             this.numMCWorkTime = new System.Windows.Forms.NumericUpDown();
             this.label36 = new System.Windows.Forms.Label();
+            this.tabAutopark = new System.Windows.Forms.TabPage();
+            this.grpCar = new System.Windows.Forms.GroupBox();
+            this.chkUseSpecialCar = new System.Windows.Forms.CheckBox();
+            this.label53 = new System.Windows.Forms.Label();
+            this.chkCar = new System.Windows.Forms.CheckBox();
+            this.cboxSpecialCar = new System.Windows.Forms.ComboBox();
+            this.cboxCarPrize = new System.Windows.Forms.ComboBox();
             this.tabCookPetriki = new System.Windows.Forms.TabPage();
             this.lblPetrikiBonusPriceSymbol = new System.Windows.Forms.Label();
             this.numMinPetrikiOre = new System.Windows.Forms.NumericUpDown();
@@ -531,6 +494,17 @@
             this.label148 = new System.Windows.Forms.Label();
             this.label150 = new System.Windows.Forms.Label();
             this.label149 = new System.Windows.Forms.Label();
+            this.tabSkills = new System.Windows.Forms.TabPage();
+            this.grpFactory = new System.Windows.Forms.GroupBox();
+            this.numMinFactoryOre = new System.Windows.Forms.NumericUpDown();
+            this.numMinFactoryMoney = new System.Windows.Forms.NumericUpDown();
+            this.label82 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label26 = new System.Windows.Forms.Label();
+            this.label81 = new System.Windows.Forms.Label();
+            this.numFactoryChainCount = new System.Windows.Forms.NumericUpDown();
+            this.chkFactory = new System.Windows.Forms.CheckBox();
+            this.cboxFactoryRang = new System.Windows.Forms.ComboBox();
             this.tabTraining = new System.Windows.Forms.TabPage();
             this.chkTrainCharisma = new System.Windows.Forms.CheckBox();
             this.chkTrainAttentiveness = new System.Windows.Forms.CheckBox();
@@ -587,6 +561,23 @@
             this.chkTrainRunPetDexterity = new System.Windows.Forms.CheckBox();
             this.chkTrainRunPetEndurance = new System.Windows.Forms.CheckBox();
             this.numMaxTrainPetAcceleration = new System.Windows.Forms.NumericUpDown();
+            this.tabBank = new System.Windows.Forms.TabPage();
+            this.numBankDeposit = new System.Windows.Forms.NumericUpDown();
+            this.label120 = new System.Windows.Forms.Label();
+            this.chkBuyBankSafe = new System.Windows.Forms.CheckBox();
+            this.label121 = new System.Windows.Forms.Label();
+            this.chkBankDeposit = new System.Windows.Forms.CheckBox();
+            this.tabPyramid = new System.Windows.Forms.TabPage();
+            this.label155 = new System.Windows.Forms.Label();
+            this.numPyramidWanted = new System.Windows.Forms.NumericUpDown();
+            this.numPyramidAmount = new System.Windows.Forms.NumericUpDown();
+            this.label44 = new System.Windows.Forms.Label();
+            this.label52 = new System.Windows.Forms.Label();
+            this.numMaxPyramidPrice = new System.Windows.Forms.NumericUpDown();
+            this.chkPyramid = new System.Windows.Forms.CheckBox();
+            this.chkBlockThimbles = new System.Windows.Forms.CheckBox();
+            this.label43 = new System.Windows.Forms.Label();
+            this.label42 = new System.Windows.Forms.Label();
             this.tabCasino = new System.Windows.Forms.TabPage();
             this.rbFishkiAllways = new System.Windows.Forms.RadioButton();
             this.cboxKubovich = new System.Windows.Forms.ComboBox();
@@ -597,13 +588,22 @@
             this.chkPlayLoto = new System.Windows.Forms.CheckBox();
             this.chkBuyFishki = new System.Windows.Forms.CheckBox();
             this.label88 = new System.Windows.Forms.Label();
-            this.tabAutopark = new System.Windows.Forms.TabPage();
-            this.grpCar = new System.Windows.Forms.GroupBox();
-            this.chkUseSpecialCar = new System.Windows.Forms.CheckBox();
-            this.label53 = new System.Windows.Forms.Label();
-            this.chkCar = new System.Windows.Forms.CheckBox();
-            this.cboxSpecialCar = new System.Windows.Forms.ComboBox();
-            this.cboxCarPrize = new System.Windows.Forms.ComboBox();
+            this.tabGorbushka = new System.Windows.Forms.TabPage();
+            this.chkSellRepairMobile = new System.Windows.Forms.CheckBox();
+            this.chkRepairMobile = new System.Windows.Forms.CheckBox();
+            this.tabAzazella = new System.Windows.Forms.TabPage();
+            this.chkAzazellaFastPlay = new System.Windows.Forms.CheckBox();
+            this.numAzazellaTreasureChance = new System.Windows.Forms.NumericUpDown();
+            this.chkAzazella75 = new System.Windows.Forms.CheckBox();
+            this.label177 = new System.Windows.Forms.Label();
+            this.label157 = new System.Windows.Forms.Label();
+            this.label175 = new System.Windows.Forms.Label();
+            this.chkAzazellaTreasure = new System.Windows.Forms.CheckBox();
+            this.chkAzazella25 = new System.Windows.Forms.CheckBox();
+            this.label176 = new System.Windows.Forms.Label();
+            this.label95 = new System.Windows.Forms.Label();
+            this.label156 = new System.Windows.Forms.Label();
+            this.numMinAzazellaGold = new System.Windows.Forms.NumericUpDown();
             this.tabMainExtra = new System.Windows.Forms.TabPage();
             this.scExtension = new System.Windows.Forms.SplitContainer();
             this.tabExtra = new System.Windows.Forms.TabControl();
@@ -710,11 +710,16 @@
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numExpRevengerPrc)).BeginInit();
             this.grpElektrik.SuspendLayout();
-            this.tabDopings.SuspendLayout();
-            this.grpDoping.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numRatSyncLvlDoping)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numLvlDoping)).BeginInit();
-            this.grpDopingSettings.SuspendLayout();
+            this.tabHeal.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numAmountHealMe)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numHealMe100)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numHealMe50)).BeginInit();
+            this.tabMoneyToOre.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numExchangeBankMoney)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numMonaMinStars)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numMinThimbles)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numMonaMinTeeth)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numPlayThimbles)).BeginInit();
             this.tabDuels.SuspendLayout();
             this.grpDuelControl.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numMaxDuels)).BeginInit();
@@ -742,33 +747,17 @@
             this.grpExpGrpFight.SuspendLayout();
             this.grpGrpFight.SuspendLayout();
             this.grpExpGrpFightSettings.SuspendLayout();
-            this.tabHeal.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numAmountHealMe)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numHealMe100)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numHealMe50)).BeginInit();
-            this.tabMoneyToOre.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numExchangeBankMoney)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numMonaMinStars)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numMinThimbles)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numMonaMinTeeth)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numPlayThimbles)).BeginInit();
-            this.tabSkills.SuspendLayout();
-            this.grpFactory.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numMinFactoryOre)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numMinFactoryMoney)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numFactoryChainCount)).BeginInit();
-            this.tabAzazella.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numAzazellaTreasureChance)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numMinAzazellaGold)).BeginInit();
-            this.tabGorbushka.SuspendLayout();
+            this.tabDopings.SuspendLayout();
+            this.grpDoping.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numRatSyncLvlDoping)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numLvlDoping)).BeginInit();
+            this.grpDopingSettings.SuspendLayout();
             this.tabHunterClub.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numWantedPlayThimbles)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numHCRevengeMaxMoney)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numStatDiff)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numMinHCLvl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numMaxHCLvl)).BeginInit();
-            this.tabClanWars.SuspendLayout();
-            this.grpClanWarEx.SuspendLayout();
             this.tabRatPipeline.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numMaxSearchRatDefeats)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numMaxSearchRatLvl)).BeginInit();
@@ -781,12 +770,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.numMaxOilDefeats)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numMaxOilLeninDice)).BeginInit();
             this.tabOldOilPipeline.SuspendLayout();
-            this.tabPyramid.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numPyramidWanted)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numPyramidAmount)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numMaxPyramidPrice)).BeginInit();
-            this.tabBank.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numBankDeposit)).BeginInit();
+            this.tabClanWars.SuspendLayout();
+            this.grpClanWarEx.SuspendLayout();
             this.tabQuests.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numExpQuestMoney)).BeginInit();
@@ -795,6 +780,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.numPatrolTime)).BeginInit();
             this.tabShaurburgers.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numMCWorkTime)).BeginInit();
+            this.tabAutopark.SuspendLayout();
+            this.grpCar.SuspendLayout();
             this.tabCookPetriki.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numMinPetrikiOre)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numMinPetrikiMoney)).BeginInit();
@@ -807,6 +794,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.numCoctailCookPeace)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numCoctailCookIceCream)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numCoctailCookAmount)).BeginInit();
+            this.tabSkills.SuspendLayout();
+            this.grpFactory.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numMinFactoryOre)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numMinFactoryMoney)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numFactoryChainCount)).BeginInit();
             this.tabTraining.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numMaxTrainCharisma)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numMaxTrainAttentiveness)).BeginInit();
@@ -831,10 +823,18 @@
             ((System.ComponentModel.ISupportInitialize)(this.numMaxTrainPetEndurance)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numMaxTrainPetSpeed)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numMaxTrainPetAcceleration)).BeginInit();
+            this.tabBank.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numBankDeposit)).BeginInit();
+            this.tabPyramid.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numPyramidWanted)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numPyramidAmount)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numMaxPyramidPrice)).BeginInit();
             this.tabCasino.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numBuyFishkiAmount)).BeginInit();
-            this.tabAutopark.SuspendLayout();
-            this.grpCar.SuspendLayout();
+            this.tabGorbushka.SuspendLayout();
+            this.tabAzazella.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numAzazellaTreasureChance)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numMinAzazellaGold)).BeginInit();
             this.tabMainExtra.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.scExtension)).BeginInit();
             this.scExtension.Panel1.SuspendLayout();
@@ -1792,314 +1792,315 @@
             this.rbHateLamp.Name = "rbHateLamp";
             this.rbHateLamp.UseVisualStyleBackColor = true;
             // 
-            // tabDopings
+            // tabHeal
             // 
-            resources.ApplyResources(this.tabDopings, "tabDopings");
-            this.tabDopings.Controls.Add(this.lstDoping);
-            this.tabDopings.Controls.Add(this.chkRestartDoping);
-            this.tabDopings.Controls.Add(this.grpDoping);
-            this.tabDopings.Controls.Add(this.grpDopingSettings);
-            this.tabDopings.Name = "tabDopings";
-            this.tabDopings.UseVisualStyleBackColor = true;
+            resources.ApplyResources(this.tabHeal, "tabHeal");
+            this.tabHeal.Controls.Add(this.label76);
+            this.tabHeal.Controls.Add(this.chkHealTrauma);
+            this.tabHeal.Controls.Add(this.chkHealInjuredSlot);
+            this.tabHeal.Controls.Add(this.label7);
+            this.tabHeal.Controls.Add(this.chkBuyHealMe);
+            this.tabHeal.Controls.Add(this.numAmountHealMe);
+            this.tabHeal.Controls.Add(this.label6);
+            this.tabHeal.Controls.Add(this.numHealMe100);
+            this.tabHeal.Controls.Add(this.label8);
+            this.tabHeal.Controls.Add(this.numHealMe50);
+            this.tabHeal.Controls.Add(this.label48);
+            this.tabHeal.Controls.Add(this.label9);
+            this.tabHeal.Name = "tabHeal";
+            this.tabHeal.UseVisualStyleBackColor = true;
             // 
-            // lstDoping
+            // label76
             // 
-            this.lstDoping.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            resources.ApplyResources(this.lstDoping, "lstDoping");
-            this.lstDoping.Name = "lstDoping";
-            this.lstDoping.DrawItem += new System.Windows.Forms.DrawItemEventHandler(this.lstAny_DrawItem);
-            this.lstDoping.SelectedIndexChanged += new System.EventHandler(this.lstDoping_SelectedIndexChanged);
+            this.label76.Image = global::Moswar.Properties.Resources.Med;
+            resources.ApplyResources(this.label76, "label76");
+            this.label76.Name = "label76";
             // 
-            // chkRestartDoping
+            // chkHealTrauma
             // 
-            resources.ApplyResources(this.chkRestartDoping, "chkRestartDoping");
-            this.chkRestartDoping.Name = "chkRestartDoping";
-            this.chkRestartDoping.UseVisualStyleBackColor = true;
+            resources.ApplyResources(this.chkHealTrauma, "chkHealTrauma");
+            this.chkHealTrauma.Name = "chkHealTrauma";
+            this.chkHealTrauma.UseVisualStyleBackColor = true;
             // 
-            // grpDoping
+            // chkHealInjuredSlot
             // 
-            this.grpDoping.Controls.Add(this.numRatSyncLvlDoping);
-            this.grpDoping.Controls.Add(this.numLvlDoping);
-            this.grpDoping.Controls.Add(this.dtDoping);
-            this.grpDoping.Controls.Add(this.label62);
-            this.grpDoping.Controls.Add(this.label61);
-            this.grpDoping.Controls.Add(this.btnDopingRemove);
-            this.grpDoping.Controls.Add(this.btnDopingAdd);
-            this.grpDoping.Controls.Add(this.btnDopingLoad);
-            this.grpDoping.Controls.Add(this.btnDopingSave);
-            this.grpDoping.Controls.Add(this.cboxDopingType);
-            this.grpDoping.Controls.Add(this.cboxDopingArt);
-            this.grpDoping.Controls.Add(this.cboxDopingEvent);
-            resources.ApplyResources(this.grpDoping, "grpDoping");
-            this.grpDoping.Name = "grpDoping";
-            this.grpDoping.TabStop = false;
+            resources.ApplyResources(this.chkHealInjuredSlot, "chkHealInjuredSlot");
+            this.chkHealInjuredSlot.Name = "chkHealInjuredSlot";
+            this.chkHealInjuredSlot.UseVisualStyleBackColor = true;
             // 
-            // numRatSyncLvlDoping
+            // label7
             // 
-            resources.ApplyResources(this.numRatSyncLvlDoping, "numRatSyncLvlDoping");
-            this.numRatSyncLvlDoping.Maximum = new decimal(new int[] {
-            35,
-            0,
-            0,
-            0});
-            this.numRatSyncLvlDoping.Minimum = new decimal(new int[] {
+            resources.ApplyResources(this.label7, "label7");
+            this.label7.Name = "label7";
+            // 
+            // chkBuyHealMe
+            // 
+            resources.ApplyResources(this.chkBuyHealMe, "chkBuyHealMe");
+            this.chkBuyHealMe.Checked = true;
+            this.chkBuyHealMe.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.chkBuyHealMe.Name = "chkBuyHealMe";
+            this.chkBuyHealMe.UseVisualStyleBackColor = true;
+            // 
+            // numAmountHealMe
+            // 
+            resources.ApplyResources(this.numAmountHealMe, "numAmountHealMe");
+            this.numAmountHealMe.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
-            this.numRatSyncLvlDoping.Name = "numRatSyncLvlDoping";
-            this.numRatSyncLvlDoping.Value = new decimal(new int[] {
+            this.numAmountHealMe.Name = "numAmountHealMe";
+            this.numAmountHealMe.Value = new decimal(new int[] {
+            5,
+            0,
+            0,
+            0});
+            // 
+            // label6
+            // 
+            resources.ApplyResources(this.label6, "label6");
+            this.label6.Name = "label6";
+            // 
+            // numHealMe100
+            // 
+            resources.ApplyResources(this.numHealMe100, "numHealMe100");
+            this.numHealMe100.Name = "numHealMe100";
+            this.numHealMe100.Value = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
+            // 
+            // label8
+            // 
+            resources.ApplyResources(this.label8, "label8");
+            this.label8.Name = "label8";
+            // 
+            // numHealMe50
+            // 
+            resources.ApplyResources(this.numHealMe50, "numHealMe50");
+            this.numHealMe50.Name = "numHealMe50";
+            this.numHealMe50.Value = new decimal(new int[] {
+            40,
+            0,
+            0,
+            0});
+            // 
+            // label48
+            // 
+            resources.ApplyResources(this.label48, "label48");
+            this.label48.Name = "label48";
+            // 
+            // label9
+            // 
+            resources.ApplyResources(this.label9, "label9");
+            this.label9.Name = "label9";
+            // 
+            // tabMoneyToOre
+            // 
+            resources.ApplyResources(this.tabMoneyToOre, "tabMoneyToOre");
+            this.tabMoneyToOre.Controls.Add(this.numExchangeBankMoney);
+            this.tabMoneyToOre.Controls.Add(this.label72);
+            this.tabMoneyToOre.Controls.Add(this.label111);
+            this.tabMoneyToOre.Controls.Add(this.label58);
+            this.tabMoneyToOre.Controls.Add(this.label110);
+            this.tabMoneyToOre.Controls.Add(this.label108);
+            this.tabMoneyToOre.Controls.Add(this.numMonaMinStars);
+            this.tabMoneyToOre.Controls.Add(this.numMinThimbles);
+            this.tabMoneyToOre.Controls.Add(this.label78);
+            this.tabMoneyToOre.Controls.Add(this.label109);
+            this.tabMoneyToOre.Controls.Add(this.numMonaMinTeeth);
+            this.tabMoneyToOre.Controls.Add(this.label105);
+            this.tabMoneyToOre.Controls.Add(this.chkMonaTicketTooth);
+            this.tabMoneyToOre.Controls.Add(this.label18);
+            this.tabMoneyToOre.Controls.Add(this.chkThimblesImmunity);
+            this.tabMoneyToOre.Controls.Add(this.chkMonaTicketStar);
+            this.tabMoneyToOre.Controls.Add(this.chkThimblesTicket);
+            this.tabMoneyToOre.Controls.Add(this.numPlayThimbles);
+            this.tabMoneyToOre.Controls.Add(this.label20);
+            this.tabMoneyToOre.Controls.Add(this.chkUseBank);
+            this.tabMoneyToOre.Name = "tabMoneyToOre";
+            this.tabMoneyToOre.UseVisualStyleBackColor = true;
+            // 
+            // numExchangeBankMoney
+            // 
+            resources.ApplyResources(this.numExchangeBankMoney, "numExchangeBankMoney");
+            this.numExchangeBankMoney.Maximum = new decimal(new int[] {
+            9000,
+            0,
+            0,
+            0});
+            this.numExchangeBankMoney.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
-            // 
-            // numLvlDoping
-            // 
-            resources.ApplyResources(this.numLvlDoping, "numLvlDoping");
-            this.numLvlDoping.Maximum = new decimal(new int[] {
-            35,
+            this.numExchangeBankMoney.Name = "numExchangeBankMoney";
+            this.numExchangeBankMoney.Value = new decimal(new int[] {
+            100,
             0,
             0,
             0});
-            this.numLvlDoping.Minimum = new decimal(new int[] {
+            // 
+            // label72
+            // 
+            this.label72.Image = global::Moswar.Properties.Resources.Star;
+            resources.ApplyResources(this.label72, "label72");
+            this.label72.Name = "label72";
+            // 
+            // label111
+            // 
+            this.label111.Image = global::Moswar.Properties.Resources.Money;
+            resources.ApplyResources(this.label111, "label111");
+            this.label111.Name = "label111";
+            // 
+            // label58
+            // 
+            this.label58.Image = global::Moswar.Properties.Resources.WhiteTooth;
+            resources.ApplyResources(this.label58, "label58");
+            this.label58.Name = "label58";
+            // 
+            // label110
+            // 
+            this.label110.Image = global::Moswar.Properties.Resources.Money;
+            resources.ApplyResources(this.label110, "label110");
+            this.label110.Name = "label110";
+            // 
+            // label108
+            // 
+            this.label108.Image = global::Moswar.Properties.Resources.Money;
+            resources.ApplyResources(this.label108, "label108");
+            this.label108.Name = "label108";
+            // 
+            // numMonaMinStars
+            // 
+            resources.ApplyResources(this.numMonaMinStars, "numMonaMinStars");
+            this.numMonaMinStars.Maximum = new decimal(new int[] {
+            500,
+            0,
+            0,
+            0});
+            this.numMonaMinStars.Name = "numMonaMinStars";
+            this.numMonaMinStars.Value = new decimal(new int[] {
+            5,
+            0,
+            0,
+            0});
+            // 
+            // numMinThimbles
+            // 
+            resources.ApplyResources(this.numMinThimbles, "numMinThimbles");
+            this.numMinThimbles.Maximum = new decimal(new int[] {
+            1000000,
+            0,
+            0,
+            0});
+            this.numMinThimbles.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
-            this.numLvlDoping.Name = "numLvlDoping";
-            this.numLvlDoping.Value = new decimal(new int[] {
-            1,
+            this.numMinThimbles.Name = "numMinThimbles";
+            this.numMinThimbles.Value = new decimal(new int[] {
+            10,
             0,
             0,
             0});
             // 
-            // dtDoping
+            // label78
             // 
-            resources.ApplyResources(this.dtDoping, "dtDoping");
-            this.dtDoping.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtDoping.Name = "dtDoping";
-            this.dtDoping.ShowUpDown = true;
-            this.dtDoping.Value = new System.DateTime(2011, 11, 19, 14, 45, 0, 0);
+            resources.ApplyResources(this.label78, "label78");
+            this.label78.Name = "label78";
             // 
-            // label62
+            // label109
             // 
-            resources.ApplyResources(this.label62, "label62");
-            this.label62.ForeColor = System.Drawing.Color.Black;
-            this.label62.Name = "label62";
+            resources.ApplyResources(this.label109, "label109");
+            this.label109.ForeColor = System.Drawing.Color.Black;
+            this.label109.Name = "label109";
             // 
-            // label61
+            // numMonaMinTeeth
             // 
-            resources.ApplyResources(this.label61, "label61");
-            this.label61.ForeColor = System.Drawing.Color.Black;
-            this.label61.Name = "label61";
+            resources.ApplyResources(this.numMonaMinTeeth, "numMonaMinTeeth");
+            this.numMonaMinTeeth.Maximum = new decimal(new int[] {
+            500,
+            0,
+            0,
+            0});
+            this.numMonaMinTeeth.Name = "numMonaMinTeeth";
+            this.numMonaMinTeeth.Value = new decimal(new int[] {
+            5,
+            0,
+            0,
+            0});
             // 
-            // btnDopingRemove
+            // label105
             // 
-            resources.ApplyResources(this.btnDopingRemove, "btnDopingRemove");
-            this.btnDopingRemove.Name = "btnDopingRemove";
-            this.btnDopingRemove.UseVisualStyleBackColor = true;
-            this.btnDopingRemove.Click += new System.EventHandler(this.btnDoppingRemove_Click);
+            resources.ApplyResources(this.label105, "label105");
+            this.label105.ForeColor = System.Drawing.Color.Black;
+            this.label105.Name = "label105";
             // 
-            // btnDopingAdd
+            // chkMonaTicketTooth
             // 
-            resources.ApplyResources(this.btnDopingAdd, "btnDopingAdd");
-            this.btnDopingAdd.Name = "btnDopingAdd";
-            this.btnDopingAdd.UseVisualStyleBackColor = true;
-            this.btnDopingAdd.Click += new System.EventHandler(this.btnDoppingAdd_Click);
+            resources.ApplyResources(this.chkMonaTicketTooth, "chkMonaTicketTooth");
+            this.chkMonaTicketTooth.Name = "chkMonaTicketTooth";
+            this.chkMonaTicketTooth.UseVisualStyleBackColor = true;
             // 
-            // btnDopingLoad
+            // label18
             // 
-            resources.ApplyResources(this.btnDopingLoad, "btnDopingLoad");
-            this.btnDopingLoad.Name = "btnDopingLoad";
-            this.btnDopingLoad.UseVisualStyleBackColor = true;
-            this.btnDopingLoad.Click += new System.EventHandler(this.btnDopingLoad_Click);
+            resources.ApplyResources(this.label18, "label18");
+            this.label18.ForeColor = System.Drawing.Color.Black;
+            this.label18.Name = "label18";
             // 
-            // btnDopingSave
+            // chkThimblesImmunity
             // 
-            resources.ApplyResources(this.btnDopingSave, "btnDopingSave");
-            this.btnDopingSave.Name = "btnDopingSave";
-            this.btnDopingSave.UseVisualStyleBackColor = true;
-            this.btnDopingSave.Click += new System.EventHandler(this.btnDoppingSave_Click);
+            resources.ApplyResources(this.chkThimblesImmunity, "chkThimblesImmunity");
+            this.chkThimblesImmunity.Name = "chkThimblesImmunity";
+            this.chkThimblesImmunity.UseVisualStyleBackColor = true;
             // 
-            // cboxDopingType
+            // chkMonaTicketStar
             // 
-            this.cboxDopingType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            resources.ApplyResources(this.cboxDopingType, "cboxDopingType");
-            this.cboxDopingType.FormattingEnabled = true;
-            this.cboxDopingType.Items.AddRange(new object[] {
-            resources.GetString("cboxDopingType.Items"),
-            resources.GetString("cboxDopingType.Items1"),
-            resources.GetString("cboxDopingType.Items2"),
-            resources.GetString("cboxDopingType.Items3"),
-            resources.GetString("cboxDopingType.Items4"),
-            resources.GetString("cboxDopingType.Items5"),
-            resources.GetString("cboxDopingType.Items6"),
-            resources.GetString("cboxDopingType.Items7"),
-            resources.GetString("cboxDopingType.Items8"),
-            resources.GetString("cboxDopingType.Items9"),
-            resources.GetString("cboxDopingType.Items10"),
-            resources.GetString("cboxDopingType.Items11"),
-            resources.GetString("cboxDopingType.Items12"),
-            resources.GetString("cboxDopingType.Items13"),
-            resources.GetString("cboxDopingType.Items14"),
-            resources.GetString("cboxDopingType.Items15"),
-            resources.GetString("cboxDopingType.Items16"),
-            resources.GetString("cboxDopingType.Items17"),
-            resources.GetString("cboxDopingType.Items18"),
-            resources.GetString("cboxDopingType.Items19"),
-            resources.GetString("cboxDopingType.Items20"),
-            resources.GetString("cboxDopingType.Items21"),
-            resources.GetString("cboxDopingType.Items22"),
-            resources.GetString("cboxDopingType.Items23"),
-            resources.GetString("cboxDopingType.Items24"),
-            resources.GetString("cboxDopingType.Items25"),
-            resources.GetString("cboxDopingType.Items26"),
-            resources.GetString("cboxDopingType.Items27"),
-            resources.GetString("cboxDopingType.Items28"),
-            resources.GetString("cboxDopingType.Items29"),
-            resources.GetString("cboxDopingType.Items30"),
-            resources.GetString("cboxDopingType.Items31"),
-            resources.GetString("cboxDopingType.Items32"),
-            resources.GetString("cboxDopingType.Items33"),
-            resources.GetString("cboxDopingType.Items34"),
-            resources.GetString("cboxDopingType.Items35"),
-            resources.GetString("cboxDopingType.Items36"),
-            resources.GetString("cboxDopingType.Items37"),
-            resources.GetString("cboxDopingType.Items38"),
-            resources.GetString("cboxDopingType.Items39"),
-            resources.GetString("cboxDopingType.Items40"),
-            resources.GetString("cboxDopingType.Items41"),
-            resources.GetString("cboxDopingType.Items42"),
-            resources.GetString("cboxDopingType.Items43"),
-            resources.GetString("cboxDopingType.Items44"),
-            resources.GetString("cboxDopingType.Items45"),
-            resources.GetString("cboxDopingType.Items46"),
-            resources.GetString("cboxDopingType.Items47"),
-            resources.GetString("cboxDopingType.Items48"),
-            resources.GetString("cboxDopingType.Items49"),
-            resources.GetString("cboxDopingType.Items50"),
-            resources.GetString("cboxDopingType.Items51"),
-            resources.GetString("cboxDopingType.Items52"),
-            resources.GetString("cboxDopingType.Items53"),
-            resources.GetString("cboxDopingType.Items54"),
-            resources.GetString("cboxDopingType.Items55"),
-            resources.GetString("cboxDopingType.Items56"),
-            resources.GetString("cboxDopingType.Items57"),
-            resources.GetString("cboxDopingType.Items58"),
-            resources.GetString("cboxDopingType.Items59"),
-            resources.GetString("cboxDopingType.Items60"),
-            resources.GetString("cboxDopingType.Items61"),
-            resources.GetString("cboxDopingType.Items62"),
-            resources.GetString("cboxDopingType.Items63"),
-            resources.GetString("cboxDopingType.Items64"),
-            resources.GetString("cboxDopingType.Items65"),
-            resources.GetString("cboxDopingType.Items66"),
-            resources.GetString("cboxDopingType.Items67"),
-            resources.GetString("cboxDopingType.Items68"),
-            resources.GetString("cboxDopingType.Items69"),
-            resources.GetString("cboxDopingType.Items70"),
-            resources.GetString("cboxDopingType.Items71"),
-            resources.GetString("cboxDopingType.Items72"),
-            resources.GetString("cboxDopingType.Items73"),
-            resources.GetString("cboxDopingType.Items74"),
-            resources.GetString("cboxDopingType.Items75"),
-            resources.GetString("cboxDopingType.Items76"),
-            resources.GetString("cboxDopingType.Items77"),
-            resources.GetString("cboxDopingType.Items78"),
-            resources.GetString("cboxDopingType.Items79"),
-            resources.GetString("cboxDopingType.Items80"),
-            resources.GetString("cboxDopingType.Items81"),
-            resources.GetString("cboxDopingType.Items82"),
-            resources.GetString("cboxDopingType.Items83"),
-            resources.GetString("cboxDopingType.Items84"),
-            resources.GetString("cboxDopingType.Items85"),
-            resources.GetString("cboxDopingType.Items86"),
-            resources.GetString("cboxDopingType.Items87")});
-            this.cboxDopingType.Name = "cboxDopingType";
-            this.cboxDopingType.SelectedIndexChanged += new System.EventHandler(this.cboxDoppingType_SelectedIndexChanged);
+            resources.ApplyResources(this.chkMonaTicketStar, "chkMonaTicketStar");
+            this.chkMonaTicketStar.Name = "chkMonaTicketStar";
+            this.chkMonaTicketStar.UseVisualStyleBackColor = true;
             // 
-            // cboxDopingArt
+            // chkThimblesTicket
             // 
-            this.cboxDopingArt.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            resources.ApplyResources(this.cboxDopingArt, "cboxDopingArt");
-            this.cboxDopingArt.FormattingEnabled = true;
-            this.cboxDopingArt.Items.AddRange(new object[] {
-            resources.GetString("cboxDopingArt.Items"),
-            resources.GetString("cboxDopingArt.Items1"),
-            resources.GetString("cboxDopingArt.Items2")});
-            this.cboxDopingArt.Name = "cboxDopingArt";
-            this.cboxDopingArt.SelectedIndexChanged += new System.EventHandler(this.DopingArt_Changed);
+            resources.ApplyResources(this.chkThimblesTicket, "chkThimblesTicket");
+            this.chkThimblesTicket.Name = "chkThimblesTicket";
+            this.chkThimblesTicket.UseVisualStyleBackColor = true;
             // 
-            // cboxDopingEvent
+            // numPlayThimbles
             // 
-            this.cboxDopingEvent.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            resources.ApplyResources(this.cboxDopingEvent, "cboxDopingEvent");
-            this.cboxDopingEvent.FormattingEnabled = true;
-            this.cboxDopingEvent.Name = "cboxDopingEvent";
-            this.cboxDopingEvent.SelectedIndexChanged += new System.EventHandler(this.cboxDoppingEvent_SelectedIndexChanged);
+            resources.ApplyResources(this.numPlayThimbles, "numPlayThimbles");
+            this.numPlayThimbles.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
+            this.numPlayThimbles.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numPlayThimbles.Name = "numPlayThimbles";
+            this.numPlayThimbles.Value = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
             // 
-            // grpDopingSettings
+            // label20
             // 
-            this.grpDopingSettings.Controls.Add(this.chkDopingNoCoctailNoProblem);
-            this.grpDopingSettings.Controls.Add(this.chkDopingPryanik);
-            this.grpDopingSettings.Controls.Add(this.chkDopingZefir);
-            this.grpDopingSettings.Controls.Add(this.chkDopingNoCandyNoProblem);
-            this.grpDopingSettings.Controls.Add(this.chkDopingNoSauceNoProblem);
-            this.grpDopingSettings.Controls.Add(this.chkDopingAllowPartBilet);
-            this.grpDopingSettings.Controls.Add(this.chkDopingAllowCoctailAdv);
-            this.grpDopingSettings.Controls.Add(this.chkDopingShokoZefir);
-            resources.ApplyResources(this.grpDopingSettings, "grpDopingSettings");
-            this.grpDopingSettings.Name = "grpDopingSettings";
-            this.grpDopingSettings.TabStop = false;
+            resources.ApplyResources(this.label20, "label20");
+            this.label20.ForeColor = System.Drawing.Color.Black;
+            this.label20.Name = "label20";
             // 
-            // chkDopingNoCoctailNoProblem
+            // chkUseBank
             // 
-            resources.ApplyResources(this.chkDopingNoCoctailNoProblem, "chkDopingNoCoctailNoProblem");
-            this.chkDopingNoCoctailNoProblem.Name = "chkDopingNoCoctailNoProblem";
-            this.chkDopingNoCoctailNoProblem.UseVisualStyleBackColor = true;
-            // 
-            // chkDopingPryanik
-            // 
-            resources.ApplyResources(this.chkDopingPryanik, "chkDopingPryanik");
-            this.chkDopingPryanik.Name = "chkDopingPryanik";
-            this.chkDopingPryanik.UseVisualStyleBackColor = true;
-            // 
-            // chkDopingZefir
-            // 
-            resources.ApplyResources(this.chkDopingZefir, "chkDopingZefir");
-            this.chkDopingZefir.Name = "chkDopingZefir";
-            this.chkDopingZefir.UseVisualStyleBackColor = true;
-            // 
-            // chkDopingNoCandyNoProblem
-            // 
-            resources.ApplyResources(this.chkDopingNoCandyNoProblem, "chkDopingNoCandyNoProblem");
-            this.chkDopingNoCandyNoProblem.Name = "chkDopingNoCandyNoProblem";
-            this.chkDopingNoCandyNoProblem.UseVisualStyleBackColor = true;
-            // 
-            // chkDopingNoSauceNoProblem
-            // 
-            resources.ApplyResources(this.chkDopingNoSauceNoProblem, "chkDopingNoSauceNoProblem");
-            this.chkDopingNoSauceNoProblem.Name = "chkDopingNoSauceNoProblem";
-            this.chkDopingNoSauceNoProblem.UseVisualStyleBackColor = true;
-            // 
-            // chkDopingAllowPartBilet
-            // 
-            resources.ApplyResources(this.chkDopingAllowPartBilet, "chkDopingAllowPartBilet");
-            this.chkDopingAllowPartBilet.Name = "chkDopingAllowPartBilet";
-            this.chkDopingAllowPartBilet.UseVisualStyleBackColor = true;
-            // 
-            // chkDopingAllowCoctailAdv
-            // 
-            resources.ApplyResources(this.chkDopingAllowCoctailAdv, "chkDopingAllowCoctailAdv");
-            this.chkDopingAllowCoctailAdv.Name = "chkDopingAllowCoctailAdv";
-            this.chkDopingAllowCoctailAdv.UseVisualStyleBackColor = true;
-            // 
-            // chkDopingShokoZefir
-            // 
-            resources.ApplyResources(this.chkDopingShokoZefir, "chkDopingShokoZefir");
-            this.chkDopingShokoZefir.Name = "chkDopingShokoZefir";
-            this.chkDopingShokoZefir.UseVisualStyleBackColor = true;
+            resources.ApplyResources(this.chkUseBank, "chkUseBank");
+            this.chkUseBank.Name = "chkUseBank";
+            this.chkUseBank.UseVisualStyleBackColor = true;
+            this.chkUseBank.CheckedChanged += new System.EventHandler(this.chkUseOhara_CheckedChanged);
             // 
             // tabDuels
             // 
@@ -3222,573 +3223,314 @@
             resources.ApplyResources(this.label90, "label90");
             this.label90.Name = "label90";
             // 
-            // tabHeal
+            // tabDopings
             // 
-            resources.ApplyResources(this.tabHeal, "tabHeal");
-            this.tabHeal.Controls.Add(this.label76);
-            this.tabHeal.Controls.Add(this.chkHealTrauma);
-            this.tabHeal.Controls.Add(this.chkHealInjuredSlot);
-            this.tabHeal.Controls.Add(this.label7);
-            this.tabHeal.Controls.Add(this.chkBuyHealMe);
-            this.tabHeal.Controls.Add(this.numAmountHealMe);
-            this.tabHeal.Controls.Add(this.label6);
-            this.tabHeal.Controls.Add(this.numHealMe100);
-            this.tabHeal.Controls.Add(this.label8);
-            this.tabHeal.Controls.Add(this.numHealMe50);
-            this.tabHeal.Controls.Add(this.label48);
-            this.tabHeal.Controls.Add(this.label9);
-            this.tabHeal.Name = "tabHeal";
-            this.tabHeal.UseVisualStyleBackColor = true;
+            resources.ApplyResources(this.tabDopings, "tabDopings");
+            this.tabDopings.Controls.Add(this.lstDoping);
+            this.tabDopings.Controls.Add(this.chkRestartDoping);
+            this.tabDopings.Controls.Add(this.grpDoping);
+            this.tabDopings.Controls.Add(this.grpDopingSettings);
+            this.tabDopings.Name = "tabDopings";
+            this.tabDopings.UseVisualStyleBackColor = true;
             // 
-            // label76
+            // lstDoping
             // 
-            this.label76.Image = global::Moswar.Properties.Resources.Med;
-            resources.ApplyResources(this.label76, "label76");
-            this.label76.Name = "label76";
+            this.lstDoping.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            resources.ApplyResources(this.lstDoping, "lstDoping");
+            this.lstDoping.Name = "lstDoping";
+            this.lstDoping.DrawItem += new System.Windows.Forms.DrawItemEventHandler(this.lstAny_DrawItem);
+            this.lstDoping.SelectedIndexChanged += new System.EventHandler(this.lstDoping_SelectedIndexChanged);
             // 
-            // chkHealTrauma
+            // chkRestartDoping
             // 
-            resources.ApplyResources(this.chkHealTrauma, "chkHealTrauma");
-            this.chkHealTrauma.Name = "chkHealTrauma";
-            this.chkHealTrauma.UseVisualStyleBackColor = true;
+            resources.ApplyResources(this.chkRestartDoping, "chkRestartDoping");
+            this.chkRestartDoping.Name = "chkRestartDoping";
+            this.chkRestartDoping.UseVisualStyleBackColor = true;
             // 
-            // chkHealInjuredSlot
+            // grpDoping
             // 
-            resources.ApplyResources(this.chkHealInjuredSlot, "chkHealInjuredSlot");
-            this.chkHealInjuredSlot.Name = "chkHealInjuredSlot";
-            this.chkHealInjuredSlot.UseVisualStyleBackColor = true;
+            this.grpDoping.Controls.Add(this.numRatSyncLvlDoping);
+            this.grpDoping.Controls.Add(this.numLvlDoping);
+            this.grpDoping.Controls.Add(this.dtDoping);
+            this.grpDoping.Controls.Add(this.label62);
+            this.grpDoping.Controls.Add(this.label61);
+            this.grpDoping.Controls.Add(this.btnDopingRemove);
+            this.grpDoping.Controls.Add(this.btnDopingAdd);
+            this.grpDoping.Controls.Add(this.btnDopingLoad);
+            this.grpDoping.Controls.Add(this.btnDopingSave);
+            this.grpDoping.Controls.Add(this.cboxDopingType);
+            this.grpDoping.Controls.Add(this.cboxDopingArt);
+            this.grpDoping.Controls.Add(this.cboxDopingEvent);
+            resources.ApplyResources(this.grpDoping, "grpDoping");
+            this.grpDoping.Name = "grpDoping";
+            this.grpDoping.TabStop = false;
             // 
-            // label7
+            // numRatSyncLvlDoping
             // 
-            resources.ApplyResources(this.label7, "label7");
-            this.label7.Name = "label7";
-            // 
-            // chkBuyHealMe
-            // 
-            resources.ApplyResources(this.chkBuyHealMe, "chkBuyHealMe");
-            this.chkBuyHealMe.Checked = true;
-            this.chkBuyHealMe.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.chkBuyHealMe.Name = "chkBuyHealMe";
-            this.chkBuyHealMe.UseVisualStyleBackColor = true;
-            // 
-            // numAmountHealMe
-            // 
-            resources.ApplyResources(this.numAmountHealMe, "numAmountHealMe");
-            this.numAmountHealMe.Minimum = new decimal(new int[] {
+            resources.ApplyResources(this.numRatSyncLvlDoping, "numRatSyncLvlDoping");
+            this.numRatSyncLvlDoping.Maximum = new decimal(new int[] {
+            35,
+            0,
+            0,
+            0});
+            this.numRatSyncLvlDoping.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
-            this.numAmountHealMe.Name = "numAmountHealMe";
-            this.numAmountHealMe.Value = new decimal(new int[] {
-            5,
-            0,
-            0,
-            0});
-            // 
-            // label6
-            // 
-            resources.ApplyResources(this.label6, "label6");
-            this.label6.Name = "label6";
-            // 
-            // numHealMe100
-            // 
-            resources.ApplyResources(this.numHealMe100, "numHealMe100");
-            this.numHealMe100.Name = "numHealMe100";
-            this.numHealMe100.Value = new decimal(new int[] {
-            10,
-            0,
-            0,
-            0});
-            // 
-            // label8
-            // 
-            resources.ApplyResources(this.label8, "label8");
-            this.label8.Name = "label8";
-            // 
-            // numHealMe50
-            // 
-            resources.ApplyResources(this.numHealMe50, "numHealMe50");
-            this.numHealMe50.Name = "numHealMe50";
-            this.numHealMe50.Value = new decimal(new int[] {
-            40,
-            0,
-            0,
-            0});
-            // 
-            // label48
-            // 
-            resources.ApplyResources(this.label48, "label48");
-            this.label48.Name = "label48";
-            // 
-            // label9
-            // 
-            resources.ApplyResources(this.label9, "label9");
-            this.label9.Name = "label9";
-            // 
-            // tabMoneyToOre
-            // 
-            resources.ApplyResources(this.tabMoneyToOre, "tabMoneyToOre");
-            this.tabMoneyToOre.Controls.Add(this.numExchangeBankMoney);
-            this.tabMoneyToOre.Controls.Add(this.label72);
-            this.tabMoneyToOre.Controls.Add(this.label111);
-            this.tabMoneyToOre.Controls.Add(this.label58);
-            this.tabMoneyToOre.Controls.Add(this.label110);
-            this.tabMoneyToOre.Controls.Add(this.label108);
-            this.tabMoneyToOre.Controls.Add(this.numMonaMinStars);
-            this.tabMoneyToOre.Controls.Add(this.numMinThimbles);
-            this.tabMoneyToOre.Controls.Add(this.label78);
-            this.tabMoneyToOre.Controls.Add(this.label109);
-            this.tabMoneyToOre.Controls.Add(this.numMonaMinTeeth);
-            this.tabMoneyToOre.Controls.Add(this.label105);
-            this.tabMoneyToOre.Controls.Add(this.chkMonaTicketTooth);
-            this.tabMoneyToOre.Controls.Add(this.label18);
-            this.tabMoneyToOre.Controls.Add(this.chkThimblesImmunity);
-            this.tabMoneyToOre.Controls.Add(this.chkMonaTicketStar);
-            this.tabMoneyToOre.Controls.Add(this.chkThimblesTicket);
-            this.tabMoneyToOre.Controls.Add(this.numPlayThimbles);
-            this.tabMoneyToOre.Controls.Add(this.label20);
-            this.tabMoneyToOre.Controls.Add(this.chkUseBank);
-            this.tabMoneyToOre.Name = "tabMoneyToOre";
-            this.tabMoneyToOre.UseVisualStyleBackColor = true;
-            // 
-            // numExchangeBankMoney
-            // 
-            resources.ApplyResources(this.numExchangeBankMoney, "numExchangeBankMoney");
-            this.numExchangeBankMoney.Maximum = new decimal(new int[] {
-            9000,
-            0,
-            0,
-            0});
-            this.numExchangeBankMoney.Minimum = new decimal(new int[] {
+            this.numRatSyncLvlDoping.Name = "numRatSyncLvlDoping";
+            this.numRatSyncLvlDoping.Value = new decimal(new int[] {
             1,
             0,
             0,
             0});
-            this.numExchangeBankMoney.Name = "numExchangeBankMoney";
-            this.numExchangeBankMoney.Value = new decimal(new int[] {
-            100,
+            // 
+            // numLvlDoping
+            // 
+            resources.ApplyResources(this.numLvlDoping, "numLvlDoping");
+            this.numLvlDoping.Maximum = new decimal(new int[] {
+            35,
             0,
             0,
             0});
-            // 
-            // label72
-            // 
-            this.label72.Image = global::Moswar.Properties.Resources.Star;
-            resources.ApplyResources(this.label72, "label72");
-            this.label72.Name = "label72";
-            // 
-            // label111
-            // 
-            this.label111.Image = global::Moswar.Properties.Resources.Money;
-            resources.ApplyResources(this.label111, "label111");
-            this.label111.Name = "label111";
-            // 
-            // label58
-            // 
-            this.label58.Image = global::Moswar.Properties.Resources.WhiteTooth;
-            resources.ApplyResources(this.label58, "label58");
-            this.label58.Name = "label58";
-            // 
-            // label110
-            // 
-            this.label110.Image = global::Moswar.Properties.Resources.Money;
-            resources.ApplyResources(this.label110, "label110");
-            this.label110.Name = "label110";
-            // 
-            // label108
-            // 
-            this.label108.Image = global::Moswar.Properties.Resources.Money;
-            resources.ApplyResources(this.label108, "label108");
-            this.label108.Name = "label108";
-            // 
-            // numMonaMinStars
-            // 
-            resources.ApplyResources(this.numMonaMinStars, "numMonaMinStars");
-            this.numMonaMinStars.Maximum = new decimal(new int[] {
-            500,
-            0,
-            0,
-            0});
-            this.numMonaMinStars.Name = "numMonaMinStars";
-            this.numMonaMinStars.Value = new decimal(new int[] {
-            5,
-            0,
-            0,
-            0});
-            // 
-            // numMinThimbles
-            // 
-            resources.ApplyResources(this.numMinThimbles, "numMinThimbles");
-            this.numMinThimbles.Maximum = new decimal(new int[] {
-            1000000,
-            0,
-            0,
-            0});
-            this.numMinThimbles.Minimum = new decimal(new int[] {
+            this.numLvlDoping.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
-            this.numMinThimbles.Name = "numMinThimbles";
-            this.numMinThimbles.Value = new decimal(new int[] {
-            10,
-            0,
-            0,
-            0});
-            // 
-            // label78
-            // 
-            resources.ApplyResources(this.label78, "label78");
-            this.label78.Name = "label78";
-            // 
-            // label109
-            // 
-            resources.ApplyResources(this.label109, "label109");
-            this.label109.ForeColor = System.Drawing.Color.Black;
-            this.label109.Name = "label109";
-            // 
-            // numMonaMinTeeth
-            // 
-            resources.ApplyResources(this.numMonaMinTeeth, "numMonaMinTeeth");
-            this.numMonaMinTeeth.Maximum = new decimal(new int[] {
-            500,
-            0,
-            0,
-            0});
-            this.numMonaMinTeeth.Name = "numMonaMinTeeth";
-            this.numMonaMinTeeth.Value = new decimal(new int[] {
-            5,
-            0,
-            0,
-            0});
-            // 
-            // label105
-            // 
-            resources.ApplyResources(this.label105, "label105");
-            this.label105.ForeColor = System.Drawing.Color.Black;
-            this.label105.Name = "label105";
-            // 
-            // chkMonaTicketTooth
-            // 
-            resources.ApplyResources(this.chkMonaTicketTooth, "chkMonaTicketTooth");
-            this.chkMonaTicketTooth.Name = "chkMonaTicketTooth";
-            this.chkMonaTicketTooth.UseVisualStyleBackColor = true;
-            // 
-            // label18
-            // 
-            resources.ApplyResources(this.label18, "label18");
-            this.label18.ForeColor = System.Drawing.Color.Black;
-            this.label18.Name = "label18";
-            // 
-            // chkThimblesImmunity
-            // 
-            resources.ApplyResources(this.chkThimblesImmunity, "chkThimblesImmunity");
-            this.chkThimblesImmunity.Name = "chkThimblesImmunity";
-            this.chkThimblesImmunity.UseVisualStyleBackColor = true;
-            // 
-            // chkMonaTicketStar
-            // 
-            resources.ApplyResources(this.chkMonaTicketStar, "chkMonaTicketStar");
-            this.chkMonaTicketStar.Name = "chkMonaTicketStar";
-            this.chkMonaTicketStar.UseVisualStyleBackColor = true;
-            // 
-            // chkThimblesTicket
-            // 
-            resources.ApplyResources(this.chkThimblesTicket, "chkThimblesTicket");
-            this.chkThimblesTicket.Name = "chkThimblesTicket";
-            this.chkThimblesTicket.UseVisualStyleBackColor = true;
-            // 
-            // numPlayThimbles
-            // 
-            resources.ApplyResources(this.numPlayThimbles, "numPlayThimbles");
-            this.numPlayThimbles.Maximum = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
-            this.numPlayThimbles.Minimum = new decimal(new int[] {
+            this.numLvlDoping.Name = "numLvlDoping";
+            this.numLvlDoping.Value = new decimal(new int[] {
             1,
             0,
             0,
             0});
-            this.numPlayThimbles.Name = "numPlayThimbles";
-            this.numPlayThimbles.Value = new decimal(new int[] {
-            10,
-            0,
-            0,
-            0});
             // 
-            // label20
+            // dtDoping
             // 
-            resources.ApplyResources(this.label20, "label20");
-            this.label20.ForeColor = System.Drawing.Color.Black;
-            this.label20.Name = "label20";
+            resources.ApplyResources(this.dtDoping, "dtDoping");
+            this.dtDoping.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtDoping.Name = "dtDoping";
+            this.dtDoping.ShowUpDown = true;
+            this.dtDoping.Value = new System.DateTime(2011, 11, 19, 14, 45, 0, 0);
             // 
-            // chkUseBank
+            // label62
             // 
-            resources.ApplyResources(this.chkUseBank, "chkUseBank");
-            this.chkUseBank.Name = "chkUseBank";
-            this.chkUseBank.UseVisualStyleBackColor = true;
-            this.chkUseBank.CheckedChanged += new System.EventHandler(this.chkUseOhara_CheckedChanged);
+            resources.ApplyResources(this.label62, "label62");
+            this.label62.ForeColor = System.Drawing.Color.Black;
+            this.label62.Name = "label62";
             // 
-            // tabSkills
+            // label61
             // 
-            resources.ApplyResources(this.tabSkills, "tabSkills");
-            this.tabSkills.Controls.Add(this.grpFactory);
-            this.tabSkills.Name = "tabSkills";
-            this.tabSkills.UseVisualStyleBackColor = true;
+            resources.ApplyResources(this.label61, "label61");
+            this.label61.ForeColor = System.Drawing.Color.Black;
+            this.label61.Name = "label61";
             // 
-            // grpFactory
+            // btnDopingRemove
             // 
-            this.grpFactory.Controls.Add(this.numMinFactoryOre);
-            this.grpFactory.Controls.Add(this.numMinFactoryMoney);
-            this.grpFactory.Controls.Add(this.label82);
-            this.grpFactory.Controls.Add(this.label14);
-            this.grpFactory.Controls.Add(this.label26);
-            this.grpFactory.Controls.Add(this.label81);
-            this.grpFactory.Controls.Add(this.numFactoryChainCount);
-            this.grpFactory.Controls.Add(this.chkFactory);
-            this.grpFactory.Controls.Add(this.cboxFactoryRang);
-            resources.ApplyResources(this.grpFactory, "grpFactory");
-            this.grpFactory.Name = "grpFactory";
-            this.grpFactory.TabStop = false;
+            resources.ApplyResources(this.btnDopingRemove, "btnDopingRemove");
+            this.btnDopingRemove.Name = "btnDopingRemove";
+            this.btnDopingRemove.UseVisualStyleBackColor = true;
+            this.btnDopingRemove.Click += new System.EventHandler(this.btnDoppingRemove_Click);
             // 
-            // numMinFactoryOre
+            // btnDopingAdd
             // 
-            resources.ApplyResources(this.numMinFactoryOre, "numMinFactoryOre");
-            this.numMinFactoryOre.Maximum = new decimal(new int[] {
-            9999999,
-            0,
-            0,
-            0});
-            this.numMinFactoryOre.Name = "numMinFactoryOre";
-            this.numMinFactoryOre.Value = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
+            resources.ApplyResources(this.btnDopingAdd, "btnDopingAdd");
+            this.btnDopingAdd.Name = "btnDopingAdd";
+            this.btnDopingAdd.UseVisualStyleBackColor = true;
+            this.btnDopingAdd.Click += new System.EventHandler(this.btnDoppingAdd_Click);
             // 
-            // numMinFactoryMoney
+            // btnDopingLoad
             // 
-            resources.ApplyResources(this.numMinFactoryMoney, "numMinFactoryMoney");
-            this.numMinFactoryMoney.Maximum = new decimal(new int[] {
-            9999999,
-            0,
-            0,
-            0});
-            this.numMinFactoryMoney.Name = "numMinFactoryMoney";
-            this.numMinFactoryMoney.Value = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
+            resources.ApplyResources(this.btnDopingLoad, "btnDopingLoad");
+            this.btnDopingLoad.Name = "btnDopingLoad";
+            this.btnDopingLoad.UseVisualStyleBackColor = true;
+            this.btnDopingLoad.Click += new System.EventHandler(this.btnDopingLoad_Click);
             // 
-            // label82
+            // btnDopingSave
             // 
-            resources.ApplyResources(this.label82, "label82");
-            this.label82.ForeColor = System.Drawing.Color.Black;
-            this.label82.Name = "label82";
+            resources.ApplyResources(this.btnDopingSave, "btnDopingSave");
+            this.btnDopingSave.Name = "btnDopingSave";
+            this.btnDopingSave.UseVisualStyleBackColor = true;
+            this.btnDopingSave.Click += new System.EventHandler(this.btnDoppingSave_Click);
             // 
-            // label14
+            // cboxDopingType
             // 
-            resources.ApplyResources(this.label14, "label14");
-            this.label14.ForeColor = System.Drawing.Color.Black;
-            this.label14.Name = "label14";
+            this.cboxDopingType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            resources.ApplyResources(this.cboxDopingType, "cboxDopingType");
+            this.cboxDopingType.FormattingEnabled = true;
+            this.cboxDopingType.Items.AddRange(new object[] {
+            resources.GetString("cboxDopingType.Items"),
+            resources.GetString("cboxDopingType.Items1"),
+            resources.GetString("cboxDopingType.Items2"),
+            resources.GetString("cboxDopingType.Items3"),
+            resources.GetString("cboxDopingType.Items4"),
+            resources.GetString("cboxDopingType.Items5"),
+            resources.GetString("cboxDopingType.Items6"),
+            resources.GetString("cboxDopingType.Items7"),
+            resources.GetString("cboxDopingType.Items8"),
+            resources.GetString("cboxDopingType.Items9"),
+            resources.GetString("cboxDopingType.Items10"),
+            resources.GetString("cboxDopingType.Items11"),
+            resources.GetString("cboxDopingType.Items12"),
+            resources.GetString("cboxDopingType.Items13"),
+            resources.GetString("cboxDopingType.Items14"),
+            resources.GetString("cboxDopingType.Items15"),
+            resources.GetString("cboxDopingType.Items16"),
+            resources.GetString("cboxDopingType.Items17"),
+            resources.GetString("cboxDopingType.Items18"),
+            resources.GetString("cboxDopingType.Items19"),
+            resources.GetString("cboxDopingType.Items20"),
+            resources.GetString("cboxDopingType.Items21"),
+            resources.GetString("cboxDopingType.Items22"),
+            resources.GetString("cboxDopingType.Items23"),
+            resources.GetString("cboxDopingType.Items24"),
+            resources.GetString("cboxDopingType.Items25"),
+            resources.GetString("cboxDopingType.Items26"),
+            resources.GetString("cboxDopingType.Items27"),
+            resources.GetString("cboxDopingType.Items28"),
+            resources.GetString("cboxDopingType.Items29"),
+            resources.GetString("cboxDopingType.Items30"),
+            resources.GetString("cboxDopingType.Items31"),
+            resources.GetString("cboxDopingType.Items32"),
+            resources.GetString("cboxDopingType.Items33"),
+            resources.GetString("cboxDopingType.Items34"),
+            resources.GetString("cboxDopingType.Items35"),
+            resources.GetString("cboxDopingType.Items36"),
+            resources.GetString("cboxDopingType.Items37"),
+            resources.GetString("cboxDopingType.Items38"),
+            resources.GetString("cboxDopingType.Items39"),
+            resources.GetString("cboxDopingType.Items40"),
+            resources.GetString("cboxDopingType.Items41"),
+            resources.GetString("cboxDopingType.Items42"),
+            resources.GetString("cboxDopingType.Items43"),
+            resources.GetString("cboxDopingType.Items44"),
+            resources.GetString("cboxDopingType.Items45"),
+            resources.GetString("cboxDopingType.Items46"),
+            resources.GetString("cboxDopingType.Items47"),
+            resources.GetString("cboxDopingType.Items48"),
+            resources.GetString("cboxDopingType.Items49"),
+            resources.GetString("cboxDopingType.Items50"),
+            resources.GetString("cboxDopingType.Items51"),
+            resources.GetString("cboxDopingType.Items52"),
+            resources.GetString("cboxDopingType.Items53"),
+            resources.GetString("cboxDopingType.Items54"),
+            resources.GetString("cboxDopingType.Items55"),
+            resources.GetString("cboxDopingType.Items56"),
+            resources.GetString("cboxDopingType.Items57"),
+            resources.GetString("cboxDopingType.Items58"),
+            resources.GetString("cboxDopingType.Items59"),
+            resources.GetString("cboxDopingType.Items60"),
+            resources.GetString("cboxDopingType.Items61"),
+            resources.GetString("cboxDopingType.Items62"),
+            resources.GetString("cboxDopingType.Items63"),
+            resources.GetString("cboxDopingType.Items64"),
+            resources.GetString("cboxDopingType.Items65"),
+            resources.GetString("cboxDopingType.Items66"),
+            resources.GetString("cboxDopingType.Items67"),
+            resources.GetString("cboxDopingType.Items68"),
+            resources.GetString("cboxDopingType.Items69"),
+            resources.GetString("cboxDopingType.Items70"),
+            resources.GetString("cboxDopingType.Items71"),
+            resources.GetString("cboxDopingType.Items72"),
+            resources.GetString("cboxDopingType.Items73"),
+            resources.GetString("cboxDopingType.Items74"),
+            resources.GetString("cboxDopingType.Items75"),
+            resources.GetString("cboxDopingType.Items76"),
+            resources.GetString("cboxDopingType.Items77"),
+            resources.GetString("cboxDopingType.Items78"),
+            resources.GetString("cboxDopingType.Items79"),
+            resources.GetString("cboxDopingType.Items80"),
+            resources.GetString("cboxDopingType.Items81"),
+            resources.GetString("cboxDopingType.Items82"),
+            resources.GetString("cboxDopingType.Items83"),
+            resources.GetString("cboxDopingType.Items84"),
+            resources.GetString("cboxDopingType.Items85"),
+            resources.GetString("cboxDopingType.Items86"),
+            resources.GetString("cboxDopingType.Items87")});
+            this.cboxDopingType.Name = "cboxDopingType";
+            this.cboxDopingType.SelectedIndexChanged += new System.EventHandler(this.cboxDoppingType_SelectedIndexChanged);
             // 
-            // label26
+            // cboxDopingArt
             // 
-            this.label26.Image = global::Moswar.Properties.Resources.Ore;
-            resources.ApplyResources(this.label26, "label26");
-            this.label26.Name = "label26";
+            this.cboxDopingArt.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            resources.ApplyResources(this.cboxDopingArt, "cboxDopingArt");
+            this.cboxDopingArt.FormattingEnabled = true;
+            this.cboxDopingArt.Items.AddRange(new object[] {
+            resources.GetString("cboxDopingArt.Items"),
+            resources.GetString("cboxDopingArt.Items1"),
+            resources.GetString("cboxDopingArt.Items2")});
+            this.cboxDopingArt.Name = "cboxDopingArt";
+            this.cboxDopingArt.SelectedIndexChanged += new System.EventHandler(this.DopingArt_Changed);
             // 
-            // label81
+            // cboxDopingEvent
             // 
-            this.label81.Image = global::Moswar.Properties.Resources.Money;
-            resources.ApplyResources(this.label81, "label81");
-            this.label81.Name = "label81";
+            this.cboxDopingEvent.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            resources.ApplyResources(this.cboxDopingEvent, "cboxDopingEvent");
+            this.cboxDopingEvent.FormattingEnabled = true;
+            this.cboxDopingEvent.Name = "cboxDopingEvent";
+            this.cboxDopingEvent.SelectedIndexChanged += new System.EventHandler(this.cboxDoppingEvent_SelectedIndexChanged);
             // 
-            // numFactoryChainCount
+            // grpDopingSettings
             // 
-            resources.ApplyResources(this.numFactoryChainCount, "numFactoryChainCount");
-            this.numFactoryChainCount.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.numFactoryChainCount.Name = "numFactoryChainCount";
-            this.numFactoryChainCount.Value = new decimal(new int[] {
-            5,
-            0,
-            0,
-            0});
+            this.grpDopingSettings.Controls.Add(this.chkDopingNoCoctailNoProblem);
+            this.grpDopingSettings.Controls.Add(this.chkDopingPryanik);
+            this.grpDopingSettings.Controls.Add(this.chkDopingZefir);
+            this.grpDopingSettings.Controls.Add(this.chkDopingNoCandyNoProblem);
+            this.grpDopingSettings.Controls.Add(this.chkDopingNoSauceNoProblem);
+            this.grpDopingSettings.Controls.Add(this.chkDopingAllowPartBilet);
+            this.grpDopingSettings.Controls.Add(this.chkDopingAllowCoctailAdv);
+            this.grpDopingSettings.Controls.Add(this.chkDopingShokoZefir);
+            resources.ApplyResources(this.grpDopingSettings, "grpDopingSettings");
+            this.grpDopingSettings.Name = "grpDopingSettings";
+            this.grpDopingSettings.TabStop = false;
             // 
-            // chkFactory
+            // chkDopingNoCoctailNoProblem
             // 
-            resources.ApplyResources(this.chkFactory, "chkFactory");
-            this.chkFactory.Name = "chkFactory";
-            this.chkFactory.UseVisualStyleBackColor = true;
+            resources.ApplyResources(this.chkDopingNoCoctailNoProblem, "chkDopingNoCoctailNoProblem");
+            this.chkDopingNoCoctailNoProblem.Name = "chkDopingNoCoctailNoProblem";
+            this.chkDopingNoCoctailNoProblem.UseVisualStyleBackColor = true;
             // 
-            // cboxFactoryRang
+            // chkDopingPryanik
             // 
-            this.cboxFactoryRang.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            resources.ApplyResources(this.cboxFactoryRang, "cboxFactoryRang");
-            this.cboxFactoryRang.FormattingEnabled = true;
-            this.cboxFactoryRang.Items.AddRange(new object[] {
-            resources.GetString("cboxFactoryRang.Items"),
-            resources.GetString("cboxFactoryRang.Items1"),
-            resources.GetString("cboxFactoryRang.Items2"),
-            resources.GetString("cboxFactoryRang.Items3"),
-            resources.GetString("cboxFactoryRang.Items4"),
-            resources.GetString("cboxFactoryRang.Items5"),
-            resources.GetString("cboxFactoryRang.Items6"),
-            resources.GetString("cboxFactoryRang.Items7"),
-            resources.GetString("cboxFactoryRang.Items8"),
-            resources.GetString("cboxFactoryRang.Items9"),
-            resources.GetString("cboxFactoryRang.Items10"),
-            resources.GetString("cboxFactoryRang.Items11"),
-            resources.GetString("cboxFactoryRang.Items12"),
-            resources.GetString("cboxFactoryRang.Items13"),
-            resources.GetString("cboxFactoryRang.Items14"),
-            resources.GetString("cboxFactoryRang.Items15"),
-            resources.GetString("cboxFactoryRang.Items16"),
-            resources.GetString("cboxFactoryRang.Items17"),
-            resources.GetString("cboxFactoryRang.Items18"),
-            resources.GetString("cboxFactoryRang.Items19"),
-            resources.GetString("cboxFactoryRang.Items20"),
-            resources.GetString("cboxFactoryRang.Items21"),
-            resources.GetString("cboxFactoryRang.Items22"),
-            resources.GetString("cboxFactoryRang.Items23"),
-            resources.GetString("cboxFactoryRang.Items24"),
-            resources.GetString("cboxFactoryRang.Items25"),
-            resources.GetString("cboxFactoryRang.Items26"),
-            resources.GetString("cboxFactoryRang.Items27"),
-            resources.GetString("cboxFactoryRang.Items28")});
-            this.cboxFactoryRang.Name = "cboxFactoryRang";
-            this.cboxFactoryRang.SelectedIndexChanged += new System.EventHandler(this.cboxDoppingEvent_SelectedIndexChanged);
+            resources.ApplyResources(this.chkDopingPryanik, "chkDopingPryanik");
+            this.chkDopingPryanik.Name = "chkDopingPryanik";
+            this.chkDopingPryanik.UseVisualStyleBackColor = true;
             // 
-            // tabAzazella
+            // chkDopingZefir
             // 
-            resources.ApplyResources(this.tabAzazella, "tabAzazella");
-            this.tabAzazella.Controls.Add(this.chkAzazellaFastPlay);
-            this.tabAzazella.Controls.Add(this.numAzazellaTreasureChance);
-            this.tabAzazella.Controls.Add(this.chkAzazella75);
-            this.tabAzazella.Controls.Add(this.label177);
-            this.tabAzazella.Controls.Add(this.label157);
-            this.tabAzazella.Controls.Add(this.label175);
-            this.tabAzazella.Controls.Add(this.chkAzazellaTreasure);
-            this.tabAzazella.Controls.Add(this.chkAzazella25);
-            this.tabAzazella.Controls.Add(this.label176);
-            this.tabAzazella.Controls.Add(this.label95);
-            this.tabAzazella.Controls.Add(this.label156);
-            this.tabAzazella.Controls.Add(this.numMinAzazellaGold);
-            this.tabAzazella.Name = "tabAzazella";
-            this.tabAzazella.UseVisualStyleBackColor = true;
+            resources.ApplyResources(this.chkDopingZefir, "chkDopingZefir");
+            this.chkDopingZefir.Name = "chkDopingZefir";
+            this.chkDopingZefir.UseVisualStyleBackColor = true;
             // 
-            // chkAzazellaFastPlay
+            // chkDopingNoCandyNoProblem
             // 
-            resources.ApplyResources(this.chkAzazellaFastPlay, "chkAzazellaFastPlay");
-            this.chkAzazellaFastPlay.Name = "chkAzazellaFastPlay";
-            this.chkAzazellaFastPlay.UseVisualStyleBackColor = true;
+            resources.ApplyResources(this.chkDopingNoCandyNoProblem, "chkDopingNoCandyNoProblem");
+            this.chkDopingNoCandyNoProblem.Name = "chkDopingNoCandyNoProblem";
+            this.chkDopingNoCandyNoProblem.UseVisualStyleBackColor = true;
             // 
-            // numAzazellaTreasureChance
+            // chkDopingNoSauceNoProblem
             // 
-            resources.ApplyResources(this.numAzazellaTreasureChance, "numAzazellaTreasureChance");
-            this.numAzazellaTreasureChance.Name = "numAzazellaTreasureChance";
-            this.numAzazellaTreasureChance.Value = new decimal(new int[] {
-            95,
-            0,
-            0,
-            0});
+            resources.ApplyResources(this.chkDopingNoSauceNoProblem, "chkDopingNoSauceNoProblem");
+            this.chkDopingNoSauceNoProblem.Name = "chkDopingNoSauceNoProblem";
+            this.chkDopingNoSauceNoProblem.UseVisualStyleBackColor = true;
             // 
-            // chkAzazella75
+            // chkDopingAllowPartBilet
             // 
-            resources.ApplyResources(this.chkAzazella75, "chkAzazella75");
-            this.chkAzazella75.Name = "chkAzazella75";
-            this.chkAzazella75.UseVisualStyleBackColor = true;
+            resources.ApplyResources(this.chkDopingAllowPartBilet, "chkDopingAllowPartBilet");
+            this.chkDopingAllowPartBilet.Name = "chkDopingAllowPartBilet";
+            this.chkDopingAllowPartBilet.UseVisualStyleBackColor = true;
             // 
-            // label177
+            // chkDopingAllowCoctailAdv
             // 
-            resources.ApplyResources(this.label177, "label177");
-            this.label177.ForeColor = System.Drawing.Color.Black;
-            this.label177.Name = "label177";
+            resources.ApplyResources(this.chkDopingAllowCoctailAdv, "chkDopingAllowCoctailAdv");
+            this.chkDopingAllowCoctailAdv.Name = "chkDopingAllowCoctailAdv";
+            this.chkDopingAllowCoctailAdv.UseVisualStyleBackColor = true;
             // 
-            // label157
+            // chkDopingShokoZefir
             // 
-            resources.ApplyResources(this.label157, "label157");
-            this.label157.ForeColor = System.Drawing.Color.Black;
-            this.label157.Name = "label157";
-            // 
-            // label175
-            // 
-            this.label175.Image = global::Moswar.Properties.Resources.Gold;
-            resources.ApplyResources(this.label175, "label175");
-            this.label175.Name = "label175";
-            // 
-            // chkAzazellaTreasure
-            // 
-            resources.ApplyResources(this.chkAzazellaTreasure, "chkAzazellaTreasure");
-            this.chkAzazellaTreasure.Name = "chkAzazellaTreasure";
-            this.chkAzazellaTreasure.UseVisualStyleBackColor = true;
-            // 
-            // chkAzazella25
-            // 
-            resources.ApplyResources(this.chkAzazella25, "chkAzazella25");
-            this.chkAzazella25.Name = "chkAzazella25";
-            this.chkAzazella25.UseVisualStyleBackColor = true;
-            // 
-            // label176
-            // 
-            this.label176.Image = global::Moswar.Properties.Resources.Gold;
-            resources.ApplyResources(this.label176, "label176");
-            this.label176.Name = "label176";
-            // 
-            // label95
-            // 
-            this.label95.Image = global::Moswar.Properties.Resources.Gold;
-            resources.ApplyResources(this.label95, "label95");
-            this.label95.Name = "label95";
-            // 
-            // label156
-            // 
-            resources.ApplyResources(this.label156, "label156");
-            this.label156.ForeColor = System.Drawing.Color.Black;
-            this.label156.Name = "label156";
-            // 
-            // numMinAzazellaGold
-            // 
-            resources.ApplyResources(this.numMinAzazellaGold, "numMinAzazellaGold");
-            this.numMinAzazellaGold.Maximum = new decimal(new int[] {
-            1000000,
-            0,
-            0,
-            0});
-            this.numMinAzazellaGold.Name = "numMinAzazellaGold";
-            this.numMinAzazellaGold.Value = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
-            // 
-            // tabGorbushka
-            // 
-            resources.ApplyResources(this.tabGorbushka, "tabGorbushka");
-            this.tabGorbushka.Controls.Add(this.chkSellRepairMobile);
-            this.tabGorbushka.Controls.Add(this.chkRepairMobile);
-            this.tabGorbushka.Name = "tabGorbushka";
-            this.tabGorbushka.UseVisualStyleBackColor = true;
-            // 
-            // chkSellRepairMobile
-            // 
-            resources.ApplyResources(this.chkSellRepairMobile, "chkSellRepairMobile");
-            this.chkSellRepairMobile.Name = "chkSellRepairMobile";
-            this.chkSellRepairMobile.UseVisualStyleBackColor = true;
-            // 
-            // chkRepairMobile
-            // 
-            resources.ApplyResources(this.chkRepairMobile, "chkRepairMobile");
-            this.chkRepairMobile.Name = "chkRepairMobile";
-            this.chkRepairMobile.UseVisualStyleBackColor = true;
+            resources.ApplyResources(this.chkDopingShokoZefir, "chkDopingShokoZefir");
+            this.chkDopingShokoZefir.Name = "chkDopingShokoZefir";
+            this.chkDopingShokoZefir.UseVisualStyleBackColor = true;
             // 
             // tabHunterClub
             // 
@@ -4026,72 +3768,6 @@
             resources.ApplyResources(this.label138, "label138");
             this.label138.ForeColor = System.Drawing.Color.Black;
             this.label138.Name = "label138";
-            // 
-            // tabClanWars
-            // 
-            resources.ApplyResources(this.tabClanWars, "tabClanWars");
-            this.tabClanWars.Controls.Add(this.grpClanWarEx);
-            this.tabClanWars.Controls.Add(this.label60);
-            this.tabClanWars.Name = "tabClanWars";
-            this.tabClanWars.UseVisualStyleBackColor = true;
-            // 
-            // grpClanWarEx
-            // 
-            this.grpClanWarEx.Controls.Add(this.chkUseSnikersEnemy);
-            this.grpClanWarEx.Controls.Add(this.chkClanWars);
-            this.grpClanWarEx.Controls.Add(this.chkBerserker);
-            this.grpClanWarEx.Controls.Add(this.chkFarmClan);
-            this.grpClanWarEx.Controls.Add(this.chkRemoveEnemy);
-            this.grpClanWarEx.Controls.Add(this.chkAddClan);
-            resources.ApplyResources(this.grpClanWarEx, "grpClanWarEx");
-            this.grpClanWarEx.Name = "grpClanWarEx";
-            this.grpClanWarEx.TabStop = false;
-            // 
-            // chkUseSnikersEnemy
-            // 
-            resources.ApplyResources(this.chkUseSnikersEnemy, "chkUseSnikersEnemy");
-            this.chkUseSnikersEnemy.Name = "chkUseSnikersEnemy";
-            this.chkUseSnikersEnemy.UseVisualStyleBackColor = true;
-            // 
-            // chkClanWars
-            // 
-            resources.ApplyResources(this.chkClanWars, "chkClanWars");
-            this.chkClanWars.Name = "chkClanWars";
-            this.chkClanWars.UseVisualStyleBackColor = true;
-            // 
-            // chkBerserker
-            // 
-            resources.ApplyResources(this.chkBerserker, "chkBerserker");
-            this.chkBerserker.Name = "chkBerserker";
-            this.chkBerserker.UseVisualStyleBackColor = true;
-            // 
-            // chkFarmClan
-            // 
-            resources.ApplyResources(this.chkFarmClan, "chkFarmClan");
-            this.chkFarmClan.Name = "chkFarmClan";
-            this.chkFarmClan.UseVisualStyleBackColor = true;
-            // 
-            // chkRemoveEnemy
-            // 
-            resources.ApplyResources(this.chkRemoveEnemy, "chkRemoveEnemy");
-            this.chkRemoveEnemy.Checked = true;
-            this.chkRemoveEnemy.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.chkRemoveEnemy.Name = "chkRemoveEnemy";
-            this.chkRemoveEnemy.UseVisualStyleBackColor = true;
-            // 
-            // chkAddClan
-            // 
-            resources.ApplyResources(this.chkAddClan, "chkAddClan");
-            this.chkAddClan.Checked = true;
-            this.chkAddClan.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.chkAddClan.Name = "chkAddClan";
-            this.chkAddClan.UseVisualStyleBackColor = true;
-            this.chkAddClan.CheckedChanged += new System.EventHandler(this.chkAddClan_CheckedChanged);
-            // 
-            // label60
-            // 
-            resources.ApplyResources(this.label60, "label60");
-            this.label60.Name = "label60";
             // 
             // tabRatPipeline
             // 
@@ -4769,167 +4445,71 @@
             resources.GetString("cboxOilLvl.Items15")});
             this.cboxOilLvl.Name = "cboxOilLvl";
             // 
-            // tabPyramid
+            // tabClanWars
             // 
-            resources.ApplyResources(this.tabPyramid, "tabPyramid");
-            this.tabPyramid.Controls.Add(this.label155);
-            this.tabPyramid.Controls.Add(this.numPyramidWanted);
-            this.tabPyramid.Controls.Add(this.numPyramidAmount);
-            this.tabPyramid.Controls.Add(this.label44);
-            this.tabPyramid.Controls.Add(this.label52);
-            this.tabPyramid.Controls.Add(this.numMaxPyramidPrice);
-            this.tabPyramid.Controls.Add(this.chkPyramid);
-            this.tabPyramid.Controls.Add(this.chkBlockThimbles);
-            this.tabPyramid.Controls.Add(this.label43);
-            this.tabPyramid.Controls.Add(this.label42);
-            this.tabPyramid.Name = "tabPyramid";
-            this.tabPyramid.UseVisualStyleBackColor = true;
+            resources.ApplyResources(this.tabClanWars, "tabClanWars");
+            this.tabClanWars.Controls.Add(this.grpClanWarEx);
+            this.tabClanWars.Controls.Add(this.label60);
+            this.tabClanWars.Name = "tabClanWars";
+            this.tabClanWars.UseVisualStyleBackColor = true;
             // 
-            // label155
+            // grpClanWarEx
             // 
-            this.label155.Image = global::Moswar.Properties.Resources.Money;
-            resources.ApplyResources(this.label155, "label155");
-            this.label155.Name = "label155";
+            this.grpClanWarEx.Controls.Add(this.chkUseSnikersEnemy);
+            this.grpClanWarEx.Controls.Add(this.chkClanWars);
+            this.grpClanWarEx.Controls.Add(this.chkBerserker);
+            this.grpClanWarEx.Controls.Add(this.chkFarmClan);
+            this.grpClanWarEx.Controls.Add(this.chkRemoveEnemy);
+            this.grpClanWarEx.Controls.Add(this.chkAddClan);
+            resources.ApplyResources(this.grpClanWarEx, "grpClanWarEx");
+            this.grpClanWarEx.Name = "grpClanWarEx";
+            this.grpClanWarEx.TabStop = false;
             // 
-            // numPyramidWanted
+            // chkUseSnikersEnemy
             // 
-            resources.ApplyResources(this.numPyramidWanted, "numPyramidWanted");
-            this.numPyramidWanted.Maximum = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
-            this.numPyramidWanted.Name = "numPyramidWanted";
-            this.numPyramidWanted.Value = new decimal(new int[] {
-            133,
-            0,
-            0,
-            0});
+            resources.ApplyResources(this.chkUseSnikersEnemy, "chkUseSnikersEnemy");
+            this.chkUseSnikersEnemy.Name = "chkUseSnikersEnemy";
+            this.chkUseSnikersEnemy.UseVisualStyleBackColor = true;
             // 
-            // numPyramidAmount
+            // chkClanWars
             // 
-            resources.ApplyResources(this.numPyramidAmount, "numPyramidAmount");
-            this.numPyramidAmount.Maximum = new decimal(new int[] {
-            1000000,
-            0,
-            0,
-            0});
-            this.numPyramidAmount.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.numPyramidAmount.Name = "numPyramidAmount";
-            this.numPyramidAmount.Value = new decimal(new int[] {
-            50,
-            0,
-            0,
-            0});
+            resources.ApplyResources(this.chkClanWars, "chkClanWars");
+            this.chkClanWars.Name = "chkClanWars";
+            this.chkClanWars.UseVisualStyleBackColor = true;
             // 
-            // label44
+            // chkBerserker
             // 
-            resources.ApplyResources(this.label44, "label44");
-            this.label44.Name = "label44";
+            resources.ApplyResources(this.chkBerserker, "chkBerserker");
+            this.chkBerserker.Name = "chkBerserker";
+            this.chkBerserker.UseVisualStyleBackColor = true;
             // 
-            // label52
+            // chkFarmClan
             // 
-            this.label52.Image = global::Moswar.Properties.Resources.Money;
-            resources.ApplyResources(this.label52, "label52");
-            this.label52.Name = "label52";
+            resources.ApplyResources(this.chkFarmClan, "chkFarmClan");
+            this.chkFarmClan.Name = "chkFarmClan";
+            this.chkFarmClan.UseVisualStyleBackColor = true;
             // 
-            // numMaxPyramidPrice
+            // chkRemoveEnemy
             // 
-            resources.ApplyResources(this.numMaxPyramidPrice, "numMaxPyramidPrice");
-            this.numMaxPyramidPrice.Maximum = new decimal(new int[] {
-            1000000,
-            0,
-            0,
-            0});
-            this.numMaxPyramidPrice.Minimum = new decimal(new int[] {
-            100,
-            0,
-            0,
-            0});
-            this.numMaxPyramidPrice.Name = "numMaxPyramidPrice";
-            this.numMaxPyramidPrice.Value = new decimal(new int[] {
-            100,
-            0,
-            0,
-            0});
+            resources.ApplyResources(this.chkRemoveEnemy, "chkRemoveEnemy");
+            this.chkRemoveEnemy.Checked = true;
+            this.chkRemoveEnemy.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.chkRemoveEnemy.Name = "chkRemoveEnemy";
+            this.chkRemoveEnemy.UseVisualStyleBackColor = true;
             // 
-            // chkPyramid
+            // chkAddClan
             // 
-            resources.ApplyResources(this.chkPyramid, "chkPyramid");
-            this.chkPyramid.Checked = true;
-            this.chkPyramid.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.chkPyramid.Name = "chkPyramid";
-            this.chkPyramid.UseVisualStyleBackColor = true;
+            resources.ApplyResources(this.chkAddClan, "chkAddClan");
+            this.chkAddClan.Checked = true;
+            this.chkAddClan.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.chkAddClan.Name = "chkAddClan";
+            this.chkAddClan.UseVisualStyleBackColor = true;
+            this.chkAddClan.CheckedChanged += new System.EventHandler(this.chkAddClan_CheckedChanged);
             // 
-            // chkBlockThimbles
+            // label60
             // 
-            resources.ApplyResources(this.chkBlockThimbles, "chkBlockThimbles");
-            this.chkBlockThimbles.Name = "chkBlockThimbles";
-            this.chkBlockThimbles.UseVisualStyleBackColor = true;
-            // 
-            // label43
-            // 
-            resources.ApplyResources(this.label43, "label43");
-            this.label43.Name = "label43";
-            // 
-            // label42
-            // 
-            resources.ApplyResources(this.label42, "label42");
-            this.label42.Name = "label42";
-            // 
-            // tabBank
-            // 
-            resources.ApplyResources(this.tabBank, "tabBank");
-            this.tabBank.Controls.Add(this.numBankDeposit);
-            this.tabBank.Controls.Add(this.label120);
-            this.tabBank.Controls.Add(this.chkBuyBankSafe);
-            this.tabBank.Controls.Add(this.label121);
-            this.tabBank.Controls.Add(this.chkBankDeposit);
-            this.tabBank.Name = "tabBank";
-            this.tabBank.UseVisualStyleBackColor = true;
-            // 
-            // numBankDeposit
-            // 
-            resources.ApplyResources(this.numBankDeposit, "numBankDeposit");
-            this.numBankDeposit.Maximum = new decimal(new int[] {
-            9000,
-            0,
-            0,
-            0});
-            this.numBankDeposit.Name = "numBankDeposit";
-            this.numBankDeposit.Value = new decimal(new int[] {
-            100,
-            0,
-            0,
-            0});
-            // 
-            // label120
-            // 
-            this.label120.Image = global::Moswar.Properties.Resources.Money;
-            resources.ApplyResources(this.label120, "label120");
-            this.label120.Name = "label120";
-            // 
-            // chkBuyBankSafe
-            // 
-            resources.ApplyResources(this.chkBuyBankSafe, "chkBuyBankSafe");
-            this.chkBuyBankSafe.Name = "chkBuyBankSafe";
-            this.chkBuyBankSafe.UseVisualStyleBackColor = true;
-            // 
-            // label121
-            // 
-            resources.ApplyResources(this.label121, "label121");
-            this.label121.ForeColor = System.Drawing.Color.Black;
-            this.label121.Name = "label121";
-            // 
-            // chkBankDeposit
-            // 
-            resources.ApplyResources(this.chkBankDeposit, "chkBankDeposit");
-            this.chkBankDeposit.Name = "chkBankDeposit";
-            this.chkBankDeposit.UseVisualStyleBackColor = true;
+            resources.ApplyResources(this.label60, "label60");
+            this.label60.Name = "label60";
             // 
             // tabQuests
             // 
@@ -5171,6 +4751,96 @@
             // 
             resources.ApplyResources(this.label36, "label36");
             this.label36.Name = "label36";
+            // 
+            // tabAutopark
+            // 
+            resources.ApplyResources(this.tabAutopark, "tabAutopark");
+            this.tabAutopark.Controls.Add(this.grpCar);
+            this.tabAutopark.Name = "tabAutopark";
+            this.tabAutopark.UseVisualStyleBackColor = true;
+            // 
+            // grpCar
+            // 
+            this.grpCar.Controls.Add(this.chkUseSpecialCar);
+            this.grpCar.Controls.Add(this.label53);
+            this.grpCar.Controls.Add(this.chkCar);
+            this.grpCar.Controls.Add(this.cboxSpecialCar);
+            this.grpCar.Controls.Add(this.cboxCarPrize);
+            resources.ApplyResources(this.grpCar, "grpCar");
+            this.grpCar.Name = "grpCar";
+            this.grpCar.TabStop = false;
+            // 
+            // chkUseSpecialCar
+            // 
+            resources.ApplyResources(this.chkUseSpecialCar, "chkUseSpecialCar");
+            this.chkUseSpecialCar.Name = "chkUseSpecialCar";
+            this.chkUseSpecialCar.UseVisualStyleBackColor = true;
+            // 
+            // label53
+            // 
+            resources.ApplyResources(this.label53, "label53");
+            this.label53.Name = "label53";
+            // 
+            // chkCar
+            // 
+            resources.ApplyResources(this.chkCar, "chkCar");
+            this.chkCar.Name = "chkCar";
+            this.chkCar.UseVisualStyleBackColor = true;
+            // 
+            // cboxSpecialCar
+            // 
+            this.cboxSpecialCar.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            resources.ApplyResources(this.cboxSpecialCar, "cboxSpecialCar");
+            this.cboxSpecialCar.FormattingEnabled = true;
+            this.cboxSpecialCar.Items.AddRange(new object[] {
+            resources.GetString("cboxSpecialCar.Items"),
+            resources.GetString("cboxSpecialCar.Items1"),
+            resources.GetString("cboxSpecialCar.Items2"),
+            resources.GetString("cboxSpecialCar.Items3"),
+            resources.GetString("cboxSpecialCar.Items4"),
+            resources.GetString("cboxSpecialCar.Items5"),
+            resources.GetString("cboxSpecialCar.Items6"),
+            resources.GetString("cboxSpecialCar.Items7"),
+            resources.GetString("cboxSpecialCar.Items8"),
+            resources.GetString("cboxSpecialCar.Items9"),
+            resources.GetString("cboxSpecialCar.Items10"),
+            resources.GetString("cboxSpecialCar.Items11"),
+            resources.GetString("cboxSpecialCar.Items12"),
+            resources.GetString("cboxSpecialCar.Items13"),
+            resources.GetString("cboxSpecialCar.Items14"),
+            resources.GetString("cboxSpecialCar.Items15"),
+            resources.GetString("cboxSpecialCar.Items16"),
+            resources.GetString("cboxSpecialCar.Items17"),
+            resources.GetString("cboxSpecialCar.Items18"),
+            resources.GetString("cboxSpecialCar.Items19"),
+            resources.GetString("cboxSpecialCar.Items20"),
+            resources.GetString("cboxSpecialCar.Items21"),
+            resources.GetString("cboxSpecialCar.Items22"),
+            resources.GetString("cboxSpecialCar.Items23"),
+            resources.GetString("cboxSpecialCar.Items24"),
+            resources.GetString("cboxSpecialCar.Items25"),
+            resources.GetString("cboxSpecialCar.Items26"),
+            resources.GetString("cboxSpecialCar.Items27"),
+            resources.GetString("cboxSpecialCar.Items28"),
+            resources.GetString("cboxSpecialCar.Items29"),
+            resources.GetString("cboxSpecialCar.Items30"),
+            resources.GetString("cboxSpecialCar.Items31"),
+            resources.GetString("cboxSpecialCar.Items32")});
+            this.cboxSpecialCar.Name = "cboxSpecialCar";
+            // 
+            // cboxCarPrize
+            // 
+            this.cboxCarPrize.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            resources.ApplyResources(this.cboxCarPrize, "cboxCarPrize");
+            this.cboxCarPrize.FormattingEnabled = true;
+            this.cboxCarPrize.Items.AddRange(new object[] {
+            resources.GetString("cboxCarPrize.Items"),
+            resources.GetString("cboxCarPrize.Items1"),
+            resources.GetString("cboxCarPrize.Items2"),
+            resources.GetString("cboxCarPrize.Items3"),
+            resources.GetString("cboxCarPrize.Items4"),
+            resources.GetString("cboxCarPrize.Items5")});
+            this.cboxCarPrize.Name = "cboxCarPrize";
             // 
             // tabCookPetriki
             // 
@@ -5629,6 +5299,141 @@
             this.label149.Image = global::Moswar.Properties.Resources.Straw;
             resources.ApplyResources(this.label149, "label149");
             this.label149.Name = "label149";
+            // 
+            // tabSkills
+            // 
+            resources.ApplyResources(this.tabSkills, "tabSkills");
+            this.tabSkills.Controls.Add(this.grpFactory);
+            this.tabSkills.Name = "tabSkills";
+            this.tabSkills.UseVisualStyleBackColor = true;
+            // 
+            // grpFactory
+            // 
+            this.grpFactory.Controls.Add(this.numMinFactoryOre);
+            this.grpFactory.Controls.Add(this.numMinFactoryMoney);
+            this.grpFactory.Controls.Add(this.label82);
+            this.grpFactory.Controls.Add(this.label14);
+            this.grpFactory.Controls.Add(this.label26);
+            this.grpFactory.Controls.Add(this.label81);
+            this.grpFactory.Controls.Add(this.numFactoryChainCount);
+            this.grpFactory.Controls.Add(this.chkFactory);
+            this.grpFactory.Controls.Add(this.cboxFactoryRang);
+            resources.ApplyResources(this.grpFactory, "grpFactory");
+            this.grpFactory.Name = "grpFactory";
+            this.grpFactory.TabStop = false;
+            // 
+            // numMinFactoryOre
+            // 
+            resources.ApplyResources(this.numMinFactoryOre, "numMinFactoryOre");
+            this.numMinFactoryOre.Maximum = new decimal(new int[] {
+            9999999,
+            0,
+            0,
+            0});
+            this.numMinFactoryOre.Name = "numMinFactoryOre";
+            this.numMinFactoryOre.Value = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
+            // 
+            // numMinFactoryMoney
+            // 
+            resources.ApplyResources(this.numMinFactoryMoney, "numMinFactoryMoney");
+            this.numMinFactoryMoney.Maximum = new decimal(new int[] {
+            9999999,
+            0,
+            0,
+            0});
+            this.numMinFactoryMoney.Name = "numMinFactoryMoney";
+            this.numMinFactoryMoney.Value = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
+            // 
+            // label82
+            // 
+            resources.ApplyResources(this.label82, "label82");
+            this.label82.ForeColor = System.Drawing.Color.Black;
+            this.label82.Name = "label82";
+            // 
+            // label14
+            // 
+            resources.ApplyResources(this.label14, "label14");
+            this.label14.ForeColor = System.Drawing.Color.Black;
+            this.label14.Name = "label14";
+            // 
+            // label26
+            // 
+            this.label26.Image = global::Moswar.Properties.Resources.Ore;
+            resources.ApplyResources(this.label26, "label26");
+            this.label26.Name = "label26";
+            // 
+            // label81
+            // 
+            this.label81.Image = global::Moswar.Properties.Resources.Money;
+            resources.ApplyResources(this.label81, "label81");
+            this.label81.Name = "label81";
+            // 
+            // numFactoryChainCount
+            // 
+            resources.ApplyResources(this.numFactoryChainCount, "numFactoryChainCount");
+            this.numFactoryChainCount.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numFactoryChainCount.Name = "numFactoryChainCount";
+            this.numFactoryChainCount.Value = new decimal(new int[] {
+            5,
+            0,
+            0,
+            0});
+            // 
+            // chkFactory
+            // 
+            resources.ApplyResources(this.chkFactory, "chkFactory");
+            this.chkFactory.Name = "chkFactory";
+            this.chkFactory.UseVisualStyleBackColor = true;
+            // 
+            // cboxFactoryRang
+            // 
+            this.cboxFactoryRang.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            resources.ApplyResources(this.cboxFactoryRang, "cboxFactoryRang");
+            this.cboxFactoryRang.FormattingEnabled = true;
+            this.cboxFactoryRang.Items.AddRange(new object[] {
+            resources.GetString("cboxFactoryRang.Items"),
+            resources.GetString("cboxFactoryRang.Items1"),
+            resources.GetString("cboxFactoryRang.Items2"),
+            resources.GetString("cboxFactoryRang.Items3"),
+            resources.GetString("cboxFactoryRang.Items4"),
+            resources.GetString("cboxFactoryRang.Items5"),
+            resources.GetString("cboxFactoryRang.Items6"),
+            resources.GetString("cboxFactoryRang.Items7"),
+            resources.GetString("cboxFactoryRang.Items8"),
+            resources.GetString("cboxFactoryRang.Items9"),
+            resources.GetString("cboxFactoryRang.Items10"),
+            resources.GetString("cboxFactoryRang.Items11"),
+            resources.GetString("cboxFactoryRang.Items12"),
+            resources.GetString("cboxFactoryRang.Items13"),
+            resources.GetString("cboxFactoryRang.Items14"),
+            resources.GetString("cboxFactoryRang.Items15"),
+            resources.GetString("cboxFactoryRang.Items16"),
+            resources.GetString("cboxFactoryRang.Items17"),
+            resources.GetString("cboxFactoryRang.Items18"),
+            resources.GetString("cboxFactoryRang.Items19"),
+            resources.GetString("cboxFactoryRang.Items20"),
+            resources.GetString("cboxFactoryRang.Items21"),
+            resources.GetString("cboxFactoryRang.Items22"),
+            resources.GetString("cboxFactoryRang.Items23"),
+            resources.GetString("cboxFactoryRang.Items24"),
+            resources.GetString("cboxFactoryRang.Items25"),
+            resources.GetString("cboxFactoryRang.Items26"),
+            resources.GetString("cboxFactoryRang.Items27"),
+            resources.GetString("cboxFactoryRang.Items28")});
+            this.cboxFactoryRang.Name = "cboxFactoryRang";
+            this.cboxFactoryRang.SelectedIndexChanged += new System.EventHandler(this.cboxDoppingEvent_SelectedIndexChanged);
             // 
             // tabTraining
             // 
@@ -6263,6 +6068,168 @@
             0,
             0});
             // 
+            // tabBank
+            // 
+            resources.ApplyResources(this.tabBank, "tabBank");
+            this.tabBank.Controls.Add(this.numBankDeposit);
+            this.tabBank.Controls.Add(this.label120);
+            this.tabBank.Controls.Add(this.chkBuyBankSafe);
+            this.tabBank.Controls.Add(this.label121);
+            this.tabBank.Controls.Add(this.chkBankDeposit);
+            this.tabBank.Name = "tabBank";
+            this.tabBank.UseVisualStyleBackColor = true;
+            // 
+            // numBankDeposit
+            // 
+            resources.ApplyResources(this.numBankDeposit, "numBankDeposit");
+            this.numBankDeposit.Maximum = new decimal(new int[] {
+            9000,
+            0,
+            0,
+            0});
+            this.numBankDeposit.Name = "numBankDeposit";
+            this.numBankDeposit.Value = new decimal(new int[] {
+            100,
+            0,
+            0,
+            0});
+            // 
+            // label120
+            // 
+            this.label120.Image = global::Moswar.Properties.Resources.Money;
+            resources.ApplyResources(this.label120, "label120");
+            this.label120.Name = "label120";
+            // 
+            // chkBuyBankSafe
+            // 
+            resources.ApplyResources(this.chkBuyBankSafe, "chkBuyBankSafe");
+            this.chkBuyBankSafe.Name = "chkBuyBankSafe";
+            this.chkBuyBankSafe.UseVisualStyleBackColor = true;
+            // 
+            // label121
+            // 
+            resources.ApplyResources(this.label121, "label121");
+            this.label121.ForeColor = System.Drawing.Color.Black;
+            this.label121.Name = "label121";
+            // 
+            // chkBankDeposit
+            // 
+            resources.ApplyResources(this.chkBankDeposit, "chkBankDeposit");
+            this.chkBankDeposit.Name = "chkBankDeposit";
+            this.chkBankDeposit.UseVisualStyleBackColor = true;
+            // 
+            // tabPyramid
+            // 
+            resources.ApplyResources(this.tabPyramid, "tabPyramid");
+            this.tabPyramid.Controls.Add(this.label155);
+            this.tabPyramid.Controls.Add(this.numPyramidWanted);
+            this.tabPyramid.Controls.Add(this.numPyramidAmount);
+            this.tabPyramid.Controls.Add(this.label44);
+            this.tabPyramid.Controls.Add(this.label52);
+            this.tabPyramid.Controls.Add(this.numMaxPyramidPrice);
+            this.tabPyramid.Controls.Add(this.chkPyramid);
+            this.tabPyramid.Controls.Add(this.chkBlockThimbles);
+            this.tabPyramid.Controls.Add(this.label43);
+            this.tabPyramid.Controls.Add(this.label42);
+            this.tabPyramid.Name = "tabPyramid";
+            this.tabPyramid.UseVisualStyleBackColor = true;
+            // 
+            // label155
+            // 
+            this.label155.Image = global::Moswar.Properties.Resources.Money;
+            resources.ApplyResources(this.label155, "label155");
+            this.label155.Name = "label155";
+            // 
+            // numPyramidWanted
+            // 
+            resources.ApplyResources(this.numPyramidWanted, "numPyramidWanted");
+            this.numPyramidWanted.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
+            this.numPyramidWanted.Name = "numPyramidWanted";
+            this.numPyramidWanted.Value = new decimal(new int[] {
+            133,
+            0,
+            0,
+            0});
+            // 
+            // numPyramidAmount
+            // 
+            resources.ApplyResources(this.numPyramidAmount, "numPyramidAmount");
+            this.numPyramidAmount.Maximum = new decimal(new int[] {
+            1000000,
+            0,
+            0,
+            0});
+            this.numPyramidAmount.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numPyramidAmount.Name = "numPyramidAmount";
+            this.numPyramidAmount.Value = new decimal(new int[] {
+            50,
+            0,
+            0,
+            0});
+            // 
+            // label44
+            // 
+            resources.ApplyResources(this.label44, "label44");
+            this.label44.Name = "label44";
+            // 
+            // label52
+            // 
+            this.label52.Image = global::Moswar.Properties.Resources.Money;
+            resources.ApplyResources(this.label52, "label52");
+            this.label52.Name = "label52";
+            // 
+            // numMaxPyramidPrice
+            // 
+            resources.ApplyResources(this.numMaxPyramidPrice, "numMaxPyramidPrice");
+            this.numMaxPyramidPrice.Maximum = new decimal(new int[] {
+            1000000,
+            0,
+            0,
+            0});
+            this.numMaxPyramidPrice.Minimum = new decimal(new int[] {
+            100,
+            0,
+            0,
+            0});
+            this.numMaxPyramidPrice.Name = "numMaxPyramidPrice";
+            this.numMaxPyramidPrice.Value = new decimal(new int[] {
+            100,
+            0,
+            0,
+            0});
+            // 
+            // chkPyramid
+            // 
+            resources.ApplyResources(this.chkPyramid, "chkPyramid");
+            this.chkPyramid.Checked = true;
+            this.chkPyramid.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.chkPyramid.Name = "chkPyramid";
+            this.chkPyramid.UseVisualStyleBackColor = true;
+            // 
+            // chkBlockThimbles
+            // 
+            resources.ApplyResources(this.chkBlockThimbles, "chkBlockThimbles");
+            this.chkBlockThimbles.Name = "chkBlockThimbles";
+            this.chkBlockThimbles.UseVisualStyleBackColor = true;
+            // 
+            // label43
+            // 
+            resources.ApplyResources(this.label43, "label43");
+            this.label43.Name = "label43";
+            // 
+            // label42
+            // 
+            resources.ApplyResources(this.label42, "label42");
+            this.label42.Name = "label42";
+            // 
             // tabCasino
             // 
             resources.ApplyResources(this.tabCasino, "tabCasino");
@@ -6369,95 +6336,128 @@
             this.label88.ForeColor = System.Drawing.Color.Black;
             this.label88.Name = "label88";
             // 
-            // tabAutopark
+            // tabGorbushka
             // 
-            resources.ApplyResources(this.tabAutopark, "tabAutopark");
-            this.tabAutopark.Controls.Add(this.grpCar);
-            this.tabAutopark.Name = "tabAutopark";
-            this.tabAutopark.UseVisualStyleBackColor = true;
+            resources.ApplyResources(this.tabGorbushka, "tabGorbushka");
+            this.tabGorbushka.Controls.Add(this.chkSellRepairMobile);
+            this.tabGorbushka.Controls.Add(this.chkRepairMobile);
+            this.tabGorbushka.Name = "tabGorbushka";
+            this.tabGorbushka.UseVisualStyleBackColor = true;
             // 
-            // grpCar
+            // chkSellRepairMobile
             // 
-            this.grpCar.Controls.Add(this.chkUseSpecialCar);
-            this.grpCar.Controls.Add(this.label53);
-            this.grpCar.Controls.Add(this.chkCar);
-            this.grpCar.Controls.Add(this.cboxSpecialCar);
-            this.grpCar.Controls.Add(this.cboxCarPrize);
-            resources.ApplyResources(this.grpCar, "grpCar");
-            this.grpCar.Name = "grpCar";
-            this.grpCar.TabStop = false;
+            resources.ApplyResources(this.chkSellRepairMobile, "chkSellRepairMobile");
+            this.chkSellRepairMobile.Name = "chkSellRepairMobile";
+            this.chkSellRepairMobile.UseVisualStyleBackColor = true;
             // 
-            // chkUseSpecialCar
+            // chkRepairMobile
             // 
-            resources.ApplyResources(this.chkUseSpecialCar, "chkUseSpecialCar");
-            this.chkUseSpecialCar.Name = "chkUseSpecialCar";
-            this.chkUseSpecialCar.UseVisualStyleBackColor = true;
+            resources.ApplyResources(this.chkRepairMobile, "chkRepairMobile");
+            this.chkRepairMobile.Name = "chkRepairMobile";
+            this.chkRepairMobile.UseVisualStyleBackColor = true;
             // 
-            // label53
+            // tabAzazella
             // 
-            resources.ApplyResources(this.label53, "label53");
-            this.label53.Name = "label53";
+            resources.ApplyResources(this.tabAzazella, "tabAzazella");
+            this.tabAzazella.Controls.Add(this.chkAzazellaFastPlay);
+            this.tabAzazella.Controls.Add(this.numAzazellaTreasureChance);
+            this.tabAzazella.Controls.Add(this.chkAzazella75);
+            this.tabAzazella.Controls.Add(this.label177);
+            this.tabAzazella.Controls.Add(this.label157);
+            this.tabAzazella.Controls.Add(this.label175);
+            this.tabAzazella.Controls.Add(this.chkAzazellaTreasure);
+            this.tabAzazella.Controls.Add(this.chkAzazella25);
+            this.tabAzazella.Controls.Add(this.label176);
+            this.tabAzazella.Controls.Add(this.label95);
+            this.tabAzazella.Controls.Add(this.label156);
+            this.tabAzazella.Controls.Add(this.numMinAzazellaGold);
+            this.tabAzazella.Name = "tabAzazella";
+            this.tabAzazella.UseVisualStyleBackColor = true;
             // 
-            // chkCar
+            // chkAzazellaFastPlay
             // 
-            resources.ApplyResources(this.chkCar, "chkCar");
-            this.chkCar.Name = "chkCar";
-            this.chkCar.UseVisualStyleBackColor = true;
+            resources.ApplyResources(this.chkAzazellaFastPlay, "chkAzazellaFastPlay");
+            this.chkAzazellaFastPlay.Name = "chkAzazellaFastPlay";
+            this.chkAzazellaFastPlay.UseVisualStyleBackColor = true;
             // 
-            // cboxSpecialCar
+            // numAzazellaTreasureChance
             // 
-            this.cboxSpecialCar.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            resources.ApplyResources(this.cboxSpecialCar, "cboxSpecialCar");
-            this.cboxSpecialCar.FormattingEnabled = true;
-            this.cboxSpecialCar.Items.AddRange(new object[] {
-            resources.GetString("cboxSpecialCar.Items"),
-            resources.GetString("cboxSpecialCar.Items1"),
-            resources.GetString("cboxSpecialCar.Items2"),
-            resources.GetString("cboxSpecialCar.Items3"),
-            resources.GetString("cboxSpecialCar.Items4"),
-            resources.GetString("cboxSpecialCar.Items5"),
-            resources.GetString("cboxSpecialCar.Items6"),
-            resources.GetString("cboxSpecialCar.Items7"),
-            resources.GetString("cboxSpecialCar.Items8"),
-            resources.GetString("cboxSpecialCar.Items9"),
-            resources.GetString("cboxSpecialCar.Items10"),
-            resources.GetString("cboxSpecialCar.Items11"),
-            resources.GetString("cboxSpecialCar.Items12"),
-            resources.GetString("cboxSpecialCar.Items13"),
-            resources.GetString("cboxSpecialCar.Items14"),
-            resources.GetString("cboxSpecialCar.Items15"),
-            resources.GetString("cboxSpecialCar.Items16"),
-            resources.GetString("cboxSpecialCar.Items17"),
-            resources.GetString("cboxSpecialCar.Items18"),
-            resources.GetString("cboxSpecialCar.Items19"),
-            resources.GetString("cboxSpecialCar.Items20"),
-            resources.GetString("cboxSpecialCar.Items21"),
-            resources.GetString("cboxSpecialCar.Items22"),
-            resources.GetString("cboxSpecialCar.Items23"),
-            resources.GetString("cboxSpecialCar.Items24"),
-            resources.GetString("cboxSpecialCar.Items25"),
-            resources.GetString("cboxSpecialCar.Items26"),
-            resources.GetString("cboxSpecialCar.Items27"),
-            resources.GetString("cboxSpecialCar.Items28"),
-            resources.GetString("cboxSpecialCar.Items29"),
-            resources.GetString("cboxSpecialCar.Items30"),
-            resources.GetString("cboxSpecialCar.Items31"),
-            resources.GetString("cboxSpecialCar.Items32")});
-            this.cboxSpecialCar.Name = "cboxSpecialCar";
+            resources.ApplyResources(this.numAzazellaTreasureChance, "numAzazellaTreasureChance");
+            this.numAzazellaTreasureChance.Name = "numAzazellaTreasureChance";
+            this.numAzazellaTreasureChance.Value = new decimal(new int[] {
+            95,
+            0,
+            0,
+            0});
             // 
-            // cboxCarPrize
+            // chkAzazella75
             // 
-            this.cboxCarPrize.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            resources.ApplyResources(this.cboxCarPrize, "cboxCarPrize");
-            this.cboxCarPrize.FormattingEnabled = true;
-            this.cboxCarPrize.Items.AddRange(new object[] {
-            resources.GetString("cboxCarPrize.Items"),
-            resources.GetString("cboxCarPrize.Items1"),
-            resources.GetString("cboxCarPrize.Items2"),
-            resources.GetString("cboxCarPrize.Items3"),
-            resources.GetString("cboxCarPrize.Items4"),
-            resources.GetString("cboxCarPrize.Items5")});
-            this.cboxCarPrize.Name = "cboxCarPrize";
+            resources.ApplyResources(this.chkAzazella75, "chkAzazella75");
+            this.chkAzazella75.Name = "chkAzazella75";
+            this.chkAzazella75.UseVisualStyleBackColor = true;
+            // 
+            // label177
+            // 
+            resources.ApplyResources(this.label177, "label177");
+            this.label177.ForeColor = System.Drawing.Color.Black;
+            this.label177.Name = "label177";
+            // 
+            // label157
+            // 
+            resources.ApplyResources(this.label157, "label157");
+            this.label157.ForeColor = System.Drawing.Color.Black;
+            this.label157.Name = "label157";
+            // 
+            // label175
+            // 
+            this.label175.Image = global::Moswar.Properties.Resources.Gold;
+            resources.ApplyResources(this.label175, "label175");
+            this.label175.Name = "label175";
+            // 
+            // chkAzazellaTreasure
+            // 
+            resources.ApplyResources(this.chkAzazellaTreasure, "chkAzazellaTreasure");
+            this.chkAzazellaTreasure.Name = "chkAzazellaTreasure";
+            this.chkAzazellaTreasure.UseVisualStyleBackColor = true;
+            // 
+            // chkAzazella25
+            // 
+            resources.ApplyResources(this.chkAzazella25, "chkAzazella25");
+            this.chkAzazella25.Name = "chkAzazella25";
+            this.chkAzazella25.UseVisualStyleBackColor = true;
+            // 
+            // label176
+            // 
+            this.label176.Image = global::Moswar.Properties.Resources.Gold;
+            resources.ApplyResources(this.label176, "label176");
+            this.label176.Name = "label176";
+            // 
+            // label95
+            // 
+            this.label95.Image = global::Moswar.Properties.Resources.Gold;
+            resources.ApplyResources(this.label95, "label95");
+            this.label95.Name = "label95";
+            // 
+            // label156
+            // 
+            resources.ApplyResources(this.label156, "label156");
+            this.label156.ForeColor = System.Drawing.Color.Black;
+            this.label156.Name = "label156";
+            // 
+            // numMinAzazellaGold
+            // 
+            resources.ApplyResources(this.numMinAzazellaGold, "numMinAzazellaGold");
+            this.numMinAzazellaGold.Maximum = new decimal(new int[] {
+            1000000,
+            0,
+            0,
+            0});
+            this.numMinAzazellaGold.Name = "numMinAzazellaGold";
+            this.numMinAzazellaGold.Value = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
             // 
             // tabMainExtra
             // 
@@ -7094,14 +7094,18 @@
             ((System.ComponentModel.ISupportInitialize)(this.numExpRevengerPrc)).EndInit();
             this.grpElektrik.ResumeLayout(false);
             this.grpElektrik.PerformLayout();
-            this.tabDopings.ResumeLayout(false);
-            this.tabDopings.PerformLayout();
-            this.grpDoping.ResumeLayout(false);
-            this.grpDoping.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numRatSyncLvlDoping)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numLvlDoping)).EndInit();
-            this.grpDopingSettings.ResumeLayout(false);
-            this.grpDopingSettings.PerformLayout();
+            this.tabHeal.ResumeLayout(false);
+            this.tabHeal.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numAmountHealMe)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numHealMe100)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numHealMe50)).EndInit();
+            this.tabMoneyToOre.ResumeLayout(false);
+            this.tabMoneyToOre.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numExchangeBankMoney)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numMonaMinStars)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numMinThimbles)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numMonaMinTeeth)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numPlayThimbles)).EndInit();
             this.tabDuels.ResumeLayout(false);
             this.grpDuelControl.ResumeLayout(false);
             this.grpDuelControl.PerformLayout();
@@ -7142,30 +7146,14 @@
             this.grpGrpFight.PerformLayout();
             this.grpExpGrpFightSettings.ResumeLayout(false);
             this.grpExpGrpFightSettings.PerformLayout();
-            this.tabHeal.ResumeLayout(false);
-            this.tabHeal.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numAmountHealMe)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numHealMe100)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numHealMe50)).EndInit();
-            this.tabMoneyToOre.ResumeLayout(false);
-            this.tabMoneyToOre.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numExchangeBankMoney)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numMonaMinStars)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numMinThimbles)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numMonaMinTeeth)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numPlayThimbles)).EndInit();
-            this.tabSkills.ResumeLayout(false);
-            this.grpFactory.ResumeLayout(false);
-            this.grpFactory.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numMinFactoryOre)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numMinFactoryMoney)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numFactoryChainCount)).EndInit();
-            this.tabAzazella.ResumeLayout(false);
-            this.tabAzazella.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numAzazellaTreasureChance)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numMinAzazellaGold)).EndInit();
-            this.tabGorbushka.ResumeLayout(false);
-            this.tabGorbushka.PerformLayout();
+            this.tabDopings.ResumeLayout(false);
+            this.tabDopings.PerformLayout();
+            this.grpDoping.ResumeLayout(false);
+            this.grpDoping.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numRatSyncLvlDoping)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numLvlDoping)).EndInit();
+            this.grpDopingSettings.ResumeLayout(false);
+            this.grpDopingSettings.PerformLayout();
             this.tabHunterClub.ResumeLayout(false);
             this.tabHunterClub.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numWantedPlayThimbles)).EndInit();
@@ -7173,10 +7161,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.numStatDiff)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numMinHCLvl)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numMaxHCLvl)).EndInit();
-            this.tabClanWars.ResumeLayout(false);
-            this.tabClanWars.PerformLayout();
-            this.grpClanWarEx.ResumeLayout(false);
-            this.grpClanWarEx.PerformLayout();
             this.tabRatPipeline.ResumeLayout(false);
             this.tabRatPipeline.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numMaxSearchRatDefeats)).EndInit();
@@ -7193,14 +7177,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.numMaxOilLeninDice)).EndInit();
             this.tabOldOilPipeline.ResumeLayout(false);
             this.tabOldOilPipeline.PerformLayout();
-            this.tabPyramid.ResumeLayout(false);
-            this.tabPyramid.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numPyramidWanted)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numPyramidAmount)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numMaxPyramidPrice)).EndInit();
-            this.tabBank.ResumeLayout(false);
-            this.tabBank.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numBankDeposit)).EndInit();
+            this.tabClanWars.ResumeLayout(false);
+            this.tabClanWars.PerformLayout();
+            this.grpClanWarEx.ResumeLayout(false);
+            this.grpClanWarEx.PerformLayout();
             this.tabQuests.ResumeLayout(false);
             this.tabQuests.PerformLayout();
             this.groupBox2.ResumeLayout(false);
@@ -7213,6 +7193,9 @@
             this.tabShaurburgers.ResumeLayout(false);
             this.tabShaurburgers.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numMCWorkTime)).EndInit();
+            this.tabAutopark.ResumeLayout(false);
+            this.grpCar.ResumeLayout(false);
+            this.grpCar.PerformLayout();
             this.tabCookPetriki.ResumeLayout(false);
             this.tabCookPetriki.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numMinPetrikiOre)).EndInit();
@@ -7227,6 +7210,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.numCoctailCookPeace)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numCoctailCookIceCream)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numCoctailCookAmount)).EndInit();
+            this.tabSkills.ResumeLayout(false);
+            this.grpFactory.ResumeLayout(false);
+            this.grpFactory.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numMinFactoryOre)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numMinFactoryMoney)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numFactoryChainCount)).EndInit();
             this.tabTraining.ResumeLayout(false);
             this.tabTraining.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numMaxTrainCharisma)).EndInit();
@@ -7256,12 +7245,23 @@
             ((System.ComponentModel.ISupportInitialize)(this.numMaxTrainPetEndurance)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numMaxTrainPetSpeed)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numMaxTrainPetAcceleration)).EndInit();
+            this.tabBank.ResumeLayout(false);
+            this.tabBank.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numBankDeposit)).EndInit();
+            this.tabPyramid.ResumeLayout(false);
+            this.tabPyramid.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numPyramidWanted)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numPyramidAmount)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numMaxPyramidPrice)).EndInit();
             this.tabCasino.ResumeLayout(false);
             this.tabCasino.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numBuyFishkiAmount)).EndInit();
-            this.tabAutopark.ResumeLayout(false);
-            this.grpCar.ResumeLayout(false);
-            this.grpCar.PerformLayout();
+            this.tabGorbushka.ResumeLayout(false);
+            this.tabGorbushka.PerformLayout();
+            this.tabAzazella.ResumeLayout(false);
+            this.tabAzazella.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numAzazellaTreasureChance)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numMinAzazellaGold)).EndInit();
             this.tabMainExtra.ResumeLayout(false);
             this.scExtension.Panel1.ResumeLayout(false);
             this.scExtension.Panel2.ResumeLayout(false);
