@@ -5875,7 +5875,8 @@
             resources.GetString("cboxTrainWarPetType.Items9"),
             resources.GetString("cboxTrainWarPetType.Items10"),
             resources.GetString("cboxTrainWarPetType.Items11"),
-            resources.GetString("cboxTrainWarPetType.Items12")});
+            resources.GetString("cboxTrainWarPetType.Items12"),
+            resources.GetString("cboxTrainWarPetType.Items13")});
             this.cboxTrainWarPetType.Name = "cboxTrainWarPetType";
             this.cboxTrainWarPetType.SelectedIndexChanged += new System.EventHandler(this.cboxTrainWarPetType_SelectedIndexChanged);
             // 
@@ -5930,7 +5931,8 @@
             resources.GetString("cboxSetWarPetType.Items10"),
             resources.GetString("cboxSetWarPetType.Items11"),
             resources.GetString("cboxSetWarPetType.Items12"),
-            resources.GetString("cboxSetWarPetType.Items13")});
+            resources.GetString("cboxSetWarPetType.Items13"),
+            resources.GetString("cboxSetWarPetType.Items14")});
             this.cboxSetWarPetType.Name = "cboxSetWarPetType";
             // 
             // tabPetarena

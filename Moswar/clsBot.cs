@@ -1074,6 +1074,12 @@ namespace Moswar
                     data.maxState = 700;
                     break;
                     #endregion
+                case 14:
+                    #region Хаски
+                    data.type = 27;
+                    data.maxState = 700;
+                    break;
+                    #endregion
             }
 
             return data;
