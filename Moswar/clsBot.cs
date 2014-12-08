@@ -8201,13 +8201,15 @@ namespace Moswar
                     GoToPlace(MainWB, Place.Petarena);
                     regex = new Regex("(/obj/pets/(?<PetType>([0-9])+)-[0-9].png)([^'])+[']/petarena(?<URL>/train/([0-9])+)/"); //.*/r/n.*/petarena(?<URL>/train/([0-9])*.)/
                     matches = regex.Matches(frmMain.GetElementsById(MainWB, "equipment-accordion")[0].InnerHtml); //0-> Боевые питомцы, 1-> Беговые питомцы
+                    BugReport("@ Обнаружено боевых петов: " + matches.Count);
                     #region Определение типа боевого питомца
                     UsePetType = getPetInformation(stcPetType.War).type;
                     MaxStat = getPetInformation(stcPetType.War).maxState;
                     #endregion
+                    BugReport("@ Выбираем боевого пета с типом " + UsePetType);
                     foreach (Match m in matches)
                     {
-                        if (m.Groups["PetType"].Value.Equals(UsePetType))
+                        if (m.Groups["PetType"].Value.Equals(Convert.ToString(UsePetType)))
                         {
                             GoToPlace(MainWB, Place.Petarena, m.Groups["URL"].Value); //Переходим в тренажерный зал выбранного питомца.
                             break; //Нужный питомец уже найден!
