@@ -569,7 +569,7 @@
             this.numMinTrainPetOre = new System.Windows.Forms.NumericUpDown();
             this.numMaxTrainPetMass = new System.Windows.Forms.NumericUpDown();
             this.label30 = new System.Windows.Forms.Label();
-            this.cboxTarinWarPetType = new System.Windows.Forms.ComboBox();
+            this.cboxTrainWarPetType = new System.Windows.Forms.ComboBox();
             this.label65 = new System.Windows.Forms.Label();
             this.chkUseTrainWhip = new System.Windows.Forms.CheckBox();
             this.numMinTrainPetMoney = new System.Windows.Forms.NumericUpDown();
@@ -5924,7 +5924,7 @@
             this.groupBox4.Controls.Add(this.numMinTrainPetOre);
             this.groupBox4.Controls.Add(this.numMaxTrainPetMass);
             this.groupBox4.Controls.Add(this.label30);
-            this.groupBox4.Controls.Add(this.cboxTarinWarPetType);
+            this.groupBox4.Controls.Add(this.cboxTrainWarPetType);
             this.groupBox4.Controls.Add(this.label65);
             this.groupBox4.Controls.Add(this.chkUseTrainWhip);
             this.groupBox4.Controls.Add(this.numMinTrainPetMoney);
@@ -6052,27 +6052,27 @@
             resources.ApplyResources(this.label30, "label30");
             this.label30.Name = "label30";
             // 
-            // cboxTarinWarPetType
+            // cboxTrainWarPetType
             // 
-            this.cboxTarinWarPetType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            resources.ApplyResources(this.cboxTarinWarPetType, "cboxTarinWarPetType");
-            this.cboxTarinWarPetType.FormattingEnabled = true;
-            this.cboxTarinWarPetType.Items.AddRange(new object[] {
-            resources.GetString("cboxTarinWarPetType.Items"),
-            resources.GetString("cboxTarinWarPetType.Items1"),
-            resources.GetString("cboxTarinWarPetType.Items2"),
-            resources.GetString("cboxTarinWarPetType.Items3"),
-            resources.GetString("cboxTarinWarPetType.Items4"),
-            resources.GetString("cboxTarinWarPetType.Items5"),
-            resources.GetString("cboxTarinWarPetType.Items6"),
-            resources.GetString("cboxTarinWarPetType.Items7"),
-            resources.GetString("cboxTarinWarPetType.Items8"),
-            resources.GetString("cboxTarinWarPetType.Items9"),
-            resources.GetString("cboxTarinWarPetType.Items10"),
-            resources.GetString("cboxTarinWarPetType.Items11"),
-            resources.GetString("cboxTarinWarPetType.Items12")});
-            this.cboxTarinWarPetType.Name = "cboxTarinWarPetType";
-            this.cboxTarinWarPetType.SelectedIndexChanged += new System.EventHandler(this.cboxTarinWarPetType_SelectedIndexChanged);
+            this.cboxTrainWarPetType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            resources.ApplyResources(this.cboxTrainWarPetType, "cboxTrainWarPetType");
+            this.cboxTrainWarPetType.FormattingEnabled = true;
+            this.cboxTrainWarPetType.Items.AddRange(new object[] {
+            resources.GetString("cboxTrainWarPetType.Items"),
+            resources.GetString("cboxTrainWarPetType.Items1"),
+            resources.GetString("cboxTrainWarPetType.Items2"),
+            resources.GetString("cboxTrainWarPetType.Items3"),
+            resources.GetString("cboxTrainWarPetType.Items4"),
+            resources.GetString("cboxTrainWarPetType.Items5"),
+            resources.GetString("cboxTrainWarPetType.Items6"),
+            resources.GetString("cboxTrainWarPetType.Items7"),
+            resources.GetString("cboxTrainWarPetType.Items8"),
+            resources.GetString("cboxTrainWarPetType.Items9"),
+            resources.GetString("cboxTrainWarPetType.Items10"),
+            resources.GetString("cboxTrainWarPetType.Items11"),
+            resources.GetString("cboxTrainWarPetType.Items12")});
+            this.cboxTrainWarPetType.Name = "cboxTrainWarPetType";
+            this.cboxTrainWarPetType.SelectedIndexChanged += new System.EventHandler(this.cboxTrainWarPetType_SelectedIndexChanged);
             // 
             // label65
             // 
@@ -7896,7 +7896,7 @@
         private System.Windows.Forms.CheckBox chkTrainRunPetDexterity;
         private System.Windows.Forms.CheckBox chkTrainRunPetEndurance;
         private System.Windows.Forms.NumericUpDown numMaxTrainPetAcceleration;
-        private System.Windows.Forms.ComboBox cboxTarinWarPetType;
+        private System.Windows.Forms.ComboBox cboxTrainWarPetType;
         private System.Windows.Forms.CheckBox chkUseTrainWhip;
         private System.Windows.Forms.CheckBox chkTrainWarPet;
         private System.Windows.Forms.NumericUpDown numMaxTrainPetMass;

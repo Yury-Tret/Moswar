@@ -472,9 +472,9 @@ namespace Moswar
             Bot.Settings.SDWorkTime = numSDWorkTime.Value;
             Bot.Settings.SDThimblesMoney = numSDPlayThimbles.Value * 1000;
 
-            if (Bot.Settings.TrainWarPetType != cboxTarinWarPetType.SelectedIndex + 1) { Bot.Me.WarPet.Focus = 0; Bot.Me.WarPet.Loyality = 0; Bot.Me.WarPet.Mass = 0; Bot.Me.WarPet.TrainTimeOutDT = new DateTime(); } //При смене прокачеваемого питомца скидываем сохраненные характеристики
+            if (Bot.Settings.TrainWarPetType != cboxTrainWarPetType.SelectedIndex + 1) { Bot.Me.WarPet.Focus = 0; Bot.Me.WarPet.Loyality = 0; Bot.Me.WarPet.Mass = 0; Bot.Me.WarPet.TrainTimeOutDT = new DateTime(); } //При смене прокачеваемого питомца скидываем сохраненные характеристики
             Bot.Settings.TrainWarPet = chkTrainWarPet.Checked;
-            Bot.Settings.TrainWarPetType = cboxTarinWarPetType.SelectedIndex + 1;
+            Bot.Settings.TrainWarPetType = cboxTrainWarPetType.SelectedIndex + 1;
             Bot.Settings.maxTrainPetFocus = numMaxTrainPetFocus.Value;
             Bot.Settings.TrainPetFocus = chkTrainPetFocus.Checked;
             Bot.Settings.maxTrainPetLoyality = numMaxTrainPetLoyality.Value;
@@ -842,7 +842,7 @@ namespace Moswar
                 numSDPlayThimbles.Value = Bot.Settings.SDThimblesMoney / 1000;
 
                 chkTrainWarPet.Checked = Bot.Settings.TrainWarPet;
-                cboxTarinWarPetType.SelectedIndex = Bot.Settings.TrainWarPetType - 1;
+                cboxTrainWarPetType.SelectedIndex = Bot.Settings.TrainWarPetType - 1;
                 numMaxTrainPetFocus.Value = Bot.Settings.maxTrainPetFocus;
                 chkTrainPetFocus.Checked = Bot.Settings.TrainPetFocus;
                 numMaxTrainPetLoyality.Value = Bot.Settings.maxTrainPetLoyality;
@@ -1150,7 +1150,7 @@ namespace Moswar
             cboxExpGrpFightSlot4.SelectedIndex = 0;
             cboxExpGrpFightSlot5.SelectedIndex = 0;
             cboxExpGrpFightSlot6.SelectedIndex = 0;
-            cboxTarinWarPetType.SelectedIndex = 0;
+            cboxTrainWarPetType.SelectedIndex = 0;
             cboxTrainRunPetType.SelectedIndex = 0;            
             cboxCarPrize.SelectedIndex = 0;
             cboxSpecialCar.SelectedIndex = 0;
@@ -2034,7 +2034,7 @@ namespace Moswar
             }            
         } 
 
-        private void cboxTarinWarPetType_SelectedIndexChanged(object sender, EventArgs e)
+        private void cboxTrainWarPetType_SelectedIndexChanged(object sender, EventArgs e)
         {
             switch (((ComboBox)sender).SelectedIndex)
             {

@@ -16185,70 +16185,70 @@
   <data name="&gt;&gt;label30.ZOrder" xml:space="preserve">
     <value>11</value>
   </data>
-  <data name="cboxTarinWarPetType.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+  <data name="cboxTrainWarPetType.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
-  <data name="cboxTarinWarPetType.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="cboxTrainWarPetType.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="cboxTarinWarPetType.Items" xml:space="preserve">
+  <data name="cboxTrainWarPetType.Items" xml:space="preserve">
     <value>Попугая</value>
   </data>
-  <data name="cboxTarinWarPetType.Items1" xml:space="preserve">
+  <data name="cboxTrainWarPetType.Items1" xml:space="preserve">
     <value>Кошку</value>
   </data>
-  <data name="cboxTarinWarPetType.Items2" xml:space="preserve">
+  <data name="cboxTrainWarPetType.Items2" xml:space="preserve">
     <value>Чихуахуа</value>
   </data>
-  <data name="cboxTarinWarPetType.Items3" xml:space="preserve">
+  <data name="cboxTrainWarPetType.Items3" xml:space="preserve">
     <value>Добермана</value>
   </data>
-  <data name="cboxTarinWarPetType.Items4" xml:space="preserve">
+  <data name="cboxTrainWarPetType.Items4" xml:space="preserve">
     <value>Овчарку</value>
   </data>
-  <data name="cboxTarinWarPetType.Items5" xml:space="preserve">
+  <data name="cboxTrainWarPetType.Items5" xml:space="preserve">
     <value>Ротвейлера</value>
   </data>
-  <data name="cboxTarinWarPetType.Items6" xml:space="preserve">
+  <data name="cboxTrainWarPetType.Items6" xml:space="preserve">
     <value>Дога</value>
   </data>
-  <data name="cboxTarinWarPetType.Items7" xml:space="preserve">
+  <data name="cboxTrainWarPetType.Items7" xml:space="preserve">
     <value>Волка</value>
   </data>
-  <data name="cboxTarinWarPetType.Items8" xml:space="preserve">
+  <data name="cboxTrainWarPetType.Items8" xml:space="preserve">
     <value>Льва</value>
   </data>
-  <data name="cboxTarinWarPetType.Items9" xml:space="preserve">
+  <data name="cboxTrainWarPetType.Items9" xml:space="preserve">
     <value>Пантеру</value>
   </data>
-  <data name="cboxTarinWarPetType.Items10" xml:space="preserve">
+  <data name="cboxTrainWarPetType.Items10" xml:space="preserve">
     <value>Котёнка "Гаф"</value>
   </data>
-  <data name="cboxTarinWarPetType.Items11" xml:space="preserve">
+  <data name="cboxTrainWarPetType.Items11" xml:space="preserve">
     <value>Чёрного дога</value>
   </data>
-  <data name="cboxTarinWarPetType.Items12" xml:space="preserve">
+  <data name="cboxTrainWarPetType.Items12" xml:space="preserve">
     <value>Хомяка</value>
   </data>
-  <data name="cboxTarinWarPetType.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="cboxTrainWarPetType.Location" type="System.Drawing.Point, System.Drawing">
     <value>111, 19</value>
   </data>
-  <data name="cboxTarinWarPetType.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="cboxTrainWarPetType.Size" type="System.Drawing.Size, System.Drawing">
     <value>103, 22</value>
   </data>
-  <data name="cboxTarinWarPetType.TabIndex" type="System.Int32, mscorlib">
+  <data name="cboxTrainWarPetType.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
-  <data name="&gt;&gt;cboxTarinWarPetType.Name" xml:space="preserve">
-    <value>cboxTarinWarPetType</value>
+  <data name="&gt;&gt;cboxTrainWarPetType.Name" xml:space="preserve">
+    <value>cboxTrainWarPetType</value>
   </data>
-  <data name="&gt;&gt;cboxTarinWarPetType.Type" xml:space="preserve">
+  <data name="&gt;&gt;cboxTrainWarPetType.Type" xml:space="preserve">
     <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;cboxTarinWarPetType.Parent" xml:space="preserve">
+  <data name="&gt;&gt;cboxTrainWarPetType.Parent" xml:space="preserve">
     <value>groupBox4</value>
   </data>
-  <data name="&gt;&gt;cboxTarinWarPetType.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;cboxTrainWarPetType.ZOrder" xml:space="preserve">
     <value>12</value>
   </data>
   <data name="label65.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
