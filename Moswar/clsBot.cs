@@ -6020,7 +6020,7 @@ namespace Moswar
                                 if (match.Success && Convert.ToInt32(match.Groups["Now"].Value) < Convert.ToInt32(match.Groups["Max"].Value))
                                 {
                                     Info = frmMain.GetJavaVar(MainWB, "$(\"#content .council-citymap-info-wrap .button\").attr(\"class\")");
-                                    NextFight = (string)Info == "button" && !Settings.GoPVPInstantly ? ServerDT.AddMinutes(1) : Convert.ToDateTime(ServerDT.ToString("dd.MM.yyyy HH:00:00"), CultureInfo.CreateSpecificCulture("ru-RU")).AddHours(1); //Высчитываю начало следующей PVP
+                                    NextFight = !((string)Info).Contains("disabled") && !Settings.GoPVPInstantly ? ServerDT.AddMinutes(1) : Convert.ToDateTime(ServerDT.ToString("dd.MM.yyyy HH:00:00"), CultureInfo.CreateSpecificCulture("ru-RU")).AddHours(1); //Высчитываю начало следующей PVP
                                     GrpFight.PVPStartDT = NextFight.AddMinutes(-3); //Для, того чтоб Бот не рефрешил аллею заходя в рудную, снова и снова!
 
                                     if (IsGrpFightTimePermission(GroupFightType.PVP) && TimeToGoGrpFight(GroupFightType.PVP, NextFight, "ruda:10"))
