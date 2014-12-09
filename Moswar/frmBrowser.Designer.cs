@@ -41,10 +41,8 @@
             this.tabMainSettings = new System.Windows.Forms.TabPage();
             this.tabSettings = new System.Windows.Forms.TabControl();
             this.tabSystem = new System.Windows.Forms.TabPage();
-            this.grpHumanEmulationEx = new System.Windows.Forms.GroupBox();
             this.numAFKTime = new System.Windows.Forms.NumericUpDown();
             this.label124 = new System.Windows.Forms.Label();
-            this.label123 = new System.Windows.Forms.Label();
             this.chkUseAFK = new System.Windows.Forms.CheckBox();
             this.label122 = new System.Windows.Forms.Label();
             this.numAFKChance = new System.Windows.Forms.NumericUpDown();
@@ -679,13 +677,13 @@
             this.TrayIcon = new System.Windows.Forms.NotifyIcon(this.components);
             this.btnOpenURL = new System.Windows.Forms.Button();
             this.btnRunJSCmd = new System.Windows.Forms.Button();
+            this.tabHumanImitation = new System.Windows.Forms.TabPage();
             this.tabControl.SuspendLayout();
             this.tabMainBrowser.SuspendLayout();
             this.AutoApdateMessage.SuspendLayout();
             this.tabMainSettings.SuspendLayout();
             this.tabSettings.SuspendLayout();
             this.tabSystem.SuspendLayout();
-            this.grpHumanEmulationEx.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numAFKTime)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numAFKChance)).BeginInit();
             this.grpShutDown.SuspendLayout();
@@ -861,6 +859,7 @@
             this.grpPic.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.statusStrip.SuspendLayout();
+            this.tabHumanImitation.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnStart
@@ -944,6 +943,7 @@
             // 
             this.tabSettings.Controls.Add(this.tabSystem);
             this.tabSettings.Controls.Add(this.tabCommon);
+            this.tabSettings.Controls.Add(this.tabHumanImitation);
             this.tabSettings.Controls.Add(this.tabHeal);
             this.tabSettings.Controls.Add(this.tabMoneyToOre);
             this.tabSettings.Controls.Add(this.tabDuels);
@@ -978,7 +978,6 @@
             // tabSystem
             // 
             resources.ApplyResources(this.tabSystem, "tabSystem");
-            this.tabSystem.Controls.Add(this.grpHumanEmulationEx);
             this.tabSystem.Controls.Add(this.chkCheckForUpdate);
             this.tabSystem.Controls.Add(this.grpShutDown);
             this.tabSystem.Controls.Add(this.grpExpTiming);
@@ -993,18 +992,6 @@
             this.tabSystem.Controls.Add(this.grpAutoLogin);
             this.tabSystem.Name = "tabSystem";
             this.tabSystem.UseVisualStyleBackColor = true;
-            // 
-            // grpHumanEmulationEx
-            // 
-            this.grpHumanEmulationEx.Controls.Add(this.numAFKTime);
-            this.grpHumanEmulationEx.Controls.Add(this.label124);
-            this.grpHumanEmulationEx.Controls.Add(this.label123);
-            this.grpHumanEmulationEx.Controls.Add(this.chkUseAFK);
-            this.grpHumanEmulationEx.Controls.Add(this.label122);
-            this.grpHumanEmulationEx.Controls.Add(this.numAFKChance);
-            resources.ApplyResources(this.grpHumanEmulationEx, "grpHumanEmulationEx");
-            this.grpHumanEmulationEx.Name = "grpHumanEmulationEx";
-            this.grpHumanEmulationEx.TabStop = false;
             // 
             // numAFKTime
             // 
@@ -1026,12 +1013,6 @@
             resources.ApplyResources(this.label124, "label124");
             this.label124.ForeColor = System.Drawing.Color.Black;
             this.label124.Name = "label124";
-            // 
-            // label123
-            // 
-            resources.ApplyResources(this.label123, "label123");
-            this.label123.ForeColor = System.Drawing.Color.Black;
-            this.label123.Name = "label123";
             // 
             // chkUseAFK
             // 
@@ -1636,7 +1617,6 @@
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.chkSovetBuyAgitator);
-            this.groupBox3.Controls.Add(this.chkReadLogs);
             this.groupBox3.Controls.Add(this.chkUseWearSet);
             this.groupBox3.Controls.Add(this.chkExpDoNotEatPelmeni);
             this.groupBox3.Controls.Add(this.chkBuildTurel);
@@ -1648,7 +1628,6 @@
             this.groupBox3.Controls.Add(this.label19);
             this.groupBox3.Controls.Add(this.chkOpenPrizeBox);
             this.groupBox3.Controls.Add(this.chkPigProtecttion);
-            this.groupBox3.Controls.Add(this.chkReadPrivateMessages);
             resources.ApplyResources(this.groupBox3, "groupBox3");
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.TabStop = false;
@@ -7042,6 +7021,19 @@
             this.btnRunJSCmd.UseVisualStyleBackColor = true;
             this.btnRunJSCmd.Click += new System.EventHandler(this.btnRunJSCmd_Click);
             // 
+            // tabHumanImitation
+            // 
+            resources.ApplyResources(this.tabHumanImitation, "tabHumanImitation");
+            this.tabHumanImitation.Controls.Add(this.label124);
+            this.tabHumanImitation.Controls.Add(this.numAFKTime);
+            this.tabHumanImitation.Controls.Add(this.chkReadLogs);
+            this.tabHumanImitation.Controls.Add(this.label122);
+            this.tabHumanImitation.Controls.Add(this.chkReadPrivateMessages);
+            this.tabHumanImitation.Controls.Add(this.chkUseAFK);
+            this.tabHumanImitation.Controls.Add(this.numAFKChance);
+            this.tabHumanImitation.Name = "tabHumanImitation";
+            this.tabHumanImitation.UseVisualStyleBackColor = true;
+            // 
             // frmMain
             // 
             resources.ApplyResources(this, "$this");
@@ -7069,8 +7061,6 @@
             this.tabSettings.ResumeLayout(false);
             this.tabSystem.ResumeLayout(false);
             this.tabSystem.PerformLayout();
-            this.grpHumanEmulationEx.ResumeLayout(false);
-            this.grpHumanEmulationEx.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numAFKTime)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numAFKChance)).EndInit();
             this.grpShutDown.ResumeLayout(false);
@@ -7308,6 +7298,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.statusStrip.ResumeLayout(false);
             this.statusStrip.PerformLayout();
+            this.tabHumanImitation.ResumeLayout(false);
+            this.tabHumanImitation.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -7671,10 +7663,8 @@
         private System.Windows.Forms.Label label60;
         private System.Windows.Forms.CheckBox chkSellRepairMobile;
         private System.Windows.Forms.CheckBox chkRepairMobile;
-        private System.Windows.Forms.GroupBox grpHumanEmulationEx;
         private System.Windows.Forms.NumericUpDown numAFKTime;
         private System.Windows.Forms.Label label124;
-        private System.Windows.Forms.Label label123;
         private System.Windows.Forms.CheckBox chkUseAFK;
         private System.Windows.Forms.Label label122;
         private System.Windows.Forms.NumericUpDown numAFKChance;
@@ -7963,7 +7953,8 @@
         private System.Windows.Forms.TabPage tabHeal;
         private System.Windows.Forms.GroupBox groupBox5;
         private System.Windows.Forms.GroupBox groupBox4;
-        private System.Windows.Forms.GroupBox groupBox6;      
+        private System.Windows.Forms.GroupBox groupBox6;
+        private System.Windows.Forms.TabPage tabHumanImitation;      
     }
 }
 
