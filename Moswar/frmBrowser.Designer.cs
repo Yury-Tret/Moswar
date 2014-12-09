@@ -125,7 +125,7 @@
             this.label19 = new System.Windows.Forms.Label();
             this.chkOpenPrizeBox = new System.Windows.Forms.CheckBox();
             this.chkPigProtecttion = new System.Windows.Forms.CheckBox();
-            this.chkDoNotReadPrivateMessages = new System.Windows.Forms.CheckBox();
+            this.chkReadPrivateMessages = new System.Windows.Forms.CheckBox();
             this.numExpRevengerPrc = new System.Windows.Forms.NumericUpDown();
             this.label136 = new System.Windows.Forms.Label();
             this.label135 = new System.Windows.Forms.Label();
@@ -550,17 +550,18 @@
             this.label119 = new System.Windows.Forms.Label();
             this.cboxSetWarPetType = new System.Windows.Forms.ComboBox();
             this.tabPetarena = new System.Windows.Forms.TabPage();
-            this.cboxTrainRunPetType = new System.Windows.Forms.ComboBox();
-            this.numMaxTrainPetDexterity = new System.Windows.Forms.NumericUpDown();
+            this.groupBox6 = new System.Windows.Forms.GroupBox();
             this.chkTrainRunPet = new System.Windows.Forms.CheckBox();
-            this.numMaxTrainPetEndurance = new System.Windows.Forms.NumericUpDown();
-            this.chkUseRunPet = new System.Windows.Forms.CheckBox();
-            this.chkTrainRunPetSpeed = new System.Windows.Forms.CheckBox();
-            this.numMaxTrainPetSpeed = new System.Windows.Forms.NumericUpDown();
-            this.chkTrainRunPetAcceleration = new System.Windows.Forms.CheckBox();
-            this.chkTrainRunPetDexterity = new System.Windows.Forms.CheckBox();
-            this.chkTrainRunPetEndurance = new System.Windows.Forms.CheckBox();
+            this.cboxTrainRunPetType = new System.Windows.Forms.ComboBox();
             this.numMaxTrainPetAcceleration = new System.Windows.Forms.NumericUpDown();
+            this.numMaxTrainPetDexterity = new System.Windows.Forms.NumericUpDown();
+            this.chkTrainRunPetEndurance = new System.Windows.Forms.CheckBox();
+            this.chkTrainRunPetDexterity = new System.Windows.Forms.CheckBox();
+            this.numMaxTrainPetEndurance = new System.Windows.Forms.NumericUpDown();
+            this.chkTrainRunPetAcceleration = new System.Windows.Forms.CheckBox();
+            this.numMaxTrainPetSpeed = new System.Windows.Forms.NumericUpDown();
+            this.chkTrainRunPetSpeed = new System.Windows.Forms.CheckBox();
+            this.chkUseRunPet = new System.Windows.Forms.CheckBox();
             this.tabBank = new System.Windows.Forms.TabPage();
             this.numBankDeposit = new System.Windows.Forms.NumericUpDown();
             this.label120 = new System.Windows.Forms.Label();
@@ -678,7 +679,6 @@
             this.TrayIcon = new System.Windows.Forms.NotifyIcon(this.components);
             this.btnOpenURL = new System.Windows.Forms.Button();
             this.btnRunJSCmd = new System.Windows.Forms.Button();
-            this.groupBox6 = new System.Windows.Forms.GroupBox();
             this.tabControl.SuspendLayout();
             this.tabMainBrowser.SuspendLayout();
             this.AutoApdateMessage.SuspendLayout();
@@ -820,10 +820,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.numMaxTrainPetMass)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numMinTrainPetMoney)).BeginInit();
             this.tabPetarena.SuspendLayout();
+            this.groupBox6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numMaxTrainPetAcceleration)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numMaxTrainPetDexterity)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numMaxTrainPetEndurance)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numMaxTrainPetSpeed)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numMaxTrainPetAcceleration)).BeginInit();
             this.tabBank.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numBankDeposit)).BeginInit();
             this.tabPyramid.SuspendLayout();
@@ -860,7 +861,6 @@
             this.grpPic.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.statusStrip.SuspendLayout();
-            this.groupBox6.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnStart
@@ -1648,7 +1648,7 @@
             this.groupBox3.Controls.Add(this.label19);
             this.groupBox3.Controls.Add(this.chkOpenPrizeBox);
             this.groupBox3.Controls.Add(this.chkPigProtecttion);
-            this.groupBox3.Controls.Add(this.chkDoNotReadPrivateMessages);
+            this.groupBox3.Controls.Add(this.chkReadPrivateMessages);
             resources.ApplyResources(this.groupBox3, "groupBox3");
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.TabStop = false;
@@ -1741,11 +1741,11 @@
             this.chkPigProtecttion.Name = "chkPigProtecttion";
             this.chkPigProtecttion.UseVisualStyleBackColor = true;
             // 
-            // chkDoNotReadPrivateMessages
+            // chkReadPrivateMessages
             // 
-            resources.ApplyResources(this.chkDoNotReadPrivateMessages, "chkDoNotReadPrivateMessages");
-            this.chkDoNotReadPrivateMessages.Name = "chkDoNotReadPrivateMessages";
-            this.chkDoNotReadPrivateMessages.UseVisualStyleBackColor = true;
+            resources.ApplyResources(this.chkReadPrivateMessages, "chkReadPrivateMessages");
+            this.chkReadPrivateMessages.Name = "chkReadPrivateMessages";
+            this.chkReadPrivateMessages.UseVisualStyleBackColor = true;
             // 
             // numExpRevengerPrc
             // 
@@ -5945,6 +5945,30 @@
             this.tabPetarena.Name = "tabPetarena";
             this.tabPetarena.UseVisualStyleBackColor = true;
             // 
+            // groupBox6
+            // 
+            this.groupBox6.Controls.Add(this.chkTrainRunPet);
+            this.groupBox6.Controls.Add(this.cboxTrainRunPetType);
+            this.groupBox6.Controls.Add(this.numMaxTrainPetAcceleration);
+            this.groupBox6.Controls.Add(this.numMaxTrainPetDexterity);
+            this.groupBox6.Controls.Add(this.chkTrainRunPetEndurance);
+            this.groupBox6.Controls.Add(this.chkTrainRunPetDexterity);
+            this.groupBox6.Controls.Add(this.numMaxTrainPetEndurance);
+            this.groupBox6.Controls.Add(this.chkTrainRunPetAcceleration);
+            this.groupBox6.Controls.Add(this.numMaxTrainPetSpeed);
+            this.groupBox6.Controls.Add(this.chkTrainRunPetSpeed);
+            resources.ApplyResources(this.groupBox6, "groupBox6");
+            this.groupBox6.Name = "groupBox6";
+            this.groupBox6.TabStop = false;
+            // 
+            // chkTrainRunPet
+            // 
+            resources.ApplyResources(this.chkTrainRunPet, "chkTrainRunPet");
+            this.chkTrainRunPet.Checked = true;
+            this.chkTrainRunPet.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.chkTrainRunPet.Name = "chkTrainRunPet";
+            this.chkTrainRunPet.UseVisualStyleBackColor = true;
+            // 
             // cboxTrainRunPetType
             // 
             this.cboxTrainRunPetType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -5965,6 +5989,21 @@
             resources.GetString("cboxTrainRunPetType.Items11")});
             this.cboxTrainRunPetType.Name = "cboxTrainRunPetType";
             // 
+            // numMaxTrainPetAcceleration
+            // 
+            resources.ApplyResources(this.numMaxTrainPetAcceleration, "numMaxTrainPetAcceleration");
+            this.numMaxTrainPetAcceleration.Maximum = new decimal(new int[] {
+            750,
+            0,
+            0,
+            0});
+            this.numMaxTrainPetAcceleration.Name = "numMaxTrainPetAcceleration";
+            this.numMaxTrainPetAcceleration.Value = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
+            // 
             // numMaxTrainPetDexterity
             // 
             resources.ApplyResources(this.numMaxTrainPetDexterity, "numMaxTrainPetDexterity");
@@ -5980,13 +6019,17 @@
             0,
             0});
             // 
-            // chkTrainRunPet
+            // chkTrainRunPetEndurance
             // 
-            resources.ApplyResources(this.chkTrainRunPet, "chkTrainRunPet");
-            this.chkTrainRunPet.Checked = true;
-            this.chkTrainRunPet.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.chkTrainRunPet.Name = "chkTrainRunPet";
-            this.chkTrainRunPet.UseVisualStyleBackColor = true;
+            resources.ApplyResources(this.chkTrainRunPetEndurance, "chkTrainRunPetEndurance");
+            this.chkTrainRunPetEndurance.Name = "chkTrainRunPetEndurance";
+            this.chkTrainRunPetEndurance.UseVisualStyleBackColor = true;
+            // 
+            // chkTrainRunPetDexterity
+            // 
+            resources.ApplyResources(this.chkTrainRunPetDexterity, "chkTrainRunPetDexterity");
+            this.chkTrainRunPetDexterity.Name = "chkTrainRunPetDexterity";
+            this.chkTrainRunPetDexterity.UseVisualStyleBackColor = true;
             // 
             // numMaxTrainPetEndurance
             // 
@@ -6003,17 +6046,11 @@
             0,
             0});
             // 
-            // chkUseRunPet
+            // chkTrainRunPetAcceleration
             // 
-            resources.ApplyResources(this.chkUseRunPet, "chkUseRunPet");
-            this.chkUseRunPet.Name = "chkUseRunPet";
-            this.chkUseRunPet.UseVisualStyleBackColor = true;
-            // 
-            // chkTrainRunPetSpeed
-            // 
-            resources.ApplyResources(this.chkTrainRunPetSpeed, "chkTrainRunPetSpeed");
-            this.chkTrainRunPetSpeed.Name = "chkTrainRunPetSpeed";
-            this.chkTrainRunPetSpeed.UseVisualStyleBackColor = true;
+            resources.ApplyResources(this.chkTrainRunPetAcceleration, "chkTrainRunPetAcceleration");
+            this.chkTrainRunPetAcceleration.Name = "chkTrainRunPetAcceleration";
+            this.chkTrainRunPetAcceleration.UseVisualStyleBackColor = true;
             // 
             // numMaxTrainPetSpeed
             // 
@@ -6030,38 +6067,17 @@
             0,
             0});
             // 
-            // chkTrainRunPetAcceleration
+            // chkTrainRunPetSpeed
             // 
-            resources.ApplyResources(this.chkTrainRunPetAcceleration, "chkTrainRunPetAcceleration");
-            this.chkTrainRunPetAcceleration.Name = "chkTrainRunPetAcceleration";
-            this.chkTrainRunPetAcceleration.UseVisualStyleBackColor = true;
+            resources.ApplyResources(this.chkTrainRunPetSpeed, "chkTrainRunPetSpeed");
+            this.chkTrainRunPetSpeed.Name = "chkTrainRunPetSpeed";
+            this.chkTrainRunPetSpeed.UseVisualStyleBackColor = true;
             // 
-            // chkTrainRunPetDexterity
+            // chkUseRunPet
             // 
-            resources.ApplyResources(this.chkTrainRunPetDexterity, "chkTrainRunPetDexterity");
-            this.chkTrainRunPetDexterity.Name = "chkTrainRunPetDexterity";
-            this.chkTrainRunPetDexterity.UseVisualStyleBackColor = true;
-            // 
-            // chkTrainRunPetEndurance
-            // 
-            resources.ApplyResources(this.chkTrainRunPetEndurance, "chkTrainRunPetEndurance");
-            this.chkTrainRunPetEndurance.Name = "chkTrainRunPetEndurance";
-            this.chkTrainRunPetEndurance.UseVisualStyleBackColor = true;
-            // 
-            // numMaxTrainPetAcceleration
-            // 
-            resources.ApplyResources(this.numMaxTrainPetAcceleration, "numMaxTrainPetAcceleration");
-            this.numMaxTrainPetAcceleration.Maximum = new decimal(new int[] {
-            750,
-            0,
-            0,
-            0});
-            this.numMaxTrainPetAcceleration.Name = "numMaxTrainPetAcceleration";
-            this.numMaxTrainPetAcceleration.Value = new decimal(new int[] {
-            10,
-            0,
-            0,
-            0});
+            resources.ApplyResources(this.chkUseRunPet, "chkUseRunPet");
+            this.chkUseRunPet.Name = "chkUseRunPet";
+            this.chkUseRunPet.UseVisualStyleBackColor = true;
             // 
             // tabBank
             // 
@@ -7026,22 +7042,6 @@
             this.btnRunJSCmd.UseVisualStyleBackColor = true;
             this.btnRunJSCmd.Click += new System.EventHandler(this.btnRunJSCmd_Click);
             // 
-            // groupBox6
-            // 
-            this.groupBox6.Controls.Add(this.chkTrainRunPet);
-            this.groupBox6.Controls.Add(this.cboxTrainRunPetType);
-            this.groupBox6.Controls.Add(this.numMaxTrainPetAcceleration);
-            this.groupBox6.Controls.Add(this.numMaxTrainPetDexterity);
-            this.groupBox6.Controls.Add(this.chkTrainRunPetEndurance);
-            this.groupBox6.Controls.Add(this.chkTrainRunPetDexterity);
-            this.groupBox6.Controls.Add(this.numMaxTrainPetEndurance);
-            this.groupBox6.Controls.Add(this.chkTrainRunPetAcceleration);
-            this.groupBox6.Controls.Add(this.numMaxTrainPetSpeed);
-            this.groupBox6.Controls.Add(this.chkTrainRunPetSpeed);
-            resources.ApplyResources(this.groupBox6, "groupBox6");
-            this.groupBox6.Name = "groupBox6";
-            this.groupBox6.TabStop = false;
-            // 
             // frmMain
             // 
             resources.ApplyResources(this, "$this");
@@ -7252,10 +7252,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.numMinTrainPetMoney)).EndInit();
             this.tabPetarena.ResumeLayout(false);
             this.tabPetarena.PerformLayout();
+            this.groupBox6.ResumeLayout(false);
+            this.groupBox6.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numMaxTrainPetAcceleration)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numMaxTrainPetDexterity)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numMaxTrainPetEndurance)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numMaxTrainPetSpeed)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numMaxTrainPetAcceleration)).EndInit();
             this.tabBank.ResumeLayout(false);
             this.tabBank.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numBankDeposit)).EndInit();
@@ -7306,8 +7308,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.statusStrip.ResumeLayout(false);
             this.statusStrip.PerformLayout();
-            this.groupBox6.ResumeLayout(false);
-            this.groupBox6.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -7681,7 +7681,7 @@
         private System.Windows.Forms.Label label141;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.CheckBox chkPigProtecttion;
-        private System.Windows.Forms.CheckBox chkDoNotReadPrivateMessages;
+        private System.Windows.Forms.CheckBox chkReadPrivateMessages;
         private System.Windows.Forms.CheckBox chkBuyMajor;
         private System.Windows.Forms.CheckBox chkMetroWarPrize;
         private System.Windows.Forms.CheckBox chkBuildTurel;

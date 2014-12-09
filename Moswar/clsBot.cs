@@ -173,7 +173,7 @@ namespace Moswar
         private enum WerewolfAction { Pay, Check }
         private enum ImmunAction { Mona, Tooth, Duels }
         private enum StopTimeoutType { GrpFight, RatHunting, OilLenin, Mafia, All }
-        public enum Place { Phone, Player, Alley, Stash, Square, Arbat, Berezka, Casino, Pyramid, Bank, Home, Trainer, Police, Huntclub, Nightclub, Shop, Metro, Factory, Shaurburgers, Tverskaya, Petrun, Petarena, Desert, Clan, Turret, Automobile, Sovet, Oil, Gorbushka, Camp, Metrowar, URL, Mobile, Bear, Settings };
+        public enum Place { Player, Alley, Stash, Square, Arbat, Berezka, Casino, Pyramid, Bank, Home, Trainer, Police, Huntclub, Nightclub, Shop, Metro, Factory, Shaurburgers, Tverskaya, Petrun, Petarena, Desert, Clan, Turret, Automobile, Sovet, Oil, Gorbushka, Camp, Metrowar, URL, Contacts, Mobile, Bear, Settings };
         public enum Opponent { Equal, Strong, Weak, Enemy, Victim, Major, EnemyEx, NPC, Agent, Werewolf };
         public enum ShopItems { Me100, Me50, Gum1, Gum2, Gum3, Gum4, Gum5, Gum6, Gum1Ex, Gum2Ex, Gum3Ex, Gum4Ex, Gum5Ex, Gum6Ex, Gum1Adv, Gum2Adv, Gum3Adv, Gum4Adv, Gum5Adv, Gum6Adv, Pyani, Tvorog, Coctail1, Coctail2, Coctail3, Coctail4, Coctail5, Coctail6, Vitamin, NovajaZhizn, Barjomi, AquaDeminerale, Snikers, WeakNPC1, WeakNPC2, WeakNPC3, Valujki, ValujkiAdv, GasMask, Respirator, Tea1, Shoko1, Tea4, Shoko4, Tea7, Shoko7, Tea10, Shoko10, Tea15, Shoko15, CandyExp, CandyAntiExp, Pet100, Pet50, Pick, Counter, Helmet, Mona_Ticket, Bank_Ticket, Safe, Chain, HealPlus, HealPrc, Chees, GranadePlus, GranadePrc, Spring, Helm, Shild }; //Ex - 15%; Adv - За нефть.
         public enum MetroAction { Dig, SearchRat, Game, Check }
@@ -849,7 +849,7 @@ namespace Moswar
 
             public bool GetMetroWarPrize;
             public bool UseWearSet;
-            public bool DoNotReadPrivateMessages;
+            public bool ReadPrivateMessages;
             public bool BuildTurel;
             public bool ReadLogs;
             public bool PigProtection;
@@ -2184,7 +2184,7 @@ namespace Moswar
                     #region Это первый вход?
                     if (frmMain.GetDocumentURL(WB).IndexOf(URL) == -1) //Это первый вход?
                     {
-                        GoToPlace(WB, Place.Phone, "/contacts");
+                        GoToPlace(WB, Place.Contacts);
                         if (CType != "victim") { frmMain.NavigateURL(WB, URL); IsWBComplete(WB); } //Жертвы начальная страничка, ко всему иному сначала нужно перейти!
                     }
                     #endregion
@@ -2197,7 +2197,7 @@ namespace Moswar
                     #region Это первый вход?
                     if (frmMain.GetDocumentURL(WB).IndexOf(URL) == -1) //Это первый вход?
                     {
-                        GoToPlace(WB, Place.Phone, "/contacts");
+                        GoToPlace(WB, Place.Contacts);
                         if (CType != "victim") { frmMain.NavigateURL(WB, URL); IsWBComplete(WB); } //Жертвы начальная страничка, ко всему иному сначала нужно перейти!
                     }
                     #endregion
@@ -2243,7 +2243,7 @@ namespace Moswar
                     #region Это первый вход?
                     if (frmMain.GetDocumentURL(WB).IndexOf(URL) == -1) //Это первый вход?
                     {
-                        GoToPlace(WB, Place.Phone, "/contacts");
+                        GoToPlace(WB, Place.Contacts);
                         if (CType != "victim") { frmMain.NavigateURL(WB, URL); IsWBComplete(WB); } //Жертвы начальная страничка, ко всему иному сначала нужно перейти!
                     }
                     #endregion
@@ -2287,7 +2287,7 @@ namespace Moswar
                     }              
                     break;
                 case ContactAction.DeleteAll:
-                    GoToPlace(WB, Place.Phone, "/contacts");
+                    GoToPlace(WB, Place.Contacts);
                     if (CType != "victim") { frmMain.NavigateURL(WB, URL); IsWBComplete(WB); } //Жертвы начальная страничка, ко всему иному сначала нужно перейти!
                     if (frmMain.GetDocument(WB).GetElementsByTagName("TABLE").Count >= 4) //Проверяю, есть ли вообще таблица с никами игроков?
                     {
@@ -3941,9 +3941,17 @@ namespace Moswar
             switch (MPA)
             {
                 case MobilePhoneAction.ReadLogs:
+                    if (Settings.ReadLogs)
+                    {
+                        frmMain.NavigateURL(MainWB, Settings.ServerURL + "/phone/logs/");
+                        IsWBComplete(MainWB);
+                    }
+                    if (Settings.ReadPrivateMessages)
+                    {
+                        frmMain.NavigateURL(MainWB, Settings.ServerURL + "/phone/messages/");
+                        IsWBComplete(MainWB);
+                    }
                     Random Rnd = new Random();
-                    frmMain.NavigateURL(MainWB, Settings.ServerURL + "/phone/logs/");
-                    IsWBComplete(MainWB);
                     TSTimeout = new TimeSpan(0, Rnd.Next(15, 60), Rnd.Next(60));
                     break;
                 case MobilePhoneAction.CheckBattery:
@@ -5033,7 +5041,7 @@ namespace Moswar
                     if (Settings.BuildTurel && Me.Turret.LastDT < ServerDT && Me.Turret.PriceMed == 0 && Me.Turret.PriceTugriki < Me.Wallet.Money && Me.Turret.PriceOre < Me.Wallet.Ore && Me.Turret.PriceOil < Me.Wallet.Oil) BuildTurret();
                     #endregion
                     #region ReadLogs
-                    if (Settings.ReadLogs && ReadLogsDT < DateTime.Now) ReadLogsDT = DateTime.Now.Add(MobilePhone(MobilePhoneAction.ReadLogs)); 
+                    if ((Settings.ReadLogs || Settings.ReadPrivateMessages) && ReadLogsDT < DateTime.Now) ReadLogsDT = DateTime.Now.Add(MobilePhone(MobilePhoneAction.ReadLogs)); 
                     #endregion
                     #region AFK
                     if (Settings.UseAFK && Me.Events.NextAFK < DateTime.Now)
@@ -5462,7 +5470,6 @@ namespace Moswar
             if (match.Value == Settings.ServerURL + "/") WebLogin(WB); //Автологин, если выбросило
             switch (P)
             {
-                case Place.Phone: Place2Go = "phone" + (Settings.DoNotReadPrivateMessages ? "/logs/" : ""); break;
                 case Place.Settings: Place2Go = "settings"; break;
                 case Place.Player: Place2Go = "player"; break;
                 case Place.Clan: Place2Go = "clan/profile"; break;
@@ -5474,7 +5481,8 @@ namespace Moswar
                 case Place.Tverskaya: Place2Go = "tverskaya"; break;
                 case Place.Camp: Place2Go = "camp"; break;
                 case Place.Bear: Place2Go = "home/bear"; break;
-                case Place.Mobile: Place2Go = "phone/call"; if (match.Value != "/call/") GoToPlace(WB, Place.Phone); break;
+                case Place.Contacts: Place2Go = "phone/contacts"; break;
+                case Place.Mobile: Place2Go = "phone/call"; break;
                 case Place.Desert: Place2Go = "desert"; if (match.Value != "/desert/") GoToPlace(WB, Place.Alley); break;
                 case Place.Trainer: Place2Go = "trainer"; if (match.Value != "/trainer/") GoToPlace(WB, Place.Player); break;
                 case Place.Police: Place2Go = "police"; if (match.Value != "/police/") GoToPlace(WB, Place.Square); break;
@@ -5523,7 +5531,6 @@ namespace Moswar
             }
             #endregion
 
-            if (Place2Go == "phone/logs/") Place2Go = "phone"; //Проверка не отсюда ли Settings.DoNotReadPrivateMessages, галочка может быть как раз отключена посему проверяем сам переход!
             if (SubPlace != "") { Place2Go += SubPlace; SubPlace = ""; goto ReTry; }
             return true;
         }

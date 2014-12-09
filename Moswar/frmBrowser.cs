@@ -651,7 +651,7 @@ namespace Moswar
             Bot.Settings.WerewolfPrice = cboxWerewolfPrice.SelectedIndex;
 
             Bot.Settings.UseWearSet = chkUseWearSet.Checked;
-            Bot.Settings.DoNotReadPrivateMessages = chkDoNotReadPrivateMessages.Checked;
+            Bot.Settings.ReadPrivateMessages = chkReadPrivateMessages.Checked;
             Bot.Settings.BuildTurel = chkBuildTurel.Checked;
             Bot.Settings.ReadLogs = chkReadLogs.Checked;
             Bot.Settings.PigProtection = chkPigProtecttion.Checked;
@@ -1041,7 +1041,7 @@ namespace Moswar
                 #region Загрузка сетов.
                 clsWearSets.Load(ref Bot.ArrWearSet, "Set.dat"); //Загрузка сетов!
                 #endregion
-                chkDoNotReadPrivateMessages.Checked = Bot.Settings.DoNotReadPrivateMessages;
+                chkReadPrivateMessages.Checked = Bot.Settings.ReadPrivateMessages;
                 chkBuildTurel.Checked = Bot.Settings.BuildTurel;
                 chkReadLogs.Checked = Bot.Settings.ReadLogs;
                 chkPigProtecttion.Checked = Bot.Settings.PigProtection;
