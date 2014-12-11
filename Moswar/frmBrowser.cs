@@ -721,7 +721,7 @@ namespace Moswar
             Bot.Settings.GagIE = numGagIE.Value;
 
             Bot.Me.Events.ShutdownDT = dtlstShutDown.Value;
-            Bot.Me.Events.ShutdownRelease = dtlstShutDown.Checked; //необходимо отрубить комп по таску?          
+            Bot.Me.Events.ShutdownRelease = chkShutDown.Checked; //необходимо отрубить комп по таску?          
 
             Bot.SaveSettings();
         }
@@ -1118,7 +1118,7 @@ namespace Moswar
                 if (Bot.Me.Events.ShutdownRelease) //необходимо отрубить комп по таску?
                 {
                     dtlstShutDown.Value = Bot.Me.Events.ShutdownDT;
-                    dtlstShutDown.Checked = Bot.Me.Events.ShutdownRelease; 
+                    chkShutDown.Checked = Bot.Me.Events.ShutdownRelease; 
                 }           
 
                 return;
@@ -1136,6 +1136,8 @@ namespace Moswar
             lblUserMessage.Text = "";
             lblVersion.Text = "Version: " + Application.ProductVersion;            
             btnTest.Visible = System.Diagnostics.Debugger.IsAttached; //Показывать кнопку тест, если из дебагера            
+
+            lblSettingsCaption.Text = "";
 
             cboxSetWarPetType.SelectedIndex = 0;
             cboxOpponent.SelectedIndex = 2;
@@ -2837,6 +2839,33 @@ namespace Moswar
             string cmd = "";
             if (InputBox.Show("Выполнение команды JavaScript", "Введите команду:", ref cmd) == DialogResult.OK && cmd != "")
                 InvokeScript(Bot.MainWB, "eval", new object[] { cmd });
+        }
+
+        private void treeViewSettings_AfterSelect(object sender, TreeViewEventArgs e)
+        {
+            string PanelName = e.Node.Name.Replace("Node", "pnl");
+            lblSettingsCaption.Text = "";
+            foreach (Control ctrl in pnlContainer.Controls)
+            {
+                if (ctrl.Name == PanelName)
+                {
+                    lblSettingsCaption.Text = e.Node.Text;
+                    ctrl.Visible = true;
+                }
+                else
+                    ctrl.Visible = false;
+            }
+        }
+
+        private void CheckGroupBox_CheckedChanged(object sender, EventArgs e)
+        {
+            CheckBox checkBox = (CheckBox)sender;
+            GroupBox groupBox = (GroupBox)checkBox.Parent;
+            foreach (Control ctrl in groupBox.Controls)
+            {
+                if (ctrl != checkBox)
+                    ctrl.Enabled = checkBox.Checked;
+            }
         }
     }
 
