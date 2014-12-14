@@ -5145,7 +5145,7 @@ namespace Moswar
                 IsWBComplete(WB, (Int32)Expert.AnalyseFightMin, (Int32)Expert.AnalyseFightMax); //На всякий случай, вдруг всё сломалось.
                 string URL = frmMain.GetDocumentURL(WB);
                 #region Что то не так?
-                switch (frmMain.GetDocument(WB).GetElementById("content").GetAttribute("classname"))
+                switch (frmMain.GetDocument(WB).GetElementById("content").GetAttribute("classname").Trim()) // Атрибут class может содержать мусор из управляющих символов
                 {
                     case "fight":
                         if (frmMain.GetDocument(WB).GetElementById("content").InnerText == "Это было давно\r\nи не правда") return true; //Проблемы на серваке, когда неправильно генерирует ссылки на проведённые поединки!
@@ -6332,7 +6332,7 @@ namespace Moswar
                     Me.Player.LifePkt = ((string)frmMain.GetJavaVar(MainWB, "$(\"#fightGroupForm .me .life\").text()")).Split('/');
                     #endregion
 
-                    while (IsWBComplete(MainWB, 500, 1000) && ((string)frmMain.GetJavaVar(MainWB, "$(\"#content\").attr(\"class\")") ?? "fight-group") == "fight-group") //Это всё ещё драка? или я уже сбежал и нахожусь на персонаже или ещё где?
+                    while (IsWBComplete(MainWB, 500, 1000) && ((string)frmMain.GetJavaVar(MainWB, "$(\"#content\").attr(\"class\")") ?? "fight-group").Trim() == "fight-group") // Атрибут class может содержать мусор из управляющих символов //Это всё ещё драка? или я уже сбежал и нахожусь на персонаже или ещё где?
                     {
                         //Используется функция .hide(), она делает атрибут style = display: none; инициализационное же значение null,
                         //функция .show() возвращает видимость и делает style = display: block; -> итог при null и  display: block; можно делать ход!                        
