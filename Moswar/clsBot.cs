@@ -4397,7 +4397,7 @@ namespace Moswar
 
                 object Info = frmMain.GetJavaVar(MainWB, "m.items['" + ItemID + "'].info.content");
                 // В некоторых случаях время идет перед датой и после парсинга время становится нулевым
-                MatchCollection matches = Regex.Matches((string)Info, "((?<Count>([0-9])+) шт. до (?<Date>([0-9 .:])+))|(Срок годности|Годен до): (?<Date>([0-9 .:])+)"); //Когда все предметы пропадают в один день может быть без количества!
+                MatchCollection matches = Regex.Matches((string)Info, "((?<Count>([0-9])+) шт. до (?<Date>([0-9 .:])+))|(Срок годности|Годен до): (?<Date>([0-9 .:])+:([0-9 .:])+)"); //Когда все предметы пропадают в один день может быть без количества!
                 foreach (Match m in matches)
                 {
                     if (Expire == new DateTime())
