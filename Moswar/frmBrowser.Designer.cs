@@ -43,27 +43,32 @@
             this.treeViewSettings = new System.Windows.Forms.TreeView();
             this.lblSettingsCaption = new System.Windows.Forms.Label();
             this.pnlContainer = new System.Windows.Forms.Panel();
-            this.pnlShutdown = new System.Windows.Forms.Panel();
-            this.grpShutDown = new System.Windows.Forms.GroupBox();
-            this.label15 = new System.Windows.Forms.Label();
-            this.chkShutDown = new System.Windows.Forms.CheckBox();
-            this.numSDPlayThimbles = new System.Windows.Forms.NumericUpDown();
-            this.numSDWorkTime = new System.Windows.Forms.NumericUpDown();
-            this.label70 = new System.Windows.Forms.Label();
-            this.label68 = new System.Windows.Forms.Label();
-            this.label113 = new System.Windows.Forms.Label();
-            this.dtlstShutDown = new System.Windows.Forms.DateTimePicker();
-            this.label69 = new System.Windows.Forms.Label();
-            this.label112 = new System.Windows.Forms.Label();
-            this.label114 = new System.Windows.Forms.Label();
-            this.pnlProcess = new System.Windows.Forms.Panel();
-            this.chkCheckForUpdate = new System.Windows.Forms.CheckBox();
-            this.label178 = new System.Windows.Forms.Label();
-            this.numMaxRestartMemory = new System.Windows.Forms.NumericUpDown();
-            this.chkRestartHidden = new System.Windows.Forms.CheckBox();
-            this.chkRestartByMemory = new System.Windows.Forms.CheckBox();
-            this.label57 = new System.Windows.Forms.Label();
-            this.txtBotName = new System.Windows.Forms.TextBox();
+            this.pnlMisc = new System.Windows.Forms.Panel();
+            this.chkUseWearSet = new System.Windows.Forms.CheckBox();
+            this.numExpRevengerPrc = new System.Windows.Forms.NumericUpDown();
+            this.grpElektrik = new System.Windows.Forms.GroupBox();
+            this.rbLoveLamp = new System.Windows.Forms.RadioButton();
+            this.rbHateLamp = new System.Windows.Forms.RadioButton();
+            this.label136 = new System.Windows.Forms.Label();
+            this.label135 = new System.Windows.Forms.Label();
+            this.pnlUseItems = new System.Windows.Forms.Panel();
+            this.chkOpenPrizeBox = new System.Windows.Forms.CheckBox();
+            this.chkExpDoNotEatPelmeni = new System.Windows.Forms.CheckBox();
+            this.pnlMF = new System.Windows.Forms.Panel();
+            this.label34 = new System.Windows.Forms.Label();
+            this.numMinFactoryOre = new System.Windows.Forms.NumericUpDown();
+            this.numMinFactoryMoney = new System.Windows.Forms.NumericUpDown();
+            this.chkFactory = new System.Windows.Forms.CheckBox();
+            this.label82 = new System.Windows.Forms.Label();
+            this.cboxFactoryRang = new System.Windows.Forms.ComboBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.numFactoryChainCount = new System.Windows.Forms.NumericUpDown();
+            this.label26 = new System.Windows.Forms.Label();
+            this.label81 = new System.Windows.Forms.Label();
+            this.pnlShaurburgers = new System.Windows.Forms.Panel();
+            this.chkMC = new System.Windows.Forms.CheckBox();
+            this.numMCWorkTime = new System.Windows.Forms.NumericUpDown();
+            this.label36 = new System.Windows.Forms.Label();
             this.pnlTimings = new System.Windows.Forms.Panel();
             this.label99 = new System.Windows.Forms.Label();
             this.label100 = new System.Windows.Forms.Label();
@@ -86,14 +91,7 @@
             this.label162 = new System.Windows.Forms.Label();
             this.label129 = new System.Windows.Forms.Label();
             this.label127 = new System.Windows.Forms.Label();
-            this.pnlPatrol = new System.Windows.Forms.Panel();
-            this.cboxPatrol = new System.Windows.Forms.ComboBox();
-            this.chkPatrol = new System.Windows.Forms.CheckBox();
-            this.numPatrolTime = new System.Windows.Forms.NumericUpDown();
-            this.label142 = new System.Windows.Forms.Label();
-            this.pnlLogin = new System.Windows.Forms.Panel();
-            this.label32 = new System.Windows.Forms.Label();
-            this.cboxServer = new System.Windows.Forms.ComboBox();
+            this.pnlProxy = new System.Windows.Forms.Panel();
             this.grpProxy = new System.Windows.Forms.GroupBox();
             this.chkProxy = new System.Windows.Forms.CheckBox();
             this.label33 = new System.Windows.Forms.Label();
@@ -102,10 +100,39 @@
             this.label163 = new System.Windows.Forms.Label();
             this.mtxtProxy = new System.Windows.Forms.MaskedTextBox();
             this.txtProxyPassword = new System.Windows.Forms.TextBox();
+            this.pnlLogin = new System.Windows.Forms.Panel();
+            this.label32 = new System.Windows.Forms.Label();
+            this.cboxServer = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.txtPassword = new System.Windows.Forms.TextBox();
+            this.pnlProcess = new System.Windows.Forms.Panel();
+            this.chkRestartHidden = new System.Windows.Forms.CheckBox();
+            this.numMaxRestartMemory = new System.Windows.Forms.NumericUpDown();
+            this.chkCheckForUpdate = new System.Windows.Forms.CheckBox();
+            this.label178 = new System.Windows.Forms.Label();
+            this.chkRestartByMemory = new System.Windows.Forms.CheckBox();
+            this.label57 = new System.Windows.Forms.Label();
+            this.txtBotName = new System.Windows.Forms.TextBox();
+            this.pnlShutdown = new System.Windows.Forms.Panel();
+            this.grpShutDown = new System.Windows.Forms.GroupBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.chkShutDown = new System.Windows.Forms.CheckBox();
+            this.numSDPlayThimbles = new System.Windows.Forms.NumericUpDown();
+            this.numSDWorkTime = new System.Windows.Forms.NumericUpDown();
+            this.label70 = new System.Windows.Forms.Label();
+            this.label68 = new System.Windows.Forms.Label();
+            this.label113 = new System.Windows.Forms.Label();
+            this.dtlstShutDown = new System.Windows.Forms.DateTimePicker();
+            this.label69 = new System.Windows.Forms.Label();
+            this.label112 = new System.Windows.Forms.Label();
+            this.label114 = new System.Windows.Forms.Label();
+            this.pnlPatrol = new System.Windows.Forms.Panel();
+            this.cboxPatrol = new System.Windows.Forms.ComboBox();
+            this.chkPatrol = new System.Windows.Forms.CheckBox();
+            this.numPatrolTime = new System.Windows.Forms.NumericUpDown();
+            this.label142 = new System.Windows.Forms.Label();
             this.pnlHumanImitation = new System.Windows.Forms.Panel();
             this.label124 = new System.Windows.Forms.Label();
             this.chkReadLogs = new System.Windows.Forms.CheckBox();
@@ -121,7 +148,6 @@
             this.label56 = new System.Windows.Forms.Label();
             this.numExpMaxWebSockets = new System.Windows.Forms.NumericUpDown();
             this.chkExpDoNotLoadImage = new System.Windows.Forms.CheckBox();
-            this.pnlSystemSettings = new System.Windows.Forms.Panel();
             this.pnlGroupFights = new System.Windows.Forms.Panel();
             this.grpGrpFightSettings = new System.Windows.Forms.GroupBox();
             this.label41 = new System.Windows.Forms.Label();
@@ -197,16 +223,6 @@
             this.comboBox7 = new System.Windows.Forms.ComboBox();
             this.pnlSafe = new System.Windows.Forms.Panel();
             this.chkBuySafe = new System.Windows.Forms.CheckBox();
-            this.pnlMisc = new System.Windows.Forms.Panel();
-            this.chkUseWearSet = new System.Windows.Forms.CheckBox();
-            this.chkExpDoNotEatPelmeni = new System.Windows.Forms.CheckBox();
-            this.chkOpenPrizeBox = new System.Windows.Forms.CheckBox();
-            this.numExpRevengerPrc = new System.Windows.Forms.NumericUpDown();
-            this.grpElektrik = new System.Windows.Forms.GroupBox();
-            this.rbLoveLamp = new System.Windows.Forms.RadioButton();
-            this.rbHateLamp = new System.Windows.Forms.RadioButton();
-            this.label136 = new System.Windows.Forms.Label();
-            this.label135 = new System.Windows.Forms.Label();
             this.pnlAgitators = new System.Windows.Forms.Panel();
             this.chkSovetBuyAgitator = new System.Windows.Forms.CheckBox();
             this.pnlGrechka = new System.Windows.Forms.Panel();
@@ -300,10 +316,6 @@
             this.label27 = new System.Windows.Forms.Label();
             this.numMinPetrikiMoney = new System.Windows.Forms.NumericUpDown();
             this.label137 = new System.Windows.Forms.Label();
-            this.pnlShaurburgers = new System.Windows.Forms.Panel();
-            this.chkMC = new System.Windows.Forms.CheckBox();
-            this.numMCWorkTime = new System.Windows.Forms.NumericUpDown();
-            this.label36 = new System.Windows.Forms.Label();
             this.pnlAzazella = new System.Windows.Forms.Panel();
             this.chkAzazellaFastPlay = new System.Windows.Forms.CheckBox();
             this.label157 = new System.Windows.Forms.Label();
@@ -427,6 +439,7 @@
             this.chkWerewolfEat = new System.Windows.Forms.CheckBox();
             this.label86 = new System.Windows.Forms.Label();
             this.label84 = new System.Windows.Forms.Label();
+            this.pnlSystemSettings = new System.Windows.Forms.Panel();
             this.pnlGameSettings = new System.Windows.Forms.Panel();
             this.pnlCombatLocations = new System.Windows.Forms.Panel();
             this.pnlNoncombatLocations = new System.Windows.Forms.Panel();
@@ -492,16 +505,6 @@
             this.numAmountHealMe = new System.Windows.Forms.NumericUpDown();
             this.numHealMe100 = new System.Windows.Forms.NumericUpDown();
             this.label6 = new System.Windows.Forms.Label();
-            this.pnlMF = new System.Windows.Forms.Panel();
-            this.numMinFactoryOre = new System.Windows.Forms.NumericUpDown();
-            this.numMinFactoryMoney = new System.Windows.Forms.NumericUpDown();
-            this.label82 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label26 = new System.Windows.Forms.Label();
-            this.label81 = new System.Windows.Forms.Label();
-            this.numFactoryChainCount = new System.Windows.Forms.NumericUpDown();
-            this.chkFactory = new System.Windows.Forms.CheckBox();
-            this.cboxFactoryRang = new System.Windows.Forms.ComboBox();
             this.pnlClanWars = new System.Windows.Forms.Panel();
             this.grpClanWarEx = new System.Windows.Forms.GroupBox();
             this.chkUseSnikersEnemy = new System.Windows.Forms.CheckBox();
@@ -691,21 +694,23 @@
             this.TrayIcon = new System.Windows.Forms.NotifyIcon(this.components);
             this.btnOpenURL = new System.Windows.Forms.Button();
             this.btnRunJSCmd = new System.Windows.Forms.Button();
-            this.pnlProxy = new System.Windows.Forms.Panel();
-            this.label34 = new System.Windows.Forms.Label();
-            this.pnlUseItems = new System.Windows.Forms.Panel();
+            this.label35 = new System.Windows.Forms.Label();
             this.tabControl.SuspendLayout();
             this.tabMainBrowser.SuspendLayout();
             this.AutoApdateMessage.SuspendLayout();
             this.tabMainSettings.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.pnlContainer.SuspendLayout();
-            this.pnlShutdown.SuspendLayout();
-            this.grpShutDown.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numSDPlayThimbles)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numSDWorkTime)).BeginInit();
-            this.pnlProcess.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numMaxRestartMemory)).BeginInit();
+            this.pnlMisc.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numExpRevengerPrc)).BeginInit();
+            this.grpElektrik.SuspendLayout();
+            this.pnlUseItems.SuspendLayout();
+            this.pnlMF.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numMinFactoryOre)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numMinFactoryMoney)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numFactoryChainCount)).BeginInit();
+            this.pnlShaurburgers.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numMCWorkTime)).BeginInit();
             this.pnlTimings.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numExpAnalyseFightMax)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numGagIE)).BeginInit();
@@ -715,10 +720,17 @@
             ((System.ComponentModel.ISupportInitialize)(this.numExpAnalyseFightMin)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numExpProxyMin)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numExpGoToMin)).BeginInit();
+            this.pnlProxy.SuspendLayout();
+            this.grpProxy.SuspendLayout();
+            this.pnlLogin.SuspendLayout();
+            this.pnlProcess.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numMaxRestartMemory)).BeginInit();
+            this.pnlShutdown.SuspendLayout();
+            this.grpShutDown.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numSDPlayThimbles)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numSDWorkTime)).BeginInit();
             this.pnlPatrol.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numPatrolTime)).BeginInit();
-            this.pnlLogin.SuspendLayout();
-            this.grpProxy.SuspendLayout();
             this.pnlHumanImitation.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numAFKTime)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numAFKChance)).BeginInit();
@@ -739,9 +751,6 @@
             this.grpExpGrpFightContainer.SuspendLayout();
             this.grpExpGrpFight.SuspendLayout();
             this.pnlSafe.SuspendLayout();
-            this.pnlMisc.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numExpRevengerPrc)).BeginInit();
-            this.grpElektrik.SuspendLayout();
             this.pnlAgitators.SuspendLayout();
             this.pnlGrechka.SuspendLayout();
             this.pnlMajor.SuspendLayout();
@@ -772,8 +781,6 @@
             this.pnlPetriks.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numMinPetrikiOre)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numMinPetrikiMoney)).BeginInit();
-            this.pnlShaurburgers.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numMCWorkTime)).BeginInit();
             this.pnlAzazella.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numAzazellaTreasureChance)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numMinAzazellaGold)).BeginInit();
@@ -830,10 +837,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.numHealMe50)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numAmountHealMe)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numHealMe100)).BeginInit();
-            this.pnlMF.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numMinFactoryOre)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numMinFactoryMoney)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numFactoryChainCount)).BeginInit();
             this.pnlClanWars.SuspendLayout();
             this.grpClanWarEx.SuspendLayout();
             this.pnlHunterClub.SuspendLayout();
@@ -880,8 +883,6 @@
             this.grpPic.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.statusStrip.SuspendLayout();
-            this.pnlProxy.SuspendLayout();
-            this.pnlUseItems.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnStart
@@ -994,6 +995,8 @@
             // 
             // pnlContainer
             // 
+            this.pnlContainer.Controls.Add(this.pnlPetarena);
+            this.pnlContainer.Controls.Add(this.pnlWarPets);
             this.pnlContainer.Controls.Add(this.pnlMisc);
             this.pnlContainer.Controls.Add(this.pnlUseItems);
             this.pnlContainer.Controls.Add(this.pnlMF);
@@ -1022,14 +1025,12 @@
             this.pnlContainer.Controls.Add(this.pnlGorbushka);
             this.pnlContainer.Controls.Add(this.pnlCasino);
             this.pnlContainer.Controls.Add(this.pnlPyramid);
-            this.pnlContainer.Controls.Add(this.pnlPetarena);
             this.pnlContainer.Controls.Add(this.pnlDopings);
             this.pnlContainer.Controls.Add(this.pnlDuels);
             this.pnlContainer.Controls.Add(this.pnlSystemSettings);
             this.pnlContainer.Controls.Add(this.pnlGameSettings);
             this.pnlContainer.Controls.Add(this.pnlCombatLocations);
             this.pnlContainer.Controls.Add(this.pnlNoncombatLocations);
-            this.pnlContainer.Controls.Add(this.pnlWarPets);
             this.pnlContainer.Controls.Add(this.pnlMoneyToOre);
             this.pnlContainer.Controls.Add(this.pnlHeal);
             this.pnlContainer.Controls.Add(this.pnlClanWars);
@@ -1042,192 +1043,265 @@
             resources.ApplyResources(this.pnlContainer, "pnlContainer");
             this.pnlContainer.Name = "pnlContainer";
             // 
-            // pnlShutdown
+            // pnlMisc
             // 
-            resources.ApplyResources(this.pnlShutdown, "pnlShutdown");
-            this.pnlShutdown.Controls.Add(this.grpShutDown);
-            this.pnlShutdown.Name = "pnlShutdown";
+            resources.ApplyResources(this.pnlMisc, "pnlMisc");
+            this.pnlMisc.Controls.Add(this.chkUseWearSet);
+            this.pnlMisc.Controls.Add(this.numExpRevengerPrc);
+            this.pnlMisc.Controls.Add(this.grpElektrik);
+            this.pnlMisc.Controls.Add(this.label136);
+            this.pnlMisc.Controls.Add(this.label135);
+            this.pnlMisc.Name = "pnlMisc";
             // 
-            // grpShutDown
+            // chkUseWearSet
             // 
-            this.grpShutDown.Controls.Add(this.label15);
-            this.grpShutDown.Controls.Add(this.chkShutDown);
-            this.grpShutDown.Controls.Add(this.numSDPlayThimbles);
-            this.grpShutDown.Controls.Add(this.numSDWorkTime);
-            this.grpShutDown.Controls.Add(this.label70);
-            this.grpShutDown.Controls.Add(this.label68);
-            this.grpShutDown.Controls.Add(this.label113);
-            this.grpShutDown.Controls.Add(this.dtlstShutDown);
-            this.grpShutDown.Controls.Add(this.label69);
-            this.grpShutDown.Controls.Add(this.label112);
-            this.grpShutDown.Controls.Add(this.label114);
-            resources.ApplyResources(this.grpShutDown, "grpShutDown");
-            this.grpShutDown.Name = "grpShutDown";
-            this.grpShutDown.TabStop = false;
+            resources.ApplyResources(this.chkUseWearSet, "chkUseWearSet");
+            this.chkUseWearSet.Checked = true;
+            this.chkUseWearSet.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.chkUseWearSet.Name = "chkUseWearSet";
+            this.chkUseWearSet.UseVisualStyleBackColor = true;
             // 
-            // label15
+            // numExpRevengerPrc
             // 
-            resources.ApplyResources(this.label15, "label15");
-            this.label15.Name = "label15";
-            // 
-            // chkShutDown
-            // 
-            resources.ApplyResources(this.chkShutDown, "chkShutDown");
-            this.chkShutDown.Name = "chkShutDown";
-            this.chkShutDown.UseVisualStyleBackColor = true;
-            this.chkShutDown.CheckedChanged += new System.EventHandler(this.CheckGroupBox_CheckedChanged);
-            this.chkShutDown.VisibleChanged += new System.EventHandler(this.CheckGroupBox_CheckedChanged);
-            // 
-            // numSDPlayThimbles
-            // 
-            resources.ApplyResources(this.numSDPlayThimbles, "numSDPlayThimbles");
-            this.numSDPlayThimbles.Maximum = new decimal(new int[] {
-            999,
-            0,
-            0,
-            0});
-            this.numSDPlayThimbles.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.numSDPlayThimbles.Name = "numSDPlayThimbles";
-            this.numSDPlayThimbles.Value = new decimal(new int[] {
-            10,
-            0,
-            0,
-            0});
-            // 
-            // numSDWorkTime
-            // 
-            resources.ApplyResources(this.numSDWorkTime, "numSDWorkTime");
-            this.numSDWorkTime.Maximum = new decimal(new int[] {
-            72,
-            0,
-            0,
-            0});
-            this.numSDWorkTime.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.numSDWorkTime.Name = "numSDWorkTime";
-            this.numSDWorkTime.Value = new decimal(new int[] {
-            8,
-            0,
-            0,
-            0});
-            // 
-            // label70
-            // 
-            resources.ApplyResources(this.label70, "label70");
-            this.label70.ForeColor = System.Drawing.Color.Black;
-            this.label70.Name = "label70";
-            // 
-            // label68
-            // 
-            resources.ApplyResources(this.label68, "label68");
-            this.label68.Name = "label68";
-            // 
-            // label113
-            // 
-            this.label113.Image = global::Moswar.Properties.Resources.Money;
-            resources.ApplyResources(this.label113, "label113");
-            this.label113.Name = "label113";
-            // 
-            // dtlstShutDown
-            // 
-            resources.ApplyResources(this.dtlstShutDown, "dtlstShutDown");
-            this.dtlstShutDown.Checked = false;
-            this.dtlstShutDown.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtlstShutDown.Name = "dtlstShutDown";
-            this.dtlstShutDown.Value = new System.DateTime(2013, 1, 1, 0, 0, 0, 0);
-            // 
-            // label69
-            // 
-            resources.ApplyResources(this.label69, "label69");
-            this.label69.Name = "label69";
-            // 
-            // label112
-            // 
-            resources.ApplyResources(this.label112, "label112");
-            this.label112.ForeColor = System.Drawing.Color.Black;
-            this.label112.Name = "label112";
-            // 
-            // label114
-            // 
-            resources.ApplyResources(this.label114, "label114");
-            this.label114.ForeColor = System.Drawing.Color.Black;
-            this.label114.Name = "label114";
-            // 
-            // pnlProcess
-            // 
-            resources.ApplyResources(this.pnlProcess, "pnlProcess");
-            this.pnlProcess.Controls.Add(this.chkRestartHidden);
-            this.pnlProcess.Controls.Add(this.numMaxRestartMemory);
-            this.pnlProcess.Controls.Add(this.chkCheckForUpdate);
-            this.pnlProcess.Controls.Add(this.label178);
-            this.pnlProcess.Controls.Add(this.chkRestartByMemory);
-            this.pnlProcess.Controls.Add(this.label57);
-            this.pnlProcess.Controls.Add(this.txtBotName);
-            this.pnlProcess.Name = "pnlProcess";
-            // 
-            // chkCheckForUpdate
-            // 
-            resources.ApplyResources(this.chkCheckForUpdate, "chkCheckForUpdate");
-            this.chkCheckForUpdate.Checked = true;
-            this.chkCheckForUpdate.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.chkCheckForUpdate.Name = "chkCheckForUpdate";
-            this.chkCheckForUpdate.UseVisualStyleBackColor = true;
-            // 
-            // label178
-            // 
-            resources.ApplyResources(this.label178, "label178");
-            this.label178.Name = "label178";
-            // 
-            // numMaxRestartMemory
-            // 
-            resources.ApplyResources(this.numMaxRestartMemory, "numMaxRestartMemory");
-            this.numMaxRestartMemory.Maximum = new decimal(new int[] {
+            resources.ApplyResources(this.numExpRevengerPrc, "numExpRevengerPrc");
+            this.numExpRevengerPrc.Maximum = new decimal(new int[] {
             1000,
             0,
             0,
             0});
-            this.numMaxRestartMemory.Minimum = new decimal(new int[] {
-            100,
-            0,
-            0,
-            0});
-            this.numMaxRestartMemory.Name = "numMaxRestartMemory";
-            this.numMaxRestartMemory.Value = new decimal(new int[] {
-            350,
+            this.numExpRevengerPrc.Name = "numExpRevengerPrc";
+            this.numExpRevengerPrc.Value = new decimal(new int[] {
+            150,
             0,
             0,
             0});
             // 
-            // chkRestartHidden
+            // grpElektrik
             // 
-            resources.ApplyResources(this.chkRestartHidden, "chkRestartHidden");
-            this.chkRestartHidden.Name = "chkRestartHidden";
-            this.chkRestartHidden.UseVisualStyleBackColor = true;
+            this.grpElektrik.Controls.Add(this.rbLoveLamp);
+            this.grpElektrik.Controls.Add(this.rbHateLamp);
+            resources.ApplyResources(this.grpElektrik, "grpElektrik");
+            this.grpElektrik.Name = "grpElektrik";
+            this.grpElektrik.TabStop = false;
             // 
-            // chkRestartByMemory
+            // rbLoveLamp
             // 
-            resources.ApplyResources(this.chkRestartByMemory, "chkRestartByMemory");
-            this.chkRestartByMemory.Name = "chkRestartByMemory";
-            this.chkRestartByMemory.UseVisualStyleBackColor = true;
+            resources.ApplyResources(this.rbLoveLamp, "rbLoveLamp");
+            this.rbLoveLamp.Checked = true;
+            this.rbLoveLamp.Name = "rbLoveLamp";
+            this.rbLoveLamp.TabStop = true;
+            this.rbLoveLamp.UseVisualStyleBackColor = true;
             // 
-            // label57
+            // rbHateLamp
             // 
-            resources.ApplyResources(this.label57, "label57");
-            this.label57.ForeColor = System.Drawing.Color.Black;
-            this.label57.Name = "label57";
+            resources.ApplyResources(this.rbHateLamp, "rbHateLamp");
+            this.rbHateLamp.Name = "rbHateLamp";
+            this.rbHateLamp.UseVisualStyleBackColor = true;
             // 
-            // txtBotName
+            // label136
             // 
-            this.txtBotName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            resources.ApplyResources(this.txtBotName, "txtBotName");
-            this.txtBotName.Name = "txtBotName";
+            resources.ApplyResources(this.label136, "label136");
+            this.label136.Name = "label136";
+            // 
+            // label135
+            // 
+            resources.ApplyResources(this.label135, "label135");
+            this.label135.Name = "label135";
+            // 
+            // pnlUseItems
+            // 
+            resources.ApplyResources(this.pnlUseItems, "pnlUseItems");
+            this.pnlUseItems.Controls.Add(this.chkOpenPrizeBox);
+            this.pnlUseItems.Controls.Add(this.chkExpDoNotEatPelmeni);
+            this.pnlUseItems.Name = "pnlUseItems";
+            // 
+            // chkOpenPrizeBox
+            // 
+            resources.ApplyResources(this.chkOpenPrizeBox, "chkOpenPrizeBox");
+            this.chkOpenPrizeBox.Checked = true;
+            this.chkOpenPrizeBox.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.chkOpenPrizeBox.Name = "chkOpenPrizeBox";
+            this.chkOpenPrizeBox.UseVisualStyleBackColor = true;
+            // 
+            // chkExpDoNotEatPelmeni
+            // 
+            resources.ApplyResources(this.chkExpDoNotEatPelmeni, "chkExpDoNotEatPelmeni");
+            this.chkExpDoNotEatPelmeni.Name = "chkExpDoNotEatPelmeni";
+            this.chkExpDoNotEatPelmeni.UseVisualStyleBackColor = true;
+            // 
+            // pnlMF
+            // 
+            resources.ApplyResources(this.pnlMF, "pnlMF");
+            this.pnlMF.Controls.Add(this.label34);
+            this.pnlMF.Controls.Add(this.numMinFactoryOre);
+            this.pnlMF.Controls.Add(this.numMinFactoryMoney);
+            this.pnlMF.Controls.Add(this.chkFactory);
+            this.pnlMF.Controls.Add(this.label82);
+            this.pnlMF.Controls.Add(this.cboxFactoryRang);
+            this.pnlMF.Controls.Add(this.label14);
+            this.pnlMF.Controls.Add(this.numFactoryChainCount);
+            this.pnlMF.Controls.Add(this.label26);
+            this.pnlMF.Controls.Add(this.label81);
+            this.pnlMF.Name = "pnlMF";
+            // 
+            // label34
+            // 
+            resources.ApplyResources(this.label34, "label34");
+            this.label34.Name = "label34";
+            // 
+            // numMinFactoryOre
+            // 
+            resources.ApplyResources(this.numMinFactoryOre, "numMinFactoryOre");
+            this.numMinFactoryOre.Maximum = new decimal(new int[] {
+            9999999,
+            0,
+            0,
+            0});
+            this.numMinFactoryOre.Name = "numMinFactoryOre";
+            this.numMinFactoryOre.Value = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
+            // 
+            // numMinFactoryMoney
+            // 
+            resources.ApplyResources(this.numMinFactoryMoney, "numMinFactoryMoney");
+            this.numMinFactoryMoney.Maximum = new decimal(new int[] {
+            9999999,
+            0,
+            0,
+            0});
+            this.numMinFactoryMoney.Name = "numMinFactoryMoney";
+            this.numMinFactoryMoney.Value = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
+            // 
+            // chkFactory
+            // 
+            resources.ApplyResources(this.chkFactory, "chkFactory");
+            this.chkFactory.Name = "chkFactory";
+            this.chkFactory.UseVisualStyleBackColor = true;
+            // 
+            // label82
+            // 
+            resources.ApplyResources(this.label82, "label82");
+            this.label82.ForeColor = System.Drawing.Color.Black;
+            this.label82.Name = "label82";
+            // 
+            // cboxFactoryRang
+            // 
+            this.cboxFactoryRang.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            resources.ApplyResources(this.cboxFactoryRang, "cboxFactoryRang");
+            this.cboxFactoryRang.FormattingEnabled = true;
+            this.cboxFactoryRang.Items.AddRange(new object[] {
+            resources.GetString("cboxFactoryRang.Items"),
+            resources.GetString("cboxFactoryRang.Items1"),
+            resources.GetString("cboxFactoryRang.Items2"),
+            resources.GetString("cboxFactoryRang.Items3"),
+            resources.GetString("cboxFactoryRang.Items4"),
+            resources.GetString("cboxFactoryRang.Items5"),
+            resources.GetString("cboxFactoryRang.Items6"),
+            resources.GetString("cboxFactoryRang.Items7"),
+            resources.GetString("cboxFactoryRang.Items8"),
+            resources.GetString("cboxFactoryRang.Items9"),
+            resources.GetString("cboxFactoryRang.Items10"),
+            resources.GetString("cboxFactoryRang.Items11"),
+            resources.GetString("cboxFactoryRang.Items12"),
+            resources.GetString("cboxFactoryRang.Items13"),
+            resources.GetString("cboxFactoryRang.Items14"),
+            resources.GetString("cboxFactoryRang.Items15"),
+            resources.GetString("cboxFactoryRang.Items16"),
+            resources.GetString("cboxFactoryRang.Items17"),
+            resources.GetString("cboxFactoryRang.Items18"),
+            resources.GetString("cboxFactoryRang.Items19"),
+            resources.GetString("cboxFactoryRang.Items20"),
+            resources.GetString("cboxFactoryRang.Items21"),
+            resources.GetString("cboxFactoryRang.Items22"),
+            resources.GetString("cboxFactoryRang.Items23"),
+            resources.GetString("cboxFactoryRang.Items24"),
+            resources.GetString("cboxFactoryRang.Items25"),
+            resources.GetString("cboxFactoryRang.Items26"),
+            resources.GetString("cboxFactoryRang.Items27"),
+            resources.GetString("cboxFactoryRang.Items28")});
+            this.cboxFactoryRang.Name = "cboxFactoryRang";
+            this.cboxFactoryRang.SelectedIndexChanged += new System.EventHandler(this.cboxDoppingEvent_SelectedIndexChanged);
+            // 
+            // label14
+            // 
+            resources.ApplyResources(this.label14, "label14");
+            this.label14.ForeColor = System.Drawing.Color.Black;
+            this.label14.Name = "label14";
+            // 
+            // numFactoryChainCount
+            // 
+            resources.ApplyResources(this.numFactoryChainCount, "numFactoryChainCount");
+            this.numFactoryChainCount.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numFactoryChainCount.Name = "numFactoryChainCount";
+            this.numFactoryChainCount.Value = new decimal(new int[] {
+            5,
+            0,
+            0,
+            0});
+            // 
+            // label26
+            // 
+            this.label26.Image = global::Moswar.Properties.Resources.Ore;
+            resources.ApplyResources(this.label26, "label26");
+            this.label26.Name = "label26";
+            // 
+            // label81
+            // 
+            this.label81.Image = global::Moswar.Properties.Resources.Money;
+            resources.ApplyResources(this.label81, "label81");
+            this.label81.Name = "label81";
+            // 
+            // pnlShaurburgers
+            // 
+            resources.ApplyResources(this.pnlShaurburgers, "pnlShaurburgers");
+            this.pnlShaurburgers.Controls.Add(this.chkMC);
+            this.pnlShaurburgers.Controls.Add(this.numMCWorkTime);
+            this.pnlShaurburgers.Controls.Add(this.label36);
+            this.pnlShaurburgers.Name = "pnlShaurburgers";
+            // 
+            // chkMC
+            // 
+            resources.ApplyResources(this.chkMC, "chkMC");
+            this.chkMC.Checked = true;
+            this.chkMC.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.chkMC.Name = "chkMC";
+            this.chkMC.UseVisualStyleBackColor = true;
+            // 
+            // numMCWorkTime
+            // 
+            resources.ApplyResources(this.numMCWorkTime, "numMCWorkTime");
+            this.numMCWorkTime.Maximum = new decimal(new int[] {
+            12,
+            0,
+            0,
+            0});
+            this.numMCWorkTime.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numMCWorkTime.Name = "numMCWorkTime";
+            this.numMCWorkTime.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
+            // label36
+            // 
+            resources.ApplyResources(this.label36, "label36");
+            this.label36.Name = "label36";
             // 
             // pnlTimings
             // 
@@ -1447,94 +1521,11 @@
             resources.ApplyResources(this.label127, "label127");
             this.label127.Name = "label127";
             // 
-            // pnlPatrol
+            // pnlProxy
             // 
-            resources.ApplyResources(this.pnlPatrol, "pnlPatrol");
-            this.pnlPatrol.Controls.Add(this.cboxPatrol);
-            this.pnlPatrol.Controls.Add(this.chkPatrol);
-            this.pnlPatrol.Controls.Add(this.numPatrolTime);
-            this.pnlPatrol.Controls.Add(this.label142);
-            this.pnlPatrol.Name = "pnlPatrol";
-            // 
-            // cboxPatrol
-            // 
-            this.cboxPatrol.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            resources.ApplyResources(this.cboxPatrol, "cboxPatrol");
-            this.cboxPatrol.FormattingEnabled = true;
-            this.cboxPatrol.Items.AddRange(new object[] {
-            resources.GetString("cboxPatrol.Items"),
-            resources.GetString("cboxPatrol.Items1"),
-            resources.GetString("cboxPatrol.Items2"),
-            resources.GetString("cboxPatrol.Items3"),
-            resources.GetString("cboxPatrol.Items4")});
-            this.cboxPatrol.Name = "cboxPatrol";
-            // 
-            // chkPatrol
-            // 
-            resources.ApplyResources(this.chkPatrol, "chkPatrol");
-            this.chkPatrol.Checked = true;
-            this.chkPatrol.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.chkPatrol.Name = "chkPatrol";
-            this.chkPatrol.UseVisualStyleBackColor = true;
-            // 
-            // numPatrolTime
-            // 
-            resources.ApplyResources(this.numPatrolTime, "numPatrolTime");
-            this.numPatrolTime.Increment = new decimal(new int[] {
-            10,
-            0,
-            0,
-            0});
-            this.numPatrolTime.Maximum = new decimal(new int[] {
-            300,
-            0,
-            0,
-            0});
-            this.numPatrolTime.Minimum = new decimal(new int[] {
-            10,
-            0,
-            0,
-            0});
-            this.numPatrolTime.Name = "numPatrolTime";
-            this.numPatrolTime.Value = new decimal(new int[] {
-            10,
-            0,
-            0,
-            0});
-            // 
-            // label142
-            // 
-            resources.ApplyResources(this.label142, "label142");
-            this.label142.Name = "label142";
-            // 
-            // pnlLogin
-            // 
-            resources.ApplyResources(this.pnlLogin, "pnlLogin");
-            this.pnlLogin.Controls.Add(this.label32);
-            this.pnlLogin.Controls.Add(this.cboxServer);
-            this.pnlLogin.Controls.Add(this.label5);
-            this.pnlLogin.Controls.Add(this.label2);
-            this.pnlLogin.Controls.Add(this.txtEmail);
-            this.pnlLogin.Controls.Add(this.txtPassword);
-            this.pnlLogin.Name = "pnlLogin";
-            // 
-            // label32
-            // 
-            resources.ApplyResources(this.label32, "label32");
-            this.label32.Name = "label32";
-            // 
-            // cboxServer
-            // 
-            this.cboxServer.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            resources.ApplyResources(this.cboxServer, "cboxServer");
-            this.cboxServer.FormattingEnabled = true;
-            this.cboxServer.Items.AddRange(new object[] {
-            resources.GetString("cboxServer.Items"),
-            resources.GetString("cboxServer.Items1"),
-            resources.GetString("cboxServer.Items2"),
-            resources.GetString("cboxServer.Items3")});
-            this.cboxServer.Name = "cboxServer";
-            this.cboxServer.SelectedIndexChanged += new System.EventHandler(this.cboxDoppingType_SelectedIndexChanged);
+            resources.ApplyResources(this.pnlProxy, "pnlProxy");
+            this.pnlProxy.Controls.Add(this.grpProxy);
+            this.pnlProxy.Name = "pnlProxy";
             // 
             // grpProxy
             // 
@@ -1595,6 +1586,35 @@
             resources.ApplyResources(this.txtProxyPassword, "txtProxyPassword");
             this.txtProxyPassword.Name = "txtProxyPassword";
             // 
+            // pnlLogin
+            // 
+            resources.ApplyResources(this.pnlLogin, "pnlLogin");
+            this.pnlLogin.Controls.Add(this.label32);
+            this.pnlLogin.Controls.Add(this.cboxServer);
+            this.pnlLogin.Controls.Add(this.label5);
+            this.pnlLogin.Controls.Add(this.label2);
+            this.pnlLogin.Controls.Add(this.txtEmail);
+            this.pnlLogin.Controls.Add(this.txtPassword);
+            this.pnlLogin.Name = "pnlLogin";
+            // 
+            // label32
+            // 
+            resources.ApplyResources(this.label32, "label32");
+            this.label32.Name = "label32";
+            // 
+            // cboxServer
+            // 
+            this.cboxServer.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            resources.ApplyResources(this.cboxServer, "cboxServer");
+            this.cboxServer.FormattingEnabled = true;
+            this.cboxServer.Items.AddRange(new object[] {
+            resources.GetString("cboxServer.Items"),
+            resources.GetString("cboxServer.Items1"),
+            resources.GetString("cboxServer.Items2"),
+            resources.GetString("cboxServer.Items3")});
+            this.cboxServer.Name = "cboxServer";
+            this.cboxServer.SelectedIndexChanged += new System.EventHandler(this.cboxDoppingType_SelectedIndexChanged);
+            // 
             // label5
             // 
             resources.ApplyResources(this.label5, "label5");
@@ -1616,6 +1636,253 @@
             this.txtPassword.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             resources.ApplyResources(this.txtPassword, "txtPassword");
             this.txtPassword.Name = "txtPassword";
+            // 
+            // pnlProcess
+            // 
+            resources.ApplyResources(this.pnlProcess, "pnlProcess");
+            this.pnlProcess.Controls.Add(this.chkRestartHidden);
+            this.pnlProcess.Controls.Add(this.numMaxRestartMemory);
+            this.pnlProcess.Controls.Add(this.chkCheckForUpdate);
+            this.pnlProcess.Controls.Add(this.label178);
+            this.pnlProcess.Controls.Add(this.chkRestartByMemory);
+            this.pnlProcess.Controls.Add(this.label57);
+            this.pnlProcess.Controls.Add(this.txtBotName);
+            this.pnlProcess.Name = "pnlProcess";
+            // 
+            // chkRestartHidden
+            // 
+            resources.ApplyResources(this.chkRestartHidden, "chkRestartHidden");
+            this.chkRestartHidden.Name = "chkRestartHidden";
+            this.chkRestartHidden.UseVisualStyleBackColor = true;
+            // 
+            // numMaxRestartMemory
+            // 
+            resources.ApplyResources(this.numMaxRestartMemory, "numMaxRestartMemory");
+            this.numMaxRestartMemory.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
+            this.numMaxRestartMemory.Minimum = new decimal(new int[] {
+            100,
+            0,
+            0,
+            0});
+            this.numMaxRestartMemory.Name = "numMaxRestartMemory";
+            this.numMaxRestartMemory.Value = new decimal(new int[] {
+            350,
+            0,
+            0,
+            0});
+            // 
+            // chkCheckForUpdate
+            // 
+            resources.ApplyResources(this.chkCheckForUpdate, "chkCheckForUpdate");
+            this.chkCheckForUpdate.Checked = true;
+            this.chkCheckForUpdate.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.chkCheckForUpdate.Name = "chkCheckForUpdate";
+            this.chkCheckForUpdate.UseVisualStyleBackColor = true;
+            // 
+            // label178
+            // 
+            resources.ApplyResources(this.label178, "label178");
+            this.label178.Name = "label178";
+            // 
+            // chkRestartByMemory
+            // 
+            resources.ApplyResources(this.chkRestartByMemory, "chkRestartByMemory");
+            this.chkRestartByMemory.Name = "chkRestartByMemory";
+            this.chkRestartByMemory.UseVisualStyleBackColor = true;
+            // 
+            // label57
+            // 
+            resources.ApplyResources(this.label57, "label57");
+            this.label57.ForeColor = System.Drawing.Color.Black;
+            this.label57.Name = "label57";
+            // 
+            // txtBotName
+            // 
+            this.txtBotName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.txtBotName, "txtBotName");
+            this.txtBotName.Name = "txtBotName";
+            // 
+            // pnlShutdown
+            // 
+            resources.ApplyResources(this.pnlShutdown, "pnlShutdown");
+            this.pnlShutdown.Controls.Add(this.grpShutDown);
+            this.pnlShutdown.Name = "pnlShutdown";
+            // 
+            // grpShutDown
+            // 
+            this.grpShutDown.Controls.Add(this.label15);
+            this.grpShutDown.Controls.Add(this.chkShutDown);
+            this.grpShutDown.Controls.Add(this.numSDPlayThimbles);
+            this.grpShutDown.Controls.Add(this.numSDWorkTime);
+            this.grpShutDown.Controls.Add(this.label70);
+            this.grpShutDown.Controls.Add(this.label68);
+            this.grpShutDown.Controls.Add(this.label113);
+            this.grpShutDown.Controls.Add(this.dtlstShutDown);
+            this.grpShutDown.Controls.Add(this.label69);
+            this.grpShutDown.Controls.Add(this.label112);
+            this.grpShutDown.Controls.Add(this.label114);
+            resources.ApplyResources(this.grpShutDown, "grpShutDown");
+            this.grpShutDown.Name = "grpShutDown";
+            this.grpShutDown.TabStop = false;
+            // 
+            // label15
+            // 
+            resources.ApplyResources(this.label15, "label15");
+            this.label15.Name = "label15";
+            // 
+            // chkShutDown
+            // 
+            resources.ApplyResources(this.chkShutDown, "chkShutDown");
+            this.chkShutDown.Name = "chkShutDown";
+            this.chkShutDown.UseVisualStyleBackColor = true;
+            this.chkShutDown.CheckedChanged += new System.EventHandler(this.CheckGroupBox_CheckedChanged);
+            this.chkShutDown.VisibleChanged += new System.EventHandler(this.CheckGroupBox_CheckedChanged);
+            // 
+            // numSDPlayThimbles
+            // 
+            resources.ApplyResources(this.numSDPlayThimbles, "numSDPlayThimbles");
+            this.numSDPlayThimbles.Maximum = new decimal(new int[] {
+            999,
+            0,
+            0,
+            0});
+            this.numSDPlayThimbles.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numSDPlayThimbles.Name = "numSDPlayThimbles";
+            this.numSDPlayThimbles.Value = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
+            // 
+            // numSDWorkTime
+            // 
+            resources.ApplyResources(this.numSDWorkTime, "numSDWorkTime");
+            this.numSDWorkTime.Maximum = new decimal(new int[] {
+            72,
+            0,
+            0,
+            0});
+            this.numSDWorkTime.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numSDWorkTime.Name = "numSDWorkTime";
+            this.numSDWorkTime.Value = new decimal(new int[] {
+            8,
+            0,
+            0,
+            0});
+            // 
+            // label70
+            // 
+            resources.ApplyResources(this.label70, "label70");
+            this.label70.ForeColor = System.Drawing.Color.Black;
+            this.label70.Name = "label70";
+            // 
+            // label68
+            // 
+            resources.ApplyResources(this.label68, "label68");
+            this.label68.Name = "label68";
+            // 
+            // label113
+            // 
+            this.label113.Image = global::Moswar.Properties.Resources.Money;
+            resources.ApplyResources(this.label113, "label113");
+            this.label113.Name = "label113";
+            // 
+            // dtlstShutDown
+            // 
+            resources.ApplyResources(this.dtlstShutDown, "dtlstShutDown");
+            this.dtlstShutDown.Checked = false;
+            this.dtlstShutDown.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtlstShutDown.Name = "dtlstShutDown";
+            this.dtlstShutDown.Value = new System.DateTime(2013, 1, 1, 0, 0, 0, 0);
+            // 
+            // label69
+            // 
+            resources.ApplyResources(this.label69, "label69");
+            this.label69.Name = "label69";
+            // 
+            // label112
+            // 
+            resources.ApplyResources(this.label112, "label112");
+            this.label112.ForeColor = System.Drawing.Color.Black;
+            this.label112.Name = "label112";
+            // 
+            // label114
+            // 
+            resources.ApplyResources(this.label114, "label114");
+            this.label114.ForeColor = System.Drawing.Color.Black;
+            this.label114.Name = "label114";
+            // 
+            // pnlPatrol
+            // 
+            resources.ApplyResources(this.pnlPatrol, "pnlPatrol");
+            this.pnlPatrol.Controls.Add(this.cboxPatrol);
+            this.pnlPatrol.Controls.Add(this.chkPatrol);
+            this.pnlPatrol.Controls.Add(this.numPatrolTime);
+            this.pnlPatrol.Controls.Add(this.label142);
+            this.pnlPatrol.Name = "pnlPatrol";
+            // 
+            // cboxPatrol
+            // 
+            this.cboxPatrol.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            resources.ApplyResources(this.cboxPatrol, "cboxPatrol");
+            this.cboxPatrol.FormattingEnabled = true;
+            this.cboxPatrol.Items.AddRange(new object[] {
+            resources.GetString("cboxPatrol.Items"),
+            resources.GetString("cboxPatrol.Items1"),
+            resources.GetString("cboxPatrol.Items2"),
+            resources.GetString("cboxPatrol.Items3"),
+            resources.GetString("cboxPatrol.Items4")});
+            this.cboxPatrol.Name = "cboxPatrol";
+            // 
+            // chkPatrol
+            // 
+            resources.ApplyResources(this.chkPatrol, "chkPatrol");
+            this.chkPatrol.Checked = true;
+            this.chkPatrol.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.chkPatrol.Name = "chkPatrol";
+            this.chkPatrol.UseVisualStyleBackColor = true;
+            // 
+            // numPatrolTime
+            // 
+            resources.ApplyResources(this.numPatrolTime, "numPatrolTime");
+            this.numPatrolTime.Increment = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
+            this.numPatrolTime.Maximum = new decimal(new int[] {
+            300,
+            0,
+            0,
+            0});
+            this.numPatrolTime.Minimum = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
+            this.numPatrolTime.Name = "numPatrolTime";
+            this.numPatrolTime.Value = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
+            // 
+            // label142
+            // 
+            resources.ApplyResources(this.label142, "label142");
+            this.label142.Name = "label142";
             // 
             // pnlHumanImitation
             // 
@@ -1759,11 +2026,6 @@
             resources.ApplyResources(this.chkExpDoNotLoadImage, "chkExpDoNotLoadImage");
             this.chkExpDoNotLoadImage.Name = "chkExpDoNotLoadImage";
             this.chkExpDoNotLoadImage.UseVisualStyleBackColor = true;
-            // 
-            // pnlSystemSettings
-            // 
-            resources.ApplyResources(this.pnlSystemSettings, "pnlSystemSettings");
-            this.pnlSystemSettings.Name = "pnlSystemSettings";
             // 
             // pnlGroupFights
             // 
@@ -2449,85 +2711,6 @@
             resources.ApplyResources(this.chkBuySafe, "chkBuySafe");
             this.chkBuySafe.Name = "chkBuySafe";
             this.chkBuySafe.UseVisualStyleBackColor = true;
-            // 
-            // pnlMisc
-            // 
-            resources.ApplyResources(this.pnlMisc, "pnlMisc");
-            this.pnlMisc.Controls.Add(this.chkUseWearSet);
-            this.pnlMisc.Controls.Add(this.numExpRevengerPrc);
-            this.pnlMisc.Controls.Add(this.grpElektrik);
-            this.pnlMisc.Controls.Add(this.label136);
-            this.pnlMisc.Controls.Add(this.label135);
-            this.pnlMisc.Name = "pnlMisc";
-            // 
-            // chkUseWearSet
-            // 
-            resources.ApplyResources(this.chkUseWearSet, "chkUseWearSet");
-            this.chkUseWearSet.Checked = true;
-            this.chkUseWearSet.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.chkUseWearSet.Name = "chkUseWearSet";
-            this.chkUseWearSet.UseVisualStyleBackColor = true;
-            // 
-            // chkExpDoNotEatPelmeni
-            // 
-            resources.ApplyResources(this.chkExpDoNotEatPelmeni, "chkExpDoNotEatPelmeni");
-            this.chkExpDoNotEatPelmeni.Name = "chkExpDoNotEatPelmeni";
-            this.chkExpDoNotEatPelmeni.UseVisualStyleBackColor = true;
-            // 
-            // chkOpenPrizeBox
-            // 
-            resources.ApplyResources(this.chkOpenPrizeBox, "chkOpenPrizeBox");
-            this.chkOpenPrizeBox.Checked = true;
-            this.chkOpenPrizeBox.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.chkOpenPrizeBox.Name = "chkOpenPrizeBox";
-            this.chkOpenPrizeBox.UseVisualStyleBackColor = true;
-            // 
-            // numExpRevengerPrc
-            // 
-            resources.ApplyResources(this.numExpRevengerPrc, "numExpRevengerPrc");
-            this.numExpRevengerPrc.Maximum = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
-            this.numExpRevengerPrc.Name = "numExpRevengerPrc";
-            this.numExpRevengerPrc.Value = new decimal(new int[] {
-            150,
-            0,
-            0,
-            0});
-            // 
-            // grpElektrik
-            // 
-            this.grpElektrik.Controls.Add(this.rbLoveLamp);
-            this.grpElektrik.Controls.Add(this.rbHateLamp);
-            resources.ApplyResources(this.grpElektrik, "grpElektrik");
-            this.grpElektrik.Name = "grpElektrik";
-            this.grpElektrik.TabStop = false;
-            // 
-            // rbLoveLamp
-            // 
-            resources.ApplyResources(this.rbLoveLamp, "rbLoveLamp");
-            this.rbLoveLamp.Checked = true;
-            this.rbLoveLamp.Name = "rbLoveLamp";
-            this.rbLoveLamp.TabStop = true;
-            this.rbLoveLamp.UseVisualStyleBackColor = true;
-            // 
-            // rbHateLamp
-            // 
-            resources.ApplyResources(this.rbHateLamp, "rbHateLamp");
-            this.rbHateLamp.Name = "rbHateLamp";
-            this.rbHateLamp.UseVisualStyleBackColor = true;
-            // 
-            // label136
-            // 
-            resources.ApplyResources(this.label136, "label136");
-            this.label136.Name = "label136";
-            // 
-            // label135
-            // 
-            resources.ApplyResources(this.label135, "label135");
-            this.label135.Name = "label135";
             // 
             // pnlAgitators
             // 
@@ -3499,47 +3682,6 @@
             resources.ApplyResources(this.label137, "label137");
             this.label137.Name = "label137";
             // 
-            // pnlShaurburgers
-            // 
-            resources.ApplyResources(this.pnlShaurburgers, "pnlShaurburgers");
-            this.pnlShaurburgers.Controls.Add(this.chkMC);
-            this.pnlShaurburgers.Controls.Add(this.numMCWorkTime);
-            this.pnlShaurburgers.Controls.Add(this.label36);
-            this.pnlShaurburgers.Name = "pnlShaurburgers";
-            // 
-            // chkMC
-            // 
-            resources.ApplyResources(this.chkMC, "chkMC");
-            this.chkMC.Checked = true;
-            this.chkMC.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.chkMC.Name = "chkMC";
-            this.chkMC.UseVisualStyleBackColor = true;
-            // 
-            // numMCWorkTime
-            // 
-            resources.ApplyResources(this.numMCWorkTime, "numMCWorkTime");
-            this.numMCWorkTime.Maximum = new decimal(new int[] {
-            12,
-            0,
-            0,
-            0});
-            this.numMCWorkTime.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.numMCWorkTime.Name = "numMCWorkTime";
-            this.numMCWorkTime.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            // 
-            // label36
-            // 
-            resources.ApplyResources(this.label36, "label36");
-            this.label36.Name = "label36";
-            // 
             // pnlAzazella
             // 
             resources.ApplyResources(this.pnlAzazella, "pnlAzazella");
@@ -3880,6 +4022,8 @@
             // pnlPetarena
             // 
             resources.ApplyResources(this.pnlPetarena, "pnlPetarena");
+            this.pnlPetarena.Controls.Add(this.label35);
+            this.pnlPetarena.Controls.Add(this.cboxTrainRunPetType);
             this.pnlPetarena.Controls.Add(this.groupBox6);
             this.pnlPetarena.Controls.Add(this.chkUseRunPet);
             this.pnlPetarena.Name = "pnlPetarena";
@@ -3887,7 +4031,6 @@
             // groupBox6
             // 
             this.groupBox6.Controls.Add(this.chkTrainRunPet);
-            this.groupBox6.Controls.Add(this.cboxTrainRunPetType);
             this.groupBox6.Controls.Add(this.numMaxTrainPetAcceleration);
             this.groupBox6.Controls.Add(this.numMaxTrainPetDexterity);
             this.groupBox6.Controls.Add(this.chkTrainRunPetEndurance);
@@ -3907,6 +4050,8 @@
             this.chkTrainRunPet.CheckState = System.Windows.Forms.CheckState.Checked;
             this.chkTrainRunPet.Name = "chkTrainRunPet";
             this.chkTrainRunPet.UseVisualStyleBackColor = true;
+            this.chkTrainRunPet.CheckedChanged += new System.EventHandler(this.CheckGroupBox_CheckedChanged);
+            this.chkTrainRunPet.VisibleChanged += new System.EventHandler(this.CheckGroupBox_CheckedChanged);
             // 
             // cboxTrainRunPetType
             // 
@@ -4772,6 +4917,11 @@
             this.label84.ForeColor = System.Drawing.Color.Black;
             this.label84.Name = "label84";
             // 
+            // pnlSystemSettings
+            // 
+            resources.ApplyResources(this.pnlSystemSettings, "pnlSystemSettings");
+            this.pnlSystemSettings.Name = "pnlSystemSettings";
+            // 
             // pnlGameSettings
             // 
             resources.ApplyResources(this.pnlGameSettings, "pnlGameSettings");
@@ -5384,134 +5534,6 @@
             // 
             resources.ApplyResources(this.label6, "label6");
             this.label6.Name = "label6";
-            // 
-            // pnlMF
-            // 
-            resources.ApplyResources(this.pnlMF, "pnlMF");
-            this.pnlMF.Controls.Add(this.label34);
-            this.pnlMF.Controls.Add(this.numMinFactoryOre);
-            this.pnlMF.Controls.Add(this.numMinFactoryMoney);
-            this.pnlMF.Controls.Add(this.chkFactory);
-            this.pnlMF.Controls.Add(this.label82);
-            this.pnlMF.Controls.Add(this.cboxFactoryRang);
-            this.pnlMF.Controls.Add(this.label14);
-            this.pnlMF.Controls.Add(this.numFactoryChainCount);
-            this.pnlMF.Controls.Add(this.label26);
-            this.pnlMF.Controls.Add(this.label81);
-            this.pnlMF.Name = "pnlMF";
-            // 
-            // numMinFactoryOre
-            // 
-            resources.ApplyResources(this.numMinFactoryOre, "numMinFactoryOre");
-            this.numMinFactoryOre.Maximum = new decimal(new int[] {
-            9999999,
-            0,
-            0,
-            0});
-            this.numMinFactoryOre.Name = "numMinFactoryOre";
-            this.numMinFactoryOre.Value = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
-            // 
-            // numMinFactoryMoney
-            // 
-            resources.ApplyResources(this.numMinFactoryMoney, "numMinFactoryMoney");
-            this.numMinFactoryMoney.Maximum = new decimal(new int[] {
-            9999999,
-            0,
-            0,
-            0});
-            this.numMinFactoryMoney.Name = "numMinFactoryMoney";
-            this.numMinFactoryMoney.Value = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
-            // 
-            // label82
-            // 
-            resources.ApplyResources(this.label82, "label82");
-            this.label82.ForeColor = System.Drawing.Color.Black;
-            this.label82.Name = "label82";
-            // 
-            // label14
-            // 
-            resources.ApplyResources(this.label14, "label14");
-            this.label14.ForeColor = System.Drawing.Color.Black;
-            this.label14.Name = "label14";
-            // 
-            // label26
-            // 
-            this.label26.Image = global::Moswar.Properties.Resources.Ore;
-            resources.ApplyResources(this.label26, "label26");
-            this.label26.Name = "label26";
-            // 
-            // label81
-            // 
-            this.label81.Image = global::Moswar.Properties.Resources.Money;
-            resources.ApplyResources(this.label81, "label81");
-            this.label81.Name = "label81";
-            // 
-            // numFactoryChainCount
-            // 
-            resources.ApplyResources(this.numFactoryChainCount, "numFactoryChainCount");
-            this.numFactoryChainCount.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.numFactoryChainCount.Name = "numFactoryChainCount";
-            this.numFactoryChainCount.Value = new decimal(new int[] {
-            5,
-            0,
-            0,
-            0});
-            // 
-            // chkFactory
-            // 
-            resources.ApplyResources(this.chkFactory, "chkFactory");
-            this.chkFactory.Name = "chkFactory";
-            this.chkFactory.UseVisualStyleBackColor = true;
-            // 
-            // cboxFactoryRang
-            // 
-            this.cboxFactoryRang.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            resources.ApplyResources(this.cboxFactoryRang, "cboxFactoryRang");
-            this.cboxFactoryRang.FormattingEnabled = true;
-            this.cboxFactoryRang.Items.AddRange(new object[] {
-            resources.GetString("cboxFactoryRang.Items"),
-            resources.GetString("cboxFactoryRang.Items1"),
-            resources.GetString("cboxFactoryRang.Items2"),
-            resources.GetString("cboxFactoryRang.Items3"),
-            resources.GetString("cboxFactoryRang.Items4"),
-            resources.GetString("cboxFactoryRang.Items5"),
-            resources.GetString("cboxFactoryRang.Items6"),
-            resources.GetString("cboxFactoryRang.Items7"),
-            resources.GetString("cboxFactoryRang.Items8"),
-            resources.GetString("cboxFactoryRang.Items9"),
-            resources.GetString("cboxFactoryRang.Items10"),
-            resources.GetString("cboxFactoryRang.Items11"),
-            resources.GetString("cboxFactoryRang.Items12"),
-            resources.GetString("cboxFactoryRang.Items13"),
-            resources.GetString("cboxFactoryRang.Items14"),
-            resources.GetString("cboxFactoryRang.Items15"),
-            resources.GetString("cboxFactoryRang.Items16"),
-            resources.GetString("cboxFactoryRang.Items17"),
-            resources.GetString("cboxFactoryRang.Items18"),
-            resources.GetString("cboxFactoryRang.Items19"),
-            resources.GetString("cboxFactoryRang.Items20"),
-            resources.GetString("cboxFactoryRang.Items21"),
-            resources.GetString("cboxFactoryRang.Items22"),
-            resources.GetString("cboxFactoryRang.Items23"),
-            resources.GetString("cboxFactoryRang.Items24"),
-            resources.GetString("cboxFactoryRang.Items25"),
-            resources.GetString("cboxFactoryRang.Items26"),
-            resources.GetString("cboxFactoryRang.Items27"),
-            resources.GetString("cboxFactoryRang.Items28")});
-            this.cboxFactoryRang.Name = "cboxFactoryRang";
-            this.cboxFactoryRang.SelectedIndexChanged += new System.EventHandler(this.cboxDoppingEvent_SelectedIndexChanged);
             // 
             // pnlClanWars
             // 
@@ -7112,23 +7134,10 @@
             this.btnRunJSCmd.UseVisualStyleBackColor = true;
             this.btnRunJSCmd.Click += new System.EventHandler(this.btnRunJSCmd_Click);
             // 
-            // pnlProxy
+            // label35
             // 
-            resources.ApplyResources(this.pnlProxy, "pnlProxy");
-            this.pnlProxy.Controls.Add(this.grpProxy);
-            this.pnlProxy.Name = "pnlProxy";
-            // 
-            // label34
-            // 
-            resources.ApplyResources(this.label34, "label34");
-            this.label34.Name = "label34";
-            // 
-            // pnlUseItems
-            // 
-            resources.ApplyResources(this.pnlUseItems, "pnlUseItems");
-            this.pnlUseItems.Controls.Add(this.chkOpenPrizeBox);
-            this.pnlUseItems.Controls.Add(this.chkExpDoNotEatPelmeni);
-            this.pnlUseItems.Name = "pnlUseItems";
+            resources.ApplyResources(this.label35, "label35");
+            this.label35.Name = "label35";
             // 
             // frmMain
             // 
@@ -7157,14 +7166,21 @@
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.pnlContainer.ResumeLayout(false);
-            this.pnlShutdown.ResumeLayout(false);
-            this.grpShutDown.ResumeLayout(false);
-            this.grpShutDown.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numSDPlayThimbles)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numSDWorkTime)).EndInit();
-            this.pnlProcess.ResumeLayout(false);
-            this.pnlProcess.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numMaxRestartMemory)).EndInit();
+            this.pnlMisc.ResumeLayout(false);
+            this.pnlMisc.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numExpRevengerPrc)).EndInit();
+            this.grpElektrik.ResumeLayout(false);
+            this.grpElektrik.PerformLayout();
+            this.pnlUseItems.ResumeLayout(false);
+            this.pnlUseItems.PerformLayout();
+            this.pnlMF.ResumeLayout(false);
+            this.pnlMF.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numMinFactoryOre)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numMinFactoryMoney)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numFactoryChainCount)).EndInit();
+            this.pnlShaurburgers.ResumeLayout(false);
+            this.pnlShaurburgers.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numMCWorkTime)).EndInit();
             this.pnlTimings.ResumeLayout(false);
             this.pnlTimings.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numExpAnalyseFightMax)).EndInit();
@@ -7175,13 +7191,22 @@
             ((System.ComponentModel.ISupportInitialize)(this.numExpAnalyseFightMin)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numExpProxyMin)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numExpGoToMin)).EndInit();
+            this.pnlProxy.ResumeLayout(false);
+            this.grpProxy.ResumeLayout(false);
+            this.grpProxy.PerformLayout();
+            this.pnlLogin.ResumeLayout(false);
+            this.pnlLogin.PerformLayout();
+            this.pnlProcess.ResumeLayout(false);
+            this.pnlProcess.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numMaxRestartMemory)).EndInit();
+            this.pnlShutdown.ResumeLayout(false);
+            this.grpShutDown.ResumeLayout(false);
+            this.grpShutDown.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numSDPlayThimbles)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numSDWorkTime)).EndInit();
             this.pnlPatrol.ResumeLayout(false);
             this.pnlPatrol.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numPatrolTime)).EndInit();
-            this.pnlLogin.ResumeLayout(false);
-            this.pnlLogin.PerformLayout();
-            this.grpProxy.ResumeLayout(false);
-            this.grpProxy.PerformLayout();
             this.pnlHumanImitation.ResumeLayout(false);
             this.pnlHumanImitation.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numAFKTime)).EndInit();
@@ -7212,11 +7237,6 @@
             this.grpExpGrpFight.PerformLayout();
             this.pnlSafe.ResumeLayout(false);
             this.pnlSafe.PerformLayout();
-            this.pnlMisc.ResumeLayout(false);
-            this.pnlMisc.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numExpRevengerPrc)).EndInit();
-            this.grpElektrik.ResumeLayout(false);
-            this.grpElektrik.PerformLayout();
             this.pnlAgitators.ResumeLayout(false);
             this.pnlAgitators.PerformLayout();
             this.pnlGrechka.ResumeLayout(false);
@@ -7258,9 +7278,6 @@
             this.pnlPetriks.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numMinPetrikiOre)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numMinPetrikiMoney)).EndInit();
-            this.pnlShaurburgers.ResumeLayout(false);
-            this.pnlShaurburgers.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numMCWorkTime)).EndInit();
             this.pnlAzazella.ResumeLayout(false);
             this.pnlAzazella.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numAzazellaTreasureChance)).EndInit();
@@ -7337,11 +7354,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.numHealMe50)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numAmountHealMe)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numHealMe100)).EndInit();
-            this.pnlMF.ResumeLayout(false);
-            this.pnlMF.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numMinFactoryOre)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numMinFactoryMoney)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numFactoryChainCount)).EndInit();
             this.pnlClanWars.ResumeLayout(false);
             this.pnlClanWars.PerformLayout();
             this.grpClanWarEx.ResumeLayout(false);
@@ -7405,9 +7417,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.statusStrip.ResumeLayout(false);
             this.statusStrip.PerformLayout();
-            this.pnlProxy.ResumeLayout(false);
-            this.pnlUseItems.ResumeLayout(false);
-            this.pnlUseItems.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -8078,7 +8087,8 @@
         private System.Windows.Forms.CheckBox chkShutDown;
         private System.Windows.Forms.Panel pnlProxy;
         private System.Windows.Forms.Label label34;
-        private System.Windows.Forms.Panel pnlUseItems;      
+        private System.Windows.Forms.Panel pnlUseItems;
+        private System.Windows.Forms.Label label35;      
     }
 }
 
