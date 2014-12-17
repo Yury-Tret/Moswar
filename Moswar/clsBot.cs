@@ -4256,55 +4256,6 @@ namespace Moswar
             }            
             return true;
         }
-        private string ReadToolTip(WebBrowser WB, HtmlElement HtmlEl)
-        {
-            bool Minimized = IsIconic(FrmMainhWnd); //Определяем состояние бота.
-            bool Hidden = IsWindowVisible(FrmMainhWnd); //Определяем состояние бота.
-            #region Находим hWnd для "Internet Explorer_Server"
-            IntPtr IEptr = frmMain.GetHandle(WB);
-            IEptr = FindWindowEx(IEptr, IntPtr.Zero, "Shell Embedding", null);
-            IEptr = FindWindowEx(IEptr, IntPtr.Zero, "Shell DocObject View", null);
-            IEptr = FindWindowEx(IEptr, IntPtr.Zero, "Internet Explorer_Server", null);
-            #endregion                        
-            #region Бот свёрнут, необходимо развернуть?
-            if (Minimized) 
-            {
-                SetWindowLong(FrmMainhWnd, GWL_EXSTYLE, GetWindowLong(FrmMainhWnd, GWL_EXSTYLE) ^ WS_EX_LAYERED); //добавляем окну атрибут прозрачности (^ -> XOR)
-                SetLayeredWindowAttributes(FrmMainhWnd, 0, 0, LWA_ALPHA); //Устанавливаем прозрачность = 0%
-                ShowWindow(FrmMainhWnd, SW_SHOWNOACTIVATE); //Бот свёрнут, необходимо развернуть
-            }
-            #endregion
-            #region Высчитываем координаты HtmlEl относительно "Internet Explorer_Server"
-            int x = HtmlEl.OffsetRectangle.Width / 2, y = HtmlEl.OffsetRectangle.Height / 2; //Инициализация
-            while (HtmlEl.OffsetParent != null) 
-            {
-                x += HtmlEl.OffsetRectangle.X;
-                y += HtmlEl.OffsetRectangle.Y;
-                HtmlEl = HtmlEl.OffsetParent;
-            }
-            #endregion
-            #region Проверяем и выставляем поле видимости элемента в бровзере.
-            HtmlEl = frmMain.GetDocument(WB).GetElementsByTagName("HTML")[0]; 
-            int OffsetX = HtmlEl.ScrollRectangle.X; int OffsetY = HtmlEl.ScrollRectangle.Y;            
-            if (x < OffsetX || OffsetX + WB.Width < x) OffsetX = x - WB.Width / 2;
-            if (y < OffsetY || OffsetY + WB.Height < y) OffsetY = y - WB.Height / 2;
-            frmMain.ScrollTo(WB, OffsetX, OffsetY);
-            x -= frmMain.GetDocument(WB).GetElementsByTagName("HTML")[0].ScrollRectangle.X; //Корректировка на скроллер X
-            y -= frmMain.GetDocument(WB).GetElementsByTagName("HTML")[0].ScrollRectangle.Y;  //Корректировка на скроллер Y
-            #endregion
-
-            SendMessage(IEptr, WM_MOUSEMOVE, (IntPtr)0x0, (IntPtr)(int)((x & 0xFFFF) | (y << 16)));
-            #region Бот был свёрнут, необходимо упрятать?
-            if (Minimized) 
-            {
-                ShowWindow(FrmMainhWnd, SW_SHOWMINNOACTIVE); //Бот был свёрнут, необходимо упрятать
-                SetWindowLong(FrmMainhWnd, GWL_EXSTYLE, GetWindowLong(FrmMainhWnd, GWL_EXSTYLE) ^ WS_EX_LAYERED); //добавляем окну атрибут прозрачности (^ -> XOR)
-                SetLayeredWindowAttributes(FrmMainhWnd, 0, 255, LWA_ALPHA); //Устанавливаем прозрачность = 100%
-            }
-            #endregion
-            HtmlEl = frmMain.GetDocument(WB).GetElementById("tooltipHolder");
-            return HtmlEl == null ? "" : HtmlEl.InnerHtml; //Если окошко свёрнуто, то считать не получается
-        }
         private void ReadChat()
         {
             while (true)
