@@ -1198,9 +1198,7 @@ namespace Moswar
             Tip.SetToolTip(chkBerserker, "В течении 10 минут сосредоточиться на поиске врага!");
             Tip.SetToolTip(chkSearchRatRobinHood, "Удирать если, за стенки 5-15, не дают ключик.");
             Tip.SetToolTip(chkSearchRatBambula, "Удирать если, за 35 стенку, не дают гирю.");
-            Tip.SetToolTip(chkOilLeninRobinHood, "Удирать если, за последние 2 стенки, не дают ключик + большой сундук.");
             Tip.SetToolTip(chkMrPlushkin, "Mr. Плюшкин, известный жадина и коллекционер.\nМажоры не размениваются мелкими нападениями 0:оо - 8:оо,\nвыжидая утра, для максимальной выгоды от Агентов!");
-            Tip.SetToolTip(chkOilLeninIronHead, "Каменная башка - умение человека идти на пролом, казалось бы в непроходимых ситуациях.\nУперевшись в 28 вентиль, сливать все билеты, плакать, звать на помощь маму, но стараться пройти!\n*При включенном режиме: Поражения игнорируются.");
             Tip.SetToolTip(cboxWearSet, "Описание сетов:\nКрысолов - костюм охотника в крысопроводе\nХаризматик - используется в патруле и шаурме\nОктябренок - костюм для дуэлей на ленинопроводе\nД'артаньян - костюм для стенок в ленино-крысо-проводах\nПовстанец - костюм для стенок противостояния\nСтандартный - костюм на все остальные случаи жизни\nНудист - костюм в котором знаменитые лампофобы проводят 98% игрового времени.");
             Tip.SetToolTip(numExpRevengerPrc, "Примерная сила вражеского \"Мстителя\" по отношению ко мне.");
             Tip.SetToolTip(lblTaskManagerHelp, "Конструктор позволяющий расставить разрешения и запреты для участия в той или иной стенке.\r\n\r\n\"Временной интервал\" - стенки разрешены только с xx:xx и до xx:xx выбранного дня.\r\n\"Не ходить\" - походы в данный тип стенок в выбранный вами день будут проигнорированы.\r\nПустой не заполненный день недели - разрешенно ходить всегда не зависимо от времени суток.\r\nПустой не заполненный список - разрешенно ходить всегда, не зависимо от дня недели и времени.\r\n\r\n*Интервалы, дни недели по серверному времени.");
@@ -2270,20 +2268,11 @@ namespace Moswar
 
        private void OilType_CheckedChanged(object sender, EventArgs e)
         {
-            #region Нефтепровод
             if (sender.Equals(chkGoOil))
-            {
                 chkGoOilLenin.Enabled = !((CheckBox)sender).Checked;
-                cboxOilLeninLvl.Enabled = !((CheckBox)sender).Checked;
-            }
-            #endregion
-            #region Ленинопровод
             if (sender.Equals(chkGoOilLenin))
-            {
                 chkGoOil.Enabled = !((CheckBox)sender).Checked;
-                cboxOilLvl.Enabled = !((CheckBox)sender).Checked;
-            }
-            #endregion
+            CheckGroupBox_CheckedChanged(sender, e);
         }
 
         private void CheckIP(object sender, EventArgs e)

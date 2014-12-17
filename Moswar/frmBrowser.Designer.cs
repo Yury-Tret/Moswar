@@ -694,6 +694,11 @@
             this.TrayIcon = new System.Windows.Forms.NotifyIcon(this.components);
             this.btnOpenURL = new System.Windows.Forms.Button();
             this.btnRunJSCmd = new System.Windows.Forms.Button();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.label123 = new System.Windows.Forms.Label();
+            this.groupBox7 = new System.Windows.Forms.GroupBox();
+            this.label179 = new System.Windows.Forms.Label();
+            this.label180 = new System.Windows.Forms.Label();
             this.tabControl.SuspendLayout();
             this.tabMainBrowser.SuspendLayout();
             this.AutoApdateMessage.SuspendLayout();
@@ -882,6 +887,8 @@
             this.grpPic.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.statusStrip.SuspendLayout();
+            this.groupBox3.SuspendLayout();
+            this.groupBox7.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnStart
@@ -994,6 +1001,7 @@
             // 
             // pnlContainer
             // 
+            this.pnlContainer.Controls.Add(this.pnlOilPipeline);
             this.pnlContainer.Controls.Add(this.pnlOldOilPipeline);
             this.pnlContainer.Controls.Add(this.pnlPetarena);
             this.pnlContainer.Controls.Add(this.pnlWarPets);
@@ -1035,7 +1043,6 @@
             this.pnlContainer.Controls.Add(this.pnlHeal);
             this.pnlContainer.Controls.Add(this.pnlClanWars);
             this.pnlContainer.Controls.Add(this.pnlHunterClub);
-            this.pnlContainer.Controls.Add(this.pnlOilPipeline);
             this.pnlContainer.Controls.Add(this.pnlRatPipeline);
             this.pnlContainer.Controls.Add(this.pnlDigging);
             this.pnlContainer.Controls.Add(this.pnlBankDeposit);
@@ -1045,10 +1052,7 @@
             // pnlOldOilPipeline
             // 
             resources.ApplyResources(this.pnlOldOilPipeline, "pnlOldOilPipeline");
-            this.pnlOldOilPipeline.Controls.Add(this.chkUseSnikersOil);
-            this.pnlOldOilPipeline.Controls.Add(this.chkGoOil);
-            this.pnlOldOilPipeline.Controls.Add(this.chkOilIgnoreTimeout);
-            this.pnlOldOilPipeline.Controls.Add(this.cboxOilLvl);
+            this.pnlOldOilPipeline.Controls.Add(this.groupBox3);
             this.pnlOldOilPipeline.Name = "pnlOldOilPipeline";
             // 
             // chkUseSnikersOil
@@ -1063,6 +1067,7 @@
             this.chkGoOil.Name = "chkGoOil";
             this.chkGoOil.UseVisualStyleBackColor = true;
             this.chkGoOil.CheckedChanged += new System.EventHandler(this.OilType_CheckedChanged);
+            this.chkGoOil.VisibleChanged += new System.EventHandler(this.OilType_CheckedChanged);
             // 
             // chkOilIgnoreTimeout
             // 
@@ -5895,31 +5900,7 @@
             // pnlOilPipeline
             // 
             resources.ApplyResources(this.pnlOilPipeline, "pnlOilPipeline");
-            this.pnlOilPipeline.Controls.Add(this.chkOilLeninIronHead);
-            this.pnlOilPipeline.Controls.Add(this.chkGoOilLenin);
-            this.pnlOilPipeline.Controls.Add(this.numOffsetSyncOilLenin);
-            this.pnlOilPipeline.Controls.Add(this.chkOilLeninLeaveNoElement);
-            this.pnlOilPipeline.Controls.Add(this.chkOilLeninRobinHood);
-            this.pnlOilPipeline.Controls.Add(this.label102);
-            this.pnlOilPipeline.Controls.Add(this.chkUseItemOilLeninFightLvl30);
-            this.pnlOilPipeline.Controls.Add(this.chkOilLeninLeaveNoKey);
-            this.pnlOilPipeline.Controls.Add(this.label139);
-            this.pnlOilPipeline.Controls.Add(this.chkOilLeninLeaveNoBox);
-            this.pnlOilPipeline.Controls.Add(this.chkUseItemOilLeninFightLvl29);
-            this.pnlOilPipeline.Controls.Add(this.label101);
-            this.pnlOilPipeline.Controls.Add(this.label140);
-            this.pnlOilPipeline.Controls.Add(this.numMaxOilLeninDice);
-            this.pnlOilPipeline.Controls.Add(this.chkUseItemOilLeninFightLvl26);
-            this.pnlOilPipeline.Controls.Add(this.numMaxOilDefeats);
-            this.pnlOilPipeline.Controls.Add(this.label103);
-            this.pnlOilPipeline.Controls.Add(this.chkUseItemOilLeninFightLvl17);
-            this.pnlOilPipeline.Controls.Add(this.lblOilMaxDefeats);
-            this.pnlOilPipeline.Controls.Add(this.chkSyncOilLenin);
-            this.pnlOilPipeline.Controls.Add(this.label59);
-            this.pnlOilPipeline.Controls.Add(this.chkUseItemOilLeninFightLvl8);
-            this.pnlOilPipeline.Controls.Add(this.chkOilUseOhara);
-            this.pnlOilPipeline.Controls.Add(this.cboxOilLeninLvl);
-            this.pnlOilPipeline.Controls.Add(this.cboxOilLeninGrpFightUseItems);
+            this.pnlOilPipeline.Controls.Add(this.groupBox7);
             this.pnlOilPipeline.Name = "pnlOilPipeline";
             // 
             // chkOilLeninIronHead
@@ -5934,6 +5915,7 @@
             this.chkGoOilLenin.Name = "chkGoOilLenin";
             this.chkGoOilLenin.UseVisualStyleBackColor = true;
             this.chkGoOilLenin.CheckedChanged += new System.EventHandler(this.OilType_CheckedChanged);
+            this.chkGoOilLenin.VisibleChanged += new System.EventHandler(this.OilType_CheckedChanged);
             // 
             // numOffsetSyncOilLenin
             // 
@@ -7129,6 +7111,65 @@
             this.btnRunJSCmd.UseVisualStyleBackColor = true;
             this.btnRunJSCmd.Click += new System.EventHandler(this.btnRunJSCmd_Click);
             // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.label123);
+            this.groupBox3.Controls.Add(this.chkGoOil);
+            this.groupBox3.Controls.Add(this.chkUseSnikersOil);
+            this.groupBox3.Controls.Add(this.cboxOilLvl);
+            this.groupBox3.Controls.Add(this.chkOilIgnoreTimeout);
+            resources.ApplyResources(this.groupBox3, "groupBox3");
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.TabStop = false;
+            // 
+            // label123
+            // 
+            resources.ApplyResources(this.label123, "label123");
+            this.label123.Name = "label123";
+            // 
+            // groupBox7
+            // 
+            this.groupBox7.Controls.Add(this.label180);
+            this.groupBox7.Controls.Add(this.label179);
+            this.groupBox7.Controls.Add(this.chkGoOilLenin);
+            this.groupBox7.Controls.Add(this.chkOilLeninIronHead);
+            this.groupBox7.Controls.Add(this.cboxOilLeninGrpFightUseItems);
+            this.groupBox7.Controls.Add(this.cboxOilLeninLvl);
+            this.groupBox7.Controls.Add(this.numOffsetSyncOilLenin);
+            this.groupBox7.Controls.Add(this.chkOilUseOhara);
+            this.groupBox7.Controls.Add(this.chkOilLeninLeaveNoElement);
+            this.groupBox7.Controls.Add(this.chkUseItemOilLeninFightLvl8);
+            this.groupBox7.Controls.Add(this.chkOilLeninRobinHood);
+            this.groupBox7.Controls.Add(this.label59);
+            this.groupBox7.Controls.Add(this.label102);
+            this.groupBox7.Controls.Add(this.chkSyncOilLenin);
+            this.groupBox7.Controls.Add(this.chkUseItemOilLeninFightLvl30);
+            this.groupBox7.Controls.Add(this.lblOilMaxDefeats);
+            this.groupBox7.Controls.Add(this.chkOilLeninLeaveNoKey);
+            this.groupBox7.Controls.Add(this.chkUseItemOilLeninFightLvl17);
+            this.groupBox7.Controls.Add(this.label139);
+            this.groupBox7.Controls.Add(this.label103);
+            this.groupBox7.Controls.Add(this.chkOilLeninLeaveNoBox);
+            this.groupBox7.Controls.Add(this.numMaxOilDefeats);
+            this.groupBox7.Controls.Add(this.chkUseItemOilLeninFightLvl29);
+            this.groupBox7.Controls.Add(this.chkUseItemOilLeninFightLvl26);
+            this.groupBox7.Controls.Add(this.label101);
+            this.groupBox7.Controls.Add(this.numMaxOilLeninDice);
+            this.groupBox7.Controls.Add(this.label140);
+            resources.ApplyResources(this.groupBox7, "groupBox7");
+            this.groupBox7.Name = "groupBox7";
+            this.groupBox7.TabStop = false;
+            // 
+            // label179
+            // 
+            resources.ApplyResources(this.label179, "label179");
+            this.label179.Name = "label179";
+            // 
+            // label180
+            // 
+            resources.ApplyResources(this.label180, "label180");
+            this.label180.Name = "label180";
+            // 
             // frmMain
             // 
             resources.ApplyResources(this, "$this");
@@ -7157,7 +7198,6 @@
             this.tableLayoutPanel1.PerformLayout();
             this.pnlContainer.ResumeLayout(false);
             this.pnlOldOilPipeline.ResumeLayout(false);
-            this.pnlOldOilPipeline.PerformLayout();
             this.pnlPetarena.ResumeLayout(false);
             this.pnlPetarena.PerformLayout();
             this.groupBox6.ResumeLayout(false);
@@ -7358,7 +7398,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.numWantedPlayThimbles)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numHCRevengeMaxMoney)).EndInit();
             this.pnlOilPipeline.ResumeLayout(false);
-            this.pnlOilPipeline.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numOffsetSyncOilLenin)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numMaxOilLeninDice)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numMaxOilDefeats)).EndInit();
@@ -7407,6 +7446,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.statusStrip.ResumeLayout(false);
             this.statusStrip.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
+            this.groupBox7.ResumeLayout(false);
+            this.groupBox7.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -8077,7 +8120,12 @@
         private System.Windows.Forms.Panel pnlProxy;
         private System.Windows.Forms.Label label34;
         private System.Windows.Forms.Panel pnlUseItems;
-        private System.Windows.Forms.Label label35;      
+        private System.Windows.Forms.Label label35;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.Label label123;
+        private System.Windows.Forms.GroupBox groupBox7;
+        private System.Windows.Forms.Label label179;
+        private System.Windows.Forms.Label label180;      
     }
 }
 
