@@ -701,6 +701,9 @@
             this.label180 = new System.Windows.Forms.Label();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
             this.label181 = new System.Windows.Forms.Label();
+            this.groupBox9 = new System.Windows.Forms.GroupBox();
+            this.label182 = new System.Windows.Forms.Label();
+            this.label183 = new System.Windows.Forms.Label();
             this.tabControl.SuspendLayout();
             this.tabMainBrowser.SuspendLayout();
             this.AutoApdateMessage.SuspendLayout();
@@ -892,6 +895,7 @@
             this.groupBox3.SuspendLayout();
             this.groupBox7.SuspendLayout();
             this.groupBox8.SuspendLayout();
+            this.groupBox9.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnStart
@@ -1005,6 +1009,7 @@
             // pnlContainer
             // 
             this.pnlContainer.Controls.Add(this.pnlOilPipeline);
+            this.pnlContainer.Controls.Add(this.pnlRatPipeline);
             this.pnlContainer.Controls.Add(this.pnlDigging);
             this.pnlContainer.Controls.Add(this.pnlHumanImitation);
             this.pnlContainer.Controls.Add(this.pnlMisc);
@@ -1047,7 +1052,6 @@
             this.pnlContainer.Controls.Add(this.pnlHeal);
             this.pnlContainer.Controls.Add(this.pnlClanWars);
             this.pnlContainer.Controls.Add(this.pnlHunterClub);
-            this.pnlContainer.Controls.Add(this.pnlRatPipeline);
             this.pnlContainer.Controls.Add(this.pnlBankDeposit);
             resources.ApplyResources(this.pnlContainer, "pnlContainer");
             this.pnlContainer.Name = "pnlContainer";
@@ -6134,35 +6138,7 @@
             // pnlRatPipeline
             // 
             resources.ApplyResources(this.pnlRatPipeline, "pnlRatPipeline");
-            this.pnlRatPipeline.Controls.Add(this.numMaxSearchRatDefeats);
-            this.pnlRatPipeline.Controls.Add(this.chkSearchRat);
-            this.pnlRatPipeline.Controls.Add(this.lblSearchRatMaxDefeats);
-            this.pnlRatPipeline.Controls.Add(this.label31);
-            this.pnlRatPipeline.Controls.Add(this.label74);
-            this.pnlRatPipeline.Controls.Add(this.label37);
-            this.pnlRatPipeline.Controls.Add(this.label77);
-            this.pnlRatPipeline.Controls.Add(this.cboxRatGrpFightUseItems);
-            this.pnlRatPipeline.Controls.Add(this.label73);
-            this.pnlRatPipeline.Controls.Add(this.chkSearchRatUseOhara);
-            this.pnlRatPipeline.Controls.Add(this.chkSearchRatLeaveNoKey);
-            this.pnlRatPipeline.Controls.Add(this.chkSearchRatLeaveNoBox);
-            this.pnlRatPipeline.Controls.Add(this.label75);
-            this.pnlRatPipeline.Controls.Add(this.chkSearchRatIgnoreAll);
-            this.pnlRatPipeline.Controls.Add(this.chkSearchRatLeaveNoElement);
-            this.pnlRatPipeline.Controls.Add(this.chkUseItemRatFightLvl35);
-            this.pnlRatPipeline.Controls.Add(this.rbRatFastSearchHC);
-            this.pnlRatPipeline.Controls.Add(this.chkSearchRatRobinHood);
-            this.pnlRatPipeline.Controls.Add(this.chkUseItemRatFightLvl5);
-            this.pnlRatPipeline.Controls.Add(this.chkUseItemRatFightLvl30);
-            this.pnlRatPipeline.Controls.Add(this.rbRatFastSearchHoney);
-            this.pnlRatPipeline.Controls.Add(this.chkSearchRatBambula);
-            this.pnlRatPipeline.Controls.Add(this.chkUseItemRatFightLvl10);
-            this.pnlRatPipeline.Controls.Add(this.chkUseItemRatFightLvl25);
-            this.pnlRatPipeline.Controls.Add(this.numRatFastSearch);
-            this.pnlRatPipeline.Controls.Add(this.chkUseRatFastSearch);
-            this.pnlRatPipeline.Controls.Add(this.chkUseItemRatFightLvl15);
-            this.pnlRatPipeline.Controls.Add(this.chkUseItemRatFightLvl20);
-            this.pnlRatPipeline.Controls.Add(this.numMaxSearchRatLvl);
+            this.pnlRatPipeline.Controls.Add(this.groupBox9);
             this.pnlRatPipeline.Name = "pnlRatPipeline";
             // 
             // numMaxSearchRatDefeats
@@ -6190,6 +6166,8 @@
             resources.ApplyResources(this.chkSearchRat, "chkSearchRat");
             this.chkSearchRat.Name = "chkSearchRat";
             this.chkSearchRat.UseVisualStyleBackColor = true;
+            this.chkSearchRat.CheckedChanged += new System.EventHandler(this.CheckGroupBox_CheckedChanged);
+            this.chkSearchRat.VisibleChanged += new System.EventHandler(this.CheckGroupBox_CheckedChanged);
             // 
             // lblSearchRatMaxDefeats
             // 
@@ -7188,6 +7166,53 @@
             resources.ApplyResources(this.label181, "label181");
             this.label181.Name = "label181";
             // 
+            // groupBox9
+            // 
+            this.groupBox9.Controls.Add(this.label183);
+            this.groupBox9.Controls.Add(this.label182);
+            this.groupBox9.Controls.Add(this.chkSearchRat);
+            this.groupBox9.Controls.Add(this.numMaxSearchRatDefeats);
+            this.groupBox9.Controls.Add(this.numMaxSearchRatLvl);
+            this.groupBox9.Controls.Add(this.chkUseItemRatFightLvl20);
+            this.groupBox9.Controls.Add(this.lblSearchRatMaxDefeats);
+            this.groupBox9.Controls.Add(this.chkUseItemRatFightLvl15);
+            this.groupBox9.Controls.Add(this.label31);
+            this.groupBox9.Controls.Add(this.chkUseRatFastSearch);
+            this.groupBox9.Controls.Add(this.label74);
+            this.groupBox9.Controls.Add(this.numRatFastSearch);
+            this.groupBox9.Controls.Add(this.label37);
+            this.groupBox9.Controls.Add(this.chkUseItemRatFightLvl25);
+            this.groupBox9.Controls.Add(this.label77);
+            this.groupBox9.Controls.Add(this.chkUseItemRatFightLvl10);
+            this.groupBox9.Controls.Add(this.cboxRatGrpFightUseItems);
+            this.groupBox9.Controls.Add(this.chkSearchRatBambula);
+            this.groupBox9.Controls.Add(this.rbRatFastSearchHoney);
+            this.groupBox9.Controls.Add(this.chkSearchRatUseOhara);
+            this.groupBox9.Controls.Add(this.chkUseItemRatFightLvl30);
+            this.groupBox9.Controls.Add(this.chkSearchRatLeaveNoKey);
+            this.groupBox9.Controls.Add(this.chkUseItemRatFightLvl5);
+            this.groupBox9.Controls.Add(this.chkSearchRatLeaveNoBox);
+            this.groupBox9.Controls.Add(this.chkSearchRatRobinHood);
+            this.groupBox9.Controls.Add(this.label75);
+            this.groupBox9.Controls.Add(this.rbRatFastSearchHC);
+            this.groupBox9.Controls.Add(this.chkSearchRatIgnoreAll);
+            this.groupBox9.Controls.Add(this.chkUseItemRatFightLvl35);
+            this.groupBox9.Controls.Add(this.chkSearchRatLeaveNoElement);
+            this.groupBox9.Controls.Add(this.label73);
+            resources.ApplyResources(this.groupBox9, "groupBox9");
+            this.groupBox9.Name = "groupBox9";
+            this.groupBox9.TabStop = false;
+            // 
+            // label182
+            // 
+            resources.ApplyResources(this.label182, "label182");
+            this.label182.Name = "label182";
+            // 
+            // label183
+            // 
+            resources.ApplyResources(this.label183, "label183");
+            this.label183.Name = "label183";
+            // 
             // frmMain
             // 
             resources.ApplyResources(this, "$this");
@@ -7420,7 +7445,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.numMaxOilLeninDice)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numMaxOilDefeats)).EndInit();
             this.pnlRatPipeline.ResumeLayout(false);
-            this.pnlRatPipeline.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numMaxSearchRatDefeats)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numRatFastSearch)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numMaxSearchRatLvl)).EndInit();
@@ -7469,6 +7493,8 @@
             this.groupBox7.PerformLayout();
             this.groupBox8.ResumeLayout(false);
             this.groupBox8.PerformLayout();
+            this.groupBox9.ResumeLayout(false);
+            this.groupBox9.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -8146,7 +8172,10 @@
         private System.Windows.Forms.Label label179;
         private System.Windows.Forms.Label label180;
         private System.Windows.Forms.GroupBox groupBox8;
-        private System.Windows.Forms.Label label181;      
+        private System.Windows.Forms.Label label181;
+        private System.Windows.Forms.GroupBox groupBox9;
+        private System.Windows.Forms.Label label183;
+        private System.Windows.Forms.Label label182;      
     }
 }
 
