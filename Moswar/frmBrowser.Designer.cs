@@ -1001,11 +1001,12 @@
             // 
             // pnlContainer
             // 
+            this.pnlContainer.Controls.Add(this.pnlHumanImitation);
+            this.pnlContainer.Controls.Add(this.pnlMisc);
             this.pnlContainer.Controls.Add(this.pnlWarPets);
             this.pnlContainer.Controls.Add(this.pnlOilPipeline);
             this.pnlContainer.Controls.Add(this.pnlOldOilPipeline);
             this.pnlContainer.Controls.Add(this.pnlPetarena);
-            this.pnlContainer.Controls.Add(this.pnlMisc);
             this.pnlContainer.Controls.Add(this.pnlUseItems);
             this.pnlContainer.Controls.Add(this.pnlMF);
             this.pnlContainer.Controls.Add(this.pnlShaurburgers);
@@ -1015,7 +1016,6 @@
             this.pnlContainer.Controls.Add(this.pnlProcess);
             this.pnlContainer.Controls.Add(this.pnlShutdown);
             this.pnlContainer.Controls.Add(this.pnlPatrol);
-            this.pnlContainer.Controls.Add(this.pnlHumanImitation);
             this.pnlContainer.Controls.Add(this.pnlBrowser);
             this.pnlContainer.Controls.Add(this.pnlGroupFights);
             this.pnlContainer.Controls.Add(this.pnlSafe);
