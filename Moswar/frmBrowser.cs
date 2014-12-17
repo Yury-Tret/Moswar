@@ -573,7 +573,6 @@ namespace Moswar
             Bot.Settings.GoGroupFightMafia = chkGoGroupFightMafia.Checked;
             Bot.Settings.MafiaUseLicence = chkMafiaUseLicence.Checked;
 
-            Bot.Settings.GetOil = chkGetOil.Checked;
             if (Bot.Settings.maxOilLvl < cboxOilLvl.SelectedIndex + 1 || chkOilUseOhara.Checked) { Bot.Me.OilHunting.Val = 0; Bot.Me.OilHunting.Stop = false; } //При смене уровня прохождения вентилей, скидываем стоппер.
             Bot.Settings.GoOil = chkGoOil.Checked;
             Bot.Settings.maxOilLvl = cboxOilLvl.SelectedIndex + 1;
@@ -941,7 +940,6 @@ namespace Moswar
                 chkGoGroupFightMafia.Checked = Bot.Settings.GoGroupFightMafia;
                 chkMafiaUseLicence.Checked = Bot.Settings.MafiaUseLicence;
 
-                chkGetOil.Checked = Bot.Settings.GetOil;
                 chkGoOil.Checked = Bot.Settings.GoOil;
                 cboxOilLvl.SelectedIndex = Bot.Settings.maxOilLvl - 1;
                 chkOilIgnoreTimeout.Checked = Bot.Settings.OilIgnoreTimeout;

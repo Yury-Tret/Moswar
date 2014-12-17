@@ -43,6 +43,53 @@
             this.treeViewSettings = new System.Windows.Forms.TreeView();
             this.lblSettingsCaption = new System.Windows.Forms.Label();
             this.pnlContainer = new System.Windows.Forms.Panel();
+            this.pnlOldOilPipeline = new System.Windows.Forms.Panel();
+            this.chkUseSnikersOil = new System.Windows.Forms.CheckBox();
+            this.chkGoOil = new System.Windows.Forms.CheckBox();
+            this.chkOilIgnoreTimeout = new System.Windows.Forms.CheckBox();
+            this.cboxOilLvl = new System.Windows.Forms.ComboBox();
+            this.pnlPetarena = new System.Windows.Forms.Panel();
+            this.label35 = new System.Windows.Forms.Label();
+            this.cboxTrainRunPetType = new System.Windows.Forms.ComboBox();
+            this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.chkTrainRunPet = new System.Windows.Forms.CheckBox();
+            this.numMaxTrainPetAcceleration = new System.Windows.Forms.NumericUpDown();
+            this.numMaxTrainPetDexterity = new System.Windows.Forms.NumericUpDown();
+            this.chkTrainRunPetEndurance = new System.Windows.Forms.CheckBox();
+            this.chkTrainRunPetDexterity = new System.Windows.Forms.CheckBox();
+            this.numMaxTrainPetEndurance = new System.Windows.Forms.NumericUpDown();
+            this.chkTrainRunPetAcceleration = new System.Windows.Forms.CheckBox();
+            this.numMaxTrainPetSpeed = new System.Windows.Forms.NumericUpDown();
+            this.chkTrainRunPetSpeed = new System.Windows.Forms.CheckBox();
+            this.chkUseRunPet = new System.Windows.Forms.CheckBox();
+            this.pnlWarPets = new System.Windows.Forms.Panel();
+            this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.numHealPet50 = new System.Windows.Forms.NumericUpDown();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.numHealPet100 = new System.Windows.Forms.NumericUpDown();
+            this.label12 = new System.Windows.Forms.Label();
+            this.chkBuyHealPet = new System.Windows.Forms.CheckBox();
+            this.label119 = new System.Windows.Forms.Label();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.chkTrainWarPet = new System.Windows.Forms.CheckBox();
+            this.numMinTrainPetOil = new System.Windows.Forms.NumericUpDown();
+            this.numMaxTrainPetFocus = new System.Windows.Forms.NumericUpDown();
+            this.chkTrainPetMass = new System.Windows.Forms.CheckBox();
+            this.numMaxTrainPetLoyality = new System.Windows.Forms.NumericUpDown();
+            this.chkTrainPetFocus = new System.Windows.Forms.CheckBox();
+            this.label29 = new System.Windows.Forms.Label();
+            this.chkTrainPetLoyality = new System.Windows.Forms.CheckBox();
+            this.label64 = new System.Windows.Forms.Label();
+            this.numMinTrainPetOre = new System.Windows.Forms.NumericUpDown();
+            this.numMaxTrainPetMass = new System.Windows.Forms.NumericUpDown();
+            this.label30 = new System.Windows.Forms.Label();
+            this.cboxTrainWarPetType = new System.Windows.Forms.ComboBox();
+            this.label65 = new System.Windows.Forms.Label();
+            this.chkUseTrainWhip = new System.Windows.Forms.CheckBox();
+            this.numMinTrainPetMoney = new System.Windows.Forms.NumericUpDown();
+            this.cboxSetWarPetType = new System.Windows.Forms.ComboBox();
             this.pnlMisc = new System.Windows.Forms.Panel();
             this.chkUseWearSet = new System.Windows.Forms.CheckBox();
             this.numExpRevengerPrc = new System.Windows.Forms.NumericUpDown();
@@ -353,19 +400,6 @@
             this.chkBlockThimbles = new System.Windows.Forms.CheckBox();
             this.label52 = new System.Windows.Forms.Label();
             this.numMaxPyramidPrice = new System.Windows.Forms.NumericUpDown();
-            this.pnlPetarena = new System.Windows.Forms.Panel();
-            this.groupBox6 = new System.Windows.Forms.GroupBox();
-            this.chkTrainRunPet = new System.Windows.Forms.CheckBox();
-            this.cboxTrainRunPetType = new System.Windows.Forms.ComboBox();
-            this.numMaxTrainPetAcceleration = new System.Windows.Forms.NumericUpDown();
-            this.numMaxTrainPetDexterity = new System.Windows.Forms.NumericUpDown();
-            this.chkTrainRunPetEndurance = new System.Windows.Forms.CheckBox();
-            this.chkTrainRunPetDexterity = new System.Windows.Forms.CheckBox();
-            this.numMaxTrainPetEndurance = new System.Windows.Forms.NumericUpDown();
-            this.chkTrainRunPetAcceleration = new System.Windows.Forms.CheckBox();
-            this.numMaxTrainPetSpeed = new System.Windows.Forms.NumericUpDown();
-            this.chkTrainRunPetSpeed = new System.Windows.Forms.CheckBox();
-            this.chkUseRunPet = new System.Windows.Forms.CheckBox();
             this.pnlDopings = new System.Windows.Forms.Panel();
             this.lstDoping = new System.Windows.Forms.ListBox();
             this.chkRestartDoping = new System.Windows.Forms.CheckBox();
@@ -443,34 +477,6 @@
             this.pnlGameSettings = new System.Windows.Forms.Panel();
             this.pnlCombatLocations = new System.Windows.Forms.Panel();
             this.pnlNoncombatLocations = new System.Windows.Forms.Panel();
-            this.pnlWarPets = new System.Windows.Forms.Panel();
-            this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.numHealPet50 = new System.Windows.Forms.NumericUpDown();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.numHealPet100 = new System.Windows.Forms.NumericUpDown();
-            this.label12 = new System.Windows.Forms.Label();
-            this.chkBuyHealPet = new System.Windows.Forms.CheckBox();
-            this.label119 = new System.Windows.Forms.Label();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.chkTrainWarPet = new System.Windows.Forms.CheckBox();
-            this.numMinTrainPetOil = new System.Windows.Forms.NumericUpDown();
-            this.numMaxTrainPetFocus = new System.Windows.Forms.NumericUpDown();
-            this.chkTrainPetMass = new System.Windows.Forms.CheckBox();
-            this.numMaxTrainPetLoyality = new System.Windows.Forms.NumericUpDown();
-            this.chkTrainPetFocus = new System.Windows.Forms.CheckBox();
-            this.label29 = new System.Windows.Forms.Label();
-            this.chkTrainPetLoyality = new System.Windows.Forms.CheckBox();
-            this.label64 = new System.Windows.Forms.Label();
-            this.numMinTrainPetOre = new System.Windows.Forms.NumericUpDown();
-            this.numMaxTrainPetMass = new System.Windows.Forms.NumericUpDown();
-            this.label30 = new System.Windows.Forms.Label();
-            this.cboxTrainWarPetType = new System.Windows.Forms.ComboBox();
-            this.label65 = new System.Windows.Forms.Label();
-            this.chkUseTrainWhip = new System.Windows.Forms.CheckBox();
-            this.numMinTrainPetMoney = new System.Windows.Forms.NumericUpDown();
-            this.cboxSetWarPetType = new System.Windows.Forms.ComboBox();
             this.pnlMoneyToOre = new System.Windows.Forms.Panel();
             this.numExchangeBankMoney = new System.Windows.Forms.NumericUpDown();
             this.label18 = new System.Windows.Forms.Label();
@@ -594,12 +600,6 @@
             this.chkUseItemRatFightLvl15 = new System.Windows.Forms.CheckBox();
             this.chkUseItemRatFightLvl20 = new System.Windows.Forms.CheckBox();
             this.numMaxSearchRatLvl = new System.Windows.Forms.NumericUpDown();
-            this.pnlOldOilPipeline = new System.Windows.Forms.Panel();
-            this.chkUseSnikersOil = new System.Windows.Forms.CheckBox();
-            this.chkGoOil = new System.Windows.Forms.CheckBox();
-            this.chkOilIgnoreTimeout = new System.Windows.Forms.CheckBox();
-            this.cboxOilLvl = new System.Windows.Forms.ComboBox();
-            this.chkGetOil = new System.Windows.Forms.CheckBox();
             this.pnlDigging = new System.Windows.Forms.Panel();
             this.rbBuyRPick = new System.Windows.Forms.RadioButton();
             this.chkMetro = new System.Windows.Forms.CheckBox();
@@ -694,13 +694,30 @@
             this.TrayIcon = new System.Windows.Forms.NotifyIcon(this.components);
             this.btnOpenURL = new System.Windows.Forms.Button();
             this.btnRunJSCmd = new System.Windows.Forms.Button();
-            this.label35 = new System.Windows.Forms.Label();
             this.tabControl.SuspendLayout();
             this.tabMainBrowser.SuspendLayout();
             this.AutoApdateMessage.SuspendLayout();
             this.tabMainSettings.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.pnlContainer.SuspendLayout();
+            this.pnlOldOilPipeline.SuspendLayout();
+            this.pnlPetarena.SuspendLayout();
+            this.groupBox6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numMaxTrainPetAcceleration)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numMaxTrainPetDexterity)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numMaxTrainPetEndurance)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numMaxTrainPetSpeed)).BeginInit();
+            this.pnlWarPets.SuspendLayout();
+            this.groupBox5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numHealPet50)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numHealPet100)).BeginInit();
+            this.groupBox4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numMinTrainPetOil)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numMaxTrainPetFocus)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numMaxTrainPetLoyality)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numMinTrainPetOre)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numMaxTrainPetMass)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numMinTrainPetMoney)).BeginInit();
             this.pnlMisc.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numExpRevengerPrc)).BeginInit();
             this.grpElektrik.SuspendLayout();
@@ -791,12 +808,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.numPyramidWanted)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numPyramidAmount)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numMaxPyramidPrice)).BeginInit();
-            this.pnlPetarena.SuspendLayout();
-            this.groupBox6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numMaxTrainPetAcceleration)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numMaxTrainPetDexterity)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numMaxTrainPetEndurance)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numMaxTrainPetSpeed)).BeginInit();
             this.pnlDopings.SuspendLayout();
             this.grpDopingSettings.SuspendLayout();
             this.grpDoping.SuspendLayout();
@@ -816,17 +827,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.numAddVictim)).BeginInit();
             this.grpWerewolf.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pboxWerewolfPower)).BeginInit();
-            this.pnlWarPets.SuspendLayout();
-            this.groupBox5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numHealPet50)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numHealPet100)).BeginInit();
-            this.groupBox4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numMinTrainPetOil)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numMaxTrainPetFocus)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numMaxTrainPetLoyality)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numMinTrainPetOre)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numMaxTrainPetMass)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numMinTrainPetMoney)).BeginInit();
             this.pnlMoneyToOre.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numExchangeBankMoney)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numPlayThimbles)).BeginInit();
@@ -853,7 +853,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.numMaxSearchRatDefeats)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numRatFastSearch)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numMaxSearchRatLvl)).BeginInit();
-            this.pnlOldOilPipeline.SuspendLayout();
             this.pnlDigging.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numMaxRatLvl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numMaxRatDefeats)).BeginInit();
@@ -995,6 +994,7 @@
             // 
             // pnlContainer
             // 
+            this.pnlContainer.Controls.Add(this.pnlOldOilPipeline);
             this.pnlContainer.Controls.Add(this.pnlPetarena);
             this.pnlContainer.Controls.Add(this.pnlWarPets);
             this.pnlContainer.Controls.Add(this.pnlMisc);
@@ -1037,11 +1037,501 @@
             this.pnlContainer.Controls.Add(this.pnlHunterClub);
             this.pnlContainer.Controls.Add(this.pnlOilPipeline);
             this.pnlContainer.Controls.Add(this.pnlRatPipeline);
-            this.pnlContainer.Controls.Add(this.pnlOldOilPipeline);
             this.pnlContainer.Controls.Add(this.pnlDigging);
             this.pnlContainer.Controls.Add(this.pnlBankDeposit);
             resources.ApplyResources(this.pnlContainer, "pnlContainer");
             this.pnlContainer.Name = "pnlContainer";
+            // 
+            // pnlOldOilPipeline
+            // 
+            resources.ApplyResources(this.pnlOldOilPipeline, "pnlOldOilPipeline");
+            this.pnlOldOilPipeline.Controls.Add(this.chkUseSnikersOil);
+            this.pnlOldOilPipeline.Controls.Add(this.chkGoOil);
+            this.pnlOldOilPipeline.Controls.Add(this.chkOilIgnoreTimeout);
+            this.pnlOldOilPipeline.Controls.Add(this.cboxOilLvl);
+            this.pnlOldOilPipeline.Name = "pnlOldOilPipeline";
+            // 
+            // chkUseSnikersOil
+            // 
+            resources.ApplyResources(this.chkUseSnikersOil, "chkUseSnikersOil");
+            this.chkUseSnikersOil.Name = "chkUseSnikersOil";
+            this.chkUseSnikersOil.UseVisualStyleBackColor = true;
+            // 
+            // chkGoOil
+            // 
+            resources.ApplyResources(this.chkGoOil, "chkGoOil");
+            this.chkGoOil.Name = "chkGoOil";
+            this.chkGoOil.UseVisualStyleBackColor = true;
+            this.chkGoOil.CheckedChanged += new System.EventHandler(this.OilType_CheckedChanged);
+            // 
+            // chkOilIgnoreTimeout
+            // 
+            resources.ApplyResources(this.chkOilIgnoreTimeout, "chkOilIgnoreTimeout");
+            this.chkOilIgnoreTimeout.Name = "chkOilIgnoreTimeout";
+            this.chkOilIgnoreTimeout.UseVisualStyleBackColor = true;
+            // 
+            // cboxOilLvl
+            // 
+            this.cboxOilLvl.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            resources.ApplyResources(this.cboxOilLvl, "cboxOilLvl");
+            this.cboxOilLvl.FormattingEnabled = true;
+            this.cboxOilLvl.Items.AddRange(new object[] {
+            resources.GetString("cboxOilLvl.Items"),
+            resources.GetString("cboxOilLvl.Items1"),
+            resources.GetString("cboxOilLvl.Items2"),
+            resources.GetString("cboxOilLvl.Items3"),
+            resources.GetString("cboxOilLvl.Items4"),
+            resources.GetString("cboxOilLvl.Items5"),
+            resources.GetString("cboxOilLvl.Items6"),
+            resources.GetString("cboxOilLvl.Items7"),
+            resources.GetString("cboxOilLvl.Items8"),
+            resources.GetString("cboxOilLvl.Items9"),
+            resources.GetString("cboxOilLvl.Items10"),
+            resources.GetString("cboxOilLvl.Items11"),
+            resources.GetString("cboxOilLvl.Items12"),
+            resources.GetString("cboxOilLvl.Items13"),
+            resources.GetString("cboxOilLvl.Items14"),
+            resources.GetString("cboxOilLvl.Items15")});
+            this.cboxOilLvl.Name = "cboxOilLvl";
+            // 
+            // pnlPetarena
+            // 
+            resources.ApplyResources(this.pnlPetarena, "pnlPetarena");
+            this.pnlPetarena.Controls.Add(this.label35);
+            this.pnlPetarena.Controls.Add(this.cboxTrainRunPetType);
+            this.pnlPetarena.Controls.Add(this.groupBox6);
+            this.pnlPetarena.Controls.Add(this.chkUseRunPet);
+            this.pnlPetarena.Name = "pnlPetarena";
+            // 
+            // label35
+            // 
+            resources.ApplyResources(this.label35, "label35");
+            this.label35.Name = "label35";
+            // 
+            // cboxTrainRunPetType
+            // 
+            this.cboxTrainRunPetType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            resources.ApplyResources(this.cboxTrainRunPetType, "cboxTrainRunPetType");
+            this.cboxTrainRunPetType.FormattingEnabled = true;
+            this.cboxTrainRunPetType.Items.AddRange(new object[] {
+            resources.GetString("cboxTrainRunPetType.Items"),
+            resources.GetString("cboxTrainRunPetType.Items1"),
+            resources.GetString("cboxTrainRunPetType.Items2"),
+            resources.GetString("cboxTrainRunPetType.Items3"),
+            resources.GetString("cboxTrainRunPetType.Items4"),
+            resources.GetString("cboxTrainRunPetType.Items5"),
+            resources.GetString("cboxTrainRunPetType.Items6"),
+            resources.GetString("cboxTrainRunPetType.Items7"),
+            resources.GetString("cboxTrainRunPetType.Items8"),
+            resources.GetString("cboxTrainRunPetType.Items9"),
+            resources.GetString("cboxTrainRunPetType.Items10"),
+            resources.GetString("cboxTrainRunPetType.Items11")});
+            this.cboxTrainRunPetType.Name = "cboxTrainRunPetType";
+            // 
+            // groupBox6
+            // 
+            this.groupBox6.Controls.Add(this.chkTrainRunPet);
+            this.groupBox6.Controls.Add(this.numMaxTrainPetAcceleration);
+            this.groupBox6.Controls.Add(this.numMaxTrainPetDexterity);
+            this.groupBox6.Controls.Add(this.chkTrainRunPetEndurance);
+            this.groupBox6.Controls.Add(this.chkTrainRunPetDexterity);
+            this.groupBox6.Controls.Add(this.numMaxTrainPetEndurance);
+            this.groupBox6.Controls.Add(this.chkTrainRunPetAcceleration);
+            this.groupBox6.Controls.Add(this.numMaxTrainPetSpeed);
+            this.groupBox6.Controls.Add(this.chkTrainRunPetSpeed);
+            resources.ApplyResources(this.groupBox6, "groupBox6");
+            this.groupBox6.Name = "groupBox6";
+            this.groupBox6.TabStop = false;
+            // 
+            // chkTrainRunPet
+            // 
+            resources.ApplyResources(this.chkTrainRunPet, "chkTrainRunPet");
+            this.chkTrainRunPet.Checked = true;
+            this.chkTrainRunPet.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.chkTrainRunPet.Name = "chkTrainRunPet";
+            this.chkTrainRunPet.UseVisualStyleBackColor = true;
+            this.chkTrainRunPet.CheckedChanged += new System.EventHandler(this.CheckGroupBox_CheckedChanged);
+            this.chkTrainRunPet.VisibleChanged += new System.EventHandler(this.CheckGroupBox_CheckedChanged);
+            // 
+            // numMaxTrainPetAcceleration
+            // 
+            resources.ApplyResources(this.numMaxTrainPetAcceleration, "numMaxTrainPetAcceleration");
+            this.numMaxTrainPetAcceleration.Maximum = new decimal(new int[] {
+            750,
+            0,
+            0,
+            0});
+            this.numMaxTrainPetAcceleration.Name = "numMaxTrainPetAcceleration";
+            this.numMaxTrainPetAcceleration.Value = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
+            // 
+            // numMaxTrainPetDexterity
+            // 
+            resources.ApplyResources(this.numMaxTrainPetDexterity, "numMaxTrainPetDexterity");
+            this.numMaxTrainPetDexterity.Maximum = new decimal(new int[] {
+            750,
+            0,
+            0,
+            0});
+            this.numMaxTrainPetDexterity.Name = "numMaxTrainPetDexterity";
+            this.numMaxTrainPetDexterity.Value = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
+            // 
+            // chkTrainRunPetEndurance
+            // 
+            resources.ApplyResources(this.chkTrainRunPetEndurance, "chkTrainRunPetEndurance");
+            this.chkTrainRunPetEndurance.Name = "chkTrainRunPetEndurance";
+            this.chkTrainRunPetEndurance.UseVisualStyleBackColor = true;
+            // 
+            // chkTrainRunPetDexterity
+            // 
+            resources.ApplyResources(this.chkTrainRunPetDexterity, "chkTrainRunPetDexterity");
+            this.chkTrainRunPetDexterity.Name = "chkTrainRunPetDexterity";
+            this.chkTrainRunPetDexterity.UseVisualStyleBackColor = true;
+            // 
+            // numMaxTrainPetEndurance
+            // 
+            resources.ApplyResources(this.numMaxTrainPetEndurance, "numMaxTrainPetEndurance");
+            this.numMaxTrainPetEndurance.Maximum = new decimal(new int[] {
+            750,
+            0,
+            0,
+            0});
+            this.numMaxTrainPetEndurance.Name = "numMaxTrainPetEndurance";
+            this.numMaxTrainPetEndurance.Value = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
+            // 
+            // chkTrainRunPetAcceleration
+            // 
+            resources.ApplyResources(this.chkTrainRunPetAcceleration, "chkTrainRunPetAcceleration");
+            this.chkTrainRunPetAcceleration.Name = "chkTrainRunPetAcceleration";
+            this.chkTrainRunPetAcceleration.UseVisualStyleBackColor = true;
+            // 
+            // numMaxTrainPetSpeed
+            // 
+            resources.ApplyResources(this.numMaxTrainPetSpeed, "numMaxTrainPetSpeed");
+            this.numMaxTrainPetSpeed.Maximum = new decimal(new int[] {
+            750,
+            0,
+            0,
+            0});
+            this.numMaxTrainPetSpeed.Name = "numMaxTrainPetSpeed";
+            this.numMaxTrainPetSpeed.Value = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
+            // 
+            // chkTrainRunPetSpeed
+            // 
+            resources.ApplyResources(this.chkTrainRunPetSpeed, "chkTrainRunPetSpeed");
+            this.chkTrainRunPetSpeed.Name = "chkTrainRunPetSpeed";
+            this.chkTrainRunPetSpeed.UseVisualStyleBackColor = true;
+            // 
+            // chkUseRunPet
+            // 
+            resources.ApplyResources(this.chkUseRunPet, "chkUseRunPet");
+            this.chkUseRunPet.Name = "chkUseRunPet";
+            this.chkUseRunPet.UseVisualStyleBackColor = true;
+            // 
+            // pnlWarPets
+            // 
+            resources.ApplyResources(this.pnlWarPets, "pnlWarPets");
+            this.pnlWarPets.Controls.Add(this.groupBox5);
+            this.pnlWarPets.Controls.Add(this.label119);
+            this.pnlWarPets.Controls.Add(this.groupBox4);
+            this.pnlWarPets.Controls.Add(this.cboxSetWarPetType);
+            this.pnlWarPets.Name = "pnlWarPets";
+            // 
+            // groupBox5
+            // 
+            this.groupBox5.Controls.Add(this.label10);
+            this.groupBox5.Controls.Add(this.numHealPet50);
+            this.groupBox5.Controls.Add(this.label13);
+            this.groupBox5.Controls.Add(this.label11);
+            this.groupBox5.Controls.Add(this.numHealPet100);
+            this.groupBox5.Controls.Add(this.label12);
+            this.groupBox5.Controls.Add(this.chkBuyHealPet);
+            resources.ApplyResources(this.groupBox5, "groupBox5");
+            this.groupBox5.Name = "groupBox5";
+            this.groupBox5.TabStop = false;
+            // 
+            // label10
+            // 
+            resources.ApplyResources(this.label10, "label10");
+            this.label10.Name = "label10";
+            // 
+            // numHealPet50
+            // 
+            resources.ApplyResources(this.numHealPet50, "numHealPet50");
+            this.numHealPet50.Name = "numHealPet50";
+            this.numHealPet50.Value = new decimal(new int[] {
+            40,
+            0,
+            0,
+            0});
+            // 
+            // label13
+            // 
+            resources.ApplyResources(this.label13, "label13");
+            this.label13.Name = "label13";
+            // 
+            // label11
+            // 
+            resources.ApplyResources(this.label11, "label11");
+            this.label11.Name = "label11";
+            // 
+            // numHealPet100
+            // 
+            resources.ApplyResources(this.numHealPet100, "numHealPet100");
+            this.numHealPet100.Name = "numHealPet100";
+            this.numHealPet100.Value = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
+            // 
+            // label12
+            // 
+            resources.ApplyResources(this.label12, "label12");
+            this.label12.Name = "label12";
+            // 
+            // chkBuyHealPet
+            // 
+            resources.ApplyResources(this.chkBuyHealPet, "chkBuyHealPet");
+            this.chkBuyHealPet.Checked = true;
+            this.chkBuyHealPet.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.chkBuyHealPet.Name = "chkBuyHealPet";
+            this.chkBuyHealPet.UseVisualStyleBackColor = true;
+            // 
+            // label119
+            // 
+            resources.ApplyResources(this.label119, "label119");
+            this.label119.Name = "label119";
+            // 
+            // groupBox4
+            // 
+            this.groupBox4.Controls.Add(this.chkTrainWarPet);
+            this.groupBox4.Controls.Add(this.numMinTrainPetOil);
+            this.groupBox4.Controls.Add(this.numMaxTrainPetFocus);
+            this.groupBox4.Controls.Add(this.chkTrainPetMass);
+            this.groupBox4.Controls.Add(this.numMaxTrainPetLoyality);
+            this.groupBox4.Controls.Add(this.chkTrainPetFocus);
+            this.groupBox4.Controls.Add(this.label29);
+            this.groupBox4.Controls.Add(this.chkTrainPetLoyality);
+            this.groupBox4.Controls.Add(this.label64);
+            this.groupBox4.Controls.Add(this.numMinTrainPetOre);
+            this.groupBox4.Controls.Add(this.numMaxTrainPetMass);
+            this.groupBox4.Controls.Add(this.label30);
+            this.groupBox4.Controls.Add(this.cboxTrainWarPetType);
+            this.groupBox4.Controls.Add(this.label65);
+            this.groupBox4.Controls.Add(this.chkUseTrainWhip);
+            this.groupBox4.Controls.Add(this.numMinTrainPetMoney);
+            resources.ApplyResources(this.groupBox4, "groupBox4");
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.TabStop = false;
+            // 
+            // chkTrainWarPet
+            // 
+            resources.ApplyResources(this.chkTrainWarPet, "chkTrainWarPet");
+            this.chkTrainWarPet.Checked = true;
+            this.chkTrainWarPet.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.chkTrainWarPet.Name = "chkTrainWarPet";
+            this.chkTrainWarPet.UseVisualStyleBackColor = true;
+            // 
+            // numMinTrainPetOil
+            // 
+            resources.ApplyResources(this.numMinTrainPetOil, "numMinTrainPetOil");
+            this.numMinTrainPetOil.Maximum = new decimal(new int[] {
+            1000000,
+            0,
+            0,
+            0});
+            this.numMinTrainPetOil.Name = "numMinTrainPetOil";
+            // 
+            // numMaxTrainPetFocus
+            // 
+            resources.ApplyResources(this.numMaxTrainPetFocus, "numMaxTrainPetFocus");
+            this.numMaxTrainPetFocus.Maximum = new decimal(new int[] {
+            500,
+            0,
+            0,
+            0});
+            this.numMaxTrainPetFocus.Name = "numMaxTrainPetFocus";
+            this.numMaxTrainPetFocus.Value = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
+            // 
+            // chkTrainPetMass
+            // 
+            resources.ApplyResources(this.chkTrainPetMass, "chkTrainPetMass");
+            this.chkTrainPetMass.Checked = true;
+            this.chkTrainPetMass.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.chkTrainPetMass.Name = "chkTrainPetMass";
+            this.chkTrainPetMass.UseVisualStyleBackColor = true;
+            // 
+            // numMaxTrainPetLoyality
+            // 
+            resources.ApplyResources(this.numMaxTrainPetLoyality, "numMaxTrainPetLoyality");
+            this.numMaxTrainPetLoyality.Maximum = new decimal(new int[] {
+            500,
+            0,
+            0,
+            0});
+            this.numMaxTrainPetLoyality.Name = "numMaxTrainPetLoyality";
+            this.numMaxTrainPetLoyality.Value = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
+            // 
+            // chkTrainPetFocus
+            // 
+            resources.ApplyResources(this.chkTrainPetFocus, "chkTrainPetFocus");
+            this.chkTrainPetFocus.Checked = true;
+            this.chkTrainPetFocus.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.chkTrainPetFocus.Name = "chkTrainPetFocus";
+            this.chkTrainPetFocus.UseVisualStyleBackColor = true;
+            // 
+            // label29
+            // 
+            resources.ApplyResources(this.label29, "label29");
+            this.label29.ForeColor = System.Drawing.Color.Black;
+            this.label29.Name = "label29";
+            // 
+            // chkTrainPetLoyality
+            // 
+            resources.ApplyResources(this.chkTrainPetLoyality, "chkTrainPetLoyality");
+            this.chkTrainPetLoyality.Checked = true;
+            this.chkTrainPetLoyality.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.chkTrainPetLoyality.Name = "chkTrainPetLoyality";
+            this.chkTrainPetLoyality.UseVisualStyleBackColor = true;
+            // 
+            // label64
+            // 
+            this.label64.Image = global::Moswar.Properties.Resources.Money;
+            resources.ApplyResources(this.label64, "label64");
+            this.label64.Name = "label64";
+            // 
+            // numMinTrainPetOre
+            // 
+            resources.ApplyResources(this.numMinTrainPetOre, "numMinTrainPetOre");
+            this.numMinTrainPetOre.Maximum = new decimal(new int[] {
+            1000000,
+            0,
+            0,
+            0});
+            this.numMinTrainPetOre.Name = "numMinTrainPetOre";
+            this.numMinTrainPetOre.Value = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
+            // 
+            // numMaxTrainPetMass
+            // 
+            resources.ApplyResources(this.numMaxTrainPetMass, "numMaxTrainPetMass");
+            this.numMaxTrainPetMass.Maximum = new decimal(new int[] {
+            500,
+            0,
+            0,
+            0});
+            this.numMaxTrainPetMass.Name = "numMaxTrainPetMass";
+            this.numMaxTrainPetMass.Value = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
+            // 
+            // label30
+            // 
+            this.label30.Image = global::Moswar.Properties.Resources.Oil;
+            resources.ApplyResources(this.label30, "label30");
+            this.label30.Name = "label30";
+            // 
+            // cboxTrainWarPetType
+            // 
+            this.cboxTrainWarPetType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            resources.ApplyResources(this.cboxTrainWarPetType, "cboxTrainWarPetType");
+            this.cboxTrainWarPetType.FormattingEnabled = true;
+            this.cboxTrainWarPetType.Items.AddRange(new object[] {
+            resources.GetString("cboxTrainWarPetType.Items"),
+            resources.GetString("cboxTrainWarPetType.Items1"),
+            resources.GetString("cboxTrainWarPetType.Items2"),
+            resources.GetString("cboxTrainWarPetType.Items3"),
+            resources.GetString("cboxTrainWarPetType.Items4"),
+            resources.GetString("cboxTrainWarPetType.Items5"),
+            resources.GetString("cboxTrainWarPetType.Items6"),
+            resources.GetString("cboxTrainWarPetType.Items7"),
+            resources.GetString("cboxTrainWarPetType.Items8"),
+            resources.GetString("cboxTrainWarPetType.Items9"),
+            resources.GetString("cboxTrainWarPetType.Items10"),
+            resources.GetString("cboxTrainWarPetType.Items11"),
+            resources.GetString("cboxTrainWarPetType.Items12"),
+            resources.GetString("cboxTrainWarPetType.Items13")});
+            this.cboxTrainWarPetType.Name = "cboxTrainWarPetType";
+            this.cboxTrainWarPetType.SelectedIndexChanged += new System.EventHandler(this.cboxTrainWarPetType_SelectedIndexChanged);
+            // 
+            // label65
+            // 
+            this.label65.Image = global::Moswar.Properties.Resources.Ore;
+            resources.ApplyResources(this.label65, "label65");
+            this.label65.Name = "label65";
+            // 
+            // chkUseTrainWhip
+            // 
+            resources.ApplyResources(this.chkUseTrainWhip, "chkUseTrainWhip");
+            this.chkUseTrainWhip.Name = "chkUseTrainWhip";
+            this.chkUseTrainWhip.UseVisualStyleBackColor = true;
+            // 
+            // numMinTrainPetMoney
+            // 
+            resources.ApplyResources(this.numMinTrainPetMoney, "numMinTrainPetMoney");
+            this.numMinTrainPetMoney.Maximum = new decimal(new int[] {
+            1000000,
+            0,
+            0,
+            0});
+            this.numMinTrainPetMoney.Name = "numMinTrainPetMoney";
+            this.numMinTrainPetMoney.Value = new decimal(new int[] {
+            100,
+            0,
+            0,
+            0});
+            // 
+            // cboxSetWarPetType
+            // 
+            this.cboxSetWarPetType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            resources.ApplyResources(this.cboxSetWarPetType, "cboxSetWarPetType");
+            this.cboxSetWarPetType.FormattingEnabled = true;
+            this.cboxSetWarPetType.Items.AddRange(new object[] {
+            resources.GetString("cboxSetWarPetType.Items"),
+            resources.GetString("cboxSetWarPetType.Items1"),
+            resources.GetString("cboxSetWarPetType.Items2"),
+            resources.GetString("cboxSetWarPetType.Items3"),
+            resources.GetString("cboxSetWarPetType.Items4"),
+            resources.GetString("cboxSetWarPetType.Items5"),
+            resources.GetString("cboxSetWarPetType.Items6"),
+            resources.GetString("cboxSetWarPetType.Items7"),
+            resources.GetString("cboxSetWarPetType.Items8"),
+            resources.GetString("cboxSetWarPetType.Items9"),
+            resources.GetString("cboxSetWarPetType.Items10"),
+            resources.GetString("cboxSetWarPetType.Items11"),
+            resources.GetString("cboxSetWarPetType.Items12"),
+            resources.GetString("cboxSetWarPetType.Items13"),
+            resources.GetString("cboxSetWarPetType.Items14")});
+            this.cboxSetWarPetType.Name = "cboxSetWarPetType";
             // 
             // pnlMisc
             // 
@@ -4019,150 +4509,6 @@
             0,
             0});
             // 
-            // pnlPetarena
-            // 
-            resources.ApplyResources(this.pnlPetarena, "pnlPetarena");
-            this.pnlPetarena.Controls.Add(this.label35);
-            this.pnlPetarena.Controls.Add(this.cboxTrainRunPetType);
-            this.pnlPetarena.Controls.Add(this.groupBox6);
-            this.pnlPetarena.Controls.Add(this.chkUseRunPet);
-            this.pnlPetarena.Name = "pnlPetarena";
-            // 
-            // groupBox6
-            // 
-            this.groupBox6.Controls.Add(this.chkTrainRunPet);
-            this.groupBox6.Controls.Add(this.numMaxTrainPetAcceleration);
-            this.groupBox6.Controls.Add(this.numMaxTrainPetDexterity);
-            this.groupBox6.Controls.Add(this.chkTrainRunPetEndurance);
-            this.groupBox6.Controls.Add(this.chkTrainRunPetDexterity);
-            this.groupBox6.Controls.Add(this.numMaxTrainPetEndurance);
-            this.groupBox6.Controls.Add(this.chkTrainRunPetAcceleration);
-            this.groupBox6.Controls.Add(this.numMaxTrainPetSpeed);
-            this.groupBox6.Controls.Add(this.chkTrainRunPetSpeed);
-            resources.ApplyResources(this.groupBox6, "groupBox6");
-            this.groupBox6.Name = "groupBox6";
-            this.groupBox6.TabStop = false;
-            // 
-            // chkTrainRunPet
-            // 
-            resources.ApplyResources(this.chkTrainRunPet, "chkTrainRunPet");
-            this.chkTrainRunPet.Checked = true;
-            this.chkTrainRunPet.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.chkTrainRunPet.Name = "chkTrainRunPet";
-            this.chkTrainRunPet.UseVisualStyleBackColor = true;
-            this.chkTrainRunPet.CheckedChanged += new System.EventHandler(this.CheckGroupBox_CheckedChanged);
-            this.chkTrainRunPet.VisibleChanged += new System.EventHandler(this.CheckGroupBox_CheckedChanged);
-            // 
-            // cboxTrainRunPetType
-            // 
-            this.cboxTrainRunPetType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            resources.ApplyResources(this.cboxTrainRunPetType, "cboxTrainRunPetType");
-            this.cboxTrainRunPetType.FormattingEnabled = true;
-            this.cboxTrainRunPetType.Items.AddRange(new object[] {
-            resources.GetString("cboxTrainRunPetType.Items"),
-            resources.GetString("cboxTrainRunPetType.Items1"),
-            resources.GetString("cboxTrainRunPetType.Items2"),
-            resources.GetString("cboxTrainRunPetType.Items3"),
-            resources.GetString("cboxTrainRunPetType.Items4"),
-            resources.GetString("cboxTrainRunPetType.Items5"),
-            resources.GetString("cboxTrainRunPetType.Items6"),
-            resources.GetString("cboxTrainRunPetType.Items7"),
-            resources.GetString("cboxTrainRunPetType.Items8"),
-            resources.GetString("cboxTrainRunPetType.Items9"),
-            resources.GetString("cboxTrainRunPetType.Items10"),
-            resources.GetString("cboxTrainRunPetType.Items11")});
-            this.cboxTrainRunPetType.Name = "cboxTrainRunPetType";
-            // 
-            // numMaxTrainPetAcceleration
-            // 
-            resources.ApplyResources(this.numMaxTrainPetAcceleration, "numMaxTrainPetAcceleration");
-            this.numMaxTrainPetAcceleration.Maximum = new decimal(new int[] {
-            750,
-            0,
-            0,
-            0});
-            this.numMaxTrainPetAcceleration.Name = "numMaxTrainPetAcceleration";
-            this.numMaxTrainPetAcceleration.Value = new decimal(new int[] {
-            10,
-            0,
-            0,
-            0});
-            // 
-            // numMaxTrainPetDexterity
-            // 
-            resources.ApplyResources(this.numMaxTrainPetDexterity, "numMaxTrainPetDexterity");
-            this.numMaxTrainPetDexterity.Maximum = new decimal(new int[] {
-            750,
-            0,
-            0,
-            0});
-            this.numMaxTrainPetDexterity.Name = "numMaxTrainPetDexterity";
-            this.numMaxTrainPetDexterity.Value = new decimal(new int[] {
-            10,
-            0,
-            0,
-            0});
-            // 
-            // chkTrainRunPetEndurance
-            // 
-            resources.ApplyResources(this.chkTrainRunPetEndurance, "chkTrainRunPetEndurance");
-            this.chkTrainRunPetEndurance.Name = "chkTrainRunPetEndurance";
-            this.chkTrainRunPetEndurance.UseVisualStyleBackColor = true;
-            // 
-            // chkTrainRunPetDexterity
-            // 
-            resources.ApplyResources(this.chkTrainRunPetDexterity, "chkTrainRunPetDexterity");
-            this.chkTrainRunPetDexterity.Name = "chkTrainRunPetDexterity";
-            this.chkTrainRunPetDexterity.UseVisualStyleBackColor = true;
-            // 
-            // numMaxTrainPetEndurance
-            // 
-            resources.ApplyResources(this.numMaxTrainPetEndurance, "numMaxTrainPetEndurance");
-            this.numMaxTrainPetEndurance.Maximum = new decimal(new int[] {
-            750,
-            0,
-            0,
-            0});
-            this.numMaxTrainPetEndurance.Name = "numMaxTrainPetEndurance";
-            this.numMaxTrainPetEndurance.Value = new decimal(new int[] {
-            10,
-            0,
-            0,
-            0});
-            // 
-            // chkTrainRunPetAcceleration
-            // 
-            resources.ApplyResources(this.chkTrainRunPetAcceleration, "chkTrainRunPetAcceleration");
-            this.chkTrainRunPetAcceleration.Name = "chkTrainRunPetAcceleration";
-            this.chkTrainRunPetAcceleration.UseVisualStyleBackColor = true;
-            // 
-            // numMaxTrainPetSpeed
-            // 
-            resources.ApplyResources(this.numMaxTrainPetSpeed, "numMaxTrainPetSpeed");
-            this.numMaxTrainPetSpeed.Maximum = new decimal(new int[] {
-            750,
-            0,
-            0,
-            0});
-            this.numMaxTrainPetSpeed.Name = "numMaxTrainPetSpeed";
-            this.numMaxTrainPetSpeed.Value = new decimal(new int[] {
-            10,
-            0,
-            0,
-            0});
-            // 
-            // chkTrainRunPetSpeed
-            // 
-            resources.ApplyResources(this.chkTrainRunPetSpeed, "chkTrainRunPetSpeed");
-            this.chkTrainRunPetSpeed.Name = "chkTrainRunPetSpeed";
-            this.chkTrainRunPetSpeed.UseVisualStyleBackColor = true;
-            // 
-            // chkUseRunPet
-            // 
-            resources.ApplyResources(this.chkUseRunPet, "chkUseRunPet");
-            this.chkUseRunPet.Name = "chkUseRunPet";
-            this.chkUseRunPet.UseVisualStyleBackColor = true;
-            // 
             // pnlDopings
             // 
             resources.ApplyResources(this.pnlDopings, "pnlDopings");
@@ -4936,296 +5282,6 @@
             // 
             resources.ApplyResources(this.pnlNoncombatLocations, "pnlNoncombatLocations");
             this.pnlNoncombatLocations.Name = "pnlNoncombatLocations";
-            // 
-            // pnlWarPets
-            // 
-            resources.ApplyResources(this.pnlWarPets, "pnlWarPets");
-            this.pnlWarPets.Controls.Add(this.groupBox5);
-            this.pnlWarPets.Controls.Add(this.label119);
-            this.pnlWarPets.Controls.Add(this.groupBox4);
-            this.pnlWarPets.Controls.Add(this.cboxSetWarPetType);
-            this.pnlWarPets.Name = "pnlWarPets";
-            // 
-            // groupBox5
-            // 
-            this.groupBox5.Controls.Add(this.label10);
-            this.groupBox5.Controls.Add(this.numHealPet50);
-            this.groupBox5.Controls.Add(this.label13);
-            this.groupBox5.Controls.Add(this.label11);
-            this.groupBox5.Controls.Add(this.numHealPet100);
-            this.groupBox5.Controls.Add(this.label12);
-            this.groupBox5.Controls.Add(this.chkBuyHealPet);
-            resources.ApplyResources(this.groupBox5, "groupBox5");
-            this.groupBox5.Name = "groupBox5";
-            this.groupBox5.TabStop = false;
-            // 
-            // label10
-            // 
-            resources.ApplyResources(this.label10, "label10");
-            this.label10.Name = "label10";
-            // 
-            // numHealPet50
-            // 
-            resources.ApplyResources(this.numHealPet50, "numHealPet50");
-            this.numHealPet50.Name = "numHealPet50";
-            this.numHealPet50.Value = new decimal(new int[] {
-            40,
-            0,
-            0,
-            0});
-            // 
-            // label13
-            // 
-            resources.ApplyResources(this.label13, "label13");
-            this.label13.Name = "label13";
-            // 
-            // label11
-            // 
-            resources.ApplyResources(this.label11, "label11");
-            this.label11.Name = "label11";
-            // 
-            // numHealPet100
-            // 
-            resources.ApplyResources(this.numHealPet100, "numHealPet100");
-            this.numHealPet100.Name = "numHealPet100";
-            this.numHealPet100.Value = new decimal(new int[] {
-            10,
-            0,
-            0,
-            0});
-            // 
-            // label12
-            // 
-            resources.ApplyResources(this.label12, "label12");
-            this.label12.Name = "label12";
-            // 
-            // chkBuyHealPet
-            // 
-            resources.ApplyResources(this.chkBuyHealPet, "chkBuyHealPet");
-            this.chkBuyHealPet.Checked = true;
-            this.chkBuyHealPet.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.chkBuyHealPet.Name = "chkBuyHealPet";
-            this.chkBuyHealPet.UseVisualStyleBackColor = true;
-            // 
-            // label119
-            // 
-            resources.ApplyResources(this.label119, "label119");
-            this.label119.Name = "label119";
-            // 
-            // groupBox4
-            // 
-            this.groupBox4.Controls.Add(this.chkTrainWarPet);
-            this.groupBox4.Controls.Add(this.numMinTrainPetOil);
-            this.groupBox4.Controls.Add(this.numMaxTrainPetFocus);
-            this.groupBox4.Controls.Add(this.chkTrainPetMass);
-            this.groupBox4.Controls.Add(this.numMaxTrainPetLoyality);
-            this.groupBox4.Controls.Add(this.chkTrainPetFocus);
-            this.groupBox4.Controls.Add(this.label29);
-            this.groupBox4.Controls.Add(this.chkTrainPetLoyality);
-            this.groupBox4.Controls.Add(this.label64);
-            this.groupBox4.Controls.Add(this.numMinTrainPetOre);
-            this.groupBox4.Controls.Add(this.numMaxTrainPetMass);
-            this.groupBox4.Controls.Add(this.label30);
-            this.groupBox4.Controls.Add(this.cboxTrainWarPetType);
-            this.groupBox4.Controls.Add(this.label65);
-            this.groupBox4.Controls.Add(this.chkUseTrainWhip);
-            this.groupBox4.Controls.Add(this.numMinTrainPetMoney);
-            resources.ApplyResources(this.groupBox4, "groupBox4");
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.TabStop = false;
-            // 
-            // chkTrainWarPet
-            // 
-            resources.ApplyResources(this.chkTrainWarPet, "chkTrainWarPet");
-            this.chkTrainWarPet.Checked = true;
-            this.chkTrainWarPet.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.chkTrainWarPet.Name = "chkTrainWarPet";
-            this.chkTrainWarPet.UseVisualStyleBackColor = true;
-            // 
-            // numMinTrainPetOil
-            // 
-            resources.ApplyResources(this.numMinTrainPetOil, "numMinTrainPetOil");
-            this.numMinTrainPetOil.Maximum = new decimal(new int[] {
-            1000000,
-            0,
-            0,
-            0});
-            this.numMinTrainPetOil.Name = "numMinTrainPetOil";
-            // 
-            // numMaxTrainPetFocus
-            // 
-            resources.ApplyResources(this.numMaxTrainPetFocus, "numMaxTrainPetFocus");
-            this.numMaxTrainPetFocus.Maximum = new decimal(new int[] {
-            500,
-            0,
-            0,
-            0});
-            this.numMaxTrainPetFocus.Name = "numMaxTrainPetFocus";
-            this.numMaxTrainPetFocus.Value = new decimal(new int[] {
-            10,
-            0,
-            0,
-            0});
-            // 
-            // chkTrainPetMass
-            // 
-            resources.ApplyResources(this.chkTrainPetMass, "chkTrainPetMass");
-            this.chkTrainPetMass.Checked = true;
-            this.chkTrainPetMass.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.chkTrainPetMass.Name = "chkTrainPetMass";
-            this.chkTrainPetMass.UseVisualStyleBackColor = true;
-            // 
-            // numMaxTrainPetLoyality
-            // 
-            resources.ApplyResources(this.numMaxTrainPetLoyality, "numMaxTrainPetLoyality");
-            this.numMaxTrainPetLoyality.Maximum = new decimal(new int[] {
-            500,
-            0,
-            0,
-            0});
-            this.numMaxTrainPetLoyality.Name = "numMaxTrainPetLoyality";
-            this.numMaxTrainPetLoyality.Value = new decimal(new int[] {
-            10,
-            0,
-            0,
-            0});
-            // 
-            // chkTrainPetFocus
-            // 
-            resources.ApplyResources(this.chkTrainPetFocus, "chkTrainPetFocus");
-            this.chkTrainPetFocus.Checked = true;
-            this.chkTrainPetFocus.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.chkTrainPetFocus.Name = "chkTrainPetFocus";
-            this.chkTrainPetFocus.UseVisualStyleBackColor = true;
-            // 
-            // label29
-            // 
-            resources.ApplyResources(this.label29, "label29");
-            this.label29.ForeColor = System.Drawing.Color.Black;
-            this.label29.Name = "label29";
-            // 
-            // chkTrainPetLoyality
-            // 
-            resources.ApplyResources(this.chkTrainPetLoyality, "chkTrainPetLoyality");
-            this.chkTrainPetLoyality.Checked = true;
-            this.chkTrainPetLoyality.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.chkTrainPetLoyality.Name = "chkTrainPetLoyality";
-            this.chkTrainPetLoyality.UseVisualStyleBackColor = true;
-            // 
-            // label64
-            // 
-            this.label64.Image = global::Moswar.Properties.Resources.Money;
-            resources.ApplyResources(this.label64, "label64");
-            this.label64.Name = "label64";
-            // 
-            // numMinTrainPetOre
-            // 
-            resources.ApplyResources(this.numMinTrainPetOre, "numMinTrainPetOre");
-            this.numMinTrainPetOre.Maximum = new decimal(new int[] {
-            1000000,
-            0,
-            0,
-            0});
-            this.numMinTrainPetOre.Name = "numMinTrainPetOre";
-            this.numMinTrainPetOre.Value = new decimal(new int[] {
-            10,
-            0,
-            0,
-            0});
-            // 
-            // numMaxTrainPetMass
-            // 
-            resources.ApplyResources(this.numMaxTrainPetMass, "numMaxTrainPetMass");
-            this.numMaxTrainPetMass.Maximum = new decimal(new int[] {
-            500,
-            0,
-            0,
-            0});
-            this.numMaxTrainPetMass.Name = "numMaxTrainPetMass";
-            this.numMaxTrainPetMass.Value = new decimal(new int[] {
-            10,
-            0,
-            0,
-            0});
-            // 
-            // label30
-            // 
-            this.label30.Image = global::Moswar.Properties.Resources.Oil;
-            resources.ApplyResources(this.label30, "label30");
-            this.label30.Name = "label30";
-            // 
-            // cboxTrainWarPetType
-            // 
-            this.cboxTrainWarPetType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            resources.ApplyResources(this.cboxTrainWarPetType, "cboxTrainWarPetType");
-            this.cboxTrainWarPetType.FormattingEnabled = true;
-            this.cboxTrainWarPetType.Items.AddRange(new object[] {
-            resources.GetString("cboxTrainWarPetType.Items"),
-            resources.GetString("cboxTrainWarPetType.Items1"),
-            resources.GetString("cboxTrainWarPetType.Items2"),
-            resources.GetString("cboxTrainWarPetType.Items3"),
-            resources.GetString("cboxTrainWarPetType.Items4"),
-            resources.GetString("cboxTrainWarPetType.Items5"),
-            resources.GetString("cboxTrainWarPetType.Items6"),
-            resources.GetString("cboxTrainWarPetType.Items7"),
-            resources.GetString("cboxTrainWarPetType.Items8"),
-            resources.GetString("cboxTrainWarPetType.Items9"),
-            resources.GetString("cboxTrainWarPetType.Items10"),
-            resources.GetString("cboxTrainWarPetType.Items11"),
-            resources.GetString("cboxTrainWarPetType.Items12"),
-            resources.GetString("cboxTrainWarPetType.Items13")});
-            this.cboxTrainWarPetType.Name = "cboxTrainWarPetType";
-            this.cboxTrainWarPetType.SelectedIndexChanged += new System.EventHandler(this.cboxTrainWarPetType_SelectedIndexChanged);
-            // 
-            // label65
-            // 
-            this.label65.Image = global::Moswar.Properties.Resources.Ore;
-            resources.ApplyResources(this.label65, "label65");
-            this.label65.Name = "label65";
-            // 
-            // chkUseTrainWhip
-            // 
-            resources.ApplyResources(this.chkUseTrainWhip, "chkUseTrainWhip");
-            this.chkUseTrainWhip.Name = "chkUseTrainWhip";
-            this.chkUseTrainWhip.UseVisualStyleBackColor = true;
-            // 
-            // numMinTrainPetMoney
-            // 
-            resources.ApplyResources(this.numMinTrainPetMoney, "numMinTrainPetMoney");
-            this.numMinTrainPetMoney.Maximum = new decimal(new int[] {
-            1000000,
-            0,
-            0,
-            0});
-            this.numMinTrainPetMoney.Name = "numMinTrainPetMoney";
-            this.numMinTrainPetMoney.Value = new decimal(new int[] {
-            100,
-            0,
-            0,
-            0});
-            // 
-            // cboxSetWarPetType
-            // 
-            this.cboxSetWarPetType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            resources.ApplyResources(this.cboxSetWarPetType, "cboxSetWarPetType");
-            this.cboxSetWarPetType.FormattingEnabled = true;
-            this.cboxSetWarPetType.Items.AddRange(new object[] {
-            resources.GetString("cboxSetWarPetType.Items"),
-            resources.GetString("cboxSetWarPetType.Items1"),
-            resources.GetString("cboxSetWarPetType.Items2"),
-            resources.GetString("cboxSetWarPetType.Items3"),
-            resources.GetString("cboxSetWarPetType.Items4"),
-            resources.GetString("cboxSetWarPetType.Items5"),
-            resources.GetString("cboxSetWarPetType.Items6"),
-            resources.GetString("cboxSetWarPetType.Items7"),
-            resources.GetString("cboxSetWarPetType.Items8"),
-            resources.GetString("cboxSetWarPetType.Items9"),
-            resources.GetString("cboxSetWarPetType.Items10"),
-            resources.GetString("cboxSetWarPetType.Items11"),
-            resources.GetString("cboxSetWarPetType.Items12"),
-            resources.GetString("cboxSetWarPetType.Items13"),
-            resources.GetString("cboxSetWarPetType.Items14")});
-            this.cboxSetWarPetType.Name = "cboxSetWarPetType";
             // 
             // pnlMoneyToOre
             // 
@@ -6341,67 +6397,6 @@
             0,
             0});
             // 
-            // pnlOldOilPipeline
-            // 
-            resources.ApplyResources(this.pnlOldOilPipeline, "pnlOldOilPipeline");
-            this.pnlOldOilPipeline.Controls.Add(this.chkUseSnikersOil);
-            this.pnlOldOilPipeline.Controls.Add(this.chkGoOil);
-            this.pnlOldOilPipeline.Controls.Add(this.chkOilIgnoreTimeout);
-            this.pnlOldOilPipeline.Controls.Add(this.cboxOilLvl);
-            this.pnlOldOilPipeline.Controls.Add(this.chkGetOil);
-            this.pnlOldOilPipeline.Name = "pnlOldOilPipeline";
-            // 
-            // chkUseSnikersOil
-            // 
-            resources.ApplyResources(this.chkUseSnikersOil, "chkUseSnikersOil");
-            this.chkUseSnikersOil.Name = "chkUseSnikersOil";
-            this.chkUseSnikersOil.UseVisualStyleBackColor = true;
-            // 
-            // chkGoOil
-            // 
-            resources.ApplyResources(this.chkGoOil, "chkGoOil");
-            this.chkGoOil.Name = "chkGoOil";
-            this.chkGoOil.UseVisualStyleBackColor = true;
-            this.chkGoOil.CheckedChanged += new System.EventHandler(this.OilType_CheckedChanged);
-            // 
-            // chkOilIgnoreTimeout
-            // 
-            resources.ApplyResources(this.chkOilIgnoreTimeout, "chkOilIgnoreTimeout");
-            this.chkOilIgnoreTimeout.Name = "chkOilIgnoreTimeout";
-            this.chkOilIgnoreTimeout.UseVisualStyleBackColor = true;
-            // 
-            // cboxOilLvl
-            // 
-            this.cboxOilLvl.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            resources.ApplyResources(this.cboxOilLvl, "cboxOilLvl");
-            this.cboxOilLvl.FormattingEnabled = true;
-            this.cboxOilLvl.Items.AddRange(new object[] {
-            resources.GetString("cboxOilLvl.Items"),
-            resources.GetString("cboxOilLvl.Items1"),
-            resources.GetString("cboxOilLvl.Items2"),
-            resources.GetString("cboxOilLvl.Items3"),
-            resources.GetString("cboxOilLvl.Items4"),
-            resources.GetString("cboxOilLvl.Items5"),
-            resources.GetString("cboxOilLvl.Items6"),
-            resources.GetString("cboxOilLvl.Items7"),
-            resources.GetString("cboxOilLvl.Items8"),
-            resources.GetString("cboxOilLvl.Items9"),
-            resources.GetString("cboxOilLvl.Items10"),
-            resources.GetString("cboxOilLvl.Items11"),
-            resources.GetString("cboxOilLvl.Items12"),
-            resources.GetString("cboxOilLvl.Items13"),
-            resources.GetString("cboxOilLvl.Items14"),
-            resources.GetString("cboxOilLvl.Items15")});
-            this.cboxOilLvl.Name = "cboxOilLvl";
-            // 
-            // chkGetOil
-            // 
-            resources.ApplyResources(this.chkGetOil, "chkGetOil");
-            this.chkGetOil.Checked = true;
-            this.chkGetOil.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.chkGetOil.Name = "chkGetOil";
-            this.chkGetOil.UseVisualStyleBackColor = true;
-            // 
             // pnlDigging
             // 
             resources.ApplyResources(this.pnlDigging, "pnlDigging");
@@ -7134,11 +7129,6 @@
             this.btnRunJSCmd.UseVisualStyleBackColor = true;
             this.btnRunJSCmd.Click += new System.EventHandler(this.btnRunJSCmd_Click);
             // 
-            // label35
-            // 
-            resources.ApplyResources(this.label35, "label35");
-            this.label35.Name = "label35";
-            // 
             // frmMain
             // 
             resources.ApplyResources(this, "$this");
@@ -7166,6 +7156,30 @@
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.pnlContainer.ResumeLayout(false);
+            this.pnlOldOilPipeline.ResumeLayout(false);
+            this.pnlOldOilPipeline.PerformLayout();
+            this.pnlPetarena.ResumeLayout(false);
+            this.pnlPetarena.PerformLayout();
+            this.groupBox6.ResumeLayout(false);
+            this.groupBox6.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numMaxTrainPetAcceleration)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numMaxTrainPetDexterity)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numMaxTrainPetEndurance)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numMaxTrainPetSpeed)).EndInit();
+            this.pnlWarPets.ResumeLayout(false);
+            this.pnlWarPets.PerformLayout();
+            this.groupBox5.ResumeLayout(false);
+            this.groupBox5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numHealPet50)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numHealPet100)).EndInit();
+            this.groupBox4.ResumeLayout(false);
+            this.groupBox4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numMinTrainPetOil)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numMaxTrainPetFocus)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numMaxTrainPetLoyality)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numMinTrainPetOre)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numMaxTrainPetMass)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numMinTrainPetMoney)).EndInit();
             this.pnlMisc.ResumeLayout(false);
             this.pnlMisc.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numExpRevengerPrc)).EndInit();
@@ -7292,14 +7306,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.numPyramidWanted)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numPyramidAmount)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numMaxPyramidPrice)).EndInit();
-            this.pnlPetarena.ResumeLayout(false);
-            this.pnlPetarena.PerformLayout();
-            this.groupBox6.ResumeLayout(false);
-            this.groupBox6.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numMaxTrainPetAcceleration)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numMaxTrainPetDexterity)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numMaxTrainPetEndurance)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numMaxTrainPetSpeed)).EndInit();
             this.pnlDopings.ResumeLayout(false);
             this.pnlDopings.PerformLayout();
             this.grpDopingSettings.ResumeLayout(false);
@@ -7328,20 +7334,6 @@
             this.grpWerewolf.ResumeLayout(false);
             this.grpWerewolf.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pboxWerewolfPower)).EndInit();
-            this.pnlWarPets.ResumeLayout(false);
-            this.pnlWarPets.PerformLayout();
-            this.groupBox5.ResumeLayout(false);
-            this.groupBox5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numHealPet50)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numHealPet100)).EndInit();
-            this.groupBox4.ResumeLayout(false);
-            this.groupBox4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numMinTrainPetOil)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numMaxTrainPetFocus)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numMaxTrainPetLoyality)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numMinTrainPetOre)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numMaxTrainPetMass)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numMinTrainPetMoney)).EndInit();
             this.pnlMoneyToOre.ResumeLayout(false);
             this.pnlMoneyToOre.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numExchangeBankMoney)).EndInit();
@@ -7375,8 +7367,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.numMaxSearchRatDefeats)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numRatFastSearch)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numMaxSearchRatLvl)).EndInit();
-            this.pnlOldOilPipeline.ResumeLayout(false);
-            this.pnlOldOilPipeline.PerformLayout();
             this.pnlDigging.ResumeLayout(false);
             this.pnlDigging.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numMaxRatLvl)).EndInit();
@@ -7673,7 +7663,6 @@
         private System.Windows.Forms.NumericUpDown numMinHCLvl;
         private System.Windows.Forms.CheckBox chkUseSnikersOil;
         private System.Windows.Forms.CheckBox chkOilIgnoreTimeout;
-        private System.Windows.Forms.CheckBox chkGetOil;
         private System.Windows.Forms.CheckBox chkOilLeninIronHead;
         private System.Windows.Forms.CheckBox chkOilLeninRobinHood;
         private System.Windows.Forms.CheckBox chkUseItemOilLeninFightLvl30;

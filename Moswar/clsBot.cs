@@ -31,7 +31,6 @@ namespace Moswar
         static extern IntPtr SendMessage(IntPtr hWnd, int Msg, IntPtr wparam, IntPtr lparam);
         [DllImport("user32.dll", SetLastError = true)]
         static extern bool PostMessage(IntPtr hWnd, int Msg, IntPtr wparam, IntPtr lparam);
-        private int WM_MOUSEMOVE = 0x0200;
 
 
         [DllImport("user32.dll", SetLastError = true)]
@@ -181,7 +180,7 @@ namespace Moswar
         public enum FactoryAction { Petriki, UpdateChain }
         public enum GroupFightAction { Fight, Check }
         public enum GroupFightType { Chaos, Ore, Clan, PVP, Mafia, Rat, Oil, Group, All }
-        public enum OilAction { LeninFight, Fight, OilTower }
+        public enum OilAction { LeninFight, Fight }
         public enum TimeOutAction { All, NoTask, Free, Busy, Blocked }
         public enum PetAction { SetWarPet, TrainWarPet, Run, TrainRunPet }
         public enum ClanWarAction { Check, Tooth, Pacifism }
@@ -235,7 +234,6 @@ namespace Moswar
             public stcClan Clan;
             public stcWarPet WarPet;
             public stcRunPet RunPet;
-            public DateTime OilTowerDT;
             public DateTime MetroWarPrizeDT;            
             public bool Wanted;
             public stcWallet Wallet;
@@ -800,7 +798,6 @@ namespace Moswar
             public bool GoGroupFightOre;
             public bool GoGroupFightMafia;
             public bool MafiaUseLicence;
-            public bool GetOil;
             public bool GoOil;            
             public int maxOilLvl;
             public bool OilIgnoreTimeout;
@@ -4922,9 +4919,6 @@ namespace Moswar
                     if (Settings.PlayLoto && !Me.Loto.Stop && Me.Loto.LastDT <= ServerDT) Casino(CasinoAction.Loto);
                     #endregion
                     #endregion
-                    #region OilTower
-                    if (Settings.GoOil && Settings.GetOil && Me.OilTowerDT < DateTime.Now) Oil(OilAction.OilTower);
-                    #endregion
                     #region Pet
                     UpdateMyInfo(MainWB);
                     if (Settings.TrainWarPet && ServerDT >= Me.WarPet.TrainTimeOutDT //Пора тренировать Пэта?
@@ -8663,10 +8657,9 @@ namespace Moswar
             if (Me.Player.Level < 10)
             {
                 DateTime ServerDT = GetServerTime(MainWB);
-                Me.OilTowerDT = DateTime.Now.AddDays(1);
                 Me.OilHunting.LastDT = ServerDT;
                 Me.OilHunting.Stop = true;
-                if (NA == OilAction.Fight || NA == OilAction.OilTower)
+                if (NA == OilAction.Fight)
                 {
                     UpdateStatus("# " + DateTime.Now + " Уфф маловат я, руками много нефти не унесёшь!");
                     return false;
@@ -8690,29 +8683,6 @@ namespace Moswar
  
             switch (NA)
             {
-                case OilAction.OilTower:
-                    if (frmMain.GetDocumentURL(MainWB).Contains("neftlenin")) return false; //Новый нефтепровод?
-                    else
-                    {
-                        #region Я владею нефтекачкой?
-                        HtmlEl = frmMain.GetDocument(MainWB).GetElementById("oilprocesstake");
-                        if (HtmlEl != null)
-                        {
-                            Random WaitM = new Random();
-                            string[] Time = frmMain.GetDocument(MainWB).GetElementById("oilprocess").InnerText.Split(':'); //HH:mm:ss
-                            if (Time != null) Me.OilTowerDT = GetServerTime(MainWB).Add(new TimeSpan(Convert.ToInt32(Time[0]), Convert.ToInt32(Time[1]) + WaitM.Next(1, 180), Convert.ToInt32(Time[2]))); //Иначе, если больше 24 часов, вылетает ошибка конвертирования.
-                            if (HtmlEl.GetAttribute("classname") == "button")
-                            {
-                                frmMain.GetDocument(MainWB).GetElementsByTagName("FORM")[0].InvokeMember("submit"); //Кнопка пока не работает=( Но Формы достаточно!
-                                UpdateStatus("$ Матильда ..., да я Шейх ёбте! Забрал нефти: ", 0, 0, 200);
-                                Wait(500, 1000);
-                            }
-                            return true;
-                        }
-                        #endregion
-                        Me.OilTowerDT = DateTime.Now.AddDays(1); //У меня нет нефтекачки, быть может появится завтра
-                        return false;
-                    }                    
                 case OilAction.Fight:
                     if (frmMain.GetDocumentURL(MainWB).Contains("neftlenin")) //Новый нефтепровод?
                     {
@@ -8722,11 +8692,11 @@ namespace Moswar
                     }
                     else
                     {
-                        Offset = Oil(OilAction.OilTower) ? 1 : 0; //У меня есть нефтекачка?
+                        Offset = 0; //У меня есть нефтекачка?
                         UpdateStatus("# " + DateTime.Now + " Ку-ку, смазливые, нефти не будет? А если найду?");
                         MatchCollection matches = Regex.Matches(frmMain.GetDocument(MainWB).GetElementById("pipeline-scroll").InnerHtml, "icon-locked pulp([0-9])+");
 
-                        if (frmMain.GetDocument(MainWB).GetElementsByTagName("button").Count - Offset > 0) //Есть ешё с кем подраться? Fix:У меня появилась собственная нефтекачка?
+                        if (frmMain.GetDocument(MainWB).GetElementsByTagName("button").Count - Offset > 0) //Есть ешё с кем подраться?
                         {
                             #region Проверка нынешнего вентиля!
                             if (16 - matches.Count <= Settings.maxOilLvl) //Проверка на каком вентиле сейчас.
