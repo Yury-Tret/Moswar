@@ -699,6 +699,8 @@
             this.groupBox7 = new System.Windows.Forms.GroupBox();
             this.label179 = new System.Windows.Forms.Label();
             this.label180 = new System.Windows.Forms.Label();
+            this.groupBox8 = new System.Windows.Forms.GroupBox();
+            this.label181 = new System.Windows.Forms.Label();
             this.tabControl.SuspendLayout();
             this.tabMainBrowser.SuspendLayout();
             this.AutoApdateMessage.SuspendLayout();
@@ -889,6 +891,7 @@
             this.statusStrip.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox7.SuspendLayout();
+            this.groupBox8.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnStart
@@ -1001,10 +1004,11 @@
             // 
             // pnlContainer
             // 
+            this.pnlContainer.Controls.Add(this.pnlOilPipeline);
+            this.pnlContainer.Controls.Add(this.pnlDigging);
             this.pnlContainer.Controls.Add(this.pnlHumanImitation);
             this.pnlContainer.Controls.Add(this.pnlMisc);
             this.pnlContainer.Controls.Add(this.pnlWarPets);
-            this.pnlContainer.Controls.Add(this.pnlOilPipeline);
             this.pnlContainer.Controls.Add(this.pnlOldOilPipeline);
             this.pnlContainer.Controls.Add(this.pnlPetarena);
             this.pnlContainer.Controls.Add(this.pnlUseItems);
@@ -1044,7 +1048,6 @@
             this.pnlContainer.Controls.Add(this.pnlClanWars);
             this.pnlContainer.Controls.Add(this.pnlHunterClub);
             this.pnlContainer.Controls.Add(this.pnlRatPipeline);
-            this.pnlContainer.Controls.Add(this.pnlDigging);
             this.pnlContainer.Controls.Add(this.pnlBankDeposit);
             resources.ApplyResources(this.pnlContainer, "pnlContainer");
             this.pnlContainer.Name = "pnlContainer";
@@ -6382,18 +6385,7 @@
             // pnlDigging
             // 
             resources.ApplyResources(this.pnlDigging, "pnlDigging");
-            this.pnlDigging.Controls.Add(this.rbBuyRPick);
-            this.pnlDigging.Controls.Add(this.chkMetro);
-            this.pnlDigging.Controls.Add(this.rbBuyMPick);
-            this.pnlDigging.Controls.Add(this.numMaxRatLvl);
-            this.pnlDigging.Controls.Add(this.chkBuyCounter);
-            this.pnlDigging.Controls.Add(this.label67);
-            this.pnlDigging.Controls.Add(this.label66);
-            this.pnlDigging.Controls.Add(this.label16);
-            this.pnlDigging.Controls.Add(this.chkBuyHelmet);
-            this.pnlDigging.Controls.Add(this.chkAttackRat);
-            this.pnlDigging.Controls.Add(this.numMaxRatDefeats);
-            this.pnlDigging.Controls.Add(this.label17);
+            this.pnlDigging.Controls.Add(this.groupBox8);
             this.pnlDigging.Name = "pnlDigging";
             // 
             // rbBuyRPick
@@ -6409,6 +6401,8 @@
             this.chkMetro.CheckState = System.Windows.Forms.CheckState.Checked;
             this.chkMetro.Name = "chkMetro";
             this.chkMetro.UseVisualStyleBackColor = true;
+            this.chkMetro.CheckedChanged += new System.EventHandler(this.CheckGroupBox_CheckedChanged);
+            this.chkMetro.VisibleChanged += new System.EventHandler(this.CheckGroupBox_CheckedChanged);
             // 
             // rbBuyMPick
             // 
@@ -7170,6 +7164,30 @@
             resources.ApplyResources(this.label180, "label180");
             this.label180.Name = "label180";
             // 
+            // groupBox8
+            // 
+            this.groupBox8.Controls.Add(this.label181);
+            this.groupBox8.Controls.Add(this.chkMetro);
+            this.groupBox8.Controls.Add(this.rbBuyRPick);
+            this.groupBox8.Controls.Add(this.label17);
+            this.groupBox8.Controls.Add(this.numMaxRatDefeats);
+            this.groupBox8.Controls.Add(this.rbBuyMPick);
+            this.groupBox8.Controls.Add(this.chkAttackRat);
+            this.groupBox8.Controls.Add(this.numMaxRatLvl);
+            this.groupBox8.Controls.Add(this.chkBuyHelmet);
+            this.groupBox8.Controls.Add(this.chkBuyCounter);
+            this.groupBox8.Controls.Add(this.label16);
+            this.groupBox8.Controls.Add(this.label67);
+            this.groupBox8.Controls.Add(this.label66);
+            resources.ApplyResources(this.groupBox8, "groupBox8");
+            this.groupBox8.Name = "groupBox8";
+            this.groupBox8.TabStop = false;
+            // 
+            // label181
+            // 
+            resources.ApplyResources(this.label181, "label181");
+            this.label181.Name = "label181";
+            // 
             // frmMain
             // 
             resources.ApplyResources(this, "$this");
@@ -7407,7 +7425,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.numRatFastSearch)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numMaxSearchRatLvl)).EndInit();
             this.pnlDigging.ResumeLayout(false);
-            this.pnlDigging.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numMaxRatLvl)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numMaxRatDefeats)).EndInit();
             this.pnlBankDeposit.ResumeLayout(false);
@@ -7450,6 +7467,8 @@
             this.groupBox3.PerformLayout();
             this.groupBox7.ResumeLayout(false);
             this.groupBox7.PerformLayout();
+            this.groupBox8.ResumeLayout(false);
+            this.groupBox8.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -8125,7 +8144,9 @@
         private System.Windows.Forms.Label label123;
         private System.Windows.Forms.GroupBox groupBox7;
         private System.Windows.Forms.Label label179;
-        private System.Windows.Forms.Label label180;      
+        private System.Windows.Forms.Label label180;
+        private System.Windows.Forms.GroupBox groupBox8;
+        private System.Windows.Forms.Label label181;      
     }
 }
 
