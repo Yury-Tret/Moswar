@@ -8571,7 +8571,8 @@ namespace Moswar
                                     #region Считывание допингов
                                     if (Me.RunPet.DopingDT < GetServerTime(MainWB)) //Проверять допинг если не делал этого раньше!
                                     {
-                                        string info = ReadToolTip(MainWB, frmMain.GetDocument(MainWB).GetElementById("content").GetElementsByTagName("IMG")[i + 1]);
+                                        MatchCollection MC = Regex.Matches(frmMain.GetDocumentHtmlTextEx(MainWB), "<img src=\"/@/images/obj/pets/[0-9-]+.png\" tooltip=\"1\" title='[^']+'");
+                                        string info = MC.Count > i ? MC[i].Value : "";
                                         match = Regex.Match(info, "[+](Ускорение|Выносливость|Ловкость|Скорость|ко всем характеристикам|Шуршащий мячик) до(?<Date>([0-9: -])+)");
                                         if (match.Success)
                                         {
