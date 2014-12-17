@@ -1591,8 +1591,12 @@ namespace Moswar
                     if (HC.Count >= 1) //Есть ли картинка сейфа?
                     {
                         Me.Safe.LastDT = GetServerTime(MainWB).AddHours(1); //Инициализация, если не получится считать время годности сейфа
-                        Match match = Regex.Match(ReadToolTip(MainWB, HC[0]), "(?<=Годен до: )([0-9 .:])+"); //Сохраняет: 8000 монет|Годен до: 26.03.2012 11:37"
-                        if (match.Success) Me.Safe.LastDT = Convert.ToDateTime(match.Value, CultureInfo.CreateSpecificCulture("ru-RU"));
+                        Match match = Regex.Match(frmMain.GetDocumentHtmlTextEx(MainWB), "(?<=Сохраняет: [0-9]+ монет[|]Годен до: )([0-9 .:])+"); //Сохраняет: 8000 монет|Годен до: 26.03.2012 11:37"
+                        if (match.Success)
+                        {
+                            Me.Safe.LastDT = Convert.ToDateTime(match.Value, CultureInfo.CreateSpecificCulture("ru-RU"));
+                            BugReport("@ Сейф годен до: " + match.Value);
+                        }
                       }
                     else //сейфа нет
                     {
