@@ -553,935 +553,464 @@
   <data name="&gt;&gt;lblSettingsCaption.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="pnlOilPipeline.AutoScroll" type="System.Boolean, mscorlib">
+  <data name="pnlWarPets.AutoScroll" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="label180.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="&gt;&gt;label10.Name" xml:space="preserve">
+    <value>label10</value>
   </data>
-  <data name="label180.Location" type="System.Drawing.Point, System.Drawing">
-    <value>233, 176</value>
-  </data>
-  <data name="label180.Size" type="System.Drawing.Size, System.Drawing">
-    <value>109, 14</value>
-  </data>
-  <data name="label180.TabIndex" type="System.Int32, mscorlib">
-    <value>99</value>
-  </data>
-  <data name="label180.Text" xml:space="preserve">
-    <value>поражений подряд</value>
-  </data>
-  <data name="&gt;&gt;label180.Name" xml:space="preserve">
-    <value>label180</value>
-  </data>
-  <data name="&gt;&gt;label180.Type" xml:space="preserve">
+  <data name="&gt;&gt;label10.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;label180.Parent" xml:space="preserve">
-    <value>groupBox7</value>
+  <data name="&gt;&gt;label10.Parent" xml:space="preserve">
+    <value>groupBox5</value>
   </data>
-  <data name="&gt;&gt;label180.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;label10.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="label179.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="&gt;&gt;numHealPet50.Name" xml:space="preserve">
+    <value>numHealPet50</value>
   </data>
-  <data name="label179.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 26</value>
-  </data>
-  <data name="label179.Size" type="System.Drawing.Size, System.Drawing">
-    <value>79, 14</value>
-  </data>
-  <data name="label179.TabIndex" type="System.Int32, mscorlib">
-    <value>98</value>
-  </data>
-  <data name="label179.Text" xml:space="preserve">
-    <value>Доходить до:</value>
-  </data>
-  <data name="&gt;&gt;label179.Name" xml:space="preserve">
-    <value>label179</value>
-  </data>
-  <data name="&gt;&gt;label179.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label179.Parent" xml:space="preserve">
-    <value>groupBox7</value>
-  </data>
-  <data name="&gt;&gt;label179.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="chkGoOilLenin.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="chkGoOilLenin.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="chkGoOilLenin.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, -2</value>
-  </data>
-  <data name="chkGoOilLenin.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 0, 0, 0</value>
-  </data>
-  <data name="chkGoOilLenin.Size" type="System.Drawing.Size, System.Drawing">
-    <value>163, 18</value>
-  </data>
-  <data name="chkGoOilLenin.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="chkGoOilLenin.Text" xml:space="preserve">
-    <value>Проходить нефтепровод</value>
-  </data>
-  <data name="&gt;&gt;chkGoOilLenin.Name" xml:space="preserve">
-    <value>chkGoOilLenin</value>
-  </data>
-  <data name="&gt;&gt;chkGoOilLenin.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;chkGoOilLenin.Parent" xml:space="preserve">
-    <value>groupBox7</value>
-  </data>
-  <data name="&gt;&gt;chkGoOilLenin.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="chkOilLeninIronHead.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="chkOilLeninIronHead.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="chkOilLeninIronHead.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 200</value>
-  </data>
-  <data name="chkOilLeninIronHead.Size" type="System.Drawing.Size, System.Drawing">
-    <value>293, 18</value>
-  </data>
-  <data name="chkOilLeninIronHead.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
-  </data>
-  <data name="chkOilLeninIronHead.Text" xml:space="preserve">
-    <value>Игнорировать счетчик поражений на 28-м вентиле</value>
-  </data>
-  <data name="&gt;&gt;chkOilLeninIronHead.Name" xml:space="preserve">
-    <value>chkOilLeninIronHead</value>
-  </data>
-  <data name="&gt;&gt;chkOilLeninIronHead.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;chkOilLeninIronHead.Parent" xml:space="preserve">
-    <value>groupBox7</value>
-  </data>
-  <data name="&gt;&gt;chkOilLeninIronHead.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="cboxOilLeninGrpFightUseItems.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="cboxOilLeninGrpFightUseItems.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="cboxOilLeninGrpFightUseItems.Items" xml:space="preserve">
-    <value>лечения</value>
-  </data>
-  <data name="cboxOilLeninGrpFightUseItems.Items1" xml:space="preserve">
-    <value>гранат</value>
-  </data>
-  <data name="cboxOilLeninGrpFightUseItems.Items2" xml:space="preserve">
-    <value>сыра</value>
-  </data>
-  <data name="cboxOilLeninGrpFightUseItems.Items3" xml:space="preserve">
-    <value>иного</value>
-  </data>
-  <data name="cboxOilLeninGrpFightUseItems.Items4" xml:space="preserve">
-    <value>медведя</value>
-  </data>
-  <data name="cboxOilLeninGrpFightUseItems.Location" type="System.Drawing.Point, System.Drawing">
-    <value>154, 248</value>
-  </data>
-  <data name="cboxOilLeninGrpFightUseItems.MaxDropDownItems" type="System.Int32, mscorlib">
-    <value>16</value>
-  </data>
-  <data name="cboxOilLeninGrpFightUseItems.Size" type="System.Drawing.Size, System.Drawing">
-    <value>80, 22</value>
-  </data>
-  <data name="cboxOilLeninGrpFightUseItems.TabIndex" type="System.Int32, mscorlib">
-    <value>12</value>
-  </data>
-  <data name="&gt;&gt;cboxOilLeninGrpFightUseItems.Name" xml:space="preserve">
-    <value>cboxOilLeninGrpFightUseItems</value>
-  </data>
-  <data name="&gt;&gt;cboxOilLeninGrpFightUseItems.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;cboxOilLeninGrpFightUseItems.Parent" xml:space="preserve">
-    <value>groupBox7</value>
-  </data>
-  <data name="&gt;&gt;cboxOilLeninGrpFightUseItems.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="cboxOilLeninLvl.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="cboxOilLeninLvl.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="cboxOilLeninLvl.Items" xml:space="preserve">
-    <value>1 вентиля</value>
-  </data>
-  <data name="cboxOilLeninLvl.Items1" xml:space="preserve">
-    <value>2 вентиля</value>
-  </data>
-  <data name="cboxOilLeninLvl.Items2" xml:space="preserve">
-    <value>3 вентиля</value>
-  </data>
-  <data name="cboxOilLeninLvl.Items3" xml:space="preserve">
-    <value>4 вентиля</value>
-  </data>
-  <data name="cboxOilLeninLvl.Items4" xml:space="preserve">
-    <value>5 вентиля</value>
-  </data>
-  <data name="cboxOilLeninLvl.Items5" xml:space="preserve">
-    <value>6 вентиля</value>
-  </data>
-  <data name="cboxOilLeninLvl.Items6" xml:space="preserve">
-    <value>7 вентиля</value>
-  </data>
-  <data name="cboxOilLeninLvl.Items7" xml:space="preserve">
-    <value>8 вентиля</value>
-  </data>
-  <data name="cboxOilLeninLvl.Items8" xml:space="preserve">
-    <value>9 вентиля</value>
-  </data>
-  <data name="cboxOilLeninLvl.Items9" xml:space="preserve">
-    <value>10 вентиля</value>
-  </data>
-  <data name="cboxOilLeninLvl.Items10" xml:space="preserve">
-    <value>11 вентиля</value>
-  </data>
-  <data name="cboxOilLeninLvl.Items11" xml:space="preserve">
-    <value>12 вентиля</value>
-  </data>
-  <data name="cboxOilLeninLvl.Items12" xml:space="preserve">
-    <value>13 вентиля</value>
-  </data>
-  <data name="cboxOilLeninLvl.Items13" xml:space="preserve">
-    <value>14 вентиля</value>
-  </data>
-  <data name="cboxOilLeninLvl.Items14" xml:space="preserve">
-    <value>15 вентиля</value>
-  </data>
-  <data name="cboxOilLeninLvl.Items15" xml:space="preserve">
-    <value>16 вентиля</value>
-  </data>
-  <data name="cboxOilLeninLvl.Items16" xml:space="preserve">
-    <value>17 вентиля</value>
-  </data>
-  <data name="cboxOilLeninLvl.Items17" xml:space="preserve">
-    <value>18 вентиля</value>
-  </data>
-  <data name="cboxOilLeninLvl.Items18" xml:space="preserve">
-    <value>19 вентиля</value>
-  </data>
-  <data name="cboxOilLeninLvl.Items19" xml:space="preserve">
-    <value>20 вентиля</value>
-  </data>
-  <data name="cboxOilLeninLvl.Items20" xml:space="preserve">
-    <value>21 вентиля</value>
-  </data>
-  <data name="cboxOilLeninLvl.Items21" xml:space="preserve">
-    <value>22 вентиля</value>
-  </data>
-  <data name="cboxOilLeninLvl.Items22" xml:space="preserve">
-    <value>23 вентиля</value>
-  </data>
-  <data name="cboxOilLeninLvl.Items23" xml:space="preserve">
-    <value>24 вентиля</value>
-  </data>
-  <data name="cboxOilLeninLvl.Items24" xml:space="preserve">
-    <value>25 вентиля</value>
-  </data>
-  <data name="cboxOilLeninLvl.Items25" xml:space="preserve">
-    <value>26 вентиля</value>
-  </data>
-  <data name="cboxOilLeninLvl.Items26" xml:space="preserve">
-    <value>27 вентиля</value>
-  </data>
-  <data name="cboxOilLeninLvl.Items27" xml:space="preserve">
-    <value>28 вентиля</value>
-  </data>
-  <data name="cboxOilLeninLvl.Items28" xml:space="preserve">
-    <value>29 вентиля</value>
-  </data>
-  <data name="cboxOilLeninLvl.Items29" xml:space="preserve">
-    <value>Ленина</value>
-  </data>
-  <data name="cboxOilLeninLvl.Location" type="System.Drawing.Point, System.Drawing">
-    <value>87, 22</value>
-  </data>
-  <data name="cboxOilLeninLvl.Size" type="System.Drawing.Size, System.Drawing">
-    <value>88, 22</value>
-  </data>
-  <data name="cboxOilLeninLvl.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;cboxOilLeninLvl.Name" xml:space="preserve">
-    <value>cboxOilLeninLvl</value>
-  </data>
-  <data name="&gt;&gt;cboxOilLeninLvl.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;cboxOilLeninLvl.Parent" xml:space="preserve">
-    <value>groupBox7</value>
-  </data>
-  <data name="&gt;&gt;cboxOilLeninLvl.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="numOffsetSyncOilLenin.Location" type="System.Drawing.Point, System.Drawing">
-    <value>233, 146</value>
-  </data>
-  <data name="numOffsetSyncOilLenin.Size" type="System.Drawing.Size, System.Drawing">
-    <value>55, 22</value>
-  </data>
-  <data name="numOffsetSyncOilLenin.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="numOffsetSyncOilLenin.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
-    <value>Center</value>
-  </data>
-  <data name="&gt;&gt;numOffsetSyncOilLenin.Name" xml:space="preserve">
-    <value>numOffsetSyncOilLenin</value>
-  </data>
-  <data name="&gt;&gt;numOffsetSyncOilLenin.Type" xml:space="preserve">
+  <data name="&gt;&gt;numHealPet50.Type" xml:space="preserve">
     <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;numOffsetSyncOilLenin.Parent" xml:space="preserve">
-    <value>groupBox7</value>
+  <data name="&gt;&gt;numHealPet50.Parent" xml:space="preserve">
+    <value>groupBox5</value>
   </data>
-  <data name="&gt;&gt;numOffsetSyncOilLenin.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;numHealPet50.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;label13.Name" xml:space="preserve">
+    <value>label13</value>
+  </data>
+  <data name="&gt;&gt;label13.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label13.Parent" xml:space="preserve">
+    <value>groupBox5</value>
+  </data>
+  <data name="&gt;&gt;label13.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;label11.Name" xml:space="preserve">
+    <value>label11</value>
+  </data>
+  <data name="&gt;&gt;label11.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label11.Parent" xml:space="preserve">
+    <value>groupBox5</value>
+  </data>
+  <data name="&gt;&gt;label11.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;numHealPet100.Name" xml:space="preserve">
+    <value>numHealPet100</value>
+  </data>
+  <data name="&gt;&gt;numHealPet100.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;numHealPet100.Parent" xml:space="preserve">
+    <value>groupBox5</value>
+  </data>
+  <data name="&gt;&gt;numHealPet100.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;label12.Name" xml:space="preserve">
+    <value>label12</value>
+  </data>
+  <data name="&gt;&gt;label12.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label12.Parent" xml:space="preserve">
+    <value>groupBox5</value>
+  </data>
+  <data name="&gt;&gt;label12.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;chkBuyHealPet.Name" xml:space="preserve">
+    <value>chkBuyHealPet</value>
+  </data>
+  <data name="&gt;&gt;chkBuyHealPet.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkBuyHealPet.Parent" xml:space="preserve">
+    <value>groupBox5</value>
+  </data>
+  <data name="&gt;&gt;chkBuyHealPet.ZOrder" xml:space="preserve">
     <value>6</value>
   </data>
-  <data name="chkOilUseOhara.AutoSize" type="System.Boolean, mscorlib">
+  <data name="groupBox5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 31</value>
+  </data>
+  <data name="groupBox5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>303, 92</value>
+  </data>
+  <data name="groupBox5.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="groupBox5.Text" xml:space="preserve">
+    <value>Лечение</value>
+  </data>
+  <data name="&gt;&gt;groupBox5.Name" xml:space="preserve">
+    <value>groupBox5</value>
+  </data>
+  <data name="&gt;&gt;groupBox5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBox5.Parent" xml:space="preserve">
+    <value>pnlWarPets</value>
+  </data>
+  <data name="&gt;&gt;groupBox5.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="label119.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="chkOilUseOhara.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="label119.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="chkOilUseOhara.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 224</value>
+  <data name="label119.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 7</value>
   </data>
-  <data name="chkOilUseOhara.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
+  <data name="label119.Size" type="System.Drawing.Size, System.Drawing">
+    <value>150, 14</value>
   </data>
-  <data name="chkOilUseOhara.Size" type="System.Drawing.Size, System.Drawing">
-    <value>298, 18</value>
-  </data>
-  <data name="chkOilUseOhara.TabIndex" type="System.Int32, mscorlib">
-    <value>11</value>
-  </data>
-  <data name="chkOilUseOhara.Text" xml:space="preserve">
-    <value>Игнорировать счетчик поражений на всех вентилях</value>
-  </data>
-  <data name="&gt;&gt;chkOilUseOhara.Name" xml:space="preserve">
-    <value>chkOilUseOhara</value>
-  </data>
-  <data name="&gt;&gt;chkOilUseOhara.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;chkOilUseOhara.Parent" xml:space="preserve">
-    <value>groupBox7</value>
-  </data>
-  <data name="&gt;&gt;chkOilUseOhara.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="chkOilLeninLeaveNoElement.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="chkOilLeninLeaveNoElement.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="chkOilLeninLeaveNoElement.Location" type="System.Drawing.Point, System.Drawing">
-    <value>262, 52</value>
-  </data>
-  <data name="chkOilLeninLeaveNoElement.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="chkOilLeninLeaveNoElement.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 18</value>
-  </data>
-  <data name="chkOilLeninLeaveNoElement.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="chkOilLeninLeaveNoElement.Text" xml:space="preserve">
-    <value>элемента</value>
-  </data>
-  <data name="&gt;&gt;chkOilLeninLeaveNoElement.Name" xml:space="preserve">
-    <value>chkOilLeninLeaveNoElement</value>
-  </data>
-  <data name="&gt;&gt;chkOilLeninLeaveNoElement.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;chkOilLeninLeaveNoElement.Parent" xml:space="preserve">
-    <value>groupBox7</value>
-  </data>
-  <data name="&gt;&gt;chkOilLeninLeaveNoElement.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="chkUseItemOilLeninFightLvl8.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="chkUseItemOilLeninFightLvl8.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="chkUseItemOilLeninFightLvl8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 279</value>
-  </data>
-  <data name="chkUseItemOilLeninFightLvl8.Size" type="System.Drawing.Size, System.Drawing">
-    <value>33, 18</value>
-  </data>
-  <data name="chkUseItemOilLeninFightLvl8.TabIndex" type="System.Int32, mscorlib">
-    <value>13</value>
-  </data>
-  <data name="chkUseItemOilLeninFightLvl8.Text" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="&gt;&gt;chkUseItemOilLeninFightLvl8.Name" xml:space="preserve">
-    <value>chkUseItemOilLeninFightLvl8</value>
-  </data>
-  <data name="&gt;&gt;chkUseItemOilLeninFightLvl8.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;chkUseItemOilLeninFightLvl8.Parent" xml:space="preserve">
-    <value>groupBox7</value>
-  </data>
-  <data name="&gt;&gt;chkUseItemOilLeninFightLvl8.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="chkOilLeninRobinHood.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="chkOilLeninRobinHood.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="chkOilLeninRobinHood.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 76</value>
-  </data>
-  <data name="chkOilLeninRobinHood.Size" type="System.Drawing.Size, System.Drawing">
-    <value>509, 18</value>
-  </data>
-  <data name="chkOilLeninRobinHood.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="chkOilLeninRobinHood.Text" xml:space="preserve">
-    <value>Перебирать награду до получения большого сундука и ключа на двух последних вентилях</value>
-  </data>
-  <data name="&gt;&gt;chkOilLeninRobinHood.Name" xml:space="preserve">
-    <value>chkOilLeninRobinHood</value>
-  </data>
-  <data name="&gt;&gt;chkOilLeninRobinHood.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;chkOilLeninRobinHood.Parent" xml:space="preserve">
-    <value>groupBox7</value>
-  </data>
-  <data name="&gt;&gt;chkOilLeninRobinHood.ZOrder" xml:space="preserve">
-    <value>10</value>
-  </data>
-  <data name="label59.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label59.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label59.Location" type="System.Drawing.Point, System.Drawing">
-    <value>241, 252</value>
-  </data>
-  <data name="label59.Size" type="System.Drawing.Size, System.Drawing">
-    <value>59, 14</value>
-  </data>
-  <data name="label59.TabIndex" type="System.Int32, mscorlib">
-    <value>80</value>
-  </data>
-  <data name="label59.Text" xml:space="preserve">
-    <value>в стенках:</value>
-  </data>
-  <data name="&gt;&gt;label59.Name" xml:space="preserve">
-    <value>label59</value>
-  </data>
-  <data name="&gt;&gt;label59.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label59.Parent" xml:space="preserve">
-    <value>groupBox7</value>
-  </data>
-  <data name="&gt;&gt;label59.ZOrder" xml:space="preserve">
-    <value>11</value>
-  </data>
-  <data name="label102.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label102.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label102.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 54</value>
-  </data>
-  <data name="label102.Size" type="System.Drawing.Size, System.Drawing">
-    <value>195, 14</value>
-  </data>
-  <data name="label102.TabIndex" type="System.Int32, mscorlib">
+  <data name="label119.TabIndex" type="System.Int32, mscorlib">
     <value>24</value>
   </data>
-  <data name="label102.Text" xml:space="preserve">
-    <value>Перебирать награду до получения:</value>
+  <data name="label119.Text" xml:space="preserve">
+    <value>Основной боевой питомец:</value>
   </data>
-  <data name="&gt;&gt;label102.Name" xml:space="preserve">
-    <value>label102</value>
+  <data name="&gt;&gt;label119.Name" xml:space="preserve">
+    <value>label119</value>
   </data>
-  <data name="&gt;&gt;label102.Type" xml:space="preserve">
+  <data name="&gt;&gt;label119.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;label102.Parent" xml:space="preserve">
-    <value>groupBox7</value>
+  <data name="&gt;&gt;label119.Parent" xml:space="preserve">
+    <value>pnlWarPets</value>
   </data>
-  <data name="&gt;&gt;label102.ZOrder" xml:space="preserve">
-    <value>12</value>
+  <data name="&gt;&gt;label119.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
-  <data name="chkSyncOilLenin.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="&gt;&gt;chkTrainWarPet.Name" xml:space="preserve">
+    <value>chkTrainWarPet</value>
   </data>
-  <data name="chkSyncOilLenin.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="chkSyncOilLenin.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 124</value>
-  </data>
-  <data name="chkSyncOilLenin.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="chkSyncOilLenin.Size" type="System.Drawing.Size, System.Drawing">
-    <value>224, 18</value>
-  </data>
-  <data name="chkSyncOilLenin.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="chkSyncOilLenin.Text" xml:space="preserve">
-    <value>Синхронизировать с крысопроводом</value>
-  </data>
-  <data name="&gt;&gt;chkSyncOilLenin.Name" xml:space="preserve">
-    <value>chkSyncOilLenin</value>
-  </data>
-  <data name="&gt;&gt;chkSyncOilLenin.Type" xml:space="preserve">
+  <data name="&gt;&gt;chkTrainWarPet.Type" xml:space="preserve">
     <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;chkSyncOilLenin.Parent" xml:space="preserve">
-    <value>groupBox7</value>
+  <data name="&gt;&gt;chkTrainWarPet.Parent" xml:space="preserve">
+    <value>groupBox4</value>
   </data>
-  <data name="&gt;&gt;chkSyncOilLenin.ZOrder" xml:space="preserve">
-    <value>13</value>
+  <data name="&gt;&gt;chkTrainWarPet.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
-  <data name="chkUseItemOilLeninFightLvl30.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="&gt;&gt;numMinTrainPetOil.Name" xml:space="preserve">
+    <value>numMinTrainPetOil</value>
   </data>
-  <data name="chkUseItemOilLeninFightLvl30.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="chkUseItemOilLeninFightLvl30.Location" type="System.Drawing.Point, System.Drawing">
-    <value>245, 279</value>
-  </data>
-  <data name="chkUseItemOilLeninFightLvl30.Size" type="System.Drawing.Size, System.Drawing">
-    <value>57, 18</value>
-  </data>
-  <data name="chkUseItemOilLeninFightLvl30.TabIndex" type="System.Int32, mscorlib">
-    <value>17</value>
-  </data>
-  <data name="chkUseItemOilLeninFightLvl30.Text" xml:space="preserve">
-    <value>Ленин</value>
-  </data>
-  <data name="&gt;&gt;chkUseItemOilLeninFightLvl30.Name" xml:space="preserve">
-    <value>chkUseItemOilLeninFightLvl30</value>
-  </data>
-  <data name="&gt;&gt;chkUseItemOilLeninFightLvl30.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;chkUseItemOilLeninFightLvl30.Parent" xml:space="preserve">
-    <value>groupBox7</value>
-  </data>
-  <data name="&gt;&gt;chkUseItemOilLeninFightLvl30.ZOrder" xml:space="preserve">
-    <value>14</value>
-  </data>
-  <data name="lblOilMaxDefeats.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lblOilMaxDefeats.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Candara, 9pt</value>
-  </data>
-  <data name="lblOilMaxDefeats.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="lblOilMaxDefeats.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 176</value>
-  </data>
-  <data name="lblOilMaxDefeats.Size" type="System.Drawing.Size, System.Drawing">
-    <value>193, 14</value>
-  </data>
-  <data name="lblOilMaxDefeats.TabIndex" type="System.Int32, mscorlib">
-    <value>94</value>
-  </data>
-  <data name="lblOilMaxDefeats.Text" xml:space="preserve">
-    <value>Останавливать прохождение после</value>
-  </data>
-  <data name="lblOilMaxDefeats.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleRight</value>
-  </data>
-  <data name="&gt;&gt;lblOilMaxDefeats.Name" xml:space="preserve">
-    <value>lblOilMaxDefeats</value>
-  </data>
-  <data name="&gt;&gt;lblOilMaxDefeats.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblOilMaxDefeats.Parent" xml:space="preserve">
-    <value>groupBox7</value>
-  </data>
-  <data name="&gt;&gt;lblOilMaxDefeats.ZOrder" xml:space="preserve">
-    <value>15</value>
-  </data>
-  <data name="chkOilLeninLeaveNoKey.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="chkOilLeninLeaveNoKey.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="chkOilLeninLeaveNoKey.Location" type="System.Drawing.Point, System.Drawing">
-    <value>202, 52</value>
-  </data>
-  <data name="chkOilLeninLeaveNoKey.Size" type="System.Drawing.Size, System.Drawing">
-    <value>59, 18</value>
-  </data>
-  <data name="chkOilLeninLeaveNoKey.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="chkOilLeninLeaveNoKey.Text" xml:space="preserve">
-    <value>ключа</value>
-  </data>
-  <data name="&gt;&gt;chkOilLeninLeaveNoKey.Name" xml:space="preserve">
-    <value>chkOilLeninLeaveNoKey</value>
-  </data>
-  <data name="&gt;&gt;chkOilLeninLeaveNoKey.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;chkOilLeninLeaveNoKey.Parent" xml:space="preserve">
-    <value>groupBox7</value>
-  </data>
-  <data name="&gt;&gt;chkOilLeninLeaveNoKey.ZOrder" xml:space="preserve">
-    <value>16</value>
-  </data>
-  <data name="chkUseItemOilLeninFightLvl17.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="chkUseItemOilLeninFightLvl17.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="chkUseItemOilLeninFightLvl17.Location" type="System.Drawing.Point, System.Drawing">
-    <value>65, 279</value>
-  </data>
-  <data name="chkUseItemOilLeninFightLvl17.Size" type="System.Drawing.Size, System.Drawing">
-    <value>36, 18</value>
-  </data>
-  <data name="chkUseItemOilLeninFightLvl17.TabIndex" type="System.Int32, mscorlib">
-    <value>14</value>
-  </data>
-  <data name="chkUseItemOilLeninFightLvl17.Text" xml:space="preserve">
-    <value>17</value>
-  </data>
-  <data name="&gt;&gt;chkUseItemOilLeninFightLvl17.Name" xml:space="preserve">
-    <value>chkUseItemOilLeninFightLvl17</value>
-  </data>
-  <data name="&gt;&gt;chkUseItemOilLeninFightLvl17.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;chkUseItemOilLeninFightLvl17.Parent" xml:space="preserve">
-    <value>groupBox7</value>
-  </data>
-  <data name="&gt;&gt;chkUseItemOilLeninFightLvl17.ZOrder" xml:space="preserve">
-    <value>17</value>
-  </data>
-  <data name="label139.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label139.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label139.Location" type="System.Drawing.Point, System.Drawing">
-    <value>290, 150</value>
-  </data>
-  <data name="label139.Size" type="System.Drawing.Size, System.Drawing">
-    <value>27, 14</value>
-  </data>
-  <data name="label139.TabIndex" type="System.Int32, mscorlib">
-    <value>96</value>
-  </data>
-  <data name="label139.Text" xml:space="preserve">
-    <value>мин</value>
-  </data>
-  <data name="&gt;&gt;label139.Name" xml:space="preserve">
-    <value>label139</value>
-  </data>
-  <data name="&gt;&gt;label139.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label139.Parent" xml:space="preserve">
-    <value>groupBox7</value>
-  </data>
-  <data name="&gt;&gt;label139.ZOrder" xml:space="preserve">
-    <value>18</value>
-  </data>
-  <data name="label103.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label103.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label103.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 252</value>
-  </data>
-  <data name="label103.Size" type="System.Drawing.Size, System.Drawing">
-    <value>145, 14</value>
-  </data>
-  <data name="label103.TabIndex" type="System.Int32, mscorlib">
-    <value>79</value>
-  </data>
-  <data name="label103.Text" xml:space="preserve">
-    <value>Разрешить использование</value>
-  </data>
-  <data name="&gt;&gt;label103.Name" xml:space="preserve">
-    <value>label103</value>
-  </data>
-  <data name="&gt;&gt;label103.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label103.Parent" xml:space="preserve">
-    <value>groupBox7</value>
-  </data>
-  <data name="&gt;&gt;label103.ZOrder" xml:space="preserve">
-    <value>19</value>
-  </data>
-  <data name="chkOilLeninLeaveNoBox.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="chkOilLeninLeaveNoBox.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="chkOilLeninLeaveNoBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>339, 52</value>
-  </data>
-  <data name="chkOilLeninLeaveNoBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="chkOilLeninLeaveNoBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>68, 18</value>
-  </data>
-  <data name="chkOilLeninLeaveNoBox.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="chkOilLeninLeaveNoBox.Text" xml:space="preserve">
-    <value>сундука</value>
-  </data>
-  <data name="&gt;&gt;chkOilLeninLeaveNoBox.Name" xml:space="preserve">
-    <value>chkOilLeninLeaveNoBox</value>
-  </data>
-  <data name="&gt;&gt;chkOilLeninLeaveNoBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;chkOilLeninLeaveNoBox.Parent" xml:space="preserve">
-    <value>groupBox7</value>
-  </data>
-  <data name="&gt;&gt;chkOilLeninLeaveNoBox.ZOrder" xml:space="preserve">
-    <value>20</value>
-  </data>
-  <data name="numMaxOilDefeats.Location" type="System.Drawing.Point, System.Drawing">
-    <value>198, 172</value>
-  </data>
-  <data name="numMaxOilDefeats.Size" type="System.Drawing.Size, System.Drawing">
-    <value>35, 22</value>
-  </data>
-  <data name="numMaxOilDefeats.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
-  <data name="numMaxOilDefeats.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
-    <value>Center</value>
-  </data>
-  <data name="&gt;&gt;numMaxOilDefeats.Name" xml:space="preserve">
-    <value>numMaxOilDefeats</value>
-  </data>
-  <data name="&gt;&gt;numMaxOilDefeats.Type" xml:space="preserve">
+  <data name="&gt;&gt;numMinTrainPetOil.Type" xml:space="preserve">
     <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;numMaxOilDefeats.Parent" xml:space="preserve">
-    <value>groupBox7</value>
+  <data name="&gt;&gt;numMinTrainPetOil.Parent" xml:space="preserve">
+    <value>groupBox4</value>
   </data>
-  <data name="&gt;&gt;numMaxOilDefeats.ZOrder" xml:space="preserve">
-    <value>21</value>
+  <data name="&gt;&gt;numMinTrainPetOil.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
-  <data name="chkUseItemOilLeninFightLvl29.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="&gt;&gt;numMaxTrainPetFocus.Name" xml:space="preserve">
+    <value>numMaxTrainPetFocus</value>
   </data>
-  <data name="chkUseItemOilLeninFightLvl29.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="&gt;&gt;numMaxTrainPetFocus.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="chkUseItemOilLeninFightLvl29.Location" type="System.Drawing.Point, System.Drawing">
-    <value>184, 279</value>
+  <data name="&gt;&gt;numMaxTrainPetFocus.Parent" xml:space="preserve">
+    <value>groupBox4</value>
   </data>
-  <data name="chkUseItemOilLeninFightLvl29.Size" type="System.Drawing.Size, System.Drawing">
-    <value>39, 18</value>
+  <data name="&gt;&gt;numMaxTrainPetFocus.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
-  <data name="chkUseItemOilLeninFightLvl29.TabIndex" type="System.Int32, mscorlib">
-    <value>16</value>
+  <data name="&gt;&gt;chkTrainPetMass.Name" xml:space="preserve">
+    <value>chkTrainPetMass</value>
   </data>
-  <data name="chkUseItemOilLeninFightLvl29.Text" xml:space="preserve">
-    <value>29</value>
-  </data>
-  <data name="&gt;&gt;chkUseItemOilLeninFightLvl29.Name" xml:space="preserve">
-    <value>chkUseItemOilLeninFightLvl29</value>
-  </data>
-  <data name="&gt;&gt;chkUseItemOilLeninFightLvl29.Type" xml:space="preserve">
+  <data name="&gt;&gt;chkTrainPetMass.Type" xml:space="preserve">
     <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;chkUseItemOilLeninFightLvl29.Parent" xml:space="preserve">
-    <value>groupBox7</value>
+  <data name="&gt;&gt;chkTrainPetMass.Parent" xml:space="preserve">
+    <value>groupBox4</value>
   </data>
-  <data name="&gt;&gt;chkUseItemOilLeninFightLvl29.ZOrder" xml:space="preserve">
-    <value>22</value>
+  <data name="&gt;&gt;chkTrainPetMass.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
-  <data name="chkUseItemOilLeninFightLvl26.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="&gt;&gt;numMaxTrainPetLoyality.Name" xml:space="preserve">
+    <value>numMaxTrainPetLoyality</value>
   </data>
-  <data name="chkUseItemOilLeninFightLvl26.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="&gt;&gt;numMaxTrainPetLoyality.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="chkUseItemOilLeninFightLvl26.Location" type="System.Drawing.Point, System.Drawing">
-    <value>123, 279</value>
+  <data name="&gt;&gt;numMaxTrainPetLoyality.Parent" xml:space="preserve">
+    <value>groupBox4</value>
   </data>
-  <data name="chkUseItemOilLeninFightLvl26.Size" type="System.Drawing.Size, System.Drawing">
-    <value>39, 18</value>
+  <data name="&gt;&gt;numMaxTrainPetLoyality.ZOrder" xml:space="preserve">
+    <value>4</value>
   </data>
-  <data name="chkUseItemOilLeninFightLvl26.TabIndex" type="System.Int32, mscorlib">
+  <data name="&gt;&gt;chkTrainPetFocus.Name" xml:space="preserve">
+    <value>chkTrainPetFocus</value>
+  </data>
+  <data name="&gt;&gt;chkTrainPetFocus.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkTrainPetFocus.Parent" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
+  <data name="&gt;&gt;chkTrainPetFocus.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;label29.Name" xml:space="preserve">
+    <value>label29</value>
+  </data>
+  <data name="&gt;&gt;label29.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label29.Parent" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
+  <data name="&gt;&gt;label29.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;chkTrainPetLoyality.Name" xml:space="preserve">
+    <value>chkTrainPetLoyality</value>
+  </data>
+  <data name="&gt;&gt;chkTrainPetLoyality.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkTrainPetLoyality.Parent" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
+  <data name="&gt;&gt;chkTrainPetLoyality.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;label64.Name" xml:space="preserve">
+    <value>label64</value>
+  </data>
+  <data name="&gt;&gt;label64.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label64.Parent" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
+  <data name="&gt;&gt;label64.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;numMinTrainPetOre.Name" xml:space="preserve">
+    <value>numMinTrainPetOre</value>
+  </data>
+  <data name="&gt;&gt;numMinTrainPetOre.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;numMinTrainPetOre.Parent" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
+  <data name="&gt;&gt;numMinTrainPetOre.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;numMaxTrainPetMass.Name" xml:space="preserve">
+    <value>numMaxTrainPetMass</value>
+  </data>
+  <data name="&gt;&gt;numMaxTrainPetMass.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;numMaxTrainPetMass.Parent" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
+  <data name="&gt;&gt;numMaxTrainPetMass.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;label30.Name" xml:space="preserve">
+    <value>label30</value>
+  </data>
+  <data name="&gt;&gt;label30.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label30.Parent" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
+  <data name="&gt;&gt;label30.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;cboxTrainWarPetType.Name" xml:space="preserve">
+    <value>cboxTrainWarPetType</value>
+  </data>
+  <data name="&gt;&gt;cboxTrainWarPetType.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cboxTrainWarPetType.Parent" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
+  <data name="&gt;&gt;cboxTrainWarPetType.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;label65.Name" xml:space="preserve">
+    <value>label65</value>
+  </data>
+  <data name="&gt;&gt;label65.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label65.Parent" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
+  <data name="&gt;&gt;label65.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;chkUseTrainWhip.Name" xml:space="preserve">
+    <value>chkUseTrainWhip</value>
+  </data>
+  <data name="&gt;&gt;chkUseTrainWhip.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkUseTrainWhip.Parent" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
+  <data name="&gt;&gt;chkUseTrainWhip.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;numMinTrainPetMoney.Name" xml:space="preserve">
+    <value>numMinTrainPetMoney</value>
+  </data>
+  <data name="&gt;&gt;numMinTrainPetMoney.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;numMinTrainPetMoney.Parent" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
+  <data name="&gt;&gt;numMinTrainPetMoney.ZOrder" xml:space="preserve">
     <value>15</value>
   </data>
-  <data name="chkUseItemOilLeninFightLvl26.Text" xml:space="preserve">
-    <value>26</value>
+  <data name="groupBox4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 129</value>
   </data>
-  <data name="&gt;&gt;chkUseItemOilLeninFightLvl26.Name" xml:space="preserve">
-    <value>chkUseItemOilLeninFightLvl26</value>
+  <data name="groupBox4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>398, 194</value>
   </data>
-  <data name="&gt;&gt;chkUseItemOilLeninFightLvl26.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="groupBox4.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
   </data>
-  <data name="&gt;&gt;chkUseItemOilLeninFightLvl26.Parent" xml:space="preserve">
-    <value>groupBox7</value>
+  <data name="groupBox4.Text" xml:space="preserve">
+    <value>Тренировка</value>
   </data>
-  <data name="&gt;&gt;chkUseItemOilLeninFightLvl26.ZOrder" xml:space="preserve">
-    <value>23</value>
+  <data name="&gt;&gt;groupBox4.Name" xml:space="preserve">
+    <value>groupBox4</value>
   </data>
-  <data name="label101.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="&gt;&gt;groupBox4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="label101.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Candara, 9pt</value>
+  <data name="&gt;&gt;groupBox4.Parent" xml:space="preserve">
+    <value>pnlWarPets</value>
   </data>
-  <data name="label101.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="&gt;&gt;groupBox4.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="cboxSetWarPetType.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="cboxSetWarPetType.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="label101.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 102</value>
+  <data name="cboxSetWarPetType.Items" xml:space="preserve">
+    <value>-Отсутствует-</value>
   </data>
-  <data name="label101.Size" type="System.Drawing.Size, System.Drawing">
-    <value>231, 14</value>
+  <data name="cboxSetWarPetType.Items1" xml:space="preserve">
+    <value>Попугай</value>
   </data>
-  <data name="label101.TabIndex" type="System.Int32, mscorlib">
+  <data name="cboxSetWarPetType.Items2" xml:space="preserve">
+    <value>Кошка</value>
+  </data>
+  <data name="cboxSetWarPetType.Items3" xml:space="preserve">
+    <value>Чихуахуа</value>
+  </data>
+  <data name="cboxSetWarPetType.Items4" xml:space="preserve">
+    <value>Доберман</value>
+  </data>
+  <data name="cboxSetWarPetType.Items5" xml:space="preserve">
+    <value>Овчарка</value>
+  </data>
+  <data name="cboxSetWarPetType.Items6" xml:space="preserve">
+    <value>Ротвейлер</value>
+  </data>
+  <data name="cboxSetWarPetType.Items7" xml:space="preserve">
+    <value>Дог</value>
+  </data>
+  <data name="cboxSetWarPetType.Items8" xml:space="preserve">
+    <value>Волк</value>
+  </data>
+  <data name="cboxSetWarPetType.Items9" xml:space="preserve">
+    <value>Лев</value>
+  </data>
+  <data name="cboxSetWarPetType.Items10" xml:space="preserve">
+    <value>Пантера</value>
+  </data>
+  <data name="cboxSetWarPetType.Items11" xml:space="preserve">
+    <value>Котёнок "Гаф"</value>
+  </data>
+  <data name="cboxSetWarPetType.Items12" xml:space="preserve">
+    <value>Чёрный дог</value>
+  </data>
+  <data name="cboxSetWarPetType.Items13" xml:space="preserve">
+    <value>Хомячок</value>
+  </data>
+  <data name="cboxSetWarPetType.Items14" xml:space="preserve">
+    <value>Хаски</value>
+  </data>
+  <data name="cboxSetWarPetType.Location" type="System.Drawing.Point, System.Drawing">
+    <value>158, 3</value>
+  </data>
+  <data name="cboxSetWarPetType.Size" type="System.Drawing.Size, System.Drawing">
+    <value>107, 22</value>
+  </data>
+  <data name="cboxSetWarPetType.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;cboxSetWarPetType.Name" xml:space="preserve">
+    <value>cboxSetWarPetType</value>
+  </data>
+  <data name="&gt;&gt;cboxSetWarPetType.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cboxSetWarPetType.Parent" xml:space="preserve">
+    <value>pnlWarPets</value>
+  </data>
+  <data name="&gt;&gt;cboxSetWarPetType.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="pnlWarPets.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="pnlWarPets.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="pnlWarPets.Size" type="System.Drawing.Size, System.Drawing">
+    <value>594, 602</value>
+  </data>
+  <data name="pnlWarPets.TabIndex" type="System.Int32, mscorlib">
     <value>48</value>
   </data>
-  <data name="label101.Text" xml:space="preserve">
-    <value>Бросать кости, если у соперника не более:</value>
+  <data name="pnlWarPets.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
-  <data name="label101.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleRight</value>
+  <data name="&gt;&gt;pnlWarPets.Name" xml:space="preserve">
+    <value>pnlWarPets</value>
   </data>
-  <data name="&gt;&gt;label101.Name" xml:space="preserve">
-    <value>label101</value>
+  <data name="&gt;&gt;pnlWarPets.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;label101.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;pnlWarPets.Parent" xml:space="preserve">
+    <value>pnlContainer</value>
   </data>
-  <data name="&gt;&gt;label101.Parent" xml:space="preserve">
-    <value>groupBox7</value>
-  </data>
-  <data name="&gt;&gt;label101.ZOrder" xml:space="preserve">
-    <value>24</value>
-  </data>
-  <data name="numMaxOilLeninDice.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Candara, 9pt</value>
-  </data>
-  <data name="numMaxOilLeninDice.Location" type="System.Drawing.Point, System.Drawing">
-    <value>239, 98</value>
-  </data>
-  <data name="numMaxOilLeninDice.Size" type="System.Drawing.Size, System.Drawing">
-    <value>33, 22</value>
-  </data>
-  <data name="numMaxOilLeninDice.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="numMaxOilLeninDice.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
-    <value>Center</value>
-  </data>
-  <data name="&gt;&gt;numMaxOilLeninDice.Name" xml:space="preserve">
-    <value>numMaxOilLeninDice</value>
-  </data>
-  <data name="&gt;&gt;numMaxOilLeninDice.Type" xml:space="preserve">
-    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;numMaxOilLeninDice.Parent" xml:space="preserve">
-    <value>groupBox7</value>
-  </data>
-  <data name="&gt;&gt;numMaxOilLeninDice.ZOrder" xml:space="preserve">
-    <value>25</value>
-  </data>
-  <data name="label140.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label140.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label140.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 150</value>
-  </data>
-  <data name="label140.Size" type="System.Drawing.Size, System.Drawing">
-    <value>226, 14</value>
-  </data>
-  <data name="label140.TabIndex" type="System.Int32, mscorlib">
-    <value>97</value>
-  </data>
-  <data name="label140.Text" xml:space="preserve">
-    <value>Смещение синхронизации нефтепровода:</value>
-  </data>
-  <data name="&gt;&gt;label140.Name" xml:space="preserve">
-    <value>label140</value>
-  </data>
-  <data name="&gt;&gt;label140.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label140.Parent" xml:space="preserve">
-    <value>groupBox7</value>
-  </data>
-  <data name="&gt;&gt;label140.ZOrder" xml:space="preserve">
-    <value>26</value>
-  </data>
-  <data name="groupBox7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 6</value>
-  </data>
-  <data name="groupBox7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>522, 309</value>
-  </data>
-  <data name="groupBox7.TabIndex" type="System.Int32, mscorlib">
+  <data name="&gt;&gt;pnlWarPets.ZOrder" xml:space="preserve">
     <value>0</value>
+  </data>
+  <data name="pnlOilPipeline.AutoScroll" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="&gt;&gt;groupBox7.Name" xml:space="preserve">
     <value>groupBox7</value>
@@ -1520,7 +1049,7 @@
     <value>pnlContainer</value>
   </data>
   <data name="&gt;&gt;pnlOilPipeline.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="pnlOldOilPipeline.AutoScroll" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1562,7 +1091,7 @@
     <value>pnlContainer</value>
   </data>
   <data name="&gt;&gt;pnlOldOilPipeline.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="pnlPetarena.AutoScroll" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1640,84 +1169,6 @@
     <value>pnlContainer</value>
   </data>
   <data name="&gt;&gt;pnlPetarena.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="pnlWarPets.AutoScroll" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;groupBox5.Name" xml:space="preserve">
-    <value>groupBox5</value>
-  </data>
-  <data name="&gt;&gt;groupBox5.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;groupBox5.Parent" xml:space="preserve">
-    <value>pnlWarPets</value>
-  </data>
-  <data name="&gt;&gt;groupBox5.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;label119.Name" xml:space="preserve">
-    <value>label119</value>
-  </data>
-  <data name="&gt;&gt;label119.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label119.Parent" xml:space="preserve">
-    <value>pnlWarPets</value>
-  </data>
-  <data name="&gt;&gt;label119.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;groupBox4.Name" xml:space="preserve">
-    <value>groupBox4</value>
-  </data>
-  <data name="&gt;&gt;groupBox4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;groupBox4.Parent" xml:space="preserve">
-    <value>pnlWarPets</value>
-  </data>
-  <data name="&gt;&gt;groupBox4.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;cboxSetWarPetType.Name" xml:space="preserve">
-    <value>cboxSetWarPetType</value>
-  </data>
-  <data name="&gt;&gt;cboxSetWarPetType.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;cboxSetWarPetType.Parent" xml:space="preserve">
-    <value>pnlWarPets</value>
-  </data>
-  <data name="&gt;&gt;cboxSetWarPetType.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="pnlWarPets.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="pnlWarPets.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="pnlWarPets.Size" type="System.Drawing.Size, System.Drawing">
-    <value>594, 602</value>
-  </data>
-  <data name="pnlWarPets.TabIndex" type="System.Int32, mscorlib">
-    <value>48</value>
-  </data>
-  <data name="pnlWarPets.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;pnlWarPets.Name" xml:space="preserve">
-    <value>pnlWarPets</value>
-  </data>
-  <data name="&gt;&gt;pnlWarPets.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pnlWarPets.Parent" xml:space="preserve">
-    <value>pnlContainer</value>
-  </data>
-  <data name="&gt;&gt;pnlWarPets.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
   <data name="pnlMisc.AutoScroll" type="System.Boolean, mscorlib">
@@ -7708,114 +7159,6 @@
   <data name="&gt;&gt;chkUseRunPet.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="&gt;&gt;label10.Name" xml:space="preserve">
-    <value>label10</value>
-  </data>
-  <data name="&gt;&gt;label10.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label10.Parent" xml:space="preserve">
-    <value>groupBox5</value>
-  </data>
-  <data name="&gt;&gt;label10.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;numHealPet50.Name" xml:space="preserve">
-    <value>numHealPet50</value>
-  </data>
-  <data name="&gt;&gt;numHealPet50.Type" xml:space="preserve">
-    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;numHealPet50.Parent" xml:space="preserve">
-    <value>groupBox5</value>
-  </data>
-  <data name="&gt;&gt;numHealPet50.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;label13.Name" xml:space="preserve">
-    <value>label13</value>
-  </data>
-  <data name="&gt;&gt;label13.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label13.Parent" xml:space="preserve">
-    <value>groupBox5</value>
-  </data>
-  <data name="&gt;&gt;label13.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;label11.Name" xml:space="preserve">
-    <value>label11</value>
-  </data>
-  <data name="&gt;&gt;label11.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label11.Parent" xml:space="preserve">
-    <value>groupBox5</value>
-  </data>
-  <data name="&gt;&gt;label11.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;numHealPet100.Name" xml:space="preserve">
-    <value>numHealPet100</value>
-  </data>
-  <data name="&gt;&gt;numHealPet100.Type" xml:space="preserve">
-    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;numHealPet100.Parent" xml:space="preserve">
-    <value>groupBox5</value>
-  </data>
-  <data name="&gt;&gt;numHealPet100.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;label12.Name" xml:space="preserve">
-    <value>label12</value>
-  </data>
-  <data name="&gt;&gt;label12.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label12.Parent" xml:space="preserve">
-    <value>groupBox5</value>
-  </data>
-  <data name="&gt;&gt;label12.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;chkBuyHealPet.Name" xml:space="preserve">
-    <value>chkBuyHealPet</value>
-  </data>
-  <data name="&gt;&gt;chkBuyHealPet.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;chkBuyHealPet.Parent" xml:space="preserve">
-    <value>groupBox5</value>
-  </data>
-  <data name="&gt;&gt;chkBuyHealPet.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="groupBox5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 31</value>
-  </data>
-  <data name="groupBox5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>303, 92</value>
-  </data>
-  <data name="groupBox5.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="groupBox5.Text" xml:space="preserve">
-    <value>Лечение</value>
-  </data>
-  <data name="&gt;&gt;groupBox5.Name" xml:space="preserve">
-    <value>groupBox5</value>
-  </data>
-  <data name="&gt;&gt;groupBox5.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;groupBox5.Parent" xml:space="preserve">
-    <value>pnlWarPets</value>
-  </data>
-  <data name="&gt;&gt;groupBox5.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
   <data name="label10.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -8013,252 +7356,6 @@
   </data>
   <data name="&gt;&gt;chkBuyHealPet.ZOrder" xml:space="preserve">
     <value>6</value>
-  </data>
-  <data name="label119.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label119.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label119.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 7</value>
-  </data>
-  <data name="label119.Size" type="System.Drawing.Size, System.Drawing">
-    <value>175, 14</value>
-  </data>
-  <data name="label119.TabIndex" type="System.Int32, mscorlib">
-    <value>24</value>
-  </data>
-  <data name="label119.Text" xml:space="preserve">
-    <value>Мой любимый боевой питомец:</value>
-  </data>
-  <data name="&gt;&gt;label119.Name" xml:space="preserve">
-    <value>label119</value>
-  </data>
-  <data name="&gt;&gt;label119.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label119.Parent" xml:space="preserve">
-    <value>pnlWarPets</value>
-  </data>
-  <data name="&gt;&gt;label119.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;chkTrainWarPet.Name" xml:space="preserve">
-    <value>chkTrainWarPet</value>
-  </data>
-  <data name="&gt;&gt;chkTrainWarPet.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;chkTrainWarPet.Parent" xml:space="preserve">
-    <value>groupBox4</value>
-  </data>
-  <data name="&gt;&gt;chkTrainWarPet.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;numMinTrainPetOil.Name" xml:space="preserve">
-    <value>numMinTrainPetOil</value>
-  </data>
-  <data name="&gt;&gt;numMinTrainPetOil.Type" xml:space="preserve">
-    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;numMinTrainPetOil.Parent" xml:space="preserve">
-    <value>groupBox4</value>
-  </data>
-  <data name="&gt;&gt;numMinTrainPetOil.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;numMaxTrainPetFocus.Name" xml:space="preserve">
-    <value>numMaxTrainPetFocus</value>
-  </data>
-  <data name="&gt;&gt;numMaxTrainPetFocus.Type" xml:space="preserve">
-    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;numMaxTrainPetFocus.Parent" xml:space="preserve">
-    <value>groupBox4</value>
-  </data>
-  <data name="&gt;&gt;numMaxTrainPetFocus.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;chkTrainPetMass.Name" xml:space="preserve">
-    <value>chkTrainPetMass</value>
-  </data>
-  <data name="&gt;&gt;chkTrainPetMass.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;chkTrainPetMass.Parent" xml:space="preserve">
-    <value>groupBox4</value>
-  </data>
-  <data name="&gt;&gt;chkTrainPetMass.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;numMaxTrainPetLoyality.Name" xml:space="preserve">
-    <value>numMaxTrainPetLoyality</value>
-  </data>
-  <data name="&gt;&gt;numMaxTrainPetLoyality.Type" xml:space="preserve">
-    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;numMaxTrainPetLoyality.Parent" xml:space="preserve">
-    <value>groupBox4</value>
-  </data>
-  <data name="&gt;&gt;numMaxTrainPetLoyality.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;chkTrainPetFocus.Name" xml:space="preserve">
-    <value>chkTrainPetFocus</value>
-  </data>
-  <data name="&gt;&gt;chkTrainPetFocus.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;chkTrainPetFocus.Parent" xml:space="preserve">
-    <value>groupBox4</value>
-  </data>
-  <data name="&gt;&gt;chkTrainPetFocus.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;label29.Name" xml:space="preserve">
-    <value>label29</value>
-  </data>
-  <data name="&gt;&gt;label29.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label29.Parent" xml:space="preserve">
-    <value>groupBox4</value>
-  </data>
-  <data name="&gt;&gt;label29.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;chkTrainPetLoyality.Name" xml:space="preserve">
-    <value>chkTrainPetLoyality</value>
-  </data>
-  <data name="&gt;&gt;chkTrainPetLoyality.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;chkTrainPetLoyality.Parent" xml:space="preserve">
-    <value>groupBox4</value>
-  </data>
-  <data name="&gt;&gt;chkTrainPetLoyality.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="&gt;&gt;label64.Name" xml:space="preserve">
-    <value>label64</value>
-  </data>
-  <data name="&gt;&gt;label64.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label64.Parent" xml:space="preserve">
-    <value>groupBox4</value>
-  </data>
-  <data name="&gt;&gt;label64.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="&gt;&gt;numMinTrainPetOre.Name" xml:space="preserve">
-    <value>numMinTrainPetOre</value>
-  </data>
-  <data name="&gt;&gt;numMinTrainPetOre.Type" xml:space="preserve">
-    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;numMinTrainPetOre.Parent" xml:space="preserve">
-    <value>groupBox4</value>
-  </data>
-  <data name="&gt;&gt;numMinTrainPetOre.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="&gt;&gt;numMaxTrainPetMass.Name" xml:space="preserve">
-    <value>numMaxTrainPetMass</value>
-  </data>
-  <data name="&gt;&gt;numMaxTrainPetMass.Type" xml:space="preserve">
-    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;numMaxTrainPetMass.Parent" xml:space="preserve">
-    <value>groupBox4</value>
-  </data>
-  <data name="&gt;&gt;numMaxTrainPetMass.ZOrder" xml:space="preserve">
-    <value>10</value>
-  </data>
-  <data name="&gt;&gt;label30.Name" xml:space="preserve">
-    <value>label30</value>
-  </data>
-  <data name="&gt;&gt;label30.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label30.Parent" xml:space="preserve">
-    <value>groupBox4</value>
-  </data>
-  <data name="&gt;&gt;label30.ZOrder" xml:space="preserve">
-    <value>11</value>
-  </data>
-  <data name="&gt;&gt;cboxTrainWarPetType.Name" xml:space="preserve">
-    <value>cboxTrainWarPetType</value>
-  </data>
-  <data name="&gt;&gt;cboxTrainWarPetType.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;cboxTrainWarPetType.Parent" xml:space="preserve">
-    <value>groupBox4</value>
-  </data>
-  <data name="&gt;&gt;cboxTrainWarPetType.ZOrder" xml:space="preserve">
-    <value>12</value>
-  </data>
-  <data name="&gt;&gt;label65.Name" xml:space="preserve">
-    <value>label65</value>
-  </data>
-  <data name="&gt;&gt;label65.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label65.Parent" xml:space="preserve">
-    <value>groupBox4</value>
-  </data>
-  <data name="&gt;&gt;label65.ZOrder" xml:space="preserve">
-    <value>13</value>
-  </data>
-  <data name="&gt;&gt;chkUseTrainWhip.Name" xml:space="preserve">
-    <value>chkUseTrainWhip</value>
-  </data>
-  <data name="&gt;&gt;chkUseTrainWhip.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;chkUseTrainWhip.Parent" xml:space="preserve">
-    <value>groupBox4</value>
-  </data>
-  <data name="&gt;&gt;chkUseTrainWhip.ZOrder" xml:space="preserve">
-    <value>14</value>
-  </data>
-  <data name="&gt;&gt;numMinTrainPetMoney.Name" xml:space="preserve">
-    <value>numMinTrainPetMoney</value>
-  </data>
-  <data name="&gt;&gt;numMinTrainPetMoney.Type" xml:space="preserve">
-    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;numMinTrainPetMoney.Parent" xml:space="preserve">
-    <value>groupBox4</value>
-  </data>
-  <data name="&gt;&gt;numMinTrainPetMoney.ZOrder" xml:space="preserve">
-    <value>15</value>
-  </data>
-  <data name="groupBox4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 129</value>
-  </data>
-  <data name="groupBox4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>398, 194</value>
-  </data>
-  <data name="groupBox4.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="groupBox4.Text" xml:space="preserve">
-    <value>Тренировка</value>
-  </data>
-  <data name="&gt;&gt;groupBox4.Name" xml:space="preserve">
-    <value>groupBox4</value>
-  </data>
-  <data name="&gt;&gt;groupBox4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;groupBox4.Parent" xml:space="preserve">
-    <value>pnlWarPets</value>
-  </data>
-  <data name="&gt;&gt;groupBox4.ZOrder" xml:space="preserve">
-    <value>2</value>
   </data>
   <data name="chkTrainWarPet.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -8751,78 +7848,6 @@
   </data>
   <data name="&gt;&gt;numMinTrainPetMoney.ZOrder" xml:space="preserve">
     <value>15</value>
-  </data>
-  <data name="cboxSetWarPetType.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="cboxSetWarPetType.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="cboxSetWarPetType.Items" xml:space="preserve">
-    <value>-Отсутствует-</value>
-  </data>
-  <data name="cboxSetWarPetType.Items1" xml:space="preserve">
-    <value>Попугай</value>
-  </data>
-  <data name="cboxSetWarPetType.Items2" xml:space="preserve">
-    <value>Кошка</value>
-  </data>
-  <data name="cboxSetWarPetType.Items3" xml:space="preserve">
-    <value>Чихуахуа</value>
-  </data>
-  <data name="cboxSetWarPetType.Items4" xml:space="preserve">
-    <value>Доберман</value>
-  </data>
-  <data name="cboxSetWarPetType.Items5" xml:space="preserve">
-    <value>Овчарка</value>
-  </data>
-  <data name="cboxSetWarPetType.Items6" xml:space="preserve">
-    <value>Ротвейлер</value>
-  </data>
-  <data name="cboxSetWarPetType.Items7" xml:space="preserve">
-    <value>Дог</value>
-  </data>
-  <data name="cboxSetWarPetType.Items8" xml:space="preserve">
-    <value>Волк</value>
-  </data>
-  <data name="cboxSetWarPetType.Items9" xml:space="preserve">
-    <value>Лев</value>
-  </data>
-  <data name="cboxSetWarPetType.Items10" xml:space="preserve">
-    <value>Пантера</value>
-  </data>
-  <data name="cboxSetWarPetType.Items11" xml:space="preserve">
-    <value>Котёнок "Гаф"</value>
-  </data>
-  <data name="cboxSetWarPetType.Items12" xml:space="preserve">
-    <value>Чёрный дог</value>
-  </data>
-  <data name="cboxSetWarPetType.Items13" xml:space="preserve">
-    <value>Хомячок</value>
-  </data>
-  <data name="cboxSetWarPetType.Items14" xml:space="preserve">
-    <value>Хаски</value>
-  </data>
-  <data name="cboxSetWarPetType.Location" type="System.Drawing.Point, System.Drawing">
-    <value>189, 3</value>
-  </data>
-  <data name="cboxSetWarPetType.Size" type="System.Drawing.Size, System.Drawing">
-    <value>107, 22</value>
-  </data>
-  <data name="cboxSetWarPetType.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;cboxSetWarPetType.Name" xml:space="preserve">
-    <value>cboxSetWarPetType</value>
-  </data>
-  <data name="&gt;&gt;cboxSetWarPetType.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;cboxSetWarPetType.Parent" xml:space="preserve">
-    <value>pnlWarPets</value>
-  </data>
-  <data name="&gt;&gt;cboxSetWarPetType.ZOrder" xml:space="preserve">
-    <value>3</value>
   </data>
   <data name="chkUseWearSet.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -23880,6 +22905,870 @@
   <data name="&gt;&gt;chkHCRevenge.ZOrder" xml:space="preserve">
     <value>22</value>
   </data>
+  <data name="chkOilLeninIronHead.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="chkOilLeninIronHead.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="chkOilLeninIronHead.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 200</value>
+  </data>
+  <data name="chkOilLeninIronHead.Size" type="System.Drawing.Size, System.Drawing">
+    <value>293, 18</value>
+  </data>
+  <data name="chkOilLeninIronHead.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="chkOilLeninIronHead.Text" xml:space="preserve">
+    <value>Игнорировать счетчик поражений на 28-м вентиле</value>
+  </data>
+  <data name="&gt;&gt;chkOilLeninIronHead.Name" xml:space="preserve">
+    <value>chkOilLeninIronHead</value>
+  </data>
+  <data name="&gt;&gt;chkOilLeninIronHead.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkOilLeninIronHead.Parent" xml:space="preserve">
+    <value>groupBox7</value>
+  </data>
+  <data name="&gt;&gt;chkOilLeninIronHead.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="chkGoOilLenin.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="chkGoOilLenin.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="chkGoOilLenin.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, -2</value>
+  </data>
+  <data name="chkGoOilLenin.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 0, 0</value>
+  </data>
+  <data name="chkGoOilLenin.Size" type="System.Drawing.Size, System.Drawing">
+    <value>163, 18</value>
+  </data>
+  <data name="chkGoOilLenin.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="chkGoOilLenin.Text" xml:space="preserve">
+    <value>Проходить нефтепровод</value>
+  </data>
+  <data name="&gt;&gt;chkGoOilLenin.Name" xml:space="preserve">
+    <value>chkGoOilLenin</value>
+  </data>
+  <data name="&gt;&gt;chkGoOilLenin.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkGoOilLenin.Parent" xml:space="preserve">
+    <value>groupBox7</value>
+  </data>
+  <data name="&gt;&gt;chkGoOilLenin.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="numOffsetSyncOilLenin.Location" type="System.Drawing.Point, System.Drawing">
+    <value>233, 146</value>
+  </data>
+  <data name="numOffsetSyncOilLenin.Size" type="System.Drawing.Size, System.Drawing">
+    <value>55, 22</value>
+  </data>
+  <data name="numOffsetSyncOilLenin.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="numOffsetSyncOilLenin.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Center</value>
+  </data>
+  <data name="&gt;&gt;numOffsetSyncOilLenin.Name" xml:space="preserve">
+    <value>numOffsetSyncOilLenin</value>
+  </data>
+  <data name="&gt;&gt;numOffsetSyncOilLenin.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;numOffsetSyncOilLenin.Parent" xml:space="preserve">
+    <value>groupBox7</value>
+  </data>
+  <data name="&gt;&gt;numOffsetSyncOilLenin.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="chkOilLeninLeaveNoElement.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="chkOilLeninLeaveNoElement.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="chkOilLeninLeaveNoElement.Location" type="System.Drawing.Point, System.Drawing">
+    <value>262, 52</value>
+  </data>
+  <data name="chkOilLeninLeaveNoElement.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="chkOilLeninLeaveNoElement.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 18</value>
+  </data>
+  <data name="chkOilLeninLeaveNoElement.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="chkOilLeninLeaveNoElement.Text" xml:space="preserve">
+    <value>элемента</value>
+  </data>
+  <data name="&gt;&gt;chkOilLeninLeaveNoElement.Name" xml:space="preserve">
+    <value>chkOilLeninLeaveNoElement</value>
+  </data>
+  <data name="&gt;&gt;chkOilLeninLeaveNoElement.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkOilLeninLeaveNoElement.Parent" xml:space="preserve">
+    <value>groupBox7</value>
+  </data>
+  <data name="&gt;&gt;chkOilLeninLeaveNoElement.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="chkOilLeninRobinHood.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="chkOilLeninRobinHood.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="chkOilLeninRobinHood.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 76</value>
+  </data>
+  <data name="chkOilLeninRobinHood.Size" type="System.Drawing.Size, System.Drawing">
+    <value>509, 18</value>
+  </data>
+  <data name="chkOilLeninRobinHood.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="chkOilLeninRobinHood.Text" xml:space="preserve">
+    <value>Перебирать награду до получения большого сундука и ключа на двух последних вентилях</value>
+  </data>
+  <data name="&gt;&gt;chkOilLeninRobinHood.Name" xml:space="preserve">
+    <value>chkOilLeninRobinHood</value>
+  </data>
+  <data name="&gt;&gt;chkOilLeninRobinHood.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkOilLeninRobinHood.Parent" xml:space="preserve">
+    <value>groupBox7</value>
+  </data>
+  <data name="&gt;&gt;chkOilLeninRobinHood.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="label102.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label102.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label102.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 54</value>
+  </data>
+  <data name="label102.Size" type="System.Drawing.Size, System.Drawing">
+    <value>195, 14</value>
+  </data>
+  <data name="label102.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="label102.Text" xml:space="preserve">
+    <value>Перебирать награду до получения:</value>
+  </data>
+  <data name="&gt;&gt;label102.Name" xml:space="preserve">
+    <value>label102</value>
+  </data>
+  <data name="&gt;&gt;label102.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label102.Parent" xml:space="preserve">
+    <value>groupBox7</value>
+  </data>
+  <data name="&gt;&gt;label102.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="chkUseItemOilLeninFightLvl30.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="chkUseItemOilLeninFightLvl30.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="chkUseItemOilLeninFightLvl30.Location" type="System.Drawing.Point, System.Drawing">
+    <value>245, 279</value>
+  </data>
+  <data name="chkUseItemOilLeninFightLvl30.Size" type="System.Drawing.Size, System.Drawing">
+    <value>57, 18</value>
+  </data>
+  <data name="chkUseItemOilLeninFightLvl30.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="chkUseItemOilLeninFightLvl30.Text" xml:space="preserve">
+    <value>Ленин</value>
+  </data>
+  <data name="&gt;&gt;chkUseItemOilLeninFightLvl30.Name" xml:space="preserve">
+    <value>chkUseItemOilLeninFightLvl30</value>
+  </data>
+  <data name="&gt;&gt;chkUseItemOilLeninFightLvl30.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkUseItemOilLeninFightLvl30.Parent" xml:space="preserve">
+    <value>groupBox7</value>
+  </data>
+  <data name="&gt;&gt;chkUseItemOilLeninFightLvl30.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="chkOilLeninLeaveNoKey.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="chkOilLeninLeaveNoKey.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="chkOilLeninLeaveNoKey.Location" type="System.Drawing.Point, System.Drawing">
+    <value>202, 52</value>
+  </data>
+  <data name="chkOilLeninLeaveNoKey.Size" type="System.Drawing.Size, System.Drawing">
+    <value>59, 18</value>
+  </data>
+  <data name="chkOilLeninLeaveNoKey.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="chkOilLeninLeaveNoKey.Text" xml:space="preserve">
+    <value>ключа</value>
+  </data>
+  <data name="&gt;&gt;chkOilLeninLeaveNoKey.Name" xml:space="preserve">
+    <value>chkOilLeninLeaveNoKey</value>
+  </data>
+  <data name="&gt;&gt;chkOilLeninLeaveNoKey.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkOilLeninLeaveNoKey.Parent" xml:space="preserve">
+    <value>groupBox7</value>
+  </data>
+  <data name="&gt;&gt;chkOilLeninLeaveNoKey.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="label139.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label139.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label139.Location" type="System.Drawing.Point, System.Drawing">
+    <value>290, 150</value>
+  </data>
+  <data name="label139.Size" type="System.Drawing.Size, System.Drawing">
+    <value>27, 14</value>
+  </data>
+  <data name="label139.TabIndex" type="System.Int32, mscorlib">
+    <value>96</value>
+  </data>
+  <data name="label139.Text" xml:space="preserve">
+    <value>мин</value>
+  </data>
+  <data name="&gt;&gt;label139.Name" xml:space="preserve">
+    <value>label139</value>
+  </data>
+  <data name="&gt;&gt;label139.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label139.Parent" xml:space="preserve">
+    <value>groupBox7</value>
+  </data>
+  <data name="&gt;&gt;label139.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="chkOilLeninLeaveNoBox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="chkOilLeninLeaveNoBox.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="chkOilLeninLeaveNoBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>339, 52</value>
+  </data>
+  <data name="chkOilLeninLeaveNoBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="chkOilLeninLeaveNoBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>68, 18</value>
+  </data>
+  <data name="chkOilLeninLeaveNoBox.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="chkOilLeninLeaveNoBox.Text" xml:space="preserve">
+    <value>сундука</value>
+  </data>
+  <data name="&gt;&gt;chkOilLeninLeaveNoBox.Name" xml:space="preserve">
+    <value>chkOilLeninLeaveNoBox</value>
+  </data>
+  <data name="&gt;&gt;chkOilLeninLeaveNoBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkOilLeninLeaveNoBox.Parent" xml:space="preserve">
+    <value>groupBox7</value>
+  </data>
+  <data name="&gt;&gt;chkOilLeninLeaveNoBox.ZOrder" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="chkUseItemOilLeninFightLvl29.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="chkUseItemOilLeninFightLvl29.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="chkUseItemOilLeninFightLvl29.Location" type="System.Drawing.Point, System.Drawing">
+    <value>184, 279</value>
+  </data>
+  <data name="chkUseItemOilLeninFightLvl29.Size" type="System.Drawing.Size, System.Drawing">
+    <value>39, 18</value>
+  </data>
+  <data name="chkUseItemOilLeninFightLvl29.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="chkUseItemOilLeninFightLvl29.Text" xml:space="preserve">
+    <value>29</value>
+  </data>
+  <data name="&gt;&gt;chkUseItemOilLeninFightLvl29.Name" xml:space="preserve">
+    <value>chkUseItemOilLeninFightLvl29</value>
+  </data>
+  <data name="&gt;&gt;chkUseItemOilLeninFightLvl29.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkUseItemOilLeninFightLvl29.Parent" xml:space="preserve">
+    <value>groupBox7</value>
+  </data>
+  <data name="&gt;&gt;chkUseItemOilLeninFightLvl29.ZOrder" xml:space="preserve">
+    <value>22</value>
+  </data>
+  <data name="label101.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label101.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Candara, 9pt</value>
+  </data>
+  <data name="label101.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label101.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 102</value>
+  </data>
+  <data name="label101.Size" type="System.Drawing.Size, System.Drawing">
+    <value>231, 14</value>
+  </data>
+  <data name="label101.TabIndex" type="System.Int32, mscorlib">
+    <value>48</value>
+  </data>
+  <data name="label101.Text" xml:space="preserve">
+    <value>Бросать кости, если у соперника не более:</value>
+  </data>
+  <data name="label101.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;label101.Name" xml:space="preserve">
+    <value>label101</value>
+  </data>
+  <data name="&gt;&gt;label101.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label101.Parent" xml:space="preserve">
+    <value>groupBox7</value>
+  </data>
+  <data name="&gt;&gt;label101.ZOrder" xml:space="preserve">
+    <value>24</value>
+  </data>
+  <data name="label140.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label140.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label140.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 150</value>
+  </data>
+  <data name="label140.Size" type="System.Drawing.Size, System.Drawing">
+    <value>226, 14</value>
+  </data>
+  <data name="label140.TabIndex" type="System.Int32, mscorlib">
+    <value>97</value>
+  </data>
+  <data name="label140.Text" xml:space="preserve">
+    <value>Смещение синхронизации нефтепровода:</value>
+  </data>
+  <data name="&gt;&gt;label140.Name" xml:space="preserve">
+    <value>label140</value>
+  </data>
+  <data name="&gt;&gt;label140.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label140.Parent" xml:space="preserve">
+    <value>groupBox7</value>
+  </data>
+  <data name="&gt;&gt;label140.ZOrder" xml:space="preserve">
+    <value>26</value>
+  </data>
+  <data name="numMaxOilLeninDice.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Candara, 9pt</value>
+  </data>
+  <data name="numMaxOilLeninDice.Location" type="System.Drawing.Point, System.Drawing">
+    <value>239, 98</value>
+  </data>
+  <data name="numMaxOilLeninDice.Size" type="System.Drawing.Size, System.Drawing">
+    <value>33, 22</value>
+  </data>
+  <data name="numMaxOilLeninDice.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="numMaxOilLeninDice.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Center</value>
+  </data>
+  <data name="&gt;&gt;numMaxOilLeninDice.Name" xml:space="preserve">
+    <value>numMaxOilLeninDice</value>
+  </data>
+  <data name="&gt;&gt;numMaxOilLeninDice.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;numMaxOilLeninDice.Parent" xml:space="preserve">
+    <value>groupBox7</value>
+  </data>
+  <data name="&gt;&gt;numMaxOilLeninDice.ZOrder" xml:space="preserve">
+    <value>25</value>
+  </data>
+  <data name="chkUseItemOilLeninFightLvl26.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="chkUseItemOilLeninFightLvl26.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="chkUseItemOilLeninFightLvl26.Location" type="System.Drawing.Point, System.Drawing">
+    <value>123, 279</value>
+  </data>
+  <data name="chkUseItemOilLeninFightLvl26.Size" type="System.Drawing.Size, System.Drawing">
+    <value>39, 18</value>
+  </data>
+  <data name="chkUseItemOilLeninFightLvl26.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="chkUseItemOilLeninFightLvl26.Text" xml:space="preserve">
+    <value>26</value>
+  </data>
+  <data name="&gt;&gt;chkUseItemOilLeninFightLvl26.Name" xml:space="preserve">
+    <value>chkUseItemOilLeninFightLvl26</value>
+  </data>
+  <data name="&gt;&gt;chkUseItemOilLeninFightLvl26.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkUseItemOilLeninFightLvl26.Parent" xml:space="preserve">
+    <value>groupBox7</value>
+  </data>
+  <data name="&gt;&gt;chkUseItemOilLeninFightLvl26.ZOrder" xml:space="preserve">
+    <value>23</value>
+  </data>
+  <data name="numMaxOilDefeats.Location" type="System.Drawing.Point, System.Drawing">
+    <value>198, 172</value>
+  </data>
+  <data name="numMaxOilDefeats.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 22</value>
+  </data>
+  <data name="numMaxOilDefeats.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="numMaxOilDefeats.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Center</value>
+  </data>
+  <data name="&gt;&gt;numMaxOilDefeats.Name" xml:space="preserve">
+    <value>numMaxOilDefeats</value>
+  </data>
+  <data name="&gt;&gt;numMaxOilDefeats.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;numMaxOilDefeats.Parent" xml:space="preserve">
+    <value>groupBox7</value>
+  </data>
+  <data name="&gt;&gt;numMaxOilDefeats.ZOrder" xml:space="preserve">
+    <value>21</value>
+  </data>
+  <data name="label103.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label103.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label103.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 252</value>
+  </data>
+  <data name="label103.Size" type="System.Drawing.Size, System.Drawing">
+    <value>145, 14</value>
+  </data>
+  <data name="label103.TabIndex" type="System.Int32, mscorlib">
+    <value>79</value>
+  </data>
+  <data name="label103.Text" xml:space="preserve">
+    <value>Разрешить использование</value>
+  </data>
+  <data name="&gt;&gt;label103.Name" xml:space="preserve">
+    <value>label103</value>
+  </data>
+  <data name="&gt;&gt;label103.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label103.Parent" xml:space="preserve">
+    <value>groupBox7</value>
+  </data>
+  <data name="&gt;&gt;label103.ZOrder" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="chkUseItemOilLeninFightLvl17.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="chkUseItemOilLeninFightLvl17.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="chkUseItemOilLeninFightLvl17.Location" type="System.Drawing.Point, System.Drawing">
+    <value>65, 279</value>
+  </data>
+  <data name="chkUseItemOilLeninFightLvl17.Size" type="System.Drawing.Size, System.Drawing">
+    <value>36, 18</value>
+  </data>
+  <data name="chkUseItemOilLeninFightLvl17.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="chkUseItemOilLeninFightLvl17.Text" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;chkUseItemOilLeninFightLvl17.Name" xml:space="preserve">
+    <value>chkUseItemOilLeninFightLvl17</value>
+  </data>
+  <data name="&gt;&gt;chkUseItemOilLeninFightLvl17.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkUseItemOilLeninFightLvl17.Parent" xml:space="preserve">
+    <value>groupBox7</value>
+  </data>
+  <data name="&gt;&gt;chkUseItemOilLeninFightLvl17.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="lblOilMaxDefeats.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblOilMaxDefeats.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Candara, 9pt</value>
+  </data>
+  <data name="lblOilMaxDefeats.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblOilMaxDefeats.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 176</value>
+  </data>
+  <data name="lblOilMaxDefeats.Size" type="System.Drawing.Size, System.Drawing">
+    <value>193, 14</value>
+  </data>
+  <data name="lblOilMaxDefeats.TabIndex" type="System.Int32, mscorlib">
+    <value>94</value>
+  </data>
+  <data name="lblOilMaxDefeats.Text" xml:space="preserve">
+    <value>Останавливать прохождение после</value>
+  </data>
+  <data name="lblOilMaxDefeats.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;lblOilMaxDefeats.Name" xml:space="preserve">
+    <value>lblOilMaxDefeats</value>
+  </data>
+  <data name="&gt;&gt;lblOilMaxDefeats.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblOilMaxDefeats.Parent" xml:space="preserve">
+    <value>groupBox7</value>
+  </data>
+  <data name="&gt;&gt;lblOilMaxDefeats.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="chkSyncOilLenin.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="chkSyncOilLenin.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="chkSyncOilLenin.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 124</value>
+  </data>
+  <data name="chkSyncOilLenin.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="chkSyncOilLenin.Size" type="System.Drawing.Size, System.Drawing">
+    <value>224, 18</value>
+  </data>
+  <data name="chkSyncOilLenin.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="chkSyncOilLenin.Text" xml:space="preserve">
+    <value>Синхронизировать с крысопроводом</value>
+  </data>
+  <data name="&gt;&gt;chkSyncOilLenin.Name" xml:space="preserve">
+    <value>chkSyncOilLenin</value>
+  </data>
+  <data name="&gt;&gt;chkSyncOilLenin.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkSyncOilLenin.Parent" xml:space="preserve">
+    <value>groupBox7</value>
+  </data>
+  <data name="&gt;&gt;chkSyncOilLenin.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="label59.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label59.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label59.Location" type="System.Drawing.Point, System.Drawing">
+    <value>241, 252</value>
+  </data>
+  <data name="label59.Size" type="System.Drawing.Size, System.Drawing">
+    <value>59, 14</value>
+  </data>
+  <data name="label59.TabIndex" type="System.Int32, mscorlib">
+    <value>80</value>
+  </data>
+  <data name="label59.Text" xml:space="preserve">
+    <value>в стенках:</value>
+  </data>
+  <data name="&gt;&gt;label59.Name" xml:space="preserve">
+    <value>label59</value>
+  </data>
+  <data name="&gt;&gt;label59.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label59.Parent" xml:space="preserve">
+    <value>groupBox7</value>
+  </data>
+  <data name="&gt;&gt;label59.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="chkUseItemOilLeninFightLvl8.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="chkUseItemOilLeninFightLvl8.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="chkUseItemOilLeninFightLvl8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 279</value>
+  </data>
+  <data name="chkUseItemOilLeninFightLvl8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>33, 18</value>
+  </data>
+  <data name="chkUseItemOilLeninFightLvl8.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="chkUseItemOilLeninFightLvl8.Text" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;chkUseItemOilLeninFightLvl8.Name" xml:space="preserve">
+    <value>chkUseItemOilLeninFightLvl8</value>
+  </data>
+  <data name="&gt;&gt;chkUseItemOilLeninFightLvl8.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkUseItemOilLeninFightLvl8.Parent" xml:space="preserve">
+    <value>groupBox7</value>
+  </data>
+  <data name="&gt;&gt;chkUseItemOilLeninFightLvl8.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="chkOilUseOhara.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="chkOilUseOhara.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="chkOilUseOhara.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 224</value>
+  </data>
+  <data name="chkOilUseOhara.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="chkOilUseOhara.Size" type="System.Drawing.Size, System.Drawing">
+    <value>298, 18</value>
+  </data>
+  <data name="chkOilUseOhara.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="chkOilUseOhara.Text" xml:space="preserve">
+    <value>Игнорировать счетчик поражений на всех вентилях</value>
+  </data>
+  <data name="&gt;&gt;chkOilUseOhara.Name" xml:space="preserve">
+    <value>chkOilUseOhara</value>
+  </data>
+  <data name="&gt;&gt;chkOilUseOhara.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkOilUseOhara.Parent" xml:space="preserve">
+    <value>groupBox7</value>
+  </data>
+  <data name="&gt;&gt;chkOilUseOhara.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="cboxOilLeninLvl.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="cboxOilLeninLvl.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="cboxOilLeninLvl.Items" xml:space="preserve">
+    <value>1 вентиля</value>
+  </data>
+  <data name="cboxOilLeninLvl.Items1" xml:space="preserve">
+    <value>2 вентиля</value>
+  </data>
+  <data name="cboxOilLeninLvl.Items2" xml:space="preserve">
+    <value>3 вентиля</value>
+  </data>
+  <data name="cboxOilLeninLvl.Items3" xml:space="preserve">
+    <value>4 вентиля</value>
+  </data>
+  <data name="cboxOilLeninLvl.Items4" xml:space="preserve">
+    <value>5 вентиля</value>
+  </data>
+  <data name="cboxOilLeninLvl.Items5" xml:space="preserve">
+    <value>6 вентиля</value>
+  </data>
+  <data name="cboxOilLeninLvl.Items6" xml:space="preserve">
+    <value>7 вентиля</value>
+  </data>
+  <data name="cboxOilLeninLvl.Items7" xml:space="preserve">
+    <value>8 вентиля</value>
+  </data>
+  <data name="cboxOilLeninLvl.Items8" xml:space="preserve">
+    <value>9 вентиля</value>
+  </data>
+  <data name="cboxOilLeninLvl.Items9" xml:space="preserve">
+    <value>10 вентиля</value>
+  </data>
+  <data name="cboxOilLeninLvl.Items10" xml:space="preserve">
+    <value>11 вентиля</value>
+  </data>
+  <data name="cboxOilLeninLvl.Items11" xml:space="preserve">
+    <value>12 вентиля</value>
+  </data>
+  <data name="cboxOilLeninLvl.Items12" xml:space="preserve">
+    <value>13 вентиля</value>
+  </data>
+  <data name="cboxOilLeninLvl.Items13" xml:space="preserve">
+    <value>14 вентиля</value>
+  </data>
+  <data name="cboxOilLeninLvl.Items14" xml:space="preserve">
+    <value>15 вентиля</value>
+  </data>
+  <data name="cboxOilLeninLvl.Items15" xml:space="preserve">
+    <value>16 вентиля</value>
+  </data>
+  <data name="cboxOilLeninLvl.Items16" xml:space="preserve">
+    <value>17 вентиля</value>
+  </data>
+  <data name="cboxOilLeninLvl.Items17" xml:space="preserve">
+    <value>18 вентиля</value>
+  </data>
+  <data name="cboxOilLeninLvl.Items18" xml:space="preserve">
+    <value>19 вентиля</value>
+  </data>
+  <data name="cboxOilLeninLvl.Items19" xml:space="preserve">
+    <value>20 вентиля</value>
+  </data>
+  <data name="cboxOilLeninLvl.Items20" xml:space="preserve">
+    <value>21 вентиля</value>
+  </data>
+  <data name="cboxOilLeninLvl.Items21" xml:space="preserve">
+    <value>22 вентиля</value>
+  </data>
+  <data name="cboxOilLeninLvl.Items22" xml:space="preserve">
+    <value>23 вентиля</value>
+  </data>
+  <data name="cboxOilLeninLvl.Items23" xml:space="preserve">
+    <value>24 вентиля</value>
+  </data>
+  <data name="cboxOilLeninLvl.Items24" xml:space="preserve">
+    <value>25 вентиля</value>
+  </data>
+  <data name="cboxOilLeninLvl.Items25" xml:space="preserve">
+    <value>26 вентиля</value>
+  </data>
+  <data name="cboxOilLeninLvl.Items26" xml:space="preserve">
+    <value>27 вентиля</value>
+  </data>
+  <data name="cboxOilLeninLvl.Items27" xml:space="preserve">
+    <value>28 вентиля</value>
+  </data>
+  <data name="cboxOilLeninLvl.Items28" xml:space="preserve">
+    <value>29 вентиля</value>
+  </data>
+  <data name="cboxOilLeninLvl.Items29" xml:space="preserve">
+    <value>Ленина</value>
+  </data>
+  <data name="cboxOilLeninLvl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>87, 22</value>
+  </data>
+  <data name="cboxOilLeninLvl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>88, 22</value>
+  </data>
+  <data name="cboxOilLeninLvl.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;cboxOilLeninLvl.Name" xml:space="preserve">
+    <value>cboxOilLeninLvl</value>
+  </data>
+  <data name="&gt;&gt;cboxOilLeninLvl.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cboxOilLeninLvl.Parent" xml:space="preserve">
+    <value>groupBox7</value>
+  </data>
+  <data name="&gt;&gt;cboxOilLeninLvl.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="cboxOilLeninGrpFightUseItems.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="cboxOilLeninGrpFightUseItems.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="cboxOilLeninGrpFightUseItems.Items" xml:space="preserve">
+    <value>лечения</value>
+  </data>
+  <data name="cboxOilLeninGrpFightUseItems.Items1" xml:space="preserve">
+    <value>гранат</value>
+  </data>
+  <data name="cboxOilLeninGrpFightUseItems.Items2" xml:space="preserve">
+    <value>сыра</value>
+  </data>
+  <data name="cboxOilLeninGrpFightUseItems.Items3" xml:space="preserve">
+    <value>иного</value>
+  </data>
+  <data name="cboxOilLeninGrpFightUseItems.Items4" xml:space="preserve">
+    <value>медведя</value>
+  </data>
+  <data name="cboxOilLeninGrpFightUseItems.Location" type="System.Drawing.Point, System.Drawing">
+    <value>154, 248</value>
+  </data>
+  <data name="cboxOilLeninGrpFightUseItems.MaxDropDownItems" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="cboxOilLeninGrpFightUseItems.Size" type="System.Drawing.Size, System.Drawing">
+    <value>80, 22</value>
+  </data>
+  <data name="cboxOilLeninGrpFightUseItems.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;cboxOilLeninGrpFightUseItems.Name" xml:space="preserve">
+    <value>cboxOilLeninGrpFightUseItems</value>
+  </data>
+  <data name="&gt;&gt;cboxOilLeninGrpFightUseItems.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cboxOilLeninGrpFightUseItems.Parent" xml:space="preserve">
+    <value>groupBox7</value>
+  </data>
+  <data name="&gt;&gt;cboxOilLeninGrpFightUseItems.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
   <data name="numMaxSearchRatDefeats.Location" type="System.Drawing.Point, System.Drawing">
     <value>153, 130</value>
   </data>
@@ -31283,6 +31172,405 @@
     <value>groupBox3</value>
   </data>
   <data name="&gt;&gt;label123.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;label180.Name" xml:space="preserve">
+    <value>label180</value>
+  </data>
+  <data name="&gt;&gt;label180.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label180.Parent" xml:space="preserve">
+    <value>groupBox7</value>
+  </data>
+  <data name="&gt;&gt;label180.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;label179.Name" xml:space="preserve">
+    <value>label179</value>
+  </data>
+  <data name="&gt;&gt;label179.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label179.Parent" xml:space="preserve">
+    <value>groupBox7</value>
+  </data>
+  <data name="&gt;&gt;label179.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;chkGoOilLenin.Name" xml:space="preserve">
+    <value>chkGoOilLenin</value>
+  </data>
+  <data name="&gt;&gt;chkGoOilLenin.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkGoOilLenin.Parent" xml:space="preserve">
+    <value>groupBox7</value>
+  </data>
+  <data name="&gt;&gt;chkGoOilLenin.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;chkOilLeninIronHead.Name" xml:space="preserve">
+    <value>chkOilLeninIronHead</value>
+  </data>
+  <data name="&gt;&gt;chkOilLeninIronHead.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkOilLeninIronHead.Parent" xml:space="preserve">
+    <value>groupBox7</value>
+  </data>
+  <data name="&gt;&gt;chkOilLeninIronHead.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;cboxOilLeninGrpFightUseItems.Name" xml:space="preserve">
+    <value>cboxOilLeninGrpFightUseItems</value>
+  </data>
+  <data name="&gt;&gt;cboxOilLeninGrpFightUseItems.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cboxOilLeninGrpFightUseItems.Parent" xml:space="preserve">
+    <value>groupBox7</value>
+  </data>
+  <data name="&gt;&gt;cboxOilLeninGrpFightUseItems.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;cboxOilLeninLvl.Name" xml:space="preserve">
+    <value>cboxOilLeninLvl</value>
+  </data>
+  <data name="&gt;&gt;cboxOilLeninLvl.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cboxOilLeninLvl.Parent" xml:space="preserve">
+    <value>groupBox7</value>
+  </data>
+  <data name="&gt;&gt;cboxOilLeninLvl.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;numOffsetSyncOilLenin.Name" xml:space="preserve">
+    <value>numOffsetSyncOilLenin</value>
+  </data>
+  <data name="&gt;&gt;numOffsetSyncOilLenin.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;numOffsetSyncOilLenin.Parent" xml:space="preserve">
+    <value>groupBox7</value>
+  </data>
+  <data name="&gt;&gt;numOffsetSyncOilLenin.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;chkOilUseOhara.Name" xml:space="preserve">
+    <value>chkOilUseOhara</value>
+  </data>
+  <data name="&gt;&gt;chkOilUseOhara.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkOilUseOhara.Parent" xml:space="preserve">
+    <value>groupBox7</value>
+  </data>
+  <data name="&gt;&gt;chkOilUseOhara.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;chkOilLeninLeaveNoElement.Name" xml:space="preserve">
+    <value>chkOilLeninLeaveNoElement</value>
+  </data>
+  <data name="&gt;&gt;chkOilLeninLeaveNoElement.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkOilLeninLeaveNoElement.Parent" xml:space="preserve">
+    <value>groupBox7</value>
+  </data>
+  <data name="&gt;&gt;chkOilLeninLeaveNoElement.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;chkUseItemOilLeninFightLvl8.Name" xml:space="preserve">
+    <value>chkUseItemOilLeninFightLvl8</value>
+  </data>
+  <data name="&gt;&gt;chkUseItemOilLeninFightLvl8.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkUseItemOilLeninFightLvl8.Parent" xml:space="preserve">
+    <value>groupBox7</value>
+  </data>
+  <data name="&gt;&gt;chkUseItemOilLeninFightLvl8.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;chkOilLeninRobinHood.Name" xml:space="preserve">
+    <value>chkOilLeninRobinHood</value>
+  </data>
+  <data name="&gt;&gt;chkOilLeninRobinHood.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkOilLeninRobinHood.Parent" xml:space="preserve">
+    <value>groupBox7</value>
+  </data>
+  <data name="&gt;&gt;chkOilLeninRobinHood.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;label59.Name" xml:space="preserve">
+    <value>label59</value>
+  </data>
+  <data name="&gt;&gt;label59.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label59.Parent" xml:space="preserve">
+    <value>groupBox7</value>
+  </data>
+  <data name="&gt;&gt;label59.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;label102.Name" xml:space="preserve">
+    <value>label102</value>
+  </data>
+  <data name="&gt;&gt;label102.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label102.Parent" xml:space="preserve">
+    <value>groupBox7</value>
+  </data>
+  <data name="&gt;&gt;label102.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;chkSyncOilLenin.Name" xml:space="preserve">
+    <value>chkSyncOilLenin</value>
+  </data>
+  <data name="&gt;&gt;chkSyncOilLenin.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkSyncOilLenin.Parent" xml:space="preserve">
+    <value>groupBox7</value>
+  </data>
+  <data name="&gt;&gt;chkSyncOilLenin.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;chkUseItemOilLeninFightLvl30.Name" xml:space="preserve">
+    <value>chkUseItemOilLeninFightLvl30</value>
+  </data>
+  <data name="&gt;&gt;chkUseItemOilLeninFightLvl30.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkUseItemOilLeninFightLvl30.Parent" xml:space="preserve">
+    <value>groupBox7</value>
+  </data>
+  <data name="&gt;&gt;chkUseItemOilLeninFightLvl30.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;lblOilMaxDefeats.Name" xml:space="preserve">
+    <value>lblOilMaxDefeats</value>
+  </data>
+  <data name="&gt;&gt;lblOilMaxDefeats.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblOilMaxDefeats.Parent" xml:space="preserve">
+    <value>groupBox7</value>
+  </data>
+  <data name="&gt;&gt;lblOilMaxDefeats.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;chkOilLeninLeaveNoKey.Name" xml:space="preserve">
+    <value>chkOilLeninLeaveNoKey</value>
+  </data>
+  <data name="&gt;&gt;chkOilLeninLeaveNoKey.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkOilLeninLeaveNoKey.Parent" xml:space="preserve">
+    <value>groupBox7</value>
+  </data>
+  <data name="&gt;&gt;chkOilLeninLeaveNoKey.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;chkUseItemOilLeninFightLvl17.Name" xml:space="preserve">
+    <value>chkUseItemOilLeninFightLvl17</value>
+  </data>
+  <data name="&gt;&gt;chkUseItemOilLeninFightLvl17.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkUseItemOilLeninFightLvl17.Parent" xml:space="preserve">
+    <value>groupBox7</value>
+  </data>
+  <data name="&gt;&gt;chkUseItemOilLeninFightLvl17.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;label139.Name" xml:space="preserve">
+    <value>label139</value>
+  </data>
+  <data name="&gt;&gt;label139.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label139.Parent" xml:space="preserve">
+    <value>groupBox7</value>
+  </data>
+  <data name="&gt;&gt;label139.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="&gt;&gt;label103.Name" xml:space="preserve">
+    <value>label103</value>
+  </data>
+  <data name="&gt;&gt;label103.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label103.Parent" xml:space="preserve">
+    <value>groupBox7</value>
+  </data>
+  <data name="&gt;&gt;label103.ZOrder" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="&gt;&gt;chkOilLeninLeaveNoBox.Name" xml:space="preserve">
+    <value>chkOilLeninLeaveNoBox</value>
+  </data>
+  <data name="&gt;&gt;chkOilLeninLeaveNoBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkOilLeninLeaveNoBox.Parent" xml:space="preserve">
+    <value>groupBox7</value>
+  </data>
+  <data name="&gt;&gt;chkOilLeninLeaveNoBox.ZOrder" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="&gt;&gt;numMaxOilDefeats.Name" xml:space="preserve">
+    <value>numMaxOilDefeats</value>
+  </data>
+  <data name="&gt;&gt;numMaxOilDefeats.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;numMaxOilDefeats.Parent" xml:space="preserve">
+    <value>groupBox7</value>
+  </data>
+  <data name="&gt;&gt;numMaxOilDefeats.ZOrder" xml:space="preserve">
+    <value>21</value>
+  </data>
+  <data name="&gt;&gt;chkUseItemOilLeninFightLvl29.Name" xml:space="preserve">
+    <value>chkUseItemOilLeninFightLvl29</value>
+  </data>
+  <data name="&gt;&gt;chkUseItemOilLeninFightLvl29.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkUseItemOilLeninFightLvl29.Parent" xml:space="preserve">
+    <value>groupBox7</value>
+  </data>
+  <data name="&gt;&gt;chkUseItemOilLeninFightLvl29.ZOrder" xml:space="preserve">
+    <value>22</value>
+  </data>
+  <data name="&gt;&gt;chkUseItemOilLeninFightLvl26.Name" xml:space="preserve">
+    <value>chkUseItemOilLeninFightLvl26</value>
+  </data>
+  <data name="&gt;&gt;chkUseItemOilLeninFightLvl26.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkUseItemOilLeninFightLvl26.Parent" xml:space="preserve">
+    <value>groupBox7</value>
+  </data>
+  <data name="&gt;&gt;chkUseItemOilLeninFightLvl26.ZOrder" xml:space="preserve">
+    <value>23</value>
+  </data>
+  <data name="&gt;&gt;label101.Name" xml:space="preserve">
+    <value>label101</value>
+  </data>
+  <data name="&gt;&gt;label101.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label101.Parent" xml:space="preserve">
+    <value>groupBox7</value>
+  </data>
+  <data name="&gt;&gt;label101.ZOrder" xml:space="preserve">
+    <value>24</value>
+  </data>
+  <data name="&gt;&gt;numMaxOilLeninDice.Name" xml:space="preserve">
+    <value>numMaxOilLeninDice</value>
+  </data>
+  <data name="&gt;&gt;numMaxOilLeninDice.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;numMaxOilLeninDice.Parent" xml:space="preserve">
+    <value>groupBox7</value>
+  </data>
+  <data name="&gt;&gt;numMaxOilLeninDice.ZOrder" xml:space="preserve">
+    <value>25</value>
+  </data>
+  <data name="&gt;&gt;label140.Name" xml:space="preserve">
+    <value>label140</value>
+  </data>
+  <data name="&gt;&gt;label140.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label140.Parent" xml:space="preserve">
+    <value>groupBox7</value>
+  </data>
+  <data name="&gt;&gt;label140.ZOrder" xml:space="preserve">
+    <value>26</value>
+  </data>
+  <data name="groupBox7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 6</value>
+  </data>
+  <data name="groupBox7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>522, 309</value>
+  </data>
+  <data name="groupBox7.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;groupBox7.Name" xml:space="preserve">
+    <value>groupBox7</value>
+  </data>
+  <data name="&gt;&gt;groupBox7.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBox7.Parent" xml:space="preserve">
+    <value>pnlOilPipeline</value>
+  </data>
+  <data name="&gt;&gt;groupBox7.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="label179.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label179.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 26</value>
+  </data>
+  <data name="label179.Size" type="System.Drawing.Size, System.Drawing">
+    <value>79, 14</value>
+  </data>
+  <data name="label179.TabIndex" type="System.Int32, mscorlib">
+    <value>98</value>
+  </data>
+  <data name="label179.Text" xml:space="preserve">
+    <value>Доходить до:</value>
+  </data>
+  <data name="&gt;&gt;label179.Name" xml:space="preserve">
+    <value>label179</value>
+  </data>
+  <data name="&gt;&gt;label179.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label179.Parent" xml:space="preserve">
+    <value>groupBox7</value>
+  </data>
+  <data name="&gt;&gt;label179.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="label180.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label180.Location" type="System.Drawing.Point, System.Drawing">
+    <value>233, 176</value>
+  </data>
+  <data name="label180.Size" type="System.Drawing.Size, System.Drawing">
+    <value>109, 14</value>
+  </data>
+  <data name="label180.TabIndex" type="System.Int32, mscorlib">
+    <value>99</value>
+  </data>
+  <data name="label180.Text" xml:space="preserve">
+    <value>поражений подряд</value>
+  </data>
+  <data name="&gt;&gt;label180.Name" xml:space="preserve">
+    <value>label180</value>
+  </data>
+  <data name="&gt;&gt;label180.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label180.Parent" xml:space="preserve">
+    <value>groupBox7</value>
+  </data>
+  <data name="&gt;&gt;label180.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
