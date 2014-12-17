@@ -1193,7 +1193,6 @@ namespace Moswar
             #region ToolTips
             Tip.AutoPopDelay = 30000;
 
-            Tip.SetToolTip(numStatDiff, "Максимальная разница характеристик,\nбез учёта харизмы.");
             Tip.SetToolTip(chkClanWars, "Помогать, если напали на союзника!");
             Tip.SetToolTip(chkBerserker, "В течении 10 минут сосредоточиться на поиске врага!");
             Tip.SetToolTip(chkMrPlushkin, "Mr. Плюшкин, известный жадина и коллекционер.\nМажоры не размениваются мелкими нападениями 0:оо - 8:оо,\nвыжидая утра, для максимальной выгоды от Агентов!");

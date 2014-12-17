@@ -521,7 +521,6 @@
             this.chkAddClan = new System.Windows.Forms.CheckBox();
             this.label60 = new System.Windows.Forms.Label();
             this.pnlHunterClub = new System.Windows.Forms.Panel();
-            this.label104 = new System.Windows.Forms.Label();
             this.chkHC = new System.Windows.Forms.CheckBox();
             this.chkWantedGoMC = new System.Windows.Forms.CheckBox();
             this.label138 = new System.Windows.Forms.Label();
@@ -704,6 +703,8 @@
             this.groupBox9 = new System.Windows.Forms.GroupBox();
             this.label182 = new System.Windows.Forms.Label();
             this.label183 = new System.Windows.Forms.Label();
+            this.groupBox10 = new System.Windows.Forms.GroupBox();
+            this.groupBox11 = new System.Windows.Forms.GroupBox();
             this.tabControl.SuspendLayout();
             this.tabMainBrowser.SuspendLayout();
             this.AutoApdateMessage.SuspendLayout();
@@ -896,6 +897,8 @@
             this.groupBox7.SuspendLayout();
             this.groupBox8.SuspendLayout();
             this.groupBox9.SuspendLayout();
+            this.groupBox10.SuspendLayout();
+            this.groupBox11.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnStart
@@ -1008,6 +1011,8 @@
             // 
             // pnlContainer
             // 
+            this.pnlContainer.Controls.Add(this.pnlHunterClub);
+            this.pnlContainer.Controls.Add(this.pnlPetarena);
             this.pnlContainer.Controls.Add(this.pnlOilPipeline);
             this.pnlContainer.Controls.Add(this.pnlRatPipeline);
             this.pnlContainer.Controls.Add(this.pnlDigging);
@@ -1015,7 +1020,6 @@
             this.pnlContainer.Controls.Add(this.pnlMisc);
             this.pnlContainer.Controls.Add(this.pnlWarPets);
             this.pnlContainer.Controls.Add(this.pnlOldOilPipeline);
-            this.pnlContainer.Controls.Add(this.pnlPetarena);
             this.pnlContainer.Controls.Add(this.pnlUseItems);
             this.pnlContainer.Controls.Add(this.pnlMF);
             this.pnlContainer.Controls.Add(this.pnlShaurburgers);
@@ -1051,7 +1055,6 @@
             this.pnlContainer.Controls.Add(this.pnlMoneyToOre);
             this.pnlContainer.Controls.Add(this.pnlHeal);
             this.pnlContainer.Controls.Add(this.pnlClanWars);
-            this.pnlContainer.Controls.Add(this.pnlHunterClub);
             this.pnlContainer.Controls.Add(this.pnlBankDeposit);
             resources.ApplyResources(this.pnlContainer, "pnlContainer");
             this.pnlContainer.Name = "pnlContainer";
@@ -5671,35 +5674,12 @@
             // pnlHunterClub
             // 
             resources.ApplyResources(this.pnlHunterClub, "pnlHunterClub");
-            this.pnlHunterClub.Controls.Add(this.label104);
-            this.pnlHunterClub.Controls.Add(this.chkHC);
-            this.pnlHunterClub.Controls.Add(this.chkWantedGoMC);
-            this.pnlHunterClub.Controls.Add(this.label138);
-            this.pnlHunterClub.Controls.Add(this.dtStopHC);
-            this.pnlHunterClub.Controls.Add(this.label4);
-            this.pnlHunterClub.Controls.Add(this.label116);
-            this.pnlHunterClub.Controls.Add(this.numMaxHCLvl);
-            this.pnlHunterClub.Controls.Add(this.label71);
-            this.pnlHunterClub.Controls.Add(this.numMinHCLvl);
-            this.pnlHunterClub.Controls.Add(this.chkWantedPlayThimbles);
-            this.pnlHunterClub.Controls.Add(this.label3);
-            this.pnlHunterClub.Controls.Add(this.dtStartHC);
-            this.pnlHunterClub.Controls.Add(this.numStatDiff);
-            this.pnlHunterClub.Controls.Add(this.numWantedPlayThimbles);
-            this.pnlHunterClub.Controls.Add(this.chkHCUseTorture);
-            this.pnlHunterClub.Controls.Add(this.label1);
-            this.pnlHunterClub.Controls.Add(this.chkHCMember);
-            this.pnlHunterClub.Controls.Add(this.label115);
-            this.pnlHunterClub.Controls.Add(this.numHCRevengeMaxMoney);
-            this.pnlHunterClub.Controls.Add(this.label158);
-            this.pnlHunterClub.Controls.Add(this.label159);
+            this.pnlHunterClub.Controls.Add(this.groupBox11);
+            this.pnlHunterClub.Controls.Add(this.groupBox10);
             this.pnlHunterClub.Controls.Add(this.chkHCRevenge);
+            this.pnlHunterClub.Controls.Add(this.label71);
+            this.pnlHunterClub.Controls.Add(this.numHCRevengeMaxMoney);
             this.pnlHunterClub.Name = "pnlHunterClub";
-            // 
-            // label104
-            // 
-            resources.ApplyResources(this.label104, "label104");
-            this.label104.Name = "label104";
             // 
             // chkHC
             // 
@@ -5708,6 +5688,8 @@
             this.chkHC.CheckState = System.Windows.Forms.CheckState.Checked;
             this.chkHC.Name = "chkHC";
             this.chkHC.UseVisualStyleBackColor = true;
+            this.chkHC.CheckedChanged += new System.EventHandler(this.CheckGroupBox_CheckedChanged);
+            this.chkHC.VisibleChanged += new System.EventHandler(this.CheckGroupBox_CheckedChanged);
             // 
             // chkWantedGoMC
             // 
@@ -7213,6 +7195,37 @@
             resources.ApplyResources(this.label183, "label183");
             this.label183.Name = "label183";
             // 
+            // groupBox10
+            // 
+            this.groupBox10.Controls.Add(this.chkHC);
+            this.groupBox10.Controls.Add(this.label159);
+            this.groupBox10.Controls.Add(this.label158);
+            this.groupBox10.Controls.Add(this.label138);
+            this.groupBox10.Controls.Add(this.dtStopHC);
+            this.groupBox10.Controls.Add(this.chkHCMember);
+            this.groupBox10.Controls.Add(this.label1);
+            this.groupBox10.Controls.Add(this.numMaxHCLvl);
+            this.groupBox10.Controls.Add(this.chkHCUseTorture);
+            this.groupBox10.Controls.Add(this.numMinHCLvl);
+            this.groupBox10.Controls.Add(this.numStatDiff);
+            this.groupBox10.Controls.Add(this.dtStartHC);
+            this.groupBox10.Controls.Add(this.label3);
+            this.groupBox10.Controls.Add(this.label4);
+            resources.ApplyResources(this.groupBox10, "groupBox10");
+            this.groupBox10.Name = "groupBox10";
+            this.groupBox10.TabStop = false;
+            // 
+            // groupBox11
+            // 
+            this.groupBox11.Controls.Add(this.chkWantedPlayThimbles);
+            this.groupBox11.Controls.Add(this.label116);
+            this.groupBox11.Controls.Add(this.label115);
+            this.groupBox11.Controls.Add(this.numWantedPlayThimbles);
+            this.groupBox11.Controls.Add(this.chkWantedGoMC);
+            resources.ApplyResources(this.groupBox11, "groupBox11");
+            this.groupBox11.Name = "groupBox11";
+            this.groupBox11.TabStop = false;
+            // 
             // frmMain
             // 
             resources.ApplyResources(this, "$this");
@@ -7495,6 +7508,10 @@
             this.groupBox8.PerformLayout();
             this.groupBox9.ResumeLayout(false);
             this.groupBox9.PerformLayout();
+            this.groupBox10.ResumeLayout(false);
+            this.groupBox10.PerformLayout();
+            this.groupBox11.ResumeLayout(false);
+            this.groupBox11.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -7730,7 +7747,6 @@
         private System.Windows.Forms.DateTimePicker dtStartHC;
         private System.Windows.Forms.Label label158;
         private System.Windows.Forms.Label label159;
-        private System.Windows.Forms.Label label104;
         private System.Windows.Forms.CheckBox chkWantedGoMC;
         private System.Windows.Forms.Label label116;
         private System.Windows.Forms.CheckBox chkWantedPlayThimbles;
@@ -8175,7 +8191,9 @@
         private System.Windows.Forms.Label label181;
         private System.Windows.Forms.GroupBox groupBox9;
         private System.Windows.Forms.Label label183;
-        private System.Windows.Forms.Label label182;      
+        private System.Windows.Forms.Label label182;
+        private System.Windows.Forms.GroupBox groupBox10;
+        private System.Windows.Forms.GroupBox groupBox11;      
     }
 }
 
