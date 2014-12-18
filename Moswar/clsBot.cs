@@ -832,7 +832,6 @@ namespace Moswar
             public string ServerURL;
 
             public bool UseWerewolf;
-            public int WerewolfDrogType;
             public int WerewolfLevel;
             public int WerewolfPrice;
             public Opponent WerewolfOpponent;

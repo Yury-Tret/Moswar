@@ -645,7 +645,6 @@ namespace Moswar
                 } 
                 #endregion
             }
-            Bot.Settings.WerewolfDrogType = cboxWerewolfDrogType.SelectedIndex;
             Bot.Settings.WerewolfLevel = cboxWerewolfLevel.SelectedIndex + 1;
             Bot.Settings.WerewolfPrice = cboxWerewolfPrice.SelectedIndex;
 
@@ -1031,7 +1030,6 @@ namespace Moswar
                     }                    
                     #endregion
                 }
-                cboxWerewolfDrogType.SelectedIndex = Bot.Settings.WerewolfDrogType;
                 cboxWerewolfLevel.SelectedIndex = Bot.Settings.WerewolfLevel - 1;
                 cboxWerewolfPrice.SelectedIndex = Bot.Settings.WerewolfPrice;                
 
@@ -1161,7 +1159,6 @@ namespace Moswar
             cboxServer.SelectedIndex = 0;
             cboxFactoryRang.SelectedIndex = 0;
             cboxWerewolf.SelectedIndex = 0;
-            cboxWerewolfDrogType.SelectedIndex = 0;
             cboxWerewolfLevel.SelectedIndex = 0;
             cboxWerewolfPrice.SelectedIndex = 0;
             cboxWearSet.SelectedIndex = 0;
@@ -1193,8 +1190,6 @@ namespace Moswar
             #region ToolTips
             Tip.AutoPopDelay = 30000;
 
-            Tip.SetToolTip(chkClanWars, "Помогать, если напали на союзника!");
-            Tip.SetToolTip(chkBerserker, "В течении 10 минут сосредоточиться на поиске врага!");
             Tip.SetToolTip(chkMrPlushkin, "Mr. Плюшкин, известный жадина и коллекционер.\nМажоры не размениваются мелкими нападениями 0:оо - 8:оо,\nвыжидая утра, для максимальной выгоды от Агентов!");
             Tip.SetToolTip(cboxWearSet, "Описание сетов:\nКрысолов - костюм охотника в крысопроводе\nХаризматик - используется в патруле и шаурме\nОктябренок - костюм для дуэлей на ленинопроводе\nД'артаньян - костюм для стенок в ленино-крысо-проводах\nПовстанец - костюм для стенок противостояния\nСтандартный - костюм на все остальные случаи жизни\nНудист - костюм в котором знаменитые лампофобы проводят 98% игрового времени.");
             Tip.SetToolTip(lblTaskManagerHelp, "Конструктор позволяющий расставить разрешения и запреты для участия в той или иной стенке.\r\n\r\n\"Временной интервал\" - стенки разрешены только с xx:xx и до xx:xx выбранного дня.\r\n\"Не ходить\" - походы в данный тип стенок в выбранный вами день будут проигнорированы.\r\nПустой не заполненный день недели - разрешенно ходить всегда не зависимо от времени суток.\r\nПустой не заполненный список - разрешенно ходить всегда, не зависимо от дня недели и времени.\r\n\r\n*Интервалы, дни недели по серверному времени.");
