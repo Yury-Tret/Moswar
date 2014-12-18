@@ -217,7 +217,7 @@
             this.chkUseSnikersOil = new System.Windows.Forms.CheckBox();
             this.cboxOilLvl = new System.Windows.Forms.ComboBox();
             this.chkOilIgnoreTimeout = new System.Windows.Forms.CheckBox();
-            this.pnlUseItems = new System.Windows.Forms.Panel();
+            this.pnlInventory = new System.Windows.Forms.Panel();
             this.chkOpenPrizeBox = new System.Windows.Forms.CheckBox();
             this.chkExpDoNotEatPelmeni = new System.Windows.Forms.CheckBox();
             this.pnlMF = new System.Windows.Forms.Panel();
@@ -710,6 +710,8 @@
             this.pnlGroupFightPVP = new System.Windows.Forms.Panel();
             this.groupBox14 = new System.Windows.Forms.GroupBox();
             this.label184 = new System.Windows.Forms.Label();
+            this.chkOpenReturnBox = new System.Windows.Forms.CheckBox();
+            this.groupBox15 = new System.Windows.Forms.GroupBox();
             this.tabControl.SuspendLayout();
             this.tabMainBrowser.SuspendLayout();
             this.AutoApdateMessage.SuspendLayout();
@@ -764,7 +766,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.numMinTrainPetMoney)).BeginInit();
             this.pnlOldOilPipeline.SuspendLayout();
             this.groupBox3.SuspendLayout();
-            this.pnlUseItems.SuspendLayout();
+            this.pnlInventory.SuspendLayout();
             this.pnlMF.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numMinFactoryOre)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numMinFactoryMoney)).BeginInit();
@@ -909,6 +911,7 @@
             this.pnlGroupFightChaos.SuspendLayout();
             this.pnlGroupFightPVP.SuspendLayout();
             this.groupBox14.SuspendLayout();
+            this.groupBox15.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnStart
@@ -1021,6 +1024,7 @@
             // 
             // pnlContainer
             // 
+            this.pnlContainer.Controls.Add(this.pnlInventory);
             this.pnlContainer.Controls.Add(this.pnlWarPets);
             this.pnlContainer.Controls.Add(this.pnlResources);
             this.pnlContainer.Controls.Add(this.pnlHeal);
@@ -1040,7 +1044,6 @@
             this.pnlContainer.Controls.Add(this.pnlHumanImitation);
             this.pnlContainer.Controls.Add(this.pnlMisc);
             this.pnlContainer.Controls.Add(this.pnlOldOilPipeline);
-            this.pnlContainer.Controls.Add(this.pnlUseItems);
             this.pnlContainer.Controls.Add(this.pnlMF);
             this.pnlContainer.Controls.Add(this.pnlShaurburgers);
             this.pnlContainer.Controls.Add(this.pnlTimings);
@@ -2681,12 +2684,12 @@
             this.chkOilIgnoreTimeout.Name = "chkOilIgnoreTimeout";
             this.chkOilIgnoreTimeout.UseVisualStyleBackColor = true;
             // 
-            // pnlUseItems
+            // pnlInventory
             // 
-            resources.ApplyResources(this.pnlUseItems, "pnlUseItems");
-            this.pnlUseItems.Controls.Add(this.chkOpenPrizeBox);
-            this.pnlUseItems.Controls.Add(this.chkExpDoNotEatPelmeni);
-            this.pnlUseItems.Name = "pnlUseItems";
+            resources.ApplyResources(this.pnlInventory, "pnlInventory");
+            this.pnlInventory.Controls.Add(this.groupBox15);
+            this.pnlInventory.Controls.Add(this.chkExpDoNotEatPelmeni);
+            this.pnlInventory.Name = "pnlInventory";
             // 
             // chkOpenPrizeBox
             // 
@@ -7274,6 +7277,20 @@
             resources.ApplyResources(this.label184, "label184");
             this.label184.Name = "label184";
             // 
+            // chkOpenReturnBox
+            // 
+            resources.ApplyResources(this.chkOpenReturnBox, "chkOpenReturnBox");
+            this.chkOpenReturnBox.Name = "chkOpenReturnBox";
+            this.chkOpenReturnBox.UseVisualStyleBackColor = true;
+            // 
+            // groupBox15
+            // 
+            this.groupBox15.Controls.Add(this.chkOpenReturnBox);
+            this.groupBox15.Controls.Add(this.chkOpenPrizeBox);
+            resources.ApplyResources(this.groupBox15, "groupBox15");
+            this.groupBox15.Name = "groupBox15";
+            this.groupBox15.TabStop = false;
+            // 
             // frmMain
             // 
             resources.ApplyResources(this, "$this");
@@ -7365,8 +7382,8 @@
             this.pnlOldOilPipeline.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
-            this.pnlUseItems.ResumeLayout(false);
-            this.pnlUseItems.PerformLayout();
+            this.pnlInventory.ResumeLayout(false);
+            this.pnlInventory.PerformLayout();
             this.pnlMF.ResumeLayout(false);
             this.pnlMF.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numMinFactoryOre)).EndInit();
@@ -7568,6 +7585,8 @@
             this.pnlGroupFightPVP.PerformLayout();
             this.groupBox14.ResumeLayout(false);
             this.groupBox14.PerformLayout();
+            this.groupBox15.ResumeLayout(false);
+            this.groupBox15.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -8230,7 +8249,7 @@
         private System.Windows.Forms.CheckBox chkShutDown;
         private System.Windows.Forms.Panel pnlProxy;
         private System.Windows.Forms.Label label34;
-        private System.Windows.Forms.Panel pnlUseItems;
+        private System.Windows.Forms.Panel pnlInventory;
         private System.Windows.Forms.Label label35;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.Label label123;
@@ -8254,7 +8273,9 @@
         private System.Windows.Forms.Panel pnlGroupFightChaos;
         private System.Windows.Forms.Panel pnlGroupFightPVP;
         private System.Windows.Forms.GroupBox groupBox14;
-        private System.Windows.Forms.Label label184;      
+        private System.Windows.Forms.Label label184;
+        private System.Windows.Forms.GroupBox groupBox15;
+        private System.Windows.Forms.CheckBox chkOpenReturnBox;      
     }
 }
 

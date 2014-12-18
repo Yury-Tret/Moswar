@@ -783,6 +783,7 @@ namespace Moswar
             public decimal maxTrainMeCharisma;
             public bool SovetVote;
             public bool OpenPrizeBox;
+            public bool OpenReturnBox;
             public bool BuySafe;
             public bool BuyMajor;
             public bool Quest;
@@ -3088,6 +3089,14 @@ namespace Moswar
                     break;
             }
         }
+        private string GetItemNameById(string Id)
+        {
+            return (string)frmMain.GetJavaVar(MainWB, "m.items['" + Id + "'].info.title");
+        }
+        private int GetItemCountById(string Id)
+        {
+            return Convert.ToInt32(((string)frmMain.GetJavaVar(MainWB, "m.items['" + Id + "'].count[0].innerText")).Replace("#", ""));
+        }
         private void CheckForPrizeBox() //OK
         {
             BugReport("CheckForPrizeBox");
@@ -3096,115 +3105,135 @@ namespace Moswar
             Match match;
 
             if (!frmMain.GetDocumentURL(MainWB).EndsWith("/player/")) GoToPlace(MainWB, Place.Player);
-            string[] ArrInfo = GetArrClassHtml(MainWB, "$(\"#content .equipment-cell .object-thumbs .object-thumb\");", "innerHTML");
-            string[][] Box = new string[7][];
-            string[][] Key = new string[7][];
-            #region Сбор информации о сундуках и ключах в багажнике
-            foreach (string Info in ArrInfo)
-            {
-                match = Regex.Match(Info,
-                    "(?<SaperBook>inventory-saper_book_[a-z]-btn)|" +
-                    "(?<MFBook>inventory-mf_book_[a-z]-btn)|" +
-                    "(?<OldBox>inventory-box(_b)?([0-9])+-btn)|" +
-                    "(?<NewBox>inventory-new_box([0-9])+-btn)|" +
-                    "(?<FruitBox>inventory-box_fruit([a-z_])*-btn)|" +
-                    "(?<CampBoss>inventory-campboss_superbox_([0-9])+-btn)|" +
-                    "(?<MetroBox>inventory-rat_box_(?<RatSize>([0-9])+)-btn)|" +
-                    "(?<EpicBox>inventory-epic_rat_box_([0-9])+-btn)|" +
-                    "(?<LeninBox>inventory-box_lenin_(?<LeninSize>([0-9])+)-btn)|" +
-                    "(?<SovetBox>inventory-box_sovet_fight_(?<SovetSize>(s|m|l))-btn)|" +
-                    "(?<RaenBox>inventory-box_sovet_fight_r([0-9])+-btn)|" +
-                    "(?<PatrolBox>inventory-box_patrol-btn)|" +
-                    "(((?<MetroKey>box_metro_)|(?<PatrolKey>box_patrol_))?key((?<KeyType>[0-9])|(?<SovetKey>_sovet_fight))?.png.+data-id=\"?(?<ID>([0-9])+)\"?)"
-                    );
 
-                int Type = -1;
-                if (match.Groups["SaperBook"].Success || match.Groups["MFBook"].Success || match.Groups["FruitBox"].Success || match.Groups["CampBoss"].Success || match.Groups["RaenBox"].Success) Type = 0;
-                if (match.Groups["OldBox"].Success || match.Groups["KeyType"].Value == "1") Type = 1;
-                if (match.Groups["NewBox"].Success || match.Groups["KeyType"].Value == "2") Type = 2;
-                if (match.Groups["LeninBox"].Success || match.Groups["KeyType"].Value == "3") Type = 3;
-                if (match.Groups["EpicBox"].Success || match.Groups["MetroBox"].Success || match.Groups["MetroKey"].Success) Type = 4;
-                if (match.Groups["SovetBox"].Success || match.Groups["SovetKey"].Success) Type = 5;
-                if (match.Groups["PatrolBox"].Success || match.Groups["PatrolKey"].Success) Type = 6;
-                if (Type != -1)
+            #region Сумка возвращенца
+            if (Settings.OpenReturnBox)
+            {
+                HtmlElement[] Boxes = frmMain.GetElementsById(MainWB, "inventory-box_return-btn") ?? new HtmlElement[0];
+                foreach (HtmlElement Box in Boxes)
                 {
-                    if (match.Groups["KeyType"].Success || match.Groups["MetroKey"].Success || match.Groups["SovetKey"].Success || match.Groups["PatrolKey"].Success)
+                    string Name = GetItemNameById(Box.GetAttribute("data-id"));
+                    for (int i = GetItemCountById(Box.GetAttribute("data-id")); i > 0; i--)
                     {
-                        Array.Resize<string>(ref Key[Type], Key[Type] == null ? 1 : Key[Type].Count<string>() + 1);
-                        Key[Type][Key[Type].Count<string>() - 1] = match.Groups["ID"].Value;
-                    }
-                    else
-                    {
-                        Array.Resize<string>(ref Box[Type], Box[Type] == null ? 1 : Box[Type].Count<string>() + 1);
-                        Box[Type][Box[Type].Count<string>() - 1] = match.Value;
+                        UpdateStatus("@ " + DateTime.Now + " Открываю " + Name);
+                        frmMain.InvokeMember(MainWB, Box, "click");
+                        IsWBComplete(MainWB, 2000, 3500);
                     }
                 }
             }
             #endregion
-            #region Открытие сундучков
-            for (int i = 0; i < Box.Count<string[]>(); i++)
-            {
-                if (Box[i] != null && (i == 0 || i == 1 || Key[i] != null)) //Есть сундуки и ключи этого вида? (при i=0 ключи не нужны, при i=1 купим ключи при открытии)
-                {  
-                    int TempKey;
-                    int KeyCount;
-                    
-                    switch (i)
-                    {
-                        case 0: //Ключи не нужны
-                            KeyCount = Box[i].Count<string>(); 
-                            break;
-                        case 1: //Купим ключи при открытии
-                            KeyCount = Box[i].Count<string>();
-                            break;
-                        case 2: //эти ключи не складываются
-                            KeyCount = Key[i].Count<string>();
-                            break;
-                        default: //иные ключи в стопках
-                            KeyCount = Convert.ToInt32(((string)frmMain.GetJavaVar(MainWB, "m.items['" + Key[i][0] + "'].count[0].innerText")).Replace("#", ""));
-                            break;
-                    }
-                    if (i != 0 && i != 1)
-                    {
-                        match = Regex.Match((string)frmMain.GetJavaVar(MainWB, "m.items['" + Key[i][0] + "'].info.content"), "(?<Count>([0-9])+) шт. до (?<Date>([0-9 .:])+)");
-                        TempKey = match.Success ? (Convert.ToDateTime(match.Groups["Date"].Value, CultureInfo.CreateSpecificCulture("ru-RU")) - GetServerTime(MainWB) < new TimeSpan(1, 0, 0, 0) ? Convert.ToInt32(match.Groups["Count"].Value) : 0) : 0;
-                    }
-                    else TempKey = 0;
-                    
-                    foreach (string sBox in Box[i])
-                    {
-                        if ((i == 3 || i == 4)) //Сундуки с ленинопровода и охоты на крыс
-                        {
-                            // Малые сундуки открываем только в том случае, если ключей в наличии больше пяти или они сгорают
-                            if (sBox.Contains("1-btn") && KeyCount <= 5 && TempKey <= 0)
-                                break;
-                        }
-                        if (KeyCount > 0)
-                        {
-                            // Определяем название вскрываемого предмета
-                            string ItemID = frmMain.GetDocument(MainWB).GetElementById(sBox).GetAttribute("data-id");
-                            if (ItemID != "")
-                            {
-                                string Name = (string)frmMain.GetJavaVar(MainWB, "m.items['" + ItemID + "'].info.title");
-                                UpdateStatus("@ " + DateTime.Now + " Открываю " + (Name == null || Name == "" ? "какую-то хрень" : Name));
-                            }
 
-                            frmMain.InvokeMember(MainWB, frmMain.GetDocument(MainWB).GetElementById(sBox), "click"); //Всё в порядке, вскрываем!
-                            IsWBComplete(MainWB, 2000, 3500);
-                            if (i == 1)
-                            {
-                                object Obj = frmMain.GetJavaVar(MainWB, "$(\".help .button span[onclick]:contains('Купи и открой')\")");
-                                Obj.GetType().InvokeMember("click", BindingFlags.InvokeMethod, null, Obj, null);
-                                IsWBComplete(MainWB, 2000, 3500);
-                            }
-                            TempKey--; //Сначала, наверняка был потрачен ключик с таймером
-                            KeyCount--; //Уменьшаем общее количество ключей
+            {
+                string[] ArrInfo = GetArrClassHtml(MainWB, "$(\"#content .equipment-cell .object-thumbs .object-thumb\");", "innerHTML");
+                string[][] Box = new string[7][];
+                string[][] Key = new string[7][];
+                #region Сбор информации о сундуках и ключах в багажнике
+                foreach (string Info in ArrInfo)
+                {
+                    match = Regex.Match(Info,
+                        "(?<SaperBook>inventory-saper_book_[a-z]-btn)|" +
+                        "(?<MFBook>inventory-mf_book_[a-z]-btn)|" +
+                        "(?<OldBox>inventory-box(_b)?([0-9])+-btn)|" +
+                        "(?<NewBox>inventory-new_box([0-9])+-btn)|" +
+                        "(?<FruitBox>inventory-box_fruit([a-z_])*-btn)|" +
+                        "(?<CampBoss>inventory-campboss_superbox_([0-9])+-btn)|" +
+                        "(?<MetroBox>inventory-rat_box_(?<RatSize>([0-9])+)-btn)|" +
+                        "(?<EpicBox>inventory-epic_rat_box_([0-9])+-btn)|" +
+                        "(?<LeninBox>inventory-box_lenin_(?<LeninSize>([0-9])+)-btn)|" +
+                        "(?<SovetBox>inventory-box_sovet_fight_(?<SovetSize>(s|m|l))-btn)|" +
+                        "(?<RaenBox>inventory-box_sovet_fight_r([0-9])+-btn)|" +
+                        "(?<PatrolBox>inventory-box_patrol-btn)|" +
+                        "(((?<MetroKey>box_metro_)|(?<PatrolKey>box_patrol_))?key((?<KeyType>[0-9])|(?<SovetKey>_sovet_fight))?.png.+data-id=\"?(?<ID>([0-9])+)\"?)"
+                        );
+
+                    int Type = -1;
+                    if (match.Groups["SaperBook"].Success || match.Groups["MFBook"].Success || match.Groups["FruitBox"].Success || match.Groups["CampBoss"].Success || match.Groups["RaenBox"].Success) Type = 0;
+                    if (match.Groups["OldBox"].Success || match.Groups["KeyType"].Value == "1") Type = 1;
+                    if (match.Groups["NewBox"].Success || match.Groups["KeyType"].Value == "2") Type = 2;
+                    if (match.Groups["LeninBox"].Success || match.Groups["KeyType"].Value == "3") Type = 3;
+                    if (match.Groups["EpicBox"].Success || match.Groups["MetroBox"].Success || match.Groups["MetroKey"].Success) Type = 4;
+                    if (match.Groups["SovetBox"].Success || match.Groups["SovetKey"].Success) Type = 5;
+                    if (match.Groups["PatrolBox"].Success || match.Groups["PatrolKey"].Success) Type = 6;
+                    if (Type != -1)
+                    {
+                        if (match.Groups["KeyType"].Success || match.Groups["MetroKey"].Success || match.Groups["SovetKey"].Success || match.Groups["PatrolKey"].Success)
+                        {
+                            Array.Resize<string>(ref Key[Type], Key[Type] == null ? 1 : Key[Type].Count<string>() + 1);
+                            Key[Type][Key[Type].Count<string>() - 1] = match.Groups["ID"].Value;
                         }
-                        else break; //Больше нет ключей к таким сундучкам                        
+                        else
+                        {
+                            Array.Resize<string>(ref Box[Type], Box[Type] == null ? 1 : Box[Type].Count<string>() + 1);
+                            Box[Type][Box[Type].Count<string>() - 1] = match.Value;
+                        }
                     }
                 }
+                #endregion
+                #region Открытие сундучков
+                for (int i = 0; i < Box.Count<string[]>(); i++)
+                {
+                    if (Box[i] != null && (i == 0 || i == 1 || Key[i] != null)) //Есть сундуки и ключи этого вида? (при i=0 ключи не нужны, при i=1 купим ключи при открытии)
+                    {
+                        int TempKey;
+                        int KeyCount;
+
+                        switch (i)
+                        {
+                            case 0: //Ключи не нужны
+                                KeyCount = Box[i].Count<string>();
+                                break;
+                            case 1: //Купим ключи при открытии
+                                KeyCount = Box[i].Count<string>();
+                                break;
+                            case 2: //эти ключи не складываются
+                                KeyCount = Key[i].Count<string>();
+                                break;
+                            default: //иные ключи в стопках
+                                KeyCount = Convert.ToInt32(((string)frmMain.GetJavaVar(MainWB, "m.items['" + Key[i][0] + "'].count[0].innerText")).Replace("#", ""));
+                                break;
+                        }
+                        if (i != 0 && i != 1)
+                        {
+                            match = Regex.Match((string)frmMain.GetJavaVar(MainWB, "m.items['" + Key[i][0] + "'].info.content"), "(?<Count>([0-9])+) шт. до (?<Date>([0-9 .:])+)");
+                            TempKey = match.Success ? (Convert.ToDateTime(match.Groups["Date"].Value, CultureInfo.CreateSpecificCulture("ru-RU")) - GetServerTime(MainWB) < new TimeSpan(1, 0, 0, 0) ? Convert.ToInt32(match.Groups["Count"].Value) : 0) : 0;
+                        }
+                        else TempKey = 0;
+
+                        foreach (string sBox in Box[i])
+                        {
+                            if ((i == 3 || i == 4)) //Сундуки с ленинопровода и охоты на крыс
+                            {
+                                // Малые сундуки открываем только в том случае, если ключей в наличии больше пяти или они сгорают
+                                if (sBox.Contains("1-btn") && KeyCount <= 5 && TempKey <= 0)
+                                    break;
+                            }
+                            if (KeyCount > 0)
+                            {
+                                // Определяем название вскрываемого предмета
+                                string ItemID = frmMain.GetDocument(MainWB).GetElementById(sBox).GetAttribute("data-id");
+                                if (ItemID != "")
+                                {
+                                    string Name = (string)frmMain.GetJavaVar(MainWB, "m.items['" + ItemID + "'].info.title");
+                                    UpdateStatus("@ " + DateTime.Now + " Открываю " + (Name == null || Name == "" ? "какую-то хрень" : Name));
+                                }
+
+                                frmMain.InvokeMember(MainWB, frmMain.GetDocument(MainWB).GetElementById(sBox), "click"); //Всё в порядке, вскрываем!
+                                IsWBComplete(MainWB, 2000, 3500);
+                                if (i == 1)
+                                {
+                                    object Obj = frmMain.GetJavaVar(MainWB, "$(\".help .button span[onclick]:contains('Купи и открой')\")");
+                                    Obj.GetType().InvokeMember("click", BindingFlags.InvokeMethod, null, Obj, null);
+                                    IsWBComplete(MainWB, 2000, 3500);
+                                }
+                                TempKey--; //Сначала, наверняка был потрачен ключик с таймером
+                                KeyCount--; //Уменьшаем общее количество ключей
+                            }
+                            else break; //Больше нет ключей к таким сундучкам                        
+                        }
+                    }
+                }
+                #endregion
             }
-            #endregion            
         }
         private void CheckMetroWarPrize() //OK
         {

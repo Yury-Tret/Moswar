@@ -554,6 +554,7 @@ namespace Moswar
             Bot.Settings.maxTrainMeCharisma = numMaxTrainCharisma.Value;
             
             Bot.Settings.OpenPrizeBox = chkOpenPrizeBox.Checked;
+            Bot.Settings.OpenReturnBox = chkOpenReturnBox.Checked;
             Bot.Settings.BuySafe = chkBuySafe.Checked;
             Bot.Settings.BuyMajor = chkBuyMajor.Checked;
             Bot.Settings.Quest = chkQuest.Checked;
@@ -919,7 +920,8 @@ namespace Moswar
                 chkTrainCharisma.Checked = Bot.Settings.TrainMeCharisma;
                 numMaxTrainCharisma.Value = Bot.Settings.maxTrainMeCharisma;
 
-                chkOpenPrizeBox.Checked = Bot.Settings.OpenPrizeBox;                
+                chkOpenPrizeBox.Checked = Bot.Settings.OpenPrizeBox;
+                chkOpenReturnBox.Checked = Bot.Settings.OpenReturnBox;
                 chkBuySafe.Checked = Bot.Settings.BuySafe;
                 chkBuyMajor.Checked = Bot.Settings.BuyMajor;
                 chkQuest.Checked = Bot.Settings.Quest;

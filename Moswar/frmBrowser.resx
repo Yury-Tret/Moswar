@@ -335,16 +335,16 @@
         uAkEAAAABiYAAAAPTm9kZUdyb3VwRmlnaHRzAP////8JBAAAAP////8JBAAAAAAAAAAFDQAAAB1TeXN0
         ZW0uV2luZG93cy5Gb3Jtcy5UcmVlTm9kZQkAAAAEVGV4dAtUb29sVGlwVGV4dAROYW1lCUlzQ2hlY2tl
         ZApJbWFnZUluZGV4CEltYWdlS2V5ElNlbGVjdGVkSW1hZ2VJbmRleBBTZWxlY3RlZEltYWdlS2V5CkNo
-        aWxkQ291bnQBAQEAAAEAAQABCAgIAgAAAAYoAAAALdCY0YHQv9C+0LvRjNC30L7QstCw0L3QuNC1INC/
-        0YDQtdC00LzQtdGC0L7QsgkEAAAABioAAAAMTm9kZVVzZUl0ZW1zAP////8JBAAAAP////8JBAAAAAAA
-        AAAFDgAAAB1TeXN0ZW0uV2luZG93cy5Gb3Jtcy5UcmVlTm9kZQkAAAAEVGV4dAtUb29sVGlwVGV4dARO
-        YW1lCUlzQ2hlY2tlZApJbWFnZUluZGV4CEltYWdlS2V5ElNlbGVjdGVkSW1hZ2VJbmRleBBTZWxlY3Rl
-        ZEltYWdlS2V5CkNoaWxkQ291bnQBAQEAAAEAAQABCAgIAgAAAAYsAAAAIdCY0LzQuNGC0LDRhtC40Y8g
-        0YfQtdC70L7QstC10LrQsAkEAAAABi4AAAASTm9kZUh1bWFuSW1pdGF0aW9uAP////8JBAAAAP////8J
-        BAAAAAAAAAAFDwAAAB1TeXN0ZW0uV2luZG93cy5Gb3Jtcy5UcmVlTm9kZQkAAAAEVGV4dAtUb29sVGlw
-        VGV4dAROYW1lCUlzQ2hlY2tlZApJbWFnZUluZGV4CEltYWdlS2V5ElNlbGVjdGVkSW1hZ2VJbmRleBBT
-        ZWxlY3RlZEltYWdlS2V5CkNoaWxkQ291bnQBAQEAAAEAAQABCAgIAgAAAAYwAAAADNCg0LDQt9C90L7Q
-        tQkEAAAABjIAAAAITm9kZU1pc2MA/////wkEAAAA/////wkEAAAAAAAAAAs=
+        aWxkQ291bnQBAQEAAAEAAQABCAgIAgAAAAYoAAAAEtCY0L3QstC10L3RgtCw0YDRjAkEAAAABioAAAAN
+        Tm9kZUludmVudG9yeQD/////CQQAAAD/////CQQAAAAAAAAABQ4AAAAdU3lzdGVtLldpbmRvd3MuRm9y
+        bXMuVHJlZU5vZGUJAAAABFRleHQLVG9vbFRpcFRleHQETmFtZQlJc0NoZWNrZWQKSW1hZ2VJbmRleAhJ
+        bWFnZUtleRJTZWxlY3RlZEltYWdlSW5kZXgQU2VsZWN0ZWRJbWFnZUtleQpDaGlsZENvdW50AQEBAAAB
+        AAEAAQgICAIAAAAGLAAAACHQmNC80LjRgtCw0YbQuNGPINGH0LXQu9C+0LLQtdC60LAJBAAAAAYuAAAA
+        Ek5vZGVIdW1hbkltaXRhdGlvbgD/////CQQAAAD/////CQQAAAAAAAAABQ8AAAAdU3lzdGVtLldpbmRv
+        d3MuRm9ybXMuVHJlZU5vZGUJAAAABFRleHQLVG9vbFRpcFRleHQETmFtZQlJc0NoZWNrZWQKSW1hZ2VJ
+        bmRleAhJbWFnZUtleRJTZWxlY3RlZEltYWdlSW5kZXgQU2VsZWN0ZWRJbWFnZUtleQpDaGlsZENvdW50
+        AQEBAAABAAEAAQgICAIAAAAGMAAAAAzQoNCw0LfQvdC+0LUJBAAAAAYyAAAACE5vZGVNaXNjAP////8J
+        BAAAAP////8JBAAAAAAAAAAL
 </value>
   </data>
   <data name="treeViewSettings.Nodes2" mimetype="application/x-microsoft.net.object.binary.base64">
@@ -571,104 +571,116 @@
   <data name="&gt;&gt;lblSettingsCaption.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="pnlWarPets.AutoScroll" type="System.Boolean, mscorlib">
+  <data name="pnlInventory.AutoScroll" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="&gt;&gt;label10.Name" xml:space="preserve">
-    <value>label10</value>
+  <data name="&gt;&gt;chkOpenReturnBox.Name" xml:space="preserve">
+    <value>chkOpenReturnBox</value>
   </data>
-  <data name="&gt;&gt;label10.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label10.Parent" xml:space="preserve">
-    <value>groupBox5</value>
-  </data>
-  <data name="&gt;&gt;label10.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;numHealPet50.Name" xml:space="preserve">
-    <value>numHealPet50</value>
-  </data>
-  <data name="&gt;&gt;numHealPet50.Type" xml:space="preserve">
-    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;numHealPet50.Parent" xml:space="preserve">
-    <value>groupBox5</value>
-  </data>
-  <data name="&gt;&gt;numHealPet50.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;label13.Name" xml:space="preserve">
-    <value>label13</value>
-  </data>
-  <data name="&gt;&gt;label13.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label13.Parent" xml:space="preserve">
-    <value>groupBox5</value>
-  </data>
-  <data name="&gt;&gt;label13.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;label11.Name" xml:space="preserve">
-    <value>label11</value>
-  </data>
-  <data name="&gt;&gt;label11.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label11.Parent" xml:space="preserve">
-    <value>groupBox5</value>
-  </data>
-  <data name="&gt;&gt;label11.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;numHealPet100.Name" xml:space="preserve">
-    <value>numHealPet100</value>
-  </data>
-  <data name="&gt;&gt;numHealPet100.Type" xml:space="preserve">
-    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;numHealPet100.Parent" xml:space="preserve">
-    <value>groupBox5</value>
-  </data>
-  <data name="&gt;&gt;numHealPet100.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;label12.Name" xml:space="preserve">
-    <value>label12</value>
-  </data>
-  <data name="&gt;&gt;label12.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label12.Parent" xml:space="preserve">
-    <value>groupBox5</value>
-  </data>
-  <data name="&gt;&gt;label12.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;chkBuyHealPet.Name" xml:space="preserve">
-    <value>chkBuyHealPet</value>
-  </data>
-  <data name="&gt;&gt;chkBuyHealPet.Type" xml:space="preserve">
+  <data name="&gt;&gt;chkOpenReturnBox.Type" xml:space="preserve">
     <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;chkBuyHealPet.Parent" xml:space="preserve">
-    <value>groupBox5</value>
+  <data name="&gt;&gt;chkOpenReturnBox.Parent" xml:space="preserve">
+    <value>groupBox15</value>
   </data>
-  <data name="&gt;&gt;chkBuyHealPet.ZOrder" xml:space="preserve">
-    <value>6</value>
+  <data name="&gt;&gt;chkOpenReturnBox.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
-  <data name="groupBox5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 34</value>
+  <data name="&gt;&gt;chkOpenPrizeBox.Name" xml:space="preserve">
+    <value>chkOpenPrizeBox</value>
   </data>
-  <data name="groupBox5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>277, 92</value>
+  <data name="&gt;&gt;chkOpenPrizeBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="groupBox5.TabIndex" type="System.Int32, mscorlib">
+  <data name="&gt;&gt;chkOpenPrizeBox.Parent" xml:space="preserve">
+    <value>groupBox15</value>
+  </data>
+  <data name="&gt;&gt;chkOpenPrizeBox.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="groupBox5.Text" xml:space="preserve">
-    <value>Лечение пета</value>
+  <data name="groupBox15.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 28</value>
+  </data>
+  <data name="groupBox15.Size" type="System.Drawing.Size, System.Drawing">
+    <value>155, 67</value>
+  </data>
+  <data name="groupBox15.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="groupBox15.Text" xml:space="preserve">
+    <value>Использовать предметы</value>
+  </data>
+  <data name="&gt;&gt;groupBox15.Name" xml:space="preserve">
+    <value>groupBox15</value>
+  </data>
+  <data name="&gt;&gt;groupBox15.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBox15.Parent" xml:space="preserve">
+    <value>pnlInventory</value>
+  </data>
+  <data name="&gt;&gt;groupBox15.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="chkExpDoNotEatPelmeni.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="chkExpDoNotEatPelmeni.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="chkExpDoNotEatPelmeni.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 6</value>
+  </data>
+  <data name="chkExpDoNotEatPelmeni.Size" type="System.Drawing.Size, System.Drawing">
+    <value>177, 18</value>
+  </data>
+  <data name="chkExpDoNotEatPelmeni.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="chkExpDoNotEatPelmeni.Text" xml:space="preserve">
+    <value>Не кушать за меня пельмени</value>
+  </data>
+  <data name="&gt;&gt;chkExpDoNotEatPelmeni.Name" xml:space="preserve">
+    <value>chkExpDoNotEatPelmeni</value>
+  </data>
+  <data name="&gt;&gt;chkExpDoNotEatPelmeni.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkExpDoNotEatPelmeni.Parent" xml:space="preserve">
+    <value>pnlInventory</value>
+  </data>
+  <data name="&gt;&gt;chkExpDoNotEatPelmeni.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="pnlInventory.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="pnlInventory.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="pnlInventory.Size" type="System.Drawing.Size, System.Drawing">
+    <value>594, 602</value>
+  </data>
+  <data name="pnlInventory.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="pnlInventory.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;pnlInventory.Name" xml:space="preserve">
+    <value>pnlInventory</value>
+  </data>
+  <data name="&gt;&gt;pnlInventory.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pnlInventory.Parent" xml:space="preserve">
+    <value>pnlContainer</value>
+  </data>
+  <data name="&gt;&gt;pnlInventory.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="pnlWarPets.AutoScroll" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="&gt;&gt;groupBox5.Name" xml:space="preserve">
     <value>groupBox5</value>
@@ -682,24 +694,6 @@
   <data name="&gt;&gt;groupBox5.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="label119.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label119.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label119.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1, 10</value>
-  </data>
-  <data name="label119.Size" type="System.Drawing.Size, System.Drawing">
-    <value>150, 14</value>
-  </data>
-  <data name="label119.TabIndex" type="System.Int32, mscorlib">
-    <value>24</value>
-  </data>
-  <data name="label119.Text" xml:space="preserve">
-    <value>Основной боевой питомец:</value>
-  </data>
   <data name="&gt;&gt;label119.Name" xml:space="preserve">
     <value>label119</value>
   </data>
@@ -712,540 +706,6 @@
   <data name="&gt;&gt;label119.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="label184.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label184.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 24</value>
-  </data>
-  <data name="label184.Size" type="System.Drawing.Size, System.Drawing">
-    <value>56, 14</value>
-  </data>
-  <data name="label184.TabIndex" type="System.Int32, mscorlib">
-    <value>62</value>
-  </data>
-  <data name="label184.Text" xml:space="preserve">
-    <value>Питомец:</value>
-  </data>
-  <data name="&gt;&gt;label184.Name" xml:space="preserve">
-    <value>label184</value>
-  </data>
-  <data name="&gt;&gt;label184.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label184.Parent" xml:space="preserve">
-    <value>groupBox4</value>
-  </data>
-  <data name="&gt;&gt;label184.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="chkTrainWarPet.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="chkTrainWarPet.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="chkTrainWarPet.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, -2</value>
-  </data>
-  <data name="chkTrainWarPet.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 0, 0, 0</value>
-  </data>
-  <data name="chkTrainWarPet.Size" type="System.Drawing.Size, System.Drawing">
-    <value>124, 18</value>
-  </data>
-  <data name="chkTrainWarPet.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="chkTrainWarPet.Text" xml:space="preserve">
-    <value>Тренировать пета</value>
-  </data>
-  <data name="&gt;&gt;chkTrainWarPet.Name" xml:space="preserve">
-    <value>chkTrainWarPet</value>
-  </data>
-  <data name="&gt;&gt;chkTrainWarPet.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;chkTrainWarPet.Parent" xml:space="preserve">
-    <value>groupBox4</value>
-  </data>
-  <data name="&gt;&gt;chkTrainWarPet.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="numMinTrainPetOil.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Candara, 9pt</value>
-  </data>
-  <data name="numMinTrainPetOil.Location" type="System.Drawing.Point, System.Drawing">
-    <value>290, 162</value>
-  </data>
-  <data name="numMinTrainPetOil.Size" type="System.Drawing.Size, System.Drawing">
-    <value>57, 22</value>
-  </data>
-  <data name="numMinTrainPetOil.TabIndex" type="System.Int32, mscorlib">
-    <value>11</value>
-  </data>
-  <data name="numMinTrainPetOil.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
-    <value>Center</value>
-  </data>
-  <data name="numMinTrainPetOil.ThousandsSeparator" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;numMinTrainPetOil.Name" xml:space="preserve">
-    <value>numMinTrainPetOil</value>
-  </data>
-  <data name="&gt;&gt;numMinTrainPetOil.Type" xml:space="preserve">
-    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;numMinTrainPetOil.Parent" xml:space="preserve">
-    <value>groupBox4</value>
-  </data>
-  <data name="&gt;&gt;numMinTrainPetOil.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="numMaxTrainPetFocus.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Candara, 9pt</value>
-  </data>
-  <data name="numMaxTrainPetFocus.Location" type="System.Drawing.Point, System.Drawing">
-    <value>128, 50</value>
-  </data>
-  <data name="numMaxTrainPetFocus.Size" type="System.Drawing.Size, System.Drawing">
-    <value>44, 22</value>
-  </data>
-  <data name="numMaxTrainPetFocus.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="numMaxTrainPetFocus.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
-    <value>Center</value>
-  </data>
-  <data name="&gt;&gt;numMaxTrainPetFocus.Name" xml:space="preserve">
-    <value>numMaxTrainPetFocus</value>
-  </data>
-  <data name="&gt;&gt;numMaxTrainPetFocus.Type" xml:space="preserve">
-    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;numMaxTrainPetFocus.Parent" xml:space="preserve">
-    <value>groupBox4</value>
-  </data>
-  <data name="&gt;&gt;numMaxTrainPetFocus.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="chkTrainPetMass.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="chkTrainPetMass.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="chkTrainPetMass.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 108</value>
-  </data>
-  <data name="chkTrainPetMass.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
-    <value>No</value>
-  </data>
-  <data name="chkTrainPetMass.Size" type="System.Drawing.Size, System.Drawing">
-    <value>113, 18</value>
-  </data>
-  <data name="chkTrainPetMass.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="chkTrainPetMass.Text" xml:space="preserve">
-    <value>Массивность до:</value>
-  </data>
-  <data name="&gt;&gt;chkTrainPetMass.Name" xml:space="preserve">
-    <value>chkTrainPetMass</value>
-  </data>
-  <data name="&gt;&gt;chkTrainPetMass.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;chkTrainPetMass.Parent" xml:space="preserve">
-    <value>groupBox4</value>
-  </data>
-  <data name="&gt;&gt;chkTrainPetMass.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="numMaxTrainPetLoyality.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Candara, 9pt</value>
-  </data>
-  <data name="numMaxTrainPetLoyality.Location" type="System.Drawing.Point, System.Drawing">
-    <value>128, 78</value>
-  </data>
-  <data name="numMaxTrainPetLoyality.Size" type="System.Drawing.Size, System.Drawing">
-    <value>44, 22</value>
-  </data>
-  <data name="numMaxTrainPetLoyality.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="numMaxTrainPetLoyality.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
-    <value>Center</value>
-  </data>
-  <data name="&gt;&gt;numMaxTrainPetLoyality.Name" xml:space="preserve">
-    <value>numMaxTrainPetLoyality</value>
-  </data>
-  <data name="&gt;&gt;numMaxTrainPetLoyality.Type" xml:space="preserve">
-    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;numMaxTrainPetLoyality.Parent" xml:space="preserve">
-    <value>groupBox4</value>
-  </data>
-  <data name="&gt;&gt;numMaxTrainPetLoyality.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="chkTrainPetFocus.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="chkTrainPetFocus.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="chkTrainPetFocus.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 52</value>
-  </data>
-  <data name="chkTrainPetFocus.Size" type="System.Drawing.Size, System.Drawing">
-    <value>119, 18</value>
-  </data>
-  <data name="chkTrainPetFocus.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="chkTrainPetFocus.Text" xml:space="preserve">
-    <value>Нацеленность до:</value>
-  </data>
-  <data name="&gt;&gt;chkTrainPetFocus.Name" xml:space="preserve">
-    <value>chkTrainPetFocus</value>
-  </data>
-  <data name="&gt;&gt;chkTrainPetFocus.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;chkTrainPetFocus.Parent" xml:space="preserve">
-    <value>groupBox4</value>
-  </data>
-  <data name="&gt;&gt;chkTrainPetFocus.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="label29.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label29.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Candara, 9pt</value>
-  </data>
-  <data name="label29.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label29.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 166</value>
-  </data>
-  <data name="label29.Size" type="System.Drawing.Size, System.Drawing">
-    <value>113, 14</value>
-  </data>
-  <data name="label29.TabIndex" type="System.Int32, mscorlib">
-    <value>61</value>
-  </data>
-  <data name="label29.Text" xml:space="preserve">
-    <value>Оставлять не менее:</value>
-  </data>
-  <data name="label29.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleRight</value>
-  </data>
-  <data name="&gt;&gt;label29.Name" xml:space="preserve">
-    <value>label29</value>
-  </data>
-  <data name="&gt;&gt;label29.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label29.Parent" xml:space="preserve">
-    <value>groupBox4</value>
-  </data>
-  <data name="&gt;&gt;label29.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="chkTrainPetLoyality.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="chkTrainPetLoyality.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="chkTrainPetLoyality.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 80</value>
-  </data>
-  <data name="chkTrainPetLoyality.Size" type="System.Drawing.Size, System.Drawing">
-    <value>115, 18</value>
-  </data>
-  <data name="chkTrainPetLoyality.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="chkTrainPetLoyality.Text" xml:space="preserve">
-    <value>Преданность до:</value>
-  </data>
-  <data name="&gt;&gt;chkTrainPetLoyality.Name" xml:space="preserve">
-    <value>chkTrainPetLoyality</value>
-  </data>
-  <data name="&gt;&gt;chkTrainPetLoyality.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;chkTrainPetLoyality.Parent" xml:space="preserve">
-    <value>groupBox4</value>
-  </data>
-  <data name="&gt;&gt;chkTrainPetLoyality.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="label64.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label64.Location" type="System.Drawing.Point, System.Drawing">
-    <value>180, 164</value>
-  </data>
-  <data name="label64.Size" type="System.Drawing.Size, System.Drawing">
-    <value>17, 18</value>
-  </data>
-  <data name="label64.TabIndex" type="System.Int32, mscorlib">
-    <value>59</value>
-  </data>
-  <data name="&gt;&gt;label64.Name" xml:space="preserve">
-    <value>label64</value>
-  </data>
-  <data name="&gt;&gt;label64.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label64.Parent" xml:space="preserve">
-    <value>groupBox4</value>
-  </data>
-  <data name="&gt;&gt;label64.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="numMinTrainPetOre.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Candara, 9pt</value>
-  </data>
-  <data name="numMinTrainPetOre.Location" type="System.Drawing.Point, System.Drawing">
-    <value>204, 162</value>
-  </data>
-  <data name="numMinTrainPetOre.Size" type="System.Drawing.Size, System.Drawing">
-    <value>57, 22</value>
-  </data>
-  <data name="numMinTrainPetOre.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
-  </data>
-  <data name="numMinTrainPetOre.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
-    <value>Center</value>
-  </data>
-  <data name="&gt;&gt;numMinTrainPetOre.Name" xml:space="preserve">
-    <value>numMinTrainPetOre</value>
-  </data>
-  <data name="&gt;&gt;numMinTrainPetOre.Type" xml:space="preserve">
-    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;numMinTrainPetOre.Parent" xml:space="preserve">
-    <value>groupBox4</value>
-  </data>
-  <data name="&gt;&gt;numMinTrainPetOre.ZOrder" xml:space="preserve">
-    <value>10</value>
-  </data>
-  <data name="numMaxTrainPetMass.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Candara, 9pt</value>
-  </data>
-  <data name="numMaxTrainPetMass.Location" type="System.Drawing.Point, System.Drawing">
-    <value>128, 106</value>
-  </data>
-  <data name="numMaxTrainPetMass.Size" type="System.Drawing.Size, System.Drawing">
-    <value>44, 22</value>
-  </data>
-  <data name="numMaxTrainPetMass.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="numMaxTrainPetMass.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
-    <value>Center</value>
-  </data>
-  <data name="&gt;&gt;numMaxTrainPetMass.Name" xml:space="preserve">
-    <value>numMaxTrainPetMass</value>
-  </data>
-  <data name="&gt;&gt;numMaxTrainPetMass.Type" xml:space="preserve">
-    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;numMaxTrainPetMass.Parent" xml:space="preserve">
-    <value>groupBox4</value>
-  </data>
-  <data name="&gt;&gt;numMaxTrainPetMass.ZOrder" xml:space="preserve">
-    <value>11</value>
-  </data>
-  <data name="label30.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label30.Location" type="System.Drawing.Point, System.Drawing">
-    <value>349, 164</value>
-  </data>
-  <data name="label30.Size" type="System.Drawing.Size, System.Drawing">
-    <value>17, 18</value>
-  </data>
-  <data name="label30.TabIndex" type="System.Int32, mscorlib">
-    <value>58</value>
-  </data>
-  <data name="&gt;&gt;label30.Name" xml:space="preserve">
-    <value>label30</value>
-  </data>
-  <data name="&gt;&gt;label30.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label30.Parent" xml:space="preserve">
-    <value>groupBox4</value>
-  </data>
-  <data name="&gt;&gt;label30.ZOrder" xml:space="preserve">
-    <value>12</value>
-  </data>
-  <data name="cboxTrainWarPetType.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="cboxTrainWarPetType.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="cboxTrainWarPetType.Items" xml:space="preserve">
-    <value>Попугай</value>
-  </data>
-  <data name="cboxTrainWarPetType.Items1" xml:space="preserve">
-    <value>Кошка</value>
-  </data>
-  <data name="cboxTrainWarPetType.Items2" xml:space="preserve">
-    <value>Чихуахуа</value>
-  </data>
-  <data name="cboxTrainWarPetType.Items3" xml:space="preserve">
-    <value>Доберман</value>
-  </data>
-  <data name="cboxTrainWarPetType.Items4" xml:space="preserve">
-    <value>Овчарка</value>
-  </data>
-  <data name="cboxTrainWarPetType.Items5" xml:space="preserve">
-    <value>Ротвейлер</value>
-  </data>
-  <data name="cboxTrainWarPetType.Items6" xml:space="preserve">
-    <value>Дог</value>
-  </data>
-  <data name="cboxTrainWarPetType.Items7" xml:space="preserve">
-    <value>Волк</value>
-  </data>
-  <data name="cboxTrainWarPetType.Items8" xml:space="preserve">
-    <value>Лев</value>
-  </data>
-  <data name="cboxTrainWarPetType.Items9" xml:space="preserve">
-    <value>Пантера</value>
-  </data>
-  <data name="cboxTrainWarPetType.Items10" xml:space="preserve">
-    <value>Котенок "Гаф"</value>
-  </data>
-  <data name="cboxTrainWarPetType.Items11" xml:space="preserve">
-    <value>Черный дог</value>
-  </data>
-  <data name="cboxTrainWarPetType.Items12" xml:space="preserve">
-    <value>Хомяк</value>
-  </data>
-  <data name="cboxTrainWarPetType.Items13" xml:space="preserve">
-    <value>Хаски</value>
-  </data>
-  <data name="cboxTrainWarPetType.Location" type="System.Drawing.Point, System.Drawing">
-    <value>62, 20</value>
-  </data>
-  <data name="cboxTrainWarPetType.Size" type="System.Drawing.Size, System.Drawing">
-    <value>103, 22</value>
-  </data>
-  <data name="cboxTrainWarPetType.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;cboxTrainWarPetType.Name" xml:space="preserve">
-    <value>cboxTrainWarPetType</value>
-  </data>
-  <data name="&gt;&gt;cboxTrainWarPetType.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;cboxTrainWarPetType.Parent" xml:space="preserve">
-    <value>groupBox4</value>
-  </data>
-  <data name="&gt;&gt;cboxTrainWarPetType.ZOrder" xml:space="preserve">
-    <value>13</value>
-  </data>
-  <data name="label65.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label65.Location" type="System.Drawing.Point, System.Drawing">
-    <value>266, 164</value>
-  </data>
-  <data name="label65.Size" type="System.Drawing.Size, System.Drawing">
-    <value>17, 18</value>
-  </data>
-  <data name="label65.TabIndex" type="System.Int32, mscorlib">
-    <value>60</value>
-  </data>
-  <data name="&gt;&gt;label65.Name" xml:space="preserve">
-    <value>label65</value>
-  </data>
-  <data name="&gt;&gt;label65.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label65.Parent" xml:space="preserve">
-    <value>groupBox4</value>
-  </data>
-  <data name="&gt;&gt;label65.ZOrder" xml:space="preserve">
-    <value>14</value>
-  </data>
-  <data name="chkUseTrainWhip.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="chkUseTrainWhip.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="chkUseTrainWhip.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 136</value>
-  </data>
-  <data name="chkUseTrainWhip.Size" type="System.Drawing.Size, System.Drawing">
-    <value>133, 18</value>
-  </data>
-  <data name="chkUseTrainWhip.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="chkUseTrainWhip.Text" xml:space="preserve">
-    <value>Использовать кнуты</value>
-  </data>
-  <data name="&gt;&gt;chkUseTrainWhip.Name" xml:space="preserve">
-    <value>chkUseTrainWhip</value>
-  </data>
-  <data name="&gt;&gt;chkUseTrainWhip.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;chkUseTrainWhip.Parent" xml:space="preserve">
-    <value>groupBox4</value>
-  </data>
-  <data name="&gt;&gt;chkUseTrainWhip.ZOrder" xml:space="preserve">
-    <value>15</value>
-  </data>
-  <data name="numMinTrainPetMoney.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Candara, 9pt</value>
-  </data>
-  <data name="numMinTrainPetMoney.Location" type="System.Drawing.Point, System.Drawing">
-    <value>118, 162</value>
-  </data>
-  <data name="numMinTrainPetMoney.Size" type="System.Drawing.Size, System.Drawing">
-    <value>57, 22</value>
-  </data>
-  <data name="numMinTrainPetMoney.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
-  <data name="numMinTrainPetMoney.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
-    <value>Center</value>
-  </data>
-  <data name="&gt;&gt;numMinTrainPetMoney.Name" xml:space="preserve">
-    <value>numMinTrainPetMoney</value>
-  </data>
-  <data name="&gt;&gt;numMinTrainPetMoney.Type" xml:space="preserve">
-    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;numMinTrainPetMoney.Parent" xml:space="preserve">
-    <value>groupBox4</value>
-  </data>
-  <data name="&gt;&gt;numMinTrainPetMoney.ZOrder" xml:space="preserve">
-    <value>16</value>
-  </data>
-  <data name="groupBox4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 132</value>
-  </data>
-  <data name="groupBox4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>376, 196</value>
-  </data>
-  <data name="groupBox4.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
   <data name="&gt;&gt;groupBox4.Name" xml:space="preserve">
     <value>groupBox4</value>
   </data>
@@ -1257,66 +717,6 @@
   </data>
   <data name="&gt;&gt;groupBox4.ZOrder" xml:space="preserve">
     <value>2</value>
-  </data>
-  <data name="cboxSetWarPetType.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="cboxSetWarPetType.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="cboxSetWarPetType.Items" xml:space="preserve">
-    <value>-Отсутствует-</value>
-  </data>
-  <data name="cboxSetWarPetType.Items1" xml:space="preserve">
-    <value>Попугай</value>
-  </data>
-  <data name="cboxSetWarPetType.Items2" xml:space="preserve">
-    <value>Кошка</value>
-  </data>
-  <data name="cboxSetWarPetType.Items3" xml:space="preserve">
-    <value>Чихуахуа</value>
-  </data>
-  <data name="cboxSetWarPetType.Items4" xml:space="preserve">
-    <value>Доберман</value>
-  </data>
-  <data name="cboxSetWarPetType.Items5" xml:space="preserve">
-    <value>Овчарка</value>
-  </data>
-  <data name="cboxSetWarPetType.Items6" xml:space="preserve">
-    <value>Ротвейлер</value>
-  </data>
-  <data name="cboxSetWarPetType.Items7" xml:space="preserve">
-    <value>Дог</value>
-  </data>
-  <data name="cboxSetWarPetType.Items8" xml:space="preserve">
-    <value>Волк</value>
-  </data>
-  <data name="cboxSetWarPetType.Items9" xml:space="preserve">
-    <value>Лев</value>
-  </data>
-  <data name="cboxSetWarPetType.Items10" xml:space="preserve">
-    <value>Пантера</value>
-  </data>
-  <data name="cboxSetWarPetType.Items11" xml:space="preserve">
-    <value>Котёнок "Гаф"</value>
-  </data>
-  <data name="cboxSetWarPetType.Items12" xml:space="preserve">
-    <value>Чёрный дог</value>
-  </data>
-  <data name="cboxSetWarPetType.Items13" xml:space="preserve">
-    <value>Хомячок</value>
-  </data>
-  <data name="cboxSetWarPetType.Items14" xml:space="preserve">
-    <value>Хаски</value>
-  </data>
-  <data name="cboxSetWarPetType.Location" type="System.Drawing.Point, System.Drawing">
-    <value>153, 6</value>
-  </data>
-  <data name="cboxSetWarPetType.Size" type="System.Drawing.Size, System.Drawing">
-    <value>107, 22</value>
-  </data>
-  <data name="cboxSetWarPetType.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
   </data>
   <data name="&gt;&gt;cboxSetWarPetType.Name" xml:space="preserve">
     <value>cboxSetWarPetType</value>
@@ -1355,7 +755,7 @@
     <value>pnlContainer</value>
   </data>
   <data name="&gt;&gt;pnlWarPets.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="pnlResources.AutoScroll" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1625,7 +1025,7 @@
     <value>pnlContainer</value>
   </data>
   <data name="&gt;&gt;pnlResources.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="pnlHeal.AutoScroll" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1799,7 +1199,7 @@
     <value>pnlContainer</value>
   </data>
   <data name="&gt;&gt;pnlHeal.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="pnlTraining.AutoScroll" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1841,7 +1241,7 @@
     <value>pnlContainer</value>
   </data>
   <data name="&gt;&gt;pnlTraining.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="pnlGroupFightPVP.AutoScroll" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1919,7 +1319,7 @@
     <value>pnlContainer</value>
   </data>
   <data name="&gt;&gt;pnlGroupFightPVP.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="pnlGroupFights.AutoScroll" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2009,7 +1409,7 @@
     <value>pnlContainer</value>
   </data>
   <data name="&gt;&gt;pnlGroupFights.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>6</value>
   </data>
   <data name="pnlGroupFightChaos.AutoScroll" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2051,7 +1451,7 @@
     <value>pnlContainer</value>
   </data>
   <data name="&gt;&gt;pnlGroupFightChaos.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>7</value>
   </data>
   <data name="pnlGroupFightOre.AutoScroll" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2093,7 +1493,7 @@
     <value>pnlContainer</value>
   </data>
   <data name="&gt;&gt;pnlGroupFightOre.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>8</value>
   </data>
   <data name="pnlClanWars.AutoScroll" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2207,7 +1607,7 @@
     <value>pnlContainer</value>
   </data>
   <data name="&gt;&gt;pnlClanWars.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>9</value>
   </data>
   <data name="pnlGroupFightMafia.AutoScroll" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2249,7 +1649,7 @@
     <value>pnlContainer</value>
   </data>
   <data name="&gt;&gt;pnlGroupFightMafia.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>10</value>
   </data>
   <data name="pnlDuels.AutoScroll" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2351,7 +1751,7 @@
     <value>pnlContainer</value>
   </data>
   <data name="&gt;&gt;pnlDuels.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>11</value>
   </data>
   <data name="pnlHunterClub.AutoScroll" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2441,7 +1841,7 @@
     <value>pnlContainer</value>
   </data>
   <data name="&gt;&gt;pnlHunterClub.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>12</value>
   </data>
   <data name="pnlPetarena.AutoScroll" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2519,7 +1919,7 @@
     <value>pnlContainer</value>
   </data>
   <data name="&gt;&gt;pnlPetarena.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>13</value>
   </data>
   <data name="pnlOilPipeline.AutoScroll" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2561,7 +1961,7 @@
     <value>pnlContainer</value>
   </data>
   <data name="&gt;&gt;pnlOilPipeline.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>14</value>
   </data>
   <data name="pnlRatPipeline.AutoScroll" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2603,7 +2003,7 @@
     <value>pnlContainer</value>
   </data>
   <data name="&gt;&gt;pnlRatPipeline.ZOrder" xml:space="preserve">
-    <value>14</value>
+    <value>15</value>
   </data>
   <data name="pnlDigging.AutoScroll" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2645,7 +2045,7 @@
     <value>pnlContainer</value>
   </data>
   <data name="&gt;&gt;pnlDigging.ZOrder" xml:space="preserve">
-    <value>15</value>
+    <value>16</value>
   </data>
   <data name="pnlHumanImitation.AutoScroll" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2759,7 +2159,7 @@
     <value>pnlContainer</value>
   </data>
   <data name="&gt;&gt;pnlHumanImitation.ZOrder" xml:space="preserve">
-    <value>16</value>
+    <value>17</value>
   </data>
   <data name="pnlMisc.AutoScroll" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2849,7 +2249,7 @@
     <value>pnlContainer</value>
   </data>
   <data name="&gt;&gt;pnlMisc.ZOrder" xml:space="preserve">
-    <value>17</value>
+    <value>18</value>
   </data>
   <data name="pnlOldOilPipeline.AutoScroll" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2891,60 +2291,6 @@
     <value>pnlContainer</value>
   </data>
   <data name="&gt;&gt;pnlOldOilPipeline.ZOrder" xml:space="preserve">
-    <value>18</value>
-  </data>
-  <data name="pnlUseItems.AutoScroll" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;chkOpenPrizeBox.Name" xml:space="preserve">
-    <value>chkOpenPrizeBox</value>
-  </data>
-  <data name="&gt;&gt;chkOpenPrizeBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;chkOpenPrizeBox.Parent" xml:space="preserve">
-    <value>pnlUseItems</value>
-  </data>
-  <data name="&gt;&gt;chkOpenPrizeBox.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;chkExpDoNotEatPelmeni.Name" xml:space="preserve">
-    <value>chkExpDoNotEatPelmeni</value>
-  </data>
-  <data name="&gt;&gt;chkExpDoNotEatPelmeni.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;chkExpDoNotEatPelmeni.Parent" xml:space="preserve">
-    <value>pnlUseItems</value>
-  </data>
-  <data name="&gt;&gt;chkExpDoNotEatPelmeni.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="pnlUseItems.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="pnlUseItems.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="pnlUseItems.Size" type="System.Drawing.Size, System.Drawing">
-    <value>594, 602</value>
-  </data>
-  <data name="pnlUseItems.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="pnlUseItems.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;pnlUseItems.Name" xml:space="preserve">
-    <value>pnlUseItems</value>
-  </data>
-  <data name="&gt;&gt;pnlUseItems.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pnlUseItems.Parent" xml:space="preserve">
-    <value>pnlContainer</value>
-  </data>
-  <data name="&gt;&gt;pnlUseItems.ZOrder" xml:space="preserve">
     <value>19</value>
   </data>
   <data name="pnlMF.AutoScroll" type="System.Boolean, mscorlib">
@@ -11432,6 +10778,114 @@
   <data name="&gt;&gt;label135.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
+  <data name="&gt;&gt;label10.Name" xml:space="preserve">
+    <value>label10</value>
+  </data>
+  <data name="&gt;&gt;label10.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label10.Parent" xml:space="preserve">
+    <value>groupBox5</value>
+  </data>
+  <data name="&gt;&gt;label10.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;numHealPet50.Name" xml:space="preserve">
+    <value>numHealPet50</value>
+  </data>
+  <data name="&gt;&gt;numHealPet50.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;numHealPet50.Parent" xml:space="preserve">
+    <value>groupBox5</value>
+  </data>
+  <data name="&gt;&gt;numHealPet50.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;label13.Name" xml:space="preserve">
+    <value>label13</value>
+  </data>
+  <data name="&gt;&gt;label13.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label13.Parent" xml:space="preserve">
+    <value>groupBox5</value>
+  </data>
+  <data name="&gt;&gt;label13.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;label11.Name" xml:space="preserve">
+    <value>label11</value>
+  </data>
+  <data name="&gt;&gt;label11.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label11.Parent" xml:space="preserve">
+    <value>groupBox5</value>
+  </data>
+  <data name="&gt;&gt;label11.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;numHealPet100.Name" xml:space="preserve">
+    <value>numHealPet100</value>
+  </data>
+  <data name="&gt;&gt;numHealPet100.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;numHealPet100.Parent" xml:space="preserve">
+    <value>groupBox5</value>
+  </data>
+  <data name="&gt;&gt;numHealPet100.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;label12.Name" xml:space="preserve">
+    <value>label12</value>
+  </data>
+  <data name="&gt;&gt;label12.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label12.Parent" xml:space="preserve">
+    <value>groupBox5</value>
+  </data>
+  <data name="&gt;&gt;label12.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;chkBuyHealPet.Name" xml:space="preserve">
+    <value>chkBuyHealPet</value>
+  </data>
+  <data name="&gt;&gt;chkBuyHealPet.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkBuyHealPet.Parent" xml:space="preserve">
+    <value>groupBox5</value>
+  </data>
+  <data name="&gt;&gt;chkBuyHealPet.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="groupBox5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 34</value>
+  </data>
+  <data name="groupBox5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>277, 92</value>
+  </data>
+  <data name="groupBox5.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="groupBox5.Text" xml:space="preserve">
+    <value>Лечение пета</value>
+  </data>
+  <data name="&gt;&gt;groupBox5.Name" xml:space="preserve">
+    <value>groupBox5</value>
+  </data>
+  <data name="&gt;&gt;groupBox5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBox5.Parent" xml:space="preserve">
+    <value>pnlWarPets</value>
+  </data>
+  <data name="&gt;&gt;groupBox5.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="label10.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -11629,6 +11083,831 @@
   </data>
   <data name="&gt;&gt;chkBuyHealPet.ZOrder" xml:space="preserve">
     <value>6</value>
+  </data>
+  <data name="label119.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label119.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label119.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1, 10</value>
+  </data>
+  <data name="label119.Size" type="System.Drawing.Size, System.Drawing">
+    <value>150, 14</value>
+  </data>
+  <data name="label119.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="label119.Text" xml:space="preserve">
+    <value>Основной боевой питомец:</value>
+  </data>
+  <data name="&gt;&gt;label119.Name" xml:space="preserve">
+    <value>label119</value>
+  </data>
+  <data name="&gt;&gt;label119.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label119.Parent" xml:space="preserve">
+    <value>pnlWarPets</value>
+  </data>
+  <data name="&gt;&gt;label119.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;label184.Name" xml:space="preserve">
+    <value>label184</value>
+  </data>
+  <data name="&gt;&gt;label184.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label184.Parent" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
+  <data name="&gt;&gt;label184.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;chkTrainWarPet.Name" xml:space="preserve">
+    <value>chkTrainWarPet</value>
+  </data>
+  <data name="&gt;&gt;chkTrainWarPet.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkTrainWarPet.Parent" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
+  <data name="&gt;&gt;chkTrainWarPet.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;numMinTrainPetOil.Name" xml:space="preserve">
+    <value>numMinTrainPetOil</value>
+  </data>
+  <data name="&gt;&gt;numMinTrainPetOil.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;numMinTrainPetOil.Parent" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
+  <data name="&gt;&gt;numMinTrainPetOil.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;numMaxTrainPetFocus.Name" xml:space="preserve">
+    <value>numMaxTrainPetFocus</value>
+  </data>
+  <data name="&gt;&gt;numMaxTrainPetFocus.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;numMaxTrainPetFocus.Parent" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
+  <data name="&gt;&gt;numMaxTrainPetFocus.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;chkTrainPetMass.Name" xml:space="preserve">
+    <value>chkTrainPetMass</value>
+  </data>
+  <data name="&gt;&gt;chkTrainPetMass.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkTrainPetMass.Parent" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
+  <data name="&gt;&gt;chkTrainPetMass.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;numMaxTrainPetLoyality.Name" xml:space="preserve">
+    <value>numMaxTrainPetLoyality</value>
+  </data>
+  <data name="&gt;&gt;numMaxTrainPetLoyality.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;numMaxTrainPetLoyality.Parent" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
+  <data name="&gt;&gt;numMaxTrainPetLoyality.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;chkTrainPetFocus.Name" xml:space="preserve">
+    <value>chkTrainPetFocus</value>
+  </data>
+  <data name="&gt;&gt;chkTrainPetFocus.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkTrainPetFocus.Parent" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
+  <data name="&gt;&gt;chkTrainPetFocus.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;label29.Name" xml:space="preserve">
+    <value>label29</value>
+  </data>
+  <data name="&gt;&gt;label29.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label29.Parent" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
+  <data name="&gt;&gt;label29.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;chkTrainPetLoyality.Name" xml:space="preserve">
+    <value>chkTrainPetLoyality</value>
+  </data>
+  <data name="&gt;&gt;chkTrainPetLoyality.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkTrainPetLoyality.Parent" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
+  <data name="&gt;&gt;chkTrainPetLoyality.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;label64.Name" xml:space="preserve">
+    <value>label64</value>
+  </data>
+  <data name="&gt;&gt;label64.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label64.Parent" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
+  <data name="&gt;&gt;label64.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;numMinTrainPetOre.Name" xml:space="preserve">
+    <value>numMinTrainPetOre</value>
+  </data>
+  <data name="&gt;&gt;numMinTrainPetOre.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;numMinTrainPetOre.Parent" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
+  <data name="&gt;&gt;numMinTrainPetOre.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;numMaxTrainPetMass.Name" xml:space="preserve">
+    <value>numMaxTrainPetMass</value>
+  </data>
+  <data name="&gt;&gt;numMaxTrainPetMass.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;numMaxTrainPetMass.Parent" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
+  <data name="&gt;&gt;numMaxTrainPetMass.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;label30.Name" xml:space="preserve">
+    <value>label30</value>
+  </data>
+  <data name="&gt;&gt;label30.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label30.Parent" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
+  <data name="&gt;&gt;label30.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;cboxTrainWarPetType.Name" xml:space="preserve">
+    <value>cboxTrainWarPetType</value>
+  </data>
+  <data name="&gt;&gt;cboxTrainWarPetType.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cboxTrainWarPetType.Parent" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
+  <data name="&gt;&gt;cboxTrainWarPetType.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;label65.Name" xml:space="preserve">
+    <value>label65</value>
+  </data>
+  <data name="&gt;&gt;label65.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label65.Parent" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
+  <data name="&gt;&gt;label65.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;chkUseTrainWhip.Name" xml:space="preserve">
+    <value>chkUseTrainWhip</value>
+  </data>
+  <data name="&gt;&gt;chkUseTrainWhip.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkUseTrainWhip.Parent" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
+  <data name="&gt;&gt;chkUseTrainWhip.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;numMinTrainPetMoney.Name" xml:space="preserve">
+    <value>numMinTrainPetMoney</value>
+  </data>
+  <data name="&gt;&gt;numMinTrainPetMoney.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;numMinTrainPetMoney.Parent" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
+  <data name="&gt;&gt;numMinTrainPetMoney.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="groupBox4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 132</value>
+  </data>
+  <data name="groupBox4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>376, 196</value>
+  </data>
+  <data name="groupBox4.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;groupBox4.Name" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
+  <data name="&gt;&gt;groupBox4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBox4.Parent" xml:space="preserve">
+    <value>pnlWarPets</value>
+  </data>
+  <data name="&gt;&gt;groupBox4.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="chkTrainWarPet.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="chkTrainWarPet.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="chkTrainWarPet.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, -2</value>
+  </data>
+  <data name="chkTrainWarPet.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 0, 0</value>
+  </data>
+  <data name="chkTrainWarPet.Size" type="System.Drawing.Size, System.Drawing">
+    <value>124, 18</value>
+  </data>
+  <data name="chkTrainWarPet.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="chkTrainWarPet.Text" xml:space="preserve">
+    <value>Тренировать пета</value>
+  </data>
+  <data name="&gt;&gt;chkTrainWarPet.Name" xml:space="preserve">
+    <value>chkTrainWarPet</value>
+  </data>
+  <data name="&gt;&gt;chkTrainWarPet.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkTrainWarPet.Parent" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
+  <data name="&gt;&gt;chkTrainWarPet.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="numMinTrainPetOil.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Candara, 9pt</value>
+  </data>
+  <data name="numMinTrainPetOil.Location" type="System.Drawing.Point, System.Drawing">
+    <value>290, 162</value>
+  </data>
+  <data name="numMinTrainPetOil.Size" type="System.Drawing.Size, System.Drawing">
+    <value>57, 22</value>
+  </data>
+  <data name="numMinTrainPetOil.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="numMinTrainPetOil.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Center</value>
+  </data>
+  <data name="numMinTrainPetOil.ThousandsSeparator" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;numMinTrainPetOil.Name" xml:space="preserve">
+    <value>numMinTrainPetOil</value>
+  </data>
+  <data name="&gt;&gt;numMinTrainPetOil.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;numMinTrainPetOil.Parent" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
+  <data name="&gt;&gt;numMinTrainPetOil.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="numMaxTrainPetFocus.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Candara, 9pt</value>
+  </data>
+  <data name="numMaxTrainPetFocus.Location" type="System.Drawing.Point, System.Drawing">
+    <value>128, 50</value>
+  </data>
+  <data name="numMaxTrainPetFocus.Size" type="System.Drawing.Size, System.Drawing">
+    <value>44, 22</value>
+  </data>
+  <data name="numMaxTrainPetFocus.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="numMaxTrainPetFocus.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Center</value>
+  </data>
+  <data name="&gt;&gt;numMaxTrainPetFocus.Name" xml:space="preserve">
+    <value>numMaxTrainPetFocus</value>
+  </data>
+  <data name="&gt;&gt;numMaxTrainPetFocus.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;numMaxTrainPetFocus.Parent" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
+  <data name="&gt;&gt;numMaxTrainPetFocus.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="chkTrainPetMass.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="chkTrainPetMass.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="chkTrainPetMass.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 108</value>
+  </data>
+  <data name="chkTrainPetMass.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>No</value>
+  </data>
+  <data name="chkTrainPetMass.Size" type="System.Drawing.Size, System.Drawing">
+    <value>113, 18</value>
+  </data>
+  <data name="chkTrainPetMass.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="chkTrainPetMass.Text" xml:space="preserve">
+    <value>Массивность до:</value>
+  </data>
+  <data name="&gt;&gt;chkTrainPetMass.Name" xml:space="preserve">
+    <value>chkTrainPetMass</value>
+  </data>
+  <data name="&gt;&gt;chkTrainPetMass.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkTrainPetMass.Parent" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
+  <data name="&gt;&gt;chkTrainPetMass.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="numMaxTrainPetLoyality.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Candara, 9pt</value>
+  </data>
+  <data name="numMaxTrainPetLoyality.Location" type="System.Drawing.Point, System.Drawing">
+    <value>128, 78</value>
+  </data>
+  <data name="numMaxTrainPetLoyality.Size" type="System.Drawing.Size, System.Drawing">
+    <value>44, 22</value>
+  </data>
+  <data name="numMaxTrainPetLoyality.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="numMaxTrainPetLoyality.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Center</value>
+  </data>
+  <data name="&gt;&gt;numMaxTrainPetLoyality.Name" xml:space="preserve">
+    <value>numMaxTrainPetLoyality</value>
+  </data>
+  <data name="&gt;&gt;numMaxTrainPetLoyality.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;numMaxTrainPetLoyality.Parent" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
+  <data name="&gt;&gt;numMaxTrainPetLoyality.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="chkTrainPetFocus.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="chkTrainPetFocus.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="chkTrainPetFocus.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 52</value>
+  </data>
+  <data name="chkTrainPetFocus.Size" type="System.Drawing.Size, System.Drawing">
+    <value>119, 18</value>
+  </data>
+  <data name="chkTrainPetFocus.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="chkTrainPetFocus.Text" xml:space="preserve">
+    <value>Нацеленность до:</value>
+  </data>
+  <data name="&gt;&gt;chkTrainPetFocus.Name" xml:space="preserve">
+    <value>chkTrainPetFocus</value>
+  </data>
+  <data name="&gt;&gt;chkTrainPetFocus.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkTrainPetFocus.Parent" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
+  <data name="&gt;&gt;chkTrainPetFocus.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="label29.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label29.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Candara, 9pt</value>
+  </data>
+  <data name="label29.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label29.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 166</value>
+  </data>
+  <data name="label29.Size" type="System.Drawing.Size, System.Drawing">
+    <value>113, 14</value>
+  </data>
+  <data name="label29.TabIndex" type="System.Int32, mscorlib">
+    <value>61</value>
+  </data>
+  <data name="label29.Text" xml:space="preserve">
+    <value>Оставлять не менее:</value>
+  </data>
+  <data name="label29.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;label29.Name" xml:space="preserve">
+    <value>label29</value>
+  </data>
+  <data name="&gt;&gt;label29.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label29.Parent" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
+  <data name="&gt;&gt;label29.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="chkTrainPetLoyality.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="chkTrainPetLoyality.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="chkTrainPetLoyality.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 80</value>
+  </data>
+  <data name="chkTrainPetLoyality.Size" type="System.Drawing.Size, System.Drawing">
+    <value>115, 18</value>
+  </data>
+  <data name="chkTrainPetLoyality.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="chkTrainPetLoyality.Text" xml:space="preserve">
+    <value>Преданность до:</value>
+  </data>
+  <data name="&gt;&gt;chkTrainPetLoyality.Name" xml:space="preserve">
+    <value>chkTrainPetLoyality</value>
+  </data>
+  <data name="&gt;&gt;chkTrainPetLoyality.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkTrainPetLoyality.Parent" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
+  <data name="&gt;&gt;chkTrainPetLoyality.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="label64.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label64.Location" type="System.Drawing.Point, System.Drawing">
+    <value>180, 164</value>
+  </data>
+  <data name="label64.Size" type="System.Drawing.Size, System.Drawing">
+    <value>17, 18</value>
+  </data>
+  <data name="label64.TabIndex" type="System.Int32, mscorlib">
+    <value>59</value>
+  </data>
+  <data name="&gt;&gt;label64.Name" xml:space="preserve">
+    <value>label64</value>
+  </data>
+  <data name="&gt;&gt;label64.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label64.Parent" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
+  <data name="&gt;&gt;label64.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="numMinTrainPetOre.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Candara, 9pt</value>
+  </data>
+  <data name="numMinTrainPetOre.Location" type="System.Drawing.Point, System.Drawing">
+    <value>204, 162</value>
+  </data>
+  <data name="numMinTrainPetOre.Size" type="System.Drawing.Size, System.Drawing">
+    <value>57, 22</value>
+  </data>
+  <data name="numMinTrainPetOre.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="numMinTrainPetOre.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Center</value>
+  </data>
+  <data name="&gt;&gt;numMinTrainPetOre.Name" xml:space="preserve">
+    <value>numMinTrainPetOre</value>
+  </data>
+  <data name="&gt;&gt;numMinTrainPetOre.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;numMinTrainPetOre.Parent" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
+  <data name="&gt;&gt;numMinTrainPetOre.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="numMaxTrainPetMass.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Candara, 9pt</value>
+  </data>
+  <data name="numMaxTrainPetMass.Location" type="System.Drawing.Point, System.Drawing">
+    <value>128, 106</value>
+  </data>
+  <data name="numMaxTrainPetMass.Size" type="System.Drawing.Size, System.Drawing">
+    <value>44, 22</value>
+  </data>
+  <data name="numMaxTrainPetMass.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="numMaxTrainPetMass.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Center</value>
+  </data>
+  <data name="&gt;&gt;numMaxTrainPetMass.Name" xml:space="preserve">
+    <value>numMaxTrainPetMass</value>
+  </data>
+  <data name="&gt;&gt;numMaxTrainPetMass.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;numMaxTrainPetMass.Parent" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
+  <data name="&gt;&gt;numMaxTrainPetMass.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="label30.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label30.Location" type="System.Drawing.Point, System.Drawing">
+    <value>349, 164</value>
+  </data>
+  <data name="label30.Size" type="System.Drawing.Size, System.Drawing">
+    <value>17, 18</value>
+  </data>
+  <data name="label30.TabIndex" type="System.Int32, mscorlib">
+    <value>58</value>
+  </data>
+  <data name="&gt;&gt;label30.Name" xml:space="preserve">
+    <value>label30</value>
+  </data>
+  <data name="&gt;&gt;label30.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label30.Parent" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
+  <data name="&gt;&gt;label30.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="cboxTrainWarPetType.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="cboxTrainWarPetType.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="cboxTrainWarPetType.Items" xml:space="preserve">
+    <value>Попугай</value>
+  </data>
+  <data name="cboxTrainWarPetType.Items1" xml:space="preserve">
+    <value>Кошка</value>
+  </data>
+  <data name="cboxTrainWarPetType.Items2" xml:space="preserve">
+    <value>Чихуахуа</value>
+  </data>
+  <data name="cboxTrainWarPetType.Items3" xml:space="preserve">
+    <value>Доберман</value>
+  </data>
+  <data name="cboxTrainWarPetType.Items4" xml:space="preserve">
+    <value>Овчарка</value>
+  </data>
+  <data name="cboxTrainWarPetType.Items5" xml:space="preserve">
+    <value>Ротвейлер</value>
+  </data>
+  <data name="cboxTrainWarPetType.Items6" xml:space="preserve">
+    <value>Дог</value>
+  </data>
+  <data name="cboxTrainWarPetType.Items7" xml:space="preserve">
+    <value>Волк</value>
+  </data>
+  <data name="cboxTrainWarPetType.Items8" xml:space="preserve">
+    <value>Лев</value>
+  </data>
+  <data name="cboxTrainWarPetType.Items9" xml:space="preserve">
+    <value>Пантера</value>
+  </data>
+  <data name="cboxTrainWarPetType.Items10" xml:space="preserve">
+    <value>Котенок "Гаф"</value>
+  </data>
+  <data name="cboxTrainWarPetType.Items11" xml:space="preserve">
+    <value>Черный дог</value>
+  </data>
+  <data name="cboxTrainWarPetType.Items12" xml:space="preserve">
+    <value>Хомяк</value>
+  </data>
+  <data name="cboxTrainWarPetType.Items13" xml:space="preserve">
+    <value>Хаски</value>
+  </data>
+  <data name="cboxTrainWarPetType.Location" type="System.Drawing.Point, System.Drawing">
+    <value>62, 20</value>
+  </data>
+  <data name="cboxTrainWarPetType.Size" type="System.Drawing.Size, System.Drawing">
+    <value>103, 22</value>
+  </data>
+  <data name="cboxTrainWarPetType.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;cboxTrainWarPetType.Name" xml:space="preserve">
+    <value>cboxTrainWarPetType</value>
+  </data>
+  <data name="&gt;&gt;cboxTrainWarPetType.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cboxTrainWarPetType.Parent" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
+  <data name="&gt;&gt;cboxTrainWarPetType.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="label65.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label65.Location" type="System.Drawing.Point, System.Drawing">
+    <value>266, 164</value>
+  </data>
+  <data name="label65.Size" type="System.Drawing.Size, System.Drawing">
+    <value>17, 18</value>
+  </data>
+  <data name="label65.TabIndex" type="System.Int32, mscorlib">
+    <value>60</value>
+  </data>
+  <data name="&gt;&gt;label65.Name" xml:space="preserve">
+    <value>label65</value>
+  </data>
+  <data name="&gt;&gt;label65.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label65.Parent" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
+  <data name="&gt;&gt;label65.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="chkUseTrainWhip.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="chkUseTrainWhip.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="chkUseTrainWhip.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 136</value>
+  </data>
+  <data name="chkUseTrainWhip.Size" type="System.Drawing.Size, System.Drawing">
+    <value>133, 18</value>
+  </data>
+  <data name="chkUseTrainWhip.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="chkUseTrainWhip.Text" xml:space="preserve">
+    <value>Использовать кнуты</value>
+  </data>
+  <data name="&gt;&gt;chkUseTrainWhip.Name" xml:space="preserve">
+    <value>chkUseTrainWhip</value>
+  </data>
+  <data name="&gt;&gt;chkUseTrainWhip.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkUseTrainWhip.Parent" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
+  <data name="&gt;&gt;chkUseTrainWhip.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="numMinTrainPetMoney.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Candara, 9pt</value>
+  </data>
+  <data name="numMinTrainPetMoney.Location" type="System.Drawing.Point, System.Drawing">
+    <value>118, 162</value>
+  </data>
+  <data name="numMinTrainPetMoney.Size" type="System.Drawing.Size, System.Drawing">
+    <value>57, 22</value>
+  </data>
+  <data name="numMinTrainPetMoney.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="numMinTrainPetMoney.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Center</value>
+  </data>
+  <data name="&gt;&gt;numMinTrainPetMoney.Name" xml:space="preserve">
+    <value>numMinTrainPetMoney</value>
+  </data>
+  <data name="&gt;&gt;numMinTrainPetMoney.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;numMinTrainPetMoney.Parent" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
+  <data name="&gt;&gt;numMinTrainPetMoney.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="cboxSetWarPetType.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="cboxSetWarPetType.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="cboxSetWarPetType.Items" xml:space="preserve">
+    <value>-Отсутствует-</value>
+  </data>
+  <data name="cboxSetWarPetType.Items1" xml:space="preserve">
+    <value>Попугай</value>
+  </data>
+  <data name="cboxSetWarPetType.Items2" xml:space="preserve">
+    <value>Кошка</value>
+  </data>
+  <data name="cboxSetWarPetType.Items3" xml:space="preserve">
+    <value>Чихуахуа</value>
+  </data>
+  <data name="cboxSetWarPetType.Items4" xml:space="preserve">
+    <value>Доберман</value>
+  </data>
+  <data name="cboxSetWarPetType.Items5" xml:space="preserve">
+    <value>Овчарка</value>
+  </data>
+  <data name="cboxSetWarPetType.Items6" xml:space="preserve">
+    <value>Ротвейлер</value>
+  </data>
+  <data name="cboxSetWarPetType.Items7" xml:space="preserve">
+    <value>Дог</value>
+  </data>
+  <data name="cboxSetWarPetType.Items8" xml:space="preserve">
+    <value>Волк</value>
+  </data>
+  <data name="cboxSetWarPetType.Items9" xml:space="preserve">
+    <value>Лев</value>
+  </data>
+  <data name="cboxSetWarPetType.Items10" xml:space="preserve">
+    <value>Пантера</value>
+  </data>
+  <data name="cboxSetWarPetType.Items11" xml:space="preserve">
+    <value>Котёнок "Гаф"</value>
+  </data>
+  <data name="cboxSetWarPetType.Items12" xml:space="preserve">
+    <value>Чёрный дог</value>
+  </data>
+  <data name="cboxSetWarPetType.Items13" xml:space="preserve">
+    <value>Хомячок</value>
+  </data>
+  <data name="cboxSetWarPetType.Items14" xml:space="preserve">
+    <value>Хаски</value>
+  </data>
+  <data name="cboxSetWarPetType.Location" type="System.Drawing.Point, System.Drawing">
+    <value>153, 6</value>
+  </data>
+  <data name="cboxSetWarPetType.Size" type="System.Drawing.Size, System.Drawing">
+    <value>107, 22</value>
+  </data>
+  <data name="cboxSetWarPetType.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;cboxSetWarPetType.Name" xml:space="preserve">
+    <value>cboxSetWarPetType</value>
+  </data>
+  <data name="&gt;&gt;cboxSetWarPetType.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cboxSetWarPetType.Parent" xml:space="preserve">
+    <value>pnlWarPets</value>
+  </data>
+  <data name="&gt;&gt;cboxSetWarPetType.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
   <data name="&gt;&gt;label123.Name" xml:space="preserve">
     <value>label123</value>
@@ -11913,16 +12192,16 @@
     <value>NoControl</value>
   </data>
   <data name="chkOpenPrizeBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 6</value>
+    <value>7, 40</value>
   </data>
   <data name="chkOpenPrizeBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>184, 18</value>
+    <value>109, 18</value>
   </data>
   <data name="chkOpenPrizeBox.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
+    <value>2</value>
   </data>
   <data name="chkOpenPrizeBox.Text" xml:space="preserve">
-    <value>Открывать сундучки ключами</value>
+    <value>Другие сундуки</value>
   </data>
   <data name="&gt;&gt;chkOpenPrizeBox.Name" xml:space="preserve">
     <value>chkOpenPrizeBox</value>
@@ -11931,39 +12210,9 @@
     <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;chkOpenPrizeBox.Parent" xml:space="preserve">
-    <value>pnlUseItems</value>
+    <value>groupBox15</value>
   </data>
   <data name="&gt;&gt;chkOpenPrizeBox.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="chkExpDoNotEatPelmeni.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="chkExpDoNotEatPelmeni.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="chkExpDoNotEatPelmeni.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 30</value>
-  </data>
-  <data name="chkExpDoNotEatPelmeni.Size" type="System.Drawing.Size, System.Drawing">
-    <value>177, 18</value>
-  </data>
-  <data name="chkExpDoNotEatPelmeni.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="chkExpDoNotEatPelmeni.Text" xml:space="preserve">
-    <value>Не кушать за меня пельмени</value>
-  </data>
-  <data name="&gt;&gt;chkExpDoNotEatPelmeni.Name" xml:space="preserve">
-    <value>chkExpDoNotEatPelmeni</value>
-  </data>
-  <data name="&gt;&gt;chkExpDoNotEatPelmeni.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;chkExpDoNotEatPelmeni.Parent" xml:space="preserve">
-    <value>pnlUseItems</value>
-  </data>
-  <data name="&gt;&gt;chkExpDoNotEatPelmeni.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
   <data name="label34.AutoSize" type="System.Boolean, mscorlib">
@@ -31696,6 +31945,60 @@
     <value>pnlTraining</value>
   </data>
   <data name="&gt;&gt;groupBox14.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="label184.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label184.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 24</value>
+  </data>
+  <data name="label184.Size" type="System.Drawing.Size, System.Drawing">
+    <value>56, 14</value>
+  </data>
+  <data name="label184.TabIndex" type="System.Int32, mscorlib">
+    <value>62</value>
+  </data>
+  <data name="label184.Text" xml:space="preserve">
+    <value>Питомец:</value>
+  </data>
+  <data name="&gt;&gt;label184.Name" xml:space="preserve">
+    <value>label184</value>
+  </data>
+  <data name="&gt;&gt;label184.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label184.Parent" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
+  <data name="&gt;&gt;label184.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="chkOpenReturnBox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="chkOpenReturnBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 20</value>
+  </data>
+  <data name="chkOpenReturnBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>133, 18</value>
+  </data>
+  <data name="chkOpenReturnBox.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="chkOpenReturnBox.Text" xml:space="preserve">
+    <value>Сумка возвращенца</value>
+  </data>
+  <data name="&gt;&gt;chkOpenReturnBox.Name" xml:space="preserve">
+    <value>chkOpenReturnBox</value>
+  </data>
+  <data name="&gt;&gt;chkOpenReturnBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkOpenReturnBox.Parent" xml:space="preserve">
+    <value>groupBox15</value>
+  </data>
+  <data name="&gt;&gt;chkOpenReturnBox.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
