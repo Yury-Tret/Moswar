@@ -703,6 +703,8 @@
             this.label23 = new System.Windows.Forms.Label();
             this.label60 = new System.Windows.Forms.Label();
             this.label104 = new System.Windows.Forms.Label();
+            this.pnlGroupFightMafia = new System.Windows.Forms.Panel();
+            this.groupBox12 = new System.Windows.Forms.GroupBox();
             this.tabControl.SuspendLayout();
             this.tabMainBrowser.SuspendLayout();
             this.AutoApdateMessage.SuspendLayout();
@@ -896,6 +898,8 @@
             this.grpPic.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.statusStrip.SuspendLayout();
+            this.pnlGroupFightMafia.SuspendLayout();
+            this.groupBox12.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnStart
@@ -1008,6 +1012,8 @@
             // 
             // pnlContainer
             // 
+            this.pnlContainer.Controls.Add(this.pnlGroupFightMafia);
+            this.pnlContainer.Controls.Add(this.pnlGroupFights);
             this.pnlContainer.Controls.Add(this.pnlDuels);
             this.pnlContainer.Controls.Add(this.pnlHunterClub);
             this.pnlContainer.Controls.Add(this.pnlClanWars);
@@ -1029,7 +1035,6 @@
             this.pnlContainer.Controls.Add(this.pnlShutdown);
             this.pnlContainer.Controls.Add(this.pnlPatrol);
             this.pnlContainer.Controls.Add(this.pnlBrowser);
-            this.pnlContainer.Controls.Add(this.pnlGroupFights);
             this.pnlContainer.Controls.Add(this.pnlSafe);
             this.pnlContainer.Controls.Add(this.pnlAgitators);
             this.pnlContainer.Controls.Add(this.pnlGrechka);
@@ -3525,7 +3530,6 @@
             // 
             this.grpGrpFightSettings.Controls.Add(this.label41);
             this.grpGrpFightSettings.Controls.Add(this.label40);
-            this.grpGrpFightSettings.Controls.Add(this.chkMafiaUseLicence);
             this.grpGrpFightSettings.Controls.Add(this.chkClanLastMin);
             this.grpGrpFightSettings.Controls.Add(this.numClanMeFightHP);
             this.grpGrpFightSettings.Controls.Add(this.numClanPetFightHP);
@@ -3590,7 +3594,6 @@
             // grpGrpFight
             // 
             this.grpGrpFight.Controls.Add(this.cboxGrpFightUseItems);
-            this.grpGrpFight.Controls.Add(this.chkGoGroupFightMafia);
             this.grpGrpFight.Controls.Add(this.chkGoGroupFightChaos);
             this.grpGrpFight.Controls.Add(this.chkGoGroupFightOre);
             this.grpGrpFight.Controls.Add(this.chkGoClanFight);
@@ -3623,6 +3626,8 @@
             resources.ApplyResources(this.chkGoGroupFightMafia, "chkGoGroupFightMafia");
             this.chkGoGroupFightMafia.Name = "chkGoGroupFightMafia";
             this.chkGoGroupFightMafia.UseVisualStyleBackColor = true;
+            this.chkGoGroupFightMafia.CheckedChanged += new System.EventHandler(this.CheckGroupBox_CheckedChanged);
+            this.chkGoGroupFightMafia.VisibleChanged += new System.EventHandler(this.CheckGroupBox_CheckedChanged);
             // 
             // chkGoGroupFightChaos
             // 
@@ -7209,6 +7214,20 @@
             resources.ApplyResources(this.label104, "label104");
             this.label104.Name = "label104";
             // 
+            // pnlGroupFightMafia
+            // 
+            resources.ApplyResources(this.pnlGroupFightMafia, "pnlGroupFightMafia");
+            this.pnlGroupFightMafia.Controls.Add(this.groupBox12);
+            this.pnlGroupFightMafia.Name = "pnlGroupFightMafia";
+            // 
+            // groupBox12
+            // 
+            this.groupBox12.Controls.Add(this.chkGoGroupFightMafia);
+            this.groupBox12.Controls.Add(this.chkMafiaUseLicence);
+            resources.ApplyResources(this.groupBox12, "groupBox12");
+            this.groupBox12.Name = "groupBox12";
+            this.groupBox12.TabStop = false;
+            // 
             // frmMain
             // 
             resources.ApplyResources(this, "$this");
@@ -7493,6 +7512,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.statusStrip.ResumeLayout(false);
             this.statusStrip.PerformLayout();
+            this.pnlGroupFightMafia.ResumeLayout(false);
+            this.groupBox12.ResumeLayout(false);
+            this.groupBox12.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -8172,7 +8194,9 @@
         private System.Windows.Forms.GroupBox groupBox11;
         private System.Windows.Forms.Label label60;
         private System.Windows.Forms.Label label23;
-        private System.Windows.Forms.Label label104;      
+        private System.Windows.Forms.Label label104;
+        private System.Windows.Forms.Panel pnlGroupFightMafia;
+        private System.Windows.Forms.GroupBox groupBox12;      
     }
 }
 
