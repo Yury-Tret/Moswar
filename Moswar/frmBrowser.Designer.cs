@@ -709,6 +709,7 @@
             this.pnlGroupFightChaos = new System.Windows.Forms.Panel();
             this.pnlGroupFightPVP = new System.Windows.Forms.Panel();
             this.groupBox14 = new System.Windows.Forms.GroupBox();
+            this.label184 = new System.Windows.Forms.Label();
             this.tabControl.SuspendLayout();
             this.tabMainBrowser.SuspendLayout();
             this.AutoApdateMessage.SuspendLayout();
@@ -1020,6 +1021,7 @@
             // 
             // pnlContainer
             // 
+            this.pnlContainer.Controls.Add(this.pnlWarPets);
             this.pnlContainer.Controls.Add(this.pnlResources);
             this.pnlContainer.Controls.Add(this.pnlHeal);
             this.pnlContainer.Controls.Add(this.pnlTraining);
@@ -1037,7 +1039,6 @@
             this.pnlContainer.Controls.Add(this.pnlDigging);
             this.pnlContainer.Controls.Add(this.pnlHumanImitation);
             this.pnlContainer.Controls.Add(this.pnlMisc);
-            this.pnlContainer.Controls.Add(this.pnlWarPets);
             this.pnlContainer.Controls.Add(this.pnlOldOilPipeline);
             this.pnlContainer.Controls.Add(this.pnlUseItems);
             this.pnlContainer.Controls.Add(this.pnlMF);
@@ -2398,6 +2399,7 @@
             // 
             // groupBox4
             // 
+            this.groupBox4.Controls.Add(this.label184);
             this.groupBox4.Controls.Add(this.chkTrainWarPet);
             this.groupBox4.Controls.Add(this.numMinTrainPetOil);
             this.groupBox4.Controls.Add(this.numMaxTrainPetFocus);
@@ -2425,6 +2427,8 @@
             this.chkTrainWarPet.CheckState = System.Windows.Forms.CheckState.Checked;
             this.chkTrainWarPet.Name = "chkTrainWarPet";
             this.chkTrainWarPet.UseVisualStyleBackColor = true;
+            this.chkTrainWarPet.CheckedChanged += new System.EventHandler(this.CheckGroupBox_CheckedChanged);
+            this.chkTrainWarPet.VisibleChanged += new System.EventHandler(this.CheckGroupBox_CheckedChanged);
             // 
             // numMinTrainPetOil
             // 
@@ -7265,6 +7269,11 @@
             this.groupBox14.Name = "groupBox14";
             this.groupBox14.TabStop = false;
             // 
+            // label184
+            // 
+            resources.ApplyResources(this.label184, "label184");
+            this.label184.Name = "label184";
+            // 
             // frmMain
             // 
             resources.ApplyResources(this, "$this");
@@ -8244,7 +8253,8 @@
         private System.Windows.Forms.Panel pnlGroupFightOre;
         private System.Windows.Forms.Panel pnlGroupFightChaos;
         private System.Windows.Forms.Panel pnlGroupFightPVP;
-        private System.Windows.Forms.GroupBox groupBox14;      
+        private System.Windows.Forms.GroupBox groupBox14;
+        private System.Windows.Forms.Label label184;      
     }
 }
 
