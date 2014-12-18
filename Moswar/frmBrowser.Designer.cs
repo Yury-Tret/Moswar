@@ -346,7 +346,6 @@
             this.grpExpGrpFightSettings = new System.Windows.Forms.GroupBox();
             this.cboxExpGrpFightPet = new System.Windows.Forms.ComboBox();
             this.label90 = new System.Windows.Forms.Label();
-            this.grpProtivostoyanie = new System.Windows.Forms.GroupBox();
             this.chkGoPVPInstantly = new System.Windows.Forms.CheckBox();
             this.chkGoPVPFight = new System.Windows.Forms.CheckBox();
             this.label94 = new System.Windows.Forms.Label();
@@ -708,6 +707,7 @@
             this.groupBox13 = new System.Windows.Forms.GroupBox();
             this.pnlGroupFightOre = new System.Windows.Forms.Panel();
             this.pnlGroupFightChaos = new System.Windows.Forms.Panel();
+            this.pnlGroupFightPVP = new System.Windows.Forms.Panel();
             this.tabControl.SuspendLayout();
             this.tabMainBrowser.SuspendLayout();
             this.AutoApdateMessage.SuspendLayout();
@@ -799,7 +799,6 @@
             this.grpGrpFight.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.grpExpGrpFightSettings.SuspendLayout();
-            this.grpProtivostoyanie.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numGoPVPInstantlyOffset)).BeginInit();
             this.grpExpFightBag.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numExpMaxBuyFightItemAmount)).BeginInit();
@@ -906,6 +905,7 @@
             this.groupBox13.SuspendLayout();
             this.pnlGroupFightOre.SuspendLayout();
             this.pnlGroupFightChaos.SuspendLayout();
+            this.pnlGroupFightPVP.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnStart
@@ -1018,8 +1018,9 @@
             // 
             // pnlContainer
             // 
-            this.pnlContainer.Controls.Add(this.pnlGroupFightChaos);
+            this.pnlContainer.Controls.Add(this.pnlGroupFightPVP);
             this.pnlContainer.Controls.Add(this.pnlGroupFights);
+            this.pnlContainer.Controls.Add(this.pnlGroupFightChaos);
             this.pnlContainer.Controls.Add(this.pnlGroupFightOre);
             this.pnlContainer.Controls.Add(this.pnlClanWars);
             this.pnlContainer.Controls.Add(this.pnlGroupFightMafia);
@@ -3531,7 +3532,6 @@
             this.pnlGroupFights.Controls.Add(this.grpGrpFight);
             this.pnlGroupFights.Controls.Add(this.groupBox1);
             this.pnlGroupFights.Controls.Add(this.grpExpGrpFightSettings);
-            this.pnlGroupFights.Controls.Add(this.grpProtivostoyanie);
             this.pnlGroupFights.Controls.Add(this.grpExpFightBag);
             this.pnlGroupFights.Name = "pnlGroupFights";
             // 
@@ -3862,16 +3862,6 @@
             // 
             resources.ApplyResources(this.label90, "label90");
             this.label90.Name = "label90";
-            // 
-            // grpProtivostoyanie
-            // 
-            this.grpProtivostoyanie.Controls.Add(this.chkGoPVPInstantly);
-            this.grpProtivostoyanie.Controls.Add(this.chkGoPVPFight);
-            this.grpProtivostoyanie.Controls.Add(this.label94);
-            this.grpProtivostoyanie.Controls.Add(this.numGoPVPInstantlyOffset);
-            resources.ApplyResources(this.grpProtivostoyanie, "grpProtivostoyanie");
-            this.grpProtivostoyanie.Name = "grpProtivostoyanie";
-            this.grpProtivostoyanie.TabStop = false;
             // 
             // chkGoPVPInstantly
             // 
@@ -7255,6 +7245,15 @@
             this.pnlGroupFightChaos.Controls.Add(this.chkGoGroupFightChaos);
             this.pnlGroupFightChaos.Name = "pnlGroupFightChaos";
             // 
+            // pnlGroupFightPVP
+            // 
+            resources.ApplyResources(this.pnlGroupFightPVP, "pnlGroupFightPVP");
+            this.pnlGroupFightPVP.Controls.Add(this.chkGoPVPInstantly);
+            this.pnlGroupFightPVP.Controls.Add(this.label94);
+            this.pnlGroupFightPVP.Controls.Add(this.numGoPVPInstantlyOffset);
+            this.pnlGroupFightPVP.Controls.Add(this.chkGoPVPFight);
+            this.pnlGroupFightPVP.Name = "pnlGroupFightPVP";
+            // 
             // frmMain
             // 
             resources.ApplyResources(this, "$this");
@@ -7397,8 +7396,6 @@
             this.groupBox1.PerformLayout();
             this.grpExpGrpFightSettings.ResumeLayout(false);
             this.grpExpGrpFightSettings.PerformLayout();
-            this.grpProtivostoyanie.ResumeLayout(false);
-            this.grpProtivostoyanie.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numGoPVPInstantlyOffset)).EndInit();
             this.grpExpFightBag.ResumeLayout(false);
             this.grpExpFightBag.PerformLayout();
@@ -7548,6 +7545,8 @@
             this.pnlGroupFightOre.PerformLayout();
             this.pnlGroupFightChaos.ResumeLayout(false);
             this.pnlGroupFightChaos.PerformLayout();
+            this.pnlGroupFightPVP.ResumeLayout(false);
+            this.pnlGroupFightPVP.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -7828,7 +7827,6 @@
         private System.Windows.Forms.CheckBox chkOilUseOhara;
         private System.Windows.Forms.NumericUpDown numMaxOilDefeats;
         private System.Windows.Forms.Label lblOilMaxDefeats;
-        private System.Windows.Forms.GroupBox grpProtivostoyanie;
         private System.Windows.Forms.CheckBox chkSovetBuyAgitator;
         private System.Windows.Forms.CheckBox chkGoPVPInstantly;
         private System.Windows.Forms.CheckBox chkGoPVPFight;
@@ -8232,7 +8230,8 @@
         private System.Windows.Forms.GroupBox groupBox12;
         private System.Windows.Forms.GroupBox groupBox13;
         private System.Windows.Forms.Panel pnlGroupFightOre;
-        private System.Windows.Forms.Panel pnlGroupFightChaos;      
+        private System.Windows.Forms.Panel pnlGroupFightChaos;
+        private System.Windows.Forms.Panel pnlGroupFightPVP;      
     }
 }
 
