@@ -708,6 +708,7 @@
             this.pnlGroupFightOre = new System.Windows.Forms.Panel();
             this.pnlGroupFightChaos = new System.Windows.Forms.Panel();
             this.pnlGroupFightPVP = new System.Windows.Forms.Panel();
+            this.groupBox14 = new System.Windows.Forms.GroupBox();
             this.tabControl.SuspendLayout();
             this.tabMainBrowser.SuspendLayout();
             this.AutoApdateMessage.SuspendLayout();
@@ -906,6 +907,7 @@
             this.pnlGroupFightOre.SuspendLayout();
             this.pnlGroupFightChaos.SuspendLayout();
             this.pnlGroupFightPVP.SuspendLayout();
+            this.groupBox14.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnStart
@@ -1018,6 +1020,7 @@
             // 
             // pnlContainer
             // 
+            this.pnlContainer.Controls.Add(this.pnlTraining);
             this.pnlContainer.Controls.Add(this.pnlGroupFightPVP);
             this.pnlContainer.Controls.Add(this.pnlGroupFights);
             this.pnlContainer.Controls.Add(this.pnlGroupFightChaos);
@@ -1052,7 +1055,6 @@
             this.pnlContainer.Controls.Add(this.pnlBombila);
             this.pnlContainer.Controls.Add(this.pnlClan);
             this.pnlContainer.Controls.Add(this.pnlQuests);
-            this.pnlContainer.Controls.Add(this.pnlTraining);
             this.pnlContainer.Controls.Add(this.pnlCocktails);
             this.pnlContainer.Controls.Add(this.pnlPetriks);
             this.pnlContainer.Controls.Add(this.pnlAzazella);
@@ -4506,21 +4508,7 @@
             // pnlTraining
             // 
             resources.ApplyResources(this.pnlTraining, "pnlTraining");
-            this.pnlTraining.Controls.Add(this.chkTrainCharisma);
-            this.pnlTraining.Controls.Add(this.chkTrainMe);
-            this.pnlTraining.Controls.Add(this.chkTrainAttentiveness);
-            this.pnlTraining.Controls.Add(this.numMaxTrainSrength);
-            this.pnlTraining.Controls.Add(this.numMaxTrainDexterity);
-            this.pnlTraining.Controls.Add(this.chkTrainCunning);
-            this.pnlTraining.Controls.Add(this.numMaxTrainHealth);
-            this.pnlTraining.Controls.Add(this.chkTrainHealth);
-            this.pnlTraining.Controls.Add(this.numMaxTrainEndurance);
-            this.pnlTraining.Controls.Add(this.numMaxTrainCharisma);
-            this.pnlTraining.Controls.Add(this.chkTrainEndurance);
-            this.pnlTraining.Controls.Add(this.chkTrainSrength);
-            this.pnlTraining.Controls.Add(this.numMaxTrainCunning);
-            this.pnlTraining.Controls.Add(this.numMaxTrainAttentiveness);
-            this.pnlTraining.Controls.Add(this.chkTrainDexterity);
+            this.pnlTraining.Controls.Add(this.groupBox14);
             this.pnlTraining.Name = "pnlTraining";
             // 
             // chkTrainCharisma
@@ -4534,6 +4522,8 @@
             resources.ApplyResources(this.chkTrainMe, "chkTrainMe");
             this.chkTrainMe.Name = "chkTrainMe";
             this.chkTrainMe.UseVisualStyleBackColor = true;
+            this.chkTrainMe.CheckedChanged += new System.EventHandler(this.CheckGroupBox_CheckedChanged);
+            this.chkTrainMe.VisibleChanged += new System.EventHandler(this.CheckGroupBox_CheckedChanged);
             // 
             // chkTrainAttentiveness
             // 
@@ -7254,6 +7244,27 @@
             this.pnlGroupFightPVP.Controls.Add(this.chkGoPVPFight);
             this.pnlGroupFightPVP.Name = "pnlGroupFightPVP";
             // 
+            // groupBox14
+            // 
+            this.groupBox14.Controls.Add(this.chkTrainMe);
+            this.groupBox14.Controls.Add(this.chkTrainCharisma);
+            this.groupBox14.Controls.Add(this.chkTrainHealth);
+            this.groupBox14.Controls.Add(this.chkTrainAttentiveness);
+            this.groupBox14.Controls.Add(this.chkTrainDexterity);
+            this.groupBox14.Controls.Add(this.numMaxTrainSrength);
+            this.groupBox14.Controls.Add(this.numMaxTrainAttentiveness);
+            this.groupBox14.Controls.Add(this.numMaxTrainDexterity);
+            this.groupBox14.Controls.Add(this.numMaxTrainCunning);
+            this.groupBox14.Controls.Add(this.chkTrainCunning);
+            this.groupBox14.Controls.Add(this.chkTrainSrength);
+            this.groupBox14.Controls.Add(this.numMaxTrainHealth);
+            this.groupBox14.Controls.Add(this.chkTrainEndurance);
+            this.groupBox14.Controls.Add(this.numMaxTrainCharisma);
+            this.groupBox14.Controls.Add(this.numMaxTrainEndurance);
+            resources.ApplyResources(this.groupBox14, "groupBox14");
+            this.groupBox14.Name = "groupBox14";
+            this.groupBox14.TabStop = false;
+            // 
             // frmMain
             // 
             resources.ApplyResources(this, "$this");
@@ -7424,7 +7435,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.numExpQuestFruit)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numExpQuestMoney)).EndInit();
             this.pnlTraining.ResumeLayout(false);
-            this.pnlTraining.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numMaxTrainSrength)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numMaxTrainDexterity)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numMaxTrainHealth)).EndInit();
@@ -7547,6 +7557,8 @@
             this.pnlGroupFightChaos.PerformLayout();
             this.pnlGroupFightPVP.ResumeLayout(false);
             this.pnlGroupFightPVP.PerformLayout();
+            this.groupBox14.ResumeLayout(false);
+            this.groupBox14.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -8231,7 +8243,8 @@
         private System.Windows.Forms.GroupBox groupBox13;
         private System.Windows.Forms.Panel pnlGroupFightOre;
         private System.Windows.Forms.Panel pnlGroupFightChaos;
-        private System.Windows.Forms.Panel pnlGroupFightPVP;      
+        private System.Windows.Forms.Panel pnlGroupFightPVP;
+        private System.Windows.Forms.GroupBox groupBox14;      
     }
 }
 
