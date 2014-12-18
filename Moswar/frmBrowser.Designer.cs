@@ -584,7 +584,7 @@
             this.pnlGameSettings = new System.Windows.Forms.Panel();
             this.pnlCombatLocations = new System.Windows.Forms.Panel();
             this.pnlNoncombatLocations = new System.Windows.Forms.Panel();
-            this.pnlMoneyToOre = new System.Windows.Forms.Panel();
+            this.pnlResources = new System.Windows.Forms.Panel();
             this.numExchangeBankMoney = new System.Windows.Forms.NumericUpDown();
             this.label18 = new System.Windows.Forms.Label();
             this.label72 = new System.Windows.Forms.Label();
@@ -865,7 +865,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.numAddVictim)).BeginInit();
             this.grpWerewolf.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pboxWerewolfPower)).BeginInit();
-            this.pnlMoneyToOre.SuspendLayout();
+            this.pnlResources.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numExchangeBankMoney)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numPlayThimbles)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numMonaMinStars)).BeginInit();
@@ -1020,6 +1020,7 @@
             // 
             // pnlContainer
             // 
+            this.pnlContainer.Controls.Add(this.pnlResources);
             this.pnlContainer.Controls.Add(this.pnlHeal);
             this.pnlContainer.Controls.Add(this.pnlTraining);
             this.pnlContainer.Controls.Add(this.pnlGroupFightPVP);
@@ -1067,7 +1068,6 @@
             this.pnlContainer.Controls.Add(this.pnlGameSettings);
             this.pnlContainer.Controls.Add(this.pnlCombatLocations);
             this.pnlContainer.Controls.Add(this.pnlNoncombatLocations);
-            this.pnlContainer.Controls.Add(this.pnlMoneyToOre);
             this.pnlContainer.Controls.Add(this.pnlBankDeposit);
             resources.ApplyResources(this.pnlContainer, "pnlContainer");
             this.pnlContainer.Name = "pnlContainer";
@@ -6250,30 +6250,30 @@
             resources.ApplyResources(this.pnlNoncombatLocations, "pnlNoncombatLocations");
             this.pnlNoncombatLocations.Name = "pnlNoncombatLocations";
             // 
-            // pnlMoneyToOre
+            // pnlResources
             // 
-            resources.ApplyResources(this.pnlMoneyToOre, "pnlMoneyToOre");
-            this.pnlMoneyToOre.Controls.Add(this.numExchangeBankMoney);
-            this.pnlMoneyToOre.Controls.Add(this.label18);
-            this.pnlMoneyToOre.Controls.Add(this.label72);
-            this.pnlMoneyToOre.Controls.Add(this.chkUseBank);
-            this.pnlMoneyToOre.Controls.Add(this.label111);
-            this.pnlMoneyToOre.Controls.Add(this.label20);
-            this.pnlMoneyToOre.Controls.Add(this.label58);
-            this.pnlMoneyToOre.Controls.Add(this.numPlayThimbles);
-            this.pnlMoneyToOre.Controls.Add(this.label110);
-            this.pnlMoneyToOre.Controls.Add(this.chkThimblesTicket);
-            this.pnlMoneyToOre.Controls.Add(this.label108);
-            this.pnlMoneyToOre.Controls.Add(this.chkMonaTicketStar);
-            this.pnlMoneyToOre.Controls.Add(this.numMonaMinStars);
-            this.pnlMoneyToOre.Controls.Add(this.chkThimblesImmunity);
-            this.pnlMoneyToOre.Controls.Add(this.numMinThimbles);
-            this.pnlMoneyToOre.Controls.Add(this.chkMonaTicketTooth);
-            this.pnlMoneyToOre.Controls.Add(this.label78);
-            this.pnlMoneyToOre.Controls.Add(this.label105);
-            this.pnlMoneyToOre.Controls.Add(this.label109);
-            this.pnlMoneyToOre.Controls.Add(this.numMonaMinTeeth);
-            this.pnlMoneyToOre.Name = "pnlMoneyToOre";
+            resources.ApplyResources(this.pnlResources, "pnlResources");
+            this.pnlResources.Controls.Add(this.numExchangeBankMoney);
+            this.pnlResources.Controls.Add(this.label18);
+            this.pnlResources.Controls.Add(this.label72);
+            this.pnlResources.Controls.Add(this.chkUseBank);
+            this.pnlResources.Controls.Add(this.label111);
+            this.pnlResources.Controls.Add(this.label20);
+            this.pnlResources.Controls.Add(this.label58);
+            this.pnlResources.Controls.Add(this.numPlayThimbles);
+            this.pnlResources.Controls.Add(this.label110);
+            this.pnlResources.Controls.Add(this.chkThimblesTicket);
+            this.pnlResources.Controls.Add(this.label108);
+            this.pnlResources.Controls.Add(this.chkMonaTicketStar);
+            this.pnlResources.Controls.Add(this.numMonaMinStars);
+            this.pnlResources.Controls.Add(this.chkThimblesImmunity);
+            this.pnlResources.Controls.Add(this.numMinThimbles);
+            this.pnlResources.Controls.Add(this.chkMonaTicketTooth);
+            this.pnlResources.Controls.Add(this.label78);
+            this.pnlResources.Controls.Add(this.label105);
+            this.pnlResources.Controls.Add(this.label109);
+            this.pnlResources.Controls.Add(this.numMonaMinTeeth);
+            this.pnlResources.Name = "pnlResources";
             // 
             // numExchangeBankMoney
             // 
@@ -7498,8 +7498,8 @@
             this.grpWerewolf.ResumeLayout(false);
             this.grpWerewolf.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pboxWerewolfPower)).EndInit();
-            this.pnlMoneyToOre.ResumeLayout(false);
-            this.pnlMoneyToOre.PerformLayout();
+            this.pnlResources.ResumeLayout(false);
+            this.pnlResources.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numExchangeBankMoney)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numPlayThimbles)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numMonaMinStars)).EndInit();
@@ -8192,7 +8192,7 @@
         private System.Windows.Forms.Panel pnlHunterClub;
         private System.Windows.Forms.Panel pnlMF;
         private System.Windows.Forms.Panel pnlHumanImitation;
-        private System.Windows.Forms.Panel pnlMoneyToOre;
+        private System.Windows.Forms.Panel pnlResources;
         private System.Windows.Forms.Panel pnlHeal;
         private System.Windows.Forms.Panel pnlQuests;
         private System.Windows.Forms.Panel pnlWarPets;
