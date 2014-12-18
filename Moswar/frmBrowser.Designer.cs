@@ -1020,6 +1020,7 @@
             // 
             // pnlContainer
             // 
+            this.pnlContainer.Controls.Add(this.pnlHeal);
             this.pnlContainer.Controls.Add(this.pnlTraining);
             this.pnlContainer.Controls.Add(this.pnlGroupFightPVP);
             this.pnlContainer.Controls.Add(this.pnlGroupFights);
@@ -1067,7 +1068,6 @@
             this.pnlContainer.Controls.Add(this.pnlCombatLocations);
             this.pnlContainer.Controls.Add(this.pnlNoncombatLocations);
             this.pnlContainer.Controls.Add(this.pnlMoneyToOre);
-            this.pnlContainer.Controls.Add(this.pnlHeal);
             this.pnlContainer.Controls.Add(this.pnlBankDeposit);
             resources.ApplyResources(this.pnlContainer, "pnlContainer");
             this.pnlContainer.Name = "pnlContainer";
