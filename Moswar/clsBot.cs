@@ -321,6 +321,7 @@ namespace Moswar
             public DateTime NextSlotInjuredDT;
             public DateTime NextFightItemCheckDT;
             public DateTime NextAFK;
+            public DateTime NextGetReturnBonusDT;
             public bool StopQuest;
             public bool ShutdownRelease;
         }
@@ -898,6 +899,8 @@ namespace Moswar
 
             public decimal MaxIEVersion;
             public decimal GagIE;
+
+            public bool GetReturnBonus;
         }
         #endregion
 
@@ -4860,6 +4863,10 @@ namespace Moswar
                     #region Выбитый слот
                     if (Settings.HealInjuredSlot && Me.Wallet.Ore >= 30 && Me.Events.NextSlotInjuredDT < DateTime.Now) CheckHealthEx(0, 0, Settings.HealPet50, Settings.HealPet100); //Пробуем вылечить выбитый слот!
                     #endregion
+                    #region Бонус за возвращение
+                    if (Settings.GetReturnBonus && Me.Events.NextGetReturnBonusDT <= ServerDT)
+                        GetReturnBonus();
+                    #endregion
                     #region Werewolf
                     if (Settings.UseWerewolf && Settings.WerewolfPrice != 0 && Me.WerewolfHunting.StartDT != new DateTime() && Me.WerewolfHunting.StartDT <= ServerDT.AddMinutes(5)) Werewolf(WerewolfAction.Check);
                     #endregion
@@ -7367,6 +7374,29 @@ namespace Moswar
             Me.Patrol.LastDT = GetServerTime(MainWB);
             Me.Patrol.Stop = true;
             return false;
+        }
+        public void GetReturnBonus()
+        {
+            BugReport("GetReturnBonus");
+
+            if (!frmMain.GetDocumentURL(MainWB).EndsWith("/player/")) GoToPlace(MainWB, Place.Player);
+
+            object Button = frmMain.GetJavaVar(MainWB, "$(\".pers-secret-bonus-available .button:visible\")[0]");
+            if (Button != null)
+            {
+                UpdateStatus("* " + DateTime.Now + " Забираю бонус за возвращение");
+                Button.GetType().InvokeMember("click", BindingFlags.InvokeMethod, null, Button, null);
+                IsWBComplete(MainWB, 2000, 3500);
+            }
+
+            string Timer = (string)frmMain.GetJavaVar(MainWB, "$(\".pers-secret-bonus-text .timer:visible\").text()") ?? "";
+            TimeSpan TS;
+            if (TimeSpan.TryParse(Timer, out TS))
+            {
+                UpdateStatus("* " + DateTime.Now + " Следующий бонус за возвращение будет через: " + TS);
+                Me.Events.NextGetReturnBonusDT = GetServerTime(MainWB).Add(TS);
+            } else
+                Me.Events.NextGetReturnBonusDT = GetServerTime(MainWB).AddHours(1); // Если таймера нет, проверим еще раз через час
         }
         public bool Bank(BankAction BA)
         {

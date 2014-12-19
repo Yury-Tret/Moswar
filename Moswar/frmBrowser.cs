@@ -722,6 +722,8 @@ namespace Moswar
             Bot.Me.Events.ShutdownDT = dtlstShutDown.Value;
             Bot.Me.Events.ShutdownRelease = chkShutDown.Checked; //необходимо отрубить комп по таску?          
 
+            Bot.Settings.GetReturnBonus = chkGetReturnBonus.Checked;
+
             Bot.SaveSettings();
         }
         private void LoadSettings()
@@ -1118,6 +1120,8 @@ namespace Moswar
                     dtlstShutDown.Value = Bot.Me.Events.ShutdownDT;
                     chkShutDown.Checked = Bot.Me.Events.ShutdownRelease; 
                 }           
+
+                chkGetReturnBonus.Checked = Bot.Settings.GetReturnBonus;
 
                 return;
             }
