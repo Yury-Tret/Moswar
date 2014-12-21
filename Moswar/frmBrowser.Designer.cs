@@ -37,7 +37,6 @@
             this.AutoApdateMessage = new System.Windows.Forms.Panel();
             this.lblUserMessage = new System.Windows.Forms.Label();
             this.btnHideAutoUpdateMessage = new System.Windows.Forms.Button();
-            this.ctrMainBrowser = new System.Windows.Forms.WebBrowser();
             this.tabMainSettings = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.treeViewSettings = new System.Windows.Forms.TreeView();
@@ -71,6 +70,9 @@
             this.chkBuyTruck10Res = new System.Windows.Forms.CheckBox();
             this.chkBuyTruck11Res = new System.Windows.Forms.CheckBox();
             this.chkBuyTruck12Res = new System.Windows.Forms.CheckBox();
+            this.label187 = new System.Windows.Forms.Label();
+            this.label188 = new System.Windows.Forms.Label();
+            this.label189 = new System.Windows.Forms.Label();
             this.label186 = new System.Windows.Forms.Label();
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.label185 = new System.Windows.Forms.Label();
@@ -700,8 +702,6 @@
             this.rbAttackVictim1 = new System.Windows.Forms.RadioButton();
             this.rbMonitorVictim1 = new System.Windows.Forms.RadioButton();
             this.scHCBrowser = new System.Windows.Forms.SplitContainer();
-            this.ctrHelpBrowser1 = new System.Windows.Forms.WebBrowser();
-            this.ctrHelpBrowser2 = new System.Windows.Forms.WebBrowser();
             this.tabMainHistory = new System.Windows.Forms.TabPage();
             this.chkDebugMode = new System.Windows.Forms.CheckBox();
             this.lstHistory = new System.Windows.Forms.ListBox();
@@ -738,18 +738,20 @@
             this.l7 = new System.Windows.Forms.ToolStripStatusLabel();
             this.l8 = new System.Windows.Forms.ToolStripStatusLabel();
             this.btnSaveSettings = new System.Windows.Forms.Button();
-            this.btnCheckIP = new System.Windows.Forms.Button();
             this.btnBug = new System.Windows.Forms.Button();
             this.label38 = new System.Windows.Forms.Label();
             this.cboxWearSet = new System.Windows.Forms.ComboBox();
             this.btnSaveSet = new System.Windows.Forms.Button();
             this.btnLoadSet = new System.Windows.Forms.Button();
             this.TrayIcon = new System.Windows.Forms.NotifyIcon(this.components);
-            this.btnOpenURL = new System.Windows.Forms.Button();
-            this.btnRunJSCmd = new System.Windows.Forms.Button();
-            this.label187 = new System.Windows.Forms.Label();
-            this.label188 = new System.Windows.Forms.Label();
-            this.label189 = new System.Windows.Forms.Label();
+            this.FunctionsMenuStrip = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.MenuItemCheckIP = new System.Windows.Forms.ToolStripMenuItem();
+            this.MenuItemOpenURL = new System.Windows.Forms.ToolStripMenuItem();
+            this.MenuItemRunJSCmd = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnFunctions = new System.Windows.Forms.Button();
+            this.ctrMainBrowser = new System.Windows.Forms.WebBrowser();
+            this.ctrHelpBrowser1 = new System.Windows.Forms.WebBrowser();
+            this.ctrHelpBrowser2 = new System.Windows.Forms.WebBrowser();
             this.tabControl.SuspendLayout();
             this.tabMainBrowser.SuspendLayout();
             this.AutoApdateMessage.SuspendLayout();
@@ -956,6 +958,7 @@
             this.grpPic.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.statusStrip.SuspendLayout();
+            this.FunctionsMenuStrip.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnStart
@@ -1017,16 +1020,6 @@
             this.btnHideAutoUpdateMessage.Name = "btnHideAutoUpdateMessage";
             this.btnHideAutoUpdateMessage.UseVisualStyleBackColor = false;
             this.btnHideAutoUpdateMessage.Click += new System.EventHandler(this.Controls_Click);
-            // 
-            // ctrMainBrowser
-            // 
-            resources.ApplyResources(this.ctrMainBrowser, "ctrMainBrowser");
-            this.ctrMainBrowser.Name = "ctrMainBrowser";
-            this.ctrMainBrowser.ScriptErrorsSuppressed = true;
-            this.ctrMainBrowser.Tag = "Ready";
-            this.ctrMainBrowser.WebBrowserShortcutsEnabled = false;
-            this.ctrMainBrowser.DocumentCompleted += new System.Windows.Forms.WebBrowserDocumentCompletedEventHandler(this.Browser_DocumentCompleted);
-            this.ctrMainBrowser.Navigated += new System.Windows.Forms.WebBrowserNavigatedEventHandler(this.Browser_Navigated);
             // 
             // tabMainSettings
             // 
@@ -1323,6 +1316,21 @@
             resources.ApplyResources(this.chkBuyTruck12Res, "chkBuyTruck12Res");
             this.chkBuyTruck12Res.Name = "chkBuyTruck12Res";
             this.chkBuyTruck12Res.UseVisualStyleBackColor = true;
+            // 
+            // label187
+            // 
+            resources.ApplyResources(this.label187, "label187");
+            this.label187.Name = "label187";
+            // 
+            // label188
+            // 
+            resources.ApplyResources(this.label188, "label188");
+            this.label188.Name = "label188";
+            // 
+            // label189
+            // 
+            resources.ApplyResources(this.label189, "label189");
+            this.label189.Name = "label189";
             // 
             // label186
             // 
@@ -7213,24 +7221,6 @@
             // 
             this.scHCBrowser.Panel2.Controls.Add(this.ctrHelpBrowser2);
             // 
-            // ctrHelpBrowser1
-            // 
-            resources.ApplyResources(this.ctrHelpBrowser1, "ctrHelpBrowser1");
-            this.ctrHelpBrowser1.Name = "ctrHelpBrowser1";
-            this.ctrHelpBrowser1.ScriptErrorsSuppressed = true;
-            this.ctrHelpBrowser1.Tag = "Ready";
-            this.ctrHelpBrowser1.DocumentCompleted += new System.Windows.Forms.WebBrowserDocumentCompletedEventHandler(this.Browser_DocumentCompleted);
-            this.ctrHelpBrowser1.Navigated += new System.Windows.Forms.WebBrowserNavigatedEventHandler(this.Browser_Navigated);
-            // 
-            // ctrHelpBrowser2
-            // 
-            resources.ApplyResources(this.ctrHelpBrowser2, "ctrHelpBrowser2");
-            this.ctrHelpBrowser2.Name = "ctrHelpBrowser2";
-            this.ctrHelpBrowser2.ScriptErrorsSuppressed = true;
-            this.ctrHelpBrowser2.Tag = "Ready";
-            this.ctrHelpBrowser2.DocumentCompleted += new System.Windows.Forms.WebBrowserDocumentCompletedEventHandler(this.Browser_DocumentCompleted);
-            this.ctrHelpBrowser2.Navigated += new System.Windows.Forms.WebBrowserNavigatedEventHandler(this.Browser_Navigated);
-            // 
             // tabMainHistory
             // 
             resources.ApplyResources(this.tabMainHistory, "tabMainHistory");
@@ -7511,13 +7501,6 @@
             this.btnSaveSettings.UseVisualStyleBackColor = true;
             this.btnSaveSettings.Click += new System.EventHandler(this.btnSaveSettings_Click);
             // 
-            // btnCheckIP
-            // 
-            resources.ApplyResources(this.btnCheckIP, "btnCheckIP");
-            this.btnCheckIP.Name = "btnCheckIP";
-            this.btnCheckIP.UseVisualStyleBackColor = true;
-            this.btnCheckIP.Click += new System.EventHandler(this.btnLoad_Click);
-            // 
             // btnBug
             // 
             resources.ApplyResources(this.btnBug, "btnBug");
@@ -7565,48 +7548,80 @@
             resources.ApplyResources(this.TrayIcon, "TrayIcon");
             this.TrayIcon.MouseClick += new System.Windows.Forms.MouseEventHandler(this.TrayIcon_MouseClick);
             // 
-            // btnOpenURL
+            // FunctionsMenuStrip
             // 
-            resources.ApplyResources(this.btnOpenURL, "btnOpenURL");
-            this.btnOpenURL.Name = "btnOpenURL";
-            this.btnOpenURL.UseVisualStyleBackColor = true;
-            this.btnOpenURL.Click += new System.EventHandler(this.btnOpenURL_Click);
+            this.FunctionsMenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.MenuItemCheckIP,
+            this.MenuItemOpenURL,
+            this.MenuItemRunJSCmd});
+            this.FunctionsMenuStrip.Name = "FunctionsMenuStrip";
+            resources.ApplyResources(this.FunctionsMenuStrip, "FunctionsMenuStrip");
             // 
-            // btnRunJSCmd
+            // MenuItemCheckIP
             // 
-            resources.ApplyResources(this.btnRunJSCmd, "btnRunJSCmd");
-            this.btnRunJSCmd.Name = "btnRunJSCmd";
-            this.btnRunJSCmd.UseVisualStyleBackColor = true;
-            this.btnRunJSCmd.Click += new System.EventHandler(this.btnRunJSCmd_Click);
+            this.MenuItemCheckIP.Name = "MenuItemCheckIP";
+            resources.ApplyResources(this.MenuItemCheckIP, "MenuItemCheckIP");
+            this.MenuItemCheckIP.Click += new System.EventHandler(this.MenuItemCheckIP_Click);
             // 
-            // label187
+            // MenuItemOpenURL
             // 
-            resources.ApplyResources(this.label187, "label187");
-            this.label187.Name = "label187";
+            this.MenuItemOpenURL.Name = "MenuItemOpenURL";
+            resources.ApplyResources(this.MenuItemOpenURL, "MenuItemOpenURL");
+            this.MenuItemOpenURL.Click += new System.EventHandler(this.MenuItemOpenURL_Click);
             // 
-            // label188
+            // MenuItemRunJSCmd
             // 
-            resources.ApplyResources(this.label188, "label188");
-            this.label188.Name = "label188";
+            this.MenuItemRunJSCmd.Name = "MenuItemRunJSCmd";
+            resources.ApplyResources(this.MenuItemRunJSCmd, "MenuItemRunJSCmd");
+            this.MenuItemRunJSCmd.Click += new System.EventHandler(this.MenuItemRunJSCmd_Click);
             // 
-            // label189
+            // btnFunctions
             // 
-            resources.ApplyResources(this.label189, "label189");
-            this.label189.Name = "label189";
+            resources.ApplyResources(this.btnFunctions, "btnFunctions");
+            this.btnFunctions.ContextMenuStrip = this.FunctionsMenuStrip;
+            this.btnFunctions.Name = "btnFunctions";
+            this.btnFunctions.UseVisualStyleBackColor = true;
+            this.btnFunctions.Click += new System.EventHandler(this.btnFunctions_Click);
+            // 
+            // ctrMainBrowser
+            // 
+            resources.ApplyResources(this.ctrMainBrowser, "ctrMainBrowser");
+            this.ctrMainBrowser.Name = "ctrMainBrowser";
+            this.ctrMainBrowser.ScriptErrorsSuppressed = true;
+            this.ctrMainBrowser.Tag = "Ready";
+            this.ctrMainBrowser.WebBrowserShortcutsEnabled = false;
+            this.ctrMainBrowser.DocumentCompleted += new System.Windows.Forms.WebBrowserDocumentCompletedEventHandler(this.Browser_DocumentCompleted);
+            this.ctrMainBrowser.Navigated += new System.Windows.Forms.WebBrowserNavigatedEventHandler(this.Browser_Navigated);
+            // 
+            // ctrHelpBrowser1
+            // 
+            resources.ApplyResources(this.ctrHelpBrowser1, "ctrHelpBrowser1");
+            this.ctrHelpBrowser1.Name = "ctrHelpBrowser1";
+            this.ctrHelpBrowser1.ScriptErrorsSuppressed = true;
+            this.ctrHelpBrowser1.Tag = "Ready";
+            this.ctrHelpBrowser1.DocumentCompleted += new System.Windows.Forms.WebBrowserDocumentCompletedEventHandler(this.Browser_DocumentCompleted);
+            this.ctrHelpBrowser1.Navigated += new System.Windows.Forms.WebBrowserNavigatedEventHandler(this.Browser_Navigated);
+            // 
+            // ctrHelpBrowser2
+            // 
+            resources.ApplyResources(this.ctrHelpBrowser2, "ctrHelpBrowser2");
+            this.ctrHelpBrowser2.Name = "ctrHelpBrowser2";
+            this.ctrHelpBrowser2.ScriptErrorsSuppressed = true;
+            this.ctrHelpBrowser2.Tag = "Ready";
+            this.ctrHelpBrowser2.DocumentCompleted += new System.Windows.Forms.WebBrowserDocumentCompletedEventHandler(this.Browser_DocumentCompleted);
+            this.ctrHelpBrowser2.Navigated += new System.Windows.Forms.WebBrowserNavigatedEventHandler(this.Browser_Navigated);
             // 
             // frmMain
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
-            this.Controls.Add(this.btnRunJSCmd);
-            this.Controls.Add(this.btnOpenURL);
+            this.Controls.Add(this.btnFunctions);
             this.Controls.Add(this.cboxWearSet);
             this.Controls.Add(this.btnSaveSettings);
             this.Controls.Add(this.btnLoadSet);
             this.Controls.Add(this.btnSaveSet);
             this.Controls.Add(this.btnTest);
             this.Controls.Add(this.btnBug);
-            this.Controls.Add(this.btnCheckIP);
             this.Controls.Add(this.btnStart);
             this.Controls.Add(this.statusStrip);
             this.Controls.Add(this.tabControl);
@@ -7900,6 +7915,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.statusStrip.ResumeLayout(false);
             this.statusStrip.PerformLayout();
+            this.FunctionsMenuStrip.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -7922,7 +7938,6 @@
         private System.Windows.Forms.Button btnSaveSettings;
         private System.Windows.Forms.TabPage tabMainHistory;
         private System.Windows.Forms.ListBox lstHistory;
-        private System.Windows.Forms.Button btnCheckIP;
         private System.Windows.Forms.ToolStripStatusLabel l1;
         private System.Windows.Forms.Button btnBug;
         private System.Windows.Forms.ToolStripStatusLabel l8;
@@ -8368,9 +8383,7 @@
         private System.Windows.Forms.Label label178;
         private System.Windows.Forms.TextBox txtBotName;
         private System.Windows.Forms.CheckBox chkCheckForUpdate;
-        private System.Windows.Forms.Button btnOpenURL;
         private System.Windows.Forms.CheckBox chkDopingPryanik;
-        private System.Windows.Forms.Button btnRunJSCmd;
         private System.Windows.Forms.CheckBox chkDopingNoCoctailNoProblem;
         private System.Windows.Forms.Label label155;
         private System.Windows.Forms.NumericUpDown numPyramidWanted;
@@ -8626,7 +8639,12 @@
         private System.Windows.Forms.Label label185;
         private System.Windows.Forms.Label label187;
         private System.Windows.Forms.Label label188;
-        private System.Windows.Forms.Label label189;      
+        private System.Windows.Forms.Label label189;
+        private System.Windows.Forms.ContextMenuStrip FunctionsMenuStrip;
+        private System.Windows.Forms.ToolStripMenuItem MenuItemCheckIP;
+        private System.Windows.Forms.ToolStripMenuItem MenuItemOpenURL;
+        private System.Windows.Forms.ToolStripMenuItem MenuItemRunJSCmd;
+        private System.Windows.Forms.Button btnFunctions;      
     }
 }
 

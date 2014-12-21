@@ -2286,12 +2286,6 @@ namespace Moswar
             UpdateExpertSettings();
             UpdateSettings();
         }
-        private void btnLoad_Click(object sender, EventArgs e)
-        {         
-            //ctrMainBrowser.Navigate("e:\\Xaot-Limit.htm");
-            ctrMainBrowser.Navigate("http://www.tell-my-ip.com/");
-        }
-
         private void btnBug_Click(object sender, EventArgs e)
         {
             Bot.BugReport(null, true, "", ctrMainBrowser);
@@ -2810,20 +2804,6 @@ namespace Moswar
             { B.Text = Text; }
         }
 
-        private void btnOpenURL_Click(object sender, EventArgs e)
-        {
-            string URL = "";
-            if (InputBox.Show("Переход на заданный URL", "Введите URL:", ref URL) == DialogResult.OK && URL != "")
-                ctrMainBrowser.Navigate(URL);
-        }
-
-        private void btnRunJSCmd_Click(object sender, EventArgs e)
-        {
-            string cmd = "";
-            if (InputBox.Show("Выполнение команды JavaScript", "Введите команду:", ref cmd) == DialogResult.OK && cmd != "")
-                InvokeScript(Bot.MainWB, "eval", new object[] { cmd });
-        }
-
         private void treeViewSettings_AfterSelect(object sender, TreeViewEventArgs e)
         {
             string PanelName = e.Node.Name.Replace("Node", "pnl");
@@ -2849,6 +2829,31 @@ namespace Moswar
                 if (ctrl != checkBox)
                     ctrl.Enabled = checkBox.Checked;
             }
+        }
+
+        private void btnFunctions_Click(object sender, EventArgs e)
+        {
+            btnFunctions.ContextMenuStrip.Show(btnFunctions, new Point(0, 0), ToolStripDropDownDirection.AboveRight);
+        }
+
+        private void MenuItemOpenURL_Click(object sender, EventArgs e)
+        {
+            string URL = "";
+            if (InputBox.Show("Переход на заданный URL", "Введите URL:", ref URL) == DialogResult.OK && URL != "")
+                ctrMainBrowser.Navigate(URL);
+        }
+
+        private void MenuItemRunJSCmd_Click(object sender, EventArgs e)
+        {
+            string cmd = "";
+            if (InputBox.Show("Выполнение команды JavaScript", "Введите команду:", ref cmd) == DialogResult.OK && cmd != "")
+                InvokeScript(Bot.MainWB, "eval", new object[] { cmd });
+        }
+
+        private void MenuItemCheckIP_Click(object sender, EventArgs e)
+        {
+            //ctrMainBrowser.Navigate("e:\\Xaot-Limit.htm");
+            ctrMainBrowser.Navigate("http://www.tell-my-ip.com/");
         }
     }
 
