@@ -43,6 +43,38 @@
             this.treeViewSettings = new System.Windows.Forms.TreeView();
             this.lblSettingsCaption = new System.Windows.Forms.Label();
             this.pnlContainer = new System.Windows.Forms.Panel();
+            this.pnlTrucks = new System.Windows.Forms.Panel();
+            this.groupBox16 = new System.Windows.Forms.GroupBox();
+            this.groupBox17 = new System.Windows.Forms.GroupBox();
+            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.chkSendTruck1 = new System.Windows.Forms.CheckBox();
+            this.chkSendTruck2 = new System.Windows.Forms.CheckBox();
+            this.chkSendTruck3 = new System.Windows.Forms.CheckBox();
+            this.chkSendTruck4 = new System.Windows.Forms.CheckBox();
+            this.chkSendTruck5 = new System.Windows.Forms.CheckBox();
+            this.chkSendTruck6 = new System.Windows.Forms.CheckBox();
+            this.chkSendTruck7 = new System.Windows.Forms.CheckBox();
+            this.chkSendTruck8 = new System.Windows.Forms.CheckBox();
+            this.chkSendTruck9 = new System.Windows.Forms.CheckBox();
+            this.chkSendTruck10 = new System.Windows.Forms.CheckBox();
+            this.chkSendTruck11 = new System.Windows.Forms.CheckBox();
+            this.chkSendTruck12 = new System.Windows.Forms.CheckBox();
+            this.chkBuyTruck1Res = new System.Windows.Forms.CheckBox();
+            this.chkBuyTruck2Res = new System.Windows.Forms.CheckBox();
+            this.chkBuyTruck3Res = new System.Windows.Forms.CheckBox();
+            this.chkBuyTruck4Res = new System.Windows.Forms.CheckBox();
+            this.chkBuyTruck5Res = new System.Windows.Forms.CheckBox();
+            this.chkBuyTruck6Res = new System.Windows.Forms.CheckBox();
+            this.chkBuyTruck7Res = new System.Windows.Forms.CheckBox();
+            this.chkBuyTruck8Res = new System.Windows.Forms.CheckBox();
+            this.chkBuyTruck9Res = new System.Windows.Forms.CheckBox();
+            this.chkBuyTruck10Res = new System.Windows.Forms.CheckBox();
+            this.chkBuyTruck11Res = new System.Windows.Forms.CheckBox();
+            this.chkBuyTruck12Res = new System.Windows.Forms.CheckBox();
+            this.label186 = new System.Windows.Forms.Label();
+            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.label185 = new System.Windows.Forms.Label();
+            this.chkSendTrucks = new System.Windows.Forms.CheckBox();
             this.pnlReturnBonus = new System.Windows.Forms.Panel();
             this.chkGetReturnBonus = new System.Windows.Forms.CheckBox();
             this.pnlTempLocations = new System.Windows.Forms.Panel();
@@ -715,12 +747,20 @@
             this.TrayIcon = new System.Windows.Forms.NotifyIcon(this.components);
             this.btnOpenURL = new System.Windows.Forms.Button();
             this.btnRunJSCmd = new System.Windows.Forms.Button();
+            this.label187 = new System.Windows.Forms.Label();
+            this.label188 = new System.Windows.Forms.Label();
+            this.label189 = new System.Windows.Forms.Label();
             this.tabControl.SuspendLayout();
             this.tabMainBrowser.SuspendLayout();
             this.AutoApdateMessage.SuspendLayout();
             this.tabMainSettings.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.pnlContainer.SuspendLayout();
+            this.pnlTrucks.SuspendLayout();
+            this.groupBox16.SuspendLayout();
+            this.groupBox17.SuspendLayout();
+            this.tableLayoutPanel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.pnlReturnBonus.SuspendLayout();
             this.pnlInventory.SuspendLayout();
             this.groupBox15.SuspendLayout();
@@ -1029,6 +1069,7 @@
             // 
             // pnlContainer
             // 
+            this.pnlContainer.Controls.Add(this.pnlTrucks);
             this.pnlContainer.Controls.Add(this.pnlReturnBonus);
             this.pnlContainer.Controls.Add(this.pnlTempLocations);
             this.pnlContainer.Controls.Add(this.pnlInventory);
@@ -1082,6 +1123,229 @@
             this.pnlContainer.Controls.Add(this.pnlBankDeposit);
             resources.ApplyResources(this.pnlContainer, "pnlContainer");
             this.pnlContainer.Name = "pnlContainer";
+            // 
+            // pnlTrucks
+            // 
+            resources.ApplyResources(this.pnlTrucks, "pnlTrucks");
+            this.pnlTrucks.Controls.Add(this.groupBox16);
+            this.pnlTrucks.Name = "pnlTrucks";
+            // 
+            // groupBox16
+            // 
+            this.groupBox16.Controls.Add(this.groupBox17);
+            this.groupBox16.Controls.Add(this.label186);
+            this.groupBox16.Controls.Add(this.numericUpDown1);
+            this.groupBox16.Controls.Add(this.label185);
+            this.groupBox16.Controls.Add(this.chkSendTrucks);
+            resources.ApplyResources(this.groupBox16, "groupBox16");
+            this.groupBox16.Name = "groupBox16";
+            this.groupBox16.TabStop = false;
+            // 
+            // groupBox17
+            // 
+            resources.ApplyResources(this.groupBox17, "groupBox17");
+            this.groupBox17.Controls.Add(this.tableLayoutPanel2);
+            this.groupBox17.Name = "groupBox17";
+            this.groupBox17.TabStop = false;
+            // 
+            // tableLayoutPanel2
+            // 
+            resources.ApplyResources(this.tableLayoutPanel2, "tableLayoutPanel2");
+            this.tableLayoutPanel2.Controls.Add(this.chkSendTruck1, 0, 1);
+            this.tableLayoutPanel2.Controls.Add(this.chkSendTruck2, 0, 2);
+            this.tableLayoutPanel2.Controls.Add(this.chkSendTruck3, 0, 3);
+            this.tableLayoutPanel2.Controls.Add(this.chkSendTruck4, 0, 4);
+            this.tableLayoutPanel2.Controls.Add(this.chkSendTruck5, 0, 5);
+            this.tableLayoutPanel2.Controls.Add(this.chkSendTruck6, 0, 6);
+            this.tableLayoutPanel2.Controls.Add(this.chkSendTruck7, 0, 7);
+            this.tableLayoutPanel2.Controls.Add(this.chkSendTruck8, 0, 8);
+            this.tableLayoutPanel2.Controls.Add(this.chkSendTruck9, 0, 9);
+            this.tableLayoutPanel2.Controls.Add(this.chkSendTruck10, 0, 10);
+            this.tableLayoutPanel2.Controls.Add(this.chkSendTruck11, 0, 11);
+            this.tableLayoutPanel2.Controls.Add(this.chkSendTruck12, 0, 12);
+            this.tableLayoutPanel2.Controls.Add(this.chkBuyTruck1Res, 1, 1);
+            this.tableLayoutPanel2.Controls.Add(this.chkBuyTruck2Res, 1, 2);
+            this.tableLayoutPanel2.Controls.Add(this.chkBuyTruck3Res, 1, 3);
+            this.tableLayoutPanel2.Controls.Add(this.chkBuyTruck4Res, 1, 4);
+            this.tableLayoutPanel2.Controls.Add(this.chkBuyTruck5Res, 1, 5);
+            this.tableLayoutPanel2.Controls.Add(this.chkBuyTruck6Res, 1, 6);
+            this.tableLayoutPanel2.Controls.Add(this.chkBuyTruck7Res, 1, 7);
+            this.tableLayoutPanel2.Controls.Add(this.chkBuyTruck8Res, 1, 8);
+            this.tableLayoutPanel2.Controls.Add(this.chkBuyTruck9Res, 1, 9);
+            this.tableLayoutPanel2.Controls.Add(this.chkBuyTruck10Res, 1, 10);
+            this.tableLayoutPanel2.Controls.Add(this.chkBuyTruck11Res, 1, 11);
+            this.tableLayoutPanel2.Controls.Add(this.chkBuyTruck12Res, 1, 12);
+            this.tableLayoutPanel2.Controls.Add(this.label187, 0, 0);
+            this.tableLayoutPanel2.Controls.Add(this.label188, 2, 0);
+            this.tableLayoutPanel2.Controls.Add(this.label189, 1, 0);
+            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
+            // 
+            // chkSendTruck1
+            // 
+            resources.ApplyResources(this.chkSendTruck1, "chkSendTruck1");
+            this.chkSendTruck1.Name = "chkSendTruck1";
+            this.chkSendTruck1.UseVisualStyleBackColor = true;
+            // 
+            // chkSendTruck2
+            // 
+            resources.ApplyResources(this.chkSendTruck2, "chkSendTruck2");
+            this.chkSendTruck2.Name = "chkSendTruck2";
+            this.chkSendTruck2.UseVisualStyleBackColor = true;
+            // 
+            // chkSendTruck3
+            // 
+            resources.ApplyResources(this.chkSendTruck3, "chkSendTruck3");
+            this.chkSendTruck3.Name = "chkSendTruck3";
+            this.chkSendTruck3.UseVisualStyleBackColor = true;
+            // 
+            // chkSendTruck4
+            // 
+            resources.ApplyResources(this.chkSendTruck4, "chkSendTruck4");
+            this.chkSendTruck4.Name = "chkSendTruck4";
+            this.chkSendTruck4.UseVisualStyleBackColor = true;
+            // 
+            // chkSendTruck5
+            // 
+            resources.ApplyResources(this.chkSendTruck5, "chkSendTruck5");
+            this.chkSendTruck5.Name = "chkSendTruck5";
+            this.chkSendTruck5.UseVisualStyleBackColor = true;
+            // 
+            // chkSendTruck6
+            // 
+            resources.ApplyResources(this.chkSendTruck6, "chkSendTruck6");
+            this.chkSendTruck6.Name = "chkSendTruck6";
+            this.chkSendTruck6.UseVisualStyleBackColor = true;
+            // 
+            // chkSendTruck7
+            // 
+            resources.ApplyResources(this.chkSendTruck7, "chkSendTruck7");
+            this.chkSendTruck7.Name = "chkSendTruck7";
+            this.chkSendTruck7.UseVisualStyleBackColor = true;
+            // 
+            // chkSendTruck8
+            // 
+            resources.ApplyResources(this.chkSendTruck8, "chkSendTruck8");
+            this.chkSendTruck8.Name = "chkSendTruck8";
+            this.chkSendTruck8.UseVisualStyleBackColor = true;
+            // 
+            // chkSendTruck9
+            // 
+            resources.ApplyResources(this.chkSendTruck9, "chkSendTruck9");
+            this.chkSendTruck9.Name = "chkSendTruck9";
+            this.chkSendTruck9.UseVisualStyleBackColor = true;
+            // 
+            // chkSendTruck10
+            // 
+            resources.ApplyResources(this.chkSendTruck10, "chkSendTruck10");
+            this.chkSendTruck10.Name = "chkSendTruck10";
+            this.chkSendTruck10.UseVisualStyleBackColor = true;
+            // 
+            // chkSendTruck11
+            // 
+            resources.ApplyResources(this.chkSendTruck11, "chkSendTruck11");
+            this.chkSendTruck11.Name = "chkSendTruck11";
+            this.chkSendTruck11.UseVisualStyleBackColor = true;
+            // 
+            // chkSendTruck12
+            // 
+            resources.ApplyResources(this.chkSendTruck12, "chkSendTruck12");
+            this.chkSendTruck12.Name = "chkSendTruck12";
+            this.chkSendTruck12.UseVisualStyleBackColor = true;
+            // 
+            // chkBuyTruck1Res
+            // 
+            resources.ApplyResources(this.chkBuyTruck1Res, "chkBuyTruck1Res");
+            this.chkBuyTruck1Res.Name = "chkBuyTruck1Res";
+            this.chkBuyTruck1Res.UseVisualStyleBackColor = true;
+            // 
+            // chkBuyTruck2Res
+            // 
+            resources.ApplyResources(this.chkBuyTruck2Res, "chkBuyTruck2Res");
+            this.chkBuyTruck2Res.Name = "chkBuyTruck2Res";
+            this.chkBuyTruck2Res.UseVisualStyleBackColor = true;
+            // 
+            // chkBuyTruck3Res
+            // 
+            resources.ApplyResources(this.chkBuyTruck3Res, "chkBuyTruck3Res");
+            this.chkBuyTruck3Res.Name = "chkBuyTruck3Res";
+            this.chkBuyTruck3Res.UseVisualStyleBackColor = true;
+            // 
+            // chkBuyTruck4Res
+            // 
+            resources.ApplyResources(this.chkBuyTruck4Res, "chkBuyTruck4Res");
+            this.chkBuyTruck4Res.Name = "chkBuyTruck4Res";
+            this.chkBuyTruck4Res.UseVisualStyleBackColor = true;
+            // 
+            // chkBuyTruck5Res
+            // 
+            resources.ApplyResources(this.chkBuyTruck5Res, "chkBuyTruck5Res");
+            this.chkBuyTruck5Res.Name = "chkBuyTruck5Res";
+            this.chkBuyTruck5Res.UseVisualStyleBackColor = true;
+            // 
+            // chkBuyTruck6Res
+            // 
+            resources.ApplyResources(this.chkBuyTruck6Res, "chkBuyTruck6Res");
+            this.chkBuyTruck6Res.Name = "chkBuyTruck6Res";
+            this.chkBuyTruck6Res.UseVisualStyleBackColor = true;
+            // 
+            // chkBuyTruck7Res
+            // 
+            resources.ApplyResources(this.chkBuyTruck7Res, "chkBuyTruck7Res");
+            this.chkBuyTruck7Res.Name = "chkBuyTruck7Res";
+            this.chkBuyTruck7Res.UseVisualStyleBackColor = true;
+            // 
+            // chkBuyTruck8Res
+            // 
+            resources.ApplyResources(this.chkBuyTruck8Res, "chkBuyTruck8Res");
+            this.chkBuyTruck8Res.Name = "chkBuyTruck8Res";
+            this.chkBuyTruck8Res.UseVisualStyleBackColor = true;
+            // 
+            // chkBuyTruck9Res
+            // 
+            resources.ApplyResources(this.chkBuyTruck9Res, "chkBuyTruck9Res");
+            this.chkBuyTruck9Res.Name = "chkBuyTruck9Res";
+            this.chkBuyTruck9Res.UseVisualStyleBackColor = true;
+            // 
+            // chkBuyTruck10Res
+            // 
+            resources.ApplyResources(this.chkBuyTruck10Res, "chkBuyTruck10Res");
+            this.chkBuyTruck10Res.Name = "chkBuyTruck10Res";
+            this.chkBuyTruck10Res.UseVisualStyleBackColor = true;
+            // 
+            // chkBuyTruck11Res
+            // 
+            resources.ApplyResources(this.chkBuyTruck11Res, "chkBuyTruck11Res");
+            this.chkBuyTruck11Res.Name = "chkBuyTruck11Res";
+            this.chkBuyTruck11Res.UseVisualStyleBackColor = true;
+            // 
+            // chkBuyTruck12Res
+            // 
+            resources.ApplyResources(this.chkBuyTruck12Res, "chkBuyTruck12Res");
+            this.chkBuyTruck12Res.Name = "chkBuyTruck12Res";
+            this.chkBuyTruck12Res.UseVisualStyleBackColor = true;
+            // 
+            // label186
+            // 
+            resources.ApplyResources(this.label186, "label186");
+            this.label186.Name = "label186";
+            // 
+            // numericUpDown1
+            // 
+            resources.ApplyResources(this.numericUpDown1, "numericUpDown1");
+            this.numericUpDown1.Name = "numericUpDown1";
+            // 
+            // label185
+            // 
+            resources.ApplyResources(this.label185, "label185");
+            this.label185.Name = "label185";
+            // 
+            // chkSendTrucks
+            // 
+            resources.ApplyResources(this.chkSendTrucks, "chkSendTrucks");
+            this.chkSendTrucks.Name = "chkSendTrucks";
+            this.chkSendTrucks.UseVisualStyleBackColor = true;
+            this.chkSendTrucks.CheckedChanged += new System.EventHandler(this.CheckGroupBox_CheckedChanged);
+            this.chkSendTrucks.VisibleChanged += new System.EventHandler(this.CheckGroupBox_CheckedChanged);
             // 
             // pnlReturnBonus
             // 
@@ -7315,6 +7579,21 @@
             this.btnRunJSCmd.UseVisualStyleBackColor = true;
             this.btnRunJSCmd.Click += new System.EventHandler(this.btnRunJSCmd_Click);
             // 
+            // label187
+            // 
+            resources.ApplyResources(this.label187, "label187");
+            this.label187.Name = "label187";
+            // 
+            // label188
+            // 
+            resources.ApplyResources(this.label188, "label188");
+            this.label188.Name = "label188";
+            // 
+            // label189
+            // 
+            resources.ApplyResources(this.label189, "label189");
+            this.label189.Name = "label189";
+            // 
             // frmMain
             // 
             resources.ApplyResources(this, "$this");
@@ -7342,6 +7621,14 @@
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.pnlContainer.ResumeLayout(false);
+            this.pnlTrucks.ResumeLayout(false);
+            this.groupBox16.ResumeLayout(false);
+            this.groupBox16.PerformLayout();
+            this.groupBox17.ResumeLayout(false);
+            this.groupBox17.PerformLayout();
+            this.tableLayoutPanel2.ResumeLayout(false);
+            this.tableLayoutPanel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.pnlReturnBonus.ResumeLayout(false);
             this.pnlReturnBonus.PerformLayout();
             this.pnlInventory.ResumeLayout(false);
@@ -8304,7 +8591,42 @@
         private System.Windows.Forms.CheckBox chkOpenReturnBox;
         private System.Windows.Forms.Panel pnlTempLocations;
         private System.Windows.Forms.Panel pnlReturnBonus;
-        private System.Windows.Forms.CheckBox chkGetReturnBonus;      
+        private System.Windows.Forms.CheckBox chkGetReturnBonus;
+        private System.Windows.Forms.Panel pnlTrucks;
+        private System.Windows.Forms.GroupBox groupBox16;
+        private System.Windows.Forms.CheckBox chkSendTrucks;
+        private System.Windows.Forms.GroupBox groupBox17;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
+        private System.Windows.Forms.CheckBox chkSendTruck1;
+        private System.Windows.Forms.CheckBox chkSendTruck2;
+        private System.Windows.Forms.CheckBox chkSendTruck3;
+        private System.Windows.Forms.CheckBox chkSendTruck4;
+        private System.Windows.Forms.CheckBox chkSendTruck5;
+        private System.Windows.Forms.CheckBox chkSendTruck6;
+        private System.Windows.Forms.CheckBox chkSendTruck7;
+        private System.Windows.Forms.CheckBox chkSendTruck8;
+        private System.Windows.Forms.CheckBox chkSendTruck9;
+        private System.Windows.Forms.CheckBox chkSendTruck10;
+        private System.Windows.Forms.CheckBox chkSendTruck11;
+        private System.Windows.Forms.CheckBox chkSendTruck12;
+        private System.Windows.Forms.CheckBox chkBuyTruck1Res;
+        private System.Windows.Forms.CheckBox chkBuyTruck2Res;
+        private System.Windows.Forms.CheckBox chkBuyTruck3Res;
+        private System.Windows.Forms.CheckBox chkBuyTruck4Res;
+        private System.Windows.Forms.CheckBox chkBuyTruck5Res;
+        private System.Windows.Forms.CheckBox chkBuyTruck6Res;
+        private System.Windows.Forms.CheckBox chkBuyTruck7Res;
+        private System.Windows.Forms.CheckBox chkBuyTruck8Res;
+        private System.Windows.Forms.CheckBox chkBuyTruck9Res;
+        private System.Windows.Forms.CheckBox chkBuyTruck10Res;
+        private System.Windows.Forms.CheckBox chkBuyTruck11Res;
+        private System.Windows.Forms.CheckBox chkBuyTruck12Res;
+        private System.Windows.Forms.Label label186;
+        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.Label label185;
+        private System.Windows.Forms.Label label187;
+        private System.Windows.Forms.Label label188;
+        private System.Windows.Forms.Label label189;      
     }
 }
 
