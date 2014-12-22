@@ -2866,6 +2866,31 @@ namespace Moswar
                 });
             "});
         }
+
+        private void MenuItemSendGiftFix_Click(object sender, EventArgs e)
+        {
+            InvokeScript(Bot.MainWB, "eval", new object[] {@"
+function checkName() {
+	var inputRow = $('.find-player input');
+	if (inputRow.val() == '') {
+		return;
+	}
+	$.post(""/shop/playerexists/"" + encodeURIComponent(inputRow.val()), function(data){
+		if (data == 1) {
+			receiverChecked = true;
+			$('#receiver-comment').slideDown();
+			$("".find-player .error"").hide();
+			$("".find-player .success"").show();
+		} else {
+			receiverChecked = false;
+			$("".find-player .error"").show();
+			$("".find-player .success"").hide();
+		}
+		controlButtons();
+	});
+}
+            "});
+        }
     }
 
     class InputBox

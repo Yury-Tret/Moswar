@@ -20771,7 +20771,7 @@
     <value>NoControl</value>
   </data>
   <data name="btnVictimHunting.Location" type="System.Drawing.Point, System.Drawing">
-    <value>5, 534</value>
+    <value>5, 535</value>
   </data>
   <data name="btnVictimHunting.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 3, 3, 3</value>
@@ -20969,7 +20969,7 @@
     <value>5</value>
   </data>
   <data name="grpPlayer2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>2, 296</value>
+    <value>2, 297</value>
   </data>
   <data name="grpPlayer2.Size" type="System.Drawing.Size, System.Drawing">
     <value>221, 233</value>
@@ -21431,7 +21431,7 @@
     <value>NoControl</value>
   </data>
   <data name="chkDebugMode.Location" type="System.Drawing.Point, System.Drawing">
-    <value>929, 523</value>
+    <value>927, 521</value>
   </data>
   <data name="chkDebugMode.Size" type="System.Drawing.Size, System.Drawing">
     <value>114, 18</value>
@@ -25947,34 +25947,40 @@
     <value>221, 17</value>
   </metadata>
   <data name="MenuItemCheckIP.Size" type="System.Drawing.Size, System.Drawing">
-    <value>298, 22</value>
+    <value>358, 22</value>
   </data>
   <data name="MenuItemCheckIP.Text" xml:space="preserve">
     <value>Проверить IP-адрес</value>
   </data>
   <data name="MenuItemOpenURL.Size" type="System.Drawing.Size, System.Drawing">
-    <value>298, 22</value>
+    <value>358, 22</value>
   </data>
   <data name="MenuItemOpenURL.Text" xml:space="preserve">
     <value>Открыть URL...</value>
   </data>
   <data name="MenuItemRunJSCmd.Size" type="System.Drawing.Size, System.Drawing">
-    <value>298, 22</value>
+    <value>358, 22</value>
   </data>
   <data name="MenuItemRunJSCmd.Text" xml:space="preserve">
     <value>Выполнить команду JavaScript...</value>
   </data>
   <data name="toolStripSeparator1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>295, 6</value>
+    <value>355, 6</value>
   </data>
   <data name="MenuItemEnterAuctionBet.Size" type="System.Drawing.Size, System.Drawing">
-    <value>298, 22</value>
+    <value>358, 22</value>
   </data>
   <data name="MenuItemEnterAuctionBet.Text" xml:space="preserve">
     <value>Ввести размер ставки на аукционе цифрами</value>
   </data>
+  <data name="MenuItemSendGiftFix.Size" type="System.Drawing.Size, System.Drawing">
+    <value>358, 22</value>
+  </data>
+  <data name="MenuItemSendGiftFix.Text" xml:space="preserve">
+    <value>Отправить подарок игроку с русскими буквами в имени</value>
+  </data>
   <data name="FunctionsMenuStrip.Size" type="System.Drawing.Size, System.Drawing">
-    <value>299, 120</value>
+    <value>359, 142</value>
   </data>
   <data name="&gt;&gt;FunctionsMenuStrip.Name" xml:space="preserve">
     <value>FunctionsMenuStrip</value>
@@ -29501,6 +29507,12 @@
     <value>MenuItemEnterAuctionBet</value>
   </data>
   <data name="&gt;&gt;MenuItemEnterAuctionBet.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;MenuItemSendGiftFix.Name" xml:space="preserve">
+    <value>MenuItemSendGiftFix</value>
+  </data>
+  <data name="&gt;&gt;MenuItemSendGiftFix.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">

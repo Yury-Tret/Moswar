@@ -751,9 +751,10 @@
             this.MenuItemCheckIP = new System.Windows.Forms.ToolStripMenuItem();
             this.MenuItemOpenURL = new System.Windows.Forms.ToolStripMenuItem();
             this.MenuItemRunJSCmd = new System.Windows.Forms.ToolStripMenuItem();
-            this.btnFunctions = new System.Windows.Forms.Button();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.MenuItemEnterAuctionBet = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnFunctions = new System.Windows.Forms.Button();
+            this.MenuItemSendGiftFix = new System.Windows.Forms.ToolStripMenuItem();
             this.tabControl.SuspendLayout();
             this.tabMainBrowser.SuspendLayout();
             this.AutoApdateMessage.SuspendLayout();
@@ -7585,7 +7586,8 @@
             this.MenuItemOpenURL,
             this.MenuItemRunJSCmd,
             this.toolStripSeparator1,
-            this.MenuItemEnterAuctionBet});
+            this.MenuItemEnterAuctionBet,
+            this.MenuItemSendGiftFix});
             this.FunctionsMenuStrip.Name = "FunctionsMenuStrip";
             resources.ApplyResources(this.FunctionsMenuStrip, "FunctionsMenuStrip");
             // 
@@ -7607,14 +7609,6 @@
             resources.ApplyResources(this.MenuItemRunJSCmd, "MenuItemRunJSCmd");
             this.MenuItemRunJSCmd.Click += new System.EventHandler(this.MenuItemRunJSCmd_Click);
             // 
-            // btnFunctions
-            // 
-            resources.ApplyResources(this.btnFunctions, "btnFunctions");
-            this.btnFunctions.ContextMenuStrip = this.FunctionsMenuStrip;
-            this.btnFunctions.Name = "btnFunctions";
-            this.btnFunctions.UseVisualStyleBackColor = true;
-            this.btnFunctions.Click += new System.EventHandler(this.btnFunctions_Click);
-            // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
@@ -7625,6 +7619,20 @@
             this.MenuItemEnterAuctionBet.Name = "MenuItemEnterAuctionBet";
             resources.ApplyResources(this.MenuItemEnterAuctionBet, "MenuItemEnterAuctionBet");
             this.MenuItemEnterAuctionBet.Click += new System.EventHandler(this.MenuItemEnterAuctionBet_Click);
+            // 
+            // btnFunctions
+            // 
+            resources.ApplyResources(this.btnFunctions, "btnFunctions");
+            this.btnFunctions.ContextMenuStrip = this.FunctionsMenuStrip;
+            this.btnFunctions.Name = "btnFunctions";
+            this.btnFunctions.UseVisualStyleBackColor = true;
+            this.btnFunctions.Click += new System.EventHandler(this.btnFunctions_Click);
+            // 
+            // MenuItemSendGiftFix
+            // 
+            this.MenuItemSendGiftFix.Name = "MenuItemSendGiftFix";
+            resources.ApplyResources(this.MenuItemSendGiftFix, "MenuItemSendGiftFix");
+            this.MenuItemSendGiftFix.Click += new System.EventHandler(this.MenuItemSendGiftFix_Click);
             // 
             // frmMain
             // 
@@ -8661,7 +8669,8 @@
         private System.Windows.Forms.ToolStripMenuItem MenuItemRunJSCmd;
         private System.Windows.Forms.Button btnFunctions;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
-        private System.Windows.Forms.ToolStripMenuItem MenuItemEnterAuctionBet;      
+        private System.Windows.Forms.ToolStripMenuItem MenuItemEnterAuctionBet;
+        private System.Windows.Forms.ToolStripMenuItem MenuItemSendGiftFix;      
     }
 }
 
