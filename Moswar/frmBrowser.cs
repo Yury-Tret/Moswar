@@ -2855,6 +2855,17 @@ namespace Moswar
             //ctrMainBrowser.Navigate("e:\\Xaot-Limit.htm");
             ctrMainBrowser.Navigate("http://www.tell-my-ip.com/");
         }
+
+        private void MenuItemEnterAuctionBet_Click(object sender, EventArgs e)
+        {
+            InvokeScript(Bot.MainWB, "eval", new object[] {@"
+                $('td.mybet .plus_bet').after('<input type=""text"" value="""" size=""3"" class=""moswared manual_bet"">');
+                $('td.mybet .manual_bet').bind('change keyup', function() {
+			        $(this).parent().find('.button.make_bet .f .c .med .value').text($(this).val());
+			        $(this.parentNode).find('.field-bid').val($(this).val())
+                });
+            "});
+        }
     }
 
     class InputBox

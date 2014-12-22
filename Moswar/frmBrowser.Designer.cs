@@ -37,6 +37,7 @@
             this.AutoApdateMessage = new System.Windows.Forms.Panel();
             this.lblUserMessage = new System.Windows.Forms.Label();
             this.btnHideAutoUpdateMessage = new System.Windows.Forms.Button();
+            this.ctrMainBrowser = new System.Windows.Forms.WebBrowser();
             this.tabMainSettings = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.treeViewSettings = new System.Windows.Forms.TreeView();
@@ -702,6 +703,8 @@
             this.rbAttackVictim1 = new System.Windows.Forms.RadioButton();
             this.rbMonitorVictim1 = new System.Windows.Forms.RadioButton();
             this.scHCBrowser = new System.Windows.Forms.SplitContainer();
+            this.ctrHelpBrowser1 = new System.Windows.Forms.WebBrowser();
+            this.ctrHelpBrowser2 = new System.Windows.Forms.WebBrowser();
             this.tabMainHistory = new System.Windows.Forms.TabPage();
             this.chkDebugMode = new System.Windows.Forms.CheckBox();
             this.lstHistory = new System.Windows.Forms.ListBox();
@@ -749,9 +752,8 @@
             this.MenuItemOpenURL = new System.Windows.Forms.ToolStripMenuItem();
             this.MenuItemRunJSCmd = new System.Windows.Forms.ToolStripMenuItem();
             this.btnFunctions = new System.Windows.Forms.Button();
-            this.ctrMainBrowser = new System.Windows.Forms.WebBrowser();
-            this.ctrHelpBrowser1 = new System.Windows.Forms.WebBrowser();
-            this.ctrHelpBrowser2 = new System.Windows.Forms.WebBrowser();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.MenuItemEnterAuctionBet = new System.Windows.Forms.ToolStripMenuItem();
             this.tabControl.SuspendLayout();
             this.tabMainBrowser.SuspendLayout();
             this.AutoApdateMessage.SuspendLayout();
@@ -1020,6 +1022,16 @@
             this.btnHideAutoUpdateMessage.Name = "btnHideAutoUpdateMessage";
             this.btnHideAutoUpdateMessage.UseVisualStyleBackColor = false;
             this.btnHideAutoUpdateMessage.Click += new System.EventHandler(this.Controls_Click);
+            // 
+            // ctrMainBrowser
+            // 
+            resources.ApplyResources(this.ctrMainBrowser, "ctrMainBrowser");
+            this.ctrMainBrowser.Name = "ctrMainBrowser";
+            this.ctrMainBrowser.ScriptErrorsSuppressed = true;
+            this.ctrMainBrowser.Tag = "Ready";
+            this.ctrMainBrowser.WebBrowserShortcutsEnabled = false;
+            this.ctrMainBrowser.DocumentCompleted += new System.Windows.Forms.WebBrowserDocumentCompletedEventHandler(this.Browser_DocumentCompleted);
+            this.ctrMainBrowser.Navigated += new System.Windows.Forms.WebBrowserNavigatedEventHandler(this.Browser_Navigated);
             // 
             // tabMainSettings
             // 
@@ -7221,6 +7233,24 @@
             // 
             this.scHCBrowser.Panel2.Controls.Add(this.ctrHelpBrowser2);
             // 
+            // ctrHelpBrowser1
+            // 
+            resources.ApplyResources(this.ctrHelpBrowser1, "ctrHelpBrowser1");
+            this.ctrHelpBrowser1.Name = "ctrHelpBrowser1";
+            this.ctrHelpBrowser1.ScriptErrorsSuppressed = true;
+            this.ctrHelpBrowser1.Tag = "Ready";
+            this.ctrHelpBrowser1.DocumentCompleted += new System.Windows.Forms.WebBrowserDocumentCompletedEventHandler(this.Browser_DocumentCompleted);
+            this.ctrHelpBrowser1.Navigated += new System.Windows.Forms.WebBrowserNavigatedEventHandler(this.Browser_Navigated);
+            // 
+            // ctrHelpBrowser2
+            // 
+            resources.ApplyResources(this.ctrHelpBrowser2, "ctrHelpBrowser2");
+            this.ctrHelpBrowser2.Name = "ctrHelpBrowser2";
+            this.ctrHelpBrowser2.ScriptErrorsSuppressed = true;
+            this.ctrHelpBrowser2.Tag = "Ready";
+            this.ctrHelpBrowser2.DocumentCompleted += new System.Windows.Forms.WebBrowserDocumentCompletedEventHandler(this.Browser_DocumentCompleted);
+            this.ctrHelpBrowser2.Navigated += new System.Windows.Forms.WebBrowserNavigatedEventHandler(this.Browser_Navigated);
+            // 
             // tabMainHistory
             // 
             resources.ApplyResources(this.tabMainHistory, "tabMainHistory");
@@ -7553,7 +7583,9 @@
             this.FunctionsMenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.MenuItemCheckIP,
             this.MenuItemOpenURL,
-            this.MenuItemRunJSCmd});
+            this.MenuItemRunJSCmd,
+            this.toolStripSeparator1,
+            this.MenuItemEnterAuctionBet});
             this.FunctionsMenuStrip.Name = "FunctionsMenuStrip";
             resources.ApplyResources(this.FunctionsMenuStrip, "FunctionsMenuStrip");
             // 
@@ -7583,33 +7615,16 @@
             this.btnFunctions.UseVisualStyleBackColor = true;
             this.btnFunctions.Click += new System.EventHandler(this.btnFunctions_Click);
             // 
-            // ctrMainBrowser
+            // toolStripSeparator1
             // 
-            resources.ApplyResources(this.ctrMainBrowser, "ctrMainBrowser");
-            this.ctrMainBrowser.Name = "ctrMainBrowser";
-            this.ctrMainBrowser.ScriptErrorsSuppressed = true;
-            this.ctrMainBrowser.Tag = "Ready";
-            this.ctrMainBrowser.WebBrowserShortcutsEnabled = false;
-            this.ctrMainBrowser.DocumentCompleted += new System.Windows.Forms.WebBrowserDocumentCompletedEventHandler(this.Browser_DocumentCompleted);
-            this.ctrMainBrowser.Navigated += new System.Windows.Forms.WebBrowserNavigatedEventHandler(this.Browser_Navigated);
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            resources.ApplyResources(this.toolStripSeparator1, "toolStripSeparator1");
             // 
-            // ctrHelpBrowser1
+            // MenuItemEnterAuctionBet
             // 
-            resources.ApplyResources(this.ctrHelpBrowser1, "ctrHelpBrowser1");
-            this.ctrHelpBrowser1.Name = "ctrHelpBrowser1";
-            this.ctrHelpBrowser1.ScriptErrorsSuppressed = true;
-            this.ctrHelpBrowser1.Tag = "Ready";
-            this.ctrHelpBrowser1.DocumentCompleted += new System.Windows.Forms.WebBrowserDocumentCompletedEventHandler(this.Browser_DocumentCompleted);
-            this.ctrHelpBrowser1.Navigated += new System.Windows.Forms.WebBrowserNavigatedEventHandler(this.Browser_Navigated);
-            // 
-            // ctrHelpBrowser2
-            // 
-            resources.ApplyResources(this.ctrHelpBrowser2, "ctrHelpBrowser2");
-            this.ctrHelpBrowser2.Name = "ctrHelpBrowser2";
-            this.ctrHelpBrowser2.ScriptErrorsSuppressed = true;
-            this.ctrHelpBrowser2.Tag = "Ready";
-            this.ctrHelpBrowser2.DocumentCompleted += new System.Windows.Forms.WebBrowserDocumentCompletedEventHandler(this.Browser_DocumentCompleted);
-            this.ctrHelpBrowser2.Navigated += new System.Windows.Forms.WebBrowserNavigatedEventHandler(this.Browser_Navigated);
+            this.MenuItemEnterAuctionBet.Name = "MenuItemEnterAuctionBet";
+            resources.ApplyResources(this.MenuItemEnterAuctionBet, "MenuItemEnterAuctionBet");
+            this.MenuItemEnterAuctionBet.Click += new System.EventHandler(this.MenuItemEnterAuctionBet_Click);
             // 
             // frmMain
             // 
@@ -8644,7 +8659,9 @@
         private System.Windows.Forms.ToolStripMenuItem MenuItemCheckIP;
         private System.Windows.Forms.ToolStripMenuItem MenuItemOpenURL;
         private System.Windows.Forms.ToolStripMenuItem MenuItemRunJSCmd;
-        private System.Windows.Forms.Button btnFunctions;      
+        private System.Windows.Forms.Button btnFunctions;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
+        private System.Windows.Forms.ToolStripMenuItem MenuItemEnterAuctionBet;      
     }
 }
 
