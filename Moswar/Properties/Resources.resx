@@ -121,14 +121,17 @@
   <data name="Med" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Med.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Gold" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Gold.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Money" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Money.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Straw" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Straw.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="PowerStar" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\PowerStar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Umbrella" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Umbrella.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="IceCream" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\IceCream.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -136,8 +139,8 @@
   <data name="Ore" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Ore.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Umbrella" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Umbrella.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="BotStarted" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BotStopped.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Zheton" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Zheton.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -148,6 +151,9 @@
   <data name="WhiteTooth" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\WhiteTooth.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="BotStopped" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BotStarted.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Fishki" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Fishki.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -157,16 +163,13 @@
   <data name="Star" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Star.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="PowerStar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PowerStar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Oil" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Oil.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Gold" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Gold.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="BotStopped" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\BotStarted.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="BotStarted" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\BotStopped.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Question" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Question.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

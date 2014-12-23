@@ -618,6 +618,12 @@ namespace Moswar
         #endregion
 
         #region Настройки бота
+        public struct TruckSettings
+        {
+            public bool Send;
+            public int[] Enhancings;
+        }
+
         #region Приватные настройки
         [Serializable()]
         public struct stcPrivSettings
@@ -901,6 +907,10 @@ namespace Moswar
             public decimal GagIE;
 
             public bool GetReturnBonus;
+
+            public bool SendTrucks;
+            public decimal TrucksMinPowerPoints;
+            public TruckSettings[] Trucks;
         }
         #endregion
 

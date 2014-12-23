@@ -45,8 +45,76 @@
             this.pnlContainer = new System.Windows.Forms.Panel();
             this.pnlTrucks = new System.Windows.Forms.Panel();
             this.groupBox16 = new System.Windows.Forms.GroupBox();
+            this.label202 = new System.Windows.Forms.Label();
             this.groupBox17 = new System.Windows.Forms.GroupBox();
-            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.tblTrucks = new System.Windows.Forms.TableLayoutPanel();
+            this.button67 = new System.Windows.Forms.Button();
+            this.imageListlTruckEnhancing = new System.Windows.Forms.ImageList(this.components);
+            this.button68 = new System.Windows.Forms.Button();
+            this.button69 = new System.Windows.Forms.Button();
+            this.button70 = new System.Windows.Forms.Button();
+            this.button71 = new System.Windows.Forms.Button();
+            this.button72 = new System.Windows.Forms.Button();
+            this.button61 = new System.Windows.Forms.Button();
+            this.button62 = new System.Windows.Forms.Button();
+            this.button63 = new System.Windows.Forms.Button();
+            this.button64 = new System.Windows.Forms.Button();
+            this.button65 = new System.Windows.Forms.Button();
+            this.button66 = new System.Windows.Forms.Button();
+            this.button55 = new System.Windows.Forms.Button();
+            this.button56 = new System.Windows.Forms.Button();
+            this.button57 = new System.Windows.Forms.Button();
+            this.button58 = new System.Windows.Forms.Button();
+            this.button59 = new System.Windows.Forms.Button();
+            this.button60 = new System.Windows.Forms.Button();
+            this.button49 = new System.Windows.Forms.Button();
+            this.button50 = new System.Windows.Forms.Button();
+            this.button51 = new System.Windows.Forms.Button();
+            this.button52 = new System.Windows.Forms.Button();
+            this.button53 = new System.Windows.Forms.Button();
+            this.button54 = new System.Windows.Forms.Button();
+            this.button43 = new System.Windows.Forms.Button();
+            this.button44 = new System.Windows.Forms.Button();
+            this.button45 = new System.Windows.Forms.Button();
+            this.button46 = new System.Windows.Forms.Button();
+            this.button47 = new System.Windows.Forms.Button();
+            this.button48 = new System.Windows.Forms.Button();
+            this.button37 = new System.Windows.Forms.Button();
+            this.button38 = new System.Windows.Forms.Button();
+            this.button39 = new System.Windows.Forms.Button();
+            this.button40 = new System.Windows.Forms.Button();
+            this.button41 = new System.Windows.Forms.Button();
+            this.button42 = new System.Windows.Forms.Button();
+            this.button31 = new System.Windows.Forms.Button();
+            this.button32 = new System.Windows.Forms.Button();
+            this.button33 = new System.Windows.Forms.Button();
+            this.button34 = new System.Windows.Forms.Button();
+            this.button35 = new System.Windows.Forms.Button();
+            this.button36 = new System.Windows.Forms.Button();
+            this.button25 = new System.Windows.Forms.Button();
+            this.button26 = new System.Windows.Forms.Button();
+            this.button27 = new System.Windows.Forms.Button();
+            this.button28 = new System.Windows.Forms.Button();
+            this.button29 = new System.Windows.Forms.Button();
+            this.button30 = new System.Windows.Forms.Button();
+            this.button19 = new System.Windows.Forms.Button();
+            this.button20 = new System.Windows.Forms.Button();
+            this.button21 = new System.Windows.Forms.Button();
+            this.button22 = new System.Windows.Forms.Button();
+            this.button23 = new System.Windows.Forms.Button();
+            this.button24 = new System.Windows.Forms.Button();
+            this.button13 = new System.Windows.Forms.Button();
+            this.button14 = new System.Windows.Forms.Button();
+            this.button15 = new System.Windows.Forms.Button();
+            this.button16 = new System.Windows.Forms.Button();
+            this.button17 = new System.Windows.Forms.Button();
+            this.button18 = new System.Windows.Forms.Button();
+            this.button7 = new System.Windows.Forms.Button();
+            this.button8 = new System.Windows.Forms.Button();
+            this.button9 = new System.Windows.Forms.Button();
+            this.button10 = new System.Windows.Forms.Button();
+            this.button11 = new System.Windows.Forms.Button();
+            this.button12 = new System.Windows.Forms.Button();
             this.chkSendTruck1 = new System.Windows.Forms.CheckBox();
             this.chkSendTruck2 = new System.Windows.Forms.CheckBox();
             this.chkSendTruck3 = new System.Windows.Forms.CheckBox();
@@ -59,25 +127,86 @@
             this.chkSendTruck10 = new System.Windows.Forms.CheckBox();
             this.chkSendTruck11 = new System.Windows.Forms.CheckBox();
             this.chkSendTruck12 = new System.Windows.Forms.CheckBox();
-            this.chkBuyTruck1Res = new System.Windows.Forms.CheckBox();
-            this.chkBuyTruck2Res = new System.Windows.Forms.CheckBox();
-            this.chkBuyTruck3Res = new System.Windows.Forms.CheckBox();
-            this.chkBuyTruck4Res = new System.Windows.Forms.CheckBox();
-            this.chkBuyTruck5Res = new System.Windows.Forms.CheckBox();
-            this.chkBuyTruck6Res = new System.Windows.Forms.CheckBox();
-            this.chkBuyTruck7Res = new System.Windows.Forms.CheckBox();
-            this.chkBuyTruck8Res = new System.Windows.Forms.CheckBox();
-            this.chkBuyTruck9Res = new System.Windows.Forms.CheckBox();
-            this.chkBuyTruck10Res = new System.Windows.Forms.CheckBox();
-            this.chkBuyTruck11Res = new System.Windows.Forms.CheckBox();
-            this.chkBuyTruck12Res = new System.Windows.Forms.CheckBox();
             this.label187 = new System.Windows.Forms.Label();
             this.label188 = new System.Windows.Forms.Label();
             this.label189 = new System.Windows.Forms.Label();
-            this.label186 = new System.Windows.Forms.Label();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
+            this.button73 = new System.Windows.Forms.Button();
+            this.button74 = new System.Windows.Forms.Button();
+            this.button75 = new System.Windows.Forms.Button();
+            this.button76 = new System.Windows.Forms.Button();
+            this.button77 = new System.Windows.Forms.Button();
+            this.button78 = new System.Windows.Forms.Button();
+            this.label190 = new System.Windows.Forms.Label();
+            this.label191 = new System.Windows.Forms.Label();
+            this.label192 = new System.Windows.Forms.Label();
+            this.label193 = new System.Windows.Forms.Label();
+            this.label194 = new System.Windows.Forms.Label();
+            this.label195 = new System.Windows.Forms.Label();
+            this.label196 = new System.Windows.Forms.Label();
+            this.label197 = new System.Windows.Forms.Label();
+            this.label198 = new System.Windows.Forms.Label();
+            this.label199 = new System.Windows.Forms.Label();
+            this.label200 = new System.Windows.Forms.Label();
+            this.label201 = new System.Windows.Forms.Label();
+            this.groupBox18 = new System.Windows.Forms.GroupBox();
+            this.numTrucksMinPowerPoints = new System.Windows.Forms.NumericUpDown();
             this.label185 = new System.Windows.Forms.Label();
             this.chkSendTrucks = new System.Windows.Forms.CheckBox();
+            this.label186 = new System.Windows.Forms.Label();
+            this.pnlDuels = new System.Windows.Forms.Panel();
+            this.grpDuelControl = new System.Windows.Forms.GroupBox();
+            this.numMaxDuels = new System.Windows.Forms.NumericUpDown();
+            this.chkUseMaxDuels = new System.Windows.Forms.CheckBox();
+            this.dtStopDuels = new System.Windows.Forms.DateTimePicker();
+            this.dtStartDuels = new System.Windows.Forms.DateTimePicker();
+            this.label117 = new System.Windows.Forms.Label();
+            this.label118 = new System.Windows.Forms.Label();
+            this.chkUseDuelTimes = new System.Windows.Forms.CheckBox();
+            this.grpAlley = new System.Windows.Forms.GroupBox();
+            this.label104 = new System.Windows.Forms.Label();
+            this.cboxOpponent = new System.Windows.Forms.ComboBox();
+            this.numAlleyMaxLvl = new System.Windows.Forms.NumericUpDown();
+            this.numAlleyMinLvl = new System.Windows.Forms.NumericUpDown();
+            this.chkMrPlushkin = new System.Windows.Forms.CheckBox();
+            this.chkUseAgent = new System.Windows.Forms.CheckBox();
+            this.label25 = new System.Windows.Forms.Label();
+            this.lblWerewolf = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
+            this.chkUseHomeless = new System.Windows.Forms.CheckBox();
+            this.cboxWerewolf = new System.Windows.Forms.ComboBox();
+            this.label89 = new System.Windows.Forms.Label();
+            this.grpExpTorture = new System.Windows.Forms.GroupBox();
+            this.chkExpDoNotProofTorture = new System.Windows.Forms.CheckBox();
+            this.chkExpDoNotUseAngleGrinder = new System.Windows.Forms.CheckBox();
+            this.chkExpDoNotUseAntiSafe = new System.Windows.Forms.CheckBox();
+            this.chkExpDoNotUseIron = new System.Windows.Forms.CheckBox();
+            this.grpPolice = new System.Windows.Forms.GroupBox();
+            this.rbPoliceConnections = new System.Windows.Forms.RadioButton();
+            this.rbPoliceWait = new System.Windows.Forms.RadioButton();
+            this.numPayPolice = new System.Windows.Forms.NumericUpDown();
+            this.rbPolicePay = new System.Windows.Forms.RadioButton();
+            this.grpVictim = new System.Windows.Forms.GroupBox();
+            this.label60 = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
+            this.chkUseOnlyHomelessVictims = new System.Windows.Forms.CheckBox();
+            this.chkUseVictims = new System.Windows.Forms.CheckBox();
+            this.label22 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
+            this.numDeleteVictim = new System.Windows.Forms.NumericUpDown();
+            this.numAddVictim = new System.Windows.Forms.NumericUpDown();
+            this.grpWerewolf = new System.Windows.Forms.GroupBox();
+            this.pboxWerewolfPower = new System.Windows.Forms.PictureBox();
+            this.cboxWerewolfPrice = new System.Windows.Forms.ComboBox();
+            this.label85 = new System.Windows.Forms.Label();
+            this.cboxWerewolfLevel = new System.Windows.Forms.ComboBox();
+            this.label86 = new System.Windows.Forms.Label();
+            this.label84 = new System.Windows.Forms.Label();
             this.pnlReturnBonus = new System.Windows.Forms.Panel();
             this.chkGetReturnBonus = new System.Windows.Forms.CheckBox();
             this.pnlTempLocations = new System.Windows.Forms.Panel();
@@ -251,54 +380,6 @@
             this.groupBox12 = new System.Windows.Forms.GroupBox();
             this.chkGoGroupFightMafia = new System.Windows.Forms.CheckBox();
             this.chkMafiaUseLicence = new System.Windows.Forms.CheckBox();
-            this.pnlDuels = new System.Windows.Forms.Panel();
-            this.grpDuelControl = new System.Windows.Forms.GroupBox();
-            this.numMaxDuels = new System.Windows.Forms.NumericUpDown();
-            this.chkUseMaxDuels = new System.Windows.Forms.CheckBox();
-            this.dtStopDuels = new System.Windows.Forms.DateTimePicker();
-            this.dtStartDuels = new System.Windows.Forms.DateTimePicker();
-            this.label117 = new System.Windows.Forms.Label();
-            this.label118 = new System.Windows.Forms.Label();
-            this.chkUseDuelTimes = new System.Windows.Forms.CheckBox();
-            this.grpAlley = new System.Windows.Forms.GroupBox();
-            this.label104 = new System.Windows.Forms.Label();
-            this.cboxOpponent = new System.Windows.Forms.ComboBox();
-            this.numAlleyMaxLvl = new System.Windows.Forms.NumericUpDown();
-            this.numAlleyMinLvl = new System.Windows.Forms.NumericUpDown();
-            this.chkMrPlushkin = new System.Windows.Forms.CheckBox();
-            this.chkUseAgent = new System.Windows.Forms.CheckBox();
-            this.label25 = new System.Windows.Forms.Label();
-            this.lblWerewolf = new System.Windows.Forms.Label();
-            this.label24 = new System.Windows.Forms.Label();
-            this.chkUseHomeless = new System.Windows.Forms.CheckBox();
-            this.cboxWerewolf = new System.Windows.Forms.ComboBox();
-            this.label89 = new System.Windows.Forms.Label();
-            this.grpExpTorture = new System.Windows.Forms.GroupBox();
-            this.chkExpDoNotProofTorture = new System.Windows.Forms.CheckBox();
-            this.chkExpDoNotUseAngleGrinder = new System.Windows.Forms.CheckBox();
-            this.chkExpDoNotUseAntiSafe = new System.Windows.Forms.CheckBox();
-            this.chkExpDoNotUseIron = new System.Windows.Forms.CheckBox();
-            this.grpPolice = new System.Windows.Forms.GroupBox();
-            this.rbPoliceConnections = new System.Windows.Forms.RadioButton();
-            this.rbPoliceWait = new System.Windows.Forms.RadioButton();
-            this.numPayPolice = new System.Windows.Forms.NumericUpDown();
-            this.rbPolicePay = new System.Windows.Forms.RadioButton();
-            this.grpVictim = new System.Windows.Forms.GroupBox();
-            this.label60 = new System.Windows.Forms.Label();
-            this.label23 = new System.Windows.Forms.Label();
-            this.chkUseOnlyHomelessVictims = new System.Windows.Forms.CheckBox();
-            this.chkUseVictims = new System.Windows.Forms.CheckBox();
-            this.label22 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
-            this.numDeleteVictim = new System.Windows.Forms.NumericUpDown();
-            this.numAddVictim = new System.Windows.Forms.NumericUpDown();
-            this.grpWerewolf = new System.Windows.Forms.GroupBox();
-            this.pboxWerewolfPower = new System.Windows.Forms.PictureBox();
-            this.cboxWerewolfPrice = new System.Windows.Forms.ComboBox();
-            this.label85 = new System.Windows.Forms.Label();
-            this.cboxWerewolfLevel = new System.Windows.Forms.ComboBox();
-            this.label86 = new System.Windows.Forms.Label();
-            this.label84 = new System.Windows.Forms.Label();
             this.pnlHunterClub = new System.Windows.Forms.Panel();
             this.groupBox11 = new System.Windows.Forms.GroupBox();
             this.chkWantedPlayThimbles = new System.Windows.Forms.CheckBox();
@@ -753,8 +834,10 @@
             this.MenuItemRunJSCmd = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.MenuItemEnterAuctionBet = new System.Windows.Forms.ToolStripMenuItem();
-            this.btnFunctions = new System.Windows.Forms.Button();
             this.MenuItemSendGiftFix = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnFunctions = new System.Windows.Forms.Button();
+            this.toolTip = new System.Windows.Forms.ToolTip(this.components);
+            this.label203 = new System.Windows.Forms.Label();
             this.tabControl.SuspendLayout();
             this.tabMainBrowser.SuspendLayout();
             this.AutoApdateMessage.SuspendLayout();
@@ -764,8 +847,22 @@
             this.pnlTrucks.SuspendLayout();
             this.groupBox16.SuspendLayout();
             this.groupBox17.SuspendLayout();
-            this.tableLayoutPanel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            this.tblTrucks.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numTrucksMinPowerPoints)).BeginInit();
+            this.pnlDuels.SuspendLayout();
+            this.grpDuelControl.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numMaxDuels)).BeginInit();
+            this.grpAlley.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numAlleyMaxLvl)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numAlleyMinLvl)).BeginInit();
+            this.grpExpTorture.SuspendLayout();
+            this.grpPolice.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numPayPolice)).BeginInit();
+            this.grpVictim.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numDeleteVictim)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numAddVictim)).BeginInit();
+            this.grpWerewolf.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pboxWerewolfPower)).BeginInit();
             this.pnlReturnBonus.SuspendLayout();
             this.pnlInventory.SuspendLayout();
             this.groupBox15.SuspendLayout();
@@ -818,20 +915,6 @@
             this.groupBox13.SuspendLayout();
             this.pnlGroupFightMafia.SuspendLayout();
             this.groupBox12.SuspendLayout();
-            this.pnlDuels.SuspendLayout();
-            this.grpDuelControl.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numMaxDuels)).BeginInit();
-            this.grpAlley.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numAlleyMaxLvl)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numAlleyMinLvl)).BeginInit();
-            this.grpExpTorture.SuspendLayout();
-            this.grpPolice.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numPayPolice)).BeginInit();
-            this.grpVictim.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numDeleteVictim)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numAddVictim)).BeginInit();
-            this.grpWerewolf.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pboxWerewolfPower)).BeginInit();
             this.pnlHunterClub.SuspendLayout();
             this.groupBox11.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numWantedPlayThimbles)).BeginInit();
@@ -1076,6 +1159,8 @@
             // pnlContainer
             // 
             this.pnlContainer.Controls.Add(this.pnlTrucks);
+            this.pnlContainer.Controls.Add(this.pnlGroupFights);
+            this.pnlContainer.Controls.Add(this.pnlDuels);
             this.pnlContainer.Controls.Add(this.pnlReturnBonus);
             this.pnlContainer.Controls.Add(this.pnlTempLocations);
             this.pnlContainer.Controls.Add(this.pnlInventory);
@@ -1084,12 +1169,10 @@
             this.pnlContainer.Controls.Add(this.pnlHeal);
             this.pnlContainer.Controls.Add(this.pnlTraining);
             this.pnlContainer.Controls.Add(this.pnlGroupFightPVP);
-            this.pnlContainer.Controls.Add(this.pnlGroupFights);
             this.pnlContainer.Controls.Add(this.pnlGroupFightChaos);
             this.pnlContainer.Controls.Add(this.pnlGroupFightOre);
             this.pnlContainer.Controls.Add(this.pnlClanWars);
             this.pnlContainer.Controls.Add(this.pnlGroupFightMafia);
-            this.pnlContainer.Controls.Add(this.pnlDuels);
             this.pnlContainer.Controls.Add(this.pnlHunterClub);
             this.pnlContainer.Controls.Add(this.pnlPetarena);
             this.pnlContainer.Controls.Add(this.pnlOilPipeline);
@@ -1138,53 +1221,677 @@
             // 
             // groupBox16
             // 
+            this.groupBox16.Controls.Add(this.label202);
             this.groupBox16.Controls.Add(this.groupBox17);
-            this.groupBox16.Controls.Add(this.label186);
-            this.groupBox16.Controls.Add(this.numericUpDown1);
+            this.groupBox16.Controls.Add(this.numTrucksMinPowerPoints);
             this.groupBox16.Controls.Add(this.label185);
             this.groupBox16.Controls.Add(this.chkSendTrucks);
+            this.groupBox16.Controls.Add(this.label186);
             resources.ApplyResources(this.groupBox16, "groupBox16");
             this.groupBox16.Name = "groupBox16";
             this.groupBox16.TabStop = false;
             // 
+            // label202
+            // 
+            this.label202.Image = global::Moswar.Properties.Resources.Question;
+            resources.ApplyResources(this.label202, "label202");
+            this.label202.Name = "label202";
+            this.toolTip.SetToolTip(this.label202, resources.GetString("label202.ToolTip"));
+            // 
             // groupBox17
             // 
             resources.ApplyResources(this.groupBox17, "groupBox17");
-            this.groupBox17.Controls.Add(this.tableLayoutPanel2);
+            this.groupBox17.Controls.Add(this.label203);
+            this.groupBox17.Controls.Add(this.tblTrucks);
             this.groupBox17.Name = "groupBox17";
             this.groupBox17.TabStop = false;
             // 
-            // tableLayoutPanel2
+            // tblTrucks
             // 
-            resources.ApplyResources(this.tableLayoutPanel2, "tableLayoutPanel2");
-            this.tableLayoutPanel2.Controls.Add(this.chkSendTruck1, 0, 1);
-            this.tableLayoutPanel2.Controls.Add(this.chkSendTruck2, 0, 2);
-            this.tableLayoutPanel2.Controls.Add(this.chkSendTruck3, 0, 3);
-            this.tableLayoutPanel2.Controls.Add(this.chkSendTruck4, 0, 4);
-            this.tableLayoutPanel2.Controls.Add(this.chkSendTruck5, 0, 5);
-            this.tableLayoutPanel2.Controls.Add(this.chkSendTruck6, 0, 6);
-            this.tableLayoutPanel2.Controls.Add(this.chkSendTruck7, 0, 7);
-            this.tableLayoutPanel2.Controls.Add(this.chkSendTruck8, 0, 8);
-            this.tableLayoutPanel2.Controls.Add(this.chkSendTruck9, 0, 9);
-            this.tableLayoutPanel2.Controls.Add(this.chkSendTruck10, 0, 10);
-            this.tableLayoutPanel2.Controls.Add(this.chkSendTruck11, 0, 11);
-            this.tableLayoutPanel2.Controls.Add(this.chkSendTruck12, 0, 12);
-            this.tableLayoutPanel2.Controls.Add(this.chkBuyTruck1Res, 1, 1);
-            this.tableLayoutPanel2.Controls.Add(this.chkBuyTruck2Res, 1, 2);
-            this.tableLayoutPanel2.Controls.Add(this.chkBuyTruck3Res, 1, 3);
-            this.tableLayoutPanel2.Controls.Add(this.chkBuyTruck4Res, 1, 4);
-            this.tableLayoutPanel2.Controls.Add(this.chkBuyTruck5Res, 1, 5);
-            this.tableLayoutPanel2.Controls.Add(this.chkBuyTruck6Res, 1, 6);
-            this.tableLayoutPanel2.Controls.Add(this.chkBuyTruck7Res, 1, 7);
-            this.tableLayoutPanel2.Controls.Add(this.chkBuyTruck8Res, 1, 8);
-            this.tableLayoutPanel2.Controls.Add(this.chkBuyTruck9Res, 1, 9);
-            this.tableLayoutPanel2.Controls.Add(this.chkBuyTruck10Res, 1, 10);
-            this.tableLayoutPanel2.Controls.Add(this.chkBuyTruck11Res, 1, 11);
-            this.tableLayoutPanel2.Controls.Add(this.chkBuyTruck12Res, 1, 12);
-            this.tableLayoutPanel2.Controls.Add(this.label187, 0, 0);
-            this.tableLayoutPanel2.Controls.Add(this.label188, 2, 0);
-            this.tableLayoutPanel2.Controls.Add(this.label189, 1, 0);
-            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
+            resources.ApplyResources(this.tblTrucks, "tblTrucks");
+            this.tblTrucks.Controls.Add(this.button67, 2, 14);
+            this.tblTrucks.Controls.Add(this.button68, 3, 14);
+            this.tblTrucks.Controls.Add(this.button69, 4, 14);
+            this.tblTrucks.Controls.Add(this.button70, 5, 14);
+            this.tblTrucks.Controls.Add(this.button71, 6, 14);
+            this.tblTrucks.Controls.Add(this.button72, 7, 14);
+            this.tblTrucks.Controls.Add(this.button61, 2, 13);
+            this.tblTrucks.Controls.Add(this.button62, 3, 13);
+            this.tblTrucks.Controls.Add(this.button63, 4, 13);
+            this.tblTrucks.Controls.Add(this.button64, 5, 13);
+            this.tblTrucks.Controls.Add(this.button65, 6, 13);
+            this.tblTrucks.Controls.Add(this.button66, 7, 13);
+            this.tblTrucks.Controls.Add(this.button55, 2, 12);
+            this.tblTrucks.Controls.Add(this.button56, 3, 12);
+            this.tblTrucks.Controls.Add(this.button57, 4, 12);
+            this.tblTrucks.Controls.Add(this.button58, 5, 12);
+            this.tblTrucks.Controls.Add(this.button59, 6, 12);
+            this.tblTrucks.Controls.Add(this.button60, 7, 12);
+            this.tblTrucks.Controls.Add(this.button49, 2, 11);
+            this.tblTrucks.Controls.Add(this.button50, 3, 11);
+            this.tblTrucks.Controls.Add(this.button51, 4, 11);
+            this.tblTrucks.Controls.Add(this.button52, 5, 11);
+            this.tblTrucks.Controls.Add(this.button53, 6, 11);
+            this.tblTrucks.Controls.Add(this.button54, 7, 11);
+            this.tblTrucks.Controls.Add(this.button43, 2, 10);
+            this.tblTrucks.Controls.Add(this.button44, 3, 10);
+            this.tblTrucks.Controls.Add(this.button45, 4, 10);
+            this.tblTrucks.Controls.Add(this.button46, 5, 10);
+            this.tblTrucks.Controls.Add(this.button47, 6, 10);
+            this.tblTrucks.Controls.Add(this.button48, 7, 10);
+            this.tblTrucks.Controls.Add(this.button37, 2, 9);
+            this.tblTrucks.Controls.Add(this.button38, 3, 9);
+            this.tblTrucks.Controls.Add(this.button39, 4, 9);
+            this.tblTrucks.Controls.Add(this.button40, 5, 9);
+            this.tblTrucks.Controls.Add(this.button41, 6, 9);
+            this.tblTrucks.Controls.Add(this.button42, 7, 9);
+            this.tblTrucks.Controls.Add(this.button31, 2, 8);
+            this.tblTrucks.Controls.Add(this.button32, 3, 8);
+            this.tblTrucks.Controls.Add(this.button33, 4, 8);
+            this.tblTrucks.Controls.Add(this.button34, 5, 8);
+            this.tblTrucks.Controls.Add(this.button35, 6, 8);
+            this.tblTrucks.Controls.Add(this.button36, 7, 8);
+            this.tblTrucks.Controls.Add(this.button25, 2, 7);
+            this.tblTrucks.Controls.Add(this.button26, 3, 7);
+            this.tblTrucks.Controls.Add(this.button27, 4, 7);
+            this.tblTrucks.Controls.Add(this.button28, 5, 7);
+            this.tblTrucks.Controls.Add(this.button29, 6, 7);
+            this.tblTrucks.Controls.Add(this.button30, 7, 7);
+            this.tblTrucks.Controls.Add(this.button19, 2, 6);
+            this.tblTrucks.Controls.Add(this.button20, 3, 6);
+            this.tblTrucks.Controls.Add(this.button21, 4, 6);
+            this.tblTrucks.Controls.Add(this.button22, 5, 6);
+            this.tblTrucks.Controls.Add(this.button23, 6, 6);
+            this.tblTrucks.Controls.Add(this.button24, 7, 6);
+            this.tblTrucks.Controls.Add(this.button13, 2, 5);
+            this.tblTrucks.Controls.Add(this.button14, 3, 5);
+            this.tblTrucks.Controls.Add(this.button15, 4, 5);
+            this.tblTrucks.Controls.Add(this.button16, 5, 5);
+            this.tblTrucks.Controls.Add(this.button17, 6, 5);
+            this.tblTrucks.Controls.Add(this.button18, 7, 5);
+            this.tblTrucks.Controls.Add(this.button7, 2, 4);
+            this.tblTrucks.Controls.Add(this.button8, 3, 4);
+            this.tblTrucks.Controls.Add(this.button9, 4, 4);
+            this.tblTrucks.Controls.Add(this.button10, 5, 4);
+            this.tblTrucks.Controls.Add(this.button11, 6, 4);
+            this.tblTrucks.Controls.Add(this.button12, 7, 4);
+            this.tblTrucks.Controls.Add(this.chkSendTruck1, 0, 3);
+            this.tblTrucks.Controls.Add(this.chkSendTruck2, 0, 4);
+            this.tblTrucks.Controls.Add(this.chkSendTruck3, 0, 5);
+            this.tblTrucks.Controls.Add(this.chkSendTruck4, 0, 6);
+            this.tblTrucks.Controls.Add(this.chkSendTruck5, 0, 7);
+            this.tblTrucks.Controls.Add(this.chkSendTruck6, 0, 8);
+            this.tblTrucks.Controls.Add(this.chkSendTruck7, 0, 9);
+            this.tblTrucks.Controls.Add(this.chkSendTruck8, 0, 10);
+            this.tblTrucks.Controls.Add(this.chkSendTruck9, 0, 11);
+            this.tblTrucks.Controls.Add(this.chkSendTruck10, 0, 12);
+            this.tblTrucks.Controls.Add(this.chkSendTruck11, 0, 13);
+            this.tblTrucks.Controls.Add(this.chkSendTruck12, 0, 14);
+            this.tblTrucks.Controls.Add(this.label187, 0, 0);
+            this.tblTrucks.Controls.Add(this.label188, 2, 0);
+            this.tblTrucks.Controls.Add(this.label189, 1, 0);
+            this.tblTrucks.Controls.Add(this.button1, 2, 3);
+            this.tblTrucks.Controls.Add(this.button2, 3, 3);
+            this.tblTrucks.Controls.Add(this.button3, 4, 3);
+            this.tblTrucks.Controls.Add(this.button4, 5, 3);
+            this.tblTrucks.Controls.Add(this.button5, 6, 3);
+            this.tblTrucks.Controls.Add(this.button6, 7, 3);
+            this.tblTrucks.Controls.Add(this.button73, 2, 1);
+            this.tblTrucks.Controls.Add(this.button74, 3, 1);
+            this.tblTrucks.Controls.Add(this.button75, 4, 1);
+            this.tblTrucks.Controls.Add(this.button76, 5, 1);
+            this.tblTrucks.Controls.Add(this.button77, 6, 1);
+            this.tblTrucks.Controls.Add(this.button78, 7, 1);
+            this.tblTrucks.Controls.Add(this.label190, 1, 3);
+            this.tblTrucks.Controls.Add(this.label191, 1, 4);
+            this.tblTrucks.Controls.Add(this.label192, 1, 5);
+            this.tblTrucks.Controls.Add(this.label193, 1, 6);
+            this.tblTrucks.Controls.Add(this.label194, 1, 7);
+            this.tblTrucks.Controls.Add(this.label195, 1, 8);
+            this.tblTrucks.Controls.Add(this.label196, 1, 9);
+            this.tblTrucks.Controls.Add(this.label197, 1, 10);
+            this.tblTrucks.Controls.Add(this.label198, 1, 11);
+            this.tblTrucks.Controls.Add(this.label199, 1, 12);
+            this.tblTrucks.Controls.Add(this.label200, 1, 13);
+            this.tblTrucks.Controls.Add(this.label201, 1, 14);
+            this.tblTrucks.Controls.Add(this.groupBox18, 0, 2);
+            this.tblTrucks.Name = "tblTrucks";
+            // 
+            // button67
+            // 
+            resources.ApplyResources(this.button67, "button67");
+            this.button67.ImageList = this.imageListlTruckEnhancing;
+            this.button67.Name = "button67";
+            this.button67.UseVisualStyleBackColor = true;
+            this.button67.Click += new System.EventHandler(this.btnTruckEnhancing_Click);
+            // 
+            // imageListlTruckEnhancing
+            // 
+            this.imageListlTruckEnhancing.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageListlTruckEnhancing.ImageStream")));
+            this.imageListlTruckEnhancing.TransparentColor = System.Drawing.Color.Transparent;
+            this.imageListlTruckEnhancing.Images.SetKeyName(0, "Empty.png");
+            this.imageListlTruckEnhancing.Images.SetKeyName(1, "Derzhava.png");
+            this.imageListlTruckEnhancing.Images.SetKeyName(2, "Med.png");
+            // 
+            // button68
+            // 
+            resources.ApplyResources(this.button68, "button68");
+            this.button68.ImageList = this.imageListlTruckEnhancing;
+            this.button68.Name = "button68";
+            this.button68.UseVisualStyleBackColor = true;
+            this.button68.Click += new System.EventHandler(this.btnTruckEnhancing_Click);
+            // 
+            // button69
+            // 
+            resources.ApplyResources(this.button69, "button69");
+            this.button69.ImageList = this.imageListlTruckEnhancing;
+            this.button69.Name = "button69";
+            this.button69.UseVisualStyleBackColor = true;
+            this.button69.Click += new System.EventHandler(this.btnTruckEnhancing_Click);
+            // 
+            // button70
+            // 
+            resources.ApplyResources(this.button70, "button70");
+            this.button70.ImageList = this.imageListlTruckEnhancing;
+            this.button70.Name = "button70";
+            this.button70.UseVisualStyleBackColor = true;
+            this.button70.Click += new System.EventHandler(this.btnTruckEnhancing_Click);
+            // 
+            // button71
+            // 
+            resources.ApplyResources(this.button71, "button71");
+            this.button71.ImageList = this.imageListlTruckEnhancing;
+            this.button71.Name = "button71";
+            this.button71.UseVisualStyleBackColor = true;
+            this.button71.Click += new System.EventHandler(this.btnTruckEnhancing_Click);
+            // 
+            // button72
+            // 
+            resources.ApplyResources(this.button72, "button72");
+            this.button72.ImageList = this.imageListlTruckEnhancing;
+            this.button72.Name = "button72";
+            this.button72.UseVisualStyleBackColor = true;
+            this.button72.Click += new System.EventHandler(this.btnTruckEnhancing_Click);
+            // 
+            // button61
+            // 
+            resources.ApplyResources(this.button61, "button61");
+            this.button61.ImageList = this.imageListlTruckEnhancing;
+            this.button61.Name = "button61";
+            this.button61.UseVisualStyleBackColor = true;
+            this.button61.Click += new System.EventHandler(this.btnTruckEnhancing_Click);
+            // 
+            // button62
+            // 
+            resources.ApplyResources(this.button62, "button62");
+            this.button62.ImageList = this.imageListlTruckEnhancing;
+            this.button62.Name = "button62";
+            this.button62.UseVisualStyleBackColor = true;
+            this.button62.Click += new System.EventHandler(this.btnTruckEnhancing_Click);
+            // 
+            // button63
+            // 
+            resources.ApplyResources(this.button63, "button63");
+            this.button63.ImageList = this.imageListlTruckEnhancing;
+            this.button63.Name = "button63";
+            this.button63.UseVisualStyleBackColor = true;
+            this.button63.Click += new System.EventHandler(this.btnTruckEnhancing_Click);
+            // 
+            // button64
+            // 
+            resources.ApplyResources(this.button64, "button64");
+            this.button64.ImageList = this.imageListlTruckEnhancing;
+            this.button64.Name = "button64";
+            this.button64.UseVisualStyleBackColor = true;
+            this.button64.Click += new System.EventHandler(this.btnTruckEnhancing_Click);
+            // 
+            // button65
+            // 
+            resources.ApplyResources(this.button65, "button65");
+            this.button65.ImageList = this.imageListlTruckEnhancing;
+            this.button65.Name = "button65";
+            this.button65.UseVisualStyleBackColor = true;
+            this.button65.Click += new System.EventHandler(this.btnTruckEnhancing_Click);
+            // 
+            // button66
+            // 
+            resources.ApplyResources(this.button66, "button66");
+            this.button66.ImageList = this.imageListlTruckEnhancing;
+            this.button66.Name = "button66";
+            this.button66.UseVisualStyleBackColor = true;
+            this.button66.Click += new System.EventHandler(this.btnTruckEnhancing_Click);
+            // 
+            // button55
+            // 
+            resources.ApplyResources(this.button55, "button55");
+            this.button55.ImageList = this.imageListlTruckEnhancing;
+            this.button55.Name = "button55";
+            this.button55.UseVisualStyleBackColor = true;
+            this.button55.Click += new System.EventHandler(this.btnTruckEnhancing_Click);
+            // 
+            // button56
+            // 
+            resources.ApplyResources(this.button56, "button56");
+            this.button56.ImageList = this.imageListlTruckEnhancing;
+            this.button56.Name = "button56";
+            this.button56.UseVisualStyleBackColor = true;
+            this.button56.Click += new System.EventHandler(this.btnTruckEnhancing_Click);
+            // 
+            // button57
+            // 
+            resources.ApplyResources(this.button57, "button57");
+            this.button57.ImageList = this.imageListlTruckEnhancing;
+            this.button57.Name = "button57";
+            this.button57.UseVisualStyleBackColor = true;
+            this.button57.Click += new System.EventHandler(this.btnTruckEnhancing_Click);
+            // 
+            // button58
+            // 
+            resources.ApplyResources(this.button58, "button58");
+            this.button58.ImageList = this.imageListlTruckEnhancing;
+            this.button58.Name = "button58";
+            this.button58.UseVisualStyleBackColor = true;
+            this.button58.Click += new System.EventHandler(this.btnTruckEnhancing_Click);
+            // 
+            // button59
+            // 
+            resources.ApplyResources(this.button59, "button59");
+            this.button59.ImageList = this.imageListlTruckEnhancing;
+            this.button59.Name = "button59";
+            this.button59.UseVisualStyleBackColor = true;
+            this.button59.Click += new System.EventHandler(this.btnTruckEnhancing_Click);
+            // 
+            // button60
+            // 
+            resources.ApplyResources(this.button60, "button60");
+            this.button60.ImageList = this.imageListlTruckEnhancing;
+            this.button60.Name = "button60";
+            this.button60.UseVisualStyleBackColor = true;
+            this.button60.Click += new System.EventHandler(this.btnTruckEnhancing_Click);
+            // 
+            // button49
+            // 
+            resources.ApplyResources(this.button49, "button49");
+            this.button49.ImageList = this.imageListlTruckEnhancing;
+            this.button49.Name = "button49";
+            this.button49.UseVisualStyleBackColor = true;
+            this.button49.Click += new System.EventHandler(this.btnTruckEnhancing_Click);
+            // 
+            // button50
+            // 
+            resources.ApplyResources(this.button50, "button50");
+            this.button50.ImageList = this.imageListlTruckEnhancing;
+            this.button50.Name = "button50";
+            this.button50.UseVisualStyleBackColor = true;
+            this.button50.Click += new System.EventHandler(this.btnTruckEnhancing_Click);
+            // 
+            // button51
+            // 
+            resources.ApplyResources(this.button51, "button51");
+            this.button51.ImageList = this.imageListlTruckEnhancing;
+            this.button51.Name = "button51";
+            this.button51.UseVisualStyleBackColor = true;
+            this.button51.Click += new System.EventHandler(this.btnTruckEnhancing_Click);
+            // 
+            // button52
+            // 
+            resources.ApplyResources(this.button52, "button52");
+            this.button52.ImageList = this.imageListlTruckEnhancing;
+            this.button52.Name = "button52";
+            this.button52.UseVisualStyleBackColor = true;
+            this.button52.Click += new System.EventHandler(this.btnTruckEnhancing_Click);
+            // 
+            // button53
+            // 
+            resources.ApplyResources(this.button53, "button53");
+            this.button53.ImageList = this.imageListlTruckEnhancing;
+            this.button53.Name = "button53";
+            this.button53.UseVisualStyleBackColor = true;
+            this.button53.Click += new System.EventHandler(this.btnTruckEnhancing_Click);
+            // 
+            // button54
+            // 
+            resources.ApplyResources(this.button54, "button54");
+            this.button54.ImageList = this.imageListlTruckEnhancing;
+            this.button54.Name = "button54";
+            this.button54.UseVisualStyleBackColor = true;
+            this.button54.Click += new System.EventHandler(this.btnTruckEnhancing_Click);
+            // 
+            // button43
+            // 
+            resources.ApplyResources(this.button43, "button43");
+            this.button43.ImageList = this.imageListlTruckEnhancing;
+            this.button43.Name = "button43";
+            this.button43.UseVisualStyleBackColor = true;
+            this.button43.Click += new System.EventHandler(this.btnTruckEnhancing_Click);
+            // 
+            // button44
+            // 
+            resources.ApplyResources(this.button44, "button44");
+            this.button44.ImageList = this.imageListlTruckEnhancing;
+            this.button44.Name = "button44";
+            this.button44.UseVisualStyleBackColor = true;
+            this.button44.Click += new System.EventHandler(this.btnTruckEnhancing_Click);
+            // 
+            // button45
+            // 
+            resources.ApplyResources(this.button45, "button45");
+            this.button45.ImageList = this.imageListlTruckEnhancing;
+            this.button45.Name = "button45";
+            this.button45.UseVisualStyleBackColor = true;
+            this.button45.Click += new System.EventHandler(this.btnTruckEnhancing_Click);
+            // 
+            // button46
+            // 
+            resources.ApplyResources(this.button46, "button46");
+            this.button46.ImageList = this.imageListlTruckEnhancing;
+            this.button46.Name = "button46";
+            this.button46.UseVisualStyleBackColor = true;
+            this.button46.Click += new System.EventHandler(this.btnTruckEnhancing_Click);
+            // 
+            // button47
+            // 
+            resources.ApplyResources(this.button47, "button47");
+            this.button47.ImageList = this.imageListlTruckEnhancing;
+            this.button47.Name = "button47";
+            this.button47.UseVisualStyleBackColor = true;
+            this.button47.Click += new System.EventHandler(this.btnTruckEnhancing_Click);
+            // 
+            // button48
+            // 
+            resources.ApplyResources(this.button48, "button48");
+            this.button48.ImageList = this.imageListlTruckEnhancing;
+            this.button48.Name = "button48";
+            this.button48.UseVisualStyleBackColor = true;
+            this.button48.Click += new System.EventHandler(this.btnTruckEnhancing_Click);
+            // 
+            // button37
+            // 
+            resources.ApplyResources(this.button37, "button37");
+            this.button37.ImageList = this.imageListlTruckEnhancing;
+            this.button37.Name = "button37";
+            this.button37.UseVisualStyleBackColor = true;
+            this.button37.Click += new System.EventHandler(this.btnTruckEnhancing_Click);
+            // 
+            // button38
+            // 
+            resources.ApplyResources(this.button38, "button38");
+            this.button38.ImageList = this.imageListlTruckEnhancing;
+            this.button38.Name = "button38";
+            this.button38.UseVisualStyleBackColor = true;
+            this.button38.Click += new System.EventHandler(this.btnTruckEnhancing_Click);
+            // 
+            // button39
+            // 
+            resources.ApplyResources(this.button39, "button39");
+            this.button39.ImageList = this.imageListlTruckEnhancing;
+            this.button39.Name = "button39";
+            this.button39.UseVisualStyleBackColor = true;
+            this.button39.Click += new System.EventHandler(this.btnTruckEnhancing_Click);
+            // 
+            // button40
+            // 
+            resources.ApplyResources(this.button40, "button40");
+            this.button40.ImageList = this.imageListlTruckEnhancing;
+            this.button40.Name = "button40";
+            this.button40.UseVisualStyleBackColor = true;
+            this.button40.Click += new System.EventHandler(this.btnTruckEnhancing_Click);
+            // 
+            // button41
+            // 
+            resources.ApplyResources(this.button41, "button41");
+            this.button41.ImageList = this.imageListlTruckEnhancing;
+            this.button41.Name = "button41";
+            this.button41.UseVisualStyleBackColor = true;
+            this.button41.Click += new System.EventHandler(this.btnTruckEnhancing_Click);
+            // 
+            // button42
+            // 
+            resources.ApplyResources(this.button42, "button42");
+            this.button42.ImageList = this.imageListlTruckEnhancing;
+            this.button42.Name = "button42";
+            this.button42.UseVisualStyleBackColor = true;
+            this.button42.Click += new System.EventHandler(this.btnTruckEnhancing_Click);
+            // 
+            // button31
+            // 
+            resources.ApplyResources(this.button31, "button31");
+            this.button31.ImageList = this.imageListlTruckEnhancing;
+            this.button31.Name = "button31";
+            this.button31.UseVisualStyleBackColor = true;
+            this.button31.Click += new System.EventHandler(this.btnTruckEnhancing_Click);
+            // 
+            // button32
+            // 
+            resources.ApplyResources(this.button32, "button32");
+            this.button32.ImageList = this.imageListlTruckEnhancing;
+            this.button32.Name = "button32";
+            this.button32.UseVisualStyleBackColor = true;
+            this.button32.Click += new System.EventHandler(this.btnTruckEnhancing_Click);
+            // 
+            // button33
+            // 
+            resources.ApplyResources(this.button33, "button33");
+            this.button33.ImageList = this.imageListlTruckEnhancing;
+            this.button33.Name = "button33";
+            this.button33.UseVisualStyleBackColor = true;
+            this.button33.Click += new System.EventHandler(this.btnTruckEnhancing_Click);
+            // 
+            // button34
+            // 
+            resources.ApplyResources(this.button34, "button34");
+            this.button34.ImageList = this.imageListlTruckEnhancing;
+            this.button34.Name = "button34";
+            this.button34.UseVisualStyleBackColor = true;
+            this.button34.Click += new System.EventHandler(this.btnTruckEnhancing_Click);
+            // 
+            // button35
+            // 
+            resources.ApplyResources(this.button35, "button35");
+            this.button35.ImageList = this.imageListlTruckEnhancing;
+            this.button35.Name = "button35";
+            this.button35.UseVisualStyleBackColor = true;
+            this.button35.Click += new System.EventHandler(this.btnTruckEnhancing_Click);
+            // 
+            // button36
+            // 
+            resources.ApplyResources(this.button36, "button36");
+            this.button36.ImageList = this.imageListlTruckEnhancing;
+            this.button36.Name = "button36";
+            this.button36.UseVisualStyleBackColor = true;
+            this.button36.Click += new System.EventHandler(this.btnTruckEnhancing_Click);
+            // 
+            // button25
+            // 
+            resources.ApplyResources(this.button25, "button25");
+            this.button25.ImageList = this.imageListlTruckEnhancing;
+            this.button25.Name = "button25";
+            this.button25.UseVisualStyleBackColor = true;
+            this.button25.Click += new System.EventHandler(this.btnTruckEnhancing_Click);
+            // 
+            // button26
+            // 
+            resources.ApplyResources(this.button26, "button26");
+            this.button26.ImageList = this.imageListlTruckEnhancing;
+            this.button26.Name = "button26";
+            this.button26.UseVisualStyleBackColor = true;
+            this.button26.Click += new System.EventHandler(this.btnTruckEnhancing_Click);
+            // 
+            // button27
+            // 
+            resources.ApplyResources(this.button27, "button27");
+            this.button27.ImageList = this.imageListlTruckEnhancing;
+            this.button27.Name = "button27";
+            this.button27.UseVisualStyleBackColor = true;
+            this.button27.Click += new System.EventHandler(this.btnTruckEnhancing_Click);
+            // 
+            // button28
+            // 
+            resources.ApplyResources(this.button28, "button28");
+            this.button28.ImageList = this.imageListlTruckEnhancing;
+            this.button28.Name = "button28";
+            this.button28.UseVisualStyleBackColor = true;
+            this.button28.Click += new System.EventHandler(this.btnTruckEnhancing_Click);
+            // 
+            // button29
+            // 
+            resources.ApplyResources(this.button29, "button29");
+            this.button29.ImageList = this.imageListlTruckEnhancing;
+            this.button29.Name = "button29";
+            this.button29.UseVisualStyleBackColor = true;
+            this.button29.Click += new System.EventHandler(this.btnTruckEnhancing_Click);
+            // 
+            // button30
+            // 
+            resources.ApplyResources(this.button30, "button30");
+            this.button30.ImageList = this.imageListlTruckEnhancing;
+            this.button30.Name = "button30";
+            this.button30.UseVisualStyleBackColor = true;
+            this.button30.Click += new System.EventHandler(this.btnTruckEnhancing_Click);
+            // 
+            // button19
+            // 
+            resources.ApplyResources(this.button19, "button19");
+            this.button19.ImageList = this.imageListlTruckEnhancing;
+            this.button19.Name = "button19";
+            this.button19.UseVisualStyleBackColor = true;
+            this.button19.Click += new System.EventHandler(this.btnTruckEnhancing_Click);
+            // 
+            // button20
+            // 
+            resources.ApplyResources(this.button20, "button20");
+            this.button20.ImageList = this.imageListlTruckEnhancing;
+            this.button20.Name = "button20";
+            this.button20.UseVisualStyleBackColor = true;
+            this.button20.Click += new System.EventHandler(this.btnTruckEnhancing_Click);
+            // 
+            // button21
+            // 
+            resources.ApplyResources(this.button21, "button21");
+            this.button21.ImageList = this.imageListlTruckEnhancing;
+            this.button21.Name = "button21";
+            this.button21.UseVisualStyleBackColor = true;
+            this.button21.Click += new System.EventHandler(this.btnTruckEnhancing_Click);
+            // 
+            // button22
+            // 
+            resources.ApplyResources(this.button22, "button22");
+            this.button22.ImageList = this.imageListlTruckEnhancing;
+            this.button22.Name = "button22";
+            this.button22.UseVisualStyleBackColor = true;
+            this.button22.Click += new System.EventHandler(this.btnTruckEnhancing_Click);
+            // 
+            // button23
+            // 
+            resources.ApplyResources(this.button23, "button23");
+            this.button23.ImageList = this.imageListlTruckEnhancing;
+            this.button23.Name = "button23";
+            this.button23.UseVisualStyleBackColor = true;
+            this.button23.Click += new System.EventHandler(this.btnTruckEnhancing_Click);
+            // 
+            // button24
+            // 
+            resources.ApplyResources(this.button24, "button24");
+            this.button24.ImageList = this.imageListlTruckEnhancing;
+            this.button24.Name = "button24";
+            this.button24.UseVisualStyleBackColor = true;
+            this.button24.Click += new System.EventHandler(this.btnTruckEnhancing_Click);
+            // 
+            // button13
+            // 
+            resources.ApplyResources(this.button13, "button13");
+            this.button13.ImageList = this.imageListlTruckEnhancing;
+            this.button13.Name = "button13";
+            this.button13.UseVisualStyleBackColor = true;
+            this.button13.Click += new System.EventHandler(this.btnTruckEnhancing_Click);
+            // 
+            // button14
+            // 
+            resources.ApplyResources(this.button14, "button14");
+            this.button14.ImageList = this.imageListlTruckEnhancing;
+            this.button14.Name = "button14";
+            this.button14.UseVisualStyleBackColor = true;
+            this.button14.Click += new System.EventHandler(this.btnTruckEnhancing_Click);
+            // 
+            // button15
+            // 
+            resources.ApplyResources(this.button15, "button15");
+            this.button15.ImageList = this.imageListlTruckEnhancing;
+            this.button15.Name = "button15";
+            this.button15.UseVisualStyleBackColor = true;
+            this.button15.Click += new System.EventHandler(this.btnTruckEnhancing_Click);
+            // 
+            // button16
+            // 
+            resources.ApplyResources(this.button16, "button16");
+            this.button16.ImageList = this.imageListlTruckEnhancing;
+            this.button16.Name = "button16";
+            this.button16.UseVisualStyleBackColor = true;
+            this.button16.Click += new System.EventHandler(this.btnTruckEnhancing_Click);
+            // 
+            // button17
+            // 
+            resources.ApplyResources(this.button17, "button17");
+            this.button17.ImageList = this.imageListlTruckEnhancing;
+            this.button17.Name = "button17";
+            this.button17.UseVisualStyleBackColor = true;
+            this.button17.Click += new System.EventHandler(this.btnTruckEnhancing_Click);
+            // 
+            // button18
+            // 
+            resources.ApplyResources(this.button18, "button18");
+            this.button18.ImageList = this.imageListlTruckEnhancing;
+            this.button18.Name = "button18";
+            this.button18.UseVisualStyleBackColor = true;
+            this.button18.Click += new System.EventHandler(this.btnTruckEnhancing_Click);
+            // 
+            // button7
+            // 
+            resources.ApplyResources(this.button7, "button7");
+            this.button7.ImageList = this.imageListlTruckEnhancing;
+            this.button7.Name = "button7";
+            this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.btnTruckEnhancing_Click);
+            // 
+            // button8
+            // 
+            resources.ApplyResources(this.button8, "button8");
+            this.button8.ImageList = this.imageListlTruckEnhancing;
+            this.button8.Name = "button8";
+            this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.btnTruckEnhancing_Click);
+            // 
+            // button9
+            // 
+            resources.ApplyResources(this.button9, "button9");
+            this.button9.ImageList = this.imageListlTruckEnhancing;
+            this.button9.Name = "button9";
+            this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.btnTruckEnhancing_Click);
+            // 
+            // button10
+            // 
+            resources.ApplyResources(this.button10, "button10");
+            this.button10.ImageList = this.imageListlTruckEnhancing;
+            this.button10.Name = "button10";
+            this.button10.UseVisualStyleBackColor = true;
+            this.button10.Click += new System.EventHandler(this.btnTruckEnhancing_Click);
+            // 
+            // button11
+            // 
+            resources.ApplyResources(this.button11, "button11");
+            this.button11.ImageList = this.imageListlTruckEnhancing;
+            this.button11.Name = "button11";
+            this.button11.UseVisualStyleBackColor = true;
+            this.button11.Click += new System.EventHandler(this.btnTruckEnhancing_Click);
+            // 
+            // button12
+            // 
+            resources.ApplyResources(this.button12, "button12");
+            this.button12.ImageList = this.imageListlTruckEnhancing;
+            this.button12.Name = "button12";
+            this.button12.UseVisualStyleBackColor = true;
+            this.button12.Click += new System.EventHandler(this.btnTruckEnhancing_Click);
             // 
             // chkSendTruck1
             // 
@@ -1258,102 +1965,200 @@
             this.chkSendTruck12.Name = "chkSendTruck12";
             this.chkSendTruck12.UseVisualStyleBackColor = true;
             // 
-            // chkBuyTruck1Res
-            // 
-            resources.ApplyResources(this.chkBuyTruck1Res, "chkBuyTruck1Res");
-            this.chkBuyTruck1Res.Name = "chkBuyTruck1Res";
-            this.chkBuyTruck1Res.UseVisualStyleBackColor = true;
-            // 
-            // chkBuyTruck2Res
-            // 
-            resources.ApplyResources(this.chkBuyTruck2Res, "chkBuyTruck2Res");
-            this.chkBuyTruck2Res.Name = "chkBuyTruck2Res";
-            this.chkBuyTruck2Res.UseVisualStyleBackColor = true;
-            // 
-            // chkBuyTruck3Res
-            // 
-            resources.ApplyResources(this.chkBuyTruck3Res, "chkBuyTruck3Res");
-            this.chkBuyTruck3Res.Name = "chkBuyTruck3Res";
-            this.chkBuyTruck3Res.UseVisualStyleBackColor = true;
-            // 
-            // chkBuyTruck4Res
-            // 
-            resources.ApplyResources(this.chkBuyTruck4Res, "chkBuyTruck4Res");
-            this.chkBuyTruck4Res.Name = "chkBuyTruck4Res";
-            this.chkBuyTruck4Res.UseVisualStyleBackColor = true;
-            // 
-            // chkBuyTruck5Res
-            // 
-            resources.ApplyResources(this.chkBuyTruck5Res, "chkBuyTruck5Res");
-            this.chkBuyTruck5Res.Name = "chkBuyTruck5Res";
-            this.chkBuyTruck5Res.UseVisualStyleBackColor = true;
-            // 
-            // chkBuyTruck6Res
-            // 
-            resources.ApplyResources(this.chkBuyTruck6Res, "chkBuyTruck6Res");
-            this.chkBuyTruck6Res.Name = "chkBuyTruck6Res";
-            this.chkBuyTruck6Res.UseVisualStyleBackColor = true;
-            // 
-            // chkBuyTruck7Res
-            // 
-            resources.ApplyResources(this.chkBuyTruck7Res, "chkBuyTruck7Res");
-            this.chkBuyTruck7Res.Name = "chkBuyTruck7Res";
-            this.chkBuyTruck7Res.UseVisualStyleBackColor = true;
-            // 
-            // chkBuyTruck8Res
-            // 
-            resources.ApplyResources(this.chkBuyTruck8Res, "chkBuyTruck8Res");
-            this.chkBuyTruck8Res.Name = "chkBuyTruck8Res";
-            this.chkBuyTruck8Res.UseVisualStyleBackColor = true;
-            // 
-            // chkBuyTruck9Res
-            // 
-            resources.ApplyResources(this.chkBuyTruck9Res, "chkBuyTruck9Res");
-            this.chkBuyTruck9Res.Name = "chkBuyTruck9Res";
-            this.chkBuyTruck9Res.UseVisualStyleBackColor = true;
-            // 
-            // chkBuyTruck10Res
-            // 
-            resources.ApplyResources(this.chkBuyTruck10Res, "chkBuyTruck10Res");
-            this.chkBuyTruck10Res.Name = "chkBuyTruck10Res";
-            this.chkBuyTruck10Res.UseVisualStyleBackColor = true;
-            // 
-            // chkBuyTruck11Res
-            // 
-            resources.ApplyResources(this.chkBuyTruck11Res, "chkBuyTruck11Res");
-            this.chkBuyTruck11Res.Name = "chkBuyTruck11Res";
-            this.chkBuyTruck11Res.UseVisualStyleBackColor = true;
-            // 
-            // chkBuyTruck12Res
-            // 
-            resources.ApplyResources(this.chkBuyTruck12Res, "chkBuyTruck12Res");
-            this.chkBuyTruck12Res.Name = "chkBuyTruck12Res";
-            this.chkBuyTruck12Res.UseVisualStyleBackColor = true;
-            // 
             // label187
             // 
             resources.ApplyResources(this.label187, "label187");
             this.label187.Name = "label187";
+            this.tblTrucks.SetRowSpan(this.label187, 2);
             // 
             // label188
             // 
             resources.ApplyResources(this.label188, "label188");
+            this.tblTrucks.SetColumnSpan(this.label188, 6);
             this.label188.Name = "label188";
             // 
             // label189
             // 
             resources.ApplyResources(this.label189, "label189");
             this.label189.Name = "label189";
+            this.tblTrucks.SetRowSpan(this.label189, 2);
             // 
-            // label186
+            // button1
             // 
-            resources.ApplyResources(this.label186, "label186");
-            this.label186.Name = "label186";
+            resources.ApplyResources(this.button1, "button1");
+            this.button1.ImageList = this.imageListlTruckEnhancing;
+            this.button1.Name = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.btnTruckEnhancing_Click);
             // 
-            // numericUpDown1
+            // button2
             // 
-            resources.ApplyResources(this.numericUpDown1, "numericUpDown1");
-            this.numericUpDown1.Name = "numericUpDown1";
+            resources.ApplyResources(this.button2, "button2");
+            this.button2.ImageList = this.imageListlTruckEnhancing;
+            this.button2.Name = "button2";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.btnTruckEnhancing_Click);
+            // 
+            // button3
+            // 
+            resources.ApplyResources(this.button3, "button3");
+            this.button3.ImageList = this.imageListlTruckEnhancing;
+            this.button3.Name = "button3";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.btnTruckEnhancing_Click);
+            // 
+            // button4
+            // 
+            resources.ApplyResources(this.button4, "button4");
+            this.button4.ImageList = this.imageListlTruckEnhancing;
+            this.button4.Name = "button4";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.btnTruckEnhancing_Click);
+            // 
+            // button5
+            // 
+            resources.ApplyResources(this.button5, "button5");
+            this.button5.ImageList = this.imageListlTruckEnhancing;
+            this.button5.Name = "button5";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.btnTruckEnhancing_Click);
+            // 
+            // button6
+            // 
+            resources.ApplyResources(this.button6, "button6");
+            this.button6.ImageList = this.imageListlTruckEnhancing;
+            this.button6.Name = "button6";
+            this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.btnTruckEnhancing_Click);
+            // 
+            // button73
+            // 
+            resources.ApplyResources(this.button73, "button73");
+            this.button73.Name = "button73";
+            this.button73.UseVisualStyleBackColor = true;
+            this.button73.Click += new System.EventHandler(this.btnTruckEnhancingCol_Click);
+            // 
+            // button74
+            // 
+            resources.ApplyResources(this.button74, "button74");
+            this.button74.Name = "button74";
+            this.button74.UseVisualStyleBackColor = true;
+            this.button74.Click += new System.EventHandler(this.btnTruckEnhancingCol_Click);
+            // 
+            // button75
+            // 
+            resources.ApplyResources(this.button75, "button75");
+            this.button75.Name = "button75";
+            this.button75.UseVisualStyleBackColor = true;
+            this.button75.Click += new System.EventHandler(this.btnTruckEnhancingCol_Click);
+            // 
+            // button76
+            // 
+            resources.ApplyResources(this.button76, "button76");
+            this.button76.Name = "button76";
+            this.button76.UseVisualStyleBackColor = true;
+            this.button76.Click += new System.EventHandler(this.btnTruckEnhancingCol_Click);
+            // 
+            // button77
+            // 
+            resources.ApplyResources(this.button77, "button77");
+            this.button77.Name = "button77";
+            this.button77.UseVisualStyleBackColor = true;
+            this.button77.Click += new System.EventHandler(this.btnTruckEnhancingCol_Click);
+            // 
+            // button78
+            // 
+            resources.ApplyResources(this.button78, "button78");
+            this.button78.Name = "button78";
+            this.button78.UseVisualStyleBackColor = true;
+            this.button78.Click += new System.EventHandler(this.btnTruckEnhancingCol_Click);
+            // 
+            // label190
+            // 
+            resources.ApplyResources(this.label190, "label190");
+            this.label190.Name = "label190";
+            // 
+            // label191
+            // 
+            resources.ApplyResources(this.label191, "label191");
+            this.label191.Name = "label191";
+            // 
+            // label192
+            // 
+            resources.ApplyResources(this.label192, "label192");
+            this.label192.Name = "label192";
+            // 
+            // label193
+            // 
+            resources.ApplyResources(this.label193, "label193");
+            this.label193.Name = "label193";
+            // 
+            // label194
+            // 
+            resources.ApplyResources(this.label194, "label194");
+            this.label194.Name = "label194";
+            // 
+            // label195
+            // 
+            resources.ApplyResources(this.label195, "label195");
+            this.label195.Name = "label195";
+            // 
+            // label196
+            // 
+            resources.ApplyResources(this.label196, "label196");
+            this.label196.Name = "label196";
+            // 
+            // label197
+            // 
+            resources.ApplyResources(this.label197, "label197");
+            this.label197.Name = "label197";
+            // 
+            // label198
+            // 
+            resources.ApplyResources(this.label198, "label198");
+            this.label198.Name = "label198";
+            // 
+            // label199
+            // 
+            resources.ApplyResources(this.label199, "label199");
+            this.label199.Name = "label199";
+            // 
+            // label200
+            // 
+            resources.ApplyResources(this.label200, "label200");
+            this.label200.Name = "label200";
+            // 
+            // label201
+            // 
+            resources.ApplyResources(this.label201, "label201");
+            this.label201.Name = "label201";
+            // 
+            // groupBox18
+            // 
+            resources.ApplyResources(this.groupBox18, "groupBox18");
+            this.tblTrucks.SetColumnSpan(this.groupBox18, 8);
+            this.groupBox18.Name = "groupBox18";
+            this.groupBox18.TabStop = false;
+            // 
+            // numTrucksMinPowerPoints
+            // 
+            this.numTrucksMinPowerPoints.Increment = new decimal(new int[] {
+            100,
+            0,
+            0,
+            0});
+            resources.ApplyResources(this.numTrucksMinPowerPoints, "numTrucksMinPowerPoints");
+            this.numTrucksMinPowerPoints.Maximum = new decimal(new int[] {
+            999999,
+            0,
+            0,
+            0});
+            this.numTrucksMinPowerPoints.Name = "numTrucksMinPowerPoints";
+            this.numTrucksMinPowerPoints.Value = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
             // 
             // label185
             // 
@@ -1367,6 +2172,456 @@
             this.chkSendTrucks.UseVisualStyleBackColor = true;
             this.chkSendTrucks.CheckedChanged += new System.EventHandler(this.CheckGroupBox_CheckedChanged);
             this.chkSendTrucks.VisibleChanged += new System.EventHandler(this.CheckGroupBox_CheckedChanged);
+            // 
+            // label186
+            // 
+            resources.ApplyResources(this.label186, "label186");
+            this.label186.Name = "label186";
+            // 
+            // pnlDuels
+            // 
+            resources.ApplyResources(this.pnlDuels, "pnlDuels");
+            this.pnlDuels.Controls.Add(this.grpDuelControl);
+            this.pnlDuels.Controls.Add(this.grpAlley);
+            this.pnlDuels.Controls.Add(this.grpExpTorture);
+            this.pnlDuels.Controls.Add(this.grpPolice);
+            this.pnlDuels.Controls.Add(this.grpVictim);
+            this.pnlDuels.Controls.Add(this.grpWerewolf);
+            this.pnlDuels.Name = "pnlDuels";
+            // 
+            // grpDuelControl
+            // 
+            this.grpDuelControl.Controls.Add(this.numMaxDuels);
+            this.grpDuelControl.Controls.Add(this.chkUseMaxDuels);
+            this.grpDuelControl.Controls.Add(this.dtStopDuels);
+            this.grpDuelControl.Controls.Add(this.dtStartDuels);
+            this.grpDuelControl.Controls.Add(this.label117);
+            this.grpDuelControl.Controls.Add(this.label118);
+            this.grpDuelControl.Controls.Add(this.chkUseDuelTimes);
+            resources.ApplyResources(this.grpDuelControl, "grpDuelControl");
+            this.grpDuelControl.Name = "grpDuelControl";
+            this.grpDuelControl.TabStop = false;
+            // 
+            // numMaxDuels
+            // 
+            resources.ApplyResources(this.numMaxDuels, "numMaxDuels");
+            this.numMaxDuels.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
+            this.numMaxDuels.Name = "numMaxDuels";
+            this.numMaxDuels.Value = new decimal(new int[] {
+            120,
+            0,
+            0,
+            0});
+            // 
+            // chkUseMaxDuels
+            // 
+            resources.ApplyResources(this.chkUseMaxDuels, "chkUseMaxDuels");
+            this.chkUseMaxDuels.Name = "chkUseMaxDuels";
+            this.chkUseMaxDuels.UseVisualStyleBackColor = true;
+            // 
+            // dtStopDuels
+            // 
+            resources.ApplyResources(this.dtStopDuels, "dtStopDuels");
+            this.dtStopDuels.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtStopDuels.Name = "dtStopDuels";
+            this.dtStopDuels.ShowUpDown = true;
+            this.dtStopDuels.Value = new System.DateTime(2011, 11, 19, 14, 45, 0, 0);
+            // 
+            // dtStartDuels
+            // 
+            resources.ApplyResources(this.dtStartDuels, "dtStartDuels");
+            this.dtStartDuels.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtStartDuels.Name = "dtStartDuels";
+            this.dtStartDuels.ShowUpDown = true;
+            this.dtStartDuels.Value = new System.DateTime(2011, 11, 19, 14, 45, 0, 0);
+            // 
+            // label117
+            // 
+            resources.ApplyResources(this.label117, "label117");
+            this.label117.ForeColor = System.Drawing.Color.Black;
+            this.label117.Name = "label117";
+            // 
+            // label118
+            // 
+            resources.ApplyResources(this.label118, "label118");
+            this.label118.ForeColor = System.Drawing.Color.Black;
+            this.label118.Name = "label118";
+            // 
+            // chkUseDuelTimes
+            // 
+            resources.ApplyResources(this.chkUseDuelTimes, "chkUseDuelTimes");
+            this.chkUseDuelTimes.Name = "chkUseDuelTimes";
+            this.chkUseDuelTimes.UseVisualStyleBackColor = true;
+            // 
+            // grpAlley
+            // 
+            this.grpAlley.Controls.Add(this.label104);
+            this.grpAlley.Controls.Add(this.cboxOpponent);
+            this.grpAlley.Controls.Add(this.numAlleyMaxLvl);
+            this.grpAlley.Controls.Add(this.numAlleyMinLvl);
+            this.grpAlley.Controls.Add(this.chkMrPlushkin);
+            this.grpAlley.Controls.Add(this.chkUseAgent);
+            this.grpAlley.Controls.Add(this.label25);
+            this.grpAlley.Controls.Add(this.lblWerewolf);
+            this.grpAlley.Controls.Add(this.label24);
+            this.grpAlley.Controls.Add(this.chkUseHomeless);
+            this.grpAlley.Controls.Add(this.cboxWerewolf);
+            this.grpAlley.Controls.Add(this.label89);
+            resources.ApplyResources(this.grpAlley, "grpAlley");
+            this.grpAlley.Name = "grpAlley";
+            this.grpAlley.TabStop = false;
+            // 
+            // label104
+            // 
+            resources.ApplyResources(this.label104, "label104");
+            this.label104.Name = "label104";
+            // 
+            // cboxOpponent
+            // 
+            this.cboxOpponent.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            resources.ApplyResources(this.cboxOpponent, "cboxOpponent");
+            this.cboxOpponent.FormattingEnabled = true;
+            this.cboxOpponent.Items.AddRange(new object[] {
+            resources.GetString("cboxOpponent.Items"),
+            resources.GetString("cboxOpponent.Items1"),
+            resources.GetString("cboxOpponent.Items2"),
+            resources.GetString("cboxOpponent.Items3"),
+            resources.GetString("cboxOpponent.Items4"),
+            resources.GetString("cboxOpponent.Items5")});
+            this.cboxOpponent.Name = "cboxOpponent";
+            // 
+            // numAlleyMaxLvl
+            // 
+            resources.ApplyResources(this.numAlleyMaxLvl, "numAlleyMaxLvl");
+            this.numAlleyMaxLvl.Maximum = new decimal(new int[] {
+            50,
+            0,
+            0,
+            0});
+            this.numAlleyMaxLvl.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numAlleyMaxLvl.Name = "numAlleyMaxLvl";
+            this.numAlleyMaxLvl.Value = new decimal(new int[] {
+            9,
+            0,
+            0,
+            0});
+            // 
+            // numAlleyMinLvl
+            // 
+            resources.ApplyResources(this.numAlleyMinLvl, "numAlleyMinLvl");
+            this.numAlleyMinLvl.Maximum = new decimal(new int[] {
+            50,
+            0,
+            0,
+            0});
+            this.numAlleyMinLvl.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numAlleyMinLvl.Name = "numAlleyMinLvl";
+            this.numAlleyMinLvl.Value = new decimal(new int[] {
+            9,
+            0,
+            0,
+            0});
+            // 
+            // chkMrPlushkin
+            // 
+            resources.ApplyResources(this.chkMrPlushkin, "chkMrPlushkin");
+            this.chkMrPlushkin.Name = "chkMrPlushkin";
+            this.chkMrPlushkin.UseVisualStyleBackColor = true;
+            this.chkMrPlushkin.CheckedChanged += new System.EventHandler(this.cboxWerewolf_SelectedIndexChanged);
+            // 
+            // chkUseAgent
+            // 
+            resources.ApplyResources(this.chkUseAgent, "chkUseAgent");
+            this.chkUseAgent.Name = "chkUseAgent";
+            this.chkUseAgent.UseVisualStyleBackColor = true;
+            this.chkUseAgent.CheckedChanged += new System.EventHandler(this.cboxWerewolf_SelectedIndexChanged);
+            // 
+            // label25
+            // 
+            resources.ApplyResources(this.label25, "label25");
+            this.label25.ForeColor = System.Drawing.Color.Black;
+            this.label25.Name = "label25";
+            // 
+            // lblWerewolf
+            // 
+            resources.ApplyResources(this.lblWerewolf, "lblWerewolf");
+            this.lblWerewolf.ForeColor = System.Drawing.Color.DarkGreen;
+            this.lblWerewolf.Name = "lblWerewolf";
+            // 
+            // label24
+            // 
+            resources.ApplyResources(this.label24, "label24");
+            this.label24.ForeColor = System.Drawing.Color.Black;
+            this.label24.Name = "label24";
+            // 
+            // chkUseHomeless
+            // 
+            resources.ApplyResources(this.chkUseHomeless, "chkUseHomeless");
+            this.chkUseHomeless.Name = "chkUseHomeless";
+            this.chkUseHomeless.UseVisualStyleBackColor = true;
+            // 
+            // cboxWerewolf
+            // 
+            this.cboxWerewolf.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            resources.ApplyResources(this.cboxWerewolf, "cboxWerewolf");
+            this.cboxWerewolf.FormattingEnabled = true;
+            this.cboxWerewolf.Items.AddRange(new object[] {
+            resources.GetString("cboxWerewolf.Items"),
+            resources.GetString("cboxWerewolf.Items1")});
+            this.cboxWerewolf.Name = "cboxWerewolf";
+            this.cboxWerewolf.SelectedIndexChanged += new System.EventHandler(this.cboxWerewolf_SelectedIndexChanged);
+            // 
+            // label89
+            // 
+            resources.ApplyResources(this.label89, "label89");
+            this.label89.ForeColor = System.Drawing.Color.Black;
+            this.label89.Name = "label89";
+            // 
+            // grpExpTorture
+            // 
+            resources.ApplyResources(this.grpExpTorture, "grpExpTorture");
+            this.grpExpTorture.Controls.Add(this.chkExpDoNotProofTorture);
+            this.grpExpTorture.Controls.Add(this.chkExpDoNotUseAngleGrinder);
+            this.grpExpTorture.Controls.Add(this.chkExpDoNotUseAntiSafe);
+            this.grpExpTorture.Controls.Add(this.chkExpDoNotUseIron);
+            this.grpExpTorture.Name = "grpExpTorture";
+            this.grpExpTorture.TabStop = false;
+            // 
+            // chkExpDoNotProofTorture
+            // 
+            resources.ApplyResources(this.chkExpDoNotProofTorture, "chkExpDoNotProofTorture");
+            this.chkExpDoNotProofTorture.Name = "chkExpDoNotProofTorture";
+            this.chkExpDoNotProofTorture.UseVisualStyleBackColor = true;
+            this.chkExpDoNotProofTorture.CheckedChanged += new System.EventHandler(this.CheckGroupBox_CheckedChanged);
+            this.chkExpDoNotProofTorture.VisibleChanged += new System.EventHandler(this.CheckGroupBox_CheckedChanged);
+            // 
+            // chkExpDoNotUseAngleGrinder
+            // 
+            resources.ApplyResources(this.chkExpDoNotUseAngleGrinder, "chkExpDoNotUseAngleGrinder");
+            this.chkExpDoNotUseAngleGrinder.Name = "chkExpDoNotUseAngleGrinder";
+            this.chkExpDoNotUseAngleGrinder.UseVisualStyleBackColor = true;
+            // 
+            // chkExpDoNotUseAntiSafe
+            // 
+            resources.ApplyResources(this.chkExpDoNotUseAntiSafe, "chkExpDoNotUseAntiSafe");
+            this.chkExpDoNotUseAntiSafe.Name = "chkExpDoNotUseAntiSafe";
+            this.chkExpDoNotUseAntiSafe.UseVisualStyleBackColor = true;
+            // 
+            // chkExpDoNotUseIron
+            // 
+            resources.ApplyResources(this.chkExpDoNotUseIron, "chkExpDoNotUseIron");
+            this.chkExpDoNotUseIron.Name = "chkExpDoNotUseIron";
+            this.chkExpDoNotUseIron.UseVisualStyleBackColor = true;
+            // 
+            // grpPolice
+            // 
+            this.grpPolice.BackColor = System.Drawing.SystemColors.Control;
+            this.grpPolice.Controls.Add(this.rbPoliceConnections);
+            this.grpPolice.Controls.Add(this.rbPoliceWait);
+            this.grpPolice.Controls.Add(this.numPayPolice);
+            this.grpPolice.Controls.Add(this.rbPolicePay);
+            resources.ApplyResources(this.grpPolice, "grpPolice");
+            this.grpPolice.Name = "grpPolice";
+            this.grpPolice.TabStop = false;
+            // 
+            // rbPoliceConnections
+            // 
+            resources.ApplyResources(this.rbPoliceConnections, "rbPoliceConnections");
+            this.rbPoliceConnections.Checked = true;
+            this.rbPoliceConnections.Name = "rbPoliceConnections";
+            this.rbPoliceConnections.TabStop = true;
+            this.rbPoliceConnections.UseVisualStyleBackColor = true;
+            // 
+            // rbPoliceWait
+            // 
+            resources.ApplyResources(this.rbPoliceWait, "rbPoliceWait");
+            this.rbPoliceWait.Name = "rbPoliceWait";
+            this.rbPoliceWait.UseVisualStyleBackColor = true;
+            // 
+            // numPayPolice
+            // 
+            resources.ApplyResources(this.numPayPolice, "numPayPolice");
+            this.numPayPolice.Maximum = new decimal(new int[] {
+            5,
+            0,
+            0,
+            0});
+            this.numPayPolice.Minimum = new decimal(new int[] {
+            5,
+            0,
+            0,
+            -2147483648});
+            this.numPayPolice.Name = "numPayPolice";
+            // 
+            // rbPolicePay
+            // 
+            resources.ApplyResources(this.rbPolicePay, "rbPolicePay");
+            this.rbPolicePay.Name = "rbPolicePay";
+            this.rbPolicePay.UseVisualStyleBackColor = true;
+            // 
+            // grpVictim
+            // 
+            this.grpVictim.Controls.Add(this.label60);
+            this.grpVictim.Controls.Add(this.label23);
+            this.grpVictim.Controls.Add(this.chkUseOnlyHomelessVictims);
+            this.grpVictim.Controls.Add(this.chkUseVictims);
+            this.grpVictim.Controls.Add(this.label22);
+            this.grpVictim.Controls.Add(this.label21);
+            this.grpVictim.Controls.Add(this.numDeleteVictim);
+            this.grpVictim.Controls.Add(this.numAddVictim);
+            resources.ApplyResources(this.grpVictim, "grpVictim");
+            this.grpVictim.Name = "grpVictim";
+            this.grpVictim.TabStop = false;
+            // 
+            // label60
+            // 
+            this.label60.Image = global::Moswar.Properties.Resources.Money;
+            resources.ApplyResources(this.label60, "label60");
+            this.label60.Name = "label60";
+            // 
+            // label23
+            // 
+            this.label23.Image = global::Moswar.Properties.Resources.Money;
+            resources.ApplyResources(this.label23, "label23");
+            this.label23.Name = "label23";
+            // 
+            // chkUseOnlyHomelessVictims
+            // 
+            resources.ApplyResources(this.chkUseOnlyHomelessVictims, "chkUseOnlyHomelessVictims");
+            this.chkUseOnlyHomelessVictims.Checked = true;
+            this.chkUseOnlyHomelessVictims.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.chkUseOnlyHomelessVictims.Name = "chkUseOnlyHomelessVictims";
+            this.chkUseOnlyHomelessVictims.UseVisualStyleBackColor = true;
+            // 
+            // chkUseVictims
+            // 
+            resources.ApplyResources(this.chkUseVictims, "chkUseVictims");
+            this.chkUseVictims.Checked = true;
+            this.chkUseVictims.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.chkUseVictims.Name = "chkUseVictims";
+            this.chkUseVictims.UseVisualStyleBackColor = true;
+            this.chkUseVictims.CheckedChanged += new System.EventHandler(this.CheckGroupBox_CheckedChanged);
+            this.chkUseVictims.VisibleChanged += new System.EventHandler(this.CheckGroupBox_CheckedChanged);
+            // 
+            // label22
+            // 
+            resources.ApplyResources(this.label22, "label22");
+            this.label22.Name = "label22";
+            // 
+            // label21
+            // 
+            resources.ApplyResources(this.label21, "label21");
+            this.label21.Name = "label21";
+            // 
+            // numDeleteVictim
+            // 
+            resources.ApplyResources(this.numDeleteVictim, "numDeleteVictim");
+            this.numDeleteVictim.Maximum = new decimal(new int[] {
+            1000000,
+            0,
+            0,
+            0});
+            this.numDeleteVictim.Name = "numDeleteVictim";
+            this.numDeleteVictim.Value = new decimal(new int[] {
+            300,
+            0,
+            0,
+            0});
+            // 
+            // numAddVictim
+            // 
+            resources.ApplyResources(this.numAddVictim, "numAddVictim");
+            this.numAddVictim.Maximum = new decimal(new int[] {
+            1000000,
+            0,
+            0,
+            0});
+            this.numAddVictim.Name = "numAddVictim";
+            this.numAddVictim.Value = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
+            // 
+            // grpWerewolf
+            // 
+            this.grpWerewolf.Controls.Add(this.pboxWerewolfPower);
+            this.grpWerewolf.Controls.Add(this.cboxWerewolfPrice);
+            this.grpWerewolf.Controls.Add(this.label85);
+            this.grpWerewolf.Controls.Add(this.cboxWerewolfLevel);
+            this.grpWerewolf.Controls.Add(this.label86);
+            this.grpWerewolf.Controls.Add(this.label84);
+            resources.ApplyResources(this.grpWerewolf, "grpWerewolf");
+            this.grpWerewolf.Name = "grpWerewolf";
+            this.grpWerewolf.TabStop = false;
+            // 
+            // pboxWerewolfPower
+            // 
+            this.pboxWerewolfPower.BackgroundImage = global::Moswar.Properties.Resources.PowerStar;
+            resources.ApplyResources(this.pboxWerewolfPower, "pboxWerewolfPower");
+            this.pboxWerewolfPower.Name = "pboxWerewolfPower";
+            this.pboxWerewolfPower.TabStop = false;
+            // 
+            // cboxWerewolfPrice
+            // 
+            this.cboxWerewolfPrice.DisplayMember = "0";
+            this.cboxWerewolfPrice.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            resources.ApplyResources(this.cboxWerewolfPrice, "cboxWerewolfPrice");
+            this.cboxWerewolfPrice.FormattingEnabled = true;
+            this.cboxWerewolfPrice.Items.AddRange(new object[] {
+            resources.GetString("cboxWerewolfPrice.Items"),
+            resources.GetString("cboxWerewolfPrice.Items1"),
+            resources.GetString("cboxWerewolfPrice.Items2"),
+            resources.GetString("cboxWerewolfPrice.Items3"),
+            resources.GetString("cboxWerewolfPrice.Items4"),
+            resources.GetString("cboxWerewolfPrice.Items5")});
+            this.cboxWerewolfPrice.Name = "cboxWerewolfPrice";
+            this.cboxWerewolfPrice.SelectedIndexChanged += new System.EventHandler(this.cboxWerewolf_SelectedIndexChanged);
+            // 
+            // label85
+            // 
+            this.label85.Image = global::Moswar.Properties.Resources.Med;
+            resources.ApplyResources(this.label85, "label85");
+            this.label85.Name = "label85";
+            // 
+            // cboxWerewolfLevel
+            // 
+            this.cboxWerewolfLevel.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            resources.ApplyResources(this.cboxWerewolfLevel, "cboxWerewolfLevel");
+            this.cboxWerewolfLevel.FormattingEnabled = true;
+            this.cboxWerewolfLevel.Items.AddRange(new object[] {
+            resources.GetString("cboxWerewolfLevel.Items"),
+            resources.GetString("cboxWerewolfLevel.Items1"),
+            resources.GetString("cboxWerewolfLevel.Items2"),
+            resources.GetString("cboxWerewolfLevel.Items3"),
+            resources.GetString("cboxWerewolfLevel.Items4"),
+            resources.GetString("cboxWerewolfLevel.Items5")});
+            this.cboxWerewolfLevel.Name = "cboxWerewolfLevel";
+            this.cboxWerewolfLevel.SelectedIndexChanged += new System.EventHandler(this.cboxGrpFight_SelectedIndexChanged);
+            // 
+            // label86
+            // 
+            resources.ApplyResources(this.label86, "label86");
+            this.label86.ForeColor = System.Drawing.Color.Black;
+            this.label86.Name = "label86";
+            // 
+            // label84
+            // 
+            resources.ApplyResources(this.label84, "label84");
+            this.label84.ForeColor = System.Drawing.Color.Black;
+            this.label84.Name = "label84";
             // 
             // pnlReturnBonus
             // 
@@ -2998,451 +4253,6 @@
             resources.ApplyResources(this.chkMafiaUseLicence, "chkMafiaUseLicence");
             this.chkMafiaUseLicence.Name = "chkMafiaUseLicence";
             this.chkMafiaUseLicence.UseVisualStyleBackColor = true;
-            // 
-            // pnlDuels
-            // 
-            resources.ApplyResources(this.pnlDuels, "pnlDuels");
-            this.pnlDuels.Controls.Add(this.grpDuelControl);
-            this.pnlDuels.Controls.Add(this.grpAlley);
-            this.pnlDuels.Controls.Add(this.grpExpTorture);
-            this.pnlDuels.Controls.Add(this.grpPolice);
-            this.pnlDuels.Controls.Add(this.grpVictim);
-            this.pnlDuels.Controls.Add(this.grpWerewolf);
-            this.pnlDuels.Name = "pnlDuels";
-            // 
-            // grpDuelControl
-            // 
-            this.grpDuelControl.Controls.Add(this.numMaxDuels);
-            this.grpDuelControl.Controls.Add(this.chkUseMaxDuels);
-            this.grpDuelControl.Controls.Add(this.dtStopDuels);
-            this.grpDuelControl.Controls.Add(this.dtStartDuels);
-            this.grpDuelControl.Controls.Add(this.label117);
-            this.grpDuelControl.Controls.Add(this.label118);
-            this.grpDuelControl.Controls.Add(this.chkUseDuelTimes);
-            resources.ApplyResources(this.grpDuelControl, "grpDuelControl");
-            this.grpDuelControl.Name = "grpDuelControl";
-            this.grpDuelControl.TabStop = false;
-            // 
-            // numMaxDuels
-            // 
-            resources.ApplyResources(this.numMaxDuels, "numMaxDuels");
-            this.numMaxDuels.Maximum = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
-            this.numMaxDuels.Name = "numMaxDuels";
-            this.numMaxDuels.Value = new decimal(new int[] {
-            120,
-            0,
-            0,
-            0});
-            // 
-            // chkUseMaxDuels
-            // 
-            resources.ApplyResources(this.chkUseMaxDuels, "chkUseMaxDuels");
-            this.chkUseMaxDuels.Name = "chkUseMaxDuels";
-            this.chkUseMaxDuels.UseVisualStyleBackColor = true;
-            // 
-            // dtStopDuels
-            // 
-            resources.ApplyResources(this.dtStopDuels, "dtStopDuels");
-            this.dtStopDuels.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtStopDuels.Name = "dtStopDuels";
-            this.dtStopDuels.ShowUpDown = true;
-            this.dtStopDuels.Value = new System.DateTime(2011, 11, 19, 14, 45, 0, 0);
-            // 
-            // dtStartDuels
-            // 
-            resources.ApplyResources(this.dtStartDuels, "dtStartDuels");
-            this.dtStartDuels.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtStartDuels.Name = "dtStartDuels";
-            this.dtStartDuels.ShowUpDown = true;
-            this.dtStartDuels.Value = new System.DateTime(2011, 11, 19, 14, 45, 0, 0);
-            // 
-            // label117
-            // 
-            resources.ApplyResources(this.label117, "label117");
-            this.label117.ForeColor = System.Drawing.Color.Black;
-            this.label117.Name = "label117";
-            // 
-            // label118
-            // 
-            resources.ApplyResources(this.label118, "label118");
-            this.label118.ForeColor = System.Drawing.Color.Black;
-            this.label118.Name = "label118";
-            // 
-            // chkUseDuelTimes
-            // 
-            resources.ApplyResources(this.chkUseDuelTimes, "chkUseDuelTimes");
-            this.chkUseDuelTimes.Name = "chkUseDuelTimes";
-            this.chkUseDuelTimes.UseVisualStyleBackColor = true;
-            // 
-            // grpAlley
-            // 
-            this.grpAlley.Controls.Add(this.label104);
-            this.grpAlley.Controls.Add(this.cboxOpponent);
-            this.grpAlley.Controls.Add(this.numAlleyMaxLvl);
-            this.grpAlley.Controls.Add(this.numAlleyMinLvl);
-            this.grpAlley.Controls.Add(this.chkMrPlushkin);
-            this.grpAlley.Controls.Add(this.chkUseAgent);
-            this.grpAlley.Controls.Add(this.label25);
-            this.grpAlley.Controls.Add(this.lblWerewolf);
-            this.grpAlley.Controls.Add(this.label24);
-            this.grpAlley.Controls.Add(this.chkUseHomeless);
-            this.grpAlley.Controls.Add(this.cboxWerewolf);
-            this.grpAlley.Controls.Add(this.label89);
-            resources.ApplyResources(this.grpAlley, "grpAlley");
-            this.grpAlley.Name = "grpAlley";
-            this.grpAlley.TabStop = false;
-            // 
-            // label104
-            // 
-            resources.ApplyResources(this.label104, "label104");
-            this.label104.Name = "label104";
-            // 
-            // cboxOpponent
-            // 
-            this.cboxOpponent.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            resources.ApplyResources(this.cboxOpponent, "cboxOpponent");
-            this.cboxOpponent.FormattingEnabled = true;
-            this.cboxOpponent.Items.AddRange(new object[] {
-            resources.GetString("cboxOpponent.Items"),
-            resources.GetString("cboxOpponent.Items1"),
-            resources.GetString("cboxOpponent.Items2"),
-            resources.GetString("cboxOpponent.Items3"),
-            resources.GetString("cboxOpponent.Items4"),
-            resources.GetString("cboxOpponent.Items5")});
-            this.cboxOpponent.Name = "cboxOpponent";
-            // 
-            // numAlleyMaxLvl
-            // 
-            resources.ApplyResources(this.numAlleyMaxLvl, "numAlleyMaxLvl");
-            this.numAlleyMaxLvl.Maximum = new decimal(new int[] {
-            50,
-            0,
-            0,
-            0});
-            this.numAlleyMaxLvl.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.numAlleyMaxLvl.Name = "numAlleyMaxLvl";
-            this.numAlleyMaxLvl.Value = new decimal(new int[] {
-            9,
-            0,
-            0,
-            0});
-            // 
-            // numAlleyMinLvl
-            // 
-            resources.ApplyResources(this.numAlleyMinLvl, "numAlleyMinLvl");
-            this.numAlleyMinLvl.Maximum = new decimal(new int[] {
-            50,
-            0,
-            0,
-            0});
-            this.numAlleyMinLvl.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.numAlleyMinLvl.Name = "numAlleyMinLvl";
-            this.numAlleyMinLvl.Value = new decimal(new int[] {
-            9,
-            0,
-            0,
-            0});
-            // 
-            // chkMrPlushkin
-            // 
-            resources.ApplyResources(this.chkMrPlushkin, "chkMrPlushkin");
-            this.chkMrPlushkin.Name = "chkMrPlushkin";
-            this.chkMrPlushkin.UseVisualStyleBackColor = true;
-            this.chkMrPlushkin.CheckedChanged += new System.EventHandler(this.cboxWerewolf_SelectedIndexChanged);
-            // 
-            // chkUseAgent
-            // 
-            resources.ApplyResources(this.chkUseAgent, "chkUseAgent");
-            this.chkUseAgent.Name = "chkUseAgent";
-            this.chkUseAgent.UseVisualStyleBackColor = true;
-            this.chkUseAgent.CheckedChanged += new System.EventHandler(this.cboxWerewolf_SelectedIndexChanged);
-            // 
-            // label25
-            // 
-            resources.ApplyResources(this.label25, "label25");
-            this.label25.ForeColor = System.Drawing.Color.Black;
-            this.label25.Name = "label25";
-            // 
-            // lblWerewolf
-            // 
-            resources.ApplyResources(this.lblWerewolf, "lblWerewolf");
-            this.lblWerewolf.ForeColor = System.Drawing.Color.DarkGreen;
-            this.lblWerewolf.Name = "lblWerewolf";
-            // 
-            // label24
-            // 
-            resources.ApplyResources(this.label24, "label24");
-            this.label24.ForeColor = System.Drawing.Color.Black;
-            this.label24.Name = "label24";
-            // 
-            // chkUseHomeless
-            // 
-            resources.ApplyResources(this.chkUseHomeless, "chkUseHomeless");
-            this.chkUseHomeless.Name = "chkUseHomeless";
-            this.chkUseHomeless.UseVisualStyleBackColor = true;
-            // 
-            // cboxWerewolf
-            // 
-            this.cboxWerewolf.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            resources.ApplyResources(this.cboxWerewolf, "cboxWerewolf");
-            this.cboxWerewolf.FormattingEnabled = true;
-            this.cboxWerewolf.Items.AddRange(new object[] {
-            resources.GetString("cboxWerewolf.Items"),
-            resources.GetString("cboxWerewolf.Items1")});
-            this.cboxWerewolf.Name = "cboxWerewolf";
-            this.cboxWerewolf.SelectedIndexChanged += new System.EventHandler(this.cboxWerewolf_SelectedIndexChanged);
-            // 
-            // label89
-            // 
-            resources.ApplyResources(this.label89, "label89");
-            this.label89.ForeColor = System.Drawing.Color.Black;
-            this.label89.Name = "label89";
-            // 
-            // grpExpTorture
-            // 
-            resources.ApplyResources(this.grpExpTorture, "grpExpTorture");
-            this.grpExpTorture.Controls.Add(this.chkExpDoNotProofTorture);
-            this.grpExpTorture.Controls.Add(this.chkExpDoNotUseAngleGrinder);
-            this.grpExpTorture.Controls.Add(this.chkExpDoNotUseAntiSafe);
-            this.grpExpTorture.Controls.Add(this.chkExpDoNotUseIron);
-            this.grpExpTorture.Name = "grpExpTorture";
-            this.grpExpTorture.TabStop = false;
-            // 
-            // chkExpDoNotProofTorture
-            // 
-            resources.ApplyResources(this.chkExpDoNotProofTorture, "chkExpDoNotProofTorture");
-            this.chkExpDoNotProofTorture.Name = "chkExpDoNotProofTorture";
-            this.chkExpDoNotProofTorture.UseVisualStyleBackColor = true;
-            this.chkExpDoNotProofTorture.CheckedChanged += new System.EventHandler(this.CheckGroupBox_CheckedChanged);
-            this.chkExpDoNotProofTorture.VisibleChanged += new System.EventHandler(this.CheckGroupBox_CheckedChanged);
-            // 
-            // chkExpDoNotUseAngleGrinder
-            // 
-            resources.ApplyResources(this.chkExpDoNotUseAngleGrinder, "chkExpDoNotUseAngleGrinder");
-            this.chkExpDoNotUseAngleGrinder.Name = "chkExpDoNotUseAngleGrinder";
-            this.chkExpDoNotUseAngleGrinder.UseVisualStyleBackColor = true;
-            // 
-            // chkExpDoNotUseAntiSafe
-            // 
-            resources.ApplyResources(this.chkExpDoNotUseAntiSafe, "chkExpDoNotUseAntiSafe");
-            this.chkExpDoNotUseAntiSafe.Name = "chkExpDoNotUseAntiSafe";
-            this.chkExpDoNotUseAntiSafe.UseVisualStyleBackColor = true;
-            // 
-            // chkExpDoNotUseIron
-            // 
-            resources.ApplyResources(this.chkExpDoNotUseIron, "chkExpDoNotUseIron");
-            this.chkExpDoNotUseIron.Name = "chkExpDoNotUseIron";
-            this.chkExpDoNotUseIron.UseVisualStyleBackColor = true;
-            // 
-            // grpPolice
-            // 
-            this.grpPolice.BackColor = System.Drawing.SystemColors.Control;
-            this.grpPolice.Controls.Add(this.rbPoliceConnections);
-            this.grpPolice.Controls.Add(this.rbPoliceWait);
-            this.grpPolice.Controls.Add(this.numPayPolice);
-            this.grpPolice.Controls.Add(this.rbPolicePay);
-            resources.ApplyResources(this.grpPolice, "grpPolice");
-            this.grpPolice.Name = "grpPolice";
-            this.grpPolice.TabStop = false;
-            // 
-            // rbPoliceConnections
-            // 
-            resources.ApplyResources(this.rbPoliceConnections, "rbPoliceConnections");
-            this.rbPoliceConnections.Checked = true;
-            this.rbPoliceConnections.Name = "rbPoliceConnections";
-            this.rbPoliceConnections.TabStop = true;
-            this.rbPoliceConnections.UseVisualStyleBackColor = true;
-            // 
-            // rbPoliceWait
-            // 
-            resources.ApplyResources(this.rbPoliceWait, "rbPoliceWait");
-            this.rbPoliceWait.Name = "rbPoliceWait";
-            this.rbPoliceWait.UseVisualStyleBackColor = true;
-            // 
-            // numPayPolice
-            // 
-            resources.ApplyResources(this.numPayPolice, "numPayPolice");
-            this.numPayPolice.Maximum = new decimal(new int[] {
-            5,
-            0,
-            0,
-            0});
-            this.numPayPolice.Minimum = new decimal(new int[] {
-            5,
-            0,
-            0,
-            -2147483648});
-            this.numPayPolice.Name = "numPayPolice";
-            // 
-            // rbPolicePay
-            // 
-            resources.ApplyResources(this.rbPolicePay, "rbPolicePay");
-            this.rbPolicePay.Name = "rbPolicePay";
-            this.rbPolicePay.UseVisualStyleBackColor = true;
-            // 
-            // grpVictim
-            // 
-            this.grpVictim.Controls.Add(this.label60);
-            this.grpVictim.Controls.Add(this.label23);
-            this.grpVictim.Controls.Add(this.chkUseOnlyHomelessVictims);
-            this.grpVictim.Controls.Add(this.chkUseVictims);
-            this.grpVictim.Controls.Add(this.label22);
-            this.grpVictim.Controls.Add(this.label21);
-            this.grpVictim.Controls.Add(this.numDeleteVictim);
-            this.grpVictim.Controls.Add(this.numAddVictim);
-            resources.ApplyResources(this.grpVictim, "grpVictim");
-            this.grpVictim.Name = "grpVictim";
-            this.grpVictim.TabStop = false;
-            // 
-            // label60
-            // 
-            this.label60.Image = global::Moswar.Properties.Resources.Money;
-            resources.ApplyResources(this.label60, "label60");
-            this.label60.Name = "label60";
-            // 
-            // label23
-            // 
-            this.label23.Image = global::Moswar.Properties.Resources.Money;
-            resources.ApplyResources(this.label23, "label23");
-            this.label23.Name = "label23";
-            // 
-            // chkUseOnlyHomelessVictims
-            // 
-            resources.ApplyResources(this.chkUseOnlyHomelessVictims, "chkUseOnlyHomelessVictims");
-            this.chkUseOnlyHomelessVictims.Checked = true;
-            this.chkUseOnlyHomelessVictims.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.chkUseOnlyHomelessVictims.Name = "chkUseOnlyHomelessVictims";
-            this.chkUseOnlyHomelessVictims.UseVisualStyleBackColor = true;
-            // 
-            // chkUseVictims
-            // 
-            resources.ApplyResources(this.chkUseVictims, "chkUseVictims");
-            this.chkUseVictims.Checked = true;
-            this.chkUseVictims.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.chkUseVictims.Name = "chkUseVictims";
-            this.chkUseVictims.UseVisualStyleBackColor = true;
-            this.chkUseVictims.CheckedChanged += new System.EventHandler(this.CheckGroupBox_CheckedChanged);
-            this.chkUseVictims.VisibleChanged += new System.EventHandler(this.CheckGroupBox_CheckedChanged);
-            // 
-            // label22
-            // 
-            resources.ApplyResources(this.label22, "label22");
-            this.label22.Name = "label22";
-            // 
-            // label21
-            // 
-            resources.ApplyResources(this.label21, "label21");
-            this.label21.Name = "label21";
-            // 
-            // numDeleteVictim
-            // 
-            resources.ApplyResources(this.numDeleteVictim, "numDeleteVictim");
-            this.numDeleteVictim.Maximum = new decimal(new int[] {
-            1000000,
-            0,
-            0,
-            0});
-            this.numDeleteVictim.Name = "numDeleteVictim";
-            this.numDeleteVictim.Value = new decimal(new int[] {
-            300,
-            0,
-            0,
-            0});
-            // 
-            // numAddVictim
-            // 
-            resources.ApplyResources(this.numAddVictim, "numAddVictim");
-            this.numAddVictim.Maximum = new decimal(new int[] {
-            1000000,
-            0,
-            0,
-            0});
-            this.numAddVictim.Name = "numAddVictim";
-            this.numAddVictim.Value = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
-            // 
-            // grpWerewolf
-            // 
-            this.grpWerewolf.Controls.Add(this.pboxWerewolfPower);
-            this.grpWerewolf.Controls.Add(this.cboxWerewolfPrice);
-            this.grpWerewolf.Controls.Add(this.label85);
-            this.grpWerewolf.Controls.Add(this.cboxWerewolfLevel);
-            this.grpWerewolf.Controls.Add(this.label86);
-            this.grpWerewolf.Controls.Add(this.label84);
-            resources.ApplyResources(this.grpWerewolf, "grpWerewolf");
-            this.grpWerewolf.Name = "grpWerewolf";
-            this.grpWerewolf.TabStop = false;
-            // 
-            // pboxWerewolfPower
-            // 
-            this.pboxWerewolfPower.BackgroundImage = global::Moswar.Properties.Resources.PowerStar;
-            resources.ApplyResources(this.pboxWerewolfPower, "pboxWerewolfPower");
-            this.pboxWerewolfPower.Name = "pboxWerewolfPower";
-            this.pboxWerewolfPower.TabStop = false;
-            // 
-            // cboxWerewolfPrice
-            // 
-            this.cboxWerewolfPrice.DisplayMember = "0";
-            this.cboxWerewolfPrice.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            resources.ApplyResources(this.cboxWerewolfPrice, "cboxWerewolfPrice");
-            this.cboxWerewolfPrice.FormattingEnabled = true;
-            this.cboxWerewolfPrice.Items.AddRange(new object[] {
-            resources.GetString("cboxWerewolfPrice.Items"),
-            resources.GetString("cboxWerewolfPrice.Items1"),
-            resources.GetString("cboxWerewolfPrice.Items2"),
-            resources.GetString("cboxWerewolfPrice.Items3"),
-            resources.GetString("cboxWerewolfPrice.Items4"),
-            resources.GetString("cboxWerewolfPrice.Items5")});
-            this.cboxWerewolfPrice.Name = "cboxWerewolfPrice";
-            this.cboxWerewolfPrice.SelectedIndexChanged += new System.EventHandler(this.cboxWerewolf_SelectedIndexChanged);
-            // 
-            // label85
-            // 
-            this.label85.Image = global::Moswar.Properties.Resources.Med;
-            resources.ApplyResources(this.label85, "label85");
-            this.label85.Name = "label85";
-            // 
-            // cboxWerewolfLevel
-            // 
-            this.cboxWerewolfLevel.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            resources.ApplyResources(this.cboxWerewolfLevel, "cboxWerewolfLevel");
-            this.cboxWerewolfLevel.FormattingEnabled = true;
-            this.cboxWerewolfLevel.Items.AddRange(new object[] {
-            resources.GetString("cboxWerewolfLevel.Items"),
-            resources.GetString("cboxWerewolfLevel.Items1"),
-            resources.GetString("cboxWerewolfLevel.Items2"),
-            resources.GetString("cboxWerewolfLevel.Items3"),
-            resources.GetString("cboxWerewolfLevel.Items4"),
-            resources.GetString("cboxWerewolfLevel.Items5")});
-            this.cboxWerewolfLevel.Name = "cboxWerewolfLevel";
-            this.cboxWerewolfLevel.SelectedIndexChanged += new System.EventHandler(this.cboxGrpFight_SelectedIndexChanged);
-            // 
-            // label86
-            // 
-            resources.ApplyResources(this.label86, "label86");
-            this.label86.ForeColor = System.Drawing.Color.Black;
-            this.label86.Name = "label86";
-            // 
-            // label84
-            // 
-            resources.ApplyResources(this.label84, "label84");
-            this.label84.ForeColor = System.Drawing.Color.Black;
-            this.label84.Name = "label84";
             // 
             // pnlHunterClub
             // 
@@ -7620,6 +8430,12 @@
             resources.ApplyResources(this.MenuItemEnterAuctionBet, "MenuItemEnterAuctionBet");
             this.MenuItemEnterAuctionBet.Click += new System.EventHandler(this.MenuItemEnterAuctionBet_Click);
             // 
+            // MenuItemSendGiftFix
+            // 
+            this.MenuItemSendGiftFix.Name = "MenuItemSendGiftFix";
+            resources.ApplyResources(this.MenuItemSendGiftFix, "MenuItemSendGiftFix");
+            this.MenuItemSendGiftFix.Click += new System.EventHandler(this.MenuItemSendGiftFix_Click);
+            // 
             // btnFunctions
             // 
             resources.ApplyResources(this.btnFunctions, "btnFunctions");
@@ -7628,11 +8444,20 @@
             this.btnFunctions.UseVisualStyleBackColor = true;
             this.btnFunctions.Click += new System.EventHandler(this.btnFunctions_Click);
             // 
-            // MenuItemSendGiftFix
+            // toolTip
             // 
-            this.MenuItemSendGiftFix.Name = "MenuItemSendGiftFix";
-            resources.ApplyResources(this.MenuItemSendGiftFix, "MenuItemSendGiftFix");
-            this.MenuItemSendGiftFix.Click += new System.EventHandler(this.MenuItemSendGiftFix_Click);
+            this.toolTip.AutomaticDelay = 0;
+            this.toolTip.AutoPopDelay = 30000;
+            this.toolTip.InitialDelay = 1;
+            this.toolTip.ReshowDelay = 1;
+            this.toolTip.UseFading = false;
+            // 
+            // label203
+            // 
+            this.label203.Image = global::Moswar.Properties.Resources.Question;
+            resources.ApplyResources(this.label203, "label203");
+            this.label203.Name = "label203";
+            this.toolTip.SetToolTip(this.label203, resources.GetString("label203.ToolTip"));
             // 
             // frmMain
             // 
@@ -7664,9 +8489,29 @@
             this.groupBox16.PerformLayout();
             this.groupBox17.ResumeLayout(false);
             this.groupBox17.PerformLayout();
-            this.tableLayoutPanel2.ResumeLayout(false);
-            this.tableLayoutPanel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            this.tblTrucks.ResumeLayout(false);
+            this.tblTrucks.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numTrucksMinPowerPoints)).EndInit();
+            this.pnlDuels.ResumeLayout(false);
+            this.grpDuelControl.ResumeLayout(false);
+            this.grpDuelControl.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numMaxDuels)).EndInit();
+            this.grpAlley.ResumeLayout(false);
+            this.grpAlley.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numAlleyMaxLvl)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numAlleyMinLvl)).EndInit();
+            this.grpExpTorture.ResumeLayout(false);
+            this.grpExpTorture.PerformLayout();
+            this.grpPolice.ResumeLayout(false);
+            this.grpPolice.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numPayPolice)).EndInit();
+            this.grpVictim.ResumeLayout(false);
+            this.grpVictim.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numDeleteVictim)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numAddVictim)).EndInit();
+            this.grpWerewolf.ResumeLayout(false);
+            this.grpWerewolf.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pboxWerewolfPower)).EndInit();
             this.pnlReturnBonus.ResumeLayout(false);
             this.pnlReturnBonus.PerformLayout();
             this.pnlInventory.ResumeLayout(false);
@@ -7740,26 +8585,6 @@
             this.pnlGroupFightMafia.ResumeLayout(false);
             this.groupBox12.ResumeLayout(false);
             this.groupBox12.PerformLayout();
-            this.pnlDuels.ResumeLayout(false);
-            this.grpDuelControl.ResumeLayout(false);
-            this.grpDuelControl.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numMaxDuels)).EndInit();
-            this.grpAlley.ResumeLayout(false);
-            this.grpAlley.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numAlleyMaxLvl)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numAlleyMinLvl)).EndInit();
-            this.grpExpTorture.ResumeLayout(false);
-            this.grpExpTorture.PerformLayout();
-            this.grpPolice.ResumeLayout(false);
-            this.grpPolice.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numPayPolice)).EndInit();
-            this.grpVictim.ResumeLayout(false);
-            this.grpVictim.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numDeleteVictim)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numAddVictim)).EndInit();
-            this.grpWerewolf.ResumeLayout(false);
-            this.grpWerewolf.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pboxWerewolfPower)).EndInit();
             this.pnlHunterClub.ResumeLayout(false);
             this.pnlHunterClub.PerformLayout();
             this.groupBox11.ResumeLayout(false);
@@ -8632,7 +9457,7 @@
         private System.Windows.Forms.GroupBox groupBox16;
         private System.Windows.Forms.CheckBox chkSendTrucks;
         private System.Windows.Forms.GroupBox groupBox17;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
+        private System.Windows.Forms.TableLayoutPanel tblTrucks;
         private System.Windows.Forms.CheckBox chkSendTruck1;
         private System.Windows.Forms.CheckBox chkSendTruck2;
         private System.Windows.Forms.CheckBox chkSendTruck3;
@@ -8645,20 +9470,8 @@
         private System.Windows.Forms.CheckBox chkSendTruck10;
         private System.Windows.Forms.CheckBox chkSendTruck11;
         private System.Windows.Forms.CheckBox chkSendTruck12;
-        private System.Windows.Forms.CheckBox chkBuyTruck1Res;
-        private System.Windows.Forms.CheckBox chkBuyTruck2Res;
-        private System.Windows.Forms.CheckBox chkBuyTruck3Res;
-        private System.Windows.Forms.CheckBox chkBuyTruck4Res;
-        private System.Windows.Forms.CheckBox chkBuyTruck5Res;
-        private System.Windows.Forms.CheckBox chkBuyTruck6Res;
-        private System.Windows.Forms.CheckBox chkBuyTruck7Res;
-        private System.Windows.Forms.CheckBox chkBuyTruck8Res;
-        private System.Windows.Forms.CheckBox chkBuyTruck9Res;
-        private System.Windows.Forms.CheckBox chkBuyTruck10Res;
-        private System.Windows.Forms.CheckBox chkBuyTruck11Res;
-        private System.Windows.Forms.CheckBox chkBuyTruck12Res;
         private System.Windows.Forms.Label label186;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.NumericUpDown numTrucksMinPowerPoints;
         private System.Windows.Forms.Label label185;
         private System.Windows.Forms.Label label187;
         private System.Windows.Forms.Label label188;
@@ -8670,7 +9483,102 @@
         private System.Windows.Forms.Button btnFunctions;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private System.Windows.Forms.ToolStripMenuItem MenuItemEnterAuctionBet;
-        private System.Windows.Forms.ToolStripMenuItem MenuItemSendGiftFix;      
+        private System.Windows.Forms.ToolStripMenuItem MenuItemSendGiftFix;
+        private System.Windows.Forms.Button button67;
+        private System.Windows.Forms.Button button68;
+        private System.Windows.Forms.Button button69;
+        private System.Windows.Forms.Button button70;
+        private System.Windows.Forms.Button button71;
+        private System.Windows.Forms.Button button72;
+        private System.Windows.Forms.Button button61;
+        private System.Windows.Forms.Button button62;
+        private System.Windows.Forms.Button button63;
+        private System.Windows.Forms.Button button64;
+        private System.Windows.Forms.Button button65;
+        private System.Windows.Forms.Button button66;
+        private System.Windows.Forms.Button button55;
+        private System.Windows.Forms.Button button56;
+        private System.Windows.Forms.Button button57;
+        private System.Windows.Forms.Button button58;
+        private System.Windows.Forms.Button button59;
+        private System.Windows.Forms.Button button60;
+        private System.Windows.Forms.Button button49;
+        private System.Windows.Forms.Button button50;
+        private System.Windows.Forms.Button button51;
+        private System.Windows.Forms.Button button52;
+        private System.Windows.Forms.Button button53;
+        private System.Windows.Forms.Button button54;
+        private System.Windows.Forms.Button button43;
+        private System.Windows.Forms.Button button44;
+        private System.Windows.Forms.Button button45;
+        private System.Windows.Forms.Button button46;
+        private System.Windows.Forms.Button button47;
+        private System.Windows.Forms.Button button48;
+        private System.Windows.Forms.Button button37;
+        private System.Windows.Forms.Button button38;
+        private System.Windows.Forms.Button button39;
+        private System.Windows.Forms.Button button40;
+        private System.Windows.Forms.Button button41;
+        private System.Windows.Forms.Button button42;
+        private System.Windows.Forms.Button button31;
+        private System.Windows.Forms.Button button32;
+        private System.Windows.Forms.Button button33;
+        private System.Windows.Forms.Button button34;
+        private System.Windows.Forms.Button button35;
+        private System.Windows.Forms.Button button36;
+        private System.Windows.Forms.Button button25;
+        private System.Windows.Forms.Button button26;
+        private System.Windows.Forms.Button button27;
+        private System.Windows.Forms.Button button28;
+        private System.Windows.Forms.Button button29;
+        private System.Windows.Forms.Button button30;
+        private System.Windows.Forms.Button button19;
+        private System.Windows.Forms.Button button20;
+        private System.Windows.Forms.Button button21;
+        private System.Windows.Forms.Button button22;
+        private System.Windows.Forms.Button button23;
+        private System.Windows.Forms.Button button24;
+        private System.Windows.Forms.Button button13;
+        private System.Windows.Forms.Button button14;
+        private System.Windows.Forms.Button button15;
+        private System.Windows.Forms.Button button16;
+        private System.Windows.Forms.Button button17;
+        private System.Windows.Forms.Button button18;
+        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.Button button11;
+        private System.Windows.Forms.Button button12;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button button73;
+        private System.Windows.Forms.Button button74;
+        private System.Windows.Forms.Button button75;
+        private System.Windows.Forms.Button button76;
+        private System.Windows.Forms.Button button77;
+        private System.Windows.Forms.Button button78;
+        private System.Windows.Forms.ImageList imageListlTruckEnhancing;
+        private System.Windows.Forms.Label label190;
+        private System.Windows.Forms.Label label191;
+        private System.Windows.Forms.Label label192;
+        private System.Windows.Forms.Label label193;
+        private System.Windows.Forms.Label label194;
+        private System.Windows.Forms.Label label195;
+        private System.Windows.Forms.Label label196;
+        private System.Windows.Forms.Label label197;
+        private System.Windows.Forms.Label label198;
+        private System.Windows.Forms.Label label199;
+        private System.Windows.Forms.Label label200;
+        private System.Windows.Forms.Label label201;
+        private System.Windows.Forms.GroupBox groupBox18;
+        private System.Windows.Forms.ToolTip toolTip;
+        private System.Windows.Forms.Label label202;
+        private System.Windows.Forms.Label label203;      
     }
 }
 

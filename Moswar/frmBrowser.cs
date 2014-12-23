@@ -724,6 +724,17 @@ namespace Moswar
 
             Bot.Settings.GetReturnBonus = chkGetReturnBonus.Checked;
 
+            Bot.Settings.SendTrucks = chkSendTrucks.Checked;
+            Bot.Settings.TrucksMinPowerPoints = numTrucksMinPowerPoints.Value;
+            Bot.Settings.Trucks = new clsBot.TruckSettings[12];
+            for (int i = 0; i < 12; i++)
+            {
+                Bot.Settings.Trucks[i].Send = ((CheckBox)tblTrucks.GetControlFromPosition(0, 3 + i)).Checked;
+                Bot.Settings.Trucks[i].Enhancings = new int[6];
+                for (int j = 0; j < 6; j++)
+                    Bot.Settings.Trucks[i].Enhancings[j] = ((Button)tblTrucks.GetControlFromPosition(2 + j, 3 + i)).ImageIndex;
+            }
+
             Bot.SaveSettings();
         }
         private void LoadSettings()
@@ -1122,6 +1133,15 @@ namespace Moswar
                 }           
 
                 chkGetReturnBonus.Checked = Bot.Settings.GetReturnBonus;
+
+                chkSendTrucks.Checked = Bot.Settings.SendTrucks;
+                numTrucksMinPowerPoints.Value = Bot.Settings.TrucksMinPowerPoints;
+                for (int i = 0; i < 12; i++)
+                {
+                    ((CheckBox)tblTrucks.GetControlFromPosition(0, 3 + i)).Checked = Bot.Settings.Trucks[i].Send;
+                    for (int j = 0; j < 6; j++)
+                        ((Button)tblTrucks.GetControlFromPosition(2 + j, 3 + i)).ImageIndex = Bot.Settings.Trucks[i].Enhancings[j];
+                }
 
                 return;
             }
@@ -2890,6 +2910,23 @@ function checkName() {
 	});
 }
             "});
+        }
+
+        private void btnTruckEnhancing_Click(object sender, EventArgs e)
+        {
+            Button btn = (Button)sender;
+            btn.ImageIndex = btn.ImageIndex == 2 ? 0 : btn.ImageIndex + 1;
+        }
+
+        private void btnTruckEnhancingCol_Click(object sender, EventArgs e)
+        {
+            Button btn = (Button)sender;
+            TableLayoutPanel tbl = (TableLayoutPanel)btn.Parent;
+            int col = tbl.GetColumn(btn);
+            Button btn1 = (Button)tbl.GetControlFromPosition(col, 3);
+            btn1.ImageIndex = btn1.ImageIndex == 2 ? 0 : btn1.ImageIndex + 1;
+            for (int i = 1; i < 12; i++)
+                ((Button)tbl.GetControlFromPosition(col, 3 + i)).ImageIndex = btn1.ImageIndex;
         }
     }
 

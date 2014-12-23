@@ -210,6 +210,7 @@
     <None Include="Resources\Straw.png" />
     <None Include="Resources\Umbrella.png" />
     <None Include="Resources\Gold.png" />
+    <None Include="Resources\Question.png" />
     <Content Include="Yootheme-Halloween-Cheshire-cat.ico" />
     <None Include="Resources\Med.png" />
     <None Include="Resources\Zheton.png" />
