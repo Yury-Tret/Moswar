@@ -172,7 +172,7 @@ namespace Moswar
         private enum WerewolfAction { Pay, Check }
         private enum ImmunAction { Mona, Tooth, Duels }
         private enum StopTimeoutType { GrpFight, RatHunting, OilLenin, Mafia, All }
-        public enum Place { Player, Alley, Stash, Square, Arbat, Berezka, Casino, Pyramid, Bank, Home, Trainer, Police, Huntclub, Nightclub, Shop, Metro, Factory, Shaurburgers, Tverskaya, Petrun, Petarena, Desert, Clan, Turret, Automobile, Sovet, Oil, Gorbushka, Camp, Metrowar, URL, Contacts, Mobile, Bear, Settings };
+        public enum Place { Player, Alley, Stash, Square, Arbat, Berezka, Casino, Pyramid, Bank, Home, Trainer, Police, Huntclub, Nightclub, Shop, Metro, Factory, Shaurburgers, Tverskaya, Petrun, Petarena, Desert, Clan, Turret, Automobile, Sovet, Oil, Gorbushka, Camp, Metrowar, URL, Contacts, Mobile, Bear, Settings, Butovo };
         public enum Opponent { Equal, Strong, Weak, Enemy, Victim, Major, EnemyEx, NPC, Agent, Werewolf };
         public enum ShopItems { Me100, Me50, Gum1, Gum2, Gum3, Gum4, Gum5, Gum6, Gum1Ex, Gum2Ex, Gum3Ex, Gum4Ex, Gum5Ex, Gum6Ex, Gum1Adv, Gum2Adv, Gum3Adv, Gum4Adv, Gum5Adv, Gum6Adv, Pyani, Tvorog, Coctail1, Coctail2, Coctail3, Coctail4, Coctail5, Coctail6, Vitamin, NovajaZhizn, Barjomi, AquaDeminerale, Snikers, WeakNPC1, WeakNPC2, WeakNPC3, Valujki, ValujkiAdv, GasMask, Respirator, Tea1, Shoko1, Tea4, Shoko4, Tea7, Shoko7, Tea10, Shoko10, Tea15, Shoko15, CandyExp, CandyAntiExp, Pet100, Pet50, Pick, Counter, Helmet, Mona_Ticket, Bank_Ticket, Safe, Chain, HealPlus, HealPrc, Chees, GranadePlus, GranadePrc, Spring, Helm, Shild }; //Ex - 15%; Adv - За нефть.
         public enum MetroAction { Dig, SearchRat, Game, Check }
@@ -322,6 +322,7 @@ namespace Moswar
             public DateTime NextFightItemCheckDT;
             public DateTime NextAFK;
             public DateTime NextGetReturnBonusDT;
+            public DateTime NextTrucksCheckDT;
             public bool StopQuest;
             public bool ShutdownRelease;
         }
@@ -1920,7 +1921,7 @@ namespace Moswar
                 else Application.DoEvents();
             }
             while ((ShowId ? (frmMain.GetDocument(WB).GetElementById(WaitForId) == null) : frmMain.GetDocument(WB).GetElementById(WaitForId) != null) && MonitorDT > DateTime.Now);
-            if (MonitorDT < DateTime.Now) UpdateStatus("! " + DateTime.Now + " Внимание: Ajax timeout detected!");
+            if (MonitorDT < DateTime.Now) UpdateStatus("! " + DateTime.Now + " Истекло время ожидания Ajax запроса");
             WB.Tag = "Ready";
         }
         private void _IsAjaxComplete(WebBrowser WB, int WaitMinMs = 0, int WaitMaxMs = 0)
@@ -4877,6 +4878,10 @@ namespace Moswar
                     if (Settings.GetReturnBonus && Me.Events.NextGetReturnBonusDT <= ServerDT)
                         GetReturnBonus();
                     #endregion
+                    #region Отправка грузовиков
+                    if (Settings.SendTrucks && Me.Events.NextTrucksCheckDT <= ServerDT)
+                        SendTrucks();
+                    #endregion
                     #region Werewolf
                     if (Settings.UseWerewolf && Settings.WerewolfPrice != 0 && Me.WerewolfHunting.StartDT != new DateTime() && Me.WerewolfHunting.StartDT <= ServerDT.AddMinutes(5)) Werewolf(WerewolfAction.Check);
                     #endregion
@@ -5474,6 +5479,7 @@ namespace Moswar
                 case Place.Arbat: Place2Go = "arbat"; break;
                 case Place.Tverskaya: Place2Go = "tverskaya"; break;
                 case Place.Camp: Place2Go = "camp"; break;
+                case Place.Butovo: Place2Go = "butovo"; break;
                 case Place.Bear: Place2Go = "home/bear"; break;
                 case Place.Contacts: Place2Go = "phone/contacts"; break;
                 case Place.Mobile: Place2Go = "phone/call"; break;
@@ -7385,6 +7391,7 @@ namespace Moswar
             Me.Patrol.Stop = true;
             return false;
         }
+
         public void GetReturnBonus()
         {
             BugReport("GetReturnBonus");
@@ -7408,6 +7415,216 @@ namespace Moswar
             } else
                 Me.Events.NextGetReturnBonusDT = GetServerTime(MainWB).AddHours(1); // Если таймера нет, проверим еще раз через час
         }
+
+        public void CloseAllAlerts()
+        {
+            frmMain.InvokeScript(MainWB, "eval", new object[] { "$('div[id=\"alert-text\"]').closest('div.alert').remove()" });
+        }
+
+        #region Грузовики
+        public string[] TruckNames = new string[12] {
+            "Сельский",
+            "Бюджетный",
+            "Народный",
+            "Санитарный",
+            "Армейский",
+            "Нефтегазовый",
+            "Либеральный",
+            "Откатный",
+            "Депутатский",
+            "Региональный",
+            "Столичный",
+            "Президентский"
+        };
+
+        public enum TruckState { None, Ready, Riding, Lost }
+
+        public struct TruckInfo
+        {
+            public TruckState State;
+            public bool AutoProlong;
+        }
+
+        public void SendTrucks()
+        {
+            BugReport("SendTrucks");
+
+            GoToPlace(MainWB, Place.Butovo);
+            DateTime ServerDT = GetServerTime(MainWB);
+            frmMain.InvokeScript(MainWB, "eval", new object[] { "Crimea.show()" });
+
+            #region Проверяем доступность локации
+            if ((bool)frmMain.GetJavaVar(MainWB, "patriotState == null"))
+            {
+                BugReport("@ Время отправки грузовиков вышло");
+                Me.Events.NextTrucksCheckDT = ServerDT.AddMinutes(60);
+                return;
+            }
+            #endregion
+
+            #region Определяем состояние всех грузовиков
+            TruckInfo[] Trucks = new TruckInfo[12];
+
+            for (int i = 0; i < 12; i++)
+            {
+                // Инициализация
+                Trucks[i].State = TruckState.None;
+                Trucks[i].AutoProlong = false;
+
+                // Определяем, куплен ли грузовик
+                if ((bool)frmMain.GetJavaVar(MainWB, "\"" + i + "\" in patriotState.trucks"))
+                {
+                    Trucks[i].State = TruckState.Ready;
+                    Trucks[i].AutoProlong = Convert.ToBoolean(frmMain.GetJavaVar(MainWB, "patriotState.trucks[\"" + i + "\"][\"autoprolong\"]"));
+                }
+
+                // Определяем, находится ли купленный грузовик в поездке
+                if ((bool)frmMain.GetJavaVar(MainWB, "\"" + i + "\" in patriotState.trips"))
+                    Trucks[i].State = TruckState.Riding;
+
+                // Определяем, был ли грузовик потерян
+                if ((bool)frmMain.GetJavaVar(MainWB, "\"" + i + "\" in patriotState.truckLost"))
+                    Trucks[i].State = TruckState.Lost;
+            }
+
+            if (DebugMode)
+            {
+                BugReport("@ Информация по всем грузовикам:");
+                for (int i = 0; i < 12; i++)
+                    BugReport("@ ID=" + i + ", Имя=" + TruckNames[i] + ", Состояние=" + Trucks[i].State + ", Автоотправка=" + Trucks[i].AutoProlong);
+            }
+            #endregion
+
+            #region Проверяем количество держав
+            if (!TrucksControlResources(Trucks))
+            {
+                Me.Events.NextTrucksCheckDT = ServerDT.AddMinutes(10);
+                return;
+            }
+            #endregion
+
+            #region Отправляем грузовики в поездки
+            string AlertText;
+            for (int i = 0; i < 12; i++)
+            {
+                if (Settings.Trucks[i].Send && Trucks[i].State != TruckState.Riding)
+                {
+                    #region Покупаем грузовик, если нужно
+                    if (Trucks[i].State == TruckState.None || Trucks[i].State == TruckState.Lost)
+                    {
+                        CloseAllAlerts();
+                        frmMain.InvokeScript(MainWB, "eval", new object[] { "Crimea.buyTruck(" + i + ", 0)" });
+                        IsAjaxCompleteEx(MainWB, "alert-text");
+                        AlertText = (string)frmMain.GetJavaVar(MainWB, "$('#alert-text').text()");
+                        if (!AlertText.StartsWith("Ура! Ты купил новенький грузовик"))
+                        {
+                            UpdateStatus("! " + DateTime.Now + " Не удалось купить грузовик " + TruckNames[i] + (AlertText == "" ? "" : ": " + AlertText));
+                            continue;
+                        }
+                        Trucks[i].State = TruckState.Ready;
+                        UpdateStatus("* " + DateTime.Now + " Купил " + (Trucks[i].State == TruckState.None ? "новый" : "потерявшийся") + " грузовик " + TruckNames[i]);
+                    }
+                    #endregion
+
+                    #region Выставляем усиления в соответствии с настройками
+                    frmMain.InvokeScript(MainWB, "eval", new object[] { "Crimea.selectTruck(" + i + ")" });
+
+                    for (int j = 0; j < 6; j++)
+                    {
+                        switch (Settings.Trucks[i].Enhancings[j])
+                        {
+                            case 0:
+                                frmMain.InvokeScript(MainWB, "eval", new object[] { "$('#crimea-enhancing" + j + " .star').removeClass('checked')" });
+                                break;
+
+                            case 1:
+                                frmMain.InvokeScript(MainWB, "eval", new object[] { "$('#crimea-enhancing" + j + " .star:eq(0)').addClass('checked')" });
+                                frmMain.InvokeScript(MainWB, "eval", new object[] { "$('#crimea-enhancing" + j + " .star:eq(1)').removeClass('checked')" });
+                                break;
+
+                            case 2:
+                                frmMain.InvokeScript(MainWB, "eval", new object[] { "$('#crimea-enhancing" + j + " .star').addClass('checked')" });
+                                break;
+                        }
+                    }
+
+                    // Всегда включаем автоотправку
+                    frmMain.InvokeScript(MainWB, "eval", new object[] { "$('#crimea-autoprolong').attr('checked', true)" });
+                    #endregion
+
+                    #region Отправляем грузовик в поездку
+                    CloseAllAlerts();
+                    frmMain.InvokeScript(MainWB, "eval", new object[] { "Crimea.sendTruck(" + i + ")" });
+                    IsAjaxCompleteEx(MainWB, "alert-text");
+                    AlertText = (string)frmMain.GetJavaVar(MainWB, "$('#alert-text').text()");
+                    if (!AlertText.StartsWith("Ты отправил грузовик"))
+                    {
+                        UpdateStatus("! " + DateTime.Now + " Не удалось отправить грузовик " + TruckNames[i] + " в поездку" + (AlertText == "" ? "" : ": " + AlertText));
+                        continue;
+                    }
+                    Trucks[i].State = TruckState.Riding;
+                    Trucks[i].AutoProlong = true;
+                    UpdateStatus("* " + DateTime.Now + " Отправил грузовик " + TruckNames[i] + " в поездку");
+                    #endregion
+
+                    #region Проверяем количество держав
+                    if (!TrucksControlResources(Trucks))
+                    {
+                        Me.Events.NextTrucksCheckDT = ServerDT.AddMinutes(10);
+                        return;
+                    }
+                    #endregion
+                }
+            }
+            #endregion
+
+            Me.Events.NextTrucksCheckDT = ServerDT.AddMinutes(10);
+            return;
+        }
+
+        private bool TrucksControlResources(TruckInfo[] Trucks)
+        {
+            BugReport("TrucksControlResources");
+
+            int PowerPoints = Convert.ToInt32(frmMain.GetDocument(MainWB).GetElementById("crimea-total-power").InnerText);
+            BugReport("@ В наличии " + PowerPoints + " держав");
+
+            if (PowerPoints < Settings.TrucksMinPowerPoints)
+            {
+                if (Array.Exists(Trucks, truck => truck.State == TruckState.Riding && truck.AutoProlong))
+                {
+                    UpdateStatus("* " + DateTime.Now + " Держав слишком мало, останавливаю все грузовики");
+                    TrucksStop(Trucks);
+                }
+                else
+                    BugReport("@ Держав слишком мало, все грузовики уже остановлены");
+                return false;
+            }
+
+            return true;
+        }
+
+        private void TrucksStop(TruckInfo[] Trucks)
+        {
+            BugReport("TrucksStop");
+
+            for (int i = 0; i < 12; i++)
+                if (Trucks[i].State == TruckState.Riding && Trucks[i].AutoProlong)
+                {
+                    CloseAllAlerts();
+                    frmMain.InvokeScript(MainWB, "eval", new object[] { "Crimea.toggleTruckAutoprolong(" + i + ")" });
+                    IsAjaxCompleteEx(MainWB, "alert-text");
+                    string AlertText = (string)frmMain.GetJavaVar(MainWB, "$('#alert-text').text()");
+                    if (!AlertText.StartsWith("Изменения сохранены"))
+                    {
+                        UpdateStatus("! " + DateTime.Now + " Не удалось остановить грузовик " + TruckNames[i] + (AlertText == "" ? "" : ": " + AlertText));
+                        continue;
+                    }
+                    UpdateStatus("* " + DateTime.Now + " Остановил грузовик " + TruckNames[i]);
+                }
+        }
+        #endregion
+
         public bool Bank(BankAction BA)
         {
             Match match;
