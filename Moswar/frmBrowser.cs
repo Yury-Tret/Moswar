@@ -352,8 +352,8 @@ namespace Moswar
                 else Bot.Expert.FightSlotItemTypes = new int[70];
                 #endregion
                 chkExpBuyMoreThenOneGranade.Checked = Bot.Expert.BuyMoreThenOneGranade;
-                return;
             }
+
             UpdateExpertSettings();
         }
         #endregion
@@ -1135,18 +1135,20 @@ namespace Moswar
 
                 chkGetReturnBonus.Checked = Bot.Settings.GetReturnBonus;
 
-                chkSendTrucks.Checked = Bot.Settings.SendTrucks;
-                numTrucksCheckInterval.Value = Bot.Settings.TrucksCheckInterval;
-                numTrucksMinPowerPoints.Value = Bot.Settings.TrucksMinPowerPoints;
-                for (int i = 0; i < 12; i++)
+                if (Bot.Settings.TrucksCheckInterval != 0)
                 {
-                    ((CheckBox)tblTrucks.GetControlFromPosition(0, 3 + i)).Checked = Bot.Settings.Trucks[i].Send;
-                    for (int j = 0; j < 6; j++)
-                        ((Button)tblTrucks.GetControlFromPosition(2 + j, 3 + i)).ImageIndex = Bot.Settings.Trucks[i].Enhancings[j];
+                    chkSendTrucks.Checked = Bot.Settings.SendTrucks;
+                    numTrucksCheckInterval.Value = Bot.Settings.TrucksCheckInterval;
+                    numTrucksMinPowerPoints.Value = Bot.Settings.TrucksMinPowerPoints;
+                    for (int i = 0; i < 12; i++)
+                    {
+                        ((CheckBox)tblTrucks.GetControlFromPosition(0, 3 + i)).Checked = Bot.Settings.Trucks[i].Send;
+                        for (int j = 0; j < 6; j++)
+                            ((Button)tblTrucks.GetControlFromPosition(2 + j, 3 + i)).ImageIndex = Bot.Settings.Trucks[i].Enhancings[j];
+                    }
                 }
-
-                return;
             }
+
             UpdateSettings();
         }
 
