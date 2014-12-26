@@ -725,6 +725,7 @@ namespace Moswar
             Bot.Settings.GetReturnBonus = chkGetReturnBonus.Checked;
 
             Bot.Settings.SendTrucks = chkSendTrucks.Checked;
+            Bot.Settings.TrucksCheckInterval = numTrucksCheckInterval.Value;
             Bot.Settings.TrucksMinPowerPoints = numTrucksMinPowerPoints.Value;
             Bot.Settings.Trucks = new clsBot.TruckSettings[12];
             for (int i = 0; i < 12; i++)
@@ -1135,6 +1136,7 @@ namespace Moswar
                 chkGetReturnBonus.Checked = Bot.Settings.GetReturnBonus;
 
                 chkSendTrucks.Checked = Bot.Settings.SendTrucks;
+                numTrucksCheckInterval.Value = Bot.Settings.TrucksCheckInterval;
                 numTrucksMinPowerPoints.Value = Bot.Settings.TrucksMinPowerPoints;
                 for (int i = 0; i < 12; i++)
                 {

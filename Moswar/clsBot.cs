@@ -910,6 +910,7 @@ namespace Moswar
             public bool GetReturnBonus;
 
             public bool SendTrucks;
+            public decimal TrucksCheckInterval;
             public decimal TrucksMinPowerPoints;
             public TruckSettings[] Trucks;
         }
@@ -7457,7 +7458,7 @@ namespace Moswar
             if ((bool)frmMain.GetJavaVar(MainWB, "patriotState == null"))
             {
                 BugReport("@ Время отправки грузовиков вышло");
-                Me.Events.NextTrucksCheckDT = ServerDT.AddMinutes(60);
+                Me.Events.NextTrucksCheckDT = ServerDT.AddMinutes((int)Settings.TrucksCheckInterval);
                 return;
             }
             #endregion
@@ -7498,7 +7499,7 @@ namespace Moswar
             #region Проверяем количество держав
             if (!TrucksControlResources(Trucks))
             {
-                Me.Events.NextTrucksCheckDT = ServerDT.AddMinutes(10);
+                Me.Events.NextTrucksCheckDT = ServerDT.AddMinutes((int)Settings.TrucksCheckInterval);
                 return;
             }
             #endregion
@@ -7570,7 +7571,7 @@ namespace Moswar
                     #region Проверяем количество держав
                     if (!TrucksControlResources(Trucks))
                     {
-                        Me.Events.NextTrucksCheckDT = ServerDT.AddMinutes(10);
+                        Me.Events.NextTrucksCheckDT = ServerDT.AddMinutes((int)Settings.TrucksCheckInterval);
                         return;
                     }
                     #endregion
@@ -7578,7 +7579,7 @@ namespace Moswar
             }
             #endregion
 
-            Me.Events.NextTrucksCheckDT = ServerDT.AddMinutes(10);
+            Me.Events.NextTrucksCheckDT = ServerDT.AddMinutes((int)Settings.TrucksCheckInterval);
             return;
         }
 
