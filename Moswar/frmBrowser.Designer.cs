@@ -43,8 +43,94 @@
             this.treeViewSettings = new System.Windows.Forms.TreeView();
             this.lblSettingsCaption = new System.Windows.Forms.Label();
             this.pnlContainer = new System.Windows.Forms.Panel();
+            this.pnlGroupFights = new System.Windows.Forms.Panel();
+            this.label167 = new System.Windows.Forms.Label();
+            this.groupBox19 = new System.Windows.Forms.GroupBox();
+            this.numExpMaxBuyFightItemAmount = new System.Windows.Forms.NumericUpDown();
+            this.chkExpBuyHeal = new System.Windows.Forms.CheckBox();
+            this.chkExpBuyShilds = new System.Windows.Forms.CheckBox();
+            this.chkExpBuySprings = new System.Windows.Forms.CheckBox();
+            this.label166 = new System.Windows.Forms.Label();
+            this.chkExpBuyGranades = new System.Windows.Forms.CheckBox();
+            this.chkExpBuyMoreThenOneGranade = new System.Windows.Forms.CheckBox();
+            this.chkExpBuyHelms = new System.Windows.Forms.CheckBox();
+            this.label165 = new System.Windows.Forms.Label();
+            this.grpGrpFightSettings = new System.Windows.Forms.GroupBox();
+            this.label41 = new System.Windows.Forms.Label();
+            this.label40 = new System.Windows.Forms.Label();
+            this.numClanMeFightHP = new System.Windows.Forms.NumericUpDown();
+            this.numClanPetFightHP = new System.Windows.Forms.NumericUpDown();
+            this.label79 = new System.Windows.Forms.Label();
+            this.label80 = new System.Windows.Forms.Label();
+            this.grpGrpFight = new System.Windows.Forms.GroupBox();
+            this.cboxGrpFightUseItems = new System.Windows.Forms.ComboBox();
+            this.chkGrpFightUseBomb = new System.Windows.Forms.CheckBox();
+            this.chkGrpFightUseBear = new System.Windows.Forms.CheckBox();
+            this.chkGrpFightUseOther = new System.Windows.Forms.CheckBox();
+            this.chkGrpFightUseChees = new System.Windows.Forms.CheckBox();
+            this.chkGrpFightUseHeal = new System.Windows.Forms.CheckBox();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.dtExpGrpFightStart = new System.Windows.Forms.DateTimePicker();
+            this.dtExpGrpFightStop = new System.Windows.Forms.DateTimePicker();
+            this.label91 = new System.Windows.Forms.Label();
+            this.label93 = new System.Windows.Forms.Label();
+            this.label92 = new System.Windows.Forms.Label();
+            this.btnExpGrpFightPlanerRemove = new System.Windows.Forms.Button();
+            this.btnExpGrpFightPlanerAdd = new System.Windows.Forms.Button();
+            this.lstExpGrpFightPlaner = new System.Windows.Forms.ListBox();
+            this.btnExpGrpFightPlanerLoad = new System.Windows.Forms.Button();
+            this.btnExpGrpFightPlanerSave = new System.Windows.Forms.Button();
+            this.cboxExpGrpFightPlanerType = new System.Windows.Forms.ComboBox();
+            this.cboxExpGrpFightPlanerEvent = new System.Windows.Forms.ComboBox();
+            this.cboxExpGrpFightPlanerArt = new System.Windows.Forms.ComboBox();
+            this.grpExpFightBag = new System.Windows.Forms.GroupBox();
+            this.cboxExpGrpFightPet = new System.Windows.Forms.ComboBox();
+            this.cboxExpGrpFightSlot4 = new System.Windows.Forms.ComboBox();
+            this.cboxExpGrpFightType = new System.Windows.Forms.ComboBox();
+            this.label90 = new System.Windows.Forms.Label();
+            this.cboxExpGrpFightSlot3 = new System.Windows.Forms.ComboBox();
+            this.label168 = new System.Windows.Forms.Label();
+            this.cboxExpGrpFightSlot2 = new System.Windows.Forms.ComboBox();
+            this.cboxExpGrpFightSlot1 = new System.Windows.Forms.ComboBox();
+            this.cboxExpGrpFightSlot6 = new System.Windows.Forms.ComboBox();
+            this.chkAutoFightSlots = new System.Windows.Forms.CheckBox();
+            this.cboxExpGrpFightSlot5 = new System.Windows.Forms.ComboBox();
+            this.label169 = new System.Windows.Forms.Label();
+            this.label174 = new System.Windows.Forms.Label();
+            this.label170 = new System.Windows.Forms.Label();
+            this.label173 = new System.Windows.Forms.Label();
+            this.label171 = new System.Windows.Forms.Label();
+            this.label172 = new System.Windows.Forms.Label();
+            this.pnlDopings = new System.Windows.Forms.Panel();
+            this.lstDoping = new System.Windows.Forms.ListBox();
+            this.chkRestartDoping = new System.Windows.Forms.CheckBox();
+            this.grpDopingSettings = new System.Windows.Forms.GroupBox();
+            this.chkDopingNoCoctailNoProblem = new System.Windows.Forms.CheckBox();
+            this.chkDopingPryanik = new System.Windows.Forms.CheckBox();
+            this.chkDopingZefir = new System.Windows.Forms.CheckBox();
+            this.chkDopingNoCandyNoProblem = new System.Windows.Forms.CheckBox();
+            this.chkDopingNoSauceNoProblem = new System.Windows.Forms.CheckBox();
+            this.chkDopingAllowPartBilet = new System.Windows.Forms.CheckBox();
+            this.chkDopingAllowCoctailAdv = new System.Windows.Forms.CheckBox();
+            this.chkDopingShokoZefir = new System.Windows.Forms.CheckBox();
+            this.grpDoping = new System.Windows.Forms.GroupBox();
+            this.numRatSyncLvlDoping = new System.Windows.Forms.NumericUpDown();
+            this.numLvlDoping = new System.Windows.Forms.NumericUpDown();
+            this.dtDoping = new System.Windows.Forms.DateTimePicker();
+            this.label62 = new System.Windows.Forms.Label();
+            this.label61 = new System.Windows.Forms.Label();
+            this.btnDopingRemove = new System.Windows.Forms.Button();
+            this.btnDopingAdd = new System.Windows.Forms.Button();
+            this.btnDopingLoad = new System.Windows.Forms.Button();
+            this.btnDopingSave = new System.Windows.Forms.Button();
+            this.cboxDopingType = new System.Windows.Forms.ComboBox();
+            this.cboxDopingArt = new System.Windows.Forms.ComboBox();
+            this.cboxDopingEvent = new System.Windows.Forms.ComboBox();
             this.pnlTrucks = new System.Windows.Forms.Panel();
             this.groupBox16 = new System.Windows.Forms.GroupBox();
+            this.numTrucksCheckInterval = new System.Windows.Forms.NumericUpDown();
+            this.label205 = new System.Windows.Forms.Label();
+            this.label204 = new System.Windows.Forms.Label();
             this.label202 = new System.Windows.Forms.Label();
             this.groupBox17 = new System.Windows.Forms.GroupBox();
             this.label203 = new System.Windows.Forms.Label();
@@ -160,68 +246,6 @@
             this.label185 = new System.Windows.Forms.Label();
             this.chkSendTrucks = new System.Windows.Forms.CheckBox();
             this.label186 = new System.Windows.Forms.Label();
-            this.pnlGroupFights = new System.Windows.Forms.Panel();
-            this.grpGrpFightSettings = new System.Windows.Forms.GroupBox();
-            this.label41 = new System.Windows.Forms.Label();
-            this.label40 = new System.Windows.Forms.Label();
-            this.numClanMeFightHP = new System.Windows.Forms.NumericUpDown();
-            this.numClanPetFightHP = new System.Windows.Forms.NumericUpDown();
-            this.label79 = new System.Windows.Forms.Label();
-            this.label80 = new System.Windows.Forms.Label();
-            this.grpGrpFight = new System.Windows.Forms.GroupBox();
-            this.cboxGrpFightUseItems = new System.Windows.Forms.ComboBox();
-            this.chkGrpFightUseBomb = new System.Windows.Forms.CheckBox();
-            this.chkGrpFightUseBear = new System.Windows.Forms.CheckBox();
-            this.chkGrpFightUseOther = new System.Windows.Forms.CheckBox();
-            this.chkGrpFightUseChees = new System.Windows.Forms.CheckBox();
-            this.chkGrpFightUseHeal = new System.Windows.Forms.CheckBox();
-            this.chkAutoFightSlots = new System.Windows.Forms.CheckBox();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.lblTaskManagerHelp = new System.Windows.Forms.Label();
-            this.dtExpGrpFightStart = new System.Windows.Forms.DateTimePicker();
-            this.dtExpGrpFightStop = new System.Windows.Forms.DateTimePicker();
-            this.label91 = new System.Windows.Forms.Label();
-            this.label93 = new System.Windows.Forms.Label();
-            this.label92 = new System.Windows.Forms.Label();
-            this.btnExpGrpFightPlanerRemove = new System.Windows.Forms.Button();
-            this.btnExpGrpFightPlanerAdd = new System.Windows.Forms.Button();
-            this.lstExpGrpFightPlaner = new System.Windows.Forms.ListBox();
-            this.btnExpGrpFightPlanerLoad = new System.Windows.Forms.Button();
-            this.btnExpGrpFightPlanerSave = new System.Windows.Forms.Button();
-            this.cboxExpGrpFightPlanerType = new System.Windows.Forms.ComboBox();
-            this.cboxExpGrpFightPlanerEvent = new System.Windows.Forms.ComboBox();
-            this.cboxExpGrpFightPlanerArt = new System.Windows.Forms.ComboBox();
-            this.grpExpGrpFightSettings = new System.Windows.Forms.GroupBox();
-            this.cboxExpGrpFightPet = new System.Windows.Forms.ComboBox();
-            this.label90 = new System.Windows.Forms.Label();
-            this.grpExpFightBag = new System.Windows.Forms.GroupBox();
-            this.cboxExpGrpFightType = new System.Windows.Forms.ComboBox();
-            this.label168 = new System.Windows.Forms.Label();
-            this.chkExpBuyShilds = new System.Windows.Forms.CheckBox();
-            this.chkExpBuyMoreThenOneGranade = new System.Windows.Forms.CheckBox();
-            this.chkExpBuyHelms = new System.Windows.Forms.CheckBox();
-            this.chkExpBuySprings = new System.Windows.Forms.CheckBox();
-            this.chkExpBuyHeal = new System.Windows.Forms.CheckBox();
-            this.chkExpBuyGranades = new System.Windows.Forms.CheckBox();
-            this.label165 = new System.Windows.Forms.Label();
-            this.label166 = new System.Windows.Forms.Label();
-            this.label167 = new System.Windows.Forms.Label();
-            this.numExpMaxBuyFightItemAmount = new System.Windows.Forms.NumericUpDown();
-            this.grpExpGrpFightContainer = new System.Windows.Forms.GroupBox();
-            this.grpExpGrpFight = new System.Windows.Forms.GroupBox();
-            this.cboxExpGrpFightSlot4 = new System.Windows.Forms.ComboBox();
-            this.cboxExpGrpFightSlot3 = new System.Windows.Forms.ComboBox();
-            this.cboxExpGrpFightSlot2 = new System.Windows.Forms.ComboBox();
-            this.cboxExpGrpFightSlot1 = new System.Windows.Forms.ComboBox();
-            this.cboxExpGrpFightSlot6 = new System.Windows.Forms.ComboBox();
-            this.cboxExpGrpFightSlot5 = new System.Windows.Forms.ComboBox();
-            this.label174 = new System.Windows.Forms.Label();
-            this.label173 = new System.Windows.Forms.Label();
-            this.label172 = new System.Windows.Forms.Label();
-            this.label171 = new System.Windows.Forms.Label();
-            this.label170 = new System.Windows.Forms.Label();
-            this.label169 = new System.Windows.Forms.Label();
-            this.comboBox7 = new System.Windows.Forms.ComboBox();
             this.pnlDuels = new System.Windows.Forms.Panel();
             this.grpDuelControl = new System.Windows.Forms.GroupBox();
             this.numMaxDuels = new System.Windows.Forms.NumericUpDown();
@@ -722,31 +746,6 @@
             this.chkBlockThimbles = new System.Windows.Forms.CheckBox();
             this.label52 = new System.Windows.Forms.Label();
             this.numMaxPyramidPrice = new System.Windows.Forms.NumericUpDown();
-            this.pnlDopings = new System.Windows.Forms.Panel();
-            this.lstDoping = new System.Windows.Forms.ListBox();
-            this.chkRestartDoping = new System.Windows.Forms.CheckBox();
-            this.grpDopingSettings = new System.Windows.Forms.GroupBox();
-            this.chkDopingNoCoctailNoProblem = new System.Windows.Forms.CheckBox();
-            this.chkDopingPryanik = new System.Windows.Forms.CheckBox();
-            this.chkDopingZefir = new System.Windows.Forms.CheckBox();
-            this.chkDopingNoCandyNoProblem = new System.Windows.Forms.CheckBox();
-            this.chkDopingNoSauceNoProblem = new System.Windows.Forms.CheckBox();
-            this.chkDopingAllowPartBilet = new System.Windows.Forms.CheckBox();
-            this.chkDopingAllowCoctailAdv = new System.Windows.Forms.CheckBox();
-            this.chkDopingShokoZefir = new System.Windows.Forms.CheckBox();
-            this.grpDoping = new System.Windows.Forms.GroupBox();
-            this.numRatSyncLvlDoping = new System.Windows.Forms.NumericUpDown();
-            this.numLvlDoping = new System.Windows.Forms.NumericUpDown();
-            this.dtDoping = new System.Windows.Forms.DateTimePicker();
-            this.label62 = new System.Windows.Forms.Label();
-            this.label61 = new System.Windows.Forms.Label();
-            this.btnDopingRemove = new System.Windows.Forms.Button();
-            this.btnDopingAdd = new System.Windows.Forms.Button();
-            this.btnDopingLoad = new System.Windows.Forms.Button();
-            this.btnDopingSave = new System.Windows.Forms.Button();
-            this.cboxDopingType = new System.Windows.Forms.ComboBox();
-            this.cboxDopingArt = new System.Windows.Forms.ComboBox();
-            this.cboxDopingEvent = new System.Windows.Forms.ComboBox();
             this.pnlSystemSettings = new System.Windows.Forms.Panel();
             this.pnlGameSettings = new System.Windows.Forms.Panel();
             this.pnlCombatLocations = new System.Windows.Forms.Panel();
@@ -838,31 +837,32 @@
             this.MenuItemSendGiftFix = new System.Windows.Forms.ToolStripMenuItem();
             this.btnFunctions = new System.Windows.Forms.Button();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
-            this.label204 = new System.Windows.Forms.Label();
-            this.label205 = new System.Windows.Forms.Label();
-            this.numTrucksCheckInterval = new System.Windows.Forms.NumericUpDown();
             this.tabControl.SuspendLayout();
             this.tabMainBrowser.SuspendLayout();
             this.AutoApdateMessage.SuspendLayout();
             this.tabMainSettings.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.pnlContainer.SuspendLayout();
-            this.pnlTrucks.SuspendLayout();
-            this.groupBox16.SuspendLayout();
-            this.groupBox17.SuspendLayout();
-            this.tblTrucks.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numTrucksMinPowerPoints)).BeginInit();
             this.pnlGroupFights.SuspendLayout();
+            this.groupBox19.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numExpMaxBuyFightItemAmount)).BeginInit();
             this.grpGrpFightSettings.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numClanMeFightHP)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numClanPetFightHP)).BeginInit();
             this.grpGrpFight.SuspendLayout();
             this.groupBox1.SuspendLayout();
-            this.grpExpGrpFightSettings.SuspendLayout();
             this.grpExpFightBag.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numExpMaxBuyFightItemAmount)).BeginInit();
-            this.grpExpGrpFightContainer.SuspendLayout();
-            this.grpExpGrpFight.SuspendLayout();
+            this.pnlDopings.SuspendLayout();
+            this.grpDopingSettings.SuspendLayout();
+            this.grpDoping.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numRatSyncLvlDoping)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numLvlDoping)).BeginInit();
+            this.pnlTrucks.SuspendLayout();
+            this.groupBox16.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numTrucksCheckInterval)).BeginInit();
+            this.groupBox17.SuspendLayout();
+            this.tblTrucks.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numTrucksMinPowerPoints)).BeginInit();
             this.pnlDuels.SuspendLayout();
             this.grpDuelControl.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numMaxDuels)).BeginInit();
@@ -1016,11 +1016,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.numPyramidWanted)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numPyramidAmount)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numMaxPyramidPrice)).BeginInit();
-            this.pnlDopings.SuspendLayout();
-            this.grpDopingSettings.SuspendLayout();
-            this.grpDoping.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numRatSyncLvlDoping)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numLvlDoping)).BeginInit();
             this.pnlBankDeposit.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numBankDeposit)).BeginInit();
             this.tabMainExtra.SuspendLayout();
@@ -1048,7 +1043,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.statusStrip.SuspendLayout();
             this.FunctionsMenuStrip.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numTrucksCheckInterval)).BeginInit();
             this.SuspendLayout();
             // 
             // btnStart
@@ -1162,8 +1156,9 @@
             // 
             // pnlContainer
             // 
-            this.pnlContainer.Controls.Add(this.pnlTrucks);
             this.pnlContainer.Controls.Add(this.pnlGroupFights);
+            this.pnlContainer.Controls.Add(this.pnlDopings);
+            this.pnlContainer.Controls.Add(this.pnlTrucks);
             this.pnlContainer.Controls.Add(this.pnlDuels);
             this.pnlContainer.Controls.Add(this.pnlReturnBonus);
             this.pnlContainer.Controls.Add(this.pnlTempLocations);
@@ -1208,7 +1203,6 @@
             this.pnlContainer.Controls.Add(this.pnlGorbushka);
             this.pnlContainer.Controls.Add(this.pnlCasino);
             this.pnlContainer.Controls.Add(this.pnlPyramid);
-            this.pnlContainer.Controls.Add(this.pnlDopings);
             this.pnlContainer.Controls.Add(this.pnlSystemSettings);
             this.pnlContainer.Controls.Add(this.pnlGameSettings);
             this.pnlContainer.Controls.Add(this.pnlCombatLocations);
@@ -1216,6 +1210,867 @@
             this.pnlContainer.Controls.Add(this.pnlBankDeposit);
             resources.ApplyResources(this.pnlContainer, "pnlContainer");
             this.pnlContainer.Name = "pnlContainer";
+            // 
+            // pnlGroupFights
+            // 
+            resources.ApplyResources(this.pnlGroupFights, "pnlGroupFights");
+            this.pnlGroupFights.Controls.Add(this.groupBox19);
+            this.pnlGroupFights.Controls.Add(this.grpGrpFightSettings);
+            this.pnlGroupFights.Controls.Add(this.grpGrpFight);
+            this.pnlGroupFights.Controls.Add(this.groupBox1);
+            this.pnlGroupFights.Controls.Add(this.grpExpFightBag);
+            this.pnlGroupFights.Name = "pnlGroupFights";
+            // 
+            // label167
+            // 
+            this.label167.Image = global::Moswar.Properties.Resources.Question;
+            resources.ApplyResources(this.label167, "label167");
+            this.label167.Name = "label167";
+            this.toolTip.SetToolTip(this.label167, resources.GetString("label167.ToolTip"));
+            // 
+            // groupBox19
+            // 
+            this.groupBox19.Controls.Add(this.numExpMaxBuyFightItemAmount);
+            this.groupBox19.Controls.Add(this.chkExpBuyHeal);
+            this.groupBox19.Controls.Add(this.chkExpBuyShilds);
+            this.groupBox19.Controls.Add(this.chkExpBuySprings);
+            this.groupBox19.Controls.Add(this.label166);
+            this.groupBox19.Controls.Add(this.chkExpBuyGranades);
+            this.groupBox19.Controls.Add(this.chkExpBuyMoreThenOneGranade);
+            this.groupBox19.Controls.Add(this.chkExpBuyHelms);
+            this.groupBox19.Controls.Add(this.label165);
+            resources.ApplyResources(this.groupBox19, "groupBox19");
+            this.groupBox19.Name = "groupBox19";
+            this.groupBox19.TabStop = false;
+            // 
+            // numExpMaxBuyFightItemAmount
+            // 
+            resources.ApplyResources(this.numExpMaxBuyFightItemAmount, "numExpMaxBuyFightItemAmount");
+            this.numExpMaxBuyFightItemAmount.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
+            this.numExpMaxBuyFightItemAmount.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numExpMaxBuyFightItemAmount.Name = "numExpMaxBuyFightItemAmount";
+            this.numExpMaxBuyFightItemAmount.Value = new decimal(new int[] {
+            9,
+            0,
+            0,
+            0});
+            // 
+            // chkExpBuyHeal
+            // 
+            resources.ApplyResources(this.chkExpBuyHeal, "chkExpBuyHeal");
+            this.chkExpBuyHeal.Name = "chkExpBuyHeal";
+            this.chkExpBuyHeal.UseVisualStyleBackColor = true;
+            // 
+            // chkExpBuyShilds
+            // 
+            resources.ApplyResources(this.chkExpBuyShilds, "chkExpBuyShilds");
+            this.chkExpBuyShilds.Name = "chkExpBuyShilds";
+            this.chkExpBuyShilds.UseVisualStyleBackColor = true;
+            // 
+            // chkExpBuySprings
+            // 
+            resources.ApplyResources(this.chkExpBuySprings, "chkExpBuySprings");
+            this.chkExpBuySprings.Name = "chkExpBuySprings";
+            this.chkExpBuySprings.UseVisualStyleBackColor = true;
+            // 
+            // label166
+            // 
+            resources.ApplyResources(this.label166, "label166");
+            this.label166.Name = "label166";
+            // 
+            // chkExpBuyGranades
+            // 
+            resources.ApplyResources(this.chkExpBuyGranades, "chkExpBuyGranades");
+            this.chkExpBuyGranades.Name = "chkExpBuyGranades";
+            this.chkExpBuyGranades.UseVisualStyleBackColor = true;
+            // 
+            // chkExpBuyMoreThenOneGranade
+            // 
+            resources.ApplyResources(this.chkExpBuyMoreThenOneGranade, "chkExpBuyMoreThenOneGranade");
+            this.chkExpBuyMoreThenOneGranade.Name = "chkExpBuyMoreThenOneGranade";
+            this.chkExpBuyMoreThenOneGranade.UseVisualStyleBackColor = true;
+            // 
+            // chkExpBuyHelms
+            // 
+            resources.ApplyResources(this.chkExpBuyHelms, "chkExpBuyHelms");
+            this.chkExpBuyHelms.Name = "chkExpBuyHelms";
+            this.chkExpBuyHelms.UseVisualStyleBackColor = true;
+            // 
+            // label165
+            // 
+            resources.ApplyResources(this.label165, "label165");
+            this.label165.Name = "label165";
+            // 
+            // grpGrpFightSettings
+            // 
+            this.grpGrpFightSettings.Controls.Add(this.label41);
+            this.grpGrpFightSettings.Controls.Add(this.label40);
+            this.grpGrpFightSettings.Controls.Add(this.numClanMeFightHP);
+            this.grpGrpFightSettings.Controls.Add(this.numClanPetFightHP);
+            this.grpGrpFightSettings.Controls.Add(this.label79);
+            this.grpGrpFightSettings.Controls.Add(this.label80);
+            resources.ApplyResources(this.grpGrpFightSettings, "grpGrpFightSettings");
+            this.grpGrpFightSettings.Name = "grpGrpFightSettings";
+            this.grpGrpFightSettings.TabStop = false;
+            // 
+            // label41
+            // 
+            resources.ApplyResources(this.label41, "label41");
+            this.label41.Name = "label41";
+            // 
+            // label40
+            // 
+            resources.ApplyResources(this.label40, "label40");
+            this.label40.Name = "label40";
+            // 
+            // numClanMeFightHP
+            // 
+            resources.ApplyResources(this.numClanMeFightHP, "numClanMeFightHP");
+            this.numClanMeFightHP.Name = "numClanMeFightHP";
+            this.numClanMeFightHP.Value = new decimal(new int[] {
+            100,
+            0,
+            0,
+            0});
+            // 
+            // numClanPetFightHP
+            // 
+            resources.ApplyResources(this.numClanPetFightHP, "numClanPetFightHP");
+            this.numClanPetFightHP.Name = "numClanPetFightHP";
+            this.numClanPetFightHP.Value = new decimal(new int[] {
+            70,
+            0,
+            0,
+            0});
+            // 
+            // label79
+            // 
+            resources.ApplyResources(this.label79, "label79");
+            this.label79.Name = "label79";
+            // 
+            // label80
+            // 
+            resources.ApplyResources(this.label80, "label80");
+            this.label80.Name = "label80";
+            // 
+            // grpGrpFight
+            // 
+            this.grpGrpFight.Controls.Add(this.cboxGrpFightUseItems);
+            this.grpGrpFight.Controls.Add(this.chkGrpFightUseBomb);
+            this.grpGrpFight.Controls.Add(this.chkGrpFightUseBear);
+            this.grpGrpFight.Controls.Add(this.chkGrpFightUseOther);
+            this.grpGrpFight.Controls.Add(this.chkGrpFightUseChees);
+            this.grpGrpFight.Controls.Add(this.chkGrpFightUseHeal);
+            resources.ApplyResources(this.grpGrpFight, "grpGrpFight");
+            this.grpGrpFight.Name = "grpGrpFight";
+            this.grpGrpFight.TabStop = false;
+            // 
+            // cboxGrpFightUseItems
+            // 
+            this.cboxGrpFightUseItems.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            resources.ApplyResources(this.cboxGrpFightUseItems, "cboxGrpFightUseItems");
+            this.cboxGrpFightUseItems.FormattingEnabled = true;
+            this.cboxGrpFightUseItems.Items.AddRange(new object[] {
+            resources.GetString("cboxGrpFightUseItems.Items"),
+            resources.GetString("cboxGrpFightUseItems.Items1"),
+            resources.GetString("cboxGrpFightUseItems.Items2"),
+            resources.GetString("cboxGrpFightUseItems.Items3"),
+            resources.GetString("cboxGrpFightUseItems.Items4")});
+            this.cboxGrpFightUseItems.Name = "cboxGrpFightUseItems";
+            this.cboxGrpFightUseItems.SelectedIndexChanged += new System.EventHandler(this.cboxGrpFight_SelectedIndexChanged);
+            // 
+            // chkGrpFightUseBomb
+            // 
+            resources.ApplyResources(this.chkGrpFightUseBomb, "chkGrpFightUseBomb");
+            this.chkGrpFightUseBomb.Name = "chkGrpFightUseBomb";
+            this.chkGrpFightUseBomb.UseVisualStyleBackColor = true;
+            // 
+            // chkGrpFightUseBear
+            // 
+            resources.ApplyResources(this.chkGrpFightUseBear, "chkGrpFightUseBear");
+            this.chkGrpFightUseBear.Name = "chkGrpFightUseBear";
+            this.chkGrpFightUseBear.UseVisualStyleBackColor = true;
+            // 
+            // chkGrpFightUseOther
+            // 
+            resources.ApplyResources(this.chkGrpFightUseOther, "chkGrpFightUseOther");
+            this.chkGrpFightUseOther.Name = "chkGrpFightUseOther";
+            this.chkGrpFightUseOther.UseVisualStyleBackColor = true;
+            // 
+            // chkGrpFightUseChees
+            // 
+            resources.ApplyResources(this.chkGrpFightUseChees, "chkGrpFightUseChees");
+            this.chkGrpFightUseChees.Name = "chkGrpFightUseChees";
+            this.chkGrpFightUseChees.UseVisualStyleBackColor = true;
+            // 
+            // chkGrpFightUseHeal
+            // 
+            resources.ApplyResources(this.chkGrpFightUseHeal, "chkGrpFightUseHeal");
+            this.chkGrpFightUseHeal.Name = "chkGrpFightUseHeal";
+            this.chkGrpFightUseHeal.UseVisualStyleBackColor = true;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.label167);
+            this.groupBox1.Controls.Add(this.dtExpGrpFightStart);
+            this.groupBox1.Controls.Add(this.dtExpGrpFightStop);
+            this.groupBox1.Controls.Add(this.label91);
+            this.groupBox1.Controls.Add(this.label93);
+            this.groupBox1.Controls.Add(this.label92);
+            this.groupBox1.Controls.Add(this.btnExpGrpFightPlanerRemove);
+            this.groupBox1.Controls.Add(this.btnExpGrpFightPlanerAdd);
+            this.groupBox1.Controls.Add(this.lstExpGrpFightPlaner);
+            this.groupBox1.Controls.Add(this.btnExpGrpFightPlanerLoad);
+            this.groupBox1.Controls.Add(this.btnExpGrpFightPlanerSave);
+            this.groupBox1.Controls.Add(this.cboxExpGrpFightPlanerType);
+            this.groupBox1.Controls.Add(this.cboxExpGrpFightPlanerEvent);
+            this.groupBox1.Controls.Add(this.cboxExpGrpFightPlanerArt);
+            resources.ApplyResources(this.groupBox1, "groupBox1");
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.TabStop = false;
+            // 
+            // dtExpGrpFightStart
+            // 
+            resources.ApplyResources(this.dtExpGrpFightStart, "dtExpGrpFightStart");
+            this.dtExpGrpFightStart.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtExpGrpFightStart.Name = "dtExpGrpFightStart";
+            this.dtExpGrpFightStart.ShowUpDown = true;
+            this.dtExpGrpFightStart.Value = new System.DateTime(2011, 11, 19, 14, 45, 0, 0);
+            // 
+            // dtExpGrpFightStop
+            // 
+            resources.ApplyResources(this.dtExpGrpFightStop, "dtExpGrpFightStop");
+            this.dtExpGrpFightStop.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtExpGrpFightStop.Name = "dtExpGrpFightStop";
+            this.dtExpGrpFightStop.ShowUpDown = true;
+            this.dtExpGrpFightStop.Value = new System.DateTime(2011, 11, 19, 14, 45, 0, 0);
+            // 
+            // label91
+            // 
+            resources.ApplyResources(this.label91, "label91");
+            this.label91.ForeColor = System.Drawing.Color.Black;
+            this.label91.Name = "label91";
+            // 
+            // label93
+            // 
+            resources.ApplyResources(this.label93, "label93");
+            this.label93.ForeColor = System.Drawing.Color.Black;
+            this.label93.Name = "label93";
+            // 
+            // label92
+            // 
+            resources.ApplyResources(this.label92, "label92");
+            this.label92.ForeColor = System.Drawing.Color.Black;
+            this.label92.Name = "label92";
+            // 
+            // btnExpGrpFightPlanerRemove
+            // 
+            resources.ApplyResources(this.btnExpGrpFightPlanerRemove, "btnExpGrpFightPlanerRemove");
+            this.btnExpGrpFightPlanerRemove.Name = "btnExpGrpFightPlanerRemove";
+            this.btnExpGrpFightPlanerRemove.UseVisualStyleBackColor = true;
+            this.btnExpGrpFightPlanerRemove.Click += new System.EventHandler(this.btnExpGrpFightPlanerRemove_Click);
+            // 
+            // btnExpGrpFightPlanerAdd
+            // 
+            resources.ApplyResources(this.btnExpGrpFightPlanerAdd, "btnExpGrpFightPlanerAdd");
+            this.btnExpGrpFightPlanerAdd.Name = "btnExpGrpFightPlanerAdd";
+            this.btnExpGrpFightPlanerAdd.UseVisualStyleBackColor = true;
+            this.btnExpGrpFightPlanerAdd.Click += new System.EventHandler(this.btnExpGrpFightPlanerAdd_Click);
+            // 
+            // lstExpGrpFightPlaner
+            // 
+            resources.ApplyResources(this.lstExpGrpFightPlaner, "lstExpGrpFightPlaner");
+            this.lstExpGrpFightPlaner.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.lstExpGrpFightPlaner.Name = "lstExpGrpFightPlaner";
+            this.lstExpGrpFightPlaner.DrawItem += new System.Windows.Forms.DrawItemEventHandler(this.lstAny_DrawItem);
+            this.lstExpGrpFightPlaner.SelectedIndexChanged += new System.EventHandler(this.lstExpGrpFightPlaner_SelectedIndexChanged);
+            // 
+            // btnExpGrpFightPlanerLoad
+            // 
+            resources.ApplyResources(this.btnExpGrpFightPlanerLoad, "btnExpGrpFightPlanerLoad");
+            this.btnExpGrpFightPlanerLoad.Name = "btnExpGrpFightPlanerLoad";
+            this.btnExpGrpFightPlanerLoad.UseVisualStyleBackColor = true;
+            this.btnExpGrpFightPlanerLoad.Click += new System.EventHandler(this.btnExpGrpFightPlanerLoad_Click);
+            // 
+            // btnExpGrpFightPlanerSave
+            // 
+            resources.ApplyResources(this.btnExpGrpFightPlanerSave, "btnExpGrpFightPlanerSave");
+            this.btnExpGrpFightPlanerSave.Name = "btnExpGrpFightPlanerSave";
+            this.btnExpGrpFightPlanerSave.UseVisualStyleBackColor = true;
+            this.btnExpGrpFightPlanerSave.Click += new System.EventHandler(this.btnExpGrpFightPlanerSave_Click);
+            // 
+            // cboxExpGrpFightPlanerType
+            // 
+            this.cboxExpGrpFightPlanerType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            resources.ApplyResources(this.cboxExpGrpFightPlanerType, "cboxExpGrpFightPlanerType");
+            this.cboxExpGrpFightPlanerType.FormattingEnabled = true;
+            this.cboxExpGrpFightPlanerType.Items.AddRange(new object[] {
+            resources.GetString("cboxExpGrpFightPlanerType.Items"),
+            resources.GetString("cboxExpGrpFightPlanerType.Items1"),
+            resources.GetString("cboxExpGrpFightPlanerType.Items2"),
+            resources.GetString("cboxExpGrpFightPlanerType.Items3"),
+            resources.GetString("cboxExpGrpFightPlanerType.Items4"),
+            resources.GetString("cboxExpGrpFightPlanerType.Items5"),
+            resources.GetString("cboxExpGrpFightPlanerType.Items6")});
+            this.cboxExpGrpFightPlanerType.Name = "cboxExpGrpFightPlanerType";
+            this.cboxExpGrpFightPlanerType.SelectedIndexChanged += new System.EventHandler(this.cboxExpGrpFightPlanerType_SelectedIndexChanged);
+            // 
+            // cboxExpGrpFightPlanerEvent
+            // 
+            this.cboxExpGrpFightPlanerEvent.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            resources.ApplyResources(this.cboxExpGrpFightPlanerEvent, "cboxExpGrpFightPlanerEvent");
+            this.cboxExpGrpFightPlanerEvent.FormattingEnabled = true;
+            this.cboxExpGrpFightPlanerEvent.Items.AddRange(new object[] {
+            resources.GetString("cboxExpGrpFightPlanerEvent.Items"),
+            resources.GetString("cboxExpGrpFightPlanerEvent.Items1")});
+            this.cboxExpGrpFightPlanerEvent.Name = "cboxExpGrpFightPlanerEvent";
+            this.cboxExpGrpFightPlanerEvent.SelectedIndexChanged += new System.EventHandler(this.cboxExpGrpFightPlanerEvent_SelectedIndexChanged);
+            // 
+            // cboxExpGrpFightPlanerArt
+            // 
+            this.cboxExpGrpFightPlanerArt.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            resources.ApplyResources(this.cboxExpGrpFightPlanerArt, "cboxExpGrpFightPlanerArt");
+            this.cboxExpGrpFightPlanerArt.FormattingEnabled = true;
+            this.cboxExpGrpFightPlanerArt.Items.AddRange(new object[] {
+            resources.GetString("cboxExpGrpFightPlanerArt.Items"),
+            resources.GetString("cboxExpGrpFightPlanerArt.Items1"),
+            resources.GetString("cboxExpGrpFightPlanerArt.Items2"),
+            resources.GetString("cboxExpGrpFightPlanerArt.Items3"),
+            resources.GetString("cboxExpGrpFightPlanerArt.Items4")});
+            this.cboxExpGrpFightPlanerArt.Name = "cboxExpGrpFightPlanerArt";
+            this.cboxExpGrpFightPlanerArt.SelectedIndexChanged += new System.EventHandler(this.cboxExpGrpFightPlanerArt_SelectedIndexChanged);
+            // 
+            // grpExpFightBag
+            // 
+            this.grpExpFightBag.Controls.Add(this.cboxExpGrpFightPet);
+            this.grpExpFightBag.Controls.Add(this.cboxExpGrpFightSlot4);
+            this.grpExpFightBag.Controls.Add(this.cboxExpGrpFightType);
+            this.grpExpFightBag.Controls.Add(this.label90);
+            this.grpExpFightBag.Controls.Add(this.cboxExpGrpFightSlot3);
+            this.grpExpFightBag.Controls.Add(this.label168);
+            this.grpExpFightBag.Controls.Add(this.cboxExpGrpFightSlot2);
+            this.grpExpFightBag.Controls.Add(this.cboxExpGrpFightSlot1);
+            this.grpExpFightBag.Controls.Add(this.cboxExpGrpFightSlot6);
+            this.grpExpFightBag.Controls.Add(this.chkAutoFightSlots);
+            this.grpExpFightBag.Controls.Add(this.cboxExpGrpFightSlot5);
+            this.grpExpFightBag.Controls.Add(this.label169);
+            this.grpExpFightBag.Controls.Add(this.label174);
+            this.grpExpFightBag.Controls.Add(this.label170);
+            this.grpExpFightBag.Controls.Add(this.label173);
+            this.grpExpFightBag.Controls.Add(this.label171);
+            this.grpExpFightBag.Controls.Add(this.label172);
+            resources.ApplyResources(this.grpExpFightBag, "grpExpFightBag");
+            this.grpExpFightBag.Name = "grpExpFightBag";
+            this.grpExpFightBag.TabStop = false;
+            // 
+            // cboxExpGrpFightPet
+            // 
+            this.cboxExpGrpFightPet.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            resources.ApplyResources(this.cboxExpGrpFightPet, "cboxExpGrpFightPet");
+            this.cboxExpGrpFightPet.FormattingEnabled = true;
+            this.cboxExpGrpFightPet.Items.AddRange(new object[] {
+            resources.GetString("cboxExpGrpFightPet.Items"),
+            resources.GetString("cboxExpGrpFightPet.Items1"),
+            resources.GetString("cboxExpGrpFightPet.Items2"),
+            resources.GetString("cboxExpGrpFightPet.Items3"),
+            resources.GetString("cboxExpGrpFightPet.Items4"),
+            resources.GetString("cboxExpGrpFightPet.Items5"),
+            resources.GetString("cboxExpGrpFightPet.Items6"),
+            resources.GetString("cboxExpGrpFightPet.Items7"),
+            resources.GetString("cboxExpGrpFightPet.Items8"),
+            resources.GetString("cboxExpGrpFightPet.Items9"),
+            resources.GetString("cboxExpGrpFightPet.Items10"),
+            resources.GetString("cboxExpGrpFightPet.Items11"),
+            resources.GetString("cboxExpGrpFightPet.Items12")});
+            this.cboxExpGrpFightPet.Name = "cboxExpGrpFightPet";
+            // 
+            // cboxExpGrpFightSlot4
+            // 
+            this.cboxExpGrpFightSlot4.DropDownHeight = 110;
+            this.cboxExpGrpFightSlot4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            resources.ApplyResources(this.cboxExpGrpFightSlot4, "cboxExpGrpFightSlot4");
+            this.cboxExpGrpFightSlot4.FormattingEnabled = true;
+            this.cboxExpGrpFightSlot4.Items.AddRange(new object[] {
+            resources.GetString("cboxExpGrpFightSlot4.Items"),
+            resources.GetString("cboxExpGrpFightSlot4.Items1"),
+            resources.GetString("cboxExpGrpFightSlot4.Items2"),
+            resources.GetString("cboxExpGrpFightSlot4.Items3"),
+            resources.GetString("cboxExpGrpFightSlot4.Items4"),
+            resources.GetString("cboxExpGrpFightSlot4.Items5"),
+            resources.GetString("cboxExpGrpFightSlot4.Items6"),
+            resources.GetString("cboxExpGrpFightSlot4.Items7"),
+            resources.GetString("cboxExpGrpFightSlot4.Items8")});
+            this.cboxExpGrpFightSlot4.Name = "cboxExpGrpFightSlot4";
+            // 
+            // cboxExpGrpFightType
+            // 
+            this.cboxExpGrpFightType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            resources.ApplyResources(this.cboxExpGrpFightType, "cboxExpGrpFightType");
+            this.cboxExpGrpFightType.FormattingEnabled = true;
+            this.cboxExpGrpFightType.Items.AddRange(new object[] {
+            resources.GetString("cboxExpGrpFightType.Items"),
+            resources.GetString("cboxExpGrpFightType.Items1"),
+            resources.GetString("cboxExpGrpFightType.Items2"),
+            resources.GetString("cboxExpGrpFightType.Items3"),
+            resources.GetString("cboxExpGrpFightType.Items4"),
+            resources.GetString("cboxExpGrpFightType.Items5"),
+            resources.GetString("cboxExpGrpFightType.Items6")});
+            this.cboxExpGrpFightType.Name = "cboxExpGrpFightType";
+            this.cboxExpGrpFightType.SelectedIndexChanged += new System.EventHandler(this.cboxExpGrpFightType_SelectedIndexChanged);
+            // 
+            // label90
+            // 
+            resources.ApplyResources(this.label90, "label90");
+            this.label90.Name = "label90";
+            // 
+            // cboxExpGrpFightSlot3
+            // 
+            this.cboxExpGrpFightSlot3.DropDownHeight = 110;
+            this.cboxExpGrpFightSlot3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            resources.ApplyResources(this.cboxExpGrpFightSlot3, "cboxExpGrpFightSlot3");
+            this.cboxExpGrpFightSlot3.FormattingEnabled = true;
+            this.cboxExpGrpFightSlot3.Items.AddRange(new object[] {
+            resources.GetString("cboxExpGrpFightSlot3.Items"),
+            resources.GetString("cboxExpGrpFightSlot3.Items1"),
+            resources.GetString("cboxExpGrpFightSlot3.Items2"),
+            resources.GetString("cboxExpGrpFightSlot3.Items3"),
+            resources.GetString("cboxExpGrpFightSlot3.Items4"),
+            resources.GetString("cboxExpGrpFightSlot3.Items5"),
+            resources.GetString("cboxExpGrpFightSlot3.Items6"),
+            resources.GetString("cboxExpGrpFightSlot3.Items7"),
+            resources.GetString("cboxExpGrpFightSlot3.Items8")});
+            this.cboxExpGrpFightSlot3.Name = "cboxExpGrpFightSlot3";
+            // 
+            // label168
+            // 
+            resources.ApplyResources(this.label168, "label168");
+            this.label168.Name = "label168";
+            // 
+            // cboxExpGrpFightSlot2
+            // 
+            this.cboxExpGrpFightSlot2.DropDownHeight = 110;
+            this.cboxExpGrpFightSlot2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            resources.ApplyResources(this.cboxExpGrpFightSlot2, "cboxExpGrpFightSlot2");
+            this.cboxExpGrpFightSlot2.FormattingEnabled = true;
+            this.cboxExpGrpFightSlot2.Items.AddRange(new object[] {
+            resources.GetString("cboxExpGrpFightSlot2.Items"),
+            resources.GetString("cboxExpGrpFightSlot2.Items1"),
+            resources.GetString("cboxExpGrpFightSlot2.Items2"),
+            resources.GetString("cboxExpGrpFightSlot2.Items3"),
+            resources.GetString("cboxExpGrpFightSlot2.Items4"),
+            resources.GetString("cboxExpGrpFightSlot2.Items5"),
+            resources.GetString("cboxExpGrpFightSlot2.Items6"),
+            resources.GetString("cboxExpGrpFightSlot2.Items7"),
+            resources.GetString("cboxExpGrpFightSlot2.Items8")});
+            this.cboxExpGrpFightSlot2.Name = "cboxExpGrpFightSlot2";
+            // 
+            // cboxExpGrpFightSlot1
+            // 
+            this.cboxExpGrpFightSlot1.DropDownHeight = 110;
+            this.cboxExpGrpFightSlot1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            resources.ApplyResources(this.cboxExpGrpFightSlot1, "cboxExpGrpFightSlot1");
+            this.cboxExpGrpFightSlot1.FormattingEnabled = true;
+            this.cboxExpGrpFightSlot1.Items.AddRange(new object[] {
+            resources.GetString("cboxExpGrpFightSlot1.Items"),
+            resources.GetString("cboxExpGrpFightSlot1.Items1"),
+            resources.GetString("cboxExpGrpFightSlot1.Items2"),
+            resources.GetString("cboxExpGrpFightSlot1.Items3"),
+            resources.GetString("cboxExpGrpFightSlot1.Items4"),
+            resources.GetString("cboxExpGrpFightSlot1.Items5"),
+            resources.GetString("cboxExpGrpFightSlot1.Items6"),
+            resources.GetString("cboxExpGrpFightSlot1.Items7"),
+            resources.GetString("cboxExpGrpFightSlot1.Items8")});
+            this.cboxExpGrpFightSlot1.Name = "cboxExpGrpFightSlot1";
+            // 
+            // cboxExpGrpFightSlot6
+            // 
+            this.cboxExpGrpFightSlot6.DropDownHeight = 110;
+            this.cboxExpGrpFightSlot6.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            resources.ApplyResources(this.cboxExpGrpFightSlot6, "cboxExpGrpFightSlot6");
+            this.cboxExpGrpFightSlot6.FormattingEnabled = true;
+            this.cboxExpGrpFightSlot6.Items.AddRange(new object[] {
+            resources.GetString("cboxExpGrpFightSlot6.Items"),
+            resources.GetString("cboxExpGrpFightSlot6.Items1"),
+            resources.GetString("cboxExpGrpFightSlot6.Items2"),
+            resources.GetString("cboxExpGrpFightSlot6.Items3"),
+            resources.GetString("cboxExpGrpFightSlot6.Items4"),
+            resources.GetString("cboxExpGrpFightSlot6.Items5"),
+            resources.GetString("cboxExpGrpFightSlot6.Items6"),
+            resources.GetString("cboxExpGrpFightSlot6.Items7"),
+            resources.GetString("cboxExpGrpFightSlot6.Items8")});
+            this.cboxExpGrpFightSlot6.Name = "cboxExpGrpFightSlot6";
+            // 
+            // chkAutoFightSlots
+            // 
+            resources.ApplyResources(this.chkAutoFightSlots, "chkAutoFightSlots");
+            this.chkAutoFightSlots.Name = "chkAutoFightSlots";
+            this.chkAutoFightSlots.UseVisualStyleBackColor = true;
+            this.chkAutoFightSlots.CheckedChanged += new System.EventHandler(this.CheckGroupBox_CheckedChanged);
+            this.chkAutoFightSlots.VisibleChanged += new System.EventHandler(this.CheckGroupBox_CheckedChanged);
+            // 
+            // cboxExpGrpFightSlot5
+            // 
+            this.cboxExpGrpFightSlot5.DropDownHeight = 110;
+            this.cboxExpGrpFightSlot5.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            resources.ApplyResources(this.cboxExpGrpFightSlot5, "cboxExpGrpFightSlot5");
+            this.cboxExpGrpFightSlot5.FormattingEnabled = true;
+            this.cboxExpGrpFightSlot5.Items.AddRange(new object[] {
+            resources.GetString("cboxExpGrpFightSlot5.Items"),
+            resources.GetString("cboxExpGrpFightSlot5.Items1"),
+            resources.GetString("cboxExpGrpFightSlot5.Items2"),
+            resources.GetString("cboxExpGrpFightSlot5.Items3"),
+            resources.GetString("cboxExpGrpFightSlot5.Items4"),
+            resources.GetString("cboxExpGrpFightSlot5.Items5"),
+            resources.GetString("cboxExpGrpFightSlot5.Items6"),
+            resources.GetString("cboxExpGrpFightSlot5.Items7"),
+            resources.GetString("cboxExpGrpFightSlot5.Items8")});
+            this.cboxExpGrpFightSlot5.Name = "cboxExpGrpFightSlot5";
+            // 
+            // label169
+            // 
+            resources.ApplyResources(this.label169, "label169");
+            this.label169.Name = "label169";
+            // 
+            // label174
+            // 
+            resources.ApplyResources(this.label174, "label174");
+            this.label174.Name = "label174";
+            // 
+            // label170
+            // 
+            resources.ApplyResources(this.label170, "label170");
+            this.label170.Name = "label170";
+            // 
+            // label173
+            // 
+            resources.ApplyResources(this.label173, "label173");
+            this.label173.Name = "label173";
+            // 
+            // label171
+            // 
+            resources.ApplyResources(this.label171, "label171");
+            this.label171.Name = "label171";
+            // 
+            // label172
+            // 
+            resources.ApplyResources(this.label172, "label172");
+            this.label172.Name = "label172";
+            // 
+            // pnlDopings
+            // 
+            resources.ApplyResources(this.pnlDopings, "pnlDopings");
+            this.pnlDopings.Controls.Add(this.lstDoping);
+            this.pnlDopings.Controls.Add(this.chkRestartDoping);
+            this.pnlDopings.Controls.Add(this.grpDopingSettings);
+            this.pnlDopings.Controls.Add(this.grpDoping);
+            this.pnlDopings.Name = "pnlDopings";
+            // 
+            // lstDoping
+            // 
+            this.lstDoping.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            resources.ApplyResources(this.lstDoping, "lstDoping");
+            this.lstDoping.Name = "lstDoping";
+            this.lstDoping.DrawItem += new System.Windows.Forms.DrawItemEventHandler(this.lstAny_DrawItem);
+            this.lstDoping.SelectedIndexChanged += new System.EventHandler(this.lstDoping_SelectedIndexChanged);
+            // 
+            // chkRestartDoping
+            // 
+            resources.ApplyResources(this.chkRestartDoping, "chkRestartDoping");
+            this.chkRestartDoping.Name = "chkRestartDoping";
+            this.chkRestartDoping.UseVisualStyleBackColor = true;
+            // 
+            // grpDopingSettings
+            // 
+            this.grpDopingSettings.Controls.Add(this.chkDopingNoCoctailNoProblem);
+            this.grpDopingSettings.Controls.Add(this.chkDopingPryanik);
+            this.grpDopingSettings.Controls.Add(this.chkDopingZefir);
+            this.grpDopingSettings.Controls.Add(this.chkDopingNoCandyNoProblem);
+            this.grpDopingSettings.Controls.Add(this.chkDopingNoSauceNoProblem);
+            this.grpDopingSettings.Controls.Add(this.chkDopingAllowPartBilet);
+            this.grpDopingSettings.Controls.Add(this.chkDopingAllowCoctailAdv);
+            this.grpDopingSettings.Controls.Add(this.chkDopingShokoZefir);
+            resources.ApplyResources(this.grpDopingSettings, "grpDopingSettings");
+            this.grpDopingSettings.Name = "grpDopingSettings";
+            this.grpDopingSettings.TabStop = false;
+            // 
+            // chkDopingNoCoctailNoProblem
+            // 
+            resources.ApplyResources(this.chkDopingNoCoctailNoProblem, "chkDopingNoCoctailNoProblem");
+            this.chkDopingNoCoctailNoProblem.Name = "chkDopingNoCoctailNoProblem";
+            this.chkDopingNoCoctailNoProblem.UseVisualStyleBackColor = true;
+            // 
+            // chkDopingPryanik
+            // 
+            resources.ApplyResources(this.chkDopingPryanik, "chkDopingPryanik");
+            this.chkDopingPryanik.Name = "chkDopingPryanik";
+            this.chkDopingPryanik.UseVisualStyleBackColor = true;
+            // 
+            // chkDopingZefir
+            // 
+            resources.ApplyResources(this.chkDopingZefir, "chkDopingZefir");
+            this.chkDopingZefir.Name = "chkDopingZefir";
+            this.chkDopingZefir.UseVisualStyleBackColor = true;
+            // 
+            // chkDopingNoCandyNoProblem
+            // 
+            resources.ApplyResources(this.chkDopingNoCandyNoProblem, "chkDopingNoCandyNoProblem");
+            this.chkDopingNoCandyNoProblem.Name = "chkDopingNoCandyNoProblem";
+            this.chkDopingNoCandyNoProblem.UseVisualStyleBackColor = true;
+            // 
+            // chkDopingNoSauceNoProblem
+            // 
+            resources.ApplyResources(this.chkDopingNoSauceNoProblem, "chkDopingNoSauceNoProblem");
+            this.chkDopingNoSauceNoProblem.Name = "chkDopingNoSauceNoProblem";
+            this.chkDopingNoSauceNoProblem.UseVisualStyleBackColor = true;
+            // 
+            // chkDopingAllowPartBilet
+            // 
+            resources.ApplyResources(this.chkDopingAllowPartBilet, "chkDopingAllowPartBilet");
+            this.chkDopingAllowPartBilet.Name = "chkDopingAllowPartBilet";
+            this.chkDopingAllowPartBilet.UseVisualStyleBackColor = true;
+            // 
+            // chkDopingAllowCoctailAdv
+            // 
+            resources.ApplyResources(this.chkDopingAllowCoctailAdv, "chkDopingAllowCoctailAdv");
+            this.chkDopingAllowCoctailAdv.Name = "chkDopingAllowCoctailAdv";
+            this.chkDopingAllowCoctailAdv.UseVisualStyleBackColor = true;
+            // 
+            // chkDopingShokoZefir
+            // 
+            resources.ApplyResources(this.chkDopingShokoZefir, "chkDopingShokoZefir");
+            this.chkDopingShokoZefir.Name = "chkDopingShokoZefir";
+            this.chkDopingShokoZefir.UseVisualStyleBackColor = true;
+            // 
+            // grpDoping
+            // 
+            this.grpDoping.Controls.Add(this.numRatSyncLvlDoping);
+            this.grpDoping.Controls.Add(this.numLvlDoping);
+            this.grpDoping.Controls.Add(this.dtDoping);
+            this.grpDoping.Controls.Add(this.label62);
+            this.grpDoping.Controls.Add(this.label61);
+            this.grpDoping.Controls.Add(this.btnDopingRemove);
+            this.grpDoping.Controls.Add(this.btnDopingAdd);
+            this.grpDoping.Controls.Add(this.btnDopingLoad);
+            this.grpDoping.Controls.Add(this.btnDopingSave);
+            this.grpDoping.Controls.Add(this.cboxDopingType);
+            this.grpDoping.Controls.Add(this.cboxDopingArt);
+            this.grpDoping.Controls.Add(this.cboxDopingEvent);
+            resources.ApplyResources(this.grpDoping, "grpDoping");
+            this.grpDoping.Name = "grpDoping";
+            this.grpDoping.TabStop = false;
+            // 
+            // numRatSyncLvlDoping
+            // 
+            resources.ApplyResources(this.numRatSyncLvlDoping, "numRatSyncLvlDoping");
+            this.numRatSyncLvlDoping.Maximum = new decimal(new int[] {
+            35,
+            0,
+            0,
+            0});
+            this.numRatSyncLvlDoping.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numRatSyncLvlDoping.Name = "numRatSyncLvlDoping";
+            this.numRatSyncLvlDoping.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
+            // numLvlDoping
+            // 
+            resources.ApplyResources(this.numLvlDoping, "numLvlDoping");
+            this.numLvlDoping.Maximum = new decimal(new int[] {
+            35,
+            0,
+            0,
+            0});
+            this.numLvlDoping.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numLvlDoping.Name = "numLvlDoping";
+            this.numLvlDoping.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
+            // dtDoping
+            // 
+            resources.ApplyResources(this.dtDoping, "dtDoping");
+            this.dtDoping.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtDoping.Name = "dtDoping";
+            this.dtDoping.ShowUpDown = true;
+            this.dtDoping.Value = new System.DateTime(2011, 11, 19, 14, 45, 0, 0);
+            // 
+            // label62
+            // 
+            resources.ApplyResources(this.label62, "label62");
+            this.label62.ForeColor = System.Drawing.Color.Black;
+            this.label62.Name = "label62";
+            // 
+            // label61
+            // 
+            resources.ApplyResources(this.label61, "label61");
+            this.label61.ForeColor = System.Drawing.Color.Black;
+            this.label61.Name = "label61";
+            // 
+            // btnDopingRemove
+            // 
+            resources.ApplyResources(this.btnDopingRemove, "btnDopingRemove");
+            this.btnDopingRemove.Name = "btnDopingRemove";
+            this.btnDopingRemove.UseVisualStyleBackColor = true;
+            this.btnDopingRemove.Click += new System.EventHandler(this.btnDoppingRemove_Click);
+            // 
+            // btnDopingAdd
+            // 
+            resources.ApplyResources(this.btnDopingAdd, "btnDopingAdd");
+            this.btnDopingAdd.Name = "btnDopingAdd";
+            this.btnDopingAdd.UseVisualStyleBackColor = true;
+            this.btnDopingAdd.Click += new System.EventHandler(this.btnDoppingAdd_Click);
+            // 
+            // btnDopingLoad
+            // 
+            resources.ApplyResources(this.btnDopingLoad, "btnDopingLoad");
+            this.btnDopingLoad.Name = "btnDopingLoad";
+            this.btnDopingLoad.UseVisualStyleBackColor = true;
+            this.btnDopingLoad.Click += new System.EventHandler(this.btnDopingLoad_Click);
+            // 
+            // btnDopingSave
+            // 
+            resources.ApplyResources(this.btnDopingSave, "btnDopingSave");
+            this.btnDopingSave.Name = "btnDopingSave";
+            this.btnDopingSave.UseVisualStyleBackColor = true;
+            this.btnDopingSave.Click += new System.EventHandler(this.btnDoppingSave_Click);
+            // 
+            // cboxDopingType
+            // 
+            this.cboxDopingType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            resources.ApplyResources(this.cboxDopingType, "cboxDopingType");
+            this.cboxDopingType.FormattingEnabled = true;
+            this.cboxDopingType.Items.AddRange(new object[] {
+            resources.GetString("cboxDopingType.Items"),
+            resources.GetString("cboxDopingType.Items1"),
+            resources.GetString("cboxDopingType.Items2"),
+            resources.GetString("cboxDopingType.Items3"),
+            resources.GetString("cboxDopingType.Items4"),
+            resources.GetString("cboxDopingType.Items5"),
+            resources.GetString("cboxDopingType.Items6"),
+            resources.GetString("cboxDopingType.Items7"),
+            resources.GetString("cboxDopingType.Items8"),
+            resources.GetString("cboxDopingType.Items9"),
+            resources.GetString("cboxDopingType.Items10"),
+            resources.GetString("cboxDopingType.Items11"),
+            resources.GetString("cboxDopingType.Items12"),
+            resources.GetString("cboxDopingType.Items13"),
+            resources.GetString("cboxDopingType.Items14"),
+            resources.GetString("cboxDopingType.Items15"),
+            resources.GetString("cboxDopingType.Items16"),
+            resources.GetString("cboxDopingType.Items17"),
+            resources.GetString("cboxDopingType.Items18"),
+            resources.GetString("cboxDopingType.Items19"),
+            resources.GetString("cboxDopingType.Items20"),
+            resources.GetString("cboxDopingType.Items21"),
+            resources.GetString("cboxDopingType.Items22"),
+            resources.GetString("cboxDopingType.Items23"),
+            resources.GetString("cboxDopingType.Items24"),
+            resources.GetString("cboxDopingType.Items25"),
+            resources.GetString("cboxDopingType.Items26"),
+            resources.GetString("cboxDopingType.Items27"),
+            resources.GetString("cboxDopingType.Items28"),
+            resources.GetString("cboxDopingType.Items29"),
+            resources.GetString("cboxDopingType.Items30"),
+            resources.GetString("cboxDopingType.Items31"),
+            resources.GetString("cboxDopingType.Items32"),
+            resources.GetString("cboxDopingType.Items33"),
+            resources.GetString("cboxDopingType.Items34"),
+            resources.GetString("cboxDopingType.Items35"),
+            resources.GetString("cboxDopingType.Items36"),
+            resources.GetString("cboxDopingType.Items37"),
+            resources.GetString("cboxDopingType.Items38"),
+            resources.GetString("cboxDopingType.Items39"),
+            resources.GetString("cboxDopingType.Items40"),
+            resources.GetString("cboxDopingType.Items41"),
+            resources.GetString("cboxDopingType.Items42"),
+            resources.GetString("cboxDopingType.Items43"),
+            resources.GetString("cboxDopingType.Items44"),
+            resources.GetString("cboxDopingType.Items45"),
+            resources.GetString("cboxDopingType.Items46"),
+            resources.GetString("cboxDopingType.Items47"),
+            resources.GetString("cboxDopingType.Items48"),
+            resources.GetString("cboxDopingType.Items49"),
+            resources.GetString("cboxDopingType.Items50"),
+            resources.GetString("cboxDopingType.Items51"),
+            resources.GetString("cboxDopingType.Items52"),
+            resources.GetString("cboxDopingType.Items53"),
+            resources.GetString("cboxDopingType.Items54"),
+            resources.GetString("cboxDopingType.Items55"),
+            resources.GetString("cboxDopingType.Items56"),
+            resources.GetString("cboxDopingType.Items57"),
+            resources.GetString("cboxDopingType.Items58"),
+            resources.GetString("cboxDopingType.Items59"),
+            resources.GetString("cboxDopingType.Items60"),
+            resources.GetString("cboxDopingType.Items61"),
+            resources.GetString("cboxDopingType.Items62"),
+            resources.GetString("cboxDopingType.Items63"),
+            resources.GetString("cboxDopingType.Items64"),
+            resources.GetString("cboxDopingType.Items65"),
+            resources.GetString("cboxDopingType.Items66"),
+            resources.GetString("cboxDopingType.Items67"),
+            resources.GetString("cboxDopingType.Items68"),
+            resources.GetString("cboxDopingType.Items69"),
+            resources.GetString("cboxDopingType.Items70"),
+            resources.GetString("cboxDopingType.Items71"),
+            resources.GetString("cboxDopingType.Items72"),
+            resources.GetString("cboxDopingType.Items73"),
+            resources.GetString("cboxDopingType.Items74"),
+            resources.GetString("cboxDopingType.Items75"),
+            resources.GetString("cboxDopingType.Items76"),
+            resources.GetString("cboxDopingType.Items77"),
+            resources.GetString("cboxDopingType.Items78"),
+            resources.GetString("cboxDopingType.Items79"),
+            resources.GetString("cboxDopingType.Items80"),
+            resources.GetString("cboxDopingType.Items81"),
+            resources.GetString("cboxDopingType.Items82"),
+            resources.GetString("cboxDopingType.Items83"),
+            resources.GetString("cboxDopingType.Items84"),
+            resources.GetString("cboxDopingType.Items85"),
+            resources.GetString("cboxDopingType.Items86"),
+            resources.GetString("cboxDopingType.Items87")});
+            this.cboxDopingType.Name = "cboxDopingType";
+            this.cboxDopingType.SelectedIndexChanged += new System.EventHandler(this.cboxDoppingType_SelectedIndexChanged);
+            // 
+            // cboxDopingArt
+            // 
+            this.cboxDopingArt.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            resources.ApplyResources(this.cboxDopingArt, "cboxDopingArt");
+            this.cboxDopingArt.FormattingEnabled = true;
+            this.cboxDopingArt.Items.AddRange(new object[] {
+            resources.GetString("cboxDopingArt.Items"),
+            resources.GetString("cboxDopingArt.Items1"),
+            resources.GetString("cboxDopingArt.Items2")});
+            this.cboxDopingArt.Name = "cboxDopingArt";
+            this.cboxDopingArt.SelectedIndexChanged += new System.EventHandler(this.DopingArt_Changed);
+            // 
+            // cboxDopingEvent
+            // 
+            this.cboxDopingEvent.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            resources.ApplyResources(this.cboxDopingEvent, "cboxDopingEvent");
+            this.cboxDopingEvent.FormattingEnabled = true;
+            this.cboxDopingEvent.Name = "cboxDopingEvent";
+            this.cboxDopingEvent.SelectedIndexChanged += new System.EventHandler(this.cboxDoppingEvent_SelectedIndexChanged);
             // 
             // pnlTrucks
             // 
@@ -1237,6 +2092,36 @@
             resources.ApplyResources(this.groupBox16, "groupBox16");
             this.groupBox16.Name = "groupBox16";
             this.groupBox16.TabStop = false;
+            // 
+            // numTrucksCheckInterval
+            // 
+            resources.ApplyResources(this.numTrucksCheckInterval, "numTrucksCheckInterval");
+            this.numTrucksCheckInterval.Maximum = new decimal(new int[] {
+            1440,
+            0,
+            0,
+            0});
+            this.numTrucksCheckInterval.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numTrucksCheckInterval.Name = "numTrucksCheckInterval";
+            this.numTrucksCheckInterval.Value = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
+            // 
+            // label205
+            // 
+            resources.ApplyResources(this.label205, "label205");
+            this.label205.Name = "label205";
+            // 
+            // label204
+            // 
+            resources.ApplyResources(this.label204, "label204");
+            this.label204.Name = "label204";
             // 
             // label202
             // 
@@ -2191,595 +3076,6 @@
             // 
             resources.ApplyResources(this.label186, "label186");
             this.label186.Name = "label186";
-            // 
-            // pnlGroupFights
-            // 
-            resources.ApplyResources(this.pnlGroupFights, "pnlGroupFights");
-            this.pnlGroupFights.Controls.Add(this.grpGrpFightSettings);
-            this.pnlGroupFights.Controls.Add(this.grpGrpFight);
-            this.pnlGroupFights.Controls.Add(this.groupBox1);
-            this.pnlGroupFights.Controls.Add(this.grpExpGrpFightSettings);
-            this.pnlGroupFights.Controls.Add(this.grpExpFightBag);
-            this.pnlGroupFights.Name = "pnlGroupFights";
-            // 
-            // grpGrpFightSettings
-            // 
-            this.grpGrpFightSettings.Controls.Add(this.label41);
-            this.grpGrpFightSettings.Controls.Add(this.label40);
-            this.grpGrpFightSettings.Controls.Add(this.numClanMeFightHP);
-            this.grpGrpFightSettings.Controls.Add(this.numClanPetFightHP);
-            this.grpGrpFightSettings.Controls.Add(this.label79);
-            this.grpGrpFightSettings.Controls.Add(this.label80);
-            resources.ApplyResources(this.grpGrpFightSettings, "grpGrpFightSettings");
-            this.grpGrpFightSettings.Name = "grpGrpFightSettings";
-            this.grpGrpFightSettings.TabStop = false;
-            // 
-            // label41
-            // 
-            resources.ApplyResources(this.label41, "label41");
-            this.label41.Name = "label41";
-            // 
-            // label40
-            // 
-            resources.ApplyResources(this.label40, "label40");
-            this.label40.Name = "label40";
-            // 
-            // numClanMeFightHP
-            // 
-            resources.ApplyResources(this.numClanMeFightHP, "numClanMeFightHP");
-            this.numClanMeFightHP.Name = "numClanMeFightHP";
-            this.numClanMeFightHP.Value = new decimal(new int[] {
-            100,
-            0,
-            0,
-            0});
-            // 
-            // numClanPetFightHP
-            // 
-            resources.ApplyResources(this.numClanPetFightHP, "numClanPetFightHP");
-            this.numClanPetFightHP.Name = "numClanPetFightHP";
-            this.numClanPetFightHP.Value = new decimal(new int[] {
-            70,
-            0,
-            0,
-            0});
-            // 
-            // label79
-            // 
-            resources.ApplyResources(this.label79, "label79");
-            this.label79.Name = "label79";
-            // 
-            // label80
-            // 
-            resources.ApplyResources(this.label80, "label80");
-            this.label80.Name = "label80";
-            // 
-            // grpGrpFight
-            // 
-            this.grpGrpFight.Controls.Add(this.cboxGrpFightUseItems);
-            this.grpGrpFight.Controls.Add(this.chkGrpFightUseBomb);
-            this.grpGrpFight.Controls.Add(this.chkGrpFightUseBear);
-            this.grpGrpFight.Controls.Add(this.chkGrpFightUseOther);
-            this.grpGrpFight.Controls.Add(this.chkGrpFightUseChees);
-            this.grpGrpFight.Controls.Add(this.chkGrpFightUseHeal);
-            this.grpGrpFight.Controls.Add(this.chkAutoFightSlots);
-            resources.ApplyResources(this.grpGrpFight, "grpGrpFight");
-            this.grpGrpFight.Name = "grpGrpFight";
-            this.grpGrpFight.TabStop = false;
-            // 
-            // cboxGrpFightUseItems
-            // 
-            this.cboxGrpFightUseItems.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            resources.ApplyResources(this.cboxGrpFightUseItems, "cboxGrpFightUseItems");
-            this.cboxGrpFightUseItems.FormattingEnabled = true;
-            this.cboxGrpFightUseItems.Items.AddRange(new object[] {
-            resources.GetString("cboxGrpFightUseItems.Items"),
-            resources.GetString("cboxGrpFightUseItems.Items1"),
-            resources.GetString("cboxGrpFightUseItems.Items2"),
-            resources.GetString("cboxGrpFightUseItems.Items3"),
-            resources.GetString("cboxGrpFightUseItems.Items4")});
-            this.cboxGrpFightUseItems.Name = "cboxGrpFightUseItems";
-            this.cboxGrpFightUseItems.SelectedIndexChanged += new System.EventHandler(this.cboxGrpFight_SelectedIndexChanged);
-            // 
-            // chkGrpFightUseBomb
-            // 
-            resources.ApplyResources(this.chkGrpFightUseBomb, "chkGrpFightUseBomb");
-            this.chkGrpFightUseBomb.Name = "chkGrpFightUseBomb";
-            this.chkGrpFightUseBomb.UseVisualStyleBackColor = true;
-            // 
-            // chkGrpFightUseBear
-            // 
-            resources.ApplyResources(this.chkGrpFightUseBear, "chkGrpFightUseBear");
-            this.chkGrpFightUseBear.Name = "chkGrpFightUseBear";
-            this.chkGrpFightUseBear.UseVisualStyleBackColor = true;
-            // 
-            // chkGrpFightUseOther
-            // 
-            resources.ApplyResources(this.chkGrpFightUseOther, "chkGrpFightUseOther");
-            this.chkGrpFightUseOther.Name = "chkGrpFightUseOther";
-            this.chkGrpFightUseOther.UseVisualStyleBackColor = true;
-            // 
-            // chkGrpFightUseChees
-            // 
-            resources.ApplyResources(this.chkGrpFightUseChees, "chkGrpFightUseChees");
-            this.chkGrpFightUseChees.Name = "chkGrpFightUseChees";
-            this.chkGrpFightUseChees.UseVisualStyleBackColor = true;
-            // 
-            // chkGrpFightUseHeal
-            // 
-            resources.ApplyResources(this.chkGrpFightUseHeal, "chkGrpFightUseHeal");
-            this.chkGrpFightUseHeal.Name = "chkGrpFightUseHeal";
-            this.chkGrpFightUseHeal.UseVisualStyleBackColor = true;
-            // 
-            // chkAutoFightSlots
-            // 
-            resources.ApplyResources(this.chkAutoFightSlots, "chkAutoFightSlots");
-            this.chkAutoFightSlots.Name = "chkAutoFightSlots";
-            this.chkAutoFightSlots.UseVisualStyleBackColor = true;
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.lblTaskManagerHelp);
-            this.groupBox1.Controls.Add(this.dtExpGrpFightStart);
-            this.groupBox1.Controls.Add(this.dtExpGrpFightStop);
-            this.groupBox1.Controls.Add(this.label91);
-            this.groupBox1.Controls.Add(this.label93);
-            this.groupBox1.Controls.Add(this.label92);
-            this.groupBox1.Controls.Add(this.btnExpGrpFightPlanerRemove);
-            this.groupBox1.Controls.Add(this.btnExpGrpFightPlanerAdd);
-            this.groupBox1.Controls.Add(this.lstExpGrpFightPlaner);
-            this.groupBox1.Controls.Add(this.btnExpGrpFightPlanerLoad);
-            this.groupBox1.Controls.Add(this.btnExpGrpFightPlanerSave);
-            this.groupBox1.Controls.Add(this.cboxExpGrpFightPlanerType);
-            this.groupBox1.Controls.Add(this.cboxExpGrpFightPlanerEvent);
-            this.groupBox1.Controls.Add(this.cboxExpGrpFightPlanerArt);
-            resources.ApplyResources(this.groupBox1, "groupBox1");
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.TabStop = false;
-            // 
-            // lblTaskManagerHelp
-            // 
-            resources.ApplyResources(this.lblTaskManagerHelp, "lblTaskManagerHelp");
-            this.lblTaskManagerHelp.BackColor = System.Drawing.Color.Black;
-            this.lblTaskManagerHelp.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lblTaskManagerHelp.ForeColor = System.Drawing.Color.White;
-            this.lblTaskManagerHelp.Name = "lblTaskManagerHelp";
-            // 
-            // dtExpGrpFightStart
-            // 
-            resources.ApplyResources(this.dtExpGrpFightStart, "dtExpGrpFightStart");
-            this.dtExpGrpFightStart.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtExpGrpFightStart.Name = "dtExpGrpFightStart";
-            this.dtExpGrpFightStart.ShowUpDown = true;
-            this.dtExpGrpFightStart.Value = new System.DateTime(2011, 11, 19, 14, 45, 0, 0);
-            // 
-            // dtExpGrpFightStop
-            // 
-            resources.ApplyResources(this.dtExpGrpFightStop, "dtExpGrpFightStop");
-            this.dtExpGrpFightStop.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtExpGrpFightStop.Name = "dtExpGrpFightStop";
-            this.dtExpGrpFightStop.ShowUpDown = true;
-            this.dtExpGrpFightStop.Value = new System.DateTime(2011, 11, 19, 14, 45, 0, 0);
-            // 
-            // label91
-            // 
-            resources.ApplyResources(this.label91, "label91");
-            this.label91.ForeColor = System.Drawing.Color.Black;
-            this.label91.Name = "label91";
-            // 
-            // label93
-            // 
-            resources.ApplyResources(this.label93, "label93");
-            this.label93.ForeColor = System.Drawing.Color.Black;
-            this.label93.Name = "label93";
-            // 
-            // label92
-            // 
-            resources.ApplyResources(this.label92, "label92");
-            this.label92.ForeColor = System.Drawing.Color.Black;
-            this.label92.Name = "label92";
-            // 
-            // btnExpGrpFightPlanerRemove
-            // 
-            resources.ApplyResources(this.btnExpGrpFightPlanerRemove, "btnExpGrpFightPlanerRemove");
-            this.btnExpGrpFightPlanerRemove.Name = "btnExpGrpFightPlanerRemove";
-            this.btnExpGrpFightPlanerRemove.UseVisualStyleBackColor = true;
-            this.btnExpGrpFightPlanerRemove.Click += new System.EventHandler(this.btnExpGrpFightPlanerRemove_Click);
-            // 
-            // btnExpGrpFightPlanerAdd
-            // 
-            resources.ApplyResources(this.btnExpGrpFightPlanerAdd, "btnExpGrpFightPlanerAdd");
-            this.btnExpGrpFightPlanerAdd.Name = "btnExpGrpFightPlanerAdd";
-            this.btnExpGrpFightPlanerAdd.UseVisualStyleBackColor = true;
-            this.btnExpGrpFightPlanerAdd.Click += new System.EventHandler(this.btnExpGrpFightPlanerAdd_Click);
-            // 
-            // lstExpGrpFightPlaner
-            // 
-            resources.ApplyResources(this.lstExpGrpFightPlaner, "lstExpGrpFightPlaner");
-            this.lstExpGrpFightPlaner.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.lstExpGrpFightPlaner.Name = "lstExpGrpFightPlaner";
-            this.lstExpGrpFightPlaner.DrawItem += new System.Windows.Forms.DrawItemEventHandler(this.lstAny_DrawItem);
-            this.lstExpGrpFightPlaner.SelectedIndexChanged += new System.EventHandler(this.lstExpGrpFightPlaner_SelectedIndexChanged);
-            // 
-            // btnExpGrpFightPlanerLoad
-            // 
-            resources.ApplyResources(this.btnExpGrpFightPlanerLoad, "btnExpGrpFightPlanerLoad");
-            this.btnExpGrpFightPlanerLoad.Name = "btnExpGrpFightPlanerLoad";
-            this.btnExpGrpFightPlanerLoad.UseVisualStyleBackColor = true;
-            this.btnExpGrpFightPlanerLoad.Click += new System.EventHandler(this.btnExpGrpFightPlanerLoad_Click);
-            // 
-            // btnExpGrpFightPlanerSave
-            // 
-            resources.ApplyResources(this.btnExpGrpFightPlanerSave, "btnExpGrpFightPlanerSave");
-            this.btnExpGrpFightPlanerSave.Name = "btnExpGrpFightPlanerSave";
-            this.btnExpGrpFightPlanerSave.UseVisualStyleBackColor = true;
-            this.btnExpGrpFightPlanerSave.Click += new System.EventHandler(this.btnExpGrpFightPlanerSave_Click);
-            // 
-            // cboxExpGrpFightPlanerType
-            // 
-            this.cboxExpGrpFightPlanerType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            resources.ApplyResources(this.cboxExpGrpFightPlanerType, "cboxExpGrpFightPlanerType");
-            this.cboxExpGrpFightPlanerType.FormattingEnabled = true;
-            this.cboxExpGrpFightPlanerType.Items.AddRange(new object[] {
-            resources.GetString("cboxExpGrpFightPlanerType.Items"),
-            resources.GetString("cboxExpGrpFightPlanerType.Items1"),
-            resources.GetString("cboxExpGrpFightPlanerType.Items2"),
-            resources.GetString("cboxExpGrpFightPlanerType.Items3"),
-            resources.GetString("cboxExpGrpFightPlanerType.Items4"),
-            resources.GetString("cboxExpGrpFightPlanerType.Items5"),
-            resources.GetString("cboxExpGrpFightPlanerType.Items6")});
-            this.cboxExpGrpFightPlanerType.Name = "cboxExpGrpFightPlanerType";
-            this.cboxExpGrpFightPlanerType.SelectedIndexChanged += new System.EventHandler(this.cboxExpGrpFightPlanerType_SelectedIndexChanged);
-            // 
-            // cboxExpGrpFightPlanerEvent
-            // 
-            this.cboxExpGrpFightPlanerEvent.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            resources.ApplyResources(this.cboxExpGrpFightPlanerEvent, "cboxExpGrpFightPlanerEvent");
-            this.cboxExpGrpFightPlanerEvent.FormattingEnabled = true;
-            this.cboxExpGrpFightPlanerEvent.Items.AddRange(new object[] {
-            resources.GetString("cboxExpGrpFightPlanerEvent.Items"),
-            resources.GetString("cboxExpGrpFightPlanerEvent.Items1")});
-            this.cboxExpGrpFightPlanerEvent.Name = "cboxExpGrpFightPlanerEvent";
-            this.cboxExpGrpFightPlanerEvent.SelectedIndexChanged += new System.EventHandler(this.cboxExpGrpFightPlanerEvent_SelectedIndexChanged);
-            // 
-            // cboxExpGrpFightPlanerArt
-            // 
-            this.cboxExpGrpFightPlanerArt.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            resources.ApplyResources(this.cboxExpGrpFightPlanerArt, "cboxExpGrpFightPlanerArt");
-            this.cboxExpGrpFightPlanerArt.FormattingEnabled = true;
-            this.cboxExpGrpFightPlanerArt.Items.AddRange(new object[] {
-            resources.GetString("cboxExpGrpFightPlanerArt.Items"),
-            resources.GetString("cboxExpGrpFightPlanerArt.Items1"),
-            resources.GetString("cboxExpGrpFightPlanerArt.Items2"),
-            resources.GetString("cboxExpGrpFightPlanerArt.Items3"),
-            resources.GetString("cboxExpGrpFightPlanerArt.Items4")});
-            this.cboxExpGrpFightPlanerArt.Name = "cboxExpGrpFightPlanerArt";
-            this.cboxExpGrpFightPlanerArt.SelectedIndexChanged += new System.EventHandler(this.cboxExpGrpFightPlanerArt_SelectedIndexChanged);
-            // 
-            // grpExpGrpFightSettings
-            // 
-            this.grpExpGrpFightSettings.Controls.Add(this.cboxExpGrpFightPet);
-            this.grpExpGrpFightSettings.Controls.Add(this.label90);
-            resources.ApplyResources(this.grpExpGrpFightSettings, "grpExpGrpFightSettings");
-            this.grpExpGrpFightSettings.Name = "grpExpGrpFightSettings";
-            this.grpExpGrpFightSettings.TabStop = false;
-            // 
-            // cboxExpGrpFightPet
-            // 
-            this.cboxExpGrpFightPet.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            resources.ApplyResources(this.cboxExpGrpFightPet, "cboxExpGrpFightPet");
-            this.cboxExpGrpFightPet.FormattingEnabled = true;
-            this.cboxExpGrpFightPet.Items.AddRange(new object[] {
-            resources.GetString("cboxExpGrpFightPet.Items"),
-            resources.GetString("cboxExpGrpFightPet.Items1"),
-            resources.GetString("cboxExpGrpFightPet.Items2"),
-            resources.GetString("cboxExpGrpFightPet.Items3"),
-            resources.GetString("cboxExpGrpFightPet.Items4"),
-            resources.GetString("cboxExpGrpFightPet.Items5"),
-            resources.GetString("cboxExpGrpFightPet.Items6"),
-            resources.GetString("cboxExpGrpFightPet.Items7"),
-            resources.GetString("cboxExpGrpFightPet.Items8"),
-            resources.GetString("cboxExpGrpFightPet.Items9"),
-            resources.GetString("cboxExpGrpFightPet.Items10"),
-            resources.GetString("cboxExpGrpFightPet.Items11"),
-            resources.GetString("cboxExpGrpFightPet.Items12")});
-            this.cboxExpGrpFightPet.Name = "cboxExpGrpFightPet";
-            // 
-            // label90
-            // 
-            resources.ApplyResources(this.label90, "label90");
-            this.label90.Name = "label90";
-            // 
-            // grpExpFightBag
-            // 
-            this.grpExpFightBag.Controls.Add(this.cboxExpGrpFightType);
-            this.grpExpFightBag.Controls.Add(this.label168);
-            this.grpExpFightBag.Controls.Add(this.chkExpBuyShilds);
-            this.grpExpFightBag.Controls.Add(this.chkExpBuyMoreThenOneGranade);
-            this.grpExpFightBag.Controls.Add(this.chkExpBuyHelms);
-            this.grpExpFightBag.Controls.Add(this.chkExpBuySprings);
-            this.grpExpFightBag.Controls.Add(this.chkExpBuyHeal);
-            this.grpExpFightBag.Controls.Add(this.chkExpBuyGranades);
-            this.grpExpFightBag.Controls.Add(this.label165);
-            this.grpExpFightBag.Controls.Add(this.label166);
-            this.grpExpFightBag.Controls.Add(this.label167);
-            this.grpExpFightBag.Controls.Add(this.numExpMaxBuyFightItemAmount);
-            this.grpExpFightBag.Controls.Add(this.grpExpGrpFightContainer);
-            resources.ApplyResources(this.grpExpFightBag, "grpExpFightBag");
-            this.grpExpFightBag.Name = "grpExpFightBag";
-            this.grpExpFightBag.TabStop = false;
-            // 
-            // cboxExpGrpFightType
-            // 
-            this.cboxExpGrpFightType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            resources.ApplyResources(this.cboxExpGrpFightType, "cboxExpGrpFightType");
-            this.cboxExpGrpFightType.FormattingEnabled = true;
-            this.cboxExpGrpFightType.Items.AddRange(new object[] {
-            resources.GetString("cboxExpGrpFightType.Items"),
-            resources.GetString("cboxExpGrpFightType.Items1"),
-            resources.GetString("cboxExpGrpFightType.Items2"),
-            resources.GetString("cboxExpGrpFightType.Items3"),
-            resources.GetString("cboxExpGrpFightType.Items4"),
-            resources.GetString("cboxExpGrpFightType.Items5"),
-            resources.GetString("cboxExpGrpFightType.Items6")});
-            this.cboxExpGrpFightType.Name = "cboxExpGrpFightType";
-            this.cboxExpGrpFightType.SelectedIndexChanged += new System.EventHandler(this.cboxExpGrpFightType_SelectedIndexChanged);
-            // 
-            // label168
-            // 
-            resources.ApplyResources(this.label168, "label168");
-            this.label168.Name = "label168";
-            // 
-            // chkExpBuyShilds
-            // 
-            resources.ApplyResources(this.chkExpBuyShilds, "chkExpBuyShilds");
-            this.chkExpBuyShilds.Name = "chkExpBuyShilds";
-            this.chkExpBuyShilds.UseVisualStyleBackColor = true;
-            // 
-            // chkExpBuyMoreThenOneGranade
-            // 
-            resources.ApplyResources(this.chkExpBuyMoreThenOneGranade, "chkExpBuyMoreThenOneGranade");
-            this.chkExpBuyMoreThenOneGranade.Name = "chkExpBuyMoreThenOneGranade";
-            this.chkExpBuyMoreThenOneGranade.UseVisualStyleBackColor = true;
-            // 
-            // chkExpBuyHelms
-            // 
-            resources.ApplyResources(this.chkExpBuyHelms, "chkExpBuyHelms");
-            this.chkExpBuyHelms.Name = "chkExpBuyHelms";
-            this.chkExpBuyHelms.UseVisualStyleBackColor = true;
-            // 
-            // chkExpBuySprings
-            // 
-            resources.ApplyResources(this.chkExpBuySprings, "chkExpBuySprings");
-            this.chkExpBuySprings.Name = "chkExpBuySprings";
-            this.chkExpBuySprings.UseVisualStyleBackColor = true;
-            // 
-            // chkExpBuyHeal
-            // 
-            resources.ApplyResources(this.chkExpBuyHeal, "chkExpBuyHeal");
-            this.chkExpBuyHeal.Name = "chkExpBuyHeal";
-            this.chkExpBuyHeal.UseVisualStyleBackColor = true;
-            // 
-            // chkExpBuyGranades
-            // 
-            resources.ApplyResources(this.chkExpBuyGranades, "chkExpBuyGranades");
-            this.chkExpBuyGranades.Name = "chkExpBuyGranades";
-            this.chkExpBuyGranades.UseVisualStyleBackColor = true;
-            // 
-            // label165
-            // 
-            resources.ApplyResources(this.label165, "label165");
-            this.label165.Name = "label165";
-            // 
-            // label166
-            // 
-            resources.ApplyResources(this.label166, "label166");
-            this.label166.Name = "label166";
-            // 
-            // label167
-            // 
-            resources.ApplyResources(this.label167, "label167");
-            this.label167.Name = "label167";
-            // 
-            // numExpMaxBuyFightItemAmount
-            // 
-            resources.ApplyResources(this.numExpMaxBuyFightItemAmount, "numExpMaxBuyFightItemAmount");
-            this.numExpMaxBuyFightItemAmount.Maximum = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
-            this.numExpMaxBuyFightItemAmount.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.numExpMaxBuyFightItemAmount.Name = "numExpMaxBuyFightItemAmount";
-            this.numExpMaxBuyFightItemAmount.Value = new decimal(new int[] {
-            9,
-            0,
-            0,
-            0});
-            // 
-            // grpExpGrpFightContainer
-            // 
-            this.grpExpGrpFightContainer.Controls.Add(this.grpExpGrpFight);
-            this.grpExpGrpFightContainer.Controls.Add(this.comboBox7);
-            resources.ApplyResources(this.grpExpGrpFightContainer, "grpExpGrpFightContainer");
-            this.grpExpGrpFightContainer.Name = "grpExpGrpFightContainer";
-            this.grpExpGrpFightContainer.TabStop = false;
-            // 
-            // grpExpGrpFight
-            // 
-            this.grpExpGrpFight.Controls.Add(this.cboxExpGrpFightSlot4);
-            this.grpExpGrpFight.Controls.Add(this.cboxExpGrpFightSlot3);
-            this.grpExpGrpFight.Controls.Add(this.cboxExpGrpFightSlot2);
-            this.grpExpGrpFight.Controls.Add(this.cboxExpGrpFightSlot1);
-            this.grpExpGrpFight.Controls.Add(this.cboxExpGrpFightSlot6);
-            this.grpExpGrpFight.Controls.Add(this.cboxExpGrpFightSlot5);
-            this.grpExpGrpFight.Controls.Add(this.label174);
-            this.grpExpGrpFight.Controls.Add(this.label173);
-            this.grpExpGrpFight.Controls.Add(this.label172);
-            this.grpExpGrpFight.Controls.Add(this.label171);
-            this.grpExpGrpFight.Controls.Add(this.label170);
-            this.grpExpGrpFight.Controls.Add(this.label169);
-            resources.ApplyResources(this.grpExpGrpFight, "grpExpGrpFight");
-            this.grpExpGrpFight.Name = "grpExpGrpFight";
-            this.grpExpGrpFight.TabStop = false;
-            // 
-            // cboxExpGrpFightSlot4
-            // 
-            this.cboxExpGrpFightSlot4.DropDownHeight = 110;
-            this.cboxExpGrpFightSlot4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            resources.ApplyResources(this.cboxExpGrpFightSlot4, "cboxExpGrpFightSlot4");
-            this.cboxExpGrpFightSlot4.FormattingEnabled = true;
-            this.cboxExpGrpFightSlot4.Items.AddRange(new object[] {
-            resources.GetString("cboxExpGrpFightSlot4.Items"),
-            resources.GetString("cboxExpGrpFightSlot4.Items1"),
-            resources.GetString("cboxExpGrpFightSlot4.Items2"),
-            resources.GetString("cboxExpGrpFightSlot4.Items3"),
-            resources.GetString("cboxExpGrpFightSlot4.Items4"),
-            resources.GetString("cboxExpGrpFightSlot4.Items5"),
-            resources.GetString("cboxExpGrpFightSlot4.Items6"),
-            resources.GetString("cboxExpGrpFightSlot4.Items7"),
-            resources.GetString("cboxExpGrpFightSlot4.Items8")});
-            this.cboxExpGrpFightSlot4.Name = "cboxExpGrpFightSlot4";
-            // 
-            // cboxExpGrpFightSlot3
-            // 
-            this.cboxExpGrpFightSlot3.DropDownHeight = 110;
-            this.cboxExpGrpFightSlot3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            resources.ApplyResources(this.cboxExpGrpFightSlot3, "cboxExpGrpFightSlot3");
-            this.cboxExpGrpFightSlot3.FormattingEnabled = true;
-            this.cboxExpGrpFightSlot3.Items.AddRange(new object[] {
-            resources.GetString("cboxExpGrpFightSlot3.Items"),
-            resources.GetString("cboxExpGrpFightSlot3.Items1"),
-            resources.GetString("cboxExpGrpFightSlot3.Items2"),
-            resources.GetString("cboxExpGrpFightSlot3.Items3"),
-            resources.GetString("cboxExpGrpFightSlot3.Items4"),
-            resources.GetString("cboxExpGrpFightSlot3.Items5"),
-            resources.GetString("cboxExpGrpFightSlot3.Items6"),
-            resources.GetString("cboxExpGrpFightSlot3.Items7"),
-            resources.GetString("cboxExpGrpFightSlot3.Items8")});
-            this.cboxExpGrpFightSlot3.Name = "cboxExpGrpFightSlot3";
-            // 
-            // cboxExpGrpFightSlot2
-            // 
-            this.cboxExpGrpFightSlot2.DropDownHeight = 110;
-            this.cboxExpGrpFightSlot2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            resources.ApplyResources(this.cboxExpGrpFightSlot2, "cboxExpGrpFightSlot2");
-            this.cboxExpGrpFightSlot2.FormattingEnabled = true;
-            this.cboxExpGrpFightSlot2.Items.AddRange(new object[] {
-            resources.GetString("cboxExpGrpFightSlot2.Items"),
-            resources.GetString("cboxExpGrpFightSlot2.Items1"),
-            resources.GetString("cboxExpGrpFightSlot2.Items2"),
-            resources.GetString("cboxExpGrpFightSlot2.Items3"),
-            resources.GetString("cboxExpGrpFightSlot2.Items4"),
-            resources.GetString("cboxExpGrpFightSlot2.Items5"),
-            resources.GetString("cboxExpGrpFightSlot2.Items6"),
-            resources.GetString("cboxExpGrpFightSlot2.Items7"),
-            resources.GetString("cboxExpGrpFightSlot2.Items8")});
-            this.cboxExpGrpFightSlot2.Name = "cboxExpGrpFightSlot2";
-            // 
-            // cboxExpGrpFightSlot1
-            // 
-            this.cboxExpGrpFightSlot1.DropDownHeight = 110;
-            this.cboxExpGrpFightSlot1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            resources.ApplyResources(this.cboxExpGrpFightSlot1, "cboxExpGrpFightSlot1");
-            this.cboxExpGrpFightSlot1.FormattingEnabled = true;
-            this.cboxExpGrpFightSlot1.Items.AddRange(new object[] {
-            resources.GetString("cboxExpGrpFightSlot1.Items"),
-            resources.GetString("cboxExpGrpFightSlot1.Items1"),
-            resources.GetString("cboxExpGrpFightSlot1.Items2"),
-            resources.GetString("cboxExpGrpFightSlot1.Items3"),
-            resources.GetString("cboxExpGrpFightSlot1.Items4"),
-            resources.GetString("cboxExpGrpFightSlot1.Items5"),
-            resources.GetString("cboxExpGrpFightSlot1.Items6"),
-            resources.GetString("cboxExpGrpFightSlot1.Items7"),
-            resources.GetString("cboxExpGrpFightSlot1.Items8")});
-            this.cboxExpGrpFightSlot1.Name = "cboxExpGrpFightSlot1";
-            // 
-            // cboxExpGrpFightSlot6
-            // 
-            this.cboxExpGrpFightSlot6.DropDownHeight = 110;
-            this.cboxExpGrpFightSlot6.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            resources.ApplyResources(this.cboxExpGrpFightSlot6, "cboxExpGrpFightSlot6");
-            this.cboxExpGrpFightSlot6.FormattingEnabled = true;
-            this.cboxExpGrpFightSlot6.Items.AddRange(new object[] {
-            resources.GetString("cboxExpGrpFightSlot6.Items"),
-            resources.GetString("cboxExpGrpFightSlot6.Items1"),
-            resources.GetString("cboxExpGrpFightSlot6.Items2"),
-            resources.GetString("cboxExpGrpFightSlot6.Items3"),
-            resources.GetString("cboxExpGrpFightSlot6.Items4"),
-            resources.GetString("cboxExpGrpFightSlot6.Items5"),
-            resources.GetString("cboxExpGrpFightSlot6.Items6"),
-            resources.GetString("cboxExpGrpFightSlot6.Items7"),
-            resources.GetString("cboxExpGrpFightSlot6.Items8")});
-            this.cboxExpGrpFightSlot6.Name = "cboxExpGrpFightSlot6";
-            // 
-            // cboxExpGrpFightSlot5
-            // 
-            this.cboxExpGrpFightSlot5.DropDownHeight = 110;
-            this.cboxExpGrpFightSlot5.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            resources.ApplyResources(this.cboxExpGrpFightSlot5, "cboxExpGrpFightSlot5");
-            this.cboxExpGrpFightSlot5.FormattingEnabled = true;
-            this.cboxExpGrpFightSlot5.Items.AddRange(new object[] {
-            resources.GetString("cboxExpGrpFightSlot5.Items"),
-            resources.GetString("cboxExpGrpFightSlot5.Items1"),
-            resources.GetString("cboxExpGrpFightSlot5.Items2"),
-            resources.GetString("cboxExpGrpFightSlot5.Items3"),
-            resources.GetString("cboxExpGrpFightSlot5.Items4"),
-            resources.GetString("cboxExpGrpFightSlot5.Items5"),
-            resources.GetString("cboxExpGrpFightSlot5.Items6"),
-            resources.GetString("cboxExpGrpFightSlot5.Items7"),
-            resources.GetString("cboxExpGrpFightSlot5.Items8")});
-            this.cboxExpGrpFightSlot5.Name = "cboxExpGrpFightSlot5";
-            // 
-            // label174
-            // 
-            resources.ApplyResources(this.label174, "label174");
-            this.label174.Name = "label174";
-            // 
-            // label173
-            // 
-            resources.ApplyResources(this.label173, "label173");
-            this.label173.Name = "label173";
-            // 
-            // label172
-            // 
-            resources.ApplyResources(this.label172, "label172");
-            this.label172.Name = "label172";
-            // 
-            // label171
-            // 
-            resources.ApplyResources(this.label171, "label171");
-            this.label171.Name = "label171";
-            // 
-            // label170
-            // 
-            resources.ApplyResources(this.label170, "label170");
-            this.label170.Name = "label170";
-            // 
-            // label169
-            // 
-            resources.ApplyResources(this.label169, "label169");
-            this.label169.Name = "label169";
-            // 
-            // comboBox7
-            // 
-            this.comboBox7.DropDownHeight = 110;
-            this.comboBox7.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            resources.ApplyResources(this.comboBox7, "comboBox7");
-            this.comboBox7.FormattingEnabled = true;
-            this.comboBox7.Items.AddRange(new object[] {
-            resources.GetString("comboBox7.Items"),
-            resources.GetString("comboBox7.Items1"),
-            resources.GetString("comboBox7.Items2"),
-            resources.GetString("comboBox7.Items3"),
-            resources.GetString("comboBox7.Items4"),
-            resources.GetString("comboBox7.Items5"),
-            resources.GetString("comboBox7.Items6")});
-            this.comboBox7.Name = "comboBox7";
             // 
             // pnlDuels
             // 
@@ -7470,314 +7766,6 @@
             0,
             0});
             // 
-            // pnlDopings
-            // 
-            resources.ApplyResources(this.pnlDopings, "pnlDopings");
-            this.pnlDopings.Controls.Add(this.lstDoping);
-            this.pnlDopings.Controls.Add(this.chkRestartDoping);
-            this.pnlDopings.Controls.Add(this.grpDopingSettings);
-            this.pnlDopings.Controls.Add(this.grpDoping);
-            this.pnlDopings.Name = "pnlDopings";
-            // 
-            // lstDoping
-            // 
-            this.lstDoping.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            resources.ApplyResources(this.lstDoping, "lstDoping");
-            this.lstDoping.Name = "lstDoping";
-            this.lstDoping.DrawItem += new System.Windows.Forms.DrawItemEventHandler(this.lstAny_DrawItem);
-            this.lstDoping.SelectedIndexChanged += new System.EventHandler(this.lstDoping_SelectedIndexChanged);
-            // 
-            // chkRestartDoping
-            // 
-            resources.ApplyResources(this.chkRestartDoping, "chkRestartDoping");
-            this.chkRestartDoping.Name = "chkRestartDoping";
-            this.chkRestartDoping.UseVisualStyleBackColor = true;
-            // 
-            // grpDopingSettings
-            // 
-            this.grpDopingSettings.Controls.Add(this.chkDopingNoCoctailNoProblem);
-            this.grpDopingSettings.Controls.Add(this.chkDopingPryanik);
-            this.grpDopingSettings.Controls.Add(this.chkDopingZefir);
-            this.grpDopingSettings.Controls.Add(this.chkDopingNoCandyNoProblem);
-            this.grpDopingSettings.Controls.Add(this.chkDopingNoSauceNoProblem);
-            this.grpDopingSettings.Controls.Add(this.chkDopingAllowPartBilet);
-            this.grpDopingSettings.Controls.Add(this.chkDopingAllowCoctailAdv);
-            this.grpDopingSettings.Controls.Add(this.chkDopingShokoZefir);
-            resources.ApplyResources(this.grpDopingSettings, "grpDopingSettings");
-            this.grpDopingSettings.Name = "grpDopingSettings";
-            this.grpDopingSettings.TabStop = false;
-            // 
-            // chkDopingNoCoctailNoProblem
-            // 
-            resources.ApplyResources(this.chkDopingNoCoctailNoProblem, "chkDopingNoCoctailNoProblem");
-            this.chkDopingNoCoctailNoProblem.Name = "chkDopingNoCoctailNoProblem";
-            this.chkDopingNoCoctailNoProblem.UseVisualStyleBackColor = true;
-            // 
-            // chkDopingPryanik
-            // 
-            resources.ApplyResources(this.chkDopingPryanik, "chkDopingPryanik");
-            this.chkDopingPryanik.Name = "chkDopingPryanik";
-            this.chkDopingPryanik.UseVisualStyleBackColor = true;
-            // 
-            // chkDopingZefir
-            // 
-            resources.ApplyResources(this.chkDopingZefir, "chkDopingZefir");
-            this.chkDopingZefir.Name = "chkDopingZefir";
-            this.chkDopingZefir.UseVisualStyleBackColor = true;
-            // 
-            // chkDopingNoCandyNoProblem
-            // 
-            resources.ApplyResources(this.chkDopingNoCandyNoProblem, "chkDopingNoCandyNoProblem");
-            this.chkDopingNoCandyNoProblem.Name = "chkDopingNoCandyNoProblem";
-            this.chkDopingNoCandyNoProblem.UseVisualStyleBackColor = true;
-            // 
-            // chkDopingNoSauceNoProblem
-            // 
-            resources.ApplyResources(this.chkDopingNoSauceNoProblem, "chkDopingNoSauceNoProblem");
-            this.chkDopingNoSauceNoProblem.Name = "chkDopingNoSauceNoProblem";
-            this.chkDopingNoSauceNoProblem.UseVisualStyleBackColor = true;
-            // 
-            // chkDopingAllowPartBilet
-            // 
-            resources.ApplyResources(this.chkDopingAllowPartBilet, "chkDopingAllowPartBilet");
-            this.chkDopingAllowPartBilet.Name = "chkDopingAllowPartBilet";
-            this.chkDopingAllowPartBilet.UseVisualStyleBackColor = true;
-            // 
-            // chkDopingAllowCoctailAdv
-            // 
-            resources.ApplyResources(this.chkDopingAllowCoctailAdv, "chkDopingAllowCoctailAdv");
-            this.chkDopingAllowCoctailAdv.Name = "chkDopingAllowCoctailAdv";
-            this.chkDopingAllowCoctailAdv.UseVisualStyleBackColor = true;
-            // 
-            // chkDopingShokoZefir
-            // 
-            resources.ApplyResources(this.chkDopingShokoZefir, "chkDopingShokoZefir");
-            this.chkDopingShokoZefir.Name = "chkDopingShokoZefir";
-            this.chkDopingShokoZefir.UseVisualStyleBackColor = true;
-            // 
-            // grpDoping
-            // 
-            this.grpDoping.Controls.Add(this.numRatSyncLvlDoping);
-            this.grpDoping.Controls.Add(this.numLvlDoping);
-            this.grpDoping.Controls.Add(this.dtDoping);
-            this.grpDoping.Controls.Add(this.label62);
-            this.grpDoping.Controls.Add(this.label61);
-            this.grpDoping.Controls.Add(this.btnDopingRemove);
-            this.grpDoping.Controls.Add(this.btnDopingAdd);
-            this.grpDoping.Controls.Add(this.btnDopingLoad);
-            this.grpDoping.Controls.Add(this.btnDopingSave);
-            this.grpDoping.Controls.Add(this.cboxDopingType);
-            this.grpDoping.Controls.Add(this.cboxDopingArt);
-            this.grpDoping.Controls.Add(this.cboxDopingEvent);
-            resources.ApplyResources(this.grpDoping, "grpDoping");
-            this.grpDoping.Name = "grpDoping";
-            this.grpDoping.TabStop = false;
-            // 
-            // numRatSyncLvlDoping
-            // 
-            resources.ApplyResources(this.numRatSyncLvlDoping, "numRatSyncLvlDoping");
-            this.numRatSyncLvlDoping.Maximum = new decimal(new int[] {
-            35,
-            0,
-            0,
-            0});
-            this.numRatSyncLvlDoping.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.numRatSyncLvlDoping.Name = "numRatSyncLvlDoping";
-            this.numRatSyncLvlDoping.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            // 
-            // numLvlDoping
-            // 
-            resources.ApplyResources(this.numLvlDoping, "numLvlDoping");
-            this.numLvlDoping.Maximum = new decimal(new int[] {
-            35,
-            0,
-            0,
-            0});
-            this.numLvlDoping.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.numLvlDoping.Name = "numLvlDoping";
-            this.numLvlDoping.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            // 
-            // dtDoping
-            // 
-            resources.ApplyResources(this.dtDoping, "dtDoping");
-            this.dtDoping.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtDoping.Name = "dtDoping";
-            this.dtDoping.ShowUpDown = true;
-            this.dtDoping.Value = new System.DateTime(2011, 11, 19, 14, 45, 0, 0);
-            // 
-            // label62
-            // 
-            resources.ApplyResources(this.label62, "label62");
-            this.label62.ForeColor = System.Drawing.Color.Black;
-            this.label62.Name = "label62";
-            // 
-            // label61
-            // 
-            resources.ApplyResources(this.label61, "label61");
-            this.label61.ForeColor = System.Drawing.Color.Black;
-            this.label61.Name = "label61";
-            // 
-            // btnDopingRemove
-            // 
-            resources.ApplyResources(this.btnDopingRemove, "btnDopingRemove");
-            this.btnDopingRemove.Name = "btnDopingRemove";
-            this.btnDopingRemove.UseVisualStyleBackColor = true;
-            this.btnDopingRemove.Click += new System.EventHandler(this.btnDoppingRemove_Click);
-            // 
-            // btnDopingAdd
-            // 
-            resources.ApplyResources(this.btnDopingAdd, "btnDopingAdd");
-            this.btnDopingAdd.Name = "btnDopingAdd";
-            this.btnDopingAdd.UseVisualStyleBackColor = true;
-            this.btnDopingAdd.Click += new System.EventHandler(this.btnDoppingAdd_Click);
-            // 
-            // btnDopingLoad
-            // 
-            resources.ApplyResources(this.btnDopingLoad, "btnDopingLoad");
-            this.btnDopingLoad.Name = "btnDopingLoad";
-            this.btnDopingLoad.UseVisualStyleBackColor = true;
-            this.btnDopingLoad.Click += new System.EventHandler(this.btnDopingLoad_Click);
-            // 
-            // btnDopingSave
-            // 
-            resources.ApplyResources(this.btnDopingSave, "btnDopingSave");
-            this.btnDopingSave.Name = "btnDopingSave";
-            this.btnDopingSave.UseVisualStyleBackColor = true;
-            this.btnDopingSave.Click += new System.EventHandler(this.btnDoppingSave_Click);
-            // 
-            // cboxDopingType
-            // 
-            this.cboxDopingType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            resources.ApplyResources(this.cboxDopingType, "cboxDopingType");
-            this.cboxDopingType.FormattingEnabled = true;
-            this.cboxDopingType.Items.AddRange(new object[] {
-            resources.GetString("cboxDopingType.Items"),
-            resources.GetString("cboxDopingType.Items1"),
-            resources.GetString("cboxDopingType.Items2"),
-            resources.GetString("cboxDopingType.Items3"),
-            resources.GetString("cboxDopingType.Items4"),
-            resources.GetString("cboxDopingType.Items5"),
-            resources.GetString("cboxDopingType.Items6"),
-            resources.GetString("cboxDopingType.Items7"),
-            resources.GetString("cboxDopingType.Items8"),
-            resources.GetString("cboxDopingType.Items9"),
-            resources.GetString("cboxDopingType.Items10"),
-            resources.GetString("cboxDopingType.Items11"),
-            resources.GetString("cboxDopingType.Items12"),
-            resources.GetString("cboxDopingType.Items13"),
-            resources.GetString("cboxDopingType.Items14"),
-            resources.GetString("cboxDopingType.Items15"),
-            resources.GetString("cboxDopingType.Items16"),
-            resources.GetString("cboxDopingType.Items17"),
-            resources.GetString("cboxDopingType.Items18"),
-            resources.GetString("cboxDopingType.Items19"),
-            resources.GetString("cboxDopingType.Items20"),
-            resources.GetString("cboxDopingType.Items21"),
-            resources.GetString("cboxDopingType.Items22"),
-            resources.GetString("cboxDopingType.Items23"),
-            resources.GetString("cboxDopingType.Items24"),
-            resources.GetString("cboxDopingType.Items25"),
-            resources.GetString("cboxDopingType.Items26"),
-            resources.GetString("cboxDopingType.Items27"),
-            resources.GetString("cboxDopingType.Items28"),
-            resources.GetString("cboxDopingType.Items29"),
-            resources.GetString("cboxDopingType.Items30"),
-            resources.GetString("cboxDopingType.Items31"),
-            resources.GetString("cboxDopingType.Items32"),
-            resources.GetString("cboxDopingType.Items33"),
-            resources.GetString("cboxDopingType.Items34"),
-            resources.GetString("cboxDopingType.Items35"),
-            resources.GetString("cboxDopingType.Items36"),
-            resources.GetString("cboxDopingType.Items37"),
-            resources.GetString("cboxDopingType.Items38"),
-            resources.GetString("cboxDopingType.Items39"),
-            resources.GetString("cboxDopingType.Items40"),
-            resources.GetString("cboxDopingType.Items41"),
-            resources.GetString("cboxDopingType.Items42"),
-            resources.GetString("cboxDopingType.Items43"),
-            resources.GetString("cboxDopingType.Items44"),
-            resources.GetString("cboxDopingType.Items45"),
-            resources.GetString("cboxDopingType.Items46"),
-            resources.GetString("cboxDopingType.Items47"),
-            resources.GetString("cboxDopingType.Items48"),
-            resources.GetString("cboxDopingType.Items49"),
-            resources.GetString("cboxDopingType.Items50"),
-            resources.GetString("cboxDopingType.Items51"),
-            resources.GetString("cboxDopingType.Items52"),
-            resources.GetString("cboxDopingType.Items53"),
-            resources.GetString("cboxDopingType.Items54"),
-            resources.GetString("cboxDopingType.Items55"),
-            resources.GetString("cboxDopingType.Items56"),
-            resources.GetString("cboxDopingType.Items57"),
-            resources.GetString("cboxDopingType.Items58"),
-            resources.GetString("cboxDopingType.Items59"),
-            resources.GetString("cboxDopingType.Items60"),
-            resources.GetString("cboxDopingType.Items61"),
-            resources.GetString("cboxDopingType.Items62"),
-            resources.GetString("cboxDopingType.Items63"),
-            resources.GetString("cboxDopingType.Items64"),
-            resources.GetString("cboxDopingType.Items65"),
-            resources.GetString("cboxDopingType.Items66"),
-            resources.GetString("cboxDopingType.Items67"),
-            resources.GetString("cboxDopingType.Items68"),
-            resources.GetString("cboxDopingType.Items69"),
-            resources.GetString("cboxDopingType.Items70"),
-            resources.GetString("cboxDopingType.Items71"),
-            resources.GetString("cboxDopingType.Items72"),
-            resources.GetString("cboxDopingType.Items73"),
-            resources.GetString("cboxDopingType.Items74"),
-            resources.GetString("cboxDopingType.Items75"),
-            resources.GetString("cboxDopingType.Items76"),
-            resources.GetString("cboxDopingType.Items77"),
-            resources.GetString("cboxDopingType.Items78"),
-            resources.GetString("cboxDopingType.Items79"),
-            resources.GetString("cboxDopingType.Items80"),
-            resources.GetString("cboxDopingType.Items81"),
-            resources.GetString("cboxDopingType.Items82"),
-            resources.GetString("cboxDopingType.Items83"),
-            resources.GetString("cboxDopingType.Items84"),
-            resources.GetString("cboxDopingType.Items85"),
-            resources.GetString("cboxDopingType.Items86"),
-            resources.GetString("cboxDopingType.Items87")});
-            this.cboxDopingType.Name = "cboxDopingType";
-            this.cboxDopingType.SelectedIndexChanged += new System.EventHandler(this.cboxDoppingType_SelectedIndexChanged);
-            // 
-            // cboxDopingArt
-            // 
-            this.cboxDopingArt.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            resources.ApplyResources(this.cboxDopingArt, "cboxDopingArt");
-            this.cboxDopingArt.FormattingEnabled = true;
-            this.cboxDopingArt.Items.AddRange(new object[] {
-            resources.GetString("cboxDopingArt.Items"),
-            resources.GetString("cboxDopingArt.Items1"),
-            resources.GetString("cboxDopingArt.Items2")});
-            this.cboxDopingArt.Name = "cboxDopingArt";
-            this.cboxDopingArt.SelectedIndexChanged += new System.EventHandler(this.DopingArt_Changed);
-            // 
-            // cboxDopingEvent
-            // 
-            this.cboxDopingEvent.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            resources.ApplyResources(this.cboxDopingEvent, "cboxDopingEvent");
-            this.cboxDopingEvent.FormattingEnabled = true;
-            this.cboxDopingEvent.Name = "cboxDopingEvent";
-            this.cboxDopingEvent.SelectedIndexChanged += new System.EventHandler(this.cboxDoppingEvent_SelectedIndexChanged);
-            // 
             // pnlSystemSettings
             // 
             resources.ApplyResources(this.pnlSystemSettings, "pnlSystemSettings");
@@ -8466,36 +8454,6 @@
             this.toolTip.ReshowDelay = 1;
             this.toolTip.UseFading = false;
             // 
-            // label204
-            // 
-            resources.ApplyResources(this.label204, "label204");
-            this.label204.Name = "label204";
-            // 
-            // label205
-            // 
-            resources.ApplyResources(this.label205, "label205");
-            this.label205.Name = "label205";
-            // 
-            // numTrucksCheckInterval
-            // 
-            resources.ApplyResources(this.numTrucksCheckInterval, "numTrucksCheckInterval");
-            this.numTrucksCheckInterval.Maximum = new decimal(new int[] {
-            1440,
-            0,
-            0,
-            0});
-            this.numTrucksCheckInterval.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.numTrucksCheckInterval.Name = "numTrucksCheckInterval";
-            this.numTrucksCheckInterval.Value = new decimal(new int[] {
-            10,
-            0,
-            0,
-            0});
-            // 
             // frmMain
             // 
             resources.ApplyResources(this, "$this");
@@ -8521,15 +8479,10 @@
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.pnlContainer.ResumeLayout(false);
-            this.pnlTrucks.ResumeLayout(false);
-            this.groupBox16.ResumeLayout(false);
-            this.groupBox16.PerformLayout();
-            this.groupBox17.ResumeLayout(false);
-            this.groupBox17.PerformLayout();
-            this.tblTrucks.ResumeLayout(false);
-            this.tblTrucks.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numTrucksMinPowerPoints)).EndInit();
             this.pnlGroupFights.ResumeLayout(false);
+            this.groupBox19.ResumeLayout(false);
+            this.groupBox19.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numExpMaxBuyFightItemAmount)).EndInit();
             this.grpGrpFightSettings.ResumeLayout(false);
             this.grpGrpFightSettings.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numClanMeFightHP)).EndInit();
@@ -8538,14 +8491,25 @@
             this.grpGrpFight.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            this.grpExpGrpFightSettings.ResumeLayout(false);
-            this.grpExpGrpFightSettings.PerformLayout();
             this.grpExpFightBag.ResumeLayout(false);
             this.grpExpFightBag.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numExpMaxBuyFightItemAmount)).EndInit();
-            this.grpExpGrpFightContainer.ResumeLayout(false);
-            this.grpExpGrpFight.ResumeLayout(false);
-            this.grpExpGrpFight.PerformLayout();
+            this.pnlDopings.ResumeLayout(false);
+            this.pnlDopings.PerformLayout();
+            this.grpDopingSettings.ResumeLayout(false);
+            this.grpDopingSettings.PerformLayout();
+            this.grpDoping.ResumeLayout(false);
+            this.grpDoping.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numRatSyncLvlDoping)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numLvlDoping)).EndInit();
+            this.pnlTrucks.ResumeLayout(false);
+            this.groupBox16.ResumeLayout(false);
+            this.groupBox16.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numTrucksCheckInterval)).EndInit();
+            this.groupBox17.ResumeLayout(false);
+            this.groupBox17.PerformLayout();
+            this.tblTrucks.ResumeLayout(false);
+            this.tblTrucks.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numTrucksMinPowerPoints)).EndInit();
             this.pnlDuels.ResumeLayout(false);
             this.grpDuelControl.ResumeLayout(false);
             this.grpDuelControl.PerformLayout();
@@ -8756,14 +8720,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.numPyramidWanted)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numPyramidAmount)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numMaxPyramidPrice)).EndInit();
-            this.pnlDopings.ResumeLayout(false);
-            this.pnlDopings.PerformLayout();
-            this.grpDopingSettings.ResumeLayout(false);
-            this.grpDopingSettings.PerformLayout();
-            this.grpDoping.ResumeLayout(false);
-            this.grpDoping.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numRatSyncLvlDoping)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numLvlDoping)).EndInit();
             this.pnlBankDeposit.ResumeLayout(false);
             this.pnlBankDeposit.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numBankDeposit)).EndInit();
@@ -8801,7 +8757,6 @@
             this.statusStrip.ResumeLayout(false);
             this.statusStrip.PerformLayout();
             this.FunctionsMenuStrip.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.numTrucksCheckInterval)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -9227,13 +9182,9 @@
         private System.Windows.Forms.CheckBox chkExpBuyGranades;
         private System.Windows.Forms.Label label165;
         private System.Windows.Forms.Label label166;
-        private System.Windows.Forms.Label label167;
         private System.Windows.Forms.NumericUpDown numExpMaxBuyFightItemAmount;
-        private System.Windows.Forms.GroupBox grpExpGrpFightContainer;
-        private System.Windows.Forms.GroupBox grpExpGrpFightSettings;
         private System.Windows.Forms.ComboBox cboxExpGrpFightPet;
         private System.Windows.Forms.Label label90;
-        private System.Windows.Forms.GroupBox grpExpGrpFight;
         private System.Windows.Forms.ComboBox cboxExpGrpFightSlot4;
         private System.Windows.Forms.ComboBox cboxExpGrpFightSlot3;
         private System.Windows.Forms.ComboBox cboxExpGrpFightSlot2;
@@ -9246,13 +9197,11 @@
         private System.Windows.Forms.Label label171;
         private System.Windows.Forms.Label label170;
         private System.Windows.Forms.Label label169;
-        private System.Windows.Forms.ComboBox comboBox7;
         private System.Windows.Forms.CheckBox chkExpDoNotLoadActiveX;
         private System.Windows.Forms.Label label56;
         private System.Windows.Forms.CheckBox chkExpDoNotLoadImage;
         private System.Windows.Forms.NumericUpDown numExpMaxWebSockets;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Label lblTaskManagerHelp;
         private System.Windows.Forms.DateTimePicker dtExpGrpFightStart;
         private System.Windows.Forms.DateTimePicker dtExpGrpFightStop;
         private System.Windows.Forms.Label label91;
@@ -9619,7 +9568,9 @@
         private System.Windows.Forms.Label label203;
         private System.Windows.Forms.NumericUpDown numTrucksCheckInterval;
         private System.Windows.Forms.Label label205;
-        private System.Windows.Forms.Label label204;      
+        private System.Windows.Forms.Label label204;
+        private System.Windows.Forms.GroupBox groupBox19;
+        private System.Windows.Forms.Label label167;      
     }
 }
 
