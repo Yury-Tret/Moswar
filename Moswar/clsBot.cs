@@ -7452,7 +7452,6 @@ namespace Moswar
 
             GoToPlace(MainWB, Place.Butovo);
             DateTime ServerDT = GetServerTime(MainWB);
-            frmMain.InvokeScript(MainWB, "eval", new object[] { "Crimea.show()" });
 
             #region Проверяем доступность локации
             if ((bool)frmMain.GetJavaVar(MainWB, "patriotState == null"))
@@ -7464,6 +7463,7 @@ namespace Moswar
             #endregion
 
             #region Определяем состояние всех грузовиков
+            frmMain.InvokeScript(MainWB, "eval", new object[] { "Crimea.show()" });
             TruckInfo[] Trucks = new TruckInfo[12];
 
             for (int i = 0; i < 12; i++)
@@ -7499,6 +7499,7 @@ namespace Moswar
             #region Проверяем количество держав
             if (!TrucksControlResources(Trucks))
             {
+                frmMain.RefreshURL(MainWB, Settings.ServerURL); // Иначе возникают затыкания при входе в другие функции
                 Me.Events.NextTrucksCheckDT = ServerDT.AddMinutes((int)Settings.TrucksCheckInterval);
                 return;
             }
@@ -7571,6 +7572,7 @@ namespace Moswar
                     #region Проверяем количество держав
                     if (!TrucksControlResources(Trucks))
                     {
+                        frmMain.RefreshURL(MainWB, Settings.ServerURL); // Иначе возникают затыкания при входе в другие функции
                         Me.Events.NextTrucksCheckDT = ServerDT.AddMinutes((int)Settings.TrucksCheckInterval);
                         return;
                     }
@@ -7579,6 +7581,7 @@ namespace Moswar
             }
             #endregion
 
+            frmMain.RefreshURL(MainWB, Settings.ServerURL); // Иначе возникают затыкания при входе в другие функции
             Me.Events.NextTrucksCheckDT = ServerDT.AddMinutes((int)Settings.TrucksCheckInterval);
             return;
         }
