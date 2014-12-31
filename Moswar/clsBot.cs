@@ -1477,7 +1477,7 @@ namespace Moswar
                             foreach (HtmlElement H in frmMain.GetDocument(MainWB).GetElementById("content").GetElementsByTagName("table")[1].GetElementsByTagName("tr"))
                             {
                                 if (H.InnerHtml == null) break;
-                                Match match = Regex.Match(H.InnerHtml, "date\"?>(?<Time>([0-9. :])+)<([\\s\\S])+(Вы напали на)"); //Выискиваем все наши нападения
+                                Match match = Regex.Match(H.InnerHtml, "date\"?>(?<Time>([0-9. :])+)<([\\s\\S])+(Вы напали на игрока|Вы вступили в схватку с.*Агент госдепа)"); //Выискиваем все наши нападения
 
                                 if (match.Success)
                                 {
