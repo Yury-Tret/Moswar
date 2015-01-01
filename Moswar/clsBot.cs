@@ -13831,7 +13831,6 @@ namespace Moswar
                             Ignore.PVPAttack = true;
                         }
                         else Ignore.PVPAttack = false;
-                        UpdateMessageInfo(" Согласно Вашим настройкам дуеэли приостановлены!", Ignore.PVPAttack);
                         #endregion
                         
                         if (Me.RatHunting.RestartDT < DateTime.Now.AddMinutes(Me.Major.LastDT > ServerDT ? 5 : 15)) { Me.RatHunting.Defeats = 0; Me.RatHunting.Stop = false; } //Охота обновляется каждые 24 часа, на сей раз учитываем конец прошлого обвала
