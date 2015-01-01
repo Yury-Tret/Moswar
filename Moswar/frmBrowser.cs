@@ -1398,7 +1398,7 @@ namespace Moswar
             }
             #endregion
             lblUserMessage.BackColor = lblUserMessage.Text.StartsWith(" ") ? Color.Red : Color.Black; //Начинается пробелом, выводим сообщение красным!
-            if (lblUserMessage.Text != string.Empty) AutoApdateMessage.Visible = true;
+            if (lblUserMessage.Text != string.Empty) AutoUpdateMessage.Visible = true;
 
             if (LastCheckDT < DateTime.Now) 
             {                
@@ -1490,7 +1490,7 @@ namespace Moswar
                 if (FVI.ProductVersion != CurVersion)
                 {
                     AddLabelText(lblUserMessage, "Внимание! Доступна новая версия moswarBro: " + CurVersion);
-                    AutoApdateMessage.Visible = true;
+                    AutoUpdateMessage.Visible = true;
                     #region Tray
                     if (TrayIcon.Visible)
                     {
@@ -1506,14 +1506,14 @@ namespace Moswar
                     if (FVI.ProductVersion != FVI.FileVersion)
                     {
                         AddLabelText(lblUserMessage, "Ёлки палки ... да у тебя \"Beta-версия\", ты где её упер/ла то? =)");
-                        AutoApdateMessage.Visible = true;
+                        AutoUpdateMessage.Visible = true;
                     }
                 }                          
             }
             catch
             {
                 AddLabelText(lblUserMessage, " Внимание! Невозможно определить последнюю версию=("); //Начинается пробелом, выводим сообщение красным!
-                AutoApdateMessage.Visible = true;
+                AutoUpdateMessage.Visible = true;
             }         
             LastUpdateCheckDT = DateTime.Now.AddHours(3);            
         }
@@ -2240,7 +2240,7 @@ namespace Moswar
         }
         private void Controls_Click(object sender, EventArgs e) 
         {
-            if (sender.Equals(btnHideAutoUpdateMessage)) { AutoApdateMessage.Visible = false; lblUserMessage.Text = string.Empty; } //Прячем и стираем прошлые уведомления, пользователь уже с ними ознакомлен!
+            if (sender.Equals(btnHideAutoUpdateMessage)) { AutoUpdateMessage.Visible = false; lblUserMessage.Text = string.Empty; } //Прячем и стираем прошлые уведомления, пользователь уже с ними ознакомлен!
             if (sender.Equals(lblUserMessage)) System.Diagnostics.Process.Start("http://www.moswarbro.moy.su/index/skachat_moswarbro/0-6");
             #region CoctailCook
             if (sender.Equals(cboxCoctailCookType)) 

@@ -34,7 +34,7 @@
             this.btnTest = new System.Windows.Forms.Button();
             this.tabControl = new System.Windows.Forms.TabControl();
             this.tabMainBrowser = new System.Windows.Forms.TabPage();
-            this.AutoApdateMessage = new System.Windows.Forms.Panel();
+            this.AutoUpdateMessage = new System.Windows.Forms.Panel();
             this.lblUserMessage = new System.Windows.Forms.Label();
             this.btnHideAutoUpdateMessage = new System.Windows.Forms.Button();
             this.ctrMainBrowser = new System.Windows.Forms.WebBrowser();
@@ -842,7 +842,7 @@
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
             this.tabControl.SuspendLayout();
             this.tabMainBrowser.SuspendLayout();
-            this.AutoApdateMessage.SuspendLayout();
+            this.AutoUpdateMessage.SuspendLayout();
             this.tabMainSettings.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.pnlContainer.SuspendLayout();
@@ -1079,19 +1079,19 @@
             // 
             resources.ApplyResources(this.tabMainBrowser, "tabMainBrowser");
             this.tabMainBrowser.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tabMainBrowser.Controls.Add(this.AutoApdateMessage);
+            this.tabMainBrowser.Controls.Add(this.AutoUpdateMessage);
             this.tabMainBrowser.Controls.Add(this.ctrMainBrowser);
             this.tabMainBrowser.Name = "tabMainBrowser";
             this.tabMainBrowser.UseVisualStyleBackColor = true;
             // 
             // AutoApdateMessage
             // 
-            resources.ApplyResources(this.AutoApdateMessage, "AutoApdateMessage");
-            this.AutoApdateMessage.BackColor = System.Drawing.SystemColors.Control;
-            this.AutoApdateMessage.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.AutoApdateMessage.Controls.Add(this.lblUserMessage);
-            this.AutoApdateMessage.Controls.Add(this.btnHideAutoUpdateMessage);
-            this.AutoApdateMessage.Name = "AutoApdateMessage";
+            resources.ApplyResources(this.AutoUpdateMessage, "AutoApdateMessage");
+            this.AutoUpdateMessage.BackColor = System.Drawing.SystemColors.Control;
+            this.AutoUpdateMessage.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.AutoUpdateMessage.Controls.Add(this.lblUserMessage);
+            this.AutoUpdateMessage.Controls.Add(this.btnHideAutoUpdateMessage);
+            this.AutoUpdateMessage.Name = "AutoApdateMessage";
             // 
             // lblUserMessage
             // 
@@ -8500,7 +8500,7 @@
             this.Shown += new System.EventHandler(this.frmMain_Shown);
             this.tabControl.ResumeLayout(false);
             this.tabMainBrowser.ResumeLayout(false);
-            this.AutoApdateMessage.ResumeLayout(false);
+            this.AutoUpdateMessage.ResumeLayout(false);
             this.tabMainSettings.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
@@ -8867,7 +8867,7 @@
         private System.Windows.Forms.GroupBox grpPic;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.LinkLabel lnkWeb;
-        private System.Windows.Forms.Panel AutoApdateMessage;
+        private System.Windows.Forms.Panel AutoUpdateMessage;
         private System.Windows.Forms.Label lblUserMessage;
         private System.Windows.Forms.Button btnHideAutoUpdateMessage;
         private System.Windows.Forms.NotifyIcon TrayIcon;
