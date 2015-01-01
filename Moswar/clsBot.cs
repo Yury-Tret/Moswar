@@ -725,6 +725,7 @@ namespace Moswar
             public decimal minFactoryOre;
             public bool GoMC;
             public decimal MCWorkTime;
+            public bool MCTrain;
             public decimal SDWorkTime;
             public decimal SDThimblesMoney;
             public bool TrainWarPet;
@@ -6953,6 +6954,30 @@ namespace Moswar
             HtmlElement HtmlEl;
 
             GoToPlace(MainWB, Place.Shaurburgers);
+
+            #region Проходим тренинги
+            if (Settings.MCTrain)
+                for (;;)
+                {
+                    object Button = frmMain.GetJavaVar(MainWB, "$('form.shaurburgers-training .button:visible')[0]");
+                    if (Button == null)
+                        break;
+                    Button.GetType().InvokeMember("click", BindingFlags.InvokeMethod, null, Button, null);
+                    IsWBComplete(MainWB, 2000, 3500);
+
+                    string Result = (string)frmMain.GetJavaVar(MainWB, "$('#content .success, #content .error').text()");
+                    if (!Result.StartsWith("Вы успешно посетили тренинги"))
+                    {
+                        UpdateStatus("! " + DateTime.Now + " Не удалось пройти тренинги в Шаурбургерсе" + (Result == "" ? "" : ": " + Result));
+                        frmMain.RefreshURL(MainWB, Settings.ServerURL);
+                        break;
+                    }
+
+                    UpdateStatus("# " + DateTime.Now + " Прошел тренинги в Шаурбургерсе");
+                    frmMain.RefreshURL(MainWB, Settings.ServerURL);
+                }
+            #endregion
+
             if (frmMain.GetDocument(MainWB).GetElementById("shaurma-btn") != null || frmMain.GetDocument(MainWB).GetElementById("shaurma") != null) //Есть ли ещё время работы?
             {
                 if (frmMain.GetDocument(MainWB).GetElementById("shaurma") == null) //Я сейчас не работаю?

@@ -468,6 +468,7 @@ namespace Moswar
 
             Bot.Settings.GoMC = chkMC.Checked;
             Bot.Settings.MCWorkTime = numMCWorkTime.Value;
+            Bot.Settings.MCTrain = chkMCTrain.Checked;
 
             Bot.Settings.SDWorkTime = numSDWorkTime.Value;
             Bot.Settings.SDThimblesMoney = numSDPlayThimbles.Value * 1000;
@@ -850,6 +851,7 @@ namespace Moswar
 
                 chkMC.Checked = Bot.Settings.GoMC;
                 numMCWorkTime.Value = Bot.Settings.MCWorkTime;
+                chkMCTrain.Checked = Bot.Settings.MCTrain;
 
                 numSDWorkTime.Value = Bot.Settings.SDWorkTime;
                 numSDPlayThimbles.Value = Bot.Settings.SDThimblesMoney / 1000;

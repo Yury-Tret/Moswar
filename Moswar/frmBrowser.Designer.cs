@@ -43,8 +43,14 @@
             this.treeViewSettings = new System.Windows.Forms.TreeView();
             this.lblSettingsCaption = new System.Windows.Forms.Label();
             this.pnlContainer = new System.Windows.Forms.Panel();
+            this.pnlShaurburgers = new System.Windows.Forms.Panel();
+            this.groupBox20 = new System.Windows.Forms.GroupBox();
+            this.chkMCTrain = new System.Windows.Forms.CheckBox();
+            this.label206 = new System.Windows.Forms.Label();
+            this.chkMC = new System.Windows.Forms.CheckBox();
+            this.numMCWorkTime = new System.Windows.Forms.NumericUpDown();
+            this.label36 = new System.Windows.Forms.Label();
             this.pnlGroupFights = new System.Windows.Forms.Panel();
-            this.label167 = new System.Windows.Forms.Label();
             this.groupBox19 = new System.Windows.Forms.GroupBox();
             this.numExpMaxBuyFightItemAmount = new System.Windows.Forms.NumericUpDown();
             this.chkExpBuyHeal = new System.Windows.Forms.CheckBox();
@@ -70,6 +76,7 @@
             this.chkGrpFightUseChees = new System.Windows.Forms.CheckBox();
             this.chkGrpFightUseHeal = new System.Windows.Forms.CheckBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label167 = new System.Windows.Forms.Label();
             this.dtExpGrpFightStart = new System.Windows.Forms.DateTimePicker();
             this.dtExpGrpFightStop = new System.Windows.Forms.DateTimePicker();
             this.label91 = new System.Windows.Forms.Label();
@@ -555,10 +562,6 @@
             this.numFactoryChainCount = new System.Windows.Forms.NumericUpDown();
             this.label26 = new System.Windows.Forms.Label();
             this.label81 = new System.Windows.Forms.Label();
-            this.pnlShaurburgers = new System.Windows.Forms.Panel();
-            this.chkMC = new System.Windows.Forms.CheckBox();
-            this.numMCWorkTime = new System.Windows.Forms.NumericUpDown();
-            this.label36 = new System.Windows.Forms.Label();
             this.pnlTimings = new System.Windows.Forms.Panel();
             this.label99 = new System.Windows.Forms.Label();
             this.label100 = new System.Windows.Forms.Label();
@@ -843,6 +846,9 @@
             this.tabMainSettings.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.pnlContainer.SuspendLayout();
+            this.pnlShaurburgers.SuspendLayout();
+            this.groupBox20.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numMCWorkTime)).BeginInit();
             this.pnlGroupFights.SuspendLayout();
             this.groupBox19.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numExpMaxBuyFightItemAmount)).BeginInit();
@@ -958,8 +964,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.numMinFactoryOre)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numMinFactoryMoney)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numFactoryChainCount)).BeginInit();
-            this.pnlShaurburgers.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numMCWorkTime)).BeginInit();
             this.pnlTimings.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numExpAnalyseFightMax)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numGagIE)).BeginInit();
@@ -1156,6 +1160,7 @@
             // 
             // pnlContainer
             // 
+            this.pnlContainer.Controls.Add(this.pnlShaurburgers);
             this.pnlContainer.Controls.Add(this.pnlGroupFights);
             this.pnlContainer.Controls.Add(this.pnlDopings);
             this.pnlContainer.Controls.Add(this.pnlTrucks);
@@ -1181,7 +1186,6 @@
             this.pnlContainer.Controls.Add(this.pnlMisc);
             this.pnlContainer.Controls.Add(this.pnlOldOilPipeline);
             this.pnlContainer.Controls.Add(this.pnlMF);
-            this.pnlContainer.Controls.Add(this.pnlShaurburgers);
             this.pnlContainer.Controls.Add(this.pnlTimings);
             this.pnlContainer.Controls.Add(this.pnlProxy);
             this.pnlContainer.Controls.Add(this.pnlLogin);
@@ -1211,6 +1215,69 @@
             resources.ApplyResources(this.pnlContainer, "pnlContainer");
             this.pnlContainer.Name = "pnlContainer";
             // 
+            // pnlShaurburgers
+            // 
+            resources.ApplyResources(this.pnlShaurburgers, "pnlShaurburgers");
+            this.pnlShaurburgers.Controls.Add(this.groupBox20);
+            this.pnlShaurburgers.Name = "pnlShaurburgers";
+            // 
+            // groupBox20
+            // 
+            this.groupBox20.Controls.Add(this.chkMCTrain);
+            this.groupBox20.Controls.Add(this.label206);
+            this.groupBox20.Controls.Add(this.chkMC);
+            this.groupBox20.Controls.Add(this.numMCWorkTime);
+            this.groupBox20.Controls.Add(this.label36);
+            resources.ApplyResources(this.groupBox20, "groupBox20");
+            this.groupBox20.Name = "groupBox20";
+            this.groupBox20.TabStop = false;
+            // 
+            // chkMCTrain
+            // 
+            resources.ApplyResources(this.chkMCTrain, "chkMCTrain");
+            this.chkMCTrain.Name = "chkMCTrain";
+            this.chkMCTrain.UseVisualStyleBackColor = true;
+            // 
+            // label206
+            // 
+            resources.ApplyResources(this.label206, "label206");
+            this.label206.Name = "label206";
+            // 
+            // chkMC
+            // 
+            resources.ApplyResources(this.chkMC, "chkMC");
+            this.chkMC.Checked = true;
+            this.chkMC.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.chkMC.Name = "chkMC";
+            this.chkMC.UseVisualStyleBackColor = true;
+            this.chkMC.CheckedChanged += new System.EventHandler(this.CheckGroupBox_CheckedChanged);
+            this.chkMC.VisibleChanged += new System.EventHandler(this.CheckGroupBox_CheckedChanged);
+            // 
+            // numMCWorkTime
+            // 
+            resources.ApplyResources(this.numMCWorkTime, "numMCWorkTime");
+            this.numMCWorkTime.Maximum = new decimal(new int[] {
+            8,
+            0,
+            0,
+            0});
+            this.numMCWorkTime.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numMCWorkTime.Name = "numMCWorkTime";
+            this.numMCWorkTime.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
+            // label36
+            // 
+            resources.ApplyResources(this.label36, "label36");
+            this.label36.Name = "label36";
+            // 
             // pnlGroupFights
             // 
             resources.ApplyResources(this.pnlGroupFights, "pnlGroupFights");
@@ -1220,13 +1287,6 @@
             this.pnlGroupFights.Controls.Add(this.groupBox1);
             this.pnlGroupFights.Controls.Add(this.grpExpFightBag);
             this.pnlGroupFights.Name = "pnlGroupFights";
-            // 
-            // label167
-            // 
-            this.label167.Image = global::Moswar.Properties.Resources.Question;
-            resources.ApplyResources(this.label167, "label167");
-            this.label167.Name = "label167";
-            this.toolTip.SetToolTip(this.label167, resources.GetString("label167.ToolTip"));
             // 
             // groupBox19
             // 
@@ -1436,6 +1496,13 @@
             resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.TabStop = false;
+            // 
+            // label167
+            // 
+            this.label167.Image = global::Moswar.Properties.Resources.Question;
+            resources.ApplyResources(this.label167, "label167");
+            this.label167.Name = "label167";
+            this.toolTip.SetToolTip(this.label167, resources.GetString("label167.ToolTip"));
             // 
             // dtExpGrpFightStart
             // 
@@ -5959,47 +6026,6 @@
             resources.ApplyResources(this.label81, "label81");
             this.label81.Name = "label81";
             // 
-            // pnlShaurburgers
-            // 
-            resources.ApplyResources(this.pnlShaurburgers, "pnlShaurburgers");
-            this.pnlShaurburgers.Controls.Add(this.chkMC);
-            this.pnlShaurburgers.Controls.Add(this.numMCWorkTime);
-            this.pnlShaurburgers.Controls.Add(this.label36);
-            this.pnlShaurburgers.Name = "pnlShaurburgers";
-            // 
-            // chkMC
-            // 
-            resources.ApplyResources(this.chkMC, "chkMC");
-            this.chkMC.Checked = true;
-            this.chkMC.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.chkMC.Name = "chkMC";
-            this.chkMC.UseVisualStyleBackColor = true;
-            // 
-            // numMCWorkTime
-            // 
-            resources.ApplyResources(this.numMCWorkTime, "numMCWorkTime");
-            this.numMCWorkTime.Maximum = new decimal(new int[] {
-            12,
-            0,
-            0,
-            0});
-            this.numMCWorkTime.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.numMCWorkTime.Name = "numMCWorkTime";
-            this.numMCWorkTime.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            // 
-            // label36
-            // 
-            resources.ApplyResources(this.label36, "label36");
-            this.label36.Name = "label36";
-            // 
             // pnlTimings
             // 
             resources.ApplyResources(this.pnlTimings, "pnlTimings");
@@ -8479,6 +8505,10 @@
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.pnlContainer.ResumeLayout(false);
+            this.pnlShaurburgers.ResumeLayout(false);
+            this.groupBox20.ResumeLayout(false);
+            this.groupBox20.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numMCWorkTime)).EndInit();
             this.pnlGroupFights.ResumeLayout(false);
             this.groupBox19.ResumeLayout(false);
             this.groupBox19.PerformLayout();
@@ -8639,9 +8669,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.numMinFactoryOre)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numMinFactoryMoney)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numFactoryChainCount)).EndInit();
-            this.pnlShaurburgers.ResumeLayout(false);
-            this.pnlShaurburgers.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numMCWorkTime)).EndInit();
             this.pnlTimings.ResumeLayout(false);
             this.pnlTimings.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numExpAnalyseFightMax)).EndInit();
@@ -9570,7 +9597,10 @@
         private System.Windows.Forms.Label label205;
         private System.Windows.Forms.Label label204;
         private System.Windows.Forms.GroupBox groupBox19;
-        private System.Windows.Forms.Label label167;      
+        private System.Windows.Forms.Label label167;
+        private System.Windows.Forms.GroupBox groupBox20;
+        private System.Windows.Forms.CheckBox chkMCTrain;
+        private System.Windows.Forms.Label label206;      
     }
 }
 

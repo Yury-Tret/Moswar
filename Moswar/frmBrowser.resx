@@ -707,6 +707,198 @@
   <data name="&gt;&gt;lblSettingsCaption.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <data name="pnlShaurburgers.AutoScroll" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="chkMCTrain.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="chkMCTrain.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 48</value>
+  </data>
+  <data name="chkMCTrain.Size" type="System.Drawing.Size, System.Drawing">
+    <value>135, 18</value>
+  </data>
+  <data name="chkMCTrain.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="chkMCTrain.Text" xml:space="preserve">
+    <value>Проходить тренинги</value>
+  </data>
+  <data name="&gt;&gt;chkMCTrain.Name" xml:space="preserve">
+    <value>chkMCTrain</value>
+  </data>
+  <data name="&gt;&gt;chkMCTrain.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkMCTrain.Parent" xml:space="preserve">
+    <value>groupBox20</value>
+  </data>
+  <data name="&gt;&gt;chkMCTrain.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="label206.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label206.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 24</value>
+  </data>
+  <data name="label206.Size" type="System.Drawing.Size, System.Drawing">
+    <value>113, 14</value>
+  </data>
+  <data name="label206.TabIndex" type="System.Int32, mscorlib">
+    <value>65</value>
+  </data>
+  <data name="label206.Text" xml:space="preserve">
+    <value>Работать сменами в</value>
+  </data>
+  <data name="&gt;&gt;label206.Name" xml:space="preserve">
+    <value>label206</value>
+  </data>
+  <data name="&gt;&gt;label206.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label206.Parent" xml:space="preserve">
+    <value>groupBox20</value>
+  </data>
+  <data name="&gt;&gt;label206.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="chkMC.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="chkMC.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="chkMC.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, -2</value>
+  </data>
+  <data name="chkMC.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 0, 0</value>
+  </data>
+  <data name="chkMC.Size" type="System.Drawing.Size, System.Drawing">
+    <value>170, 18</value>
+  </data>
+  <data name="chkMC.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="chkMC.Text" xml:space="preserve">
+    <value>Работать в Шаурбургерсе</value>
+  </data>
+  <data name="&gt;&gt;chkMC.Name" xml:space="preserve">
+    <value>chkMC</value>
+  </data>
+  <data name="&gt;&gt;chkMC.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkMC.Parent" xml:space="preserve">
+    <value>groupBox20</value>
+  </data>
+  <data name="&gt;&gt;chkMC.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="numMCWorkTime.Location" type="System.Drawing.Point, System.Drawing">
+    <value>119, 20</value>
+  </data>
+  <data name="numMCWorkTime.Size" type="System.Drawing.Size, System.Drawing">
+    <value>39, 22</value>
+  </data>
+  <data name="numMCWorkTime.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="numMCWorkTime.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Center</value>
+  </data>
+  <data name="&gt;&gt;numMCWorkTime.Name" xml:space="preserve">
+    <value>numMCWorkTime</value>
+  </data>
+  <data name="&gt;&gt;numMCWorkTime.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;numMCWorkTime.Parent" xml:space="preserve">
+    <value>groupBox20</value>
+  </data>
+  <data name="&gt;&gt;numMCWorkTime.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="label36.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label36.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label36.Location" type="System.Drawing.Point, System.Drawing">
+    <value>160, 24</value>
+  </data>
+  <data name="label36.Size" type="System.Drawing.Size, System.Drawing">
+    <value>13, 14</value>
+  </data>
+  <data name="label36.TabIndex" type="System.Int32, mscorlib">
+    <value>64</value>
+  </data>
+  <data name="label36.Text" xml:space="preserve">
+    <value>ч</value>
+  </data>
+  <data name="&gt;&gt;label36.Name" xml:space="preserve">
+    <value>label36</value>
+  </data>
+  <data name="&gt;&gt;label36.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label36.Parent" xml:space="preserve">
+    <value>groupBox20</value>
+  </data>
+  <data name="&gt;&gt;label36.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="groupBox20.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 6</value>
+  </data>
+  <data name="groupBox20.Size" type="System.Drawing.Size, System.Drawing">
+    <value>184, 75</value>
+  </data>
+  <data name="groupBox20.TabIndex" type="System.Int32, mscorlib">
+    <value>65</value>
+  </data>
+  <data name="&gt;&gt;groupBox20.Name" xml:space="preserve">
+    <value>groupBox20</value>
+  </data>
+  <data name="&gt;&gt;groupBox20.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBox20.Parent" xml:space="preserve">
+    <value>pnlShaurburgers</value>
+  </data>
+  <data name="&gt;&gt;groupBox20.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="pnlShaurburgers.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="pnlShaurburgers.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="pnlShaurburgers.Size" type="System.Drawing.Size, System.Drawing">
+    <value>594, 602</value>
+  </data>
+  <data name="pnlShaurburgers.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="pnlShaurburgers.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;pnlShaurburgers.Name" xml:space="preserve">
+    <value>pnlShaurburgers</value>
+  </data>
+  <data name="&gt;&gt;pnlShaurburgers.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pnlShaurburgers.Parent" xml:space="preserve">
+    <value>pnlContainer</value>
+  </data>
+  <data name="&gt;&gt;pnlShaurburgers.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="pnlGroupFights.AutoScroll" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -2677,7 +2869,7 @@
     <value>pnlContainer</value>
   </data>
   <data name="&gt;&gt;pnlGroupFights.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="pnlDopings.AutoScroll" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -3691,7 +3883,7 @@
     <value>pnlContainer</value>
   </data>
   <data name="&gt;&gt;pnlDopings.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="pnlTrucks.AutoScroll" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -3851,7 +4043,7 @@
         AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
         LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
         ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAAAi
-        CQAAAk1TRnQBSQFMAgEBAwEAAUABAAFAAQABEAEAARABAAT/AQkBAAj/AUIBTQE2AQQGAAE2AQQCAAEo
+        CQAAAk1TRnQBSQFMAgEBAwEAAVABAAFQAQABEAEAARABAAT/AQkBAAj/AUIBTQE2AQQGAAE2AQQCAAEo
         AwABQAMAARADAAEBAQABCAYAAQQYAAGAAgABgAMAAoABAAGAAwABgAEAAYABAAKAAgADwAEAAcAB3AHA
         AQAB8AHKAaYBAAEzBQABMwEAATMBAAEzAQACMwIAAxYBAAMcAQADIgEAAykBAANVAQADTQEAA0IBAAM5
         AQABgAF8Af8BAAJQAf8BAAGTAQAB1gEAAf8B7AHMAQABxgHWAe8BAAHWAucBAAGQAakBrQIAAf8BMwMA
@@ -7329,7 +7521,7 @@
     <value>pnlContainer</value>
   </data>
   <data name="&gt;&gt;pnlTrucks.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="pnlDuels.AutoScroll" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -8817,7 +9009,7 @@
     <value>pnlContainer</value>
   </data>
   <data name="&gt;&gt;pnlDuels.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="pnlReturnBonus.AutoScroll" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -8877,7 +9069,7 @@
     <value>pnlContainer</value>
   </data>
   <data name="&gt;&gt;pnlReturnBonus.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="pnlTempLocations.AutoScroll" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -8907,7 +9099,7 @@
     <value>pnlContainer</value>
   </data>
   <data name="&gt;&gt;pnlTempLocations.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>6</value>
   </data>
   <data name="pnlInventory.AutoScroll" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -9051,7 +9243,7 @@
     <value>pnlContainer</value>
   </data>
   <data name="&gt;&gt;pnlInventory.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>7</value>
   </data>
   <data name="pnlWarPets.AutoScroll" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -9954,7 +10146,7 @@
     <value>pnlContainer</value>
   </data>
   <data name="&gt;&gt;pnlWarPets.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>8</value>
   </data>
   <data name="pnlResources.AutoScroll" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -10554,7 +10746,7 @@
     <value>pnlContainer</value>
   </data>
   <data name="&gt;&gt;pnlResources.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>9</value>
   </data>
   <data name="pnlHeal.AutoScroll" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -10920,7 +11112,7 @@
     <value>pnlContainer</value>
   </data>
   <data name="&gt;&gt;pnlHeal.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>10</value>
   </data>
   <data name="pnlTraining.AutoScroll" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -11382,7 +11574,7 @@
     <value>pnlContainer</value>
   </data>
   <data name="&gt;&gt;pnlTraining.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>11</value>
   </data>
   <data name="pnlGroupFightPVP.AutoScroll" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -11529,7 +11721,7 @@
     <value>pnlContainer</value>
   </data>
   <data name="&gt;&gt;pnlGroupFightPVP.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>12</value>
   </data>
   <data name="pnlGroupFightChaos.AutoScroll" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -11589,7 +11781,7 @@
     <value>pnlContainer</value>
   </data>
   <data name="&gt;&gt;pnlGroupFightChaos.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>13</value>
   </data>
   <data name="pnlGroupFightOre.AutoScroll" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -11649,7 +11841,7 @@
     <value>pnlContainer</value>
   </data>
   <data name="&gt;&gt;pnlGroupFightOre.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>14</value>
   </data>
   <data name="pnlClanWars.AutoScroll" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -11943,7 +12135,7 @@
     <value>pnlContainer</value>
   </data>
   <data name="&gt;&gt;pnlClanWars.ZOrder" xml:space="preserve">
-    <value>14</value>
+    <value>15</value>
   </data>
   <data name="pnlGroupFightMafia.AutoScroll" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -12057,7 +12249,7 @@
     <value>pnlContainer</value>
   </data>
   <data name="&gt;&gt;pnlGroupFightMafia.ZOrder" xml:space="preserve">
-    <value>15</value>
+    <value>16</value>
   </data>
   <data name="pnlHunterClub.AutoScroll" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -12796,7 +12988,7 @@
     <value>pnlContainer</value>
   </data>
   <data name="&gt;&gt;pnlHunterClub.ZOrder" xml:space="preserve">
-    <value>16</value>
+    <value>17</value>
   </data>
   <data name="pnlPetarena.AutoScroll" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -13231,7 +13423,7 @@
     <value>pnlContainer</value>
   </data>
   <data name="&gt;&gt;pnlPetarena.ZOrder" xml:space="preserve">
-    <value>17</value>
+    <value>18</value>
   </data>
   <data name="pnlOilPipeline.AutoScroll" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -14206,7 +14398,7 @@
     <value>pnlContainer</value>
   </data>
   <data name="&gt;&gt;pnlOilPipeline.ZOrder" xml:space="preserve">
-    <value>18</value>
+    <value>19</value>
   </data>
   <data name="pnlRatPipeline.AutoScroll" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -15205,7 +15397,7 @@
     <value>pnlContainer</value>
   </data>
   <data name="&gt;&gt;pnlRatPipeline.ZOrder" xml:space="preserve">
-    <value>19</value>
+    <value>20</value>
   </data>
   <data name="pnlDigging.AutoScroll" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -15625,7 +15817,7 @@
     <value>pnlContainer</value>
   </data>
   <data name="&gt;&gt;pnlDigging.ZOrder" xml:space="preserve">
-    <value>20</value>
+    <value>21</value>
   </data>
   <data name="pnlHumanImitation.AutoScroll" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -15868,7 +16060,7 @@
     <value>pnlContainer</value>
   </data>
   <data name="&gt;&gt;pnlHumanImitation.ZOrder" xml:space="preserve">
-    <value>21</value>
+    <value>22</value>
   </data>
   <data name="pnlMisc.AutoScroll" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -16096,7 +16288,7 @@
     <value>pnlContainer</value>
   </data>
   <data name="&gt;&gt;pnlMisc.ZOrder" xml:space="preserve">
-    <value>22</value>
+    <value>23</value>
   </data>
   <data name="pnlOldOilPipeline.AutoScroll" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -16345,7 +16537,7 @@
     <value>pnlContainer</value>
   </data>
   <data name="&gt;&gt;pnlOldOilPipeline.ZOrder" xml:space="preserve">
-    <value>23</value>
+    <value>24</value>
   </data>
   <data name="pnlMF.AutoScroll" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -16762,120 +16954,6 @@
     <value>pnlContainer</value>
   </data>
   <data name="&gt;&gt;pnlMF.ZOrder" xml:space="preserve">
-    <value>24</value>
-  </data>
-  <data name="pnlShaurburgers.AutoScroll" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="chkMC.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="chkMC.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="chkMC.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 6</value>
-  </data>
-  <data name="chkMC.Size" type="System.Drawing.Size, System.Drawing">
-    <value>223, 18</value>
-  </data>
-  <data name="chkMC.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="chkMC.Text" xml:space="preserve">
-    <value>Работать в Шаурбургерсе сменами в</value>
-  </data>
-  <data name="&gt;&gt;chkMC.Name" xml:space="preserve">
-    <value>chkMC</value>
-  </data>
-  <data name="&gt;&gt;chkMC.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;chkMC.Parent" xml:space="preserve">
-    <value>pnlShaurburgers</value>
-  </data>
-  <data name="&gt;&gt;chkMC.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="numMCWorkTime.Location" type="System.Drawing.Point, System.Drawing">
-    <value>227, 4</value>
-  </data>
-  <data name="numMCWorkTime.Size" type="System.Drawing.Size, System.Drawing">
-    <value>39, 22</value>
-  </data>
-  <data name="numMCWorkTime.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="numMCWorkTime.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
-    <value>Center</value>
-  </data>
-  <data name="&gt;&gt;numMCWorkTime.Name" xml:space="preserve">
-    <value>numMCWorkTime</value>
-  </data>
-  <data name="&gt;&gt;numMCWorkTime.Type" xml:space="preserve">
-    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;numMCWorkTime.Parent" xml:space="preserve">
-    <value>pnlShaurburgers</value>
-  </data>
-  <data name="&gt;&gt;numMCWorkTime.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="label36.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label36.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label36.Location" type="System.Drawing.Point, System.Drawing">
-    <value>268, 8</value>
-  </data>
-  <data name="label36.Size" type="System.Drawing.Size, System.Drawing">
-    <value>13, 14</value>
-  </data>
-  <data name="label36.TabIndex" type="System.Int32, mscorlib">
-    <value>64</value>
-  </data>
-  <data name="label36.Text" xml:space="preserve">
-    <value>ч</value>
-  </data>
-  <data name="&gt;&gt;label36.Name" xml:space="preserve">
-    <value>label36</value>
-  </data>
-  <data name="&gt;&gt;label36.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label36.Parent" xml:space="preserve">
-    <value>pnlShaurburgers</value>
-  </data>
-  <data name="&gt;&gt;label36.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="pnlShaurburgers.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="pnlShaurburgers.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="pnlShaurburgers.Size" type="System.Drawing.Size, System.Drawing">
-    <value>594, 602</value>
-  </data>
-  <data name="pnlShaurburgers.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="pnlShaurburgers.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;pnlShaurburgers.Name" xml:space="preserve">
-    <value>pnlShaurburgers</value>
-  </data>
-  <data name="&gt;&gt;pnlShaurburgers.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pnlShaurburgers.Parent" xml:space="preserve">
-    <value>pnlContainer</value>
-  </data>
-  <data name="&gt;&gt;pnlShaurburgers.ZOrder" xml:space="preserve">
     <value>25</value>
   </data>
   <data name="pnlTimings.AutoScroll" type="System.Boolean, mscorlib">
@@ -23242,7 +23320,7 @@
     <value>NoControl</value>
   </data>
   <data name="btnVictimHunting.Location" type="System.Drawing.Point, System.Drawing">
-    <value>5, 543</value>
+    <value>5, 545</value>
   </data>
   <data name="btnVictimHunting.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 3, 3, 3</value>
@@ -23440,7 +23518,7 @@
     <value>5</value>
   </data>
   <data name="grpPlayer2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>2, 305</value>
+    <value>2, 307</value>
   </data>
   <data name="grpPlayer2.Size" type="System.Drawing.Size, System.Drawing">
     <value>221, 233</value>
@@ -23902,7 +23980,7 @@
     <value>NoControl</value>
   </data>
   <data name="chkDebugMode.Location" type="System.Drawing.Point, System.Drawing">
-    <value>909, 503</value>
+    <value>905, 499</value>
   </data>
   <data name="chkDebugMode.Size" type="System.Drawing.Size, System.Drawing">
     <value>114, 18</value>
