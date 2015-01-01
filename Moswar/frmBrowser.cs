@@ -1489,26 +1489,18 @@ namespace Moswar
                 FileVersionInfo FVI = FileVersionInfo.GetVersionInfo(Application.ExecutablePath);
                 if (FVI.ProductVersion != CurVersion)
                 {
-                    AddLabelText(lblUserMessage, "Внимание! Доступна новая версия moswarBro: " + CurVersion);
+                    AddLabelText(lblUserMessage, "Внимание! Доступна новая версия Братишки: " + CurVersion);
                     AutoUpdateMessage.Visible = true;
                     #region Tray
                     if (TrayIcon.Visible)
                     {
                         TrayIcon.BalloonTipIcon = ToolTipIcon.Info;
                         TrayIcon.BalloonTipTitle = "Семейное обновление:";
-                        TrayIcon.BalloonTipText = "Новый Братишка " + CurVersion + ", ждёт тебя!";
+                        TrayIcon.BalloonTipText = "Новый Братишка " + CurVersion + " ждет тебя!";
                         TrayIcon.ShowBalloonTip(30000);
                     }
                     #endregion
                 }
-                else
-                {
-                    if (FVI.ProductVersion != FVI.FileVersion)
-                    {
-                        AddLabelText(lblUserMessage, "Ёлки палки ... да у тебя \"Beta-версия\", ты где её упер/ла то? =)");
-                        AutoUpdateMessage.Visible = true;
-                    }
-                }                          
             }
             catch
             {
