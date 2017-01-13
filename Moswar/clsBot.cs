@@ -1795,12 +1795,12 @@ namespace Moswar
 
                 if (Settings.AzazellaTreasure) UpdateStatus("$ " + DateTime.Now + " Ванга, поспеши! Шанс падения то уже " + Me.Azazella.TreasurePrc + "%, а это уже не шутка!");
 
-                if (Settings.PlayAzazella75 && Convert.ToInt32(Info) > 75) 
+                if (Settings.PlayAzazella75 && Convert.ToInt32(Info) > 750) 
                 {
                     frmMain.InvokeMember(MainWB, frmMain.GetDocument(MainWB).GetElementById("startGameButton1"), "click"); //Играем за 75 золота
                     goto ReTry;
                 }
-                if (Settings.PlayAzazella25 && Convert.ToInt32(Info) > 25)
+                if (Settings.PlayAzazella25 && Convert.ToInt32(Info) > 250)
                 {
                     frmMain.InvokeMember(MainWB, frmMain.GetDocument(MainWB).GetElementById("startGameButton0"), "click"); //Играем за 25 золота
                     goto ReTry;

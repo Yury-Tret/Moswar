@@ -1084,14 +1084,14 @@
             this.tabMainBrowser.Name = "tabMainBrowser";
             this.tabMainBrowser.UseVisualStyleBackColor = true;
             // 
-            // AutoApdateMessage
+            // AutoUpdateMessage
             // 
-            resources.ApplyResources(this.AutoUpdateMessage, "AutoApdateMessage");
+            resources.ApplyResources(this.AutoUpdateMessage, "AutoUpdateMessage");
             this.AutoUpdateMessage.BackColor = System.Drawing.SystemColors.Control;
             this.AutoUpdateMessage.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.AutoUpdateMessage.Controls.Add(this.lblUserMessage);
             this.AutoUpdateMessage.Controls.Add(this.btnHideAutoUpdateMessage);
-            this.AutoUpdateMessage.Name = "AutoApdateMessage";
+            this.AutoUpdateMessage.Name = "AutoUpdateMessage";
             // 
             // lblUserMessage
             // 

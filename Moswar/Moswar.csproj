@@ -87,7 +87,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="IntelliLock.Licensing">
-      <HintPath>..\..\..\Program Files (x86)\Eziriz\IntelliLock\SDK\Bin\IntelliLock.Licensing.dll</HintPath>
+      <HintPath>.\IntelliLock.Licensing.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="Microsoft.VisualBasic.Compatibility" />

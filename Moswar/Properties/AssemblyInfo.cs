@@ -8,9 +8,9 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("Moswar")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("2F-IT")]
+[assembly: AssemblyCompany("Santos")]
 [assembly: AssemblyProduct("Moswar")]
-[assembly: AssemblyCopyright("Copyright © 2F-IT")]
+[assembly: AssemblyCopyright("Copyright © Santos")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -32,8 +32,8 @@ using System.Runtime.InteropServices;
 // You can specify all the values or you can default the Build and Revision Numbers 
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("1.0.0.65")]
-[assembly: AssemblyFileVersion("1.0.0.65")]
-[assembly: AssemblyInformationalVersion("1.0.0.65")]
+[assembly: AssemblyVersion("1.0.1.66")]
+[assembly: AssemblyFileVersion("1.0.1.66")]
+[assembly: AssemblyInformationalVersion("1.0.1.66")]
 
 
