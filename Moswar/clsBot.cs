@@ -800,6 +800,7 @@ namespace Moswar
             public bool QuestFillTonusBottle;
             public bool QuestFillTonusPlus;
             public bool FeedTaborPet;
+            public bool PlayMona;
             public bool BuyMonaTicketTooth;
             public decimal minTeeth;
             public bool BuyMonaTicketStar;
@@ -4847,7 +4848,7 @@ namespace Moswar
                     //Проверяем каждые 2 часа + резет в 00:00, быть может мы смогли надыбать билетик.
                     if (ServerDT >= Me.Thimbles.LastDT.AddHours(2) || Me.Thimbles.LastDT.Date != ServerDT.Date) Me.Thimbles.Stop = false;
                     if (Settings.ThimblesImmunity || Settings.HCRevenge) CheckImmun(ImmunAction.Mona); //Проверяем иммунитет от нападений только тут дабы во время МС всегда ходил к моне/банк.
-                    if (!Me.Thimbles.Stop && Me.Player.Level >= 5 && ServerDT > Me.Thimbles.StartDT &&
+                    if (!Me.Thimbles.Stop && Settings.PlayMona && Me.Player.Level >= 5 && ServerDT > Me.Thimbles.StartDT &&
                         ((Me.Wallet.Money >= Settings.PlayThimbles + Settings.minThimblesMoney && (!Settings.GoPyramid || !Me.Pyramid.BlockMonya || !Settings.BlockThimbles) && (Me.BankDeposit.StartDT >= ServerDT.AddHours(2) || !Settings.UseBankDeposit))
                          || (Me.Wallet.Money >= Settings.minWantedPlayThimbles + Settings.minThimblesMoney && Me.Wanted && Settings.WantedPlayThimbles))
                         )

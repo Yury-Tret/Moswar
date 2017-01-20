@@ -339,6 +339,7 @@
             this.numMinTrainPetMoney = new System.Windows.Forms.NumericUpDown();
             this.cboxSetWarPetType = new System.Windows.Forms.ComboBox();
             this.pnlResources = new System.Windows.Forms.Panel();
+            this.chkPlayMona = new System.Windows.Forms.CheckBox();
             this.numExchangeBankMoney = new System.Windows.Forms.NumericUpDown();
             this.label18 = new System.Windows.Forms.Label();
             this.label72 = new System.Windows.Forms.Label();
@@ -3942,6 +3943,7 @@
             // pnlResources
             // 
             resources.ApplyResources(this.pnlResources, "pnlResources");
+            this.pnlResources.Controls.Add(this.chkPlayMona);
             this.pnlResources.Controls.Add(this.numExchangeBankMoney);
             this.pnlResources.Controls.Add(this.label18);
             this.pnlResources.Controls.Add(this.label72);
@@ -3963,6 +3965,12 @@
             this.pnlResources.Controls.Add(this.label109);
             this.pnlResources.Controls.Add(this.numMonaMinTeeth);
             this.pnlResources.Name = "pnlResources";
+            // 
+            // chkPlayMona
+            // 
+            resources.ApplyResources(this.chkPlayMona, "chkPlayMona");
+            this.chkPlayMona.Name = "chkPlayMona";
+            this.chkPlayMona.UseVisualStyleBackColor = true;
             // 
             // numExchangeBankMoney
             // 
@@ -9600,7 +9608,8 @@
         private System.Windows.Forms.Label label167;
         private System.Windows.Forms.GroupBox groupBox20;
         private System.Windows.Forms.CheckBox chkMCTrain;
-        private System.Windows.Forms.Label label206;      
+        private System.Windows.Forms.Label label206;
+        private System.Windows.Forms.CheckBox chkPlayMona;
     }
 }
 

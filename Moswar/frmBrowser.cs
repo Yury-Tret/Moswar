@@ -565,6 +565,7 @@ namespace Moswar
             Bot.Settings.FeedTaborPet = chkFeedTaborPet.Checked;
             Bot.Settings.GetMetroWarPrize = chkMetroWarPrize.Checked;
 
+            Bot.Settings.PlayMona = chkPlayMona.Checked;
             Bot.Settings.BuyMonaTicketTooth = chkMonaTicketTooth.Checked;
             Bot.Settings.minTeeth = numMonaMinTeeth.Value;
             Bot.Settings.BuyMonaTicketStar = chkMonaTicketStar.Checked;
@@ -947,6 +948,7 @@ namespace Moswar
                 chkFeedTaborPet.Checked = Bot.Settings.FeedTaborPet;
                 chkMetroWarPrize.Checked = Bot.Settings.GetMetroWarPrize;
 
+                chkPlayMona.Checked = Bot.Settings.PlayMona;
                 chkMonaTicketTooth.Checked = Bot.Settings.BuyMonaTicketTooth;
                 numMonaMinTeeth.Value = Bot.Settings.minTeeth;
                 chkMonaTicketStar.Checked = Bot.Settings.BuyMonaTicketStar;
