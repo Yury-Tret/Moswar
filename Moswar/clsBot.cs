@@ -5717,7 +5717,10 @@ namespace Moswar
                         }
                         //NPC: При 0 поражений -> Взяточники, 1 -> Рейдеры, 2-> Риэлторы
                         if ((vsPlayer[0].Level < minLvl || vsPlayer[0].Level > maxLvl || vsPlayer[0].URL != null) || (O == Opponent.NPC && !vsPlayer[0].Name.Contains(Me.NPCHunting.Val == 0 ? "Взяточник" : Me.NPCHunting.Val == 1 ? "Рейдер" : "Риэлтор")))
+                        {
+                            Wait(1000, 2000, "Pause search");
                             frmMain.NavigateURL(MainWB, Settings.ServerURL + "/alley/search/again/"); //Устраиваем перебор, это либо не агент, либо слишком сильный!
+                        }
                         else
                         {
                             if (match.Groups["PVP"].Success)
@@ -5727,13 +5730,16 @@ namespace Moswar
                                 IsWBComplete(MainWB);
                                 MainWB.Tag = "Ajax";
                                 #endregion
-                            } 
+                            }
                             else frmMain.NavigateURL(MainWB, AttackURL);
                         }
                         break;
                     case Opponent.Werewolf:
                         if (vsPlayer[0].Level < minLvl || vsPlayer[0].Level > maxLvl || !IsPlayerWeak(ref vsPlayer[0], Me.Player.Level * 5, false)) //Устраиваем перебор, может следуюший слабее
-                            frmMain.NavigateURL(MainWB, Settings.ServerURL + "/alley/search/again/");                        
+                        {
+                            Wait(1000, 2000, "Pause search");
+                            frmMain.NavigateURL(MainWB, Settings.ServerURL + "/alley/search/again/");
+                        }
                         else
                         {
                             if (match.Groups["PVP"].Success)
@@ -5743,7 +5749,7 @@ namespace Moswar
                                 IsWBComplete(MainWB);
                                 MainWB.Tag = "Ajax";
                                 #endregion
-                            }                                
+                            }
                             else frmMain.NavigateURL(MainWB, AttackURL);
                         }
                         break;
@@ -5759,6 +5765,7 @@ namespace Moswar
                                 O = Settings.AlleyOpponent.Equals(Opponent.Major) ? Opponent.Major : Opponent.Weak;
                                 goto ReTry;
                             }
+                            Wait(1000, 2000, "Pause search");
                             frmMain.NavigateURL(MainWB, Settings.ServerURL + "/alley/search/again/");
                             AttackRetries++;
                         }
@@ -5780,8 +5787,11 @@ namespace Moswar
                     case Opponent.Strong:
                     case Opponent.Weak:
                         if (vsPlayer[0].Level < minLvl || vsPlayer[0].Level > maxLvl || (Settings.UseHomeless && vsPlayer[0].Fraction != "npc") || (O == Opponent.Major && !IsPlayerWeak(ref vsPlayer[0], Me.Player.Level * 5, false)))
+                        {
+                            Wait(1000, 2000, "Pause search");
                             frmMain.NavigateURL(MainWB, Settings.ServerURL + "/alley/search/again/"); //Проверка слабее ли игрок? (Только для мажоров)
-                        else 
+                        }
+                        else
                         {
                             if (match.Groups["PVP"].Success)
                             {
@@ -5790,7 +5800,7 @@ namespace Moswar
                                 IsWBComplete(MainWB);
                                 MainWB.Tag = "Ajax";
                                 #endregion
-                            } 
+                            }
                             else frmMain.NavigateURL(MainWB, AttackURL);
                         }
                         break;
