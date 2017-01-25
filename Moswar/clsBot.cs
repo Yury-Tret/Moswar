@@ -704,6 +704,7 @@ namespace Moswar
             public bool MrPlushkin;
             public bool UseHomeless;
             public bool GoPVPFight;
+            public bool GoPVPFightAllWeek;
             public bool GoNPCFight;
             public bool GoPVPInstantly;
             public decimal GoPVPInstantlyOffset;
@@ -5718,7 +5719,7 @@ namespace Moswar
                         //NPC: При 0 поражений -> Взяточники, 1 -> Рейдеры, 2-> Риэлторы
                         if ((vsPlayer[0].Level < minLvl || vsPlayer[0].Level > maxLvl || vsPlayer[0].URL != null) || (O == Opponent.NPC && !vsPlayer[0].Name.Contains(Me.NPCHunting.Val == 0 ? "Взяточник" : Me.NPCHunting.Val == 1 ? "Рейдер" : "Риэлтор")))
                         {
-                            Wait(1000, 2000, "Pause search");
+                            Wait(1500, 4000, "@ Имитация поиска человеком, ждем до: ");
                             frmMain.NavigateURL(MainWB, Settings.ServerURL + "/alley/search/again/"); //Устраиваем перебор, это либо не агент, либо слишком сильный!
                         }
                         else
@@ -5737,7 +5738,7 @@ namespace Moswar
                     case Opponent.Werewolf:
                         if (vsPlayer[0].Level < minLvl || vsPlayer[0].Level > maxLvl || !IsPlayerWeak(ref vsPlayer[0], Me.Player.Level * 5, false)) //Устраиваем перебор, может следуюший слабее
                         {
-                            Wait(1000, 2000, "Pause search");
+                            Wait(1500, 4000, "@ Имитация поиска человеком, ждем до: ");
                             frmMain.NavigateURL(MainWB, Settings.ServerURL + "/alley/search/again/");
                         }
                         else
@@ -5765,7 +5766,7 @@ namespace Moswar
                                 O = Settings.AlleyOpponent.Equals(Opponent.Major) ? Opponent.Major : Opponent.Weak;
                                 goto ReTry;
                             }
-                            Wait(1000, 2000, "Pause search");
+                            Wait(1500, 4000, "@ Имитация поиска человеком, ждем до: ");
                             frmMain.NavigateURL(MainWB, Settings.ServerURL + "/alley/search/again/");
                             AttackRetries++;
                         }
@@ -5788,7 +5789,7 @@ namespace Moswar
                     case Opponent.Weak:
                         if (vsPlayer[0].Level < minLvl || vsPlayer[0].Level > maxLvl || (Settings.UseHomeless && vsPlayer[0].Fraction != "npc") || (O == Opponent.Major && !IsPlayerWeak(ref vsPlayer[0], Me.Player.Level * 5, false)))
                         {
-                            Wait(1000, 2000, "Pause search");
+                            Wait(1500, 4000, "@ Имитация поиска человеком, ждем до: ");
                             frmMain.NavigateURL(MainWB, Settings.ServerURL + "/alley/search/again/"); //Проверка слабее ли игрок? (Только для мажоров)
                         }
                         else
@@ -6022,7 +6023,7 @@ namespace Moswar
                             BugReport("PVP Fight");
                             #region PVP
                             ServerDT = GetServerTime(MainWB);                           
-                            if (Enumerable.Range(1, 5).Contains((int)ServerDT.AddMinutes(3).DayOfWeek))
+                            if (Settings.GoPVPFightAllWeek ? true : Enumerable.Range(1, 5).Contains((int)ServerDT.AddMinutes(3).DayOfWeek))
                             {
                                 GoToPlace(MainWB, Place.Sovet, "/map");
                                 foreach (string HTML in GetArrClassHtml(MainWB, "$(\"#content .areas .progress .button\")", "outerHTML"))

@@ -442,7 +442,8 @@ namespace Moswar
 //            if (!Bot.Settings.GoPVPFight & chkGoPVPFight.Checked || !Bot.Settings.GoNPCFight & chkGoNPCFight.Checked) Bot.GrpFight.GroupStartDT = new DateTime();
 //            Bot.Settings.GoNPCFight = chkGoNPCFight.Checked;
             Bot.Settings.GoPVPFight = chkGoPVPFight.Checked;
-//            Bot.GrpFight.Val = (chkGoPVPFight.Checked ? 1 : 0) + (chkGoNPCFight.Checked ? 2 : 0); // 0-> Выкл., 1-> PVP, 2-> NPC, 3-> Все.
+            Bot.Settings.GoPVPFightAllWeek = chkGoPVPFightAllWeek.Checked;
+            //            Bot.GrpFight.Val = (chkGoPVPFight.Checked ? 1 : 0) + (chkGoNPCFight.Checked ? 2 : 0); // 0-> Выкл., 1-> PVP, 2-> NPC, 3-> Все.
             Bot.Settings.GoPVPInstantly = chkGoPVPInstantly.Checked;
             Bot.Settings.GoPVPInstantlyOffset = numGoPVPInstantlyOffset.Value;
             Bot.Settings.SovetBuyAgitator = chkSovetBuyAgitator.Checked;
@@ -826,8 +827,9 @@ namespace Moswar
                 chkUseHomeless.Checked = Bot.Settings.UseHomeless;
 
                 chkGoPVPFight.Checked = Bot.Settings.GoPVPFight;
-//                chkGoNPCFight.Checked = Bot.Settings.GoNPCFight;
-//                Bot.GrpFight.Val = (chkGoPVPFight.Checked ? 1 : 0) + (chkGoNPCFight.Checked ? 2 : 0); // 0-> Выкл., 1-> PVP, 2-> NPC, 3-> Все.
+                chkGoPVPFightAllWeek.Checked = Bot.Settings.GoPVPFightAllWeek;
+                //                chkGoNPCFight.Checked = Bot.Settings.GoNPCFight;
+                //                Bot.GrpFight.Val = (chkGoPVPFight.Checked ? 1 : 0) + (chkGoNPCFight.Checked ? 2 : 0); // 0-> Выкл., 1-> PVP, 2-> NPC, 3-> Все.
                 chkGoPVPInstantly.Checked = Bot.Settings.GoPVPInstantly;
                 numGoPVPInstantlyOffset.Value = Bot.Settings.GoPVPInstantlyOffset;
                 chkSovetBuyAgitator.Checked = Bot.Settings.SovetBuyAgitator;

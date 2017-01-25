@@ -841,6 +841,7 @@
             this.MenuItemSendGiftFix = new System.Windows.Forms.ToolStripMenuItem();
             this.btnFunctions = new System.Windows.Forms.Button();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
+            this.chkGoPVPFightAllWeek = new System.Windows.Forms.CheckBox();
             this.tabControl.SuspendLayout();
             this.tabMainBrowser.SuspendLayout();
             this.AutoUpdateMessage.SuspendLayout();
@@ -4475,6 +4476,7 @@
             // pnlGroupFightPVP
             // 
             resources.ApplyResources(this.pnlGroupFightPVP, "pnlGroupFightPVP");
+            this.pnlGroupFightPVP.Controls.Add(this.chkGoPVPFightAllWeek);
             this.pnlGroupFightPVP.Controls.Add(this.chkGoPVPInstantly);
             this.pnlGroupFightPVP.Controls.Add(this.label94);
             this.pnlGroupFightPVP.Controls.Add(this.numGoPVPInstantlyOffset);
@@ -8488,6 +8490,14 @@
             this.toolTip.ReshowDelay = 1;
             this.toolTip.UseFading = false;
             // 
+            // chkGoPVPFightAllWeek
+            // 
+            resources.ApplyResources(this.chkGoPVPFightAllWeek, "chkGoPVPFightAllWeek");
+            this.chkGoPVPFightAllWeek.Checked = true;
+            this.chkGoPVPFightAllWeek.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.chkGoPVPFightAllWeek.Name = "chkGoPVPFightAllWeek";
+            this.chkGoPVPFightAllWeek.UseVisualStyleBackColor = true;
+            // 
             // frmMain
             // 
             resources.ApplyResources(this, "$this");
@@ -9610,6 +9620,7 @@
         private System.Windows.Forms.CheckBox chkMCTrain;
         private System.Windows.Forms.Label label206;
         private System.Windows.Forms.CheckBox chkPlayMona;
+        private System.Windows.Forms.CheckBox chkGoPVPFightAllWeek;
     }
 }
 
