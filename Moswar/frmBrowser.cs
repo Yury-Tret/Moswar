@@ -588,6 +588,8 @@ namespace Moswar
             Bot.Settings.OilLeninLeaveNoKey = chkOilLeninLeaveNoKey.Checked;
             Bot.Settings.OilLeninLeaveNoElement = chkOilLeninLeaveNoElement.Checked;
             Bot.Settings.OilLeninLeaveNoBox = chkOilLeninLeaveNoBox.Checked;
+            Bot.Settings.OilLeninLeaveNoTicket = chkOilLeninLeaveNoTicket.Checked;
+            Bot.Settings.OilLeninLeaveNoTicketMax = chkOilLeninLeaveNoTicketMax.Checked;
             Bot.Settings.OilLeninRobinHood = chkOilLeninRobinHood.Checked;
             Bot.Settings.OilLeninIronHead = chkOilLeninIronHead.Checked;
             Bot.Settings.OilLeninSyncRats = chkSyncOilLenin.Checked;
@@ -970,6 +972,8 @@ namespace Moswar
                 chkOilLeninLeaveNoKey.Checked = Bot.Settings.OilLeninLeaveNoKey;
                 chkOilLeninLeaveNoElement.Checked = Bot.Settings.OilLeninLeaveNoElement;
                 chkOilLeninLeaveNoBox.Checked = Bot.Settings.OilLeninLeaveNoBox;
+                chkOilLeninLeaveNoTicket.Checked = Bot.Settings.OilLeninLeaveNoTicket;
+                chkOilLeninLeaveNoTicketMax.Checked = Bot.Settings.OilLeninLeaveNoTicketMax;
                 chkOilLeninRobinHood.Checked = Bot.Settings.OilLeninRobinHood;
                 chkOilLeninIronHead.Checked = Bot.Settings.OilLeninIronHead;
                 chkSyncOilLenin.Checked = Bot.Settings.OilLeninSyncRats;

@@ -819,6 +819,8 @@ namespace Moswar
             public bool OilLeninLeaveNoKey;
             public bool OilLeninLeaveNoElement;
             public bool OilLeninLeaveNoBox;
+            public bool OilLeninLeaveNoTicket;
+            public bool OilLeninLeaveNoTicketMax;
             public bool OilLeninRobinHood;
             public bool OilLeninIronHead;
             public bool OilLeninSyncRats;
@@ -9158,7 +9160,7 @@ namespace Moswar
                                         #endregion
                                         #region Проверка, есть ли полезности?
                                         bool Attack = false; //Инициализация
-                                        bool Prize = !Settings.OilLeninLeaveNoKey && !Settings.OilLeninLeaveNoElement && !Settings.OilLeninLeaveNoBox; //Инициализация
+                                        bool Prize = !Settings.OilLeninLeaveNoKey && !Settings.OilLeninLeaveNoElement && !Settings.OilLeninLeaveNoBox && !Settings.OilLeninLeaveNoTicket; //Инициализация
 
                                         HtmlEl = frmMain.GetDocument(MainWB).GetElementById("neftlenin_alert_" + frmMain.GetJavaVar(MainWB, "NeftLenin.typeStep")); //Окошко с наградой
                                         foreach (HtmlElement H in HtmlEl.GetElementsByTagName("IMG"))
@@ -9166,6 +9168,15 @@ namespace Moswar
                                             Prize |= Settings.OilLeninLeaveNoKey && H.GetAttribute("src").Contains("key3");
                                             Prize |= Settings.OilLeninLeaveNoElement && H.GetAttribute("src").Contains("collections/71");
                                             Prize |= Settings.OilLeninLeaveNoBox && H.GetAttribute("src").Contains("box3");
+                                            if (Regex.Match(Convert.ToString(Me.OilLeninHunting.Lvl), "(^1$|^8$|^17$|^26$|^29$|^30$)").Success)
+                                            {
+                                                Prize |= Settings.OilLeninLeaveNoTicket && H.GetAttribute("src").Contains("ticket");
+                                                
+                                                if (Settings.OilLeninLeaveNoTicketMax && Prize)
+                                                {
+                                                    Prize = H.Parent.Children[1].InnerText.Contains("#2");
+                                                }
+                                            }
                                             if (Prize) break;
                                         }                                        
                                         if (Settings.OilLeninRobinHood && Me.OilLeninHunting.Lvl > 28 && Regex.Matches(HtmlEl.InnerHtml, "key3|box35").Count != 2
@@ -14016,72 +14027,63 @@ namespace Moswar
         #region Тестирование
         public void Test()
         {
-            //http://www.moswar.ru/phone/call/#fight-phone
-            //HealMePlus();
-            //Bank(BankAction.Exchange);
-            //GoToPlace(MainWB, Place.Oil);
-            //HealMePlus();
-           // Dopings(ref Me.ArrUsualDoping, DopingAction.Check);
-            //MainWB.Navigate("F:\\moswarBro\\Moswar\\bin\\Debug\\Timeout.htm");
-            //IsWBComplete(MainWB);
+//            WebBrowser WB = null;
+  //          UpdateStatus(Convert.ToString(MainWB.Version.Major));
+      /*      
+            
+            HtmlElement HtmlEl;
+            HtmlElementCollection elems;
+            bool Prize=false;
+            string text = "";
+            HtmlEl = frmMain.GetDocument(MainWB).GetElementById("neftlenin_alert_" + frmMain.GetJavaVar(MainWB, "NeftLenin.typeStep")); //Окошко с наградой
 
-            //
-            frmMain.InvokeScript(MainWB, "eval", new object[] { "Alley.Suslik.getReward()" });
-
-//            string sH = frmMain.GetDocument(MainWB).GetElementById("neftlenin_alert_g").GetElementsByTagName("button")[0].Style;
-
-            //REGEX вырезающий середину
-            //(IsMultiFrame(WB) ? WB.Document.Window.Frames[FrameIndex].Document : WB.Document).InvokeScript("eval", new object[] { "AngryAjax.goToUrl('" + Regex.Replace(URL, "(http://)?" + Bot.Settings.ServerURL + "(?<URL>(?(?=/$)|.)+)/?", "${URL}") + "');"});
            
+            foreach (HtmlElement H in HtmlEl.GetElementsByTagName("IMG"))
+            {
 
-//            GoToPlace(MainWB, Place.Player);
- //           CheckBagFightItems((new int[] {1, 2, 4, 5, 6, 7}).ToList());
-            //CheckBagFightItems(GroupFightType.Chaos);
-            //TonusMePlus();
+        //        if (H.GetAttribute("src").Contains("ticket"))
+          //      {
+                    
+                        text = H.Parent.Children[1].InnerText;
+                   
+                    
+            //    }
+
+           
+                Prize = false;
+                    Prize |= Settings.OilLeninLeaveNoTicket && H.GetAttribute("src").Contains("ticket");
+                UpdateStatus(Convert.ToString(Prize) + "---" + H.GetAttribute("src") + " **COUNT** " + text);
+
+                
+            }
+            */
+         //   object Info = frmMain.GetJavaVar(MainWB, "$(\"#content .log-wrapper .amulet-reward\").text()");
+            /*
+
+                        if (Prize)
+                        {
+                            UpdateStatus("OK");
+                        }
+                        else
+                        {
+                            UpdateStatus("FALSE");
+                        }
+              */
             //int i = GetArrClassCount(MainWB, "$(\"#content #slots-groupfight-place .object-thumb\").not(.icon-locked-small)");  //
 
             //BuyItems(MainWB, ShopItems.Tea4);
 
-           //string[] ArrItemHTML = GetArrClassHtml(MainWB, "$(\"#dopings-accordion #" + "inventory-chocolate_m1-btn" + "\").parent()", "innerHTML");
-           //Match match = Regex.Match(ArrItemHTML[0], "data-id=\"?(?<DataId>([0-9])+)([\\s\\S])+ id=(\")?(?<Id>([\\w_-])+)");
+            //string[] ArrItemHTML = GetArrClassHtml(MainWB, "$(\"#dopings-accordion #" + "inventory-chocolate_m1-btn" + "\").parent()", "innerHTML");
+            //Match match = Regex.Match(ArrItemHTML[0], "data-id=\"?(?<DataId>([0-9])+)([\\s\\S])+ id=(\")?(?<Id>([\\w_-])+)");
             //string[] ArrHTML = GetArrClassHtml(MainWB, "$(\"#content .slots .slot-pet.notempty\")", "innerHTML");
             //object s = frmMain.GetJavaVar(MainWB, "$(\"#content .slots .slot-pet.notempty\").html()");
             //HtmlElementCollection HC = frmMain.GetDocument(MainWB).GetElementsByTagName("tbody")[0].GetElementsByTagName("ul")[1].GetElementsByTagName("li"); //Информация о шмотках на мне + питомец
             //Match match = Regex.Match(HC[HC.Count - 2].InnerHtml, "/pets/([0-9-])+[.]png"); //Именно этот питомец сейчас со мной (Картинка с боевым питомцем в предпоследнем элементе, последний беговой при условии показывать)
             //if (!match.Success) match = Regex.Match(HC[HC.Count - 1].InnerHtml, "/pets/([0-9-])+[.]png"); //Именно этот питомец сейчас со мной (Картинка с питомцем в последнем элементе коллекции)
-            //CheckBagFightItems(GroupFightType.Rat);
-         //   Automobile(AutomobileAction.Check);
-            //ChatThread = new Thread(new ThreadStart(ReadChat));
-            //ChatThread.Start();
 
-            //BuyItems(MainWB, ShopItems.Granade, new string[] { "!", "Кластерная граната", "Граната «Разрывная»" });
-            //CheckBagFightItems((new int[] { 1, 2, 4, 4, 4, 4 }).ToList());
-            
-           // m.Groups["ID"].Value;
-           // frmMain.GetJavaVar(MainWB, "$.ajax({url: \"/player/json/item-special/switch-weapon-group/" + BagFightItems[0].EquipmentItemId + "/\", type: \"post\", data: {\"unlocked\": 1, \"inventory\": " + BagFightItems[0].EquipmentItemId + ", \"previousItemId\": " + SlotFightItems[6].SlotItemId.Replace("_", "") + "}, dataType: \"json\"});");
-    
-                        
-            
-            
-            //playerFightItemSwitch(itemId, unlocked, previousItemId)
+            // frmMain.GetJavaVar(MainWB, "$.ajax({url: \"/player/json/item-special/switch-weapon-group/" + BagFightItems[0].EquipmentItemId + "/\", type: \"post\", data: {\"unlocked\": 1, \"inventory\": " + BagFightItems[0].EquipmentItemId + ", \"previousItemId\": " + SlotFightItems[6].SlotItemId.Replace("_", "") + "}, dataType: \"json\"});");
 
 
-            //bool b= Dopings(ref ArrDoping, DopingAction.Check);
-            //GetMyStats(MainWB);
-
-            //frmMain.NavigateURL(MainWB, "e:\\Mashinki-Bug.htm");
-            //IsWBComplete(MainWB);
-            //GetMyStats(MainWB);
-            //GoToPlace(MainWB, Place.Clan, "/warstats");
-            //if (frmMain.GetDocument(MainWB).GetElementById("content").GetElementsByTagName("table").Count == 1) return false;
-            //$("#nexElem-id").trigger("");
-            //Petarena(PetAction.TrainWarPet);           
-            //MainWB.Navigate("e:\\Test.htm");
-            //frmMain.NavigateURL(MainWB, "e:\\Test.htm");
-            //string sa = new StreamReader(MainWB.DocumentStream).ReadToEnd(
-            //IsWBComplete(MainWB);
-            
-            //MainWB.Document.GetElementById("Test").InvokeMember("mousemove");
             //string s = (string)frmMain.GetJavaVar(MainWB, "$(\"#content .object-thumb .padding\").find(\"img\").attr(\"title\");");
             //frmMain.GetJavaVar(MainWB, "var evt = Test.ownerDocument.createEvent('MouseEvents'); evt.initMouseEvent('mouseover',true,true, Test.ownerDocument.defaultView,0,0,0,0,0,false,false,false,false,0,null); var canceled = !Test.dispatchEvent(evt); if(canceled) alert('Event Cancelled');");
             //frmMain.GetJavaVar(MainWB, "var obj= $(\"#content .object-thumb .padding\").find(\"img\"); var evt = obj.ownerdocument.createEvent('MouseEvents'); evt.initEvent(\"mouseover\", true, false); var canceled = !obj.dispatchEvent(evt); if(canceled) alert('Event Cancelled');");
@@ -14091,102 +14093,7 @@ namespace Moswar
             //string sa = frmMain.GetDocument(MainWB).GetElementById("tooltipHolder").InnerHtml;
 
             //string strValue = frmMain.GetDocument(MainWB).GetElementById("tooltipHolder").InnerHtml;
-            //EatDrog(MainWB, ShopItems.Barjomi);
-            //
-            //GroupFight(GroupFightAction.Fight); 
 
-            /*
-           #region Инициализация
-                strValue = (string)frmMain.GetJavaVar(WB, "m.player.ore['0'].innerHTML");
-                strSufix = "000";
-                #endregion
-                if (strValue != null)
-                {
-                    Me.Resource.Ore = Convert.ToInt32(Regex.Replace(strValue, "([,k])*", delegate(Match match)
-                    {
-                        switch (match.Value)
-                        {
-                            case ",": strSufix = "00"; return "";
-                            case "k": return strSufix;
-                            default: return match.Value;
-                        }
-                    }));
-                }
-            */
-
-            /*
-            int i;
-            if (IsHPLow(MainWB, 100) ?
-                (HealMePlus() ?
-                true :
-                CheckHealthEx(99, 49, Settings.HealPet50, Settings.HealPet100))
-                : true) 
-                 i=0; //Лечить в любом варианте до 100%
-            */
-
-            //Спуск на 2 уровень 00:06:08
-            //HtmlElement H = frmMain.GetDocument(MainWB).GetElementById("searchNpcForm");
-
-            //d.setTime((time - (-240) * 60) * 1000);
-            //CheckHealthEx();
-            //CheckHealthEx(0, 0, 0, 0);
-            //GetMyStats(MainWB);
-    
-
-           // Safe(SafeAction.Check);
-
-            //GetMyStats(MainWB);
-            
-             //GroupFight(GroupFightAction.Fight);
-
-           // Bunker();
-            
-            //Me.Player.Level = 16;  
-
-
-
-           
-            //Извлекаем жизни пэта.
-
-
-            // Petarena(PetAction.TrainWarPet);
-            // Petarena(PetAction.Run);
-            //AnalyseFight(HelpWB[0]);
-            //
-            //
-            //Safe(SafeAction.Check);
-            //GetMyStats(MainWB);
-            // ClanWar(ClanWarAction.Check);
-            
-           //Automobile(AutomobileAction.Check);
-           //HtmlElement HtmlEl = frmMain.GetDocument(MainWB).GetElementById("alert-title").Parent;
-           //HtmlEl = frmMain.GetDocument(MainWB).GetElementById("cars-trip-choose").Parent;
-           //HtmlEl = HtmlEl.GetElementsByTagName("div")[0];
-            /*
-                                            for (int i = 0; i < Me.Cars.Count<stcCar>(); i++)
-                                 {
-                                     //Нужно проверить совпадает ли последовательность машинок тут и при поездках на дачи.
-                                     regex = new Regex("(?<=time=\")([0-9:])+(?=\")");
-                                     Me.Cars[i].RideTime = TimeSpan.Parse("00:" + regex.Match(matches[i].Value).Value);
-                                     HtmlEl = HC[i + Offset];
-                                     if (HtmlEl.InnerText == null) Me.Cars[i].Timeout = DateTime.Now;
-                                     else { Me.Cars[i].Timeout = DateTime.Now.Add(Convert.ToDateTime(HtmlEl.InnerText).TimeOfDay); Offset += 2; } //Сдвиг в 2 элемента при таймауте машинки.
-
-                                     if (Settings.UseSpecialCar) //Кататься на определённой машинке!
-                                     {
-                                         if (Me.Cars[i].Model == Settings.SpecialCar) //Кататься на определённой машинке, и она найдена!
-                                         {
-                                             CarOffset = i + Offset; //сохраняем индекс нужной нам машинки!
-                                             break; //Выходим, всё найдено!
-                                         }
-                                     }
-                                     if ((TS == new TimeSpan() || TS > Me.Cars[i].RideTime) & Me.Cars[i].Timeout <= DateTime.Now) //Либо специальная машинка не выбрана, либо она попросту недоступна. (break в прошлой функции гарантирует поездку на выбраной машинке!)
-                                     {
-                                         TS = Me.Cars[i].RideTime; //Перезаписываем минимальное время поездки.
-                                         CarOffset = i + Offset; //сохраняем индекс нужной нам машинки!
-                                     }
-                                 }
-             */
 
         }
         #endregion

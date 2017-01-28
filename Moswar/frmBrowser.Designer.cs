@@ -391,6 +391,7 @@
             this.numMaxTrainCharisma = new System.Windows.Forms.NumericUpDown();
             this.numMaxTrainEndurance = new System.Windows.Forms.NumericUpDown();
             this.pnlGroupFightPVP = new System.Windows.Forms.Panel();
+            this.chkGoPVPFightAllWeek = new System.Windows.Forms.CheckBox();
             this.chkGoPVPInstantly = new System.Windows.Forms.CheckBox();
             this.label94 = new System.Windows.Forms.Label();
             this.numGoPVPInstantlyOffset = new System.Windows.Forms.NumericUpDown();
@@ -454,6 +455,9 @@
             this.chkUseRunPet = new System.Windows.Forms.CheckBox();
             this.pnlOilPipeline = new System.Windows.Forms.Panel();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
+            this.groupBox21 = new System.Windows.Forms.GroupBox();
+            this.chkOilLeninLeaveNoTicketMax = new System.Windows.Forms.CheckBox();
+            this.chkOilLeninLeaveNoTicket = new System.Windows.Forms.CheckBox();
             this.label180 = new System.Windows.Forms.Label();
             this.label179 = new System.Windows.Forms.Label();
             this.chkGoOilLenin = new System.Windows.Forms.CheckBox();
@@ -841,7 +845,6 @@
             this.MenuItemSendGiftFix = new System.Windows.Forms.ToolStripMenuItem();
             this.btnFunctions = new System.Windows.Forms.Button();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
-            this.chkGoPVPFightAllWeek = new System.Windows.Forms.CheckBox();
             this.tabControl.SuspendLayout();
             this.tabMainBrowser.SuspendLayout();
             this.AutoUpdateMessage.SuspendLayout();
@@ -942,6 +945,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.numMaxTrainPetSpeed)).BeginInit();
             this.pnlOilPipeline.SuspendLayout();
             this.groupBox7.SuspendLayout();
+            this.groupBox21.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numOffsetSyncOilLenin)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numMaxOilDefeats)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numMaxOilLeninDice)).BeginInit();
@@ -4483,6 +4487,14 @@
             this.pnlGroupFightPVP.Controls.Add(this.chkGoPVPFight);
             this.pnlGroupFightPVP.Name = "pnlGroupFightPVP";
             // 
+            // chkGoPVPFightAllWeek
+            // 
+            resources.ApplyResources(this.chkGoPVPFightAllWeek, "chkGoPVPFightAllWeek");
+            this.chkGoPVPFightAllWeek.Checked = true;
+            this.chkGoPVPFightAllWeek.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.chkGoPVPFightAllWeek.Name = "chkGoPVPFightAllWeek";
+            this.chkGoPVPFightAllWeek.UseVisualStyleBackColor = true;
+            // 
             // chkGoPVPInstantly
             // 
             resources.ApplyResources(this.chkGoPVPInstantly, "chkGoPVPInstantly");
@@ -5044,6 +5056,7 @@
             // 
             // groupBox7
             // 
+            this.groupBox7.Controls.Add(this.groupBox21);
             this.groupBox7.Controls.Add(this.label180);
             this.groupBox7.Controls.Add(this.label179);
             this.groupBox7.Controls.Add(this.chkGoOilLenin);
@@ -5074,6 +5087,30 @@
             resources.ApplyResources(this.groupBox7, "groupBox7");
             this.groupBox7.Name = "groupBox7";
             this.groupBox7.TabStop = false;
+            // 
+            // groupBox21
+            // 
+            this.groupBox21.Controls.Add(this.chkOilLeninLeaveNoTicketMax);
+            this.groupBox21.Controls.Add(this.chkOilLeninLeaveNoTicket);
+            resources.ApplyResources(this.groupBox21, "groupBox21");
+            this.groupBox21.Name = "groupBox21";
+            this.groupBox21.TabStop = false;
+            // 
+            // chkOilLeninLeaveNoTicketMax
+            // 
+            resources.ApplyResources(this.chkOilLeninLeaveNoTicketMax, "chkOilLeninLeaveNoTicketMax");
+            this.chkOilLeninLeaveNoTicketMax.Checked = true;
+            this.chkOilLeninLeaveNoTicketMax.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.chkOilLeninLeaveNoTicketMax.Name = "chkOilLeninLeaveNoTicketMax";
+            this.chkOilLeninLeaveNoTicketMax.UseVisualStyleBackColor = true;
+            // 
+            // chkOilLeninLeaveNoTicket
+            // 
+            resources.ApplyResources(this.chkOilLeninLeaveNoTicket, "chkOilLeninLeaveNoTicket");
+            this.chkOilLeninLeaveNoTicket.Checked = true;
+            this.chkOilLeninLeaveNoTicket.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.chkOilLeninLeaveNoTicket.Name = "chkOilLeninLeaveNoTicket";
+            this.chkOilLeninLeaveNoTicket.UseVisualStyleBackColor = true;
             // 
             // label180
             // 
@@ -8490,14 +8527,6 @@
             this.toolTip.ReshowDelay = 1;
             this.toolTip.UseFading = false;
             // 
-            // chkGoPVPFightAllWeek
-            // 
-            resources.ApplyResources(this.chkGoPVPFightAllWeek, "chkGoPVPFightAllWeek");
-            this.chkGoPVPFightAllWeek.Checked = true;
-            this.chkGoPVPFightAllWeek.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.chkGoPVPFightAllWeek.Name = "chkGoPVPFightAllWeek";
-            this.chkGoPVPFightAllWeek.UseVisualStyleBackColor = true;
-            // 
             // frmMain
             // 
             resources.ApplyResources(this, "$this");
@@ -8656,6 +8685,8 @@
             this.pnlOilPipeline.ResumeLayout(false);
             this.groupBox7.ResumeLayout(false);
             this.groupBox7.PerformLayout();
+            this.groupBox21.ResumeLayout(false);
+            this.groupBox21.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numOffsetSyncOilLenin)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numMaxOilDefeats)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numMaxOilLeninDice)).EndInit();
@@ -9621,6 +9652,9 @@
         private System.Windows.Forms.Label label206;
         private System.Windows.Forms.CheckBox chkPlayMona;
         private System.Windows.Forms.CheckBox chkGoPVPFightAllWeek;
+        private System.Windows.Forms.CheckBox chkOilLeninLeaveNoTicket;
+        private System.Windows.Forms.GroupBox groupBox21;
+        private System.Windows.Forms.CheckBox chkOilLeninLeaveNoTicketMax;
     }
 }
 
