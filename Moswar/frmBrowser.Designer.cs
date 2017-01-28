@@ -5111,6 +5111,7 @@
             this.chkOilLeninLeaveNoTicket.CheckState = System.Windows.Forms.CheckState.Checked;
             this.chkOilLeninLeaveNoTicket.Name = "chkOilLeninLeaveNoTicket";
             this.chkOilLeninLeaveNoTicket.UseVisualStyleBackColor = true;
+            this.chkOilLeninLeaveNoTicket.CheckedChanged += new System.EventHandler(this.chkOilLeninLeaveNoTicket_CheckedChanged);
             // 
             // label180
             // 

@@ -2933,6 +2933,19 @@ function checkName() {
             for (int i = 1; i < 12; i++)
                 ((Button)tbl.GetControlFromPosition(col, 3 + i)).ImageIndex = btn1.ImageIndex;
         }
+
+        private void chkOilLeninLeaveNoTicket_CheckedChanged(object sender, EventArgs e)
+        {
+            if (!chkOilLeninLeaveNoTicket.Checked)
+            {
+                chkOilLeninLeaveNoTicketMax.Checked = false;
+                chkOilLeninLeaveNoTicketMax.Enabled = false;
+            }
+            else
+            {
+                chkOilLeninLeaveNoTicketMax.Enabled = true;
+            }
+        }
     }
 
     class InputBox
