@@ -9160,7 +9160,8 @@ namespace Moswar
                                         #endregion
                                         #region Проверка, есть ли полезности?
                                         bool Attack = false; //Инициализация
-                                        bool Prize = !Settings.OilLeninLeaveNoKey && !Settings.OilLeninLeaveNoElement && !Settings.OilLeninLeaveNoBox && !Settings.OilLeninLeaveNoTicket; //Инициализация
+                                        bool IsTicketLevel = Regex.Match(Convert.ToString(Me.OilLeninHunting.Lvl), "(^1$|^8$|^17$|^26$|^29$|^30$)").Success;
+                                        bool Prize = !Settings.OilLeninLeaveNoKey && !Settings.OilLeninLeaveNoElement && !Settings.OilLeninLeaveNoBox && (IsTicketLevel ? !Settings.OilLeninLeaveNoTicket : true); //Инициализация
 
                                         HtmlEl = frmMain.GetDocument(MainWB).GetElementById("neftlenin_alert_" + frmMain.GetJavaVar(MainWB, "NeftLenin.typeStep")); //Окошко с наградой
                                         foreach (HtmlElement H in HtmlEl.GetElementsByTagName("IMG"))
@@ -9168,7 +9169,8 @@ namespace Moswar
                                             Prize |= Settings.OilLeninLeaveNoKey && H.GetAttribute("src").Contains("key3");
                                             Prize |= Settings.OilLeninLeaveNoElement && H.GetAttribute("src").Contains("collections/71");
                                             Prize |= Settings.OilLeninLeaveNoBox && H.GetAttribute("src").Contains("box3");
-                                            if (Regex.Match(Convert.ToString(Me.OilLeninHunting.Lvl), "(^1$|^8$|^17$|^26$|^29$|^30$)").Success)
+                                            
+                                            if (IsTicketLevel)
                                             {
                                                 Prize |= Settings.OilLeninLeaveNoTicket && H.GetAttribute("src").Contains("ticket");
                                                 
@@ -14027,49 +14029,60 @@ namespace Moswar
         #region Тестирование
         public void Test()
         {
-//            WebBrowser WB = null;
-  //          UpdateStatus(Convert.ToString(MainWB.Version.Major));
-      /*      
-            
-            HtmlElement HtmlEl;
-            HtmlElementCollection elems;
-            bool Prize=false;
-            string text = "";
-            HtmlEl = frmMain.GetDocument(MainWB).GetElementById("neftlenin_alert_" + frmMain.GetJavaVar(MainWB, "NeftLenin.typeStep")); //Окошко с наградой
-
-           
-            foreach (HtmlElement H in HtmlEl.GetElementsByTagName("IMG"))
+            Me.OilLeninHunting.Lvl = 2;
+            if (Regex.Match(Convert.ToString(Me.OilLeninHunting.Lvl), "(^1$|^8$|^17$|^26$|^29$|^30$)").Success)
             {
-
-        //        if (H.GetAttribute("src").Contains("ticket"))
-          //      {
-                    
-                        text = H.Parent.Children[1].InnerText;
-                   
-                    
-            //    }
-
-           
-                Prize = false;
-                    Prize |= Settings.OilLeninLeaveNoTicket && H.GetAttribute("src").Contains("ticket");
-                UpdateStatus(Convert.ToString(Prize) + "---" + H.GetAttribute("src") + " **COUNT** " + text);
-
-                
+                UpdateStatus("true");
             }
-            */
-         //   object Info = frmMain.GetJavaVar(MainWB, "$(\"#content .log-wrapper .amulet-reward\").text()");
-            /*
+            else
+            {
+                UpdateStatus("false");
+            }
 
-                        if (Prize)
-                        {
-                            UpdateStatus("OK");
-                        }
-                        else
-                        {
-                            UpdateStatus("FALSE");
-                        }
-              */
-            //int i = GetArrClassCount(MainWB, "$(\"#content #slots-groupfight-place .object-thumb\").not(.icon-locked-small)");  //
+
+//            WebBrowser WB = null;
+//          UpdateStatus(Convert.ToString(MainWB.Version.Major));
+/*      
+
+      HtmlElement HtmlEl;
+      HtmlElementCollection elems;
+      bool Prize=false;
+      string text = "";
+      HtmlEl = frmMain.GetDocument(MainWB).GetElementById("neftlenin_alert_" + frmMain.GetJavaVar(MainWB, "NeftLenin.typeStep")); //Окошко с наградой
+
+
+      foreach (HtmlElement H in HtmlEl.GetElementsByTagName("IMG"))
+      {
+
+  //        if (H.GetAttribute("src").Contains("ticket"))
+    //      {
+
+                  text = H.Parent.Children[1].InnerText;
+
+
+      //    }
+
+
+          Prize = false;
+              Prize |= Settings.OilLeninLeaveNoTicket && H.GetAttribute("src").Contains("ticket");
+          UpdateStatus(Convert.ToString(Prize) + "---" + H.GetAttribute("src") + " **COUNT** " + text);
+
+
+      }
+      */
+//   object Info = frmMain.GetJavaVar(MainWB, "$(\"#content .log-wrapper .amulet-reward\").text()");
+/*
+
+            if (Prize)
+            {
+                UpdateStatus("OK");
+            }
+            else
+            {
+                UpdateStatus("FALSE");
+            }
+  */
+//int i = GetArrClassCount(MainWB, "$(\"#content #slots-groupfight-place .object-thumb\").not(.icon-locked-small)");  //
 
             //BuyItems(MainWB, ShopItems.Tea4);
 
