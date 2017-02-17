@@ -487,6 +487,7 @@
             this.label140 = new System.Windows.Forms.Label();
             this.pnlRatPipeline = new System.Windows.Forms.Panel();
             this.groupBox9 = new System.Windows.Forms.GroupBox();
+            this.chkSearchDarkTunnel = new System.Windows.Forms.CheckBox();
             this.label183 = new System.Windows.Forms.Label();
             this.label182 = new System.Windows.Forms.Label();
             this.chkSearchRat = new System.Windows.Forms.CheckBox();
@@ -677,6 +678,8 @@
             this.numExpQuestMoney = new System.Windows.Forms.NumericUpDown();
             this.label134 = new System.Windows.Forms.Label();
             this.pnlCocktails = new System.Windows.Forms.Panel();
+            this.chkUseCoctailMaxAdditivies = new System.Windows.Forms.CheckBox();
+            this.chkUseCoctailCookByNeed = new System.Windows.Forms.CheckBox();
             this.numMinFruitIgnoreAmount = new System.Windows.Forms.NumericUpDown();
             this.chkUseCoctailCook = new System.Windows.Forms.CheckBox();
             this.cboxCoctailCookUmbrella = new System.Windows.Forms.ComboBox();
@@ -5356,6 +5359,7 @@
             // 
             // groupBox9
             // 
+            this.groupBox9.Controls.Add(this.chkSearchDarkTunnel);
             this.groupBox9.Controls.Add(this.label183);
             this.groupBox9.Controls.Add(this.label182);
             this.groupBox9.Controls.Add(this.chkSearchRat);
@@ -5390,6 +5394,12 @@
             resources.ApplyResources(this.groupBox9, "groupBox9");
             this.groupBox9.Name = "groupBox9";
             this.groupBox9.TabStop = false;
+            // 
+            // chkSearchDarkTunnel
+            // 
+            resources.ApplyResources(this.chkSearchDarkTunnel, "chkSearchDarkTunnel");
+            this.chkSearchDarkTunnel.Name = "chkSearchDarkTunnel";
+            this.chkSearchDarkTunnel.UseVisualStyleBackColor = true;
             // 
             // label183
             // 
@@ -5432,11 +5442,6 @@
             // numMaxSearchRatLvl
             // 
             resources.ApplyResources(this.numMaxSearchRatLvl, "numMaxSearchRatLvl");
-            this.numMaxSearchRatLvl.Maximum = new decimal(new int[] {
-            35,
-            0,
-            0,
-            0});
             this.numMaxSearchRatLvl.Name = "numMaxSearchRatLvl";
             this.numMaxSearchRatLvl.Value = new decimal(new int[] {
             4,
@@ -7050,6 +7055,8 @@
             // pnlCocktails
             // 
             resources.ApplyResources(this.pnlCocktails, "pnlCocktails");
+            this.pnlCocktails.Controls.Add(this.chkUseCoctailMaxAdditivies);
+            this.pnlCocktails.Controls.Add(this.chkUseCoctailCookByNeed);
             this.pnlCocktails.Controls.Add(this.numMinFruitIgnoreAmount);
             this.pnlCocktails.Controls.Add(this.chkUseCoctailCook);
             this.pnlCocktails.Controls.Add(this.cboxCoctailCookUmbrella);
@@ -7081,6 +7088,19 @@
             this.pnlCocktails.Controls.Add(this.label151);
             this.pnlCocktails.Name = "pnlCocktails";
             // 
+            // chkUseCoctailMaxAdditivies
+            // 
+            resources.ApplyResources(this.chkUseCoctailMaxAdditivies, "chkUseCoctailMaxAdditivies");
+            this.chkUseCoctailMaxAdditivies.Name = "chkUseCoctailMaxAdditivies";
+            this.chkUseCoctailMaxAdditivies.UseVisualStyleBackColor = true;
+            // 
+            // chkUseCoctailCookByNeed
+            // 
+            resources.ApplyResources(this.chkUseCoctailCookByNeed, "chkUseCoctailCookByNeed");
+            this.chkUseCoctailCookByNeed.Name = "chkUseCoctailCookByNeed";
+            this.chkUseCoctailCookByNeed.UseVisualStyleBackColor = true;
+            this.chkUseCoctailCookByNeed.CheckedChanged += new System.EventHandler(this.chkUseCoctailCookByNeed_CheckedChanged);
+            // 
             // numMinFruitIgnoreAmount
             // 
             resources.ApplyResources(this.numMinFruitIgnoreAmount, "numMinFruitIgnoreAmount");
@@ -7106,6 +7126,7 @@
             resources.ApplyResources(this.chkUseCoctailCook, "chkUseCoctailCook");
             this.chkUseCoctailCook.Name = "chkUseCoctailCook";
             this.chkUseCoctailCook.UseVisualStyleBackColor = true;
+            this.chkUseCoctailCook.CheckedChanged += new System.EventHandler(this.chkUseCoctailCook_CheckedChanged);
             // 
             // cboxCoctailCookUmbrella
             // 
@@ -9656,6 +9677,9 @@
         private System.Windows.Forms.CheckBox chkOilLeninLeaveNoTicket;
         private System.Windows.Forms.GroupBox groupBox21;
         private System.Windows.Forms.CheckBox chkOilLeninLeaveNoTicketMax;
+        private System.Windows.Forms.CheckBox chkUseCoctailMaxAdditivies;
+        private System.Windows.Forms.CheckBox chkUseCoctailCookByNeed;
+        private System.Windows.Forms.CheckBox chkSearchDarkTunnel;
     }
 }
 

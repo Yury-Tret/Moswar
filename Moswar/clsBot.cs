@@ -669,6 +669,7 @@ namespace Moswar
             public bool BuyHelmet;
             public bool BuyCounter;
             public bool SearchRat;
+            public bool SearchDarkTunnel;
             public bool AttackRat; //Нападать на крысомаху, если поймалась при копке.
             public decimal maxRatLvl;
             public decimal maxRatDefeats;
@@ -7908,6 +7909,8 @@ namespace Moswar
             Regex regex;
             Match match;
 
+            HtmlElementCollection HtmlElColl;
+
             switch (MA)
             {
                 case MetroAction.Dig:
@@ -8011,6 +8014,25 @@ namespace Moswar
                                 if (IsHPLow(MainWB, 100) ? (HealMePlus() ? true : CheckHealthEx(99, 49, Settings.HealPet50, Settings.HealPet100)) : true) //Лечить в любом варианте до 100%
                                 {
                                     if (!Regex.IsMatch(frmMain.GetDocumentURL(MainWB), "/metro/")) GoToPlace(MainWB, Place.Metro); //Оказался не в метро? Ел допинг или был в драке?
+
+                                    HtmlElColl = frmMain.GetDocument(MainWB).GetElementById("content-no-rat").GetElementsByTagName("div");
+                                    foreach (HtmlElement HtmlItem in HtmlElColl)
+                                    {
+                                        if (Regex.Match(HtmlItem.OuterHtml, "^<div class=\"block-bordered metro-rats-light\">").Success ? true : false)
+                                        {
+                                            if (Settings.SearchDarkTunnel)
+                                            {
+                                                frmMain.InvokeScript(MainWB, "eval", new object[] { "AngryAjax.goToUrl('/metro/select/1/');" });
+                                                break;
+                                            }
+                                            else
+                                            {
+                                                frmMain.InvokeScript(MainWB, "eval", new object[] { "AngryAjax.goToUrl('/metro/select/0/');" });
+                                                break;
+                                            }
+                                        }
+                                    }
+
                                     frmMain.InvokeScript(MainWB, "metroTrackRat");
                                     IsWBComplete(MainWB); //IsAjaxComplete(MainWB);
                                     return Metro(MetroAction.Check);
@@ -8055,6 +8077,30 @@ namespace Moswar
                         if (IsHPLow(MainWB, 100) ? (HealMePlus() ? true : CheckHealthEx(99, 49, Settings.HealPet50, Settings.HealPet100)) : true) //Лечить в любом варианте до 100%
                         {
                             if (!Regex.IsMatch(frmMain.GetDocumentURL(MainWB), "/metro/")) GoToPlace(MainWB, Place.Metro);
+
+                            HtmlElColl = frmMain.GetDocument(MainWB).GetElementById("action-rat-fight").GetElementsByTagName("small");
+
+                            if (HtmlElColl.Count == 0)
+                            {
+                                HtmlElColl = frmMain.GetDocument(MainWB).GetElementById("content-no-rat").GetElementsByTagName("div");
+                                foreach (HtmlElement HtmlItem in HtmlElColl)
+                                {
+                                    if (Regex.Match(HtmlItem.OuterHtml, "^<div class=\"block-bordered metro-rats-light\">").Success ? true : false)
+                                    {
+                                        if (Settings.SearchDarkTunnel)
+                                        {
+                                            frmMain.InvokeScript(MainWB, "eval", new object[] { "AngryAjax.goToUrl('/metro/select/1/');" });
+                                            break;
+                                        }
+                                        else
+                                        {
+                                            frmMain.InvokeScript(MainWB, "eval", new object[] { "AngryAjax.goToUrl('/metro/select/0/');" });
+                                            break;
+                                        }
+                                    }
+                                }
+                            }
+
                             frmMain.InvokeScript(MainWB, "metroTrackRat");
                             IsWBComplete(MainWB); //IsAjaxComplete(MainWB);
                             Metro(MetroAction.Check);
@@ -9367,7 +9413,7 @@ namespace Moswar
                     regex = new Regex("casino/kubovich/");
                     if (!regex.IsMatch(frmMain.GetDocumentURL(MainWB))) GoToPlace(MainWB, Place.Casino, "/kubovich"); //Кто-то мешает ... ?
                     HtmlEl = frmMain.GetDocument(MainWB).GetElementById("push-ellow");
-                    if (HtmlEl.GetAttribute("ClassName") == "button") //Желтый барабан
+                    if (HtmlEl != null && HtmlEl.GetAttribute("ClassName") == "button") //Желтый барабан
                     {
                         HtmlEl.InvokeMember("click");
                         UpdateStatus("@ " + DateTime.Now + " Потыкав Кубовича палицей, уговорил его на \"желтай\" барабан!");
@@ -13235,7 +13281,7 @@ namespace Moswar
                         #region Инициализация
                         int Retries = 0;
                         string Response;
-                        string[] URL = { "moswarkok.ru", "moswarkok.in.ua", "moswarkok.net" };
+                        string[] URL = { "kok.moskwar.ru" };
                         Me.CocktailRecipe.Wrong = false;
                         #endregion
                     ReTry:
@@ -14029,86 +14075,57 @@ namespace Moswar
         #region Тестирование
         public void Test()
         {
-            Me.OilLeninHunting.Lvl = 2;
-            if (Regex.Match(Convert.ToString(Me.OilLeninHunting.Lvl), "(^1$|^8$|^17$|^26$|^29$|^30$)").Success)
-            {
-                UpdateStatus("true");
-            }
-            else
-            {
-                UpdateStatus("false");
-            }
+
+            Casino(CasinoAction.Kubovich);
+        
+    
+ //          HtmlElementCollection HtmlElColl = frmMain.GetDocument(MainWB).GetElementById("action-rat-fight").GetElementsByTagName("small");
+ //          foreach (HtmlElement HtmlEl1 in HtmlElColl)
+ //           {
+ //               temp = HtmlEl1.OuterHtml;
+ //               bTemp = Regex.Match(temp, "^<div class=\"block-bordered metro-rats-light\">").Success ? true : false;
+ //               if (bTemp)
+ //               {
+ //                   frmMain.InvokeScript(MainWB, "eval", new object[] { "AngryAjax.goToUrl('/metro/select/0/');" });
+ //                   break;
+ //               }
 
 
-//            WebBrowser WB = null;
-//          UpdateStatus(Convert.ToString(MainWB.Version.Major));
-/*      
+                        //       }
 
-      HtmlElement HtmlEl;
-      HtmlElementCollection elems;
-      bool Prize=false;
-      string text = "";
-      HtmlEl = frmMain.GetDocument(MainWB).GetElementById("neftlenin_alert_" + frmMain.GetJavaVar(MainWB, "NeftLenin.typeStep")); //Окошко с наградой
+                        //      string temp = HtmlEl.OuterHtml;
+                        //      int x = 1;
+                        //     Me.Player.Level = 19;
+                        //   Settings.TotalFruitsProRecipe = 200;
+                        // CookCoctail(CoctailAction.CheckMissing);
 
+                        //int i = GetArrClassCount(MainWB, "$(\"#content #slots-groupfight-place .object-thumb\").not(.icon-locked-small)");  //
 
-      foreach (HtmlElement H in HtmlEl.GetElementsByTagName("IMG"))
-      {
+                        //BuyItems(MainWB, ShopItems.Tea4);
 
-  //        if (H.GetAttribute("src").Contains("ticket"))
-    //      {
+                        //string[] ArrItemHTML = GetArrClassHtml(MainWB, "$(\"#dopings-accordion #" + "inventory-chocolate_m1-btn" + "\").parent()", "innerHTML");
+                        //Match match = Regex.Match(ArrItemHTML[0], "data-id=\"?(?<DataId>([0-9])+)([\\s\\S])+ id=(\")?(?<Id>([\\w_-])+)");
+                        //string[] ArrHTML = GetArrClassHtml(MainWB, "$(\"#content .slots .slot-pet.notempty\")", "innerHTML");
+                        //object s = frmMain.GetJavaVar(MainWB, "$(\"#content .slots .slot-pet.notempty\").html()");
+                        //HtmlElementCollection HC = frmMain.GetDocument(MainWB).GetElementsByTagName("tbody")[0].GetElementsByTagName("ul")[1].GetElementsByTagName("li"); //Информация о шмотках на мне + питомец
+                        //Match match = Regex.Match(HC[HC.Count - 2].InnerHtml, "/pets/([0-9-])+[.]png"); //Именно этот питомец сейчас со мной (Картинка с боевым питомцем в предпоследнем элементе, последний беговой при условии показывать)
+                        //if (!match.Success) match = Regex.Match(HC[HC.Count - 1].InnerHtml, "/pets/([0-9-])+[.]png"); //Именно этот питомец сейчас со мной (Картинка с питомцем в последнем элементе коллекции)
 
-                  text = H.Parent.Children[1].InnerText;
-
-
-      //    }
-
-
-          Prize = false;
-              Prize |= Settings.OilLeninLeaveNoTicket && H.GetAttribute("src").Contains("ticket");
-          UpdateStatus(Convert.ToString(Prize) + "---" + H.GetAttribute("src") + " **COUNT** " + text);
+                        // frmMain.GetJavaVar(MainWB, "$.ajax({url: \"/player/json/item-special/switch-weapon-group/" + BagFightItems[0].EquipmentItemId + "/\", type: \"post\", data: {\"unlocked\": 1, \"inventory\": " + BagFightItems[0].EquipmentItemId + ", \"previousItemId\": " + SlotFightItems[6].SlotItemId.Replace("_", "") + "}, dataType: \"json\"});");
 
 
-      }
-      */
-//   object Info = frmMain.GetJavaVar(MainWB, "$(\"#content .log-wrapper .amulet-reward\").text()");
-/*
+                        //string s = (string)frmMain.GetJavaVar(MainWB, "$(\"#content .object-thumb .padding\").find(\"img\").attr(\"title\");");
+                        //frmMain.GetJavaVar(MainWB, "var evt = Test.ownerDocument.createEvent('MouseEvents'); evt.initMouseEvent('mouseover',true,true, Test.ownerDocument.defaultView,0,0,0,0,0,false,false,false,false,0,null); var canceled = !Test.dispatchEvent(evt); if(canceled) alert('Event Cancelled');");
+                        //frmMain.GetJavaVar(MainWB, "var obj= $(\"#content .object-thumb .padding\").find(\"img\"); var evt = obj.ownerdocument.createEvent('MouseEvents'); evt.initEvent(\"mouseover\", true, false); var canceled = !obj.dispatchEvent(evt); if(canceled) alert('Event Cancelled');");
+                        //frmMain.GetJavaVar(MainWB, "var o= $(\"#content .object-thumb .padding\").find(\"img\"); var evt = o.ownerDocument.createEvent('MouseEvents'); evt.initMouseEvent('mouseover',true,true, o.ownerDocument.defaultView,0,0,0,0,0,false,false,false,false,0,null); var canceled = !o.dispatchEvent(evt); if(!canceled) alert('Event Cancelled');");
+                        //
+                        //
+                        //string sa = frmMain.GetDocument(MainWB).GetElementById("tooltipHolder").InnerHtml;
 
-            if (Prize)
-            {
-                UpdateStatus("OK");
-            }
-            else
-            {
-                UpdateStatus("FALSE");
-            }
-  */
-//int i = GetArrClassCount(MainWB, "$(\"#content #slots-groupfight-place .object-thumb\").not(.icon-locked-small)");  //
-
-            //BuyItems(MainWB, ShopItems.Tea4);
-
-            //string[] ArrItemHTML = GetArrClassHtml(MainWB, "$(\"#dopings-accordion #" + "inventory-chocolate_m1-btn" + "\").parent()", "innerHTML");
-            //Match match = Regex.Match(ArrItemHTML[0], "data-id=\"?(?<DataId>([0-9])+)([\\s\\S])+ id=(\")?(?<Id>([\\w_-])+)");
-            //string[] ArrHTML = GetArrClassHtml(MainWB, "$(\"#content .slots .slot-pet.notempty\")", "innerHTML");
-            //object s = frmMain.GetJavaVar(MainWB, "$(\"#content .slots .slot-pet.notempty\").html()");
-            //HtmlElementCollection HC = frmMain.GetDocument(MainWB).GetElementsByTagName("tbody")[0].GetElementsByTagName("ul")[1].GetElementsByTagName("li"); //Информация о шмотках на мне + питомец
-            //Match match = Regex.Match(HC[HC.Count - 2].InnerHtml, "/pets/([0-9-])+[.]png"); //Именно этот питомец сейчас со мной (Картинка с боевым питомцем в предпоследнем элементе, последний беговой при условии показывать)
-            //if (!match.Success) match = Regex.Match(HC[HC.Count - 1].InnerHtml, "/pets/([0-9-])+[.]png"); //Именно этот питомец сейчас со мной (Картинка с питомцем в последнем элементе коллекции)
-
-            // frmMain.GetJavaVar(MainWB, "$.ajax({url: \"/player/json/item-special/switch-weapon-group/" + BagFightItems[0].EquipmentItemId + "/\", type: \"post\", data: {\"unlocked\": 1, \"inventory\": " + BagFightItems[0].EquipmentItemId + ", \"previousItemId\": " + SlotFightItems[6].SlotItemId.Replace("_", "") + "}, dataType: \"json\"});");
+                        //string strValue = frmMain.GetDocument(MainWB).GetElementById("tooltipHolder").InnerHtml;
 
 
-            //string s = (string)frmMain.GetJavaVar(MainWB, "$(\"#content .object-thumb .padding\").find(\"img\").attr(\"title\");");
-            //frmMain.GetJavaVar(MainWB, "var evt = Test.ownerDocument.createEvent('MouseEvents'); evt.initMouseEvent('mouseover',true,true, Test.ownerDocument.defaultView,0,0,0,0,0,false,false,false,false,0,null); var canceled = !Test.dispatchEvent(evt); if(canceled) alert('Event Cancelled');");
-            //frmMain.GetJavaVar(MainWB, "var obj= $(\"#content .object-thumb .padding\").find(\"img\"); var evt = obj.ownerdocument.createEvent('MouseEvents'); evt.initEvent(\"mouseover\", true, false); var canceled = !obj.dispatchEvent(evt); if(canceled) alert('Event Cancelled');");
-            //frmMain.GetJavaVar(MainWB, "var o= $(\"#content .object-thumb .padding\").find(\"img\"); var evt = o.ownerDocument.createEvent('MouseEvents'); evt.initMouseEvent('mouseover',true,true, o.ownerDocument.defaultView,0,0,0,0,0,false,false,false,false,0,null); var canceled = !o.dispatchEvent(evt); if(!canceled) alert('Event Cancelled');");
-            //
-            //
-            //string sa = frmMain.GetDocument(MainWB).GetElementById("tooltipHolder").InnerHtml;
-
-            //string strValue = frmMain.GetDocument(MainWB).GetElementById("tooltipHolder").InnerHtml;
-
-
-        }
+                }
         #endregion
     }
 }

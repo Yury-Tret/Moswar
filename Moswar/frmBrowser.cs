@@ -389,6 +389,7 @@ namespace Moswar
             if (Bot.Settings.maxSearchRatLvl < numMaxSearchRatLvl.Value || chkSearchRatUseOhara.Checked) { Bot.Me.RatHunting.Defeats = 0; Bot.Me.RatHunting.Stop = false; } //При смене уровня крысомах, скидываем стоппер.
             Bot.Settings.GoMetro = chkMetro.Checked;
             Bot.Settings.SearchRat = chkSearchRat.Checked;
+            Bot.Settings.SearchDarkTunnel = chkSearchDarkTunnel.Checked;
             Bot.Settings.BuyMpick = rbBuyMPick.Checked;
             Bot.Settings.BuyRpick = rbBuyRPick.Checked;
             Bot.Settings.BuyHelmet = chkBuyHelmet.Checked;
@@ -777,6 +778,7 @@ namespace Moswar
 
                 chkMetro.Checked = Bot.Settings.GoMetro;
                 chkSearchRat.Checked = Bot.Settings.SearchRat;
+                chkSearchDarkTunnel.Checked = Bot.Settings.SearchDarkTunnel;
                 rbBuyMPick.Checked = Bot.Settings.BuyMpick;
                 rbBuyRPick.Checked = Bot.Settings.BuyRpick;
                 chkBuyHelmet.Checked = Bot.Settings.BuyHelmet;
@@ -2944,6 +2946,47 @@ function checkName() {
             else
             {
                 chkOilLeninLeaveNoTicketMax.Enabled = true;
+            }
+        }
+
+        private void chkUseCoctailCookByNeed_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chkUseCoctailCookByNeed.Checked)
+            {
+                chkUseCoctailCook.Enabled = false;
+                cboxCoctailCookType.Enabled = false;
+                numCoctailCookAmount.Enabled = false;
+                cboxCoctailCookIceCream.Enabled = false;
+                cboxCoctailCookPiece.Enabled = false;
+                cboxCoctailCookStraw.Enabled = false;
+                cboxCoctailCookUmbrella.Enabled = false;
+            }
+            else
+            {
+                chkUseCoctailCook.Enabled = true;
+                cboxCoctailCookType.Enabled = true;
+                numCoctailCookAmount.Enabled = true;
+                cboxCoctailCookIceCream.Enabled = true;
+                cboxCoctailCookPiece.Enabled = true;
+                cboxCoctailCookStraw.Enabled = true;
+                cboxCoctailCookUmbrella.Enabled = true;
+                
+            }
+        }
+
+        private void chkUseCoctailCook_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chkUseCoctailCook.Checked)
+            {
+                chkUseCoctailCookByNeed.Enabled = false;
+                chkUseCoctailMaxAdditivies.Enabled = false;
+                chkUseCoctailMaxAdditivies.Checked = false;
+
+            }
+            else
+            {
+                chkUseCoctailCookByNeed.Enabled = true;
+                chkUseCoctailMaxAdditivies.Enabled = true;
             }
         }
     }
