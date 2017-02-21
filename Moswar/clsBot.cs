@@ -9409,6 +9409,13 @@ namespace Moswar
                     Regex regex = new Regex("(?<=([0-9])+[.]\\s*)([^\\s])+");
                     string sMax = regex.Matches(HtmlEl.InnerText)[(Settings.maxKubovichRotations <= 5 ? Settings.maxKubovichRotations : Settings.maxKubovichRotations - 5) - 1].Value;
 
+                    bool IsGoldKubovich = false;
+                    HtmlElementCollection HtmlElColl = frmMain.GetDocument(MainWB).GetElementById("content").GetElementsByTagName("a");
+                    foreach (HtmlElement HtmlElItem in HtmlElColl)
+                    {
+                        if (IsGoldKubovich = Regex.Match(HtmlElItem.GetAttribute("href"), "/casino/kubovich/old/").Success ? true : false) break;
+                    }
+
                 Rotate:
                     regex = new Regex("casino/kubovich/");
                     if (!regex.IsMatch(frmMain.GetDocumentURL(MainWB))) GoToPlace(MainWB, Place.Casino, "/kubovich"); //Кто-то мешает ... ?
@@ -9427,7 +9434,7 @@ namespace Moswar
                         Me.Kubovich.Val = regex.Match(HtmlEl.InnerText).Value != "" ? Convert.ToInt32(regex.Match(HtmlEl.InnerText).Value) : 0; //Необходимо фишек, чтоб крутануть барабан!
                         if (Me.Kubovich.Val <= (sMax == "бесплатно" ? 0 : Convert.ToInt32(sMax))) //Ещё не докрутил до выставленного в настройках?
                         {
-                            if (!Me.Fishki.Stop && Settings.BuyFishki && !Settings.BuyFishkiAllways && Convert.ToInt32(frmMain.GetDocument(MainWB).GetElementById("fishki-balance-num").InnerText.Replace(",", "")) < Me.Kubovich.Val) //!Me.Fishki.Stop Дабы Бот не пытался второй раз купить фишки!
+                            if (!IsGoldKubovich && !Me.Fishki.Stop && Settings.BuyFishki && !Settings.BuyFishkiAllways && Convert.ToInt32(frmMain.GetDocument(MainWB).GetElementById("fishki-balance-num").InnerText.Replace(",", "")) < Me.Kubovich.Val) //!Me.Fishki.Stop Дабы Бот не пытался второй раз купить фишки!
                             {
                                 Casino(CasinoAction.BuyFishki); //Нехватает фишек на счету крутануть барабан?
                                 GoToPlace(MainWB, Place.Casino, "/kubovich"); //Возвращаемся к Кубовичу.
@@ -14076,22 +14083,24 @@ namespace Moswar
         public void Test()
         {
 
-            Casino(CasinoAction.Kubovich);
-        
-    
- //          HtmlElementCollection HtmlElColl = frmMain.GetDocument(MainWB).GetElementById("action-rat-fight").GetElementsByTagName("small");
- //          foreach (HtmlElement HtmlEl1 in HtmlElColl)
- //           {
- //               temp = HtmlEl1.OuterHtml;
- //               bTemp = Regex.Match(temp, "^<div class=\"block-bordered metro-rats-light\">").Success ? true : false;
- //               if (bTemp)
- //               {
- //                   frmMain.InvokeScript(MainWB, "eval", new object[] { "AngryAjax.goToUrl('/metro/select/0/');" });
- //                   break;
- //               }
+        //        Casino(CasinoAction.Kubovich);
+            //  
+//            bool bTemp = false;
+       //     string temp;
+
+  //         HtmlElementCollection HtmlElColl = frmMain.GetDocument(MainWB).GetElementById("content").GetElementsByTagName("a");
+    //       foreach (HtmlElement HtmlEl1 in HtmlElColl)
+      //      {
+              //  temp = HtmlEl1.OuterHtml;
+         //       bTemp = Regex.Match(HtmlEl1.GetAttribute("href"), "/casino/kubovich/old/").Success ? true : false;
+  //             if (bTemp)
+//                {
+    //                frmMain.InvokeScript(MainWB, "eval", new object[] { "AngryAjax.goToUrl('/metro/select/0/');" });
+      //              break;
+        //        }
 
 
-                        //       }
+        //                       }
 
                         //      string temp = HtmlEl.OuterHtml;
                         //      int x = 1;
