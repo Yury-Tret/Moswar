@@ -848,6 +848,22 @@
             this.MenuItemSendGiftFix = new System.Windows.Forms.ToolStripMenuItem();
             this.btnFunctions = new System.Windows.Forms.Button();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
+            this.label207 = new System.Windows.Forms.Label();
+            this.label208 = new System.Windows.Forms.Label();
+            this.chkSendTruck13 = new System.Windows.Forms.CheckBox();
+            this.chkSendTruck14 = new System.Windows.Forms.CheckBox();
+            this.button79 = new System.Windows.Forms.Button();
+            this.button80 = new System.Windows.Forms.Button();
+            this.button81 = new System.Windows.Forms.Button();
+            this.button82 = new System.Windows.Forms.Button();
+            this.button83 = new System.Windows.Forms.Button();
+            this.button84 = new System.Windows.Forms.Button();
+            this.button85 = new System.Windows.Forms.Button();
+            this.button86 = new System.Windows.Forms.Button();
+            this.button87 = new System.Windows.Forms.Button();
+            this.button88 = new System.Windows.Forms.Button();
+            this.button89 = new System.Windows.Forms.Button();
+            this.button90 = new System.Windows.Forms.Button();
             this.tabControl.SuspendLayout();
             this.tabMainBrowser.SuspendLayout();
             this.AutoUpdateMessage.SuspendLayout();
@@ -2224,6 +2240,18 @@
             // tblTrucks
             // 
             resources.ApplyResources(this.tblTrucks, "tblTrucks");
+            this.tblTrucks.Controls.Add(this.button90, 7, 16);
+            this.tblTrucks.Controls.Add(this.button89, 6, 16);
+            this.tblTrucks.Controls.Add(this.button88, 5, 16);
+            this.tblTrucks.Controls.Add(this.button87, 4, 16);
+            this.tblTrucks.Controls.Add(this.button86, 3, 16);
+            this.tblTrucks.Controls.Add(this.button85, 2, 16);
+            this.tblTrucks.Controls.Add(this.button84, 7, 15);
+            this.tblTrucks.Controls.Add(this.button83, 6, 15);
+            this.tblTrucks.Controls.Add(this.button82, 5, 15);
+            this.tblTrucks.Controls.Add(this.button81, 4, 15);
+            this.tblTrucks.Controls.Add(this.button80, 3, 15);
+            this.tblTrucks.Controls.Add(this.button79, 2, 15);
             this.tblTrucks.Controls.Add(this.button67, 2, 14);
             this.tblTrucks.Controls.Add(this.button68, 3, 14);
             this.tblTrucks.Controls.Add(this.button69, 4, 14);
@@ -2327,9 +2355,13 @@
             this.tblTrucks.Controls.Add(this.label197, 1, 10);
             this.tblTrucks.Controls.Add(this.label198, 1, 11);
             this.tblTrucks.Controls.Add(this.label199, 1, 12);
-            this.tblTrucks.Controls.Add(this.label200, 1, 13);
             this.tblTrucks.Controls.Add(this.label201, 1, 14);
             this.tblTrucks.Controls.Add(this.groupBox18, 0, 2);
+            this.tblTrucks.Controls.Add(this.label200, 1, 13);
+            this.tblTrucks.Controls.Add(this.label207, 1, 15);
+            this.tblTrucks.Controls.Add(this.label208, 1, 16);
+            this.tblTrucks.Controls.Add(this.chkSendTruck13, 0, 15);
+            this.tblTrucks.Controls.Add(this.chkSendTruck14, 0, 16);
             this.tblTrucks.Name = "tblTrucks";
             // 
             // button67
@@ -8549,6 +8581,124 @@
             this.toolTip.ReshowDelay = 1;
             this.toolTip.UseFading = false;
             // 
+            // label207
+            // 
+            resources.ApplyResources(this.label207, "label207");
+            this.label207.Name = "label207";
+            // 
+            // label208
+            // 
+            resources.ApplyResources(this.label208, "label208");
+            this.label208.Name = "label208";
+            // 
+            // chkSendTruck13
+            // 
+            resources.ApplyResources(this.chkSendTruck13, "chkSendTruck13");
+            this.chkSendTruck13.Name = "chkSendTruck13";
+            this.chkSendTruck13.UseVisualStyleBackColor = true;
+            // 
+            // chkSendTruck14
+            // 
+            resources.ApplyResources(this.chkSendTruck14, "chkSendTruck14");
+            this.chkSendTruck14.Name = "chkSendTruck14";
+            this.chkSendTruck14.UseVisualStyleBackColor = true;
+            // 
+            // button79
+            // 
+            resources.ApplyResources(this.button79, "button79");
+            this.button79.ImageList = this.imageListlTruckEnhancing;
+            this.button79.Name = "button79";
+            this.button79.UseVisualStyleBackColor = true;
+            this.button79.Click += new System.EventHandler(this.btnTruckEnhancing_Click);
+            // 
+            // button80
+            // 
+            resources.ApplyResources(this.button80, "button80");
+            this.button80.ImageList = this.imageListlTruckEnhancing;
+            this.button80.Name = "button80";
+            this.button80.UseVisualStyleBackColor = true;
+            this.button80.Click += new System.EventHandler(this.btnTruckEnhancing_Click);
+            // 
+            // button81
+            // 
+            resources.ApplyResources(this.button81, "button81");
+            this.button81.ImageList = this.imageListlTruckEnhancing;
+            this.button81.Name = "button81";
+            this.button81.UseVisualStyleBackColor = true;
+            this.button81.Click += new System.EventHandler(this.btnTruckEnhancing_Click);
+            // 
+            // button82
+            // 
+            resources.ApplyResources(this.button82, "button82");
+            this.button82.ImageList = this.imageListlTruckEnhancing;
+            this.button82.Name = "button82";
+            this.button82.UseVisualStyleBackColor = true;
+            this.button82.Click += new System.EventHandler(this.btnTruckEnhancing_Click);
+            // 
+            // button83
+            // 
+            resources.ApplyResources(this.button83, "button83");
+            this.button83.ImageList = this.imageListlTruckEnhancing;
+            this.button83.Name = "button83";
+            this.button83.UseVisualStyleBackColor = true;
+            this.button83.Click += new System.EventHandler(this.btnTruckEnhancing_Click);
+            // 
+            // button84
+            // 
+            resources.ApplyResources(this.button84, "button84");
+            this.button84.ImageList = this.imageListlTruckEnhancing;
+            this.button84.Name = "button84";
+            this.button84.UseVisualStyleBackColor = true;
+            this.button84.Click += new System.EventHandler(this.btnTruckEnhancing_Click);
+            // 
+            // button85
+            // 
+            resources.ApplyResources(this.button85, "button85");
+            this.button85.ImageList = this.imageListlTruckEnhancing;
+            this.button85.Name = "button85";
+            this.button85.UseVisualStyleBackColor = true;
+            this.button85.Click += new System.EventHandler(this.btnTruckEnhancing_Click);
+            // 
+            // button86
+            // 
+            resources.ApplyResources(this.button86, "button86");
+            this.button86.ImageList = this.imageListlTruckEnhancing;
+            this.button86.Name = "button86";
+            this.button86.UseVisualStyleBackColor = true;
+            this.button86.Click += new System.EventHandler(this.btnTruckEnhancing_Click);
+            // 
+            // button87
+            // 
+            resources.ApplyResources(this.button87, "button87");
+            this.button87.ImageList = this.imageListlTruckEnhancing;
+            this.button87.Name = "button87";
+            this.button87.UseVisualStyleBackColor = true;
+            this.button87.Click += new System.EventHandler(this.btnTruckEnhancing_Click);
+            // 
+            // button88
+            // 
+            resources.ApplyResources(this.button88, "button88");
+            this.button88.ImageList = this.imageListlTruckEnhancing;
+            this.button88.Name = "button88";
+            this.button88.UseVisualStyleBackColor = true;
+            this.button88.Click += new System.EventHandler(this.btnTruckEnhancing_Click);
+            // 
+            // button89
+            // 
+            resources.ApplyResources(this.button89, "button89");
+            this.button89.ImageList = this.imageListlTruckEnhancing;
+            this.button89.Name = "button89";
+            this.button89.UseVisualStyleBackColor = true;
+            this.button89.Click += new System.EventHandler(this.btnTruckEnhancing_Click);
+            // 
+            // button90
+            // 
+            resources.ApplyResources(this.button90, "button90");
+            this.button90.ImageList = this.imageListlTruckEnhancing;
+            this.button90.Name = "button90";
+            this.button90.UseVisualStyleBackColor = true;
+            this.button90.Click += new System.EventHandler(this.btnTruckEnhancing_Click);
+            // 
             // frmMain
             // 
             resources.ApplyResources(this, "$this");
@@ -9680,6 +9830,22 @@
         private System.Windows.Forms.CheckBox chkUseCoctailMaxAdditivies;
         private System.Windows.Forms.CheckBox chkUseCoctailCookByNeed;
         private System.Windows.Forms.CheckBox chkSearchDarkTunnel;
+        private System.Windows.Forms.Button button90;
+        private System.Windows.Forms.Button button89;
+        private System.Windows.Forms.Button button88;
+        private System.Windows.Forms.Button button87;
+        private System.Windows.Forms.Button button86;
+        private System.Windows.Forms.Button button85;
+        private System.Windows.Forms.Button button84;
+        private System.Windows.Forms.Button button83;
+        private System.Windows.Forms.Button button82;
+        private System.Windows.Forms.Button button81;
+        private System.Windows.Forms.Button button80;
+        private System.Windows.Forms.Button button79;
+        private System.Windows.Forms.Label label207;
+        private System.Windows.Forms.Label label208;
+        private System.Windows.Forms.CheckBox chkSendTruck13;
+        private System.Windows.Forms.CheckBox chkSendTruck14;
     }
 }
 

@@ -4032,7 +4032,7 @@
   <data name="tblTrucks.ColumnCount" type="System.Int32, mscorlib">
     <value>8</value>
   </data>
-  <data name="button67.ImageIndex" type="System.Int32, mscorlib">
+  <data name="button90.ImageIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
   <metadata name="imageListlTruckEnhancing.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
@@ -4043,7 +4043,7 @@
         AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
         LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
         ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAAAi
-        CQAAAk1TRnQBSQFMAgEBAwEAAdgBAAHYAQABEAEAARABAAT/AQkBAAj/AUIBTQE2AQQGAAE2AQQCAAEo
+        CQAAAk1TRnQBSQFMAgEBAwEAAfABAAHwAQABEAEAARABAAT/AQkBAAj/AUIBTQE2AQQGAAE2AQQCAAEo
         AwABQAMAARADAAEBAQABCAYAAQQYAAGAAgABgAMAAoABAAGAAwABgAEAAYABAAKAAgADwAEAAcAB3AHA
         AQAB8AHKAaYBAAEzBQABMwEAATMBAAEzAQACMwIAAxYBAAMcAQADIgEAAykBAANVAQADTQEAA0IBAAM5
         AQABgAF8Af8BAAJQAf8BAAGTAQAB1gEAAf8B7AHMAQABxgHWAe8BAAHWAucBAAGQAakBrQIAAf8BMwMA
@@ -4085,11 +4085,371 @@
         AgAL
 </value>
   </data>
+  <data name="button90.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="button90.Location" type="System.Drawing.Point, System.Drawing">
+    <value>422, 421</value>
+  </data>
+  <data name="button90.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 1, 1, 1</value>
+  </data>
+  <data name="button90.Size" type="System.Drawing.Size, System.Drawing">
+    <value>26, 26</value>
+  </data>
+  <data name="button90.TabIndex" type="System.Int32, mscorlib">
+    <value>137</value>
+  </data>
+  <data name="&gt;&gt;button90.Name" xml:space="preserve">
+    <value>button90</value>
+  </data>
+  <data name="&gt;&gt;button90.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button90.Parent" xml:space="preserve">
+    <value>tblTrucks</value>
+  </data>
+  <data name="&gt;&gt;button90.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="button89.ImageIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="button89.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="button89.Location" type="System.Drawing.Point, System.Drawing">
+    <value>394, 421</value>
+  </data>
+  <data name="button89.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 1, 1, 1</value>
+  </data>
+  <data name="button89.Size" type="System.Drawing.Size, System.Drawing">
+    <value>26, 26</value>
+  </data>
+  <data name="button89.TabIndex" type="System.Int32, mscorlib">
+    <value>136</value>
+  </data>
+  <data name="&gt;&gt;button89.Name" xml:space="preserve">
+    <value>button89</value>
+  </data>
+  <data name="&gt;&gt;button89.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button89.Parent" xml:space="preserve">
+    <value>tblTrucks</value>
+  </data>
+  <data name="&gt;&gt;button89.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="button88.ImageIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="button88.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="button88.Location" type="System.Drawing.Point, System.Drawing">
+    <value>366, 421</value>
+  </data>
+  <data name="button88.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 1, 1, 1</value>
+  </data>
+  <data name="button88.Size" type="System.Drawing.Size, System.Drawing">
+    <value>26, 26</value>
+  </data>
+  <data name="button88.TabIndex" type="System.Int32, mscorlib">
+    <value>135</value>
+  </data>
+  <data name="&gt;&gt;button88.Name" xml:space="preserve">
+    <value>button88</value>
+  </data>
+  <data name="&gt;&gt;button88.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button88.Parent" xml:space="preserve">
+    <value>tblTrucks</value>
+  </data>
+  <data name="&gt;&gt;button88.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="button87.ImageIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="button87.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="button87.Location" type="System.Drawing.Point, System.Drawing">
+    <value>338, 421</value>
+  </data>
+  <data name="button87.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 1, 1, 1</value>
+  </data>
+  <data name="button87.Size" type="System.Drawing.Size, System.Drawing">
+    <value>26, 26</value>
+  </data>
+  <data name="button87.TabIndex" type="System.Int32, mscorlib">
+    <value>134</value>
+  </data>
+  <data name="&gt;&gt;button87.Name" xml:space="preserve">
+    <value>button87</value>
+  </data>
+  <data name="&gt;&gt;button87.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button87.Parent" xml:space="preserve">
+    <value>tblTrucks</value>
+  </data>
+  <data name="&gt;&gt;button87.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="button86.ImageIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="button86.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="button86.Location" type="System.Drawing.Point, System.Drawing">
+    <value>310, 421</value>
+  </data>
+  <data name="button86.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 1, 1, 1</value>
+  </data>
+  <data name="button86.Size" type="System.Drawing.Size, System.Drawing">
+    <value>26, 26</value>
+  </data>
+  <data name="button86.TabIndex" type="System.Int32, mscorlib">
+    <value>133</value>
+  </data>
+  <data name="&gt;&gt;button86.Name" xml:space="preserve">
+    <value>button86</value>
+  </data>
+  <data name="&gt;&gt;button86.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button86.Parent" xml:space="preserve">
+    <value>tblTrucks</value>
+  </data>
+  <data name="&gt;&gt;button86.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="button85.ImageIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="button85.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="button85.Location" type="System.Drawing.Point, System.Drawing">
+    <value>282, 421</value>
+  </data>
+  <data name="button85.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 1, 1, 1</value>
+  </data>
+  <data name="button85.Size" type="System.Drawing.Size, System.Drawing">
+    <value>26, 26</value>
+  </data>
+  <data name="button85.TabIndex" type="System.Int32, mscorlib">
+    <value>132</value>
+  </data>
+  <data name="&gt;&gt;button85.Name" xml:space="preserve">
+    <value>button85</value>
+  </data>
+  <data name="&gt;&gt;button85.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button85.Parent" xml:space="preserve">
+    <value>tblTrucks</value>
+  </data>
+  <data name="&gt;&gt;button85.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="button84.ImageIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="button84.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="button84.Location" type="System.Drawing.Point, System.Drawing">
+    <value>422, 393</value>
+  </data>
+  <data name="button84.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 1, 1, 1</value>
+  </data>
+  <data name="button84.Size" type="System.Drawing.Size, System.Drawing">
+    <value>26, 26</value>
+  </data>
+  <data name="button84.TabIndex" type="System.Int32, mscorlib">
+    <value>131</value>
+  </data>
+  <data name="&gt;&gt;button84.Name" xml:space="preserve">
+    <value>button84</value>
+  </data>
+  <data name="&gt;&gt;button84.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button84.Parent" xml:space="preserve">
+    <value>tblTrucks</value>
+  </data>
+  <data name="&gt;&gt;button84.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="button83.ImageIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="button83.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="button83.Location" type="System.Drawing.Point, System.Drawing">
+    <value>394, 393</value>
+  </data>
+  <data name="button83.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 1, 1, 1</value>
+  </data>
+  <data name="button83.Size" type="System.Drawing.Size, System.Drawing">
+    <value>26, 26</value>
+  </data>
+  <data name="button83.TabIndex" type="System.Int32, mscorlib">
+    <value>130</value>
+  </data>
+  <data name="&gt;&gt;button83.Name" xml:space="preserve">
+    <value>button83</value>
+  </data>
+  <data name="&gt;&gt;button83.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button83.Parent" xml:space="preserve">
+    <value>tblTrucks</value>
+  </data>
+  <data name="&gt;&gt;button83.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="button82.ImageIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="button82.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="button82.Location" type="System.Drawing.Point, System.Drawing">
+    <value>366, 393</value>
+  </data>
+  <data name="button82.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 1, 1, 1</value>
+  </data>
+  <data name="button82.Size" type="System.Drawing.Size, System.Drawing">
+    <value>26, 26</value>
+  </data>
+  <data name="button82.TabIndex" type="System.Int32, mscorlib">
+    <value>129</value>
+  </data>
+  <data name="&gt;&gt;button82.Name" xml:space="preserve">
+    <value>button82</value>
+  </data>
+  <data name="&gt;&gt;button82.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button82.Parent" xml:space="preserve">
+    <value>tblTrucks</value>
+  </data>
+  <data name="&gt;&gt;button82.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="button81.ImageIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="button81.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="button81.Location" type="System.Drawing.Point, System.Drawing">
+    <value>338, 393</value>
+  </data>
+  <data name="button81.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 1, 1, 1</value>
+  </data>
+  <data name="button81.Size" type="System.Drawing.Size, System.Drawing">
+    <value>26, 26</value>
+  </data>
+  <data name="button81.TabIndex" type="System.Int32, mscorlib">
+    <value>128</value>
+  </data>
+  <data name="&gt;&gt;button81.Name" xml:space="preserve">
+    <value>button81</value>
+  </data>
+  <data name="&gt;&gt;button81.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button81.Parent" xml:space="preserve">
+    <value>tblTrucks</value>
+  </data>
+  <data name="&gt;&gt;button81.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="button80.ImageIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="button80.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="button80.Location" type="System.Drawing.Point, System.Drawing">
+    <value>310, 393</value>
+  </data>
+  <data name="button80.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 1, 1, 1</value>
+  </data>
+  <data name="button80.Size" type="System.Drawing.Size, System.Drawing">
+    <value>26, 26</value>
+  </data>
+  <data name="button80.TabIndex" type="System.Int32, mscorlib">
+    <value>111</value>
+  </data>
+  <data name="&gt;&gt;button80.Name" xml:space="preserve">
+    <value>button80</value>
+  </data>
+  <data name="&gt;&gt;button80.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button80.Parent" xml:space="preserve">
+    <value>tblTrucks</value>
+  </data>
+  <data name="&gt;&gt;button80.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="button79.ImageIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="button79.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="button79.Location" type="System.Drawing.Point, System.Drawing">
+    <value>282, 393</value>
+  </data>
+  <data name="button79.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 1, 1, 1</value>
+  </data>
+  <data name="button79.Size" type="System.Drawing.Size, System.Drawing">
+    <value>26, 26</value>
+  </data>
+  <data name="button79.TabIndex" type="System.Int32, mscorlib">
+    <value>111</value>
+  </data>
+  <data name="&gt;&gt;button79.Name" xml:space="preserve">
+    <value>button79</value>
+  </data>
+  <data name="&gt;&gt;button79.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button79.Parent" xml:space="preserve">
+    <value>tblTrucks</value>
+  </data>
+  <data name="&gt;&gt;button79.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="button67.ImageIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
   <data name="button67.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="button67.Location" type="System.Drawing.Point, System.Drawing">
-    <value>264, 365</value>
+    <value>282, 365</value>
   </data>
   <data name="button67.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 1, 1, 1</value>
@@ -4110,7 +4470,7 @@
     <value>tblTrucks</value>
   </data>
   <data name="&gt;&gt;button67.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>12</value>
   </data>
   <data name="button68.ImageIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -4119,7 +4479,7 @@
     <value>NoControl</value>
   </data>
   <data name="button68.Location" type="System.Drawing.Point, System.Drawing">
-    <value>292, 365</value>
+    <value>310, 365</value>
   </data>
   <data name="button68.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 1, 1, 1</value>
@@ -4140,7 +4500,7 @@
     <value>tblTrucks</value>
   </data>
   <data name="&gt;&gt;button68.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>13</value>
   </data>
   <data name="button69.ImageIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -4149,7 +4509,7 @@
     <value>NoControl</value>
   </data>
   <data name="button69.Location" type="System.Drawing.Point, System.Drawing">
-    <value>320, 365</value>
+    <value>338, 365</value>
   </data>
   <data name="button69.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 1, 1, 1</value>
@@ -4170,7 +4530,7 @@
     <value>tblTrucks</value>
   </data>
   <data name="&gt;&gt;button69.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>14</value>
   </data>
   <data name="button70.ImageIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -4179,7 +4539,7 @@
     <value>NoControl</value>
   </data>
   <data name="button70.Location" type="System.Drawing.Point, System.Drawing">
-    <value>348, 365</value>
+    <value>366, 365</value>
   </data>
   <data name="button70.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 1, 1, 1</value>
@@ -4200,7 +4560,7 @@
     <value>tblTrucks</value>
   </data>
   <data name="&gt;&gt;button70.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>15</value>
   </data>
   <data name="button71.ImageIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -4209,7 +4569,7 @@
     <value>NoControl</value>
   </data>
   <data name="button71.Location" type="System.Drawing.Point, System.Drawing">
-    <value>376, 365</value>
+    <value>394, 365</value>
   </data>
   <data name="button71.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 1, 1, 1</value>
@@ -4230,7 +4590,7 @@
     <value>tblTrucks</value>
   </data>
   <data name="&gt;&gt;button71.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>16</value>
   </data>
   <data name="button72.ImageIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -4239,7 +4599,7 @@
     <value>NoControl</value>
   </data>
   <data name="button72.Location" type="System.Drawing.Point, System.Drawing">
-    <value>404, 365</value>
+    <value>422, 365</value>
   </data>
   <data name="button72.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 1, 1, 1</value>
@@ -4260,7 +4620,7 @@
     <value>tblTrucks</value>
   </data>
   <data name="&gt;&gt;button72.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>17</value>
   </data>
   <data name="button61.ImageIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -4269,7 +4629,7 @@
     <value>NoControl</value>
   </data>
   <data name="button61.Location" type="System.Drawing.Point, System.Drawing">
-    <value>264, 337</value>
+    <value>282, 337</value>
   </data>
   <data name="button61.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 1, 1, 1</value>
@@ -4290,7 +4650,7 @@
     <value>tblTrucks</value>
   </data>
   <data name="&gt;&gt;button61.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>18</value>
   </data>
   <data name="button62.ImageIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -4299,7 +4659,7 @@
     <value>NoControl</value>
   </data>
   <data name="button62.Location" type="System.Drawing.Point, System.Drawing">
-    <value>292, 337</value>
+    <value>310, 337</value>
   </data>
   <data name="button62.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 1, 1, 1</value>
@@ -4320,7 +4680,7 @@
     <value>tblTrucks</value>
   </data>
   <data name="&gt;&gt;button62.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>19</value>
   </data>
   <data name="button63.ImageIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -4329,7 +4689,7 @@
     <value>NoControl</value>
   </data>
   <data name="button63.Location" type="System.Drawing.Point, System.Drawing">
-    <value>320, 337</value>
+    <value>338, 337</value>
   </data>
   <data name="button63.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 1, 1, 1</value>
@@ -4350,7 +4710,7 @@
     <value>tblTrucks</value>
   </data>
   <data name="&gt;&gt;button63.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>20</value>
   </data>
   <data name="button64.ImageIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -4359,7 +4719,7 @@
     <value>NoControl</value>
   </data>
   <data name="button64.Location" type="System.Drawing.Point, System.Drawing">
-    <value>348, 337</value>
+    <value>366, 337</value>
   </data>
   <data name="button64.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 1, 1, 1</value>
@@ -4380,7 +4740,7 @@
     <value>tblTrucks</value>
   </data>
   <data name="&gt;&gt;button64.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>21</value>
   </data>
   <data name="button65.ImageIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -4389,7 +4749,7 @@
     <value>NoControl</value>
   </data>
   <data name="button65.Location" type="System.Drawing.Point, System.Drawing">
-    <value>376, 337</value>
+    <value>394, 337</value>
   </data>
   <data name="button65.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 1, 1, 1</value>
@@ -4410,7 +4770,7 @@
     <value>tblTrucks</value>
   </data>
   <data name="&gt;&gt;button65.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>22</value>
   </data>
   <data name="button66.ImageIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -4419,7 +4779,7 @@
     <value>NoControl</value>
   </data>
   <data name="button66.Location" type="System.Drawing.Point, System.Drawing">
-    <value>404, 337</value>
+    <value>422, 337</value>
   </data>
   <data name="button66.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 1, 1, 1</value>
@@ -4440,7 +4800,7 @@
     <value>tblTrucks</value>
   </data>
   <data name="&gt;&gt;button66.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>23</value>
   </data>
   <data name="button55.ImageIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -4449,7 +4809,7 @@
     <value>NoControl</value>
   </data>
   <data name="button55.Location" type="System.Drawing.Point, System.Drawing">
-    <value>264, 309</value>
+    <value>282, 309</value>
   </data>
   <data name="button55.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 1, 1, 1</value>
@@ -4470,7 +4830,7 @@
     <value>tblTrucks</value>
   </data>
   <data name="&gt;&gt;button55.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>24</value>
   </data>
   <data name="button56.ImageIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -4479,7 +4839,7 @@
     <value>NoControl</value>
   </data>
   <data name="button56.Location" type="System.Drawing.Point, System.Drawing">
-    <value>292, 309</value>
+    <value>310, 309</value>
   </data>
   <data name="button56.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 1, 1, 1</value>
@@ -4500,7 +4860,7 @@
     <value>tblTrucks</value>
   </data>
   <data name="&gt;&gt;button56.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>25</value>
   </data>
   <data name="button57.ImageIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -4509,7 +4869,7 @@
     <value>NoControl</value>
   </data>
   <data name="button57.Location" type="System.Drawing.Point, System.Drawing">
-    <value>320, 309</value>
+    <value>338, 309</value>
   </data>
   <data name="button57.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 1, 1, 1</value>
@@ -4530,7 +4890,7 @@
     <value>tblTrucks</value>
   </data>
   <data name="&gt;&gt;button57.ZOrder" xml:space="preserve">
-    <value>14</value>
+    <value>26</value>
   </data>
   <data name="button58.ImageIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -4539,7 +4899,7 @@
     <value>NoControl</value>
   </data>
   <data name="button58.Location" type="System.Drawing.Point, System.Drawing">
-    <value>348, 309</value>
+    <value>366, 309</value>
   </data>
   <data name="button58.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 1, 1, 1</value>
@@ -4560,7 +4920,7 @@
     <value>tblTrucks</value>
   </data>
   <data name="&gt;&gt;button58.ZOrder" xml:space="preserve">
-    <value>15</value>
+    <value>27</value>
   </data>
   <data name="button59.ImageIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -4569,7 +4929,7 @@
     <value>NoControl</value>
   </data>
   <data name="button59.Location" type="System.Drawing.Point, System.Drawing">
-    <value>376, 309</value>
+    <value>394, 309</value>
   </data>
   <data name="button59.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 1, 1, 1</value>
@@ -4590,7 +4950,7 @@
     <value>tblTrucks</value>
   </data>
   <data name="&gt;&gt;button59.ZOrder" xml:space="preserve">
-    <value>16</value>
+    <value>28</value>
   </data>
   <data name="button60.ImageIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -4599,7 +4959,7 @@
     <value>NoControl</value>
   </data>
   <data name="button60.Location" type="System.Drawing.Point, System.Drawing">
-    <value>404, 309</value>
+    <value>422, 309</value>
   </data>
   <data name="button60.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 1, 1, 1</value>
@@ -4620,7 +4980,7 @@
     <value>tblTrucks</value>
   </data>
   <data name="&gt;&gt;button60.ZOrder" xml:space="preserve">
-    <value>17</value>
+    <value>29</value>
   </data>
   <data name="button49.ImageIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -4629,7 +4989,7 @@
     <value>NoControl</value>
   </data>
   <data name="button49.Location" type="System.Drawing.Point, System.Drawing">
-    <value>264, 281</value>
+    <value>282, 281</value>
   </data>
   <data name="button49.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 1, 1, 1</value>
@@ -4650,7 +5010,7 @@
     <value>tblTrucks</value>
   </data>
   <data name="&gt;&gt;button49.ZOrder" xml:space="preserve">
-    <value>18</value>
+    <value>30</value>
   </data>
   <data name="button50.ImageIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -4659,7 +5019,7 @@
     <value>NoControl</value>
   </data>
   <data name="button50.Location" type="System.Drawing.Point, System.Drawing">
-    <value>292, 281</value>
+    <value>310, 281</value>
   </data>
   <data name="button50.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 1, 1, 1</value>
@@ -4680,7 +5040,7 @@
     <value>tblTrucks</value>
   </data>
   <data name="&gt;&gt;button50.ZOrder" xml:space="preserve">
-    <value>19</value>
+    <value>31</value>
   </data>
   <data name="button51.ImageIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -4689,7 +5049,7 @@
     <value>NoControl</value>
   </data>
   <data name="button51.Location" type="System.Drawing.Point, System.Drawing">
-    <value>320, 281</value>
+    <value>338, 281</value>
   </data>
   <data name="button51.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 1, 1, 1</value>
@@ -4710,7 +5070,7 @@
     <value>tblTrucks</value>
   </data>
   <data name="&gt;&gt;button51.ZOrder" xml:space="preserve">
-    <value>20</value>
+    <value>32</value>
   </data>
   <data name="button52.ImageIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -4719,7 +5079,7 @@
     <value>NoControl</value>
   </data>
   <data name="button52.Location" type="System.Drawing.Point, System.Drawing">
-    <value>348, 281</value>
+    <value>366, 281</value>
   </data>
   <data name="button52.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 1, 1, 1</value>
@@ -4740,7 +5100,7 @@
     <value>tblTrucks</value>
   </data>
   <data name="&gt;&gt;button52.ZOrder" xml:space="preserve">
-    <value>21</value>
+    <value>33</value>
   </data>
   <data name="button53.ImageIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -4749,7 +5109,7 @@
     <value>NoControl</value>
   </data>
   <data name="button53.Location" type="System.Drawing.Point, System.Drawing">
-    <value>376, 281</value>
+    <value>394, 281</value>
   </data>
   <data name="button53.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 1, 1, 1</value>
@@ -4770,7 +5130,7 @@
     <value>tblTrucks</value>
   </data>
   <data name="&gt;&gt;button53.ZOrder" xml:space="preserve">
-    <value>22</value>
+    <value>34</value>
   </data>
   <data name="button54.ImageIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -4779,7 +5139,7 @@
     <value>NoControl</value>
   </data>
   <data name="button54.Location" type="System.Drawing.Point, System.Drawing">
-    <value>404, 281</value>
+    <value>422, 281</value>
   </data>
   <data name="button54.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 1, 1, 1</value>
@@ -4800,7 +5160,7 @@
     <value>tblTrucks</value>
   </data>
   <data name="&gt;&gt;button54.ZOrder" xml:space="preserve">
-    <value>23</value>
+    <value>35</value>
   </data>
   <data name="button43.ImageIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -4809,7 +5169,7 @@
     <value>NoControl</value>
   </data>
   <data name="button43.Location" type="System.Drawing.Point, System.Drawing">
-    <value>264, 253</value>
+    <value>282, 253</value>
   </data>
   <data name="button43.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 1, 1, 1</value>
@@ -4830,7 +5190,7 @@
     <value>tblTrucks</value>
   </data>
   <data name="&gt;&gt;button43.ZOrder" xml:space="preserve">
-    <value>24</value>
+    <value>36</value>
   </data>
   <data name="button44.ImageIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -4839,7 +5199,7 @@
     <value>NoControl</value>
   </data>
   <data name="button44.Location" type="System.Drawing.Point, System.Drawing">
-    <value>292, 253</value>
+    <value>310, 253</value>
   </data>
   <data name="button44.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 1, 1, 1</value>
@@ -4860,7 +5220,7 @@
     <value>tblTrucks</value>
   </data>
   <data name="&gt;&gt;button44.ZOrder" xml:space="preserve">
-    <value>25</value>
+    <value>37</value>
   </data>
   <data name="button45.ImageIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -4869,7 +5229,7 @@
     <value>NoControl</value>
   </data>
   <data name="button45.Location" type="System.Drawing.Point, System.Drawing">
-    <value>320, 253</value>
+    <value>338, 253</value>
   </data>
   <data name="button45.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 1, 1, 1</value>
@@ -4890,7 +5250,7 @@
     <value>tblTrucks</value>
   </data>
   <data name="&gt;&gt;button45.ZOrder" xml:space="preserve">
-    <value>26</value>
+    <value>38</value>
   </data>
   <data name="button46.ImageIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -4899,7 +5259,7 @@
     <value>NoControl</value>
   </data>
   <data name="button46.Location" type="System.Drawing.Point, System.Drawing">
-    <value>348, 253</value>
+    <value>366, 253</value>
   </data>
   <data name="button46.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 1, 1, 1</value>
@@ -4920,7 +5280,7 @@
     <value>tblTrucks</value>
   </data>
   <data name="&gt;&gt;button46.ZOrder" xml:space="preserve">
-    <value>27</value>
+    <value>39</value>
   </data>
   <data name="button47.ImageIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -4929,7 +5289,7 @@
     <value>NoControl</value>
   </data>
   <data name="button47.Location" type="System.Drawing.Point, System.Drawing">
-    <value>376, 253</value>
+    <value>394, 253</value>
   </data>
   <data name="button47.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 1, 1, 1</value>
@@ -4950,7 +5310,7 @@
     <value>tblTrucks</value>
   </data>
   <data name="&gt;&gt;button47.ZOrder" xml:space="preserve">
-    <value>28</value>
+    <value>40</value>
   </data>
   <data name="button48.ImageIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -4959,7 +5319,7 @@
     <value>NoControl</value>
   </data>
   <data name="button48.Location" type="System.Drawing.Point, System.Drawing">
-    <value>404, 253</value>
+    <value>422, 253</value>
   </data>
   <data name="button48.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 1, 1, 1</value>
@@ -4980,7 +5340,7 @@
     <value>tblTrucks</value>
   </data>
   <data name="&gt;&gt;button48.ZOrder" xml:space="preserve">
-    <value>29</value>
+    <value>41</value>
   </data>
   <data name="button37.ImageIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -4989,7 +5349,7 @@
     <value>NoControl</value>
   </data>
   <data name="button37.Location" type="System.Drawing.Point, System.Drawing">
-    <value>264, 225</value>
+    <value>282, 225</value>
   </data>
   <data name="button37.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 1, 1, 1</value>
@@ -5010,7 +5370,7 @@
     <value>tblTrucks</value>
   </data>
   <data name="&gt;&gt;button37.ZOrder" xml:space="preserve">
-    <value>30</value>
+    <value>42</value>
   </data>
   <data name="button38.ImageIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -5019,7 +5379,7 @@
     <value>NoControl</value>
   </data>
   <data name="button38.Location" type="System.Drawing.Point, System.Drawing">
-    <value>292, 225</value>
+    <value>310, 225</value>
   </data>
   <data name="button38.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 1, 1, 1</value>
@@ -5040,7 +5400,7 @@
     <value>tblTrucks</value>
   </data>
   <data name="&gt;&gt;button38.ZOrder" xml:space="preserve">
-    <value>31</value>
+    <value>43</value>
   </data>
   <data name="button39.ImageIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -5049,7 +5409,7 @@
     <value>NoControl</value>
   </data>
   <data name="button39.Location" type="System.Drawing.Point, System.Drawing">
-    <value>320, 225</value>
+    <value>338, 225</value>
   </data>
   <data name="button39.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 1, 1, 1</value>
@@ -5070,7 +5430,7 @@
     <value>tblTrucks</value>
   </data>
   <data name="&gt;&gt;button39.ZOrder" xml:space="preserve">
-    <value>32</value>
+    <value>44</value>
   </data>
   <data name="button40.ImageIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -5079,7 +5439,7 @@
     <value>NoControl</value>
   </data>
   <data name="button40.Location" type="System.Drawing.Point, System.Drawing">
-    <value>348, 225</value>
+    <value>366, 225</value>
   </data>
   <data name="button40.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 1, 1, 1</value>
@@ -5100,7 +5460,7 @@
     <value>tblTrucks</value>
   </data>
   <data name="&gt;&gt;button40.ZOrder" xml:space="preserve">
-    <value>33</value>
+    <value>45</value>
   </data>
   <data name="button41.ImageIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -5109,7 +5469,7 @@
     <value>NoControl</value>
   </data>
   <data name="button41.Location" type="System.Drawing.Point, System.Drawing">
-    <value>376, 225</value>
+    <value>394, 225</value>
   </data>
   <data name="button41.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 1, 1, 1</value>
@@ -5130,7 +5490,7 @@
     <value>tblTrucks</value>
   </data>
   <data name="&gt;&gt;button41.ZOrder" xml:space="preserve">
-    <value>34</value>
+    <value>46</value>
   </data>
   <data name="button42.ImageIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -5139,7 +5499,7 @@
     <value>NoControl</value>
   </data>
   <data name="button42.Location" type="System.Drawing.Point, System.Drawing">
-    <value>404, 225</value>
+    <value>422, 225</value>
   </data>
   <data name="button42.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 1, 1, 1</value>
@@ -5160,7 +5520,7 @@
     <value>tblTrucks</value>
   </data>
   <data name="&gt;&gt;button42.ZOrder" xml:space="preserve">
-    <value>35</value>
+    <value>47</value>
   </data>
   <data name="button31.ImageIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -5169,7 +5529,7 @@
     <value>NoControl</value>
   </data>
   <data name="button31.Location" type="System.Drawing.Point, System.Drawing">
-    <value>264, 197</value>
+    <value>282, 197</value>
   </data>
   <data name="button31.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 1, 1, 1</value>
@@ -5190,7 +5550,7 @@
     <value>tblTrucks</value>
   </data>
   <data name="&gt;&gt;button31.ZOrder" xml:space="preserve">
-    <value>36</value>
+    <value>48</value>
   </data>
   <data name="button32.ImageIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -5199,7 +5559,7 @@
     <value>NoControl</value>
   </data>
   <data name="button32.Location" type="System.Drawing.Point, System.Drawing">
-    <value>292, 197</value>
+    <value>310, 197</value>
   </data>
   <data name="button32.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 1, 1, 1</value>
@@ -5220,7 +5580,7 @@
     <value>tblTrucks</value>
   </data>
   <data name="&gt;&gt;button32.ZOrder" xml:space="preserve">
-    <value>37</value>
+    <value>49</value>
   </data>
   <data name="button33.ImageIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -5229,7 +5589,7 @@
     <value>NoControl</value>
   </data>
   <data name="button33.Location" type="System.Drawing.Point, System.Drawing">
-    <value>320, 197</value>
+    <value>338, 197</value>
   </data>
   <data name="button33.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 1, 1, 1</value>
@@ -5250,7 +5610,7 @@
     <value>tblTrucks</value>
   </data>
   <data name="&gt;&gt;button33.ZOrder" xml:space="preserve">
-    <value>38</value>
+    <value>50</value>
   </data>
   <data name="button34.ImageIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -5259,7 +5619,7 @@
     <value>NoControl</value>
   </data>
   <data name="button34.Location" type="System.Drawing.Point, System.Drawing">
-    <value>348, 197</value>
+    <value>366, 197</value>
   </data>
   <data name="button34.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 1, 1, 1</value>
@@ -5280,7 +5640,7 @@
     <value>tblTrucks</value>
   </data>
   <data name="&gt;&gt;button34.ZOrder" xml:space="preserve">
-    <value>39</value>
+    <value>51</value>
   </data>
   <data name="button35.ImageIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -5289,7 +5649,7 @@
     <value>NoControl</value>
   </data>
   <data name="button35.Location" type="System.Drawing.Point, System.Drawing">
-    <value>376, 197</value>
+    <value>394, 197</value>
   </data>
   <data name="button35.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 1, 1, 1</value>
@@ -5310,7 +5670,7 @@
     <value>tblTrucks</value>
   </data>
   <data name="&gt;&gt;button35.ZOrder" xml:space="preserve">
-    <value>40</value>
+    <value>52</value>
   </data>
   <data name="button36.ImageIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -5319,7 +5679,7 @@
     <value>NoControl</value>
   </data>
   <data name="button36.Location" type="System.Drawing.Point, System.Drawing">
-    <value>404, 197</value>
+    <value>422, 197</value>
   </data>
   <data name="button36.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 1, 1, 1</value>
@@ -5340,7 +5700,7 @@
     <value>tblTrucks</value>
   </data>
   <data name="&gt;&gt;button36.ZOrder" xml:space="preserve">
-    <value>41</value>
+    <value>53</value>
   </data>
   <data name="button25.ImageIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -5349,7 +5709,7 @@
     <value>NoControl</value>
   </data>
   <data name="button25.Location" type="System.Drawing.Point, System.Drawing">
-    <value>264, 169</value>
+    <value>282, 169</value>
   </data>
   <data name="button25.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 1, 1, 1</value>
@@ -5370,7 +5730,7 @@
     <value>tblTrucks</value>
   </data>
   <data name="&gt;&gt;button25.ZOrder" xml:space="preserve">
-    <value>42</value>
+    <value>54</value>
   </data>
   <data name="button26.ImageIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -5379,7 +5739,7 @@
     <value>NoControl</value>
   </data>
   <data name="button26.Location" type="System.Drawing.Point, System.Drawing">
-    <value>292, 169</value>
+    <value>310, 169</value>
   </data>
   <data name="button26.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 1, 1, 1</value>
@@ -5400,7 +5760,7 @@
     <value>tblTrucks</value>
   </data>
   <data name="&gt;&gt;button26.ZOrder" xml:space="preserve">
-    <value>43</value>
+    <value>55</value>
   </data>
   <data name="button27.ImageIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -5409,7 +5769,7 @@
     <value>NoControl</value>
   </data>
   <data name="button27.Location" type="System.Drawing.Point, System.Drawing">
-    <value>320, 169</value>
+    <value>338, 169</value>
   </data>
   <data name="button27.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 1, 1, 1</value>
@@ -5430,7 +5790,7 @@
     <value>tblTrucks</value>
   </data>
   <data name="&gt;&gt;button27.ZOrder" xml:space="preserve">
-    <value>44</value>
+    <value>56</value>
   </data>
   <data name="button28.ImageIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -5439,7 +5799,7 @@
     <value>NoControl</value>
   </data>
   <data name="button28.Location" type="System.Drawing.Point, System.Drawing">
-    <value>348, 169</value>
+    <value>366, 169</value>
   </data>
   <data name="button28.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 1, 1, 1</value>
@@ -5460,7 +5820,7 @@
     <value>tblTrucks</value>
   </data>
   <data name="&gt;&gt;button28.ZOrder" xml:space="preserve">
-    <value>45</value>
+    <value>57</value>
   </data>
   <data name="button29.ImageIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -5469,7 +5829,7 @@
     <value>NoControl</value>
   </data>
   <data name="button29.Location" type="System.Drawing.Point, System.Drawing">
-    <value>376, 169</value>
+    <value>394, 169</value>
   </data>
   <data name="button29.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 1, 1, 1</value>
@@ -5490,7 +5850,7 @@
     <value>tblTrucks</value>
   </data>
   <data name="&gt;&gt;button29.ZOrder" xml:space="preserve">
-    <value>46</value>
+    <value>58</value>
   </data>
   <data name="button30.ImageIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -5499,7 +5859,7 @@
     <value>NoControl</value>
   </data>
   <data name="button30.Location" type="System.Drawing.Point, System.Drawing">
-    <value>404, 169</value>
+    <value>422, 169</value>
   </data>
   <data name="button30.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 1, 1, 1</value>
@@ -5520,7 +5880,7 @@
     <value>tblTrucks</value>
   </data>
   <data name="&gt;&gt;button30.ZOrder" xml:space="preserve">
-    <value>47</value>
+    <value>59</value>
   </data>
   <data name="button19.ImageIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -5529,7 +5889,7 @@
     <value>NoControl</value>
   </data>
   <data name="button19.Location" type="System.Drawing.Point, System.Drawing">
-    <value>264, 141</value>
+    <value>282, 141</value>
   </data>
   <data name="button19.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 1, 1, 1</value>
@@ -5550,7 +5910,7 @@
     <value>tblTrucks</value>
   </data>
   <data name="&gt;&gt;button19.ZOrder" xml:space="preserve">
-    <value>48</value>
+    <value>60</value>
   </data>
   <data name="button20.ImageIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -5559,7 +5919,7 @@
     <value>NoControl</value>
   </data>
   <data name="button20.Location" type="System.Drawing.Point, System.Drawing">
-    <value>292, 141</value>
+    <value>310, 141</value>
   </data>
   <data name="button20.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 1, 1, 1</value>
@@ -5580,7 +5940,7 @@
     <value>tblTrucks</value>
   </data>
   <data name="&gt;&gt;button20.ZOrder" xml:space="preserve">
-    <value>49</value>
+    <value>61</value>
   </data>
   <data name="button21.ImageIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -5589,7 +5949,7 @@
     <value>NoControl</value>
   </data>
   <data name="button21.Location" type="System.Drawing.Point, System.Drawing">
-    <value>320, 141</value>
+    <value>338, 141</value>
   </data>
   <data name="button21.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 1, 1, 1</value>
@@ -5610,7 +5970,7 @@
     <value>tblTrucks</value>
   </data>
   <data name="&gt;&gt;button21.ZOrder" xml:space="preserve">
-    <value>50</value>
+    <value>62</value>
   </data>
   <data name="button22.ImageIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -5619,7 +5979,7 @@
     <value>NoControl</value>
   </data>
   <data name="button22.Location" type="System.Drawing.Point, System.Drawing">
-    <value>348, 141</value>
+    <value>366, 141</value>
   </data>
   <data name="button22.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 1, 1, 1</value>
@@ -5640,7 +6000,7 @@
     <value>tblTrucks</value>
   </data>
   <data name="&gt;&gt;button22.ZOrder" xml:space="preserve">
-    <value>51</value>
+    <value>63</value>
   </data>
   <data name="button23.ImageIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -5649,7 +6009,7 @@
     <value>NoControl</value>
   </data>
   <data name="button23.Location" type="System.Drawing.Point, System.Drawing">
-    <value>376, 141</value>
+    <value>394, 141</value>
   </data>
   <data name="button23.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 1, 1, 1</value>
@@ -5670,7 +6030,7 @@
     <value>tblTrucks</value>
   </data>
   <data name="&gt;&gt;button23.ZOrder" xml:space="preserve">
-    <value>52</value>
+    <value>64</value>
   </data>
   <data name="button24.ImageIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -5679,7 +6039,7 @@
     <value>NoControl</value>
   </data>
   <data name="button24.Location" type="System.Drawing.Point, System.Drawing">
-    <value>404, 141</value>
+    <value>422, 141</value>
   </data>
   <data name="button24.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 1, 1, 1</value>
@@ -5700,7 +6060,7 @@
     <value>tblTrucks</value>
   </data>
   <data name="&gt;&gt;button24.ZOrder" xml:space="preserve">
-    <value>53</value>
+    <value>65</value>
   </data>
   <data name="button13.ImageIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -5709,7 +6069,7 @@
     <value>NoControl</value>
   </data>
   <data name="button13.Location" type="System.Drawing.Point, System.Drawing">
-    <value>264, 113</value>
+    <value>282, 113</value>
   </data>
   <data name="button13.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 1, 1, 1</value>
@@ -5730,7 +6090,7 @@
     <value>tblTrucks</value>
   </data>
   <data name="&gt;&gt;button13.ZOrder" xml:space="preserve">
-    <value>54</value>
+    <value>66</value>
   </data>
   <data name="button14.ImageIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -5739,7 +6099,7 @@
     <value>NoControl</value>
   </data>
   <data name="button14.Location" type="System.Drawing.Point, System.Drawing">
-    <value>292, 113</value>
+    <value>310, 113</value>
   </data>
   <data name="button14.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 1, 1, 1</value>
@@ -5760,7 +6120,7 @@
     <value>tblTrucks</value>
   </data>
   <data name="&gt;&gt;button14.ZOrder" xml:space="preserve">
-    <value>55</value>
+    <value>67</value>
   </data>
   <data name="button15.ImageIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -5769,7 +6129,7 @@
     <value>NoControl</value>
   </data>
   <data name="button15.Location" type="System.Drawing.Point, System.Drawing">
-    <value>320, 113</value>
+    <value>338, 113</value>
   </data>
   <data name="button15.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 1, 1, 1</value>
@@ -5790,7 +6150,7 @@
     <value>tblTrucks</value>
   </data>
   <data name="&gt;&gt;button15.ZOrder" xml:space="preserve">
-    <value>56</value>
+    <value>68</value>
   </data>
   <data name="button16.ImageIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -5799,7 +6159,7 @@
     <value>NoControl</value>
   </data>
   <data name="button16.Location" type="System.Drawing.Point, System.Drawing">
-    <value>348, 113</value>
+    <value>366, 113</value>
   </data>
   <data name="button16.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 1, 1, 1</value>
@@ -5820,7 +6180,7 @@
     <value>tblTrucks</value>
   </data>
   <data name="&gt;&gt;button16.ZOrder" xml:space="preserve">
-    <value>57</value>
+    <value>69</value>
   </data>
   <data name="button17.ImageIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -5829,7 +6189,7 @@
     <value>NoControl</value>
   </data>
   <data name="button17.Location" type="System.Drawing.Point, System.Drawing">
-    <value>376, 113</value>
+    <value>394, 113</value>
   </data>
   <data name="button17.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 1, 1, 1</value>
@@ -5850,7 +6210,7 @@
     <value>tblTrucks</value>
   </data>
   <data name="&gt;&gt;button17.ZOrder" xml:space="preserve">
-    <value>58</value>
+    <value>70</value>
   </data>
   <data name="button18.ImageIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -5859,7 +6219,7 @@
     <value>NoControl</value>
   </data>
   <data name="button18.Location" type="System.Drawing.Point, System.Drawing">
-    <value>404, 113</value>
+    <value>422, 113</value>
   </data>
   <data name="button18.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 1, 1, 1</value>
@@ -5880,7 +6240,7 @@
     <value>tblTrucks</value>
   </data>
   <data name="&gt;&gt;button18.ZOrder" xml:space="preserve">
-    <value>59</value>
+    <value>71</value>
   </data>
   <data name="button7.ImageIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -5889,7 +6249,7 @@
     <value>NoControl</value>
   </data>
   <data name="button7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>264, 85</value>
+    <value>282, 85</value>
   </data>
   <data name="button7.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 1, 1, 1</value>
@@ -5910,7 +6270,7 @@
     <value>tblTrucks</value>
   </data>
   <data name="&gt;&gt;button7.ZOrder" xml:space="preserve">
-    <value>60</value>
+    <value>72</value>
   </data>
   <data name="button8.ImageIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -5919,7 +6279,7 @@
     <value>NoControl</value>
   </data>
   <data name="button8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>292, 85</value>
+    <value>310, 85</value>
   </data>
   <data name="button8.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 1, 1, 1</value>
@@ -5940,7 +6300,7 @@
     <value>tblTrucks</value>
   </data>
   <data name="&gt;&gt;button8.ZOrder" xml:space="preserve">
-    <value>61</value>
+    <value>73</value>
   </data>
   <data name="button9.ImageIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -5949,7 +6309,7 @@
     <value>NoControl</value>
   </data>
   <data name="button9.Location" type="System.Drawing.Point, System.Drawing">
-    <value>320, 85</value>
+    <value>338, 85</value>
   </data>
   <data name="button9.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 1, 1, 1</value>
@@ -5970,7 +6330,7 @@
     <value>tblTrucks</value>
   </data>
   <data name="&gt;&gt;button9.ZOrder" xml:space="preserve">
-    <value>62</value>
+    <value>74</value>
   </data>
   <data name="button10.ImageIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -5979,7 +6339,7 @@
     <value>NoControl</value>
   </data>
   <data name="button10.Location" type="System.Drawing.Point, System.Drawing">
-    <value>348, 85</value>
+    <value>366, 85</value>
   </data>
   <data name="button10.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 1, 1, 1</value>
@@ -6000,7 +6360,7 @@
     <value>tblTrucks</value>
   </data>
   <data name="&gt;&gt;button10.ZOrder" xml:space="preserve">
-    <value>63</value>
+    <value>75</value>
   </data>
   <data name="button11.ImageIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -6009,7 +6369,7 @@
     <value>NoControl</value>
   </data>
   <data name="button11.Location" type="System.Drawing.Point, System.Drawing">
-    <value>376, 85</value>
+    <value>394, 85</value>
   </data>
   <data name="button11.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 1, 1, 1</value>
@@ -6030,7 +6390,7 @@
     <value>tblTrucks</value>
   </data>
   <data name="&gt;&gt;button11.ZOrder" xml:space="preserve">
-    <value>64</value>
+    <value>76</value>
   </data>
   <data name="button12.ImageIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -6039,7 +6399,7 @@
     <value>NoControl</value>
   </data>
   <data name="button12.Location" type="System.Drawing.Point, System.Drawing">
-    <value>404, 85</value>
+    <value>422, 85</value>
   </data>
   <data name="button12.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 1, 1, 1</value>
@@ -6060,7 +6420,7 @@
     <value>tblTrucks</value>
   </data>
   <data name="&gt;&gt;button12.ZOrder" xml:space="preserve">
-    <value>65</value>
+    <value>77</value>
   </data>
   <data name="chkSendTruck1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Left</value>
@@ -6093,7 +6453,7 @@
     <value>tblTrucks</value>
   </data>
   <data name="&gt;&gt;chkSendTruck1.ZOrder" xml:space="preserve">
-    <value>66</value>
+    <value>78</value>
   </data>
   <data name="chkSendTruck2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Left</value>
@@ -6126,7 +6486,7 @@
     <value>tblTrucks</value>
   </data>
   <data name="&gt;&gt;chkSendTruck2.ZOrder" xml:space="preserve">
-    <value>67</value>
+    <value>79</value>
   </data>
   <data name="chkSendTruck3.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Left</value>
@@ -6159,7 +6519,7 @@
     <value>tblTrucks</value>
   </data>
   <data name="&gt;&gt;chkSendTruck3.ZOrder" xml:space="preserve">
-    <value>68</value>
+    <value>80</value>
   </data>
   <data name="chkSendTruck4.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Left</value>
@@ -6192,7 +6552,7 @@
     <value>tblTrucks</value>
   </data>
   <data name="&gt;&gt;chkSendTruck4.ZOrder" xml:space="preserve">
-    <value>69</value>
+    <value>81</value>
   </data>
   <data name="chkSendTruck5.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Left</value>
@@ -6225,7 +6585,7 @@
     <value>tblTrucks</value>
   </data>
   <data name="&gt;&gt;chkSendTruck5.ZOrder" xml:space="preserve">
-    <value>70</value>
+    <value>82</value>
   </data>
   <data name="chkSendTruck6.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Left</value>
@@ -6258,7 +6618,7 @@
     <value>tblTrucks</value>
   </data>
   <data name="&gt;&gt;chkSendTruck6.ZOrder" xml:space="preserve">
-    <value>71</value>
+    <value>83</value>
   </data>
   <data name="chkSendTruck7.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Left</value>
@@ -6291,7 +6651,7 @@
     <value>tblTrucks</value>
   </data>
   <data name="&gt;&gt;chkSendTruck7.ZOrder" xml:space="preserve">
-    <value>72</value>
+    <value>84</value>
   </data>
   <data name="chkSendTruck8.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Left</value>
@@ -6324,7 +6684,7 @@
     <value>tblTrucks</value>
   </data>
   <data name="&gt;&gt;chkSendTruck8.ZOrder" xml:space="preserve">
-    <value>73</value>
+    <value>85</value>
   </data>
   <data name="chkSendTruck9.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Left</value>
@@ -6357,7 +6717,7 @@
     <value>tblTrucks</value>
   </data>
   <data name="&gt;&gt;chkSendTruck9.ZOrder" xml:space="preserve">
-    <value>74</value>
+    <value>86</value>
   </data>
   <data name="chkSendTruck10.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Left</value>
@@ -6390,7 +6750,7 @@
     <value>tblTrucks</value>
   </data>
   <data name="&gt;&gt;chkSendTruck10.ZOrder" xml:space="preserve">
-    <value>75</value>
+    <value>87</value>
   </data>
   <data name="chkSendTruck11.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Left</value>
@@ -6423,7 +6783,7 @@
     <value>tblTrucks</value>
   </data>
   <data name="&gt;&gt;chkSendTruck11.ZOrder" xml:space="preserve">
-    <value>76</value>
+    <value>88</value>
   </data>
   <data name="chkSendTruck12.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Left</value>
@@ -6456,7 +6816,7 @@
     <value>tblTrucks</value>
   </data>
   <data name="&gt;&gt;chkSendTruck12.ZOrder" xml:space="preserve">
-    <value>77</value>
+    <value>89</value>
   </data>
   <data name="label187.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Left</value>
@@ -6489,7 +6849,7 @@
     <value>tblTrucks</value>
   </data>
   <data name="&gt;&gt;label187.ZOrder" xml:space="preserve">
-    <value>78</value>
+    <value>90</value>
   </data>
   <data name="label188.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top</value>
@@ -6501,7 +6861,7 @@
     <value>NoControl</value>
   </data>
   <data name="label188.Location" type="System.Drawing.Point, System.Drawing">
-    <value>321, 0</value>
+    <value>339, 0</value>
   </data>
   <data name="label188.Size" type="System.Drawing.Size, System.Drawing">
     <value>54, 14</value>
@@ -6522,7 +6882,7 @@
     <value>tblTrucks</value>
   </data>
   <data name="&gt;&gt;label188.ZOrder" xml:space="preserve">
-    <value>79</value>
+    <value>91</value>
   </data>
   <data name="label189.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Left</value>
@@ -6534,7 +6894,7 @@
     <value>NoControl</value>
   </data>
   <data name="label189.Location" type="System.Drawing.Point, System.Drawing">
-    <value>114, 17</value>
+    <value>132, 17</value>
   </data>
   <data name="label189.Size" type="System.Drawing.Size, System.Drawing">
     <value>33, 14</value>
@@ -6555,7 +6915,7 @@
     <value>tblTrucks</value>
   </data>
   <data name="&gt;&gt;label189.ZOrder" xml:space="preserve">
-    <value>80</value>
+    <value>92</value>
   </data>
   <data name="button1.ImageIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -6564,7 +6924,7 @@
     <value>NoControl</value>
   </data>
   <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>264, 57</value>
+    <value>282, 57</value>
   </data>
   <data name="button1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 1, 1, 1</value>
@@ -6585,7 +6945,7 @@
     <value>tblTrucks</value>
   </data>
   <data name="&gt;&gt;button1.ZOrder" xml:space="preserve">
-    <value>81</value>
+    <value>93</value>
   </data>
   <data name="button2.ImageIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -6594,7 +6954,7 @@
     <value>NoControl</value>
   </data>
   <data name="button2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>292, 57</value>
+    <value>310, 57</value>
   </data>
   <data name="button2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 1, 1, 1</value>
@@ -6615,7 +6975,7 @@
     <value>tblTrucks</value>
   </data>
   <data name="&gt;&gt;button2.ZOrder" xml:space="preserve">
-    <value>82</value>
+    <value>94</value>
   </data>
   <data name="button3.ImageIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -6624,7 +6984,7 @@
     <value>NoControl</value>
   </data>
   <data name="button3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>320, 57</value>
+    <value>338, 57</value>
   </data>
   <data name="button3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 1, 1, 1</value>
@@ -6645,7 +7005,7 @@
     <value>tblTrucks</value>
   </data>
   <data name="&gt;&gt;button3.ZOrder" xml:space="preserve">
-    <value>83</value>
+    <value>95</value>
   </data>
   <data name="button4.ImageIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -6654,7 +7014,7 @@
     <value>NoControl</value>
   </data>
   <data name="button4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>348, 57</value>
+    <value>366, 57</value>
   </data>
   <data name="button4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 1, 1, 1</value>
@@ -6675,7 +7035,7 @@
     <value>tblTrucks</value>
   </data>
   <data name="&gt;&gt;button4.ZOrder" xml:space="preserve">
-    <value>84</value>
+    <value>96</value>
   </data>
   <data name="button5.ImageIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -6684,7 +7044,7 @@
     <value>NoControl</value>
   </data>
   <data name="button5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>376, 57</value>
+    <value>394, 57</value>
   </data>
   <data name="button5.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 1, 1, 1</value>
@@ -6705,7 +7065,7 @@
     <value>tblTrucks</value>
   </data>
   <data name="&gt;&gt;button5.ZOrder" xml:space="preserve">
-    <value>85</value>
+    <value>97</value>
   </data>
   <data name="button6.ImageIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -6714,7 +7074,7 @@
     <value>NoControl</value>
   </data>
   <data name="button6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>404, 57</value>
+    <value>422, 57</value>
   </data>
   <data name="button6.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 1, 1, 1</value>
@@ -6735,13 +7095,13 @@
     <value>tblTrucks</value>
   </data>
   <data name="&gt;&gt;button6.ZOrder" xml:space="preserve">
-    <value>86</value>
+    <value>98</value>
   </data>
   <data name="button73.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="button73.Location" type="System.Drawing.Point, System.Drawing">
-    <value>264, 21</value>
+    <value>282, 21</value>
   </data>
   <data name="button73.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 1, 1, 1</value>
@@ -6765,13 +7125,13 @@
     <value>tblTrucks</value>
   </data>
   <data name="&gt;&gt;button73.ZOrder" xml:space="preserve">
-    <value>87</value>
+    <value>99</value>
   </data>
   <data name="button74.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="button74.Location" type="System.Drawing.Point, System.Drawing">
-    <value>292, 21</value>
+    <value>310, 21</value>
   </data>
   <data name="button74.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 1, 1, 1</value>
@@ -6795,13 +7155,13 @@
     <value>tblTrucks</value>
   </data>
   <data name="&gt;&gt;button74.ZOrder" xml:space="preserve">
-    <value>88</value>
+    <value>100</value>
   </data>
   <data name="button75.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="button75.Location" type="System.Drawing.Point, System.Drawing">
-    <value>320, 21</value>
+    <value>338, 21</value>
   </data>
   <data name="button75.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 1, 1, 1</value>
@@ -6825,13 +7185,13 @@
     <value>tblTrucks</value>
   </data>
   <data name="&gt;&gt;button75.ZOrder" xml:space="preserve">
-    <value>89</value>
+    <value>101</value>
   </data>
   <data name="button76.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="button76.Location" type="System.Drawing.Point, System.Drawing">
-    <value>348, 21</value>
+    <value>366, 21</value>
   </data>
   <data name="button76.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 1, 1, 1</value>
@@ -6855,13 +7215,13 @@
     <value>tblTrucks</value>
   </data>
   <data name="&gt;&gt;button76.ZOrder" xml:space="preserve">
-    <value>90</value>
+    <value>102</value>
   </data>
   <data name="button77.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="button77.Location" type="System.Drawing.Point, System.Drawing">
-    <value>376, 21</value>
+    <value>394, 21</value>
   </data>
   <data name="button77.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 1, 1, 1</value>
@@ -6885,13 +7245,13 @@
     <value>tblTrucks</value>
   </data>
   <data name="&gt;&gt;button77.ZOrder" xml:space="preserve">
-    <value>91</value>
+    <value>103</value>
   </data>
   <data name="button78.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="button78.Location" type="System.Drawing.Point, System.Drawing">
-    <value>404, 21</value>
+    <value>422, 21</value>
   </data>
   <data name="button78.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 1, 3, 1</value>
@@ -6915,7 +7275,7 @@
     <value>tblTrucks</value>
   </data>
   <data name="&gt;&gt;button78.ZOrder" xml:space="preserve">
-    <value>92</value>
+    <value>104</value>
   </data>
   <data name="label190.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Left</value>
@@ -6924,7 +7284,7 @@
     <value>True</value>
   </data>
   <data name="label190.Location" type="System.Drawing.Point, System.Drawing">
-    <value>114, 63</value>
+    <value>132, 63</value>
   </data>
   <data name="label190.Size" type="System.Drawing.Size, System.Drawing">
     <value>124, 14</value>
@@ -6945,7 +7305,7 @@
     <value>tblTrucks</value>
   </data>
   <data name="&gt;&gt;label190.ZOrder" xml:space="preserve">
-    <value>93</value>
+    <value>105</value>
   </data>
   <data name="label191.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Left</value>
@@ -6954,7 +7314,7 @@
     <value>True</value>
   </data>
   <data name="label191.Location" type="System.Drawing.Point, System.Drawing">
-    <value>114, 91</value>
+    <value>132, 91</value>
   </data>
   <data name="label191.Size" type="System.Drawing.Size, System.Drawing">
     <value>61, 14</value>
@@ -6975,7 +7335,7 @@
     <value>tblTrucks</value>
   </data>
   <data name="&gt;&gt;label191.ZOrder" xml:space="preserve">
-    <value>94</value>
+    <value>106</value>
   </data>
   <data name="label192.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Left</value>
@@ -6984,7 +7344,7 @@
     <value>True</value>
   </data>
   <data name="label192.Location" type="System.Drawing.Point, System.Drawing">
-    <value>114, 119</value>
+    <value>132, 119</value>
   </data>
   <data name="label192.Size" type="System.Drawing.Size, System.Drawing">
     <value>107, 14</value>
@@ -7005,7 +7365,7 @@
     <value>tblTrucks</value>
   </data>
   <data name="&gt;&gt;label192.ZOrder" xml:space="preserve">
-    <value>95</value>
+    <value>107</value>
   </data>
   <data name="label193.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Left</value>
@@ -7014,7 +7374,7 @@
     <value>True</value>
   </data>
   <data name="label193.Location" type="System.Drawing.Point, System.Drawing">
-    <value>114, 147</value>
+    <value>132, 147</value>
   </data>
   <data name="label193.Size" type="System.Drawing.Size, System.Drawing">
     <value>133, 14</value>
@@ -7035,7 +7395,7 @@
     <value>tblTrucks</value>
   </data>
   <data name="&gt;&gt;label193.ZOrder" xml:space="preserve">
-    <value>96</value>
+    <value>108</value>
   </data>
   <data name="label194.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Left</value>
@@ -7044,7 +7404,7 @@
     <value>True</value>
   </data>
   <data name="label194.Location" type="System.Drawing.Point, System.Drawing">
-    <value>114, 175</value>
+    <value>132, 175</value>
   </data>
   <data name="label194.Size" type="System.Drawing.Size, System.Drawing">
     <value>111, 14</value>
@@ -7065,7 +7425,7 @@
     <value>tblTrucks</value>
   </data>
   <data name="&gt;&gt;label194.ZOrder" xml:space="preserve">
-    <value>97</value>
+    <value>109</value>
   </data>
   <data name="label195.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Left</value>
@@ -7074,7 +7434,7 @@
     <value>True</value>
   </data>
   <data name="label195.Location" type="System.Drawing.Point, System.Drawing">
-    <value>114, 203</value>
+    <value>132, 203</value>
   </data>
   <data name="label195.Size" type="System.Drawing.Size, System.Drawing">
     <value>141, 14</value>
@@ -7095,7 +7455,7 @@
     <value>tblTrucks</value>
   </data>
   <data name="&gt;&gt;label195.ZOrder" xml:space="preserve">
-    <value>98</value>
+    <value>110</value>
   </data>
   <data name="label196.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Left</value>
@@ -7104,7 +7464,7 @@
     <value>True</value>
   </data>
   <data name="label196.Location" type="System.Drawing.Point, System.Drawing">
-    <value>114, 231</value>
+    <value>132, 231</value>
   </data>
   <data name="label196.Size" type="System.Drawing.Size, System.Drawing">
     <value>83, 14</value>
@@ -7125,7 +7485,7 @@
     <value>tblTrucks</value>
   </data>
   <data name="&gt;&gt;label196.ZOrder" xml:space="preserve">
-    <value>99</value>
+    <value>111</value>
   </data>
   <data name="label197.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Left</value>
@@ -7134,7 +7494,7 @@
     <value>True</value>
   </data>
   <data name="label197.Location" type="System.Drawing.Point, System.Drawing">
-    <value>114, 259</value>
+    <value>132, 259</value>
   </data>
   <data name="label197.Size" type="System.Drawing.Size, System.Drawing">
     <value>68, 14</value>
@@ -7155,7 +7515,7 @@
     <value>tblTrucks</value>
   </data>
   <data name="&gt;&gt;label197.ZOrder" xml:space="preserve">
-    <value>100</value>
+    <value>112</value>
   </data>
   <data name="label198.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Left</value>
@@ -7164,7 +7524,7 @@
     <value>True</value>
   </data>
   <data name="label198.Location" type="System.Drawing.Point, System.Drawing">
-    <value>114, 287</value>
+    <value>132, 287</value>
   </data>
   <data name="label198.Size" type="System.Drawing.Size, System.Drawing">
     <value>58, 14</value>
@@ -7185,7 +7545,7 @@
     <value>tblTrucks</value>
   </data>
   <data name="&gt;&gt;label198.ZOrder" xml:space="preserve">
-    <value>101</value>
+    <value>113</value>
   </data>
   <data name="label199.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Left</value>
@@ -7194,7 +7554,7 @@
     <value>True</value>
   </data>
   <data name="label199.Location" type="System.Drawing.Point, System.Drawing">
-    <value>114, 315</value>
+    <value>132, 315</value>
   </data>
   <data name="label199.Size" type="System.Drawing.Size, System.Drawing">
     <value>106, 14</value>
@@ -7215,37 +7575,7 @@
     <value>tblTrucks</value>
   </data>
   <data name="&gt;&gt;label199.ZOrder" xml:space="preserve">
-    <value>102</value>
-  </data>
-  <data name="label200.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Left</value>
-  </data>
-  <data name="label200.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label200.Location" type="System.Drawing.Point, System.Drawing">
-    <value>114, 343</value>
-  </data>
-  <data name="label200.Size" type="System.Drawing.Size, System.Drawing">
-    <value>146, 14</value>
-  </data>
-  <data name="label200.TabIndex" type="System.Int32, mscorlib">
-    <value>121</value>
-  </data>
-  <data name="label200.Text" xml:space="preserve">
-    <value>150,000 монет 75 медалей</value>
-  </data>
-  <data name="&gt;&gt;label200.Name" xml:space="preserve">
-    <value>label200</value>
-  </data>
-  <data name="&gt;&gt;label200.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label200.Parent" xml:space="preserve">
-    <value>tblTrucks</value>
-  </data>
-  <data name="&gt;&gt;label200.ZOrder" xml:space="preserve">
-    <value>103</value>
+    <value>114</value>
   </data>
   <data name="label201.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Left</value>
@@ -7254,7 +7584,7 @@
     <value>True</value>
   </data>
   <data name="label201.Location" type="System.Drawing.Point, System.Drawing">
-    <value>114, 371</value>
+    <value>132, 371</value>
   </data>
   <data name="label201.Size" type="System.Drawing.Size, System.Drawing">
     <value>70, 14</value>
@@ -7275,7 +7605,7 @@
     <value>tblTrucks</value>
   </data>
   <data name="&gt;&gt;label201.ZOrder" xml:space="preserve">
-    <value>104</value>
+    <value>115</value>
   </data>
   <data name="groupBox18.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
     <value>GrowAndShrink</value>
@@ -7287,7 +7617,7 @@
     <value>3, 51</value>
   </data>
   <data name="groupBox18.Size" type="System.Drawing.Size, System.Drawing">
-    <value>427, 2</value>
+    <value>445, 2</value>
   </data>
   <data name="groupBox18.TabIndex" type="System.Int32, mscorlib">
     <value>123</value>
@@ -7302,7 +7632,151 @@
     <value>tblTrucks</value>
   </data>
   <data name="&gt;&gt;groupBox18.ZOrder" xml:space="preserve">
-    <value>105</value>
+    <value>116</value>
+  </data>
+  <data name="label200.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="label200.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label200.Location" type="System.Drawing.Point, System.Drawing">
+    <value>132, 343</value>
+  </data>
+  <data name="label200.Size" type="System.Drawing.Size, System.Drawing">
+    <value>146, 14</value>
+  </data>
+  <data name="label200.TabIndex" type="System.Int32, mscorlib">
+    <value>121</value>
+  </data>
+  <data name="label200.Text" xml:space="preserve">
+    <value>150,000 монет 75 медалей</value>
+  </data>
+  <data name="&gt;&gt;label200.Name" xml:space="preserve">
+    <value>label200</value>
+  </data>
+  <data name="&gt;&gt;label200.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label200.Parent" xml:space="preserve">
+    <value>tblTrucks</value>
+  </data>
+  <data name="&gt;&gt;label200.ZOrder" xml:space="preserve">
+    <value>117</value>
+  </data>
+  <data name="label207.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="label207.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label207.Location" type="System.Drawing.Point, System.Drawing">
+    <value>132, 399</value>
+  </data>
+  <data name="label207.Size" type="System.Drawing.Size, System.Drawing">
+    <value>58, 14</value>
+  </data>
+  <data name="label207.TabIndex" type="System.Int32, mscorlib">
+    <value>124</value>
+  </data>
+  <data name="label207.Text" xml:space="preserve">
+    <value>400 руды</value>
+  </data>
+  <data name="&gt;&gt;label207.Name" xml:space="preserve">
+    <value>label207</value>
+  </data>
+  <data name="&gt;&gt;label207.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label207.Parent" xml:space="preserve">
+    <value>tblTrucks</value>
+  </data>
+  <data name="&gt;&gt;label207.ZOrder" xml:space="preserve">
+    <value>118</value>
+  </data>
+  <data name="label208.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="label208.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label208.Location" type="System.Drawing.Point, System.Drawing">
+    <value>132, 427</value>
+  </data>
+  <data name="label208.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 14</value>
+  </data>
+  <data name="label208.TabIndex" type="System.Int32, mscorlib">
+    <value>125</value>
+  </data>
+  <data name="label208.Text" xml:space="preserve">
+    <value>1200 нефти</value>
+  </data>
+  <data name="&gt;&gt;label208.Name" xml:space="preserve">
+    <value>label208</value>
+  </data>
+  <data name="&gt;&gt;label208.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label208.Parent" xml:space="preserve">
+    <value>tblTrucks</value>
+  </data>
+  <data name="&gt;&gt;label208.ZOrder" xml:space="preserve">
+    <value>119</value>
+  </data>
+  <data name="chkSendTruck13.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="chkSendTruck13.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 395</value>
+  </data>
+  <data name="chkSendTruck13.Size" type="System.Drawing.Size, System.Drawing">
+    <value>123, 18</value>
+  </data>
+  <data name="chkSendTruck13.TabIndex" type="System.Int32, mscorlib">
+    <value>126</value>
+  </data>
+  <data name="chkSendTruck13.Text" xml:space="preserve">
+    <value>Реликтовый камаз</value>
+  </data>
+  <data name="&gt;&gt;chkSendTruck13.Name" xml:space="preserve">
+    <value>chkSendTruck13</value>
+  </data>
+  <data name="&gt;&gt;chkSendTruck13.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkSendTruck13.Parent" xml:space="preserve">
+    <value>tblTrucks</value>
+  </data>
+  <data name="&gt;&gt;chkSendTruck13.ZOrder" xml:space="preserve">
+    <value>120</value>
+  </data>
+  <data name="chkSendTruck14.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="chkSendTruck14.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 423</value>
+  </data>
+  <data name="chkSendTruck14.Size" type="System.Drawing.Size, System.Drawing">
+    <value>118, 18</value>
+  </data>
+  <data name="chkSendTruck14.TabIndex" type="System.Int32, mscorlib">
+    <value>127</value>
+  </data>
+  <data name="chkSendTruck14.Text" xml:space="preserve">
+    <value>Солнечный камаз</value>
+  </data>
+  <data name="&gt;&gt;chkSendTruck14.Name" xml:space="preserve">
+    <value>chkSendTruck14</value>
+  </data>
+  <data name="&gt;&gt;chkSendTruck14.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkSendTruck14.Parent" xml:space="preserve">
+    <value>tblTrucks</value>
+  </data>
+  <data name="&gt;&gt;chkSendTruck14.ZOrder" xml:space="preserve">
+    <value>121</value>
   </data>
   <data name="tblTrucks.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -7311,10 +7785,10 @@
     <value>3, 18</value>
   </data>
   <data name="tblTrucks.RowCount" type="System.Int32, mscorlib">
-    <value>15</value>
+    <value>17</value>
   </data>
   <data name="tblTrucks.Size" type="System.Drawing.Size, System.Drawing">
-    <value>433, 392</value>
+    <value>451, 448</value>
   </data>
   <data name="tblTrucks.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -7332,13 +7806,13 @@
     <value>1</value>
   </data>
   <data name="tblTrucks.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="button67" Row="14" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="button68" Row="14" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="button69" Row="14" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="button70" Row="14" RowSpan="1" Column="5" ColumnSpan="1" /&gt;&lt;Control Name="button71" Row="14" RowSpan="1" Column="6" ColumnSpan="1" /&gt;&lt;Control Name="button72" Row="14" RowSpan="1" Column="7" ColumnSpan="1" /&gt;&lt;Control Name="button61" Row="13" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="button62" Row="13" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="button63" Row="13" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="button64" Row="13" RowSpan="1" Column="5" ColumnSpan="1" /&gt;&lt;Control Name="button65" Row="13" RowSpan="1" Column="6" ColumnSpan="1" /&gt;&lt;Control Name="button66" Row="13" RowSpan="1" Column="7" ColumnSpan="1" /&gt;&lt;Control Name="button55" Row="12" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="button56" Row="12" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="button57" Row="12" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="button58" Row="12" RowSpan="1" Column="5" ColumnSpan="1" /&gt;&lt;Control Name="button59" Row="12" RowSpan="1" Column="6" ColumnSpan="1" /&gt;&lt;Control Name="button60" Row="12" RowSpan="1" Column="7" ColumnSpan="1" /&gt;&lt;Control Name="button49" Row="11" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="button50" Row="11" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="button51" Row="11" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="button52" Row="11" RowSpan="1" Column="5" ColumnSpan="1" /&gt;&lt;Control Name="button53" Row="11" RowSpan="1" Column="6" ColumnSpan="1" /&gt;&lt;Control Name="button54" Row="11" RowSpan="1" Column="7" ColumnSpan="1" /&gt;&lt;Control Name="button43" Row="10" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="button44" Row="10" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="button45" Row="10" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="button46" Row="10" RowSpan="1" Column="5" ColumnSpan="1" /&gt;&lt;Control Name="button47" Row="10" RowSpan="1" Column="6" ColumnSpan="1" /&gt;&lt;Control Name="button48" Row="10" RowSpan="1" Column="7" ColumnSpan="1" /&gt;&lt;Control Name="button37" Row="9" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="button38" Row="9" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="button39" Row="9" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="button40" Row="9" RowSpan="1" Column="5" ColumnSpan="1" /&gt;&lt;Control Name="button41" Row="9" RowSpan="1" Column="6" ColumnSpan="1" /&gt;&lt;Control Name="button42" Row="9" RowSpan="1" Column="7" ColumnSpan="1" /&gt;&lt;Control Name="button31" Row="8" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="button32" Row="8" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="button33" Row="8" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="button34" Row="8" RowSpan="1" Column="5" ColumnSpan="1" /&gt;&lt;Control Name="button35" Row="8" RowSpan="1" Column="6" ColumnSpan="1" /&gt;&lt;Control Name="button36" Row="8" RowSpan="1" Column="7" ColumnSpan="1" /&gt;&lt;Control Name="button25" Row="7" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="button26" Row="7" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="button27" Row="7" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="button28" Row="7" RowSpan="1" Column="5" ColumnSpan="1" /&gt;&lt;Control Name="button29" Row="7" RowSpan="1" Column="6" ColumnSpan="1" /&gt;&lt;Control Name="button30" Row="7" RowSpan="1" Column="7" ColumnSpan="1" /&gt;&lt;Control Name="button19" Row="6" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="button20" Row="6" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="button21" Row="6" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="button22" Row="6" RowSpan="1" Column="5" ColumnSpan="1" /&gt;&lt;Control Name="button23" Row="6" RowSpan="1" Column="6" ColumnSpan="1" /&gt;&lt;Control Name="button24" Row="6" RowSpan="1" Column="7" ColumnSpan="1" /&gt;&lt;Control Name="button13" Row="5" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="button14" Row="5" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="button15" Row="5" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="button16" Row="5" RowSpan="1" Column="5" ColumnSpan="1" /&gt;&lt;Control Name="button17" Row="5" RowSpan="1" Column="6" ColumnSpan="1" /&gt;&lt;Control Name="button18" Row="5" RowSpan="1" Column="7" ColumnSpan="1" /&gt;&lt;Control Name="button7" Row="4" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="button8" Row="4" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="button9" Row="4" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="button10" Row="4" RowSpan="1" Column="5" ColumnSpan="1" /&gt;&lt;Control Name="button11" Row="4" RowSpan="1" Column="6" ColumnSpan="1" /&gt;&lt;Control Name="button12" Row="4" RowSpan="1" Column="7" ColumnSpan="1" /&gt;&lt;Control Name="chkSendTruck1" Row="3" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="chkSendTruck2" Row="4" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="chkSendTruck3" Row="5" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="chkSendTruck4" Row="6" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="chkSendTruck5" Row="7" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="chkSendTruck6" Row="8" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="chkSendTruck7" Row="9" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="chkSendTruck8" Row="10" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="chkSendTruck9" Row="11" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="chkSendTruck10" Row="12" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="chkSendTruck11" Row="13" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="chkSendTruck12" Row="14" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label187" Row="0" RowSpan="2" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label188" Row="0" RowSpan="1" Column="2" ColumnSpan="6" /&gt;&lt;Control Name="label189" Row="0" RowSpan="2" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="button1" Row="3" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="button2" Row="3" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="button3" Row="3" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="button4" Row="3" RowSpan="1" Column="5" ColumnSpan="1" /&gt;&lt;Control Name="button5" Row="3" RowSpan="1" Column="6" ColumnSpan="1" /&gt;&lt;Control Name="button6" Row="3" RowSpan="1" Column="7" ColumnSpan="1" /&gt;&lt;Control Name="button73" Row="1" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="button74" Row="1" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="button75" Row="1" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="button76" Row="1" RowSpan="1" Column="5" ColumnSpan="1" /&gt;&lt;Control Name="button77" Row="1" RowSpan="1" Column="6" ColumnSpan="1" /&gt;&lt;Control Name="button78" Row="1" RowSpan="1" Column="7" ColumnSpan="1" /&gt;&lt;Control Name="label190" Row="3" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="label191" Row="4" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="label192" Row="5" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="label193" Row="6" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="label194" Row="7" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="label195" Row="8" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="label196" Row="9" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="label197" Row="10" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="label198" Row="11" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="label199" Row="12" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="label200" Row="13" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="label201" Row="14" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="groupBox18" Row="2" RowSpan="1" Column="0" ColumnSpan="8" /&gt;&lt;/Controls&gt;&lt;Columns Styles="AutoSize,0,AutoSize,0,AutoSize,0,AutoSize,0,AutoSize,0,AutoSize,0,AutoSize,0,AutoSize,0" /&gt;&lt;Rows Styles="Absolute,20,AutoSize,0,AutoSize,0,AutoSize,0,AutoSize,0,AutoSize,0,AutoSize,0,AutoSize,0,AutoSize,0,AutoSize,0,AutoSize,0,AutoSize,0,AutoSize,0,AutoSize,0,AutoSize,0" /&gt;&lt;/TableLayoutSettings&gt;</value>
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="button90" Row="16" RowSpan="1" Column="7" ColumnSpan="1" /&gt;&lt;Control Name="button89" Row="16" RowSpan="1" Column="6" ColumnSpan="1" /&gt;&lt;Control Name="button88" Row="16" RowSpan="1" Column="5" ColumnSpan="1" /&gt;&lt;Control Name="button87" Row="16" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="button86" Row="16" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="button85" Row="16" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="button84" Row="15" RowSpan="1" Column="7" ColumnSpan="1" /&gt;&lt;Control Name="button83" Row="15" RowSpan="1" Column="6" ColumnSpan="1" /&gt;&lt;Control Name="button82" Row="15" RowSpan="1" Column="5" ColumnSpan="1" /&gt;&lt;Control Name="button81" Row="15" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="button80" Row="15" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="button79" Row="15" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="button67" Row="14" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="button68" Row="14" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="button69" Row="14" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="button70" Row="14" RowSpan="1" Column="5" ColumnSpan="1" /&gt;&lt;Control Name="button71" Row="14" RowSpan="1" Column="6" ColumnSpan="1" /&gt;&lt;Control Name="button72" Row="14" RowSpan="1" Column="7" ColumnSpan="1" /&gt;&lt;Control Name="button61" Row="13" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="button62" Row="13" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="button63" Row="13" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="button64" Row="13" RowSpan="1" Column="5" ColumnSpan="1" /&gt;&lt;Control Name="button65" Row="13" RowSpan="1" Column="6" ColumnSpan="1" /&gt;&lt;Control Name="button66" Row="13" RowSpan="1" Column="7" ColumnSpan="1" /&gt;&lt;Control Name="button55" Row="12" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="button56" Row="12" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="button57" Row="12" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="button58" Row="12" RowSpan="1" Column="5" ColumnSpan="1" /&gt;&lt;Control Name="button59" Row="12" RowSpan="1" Column="6" ColumnSpan="1" /&gt;&lt;Control Name="button60" Row="12" RowSpan="1" Column="7" ColumnSpan="1" /&gt;&lt;Control Name="button49" Row="11" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="button50" Row="11" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="button51" Row="11" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="button52" Row="11" RowSpan="1" Column="5" ColumnSpan="1" /&gt;&lt;Control Name="button53" Row="11" RowSpan="1" Column="6" ColumnSpan="1" /&gt;&lt;Control Name="button54" Row="11" RowSpan="1" Column="7" ColumnSpan="1" /&gt;&lt;Control Name="button43" Row="10" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="button44" Row="10" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="button45" Row="10" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="button46" Row="10" RowSpan="1" Column="5" ColumnSpan="1" /&gt;&lt;Control Name="button47" Row="10" RowSpan="1" Column="6" ColumnSpan="1" /&gt;&lt;Control Name="button48" Row="10" RowSpan="1" Column="7" ColumnSpan="1" /&gt;&lt;Control Name="button37" Row="9" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="button38" Row="9" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="button39" Row="9" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="button40" Row="9" RowSpan="1" Column="5" ColumnSpan="1" /&gt;&lt;Control Name="button41" Row="9" RowSpan="1" Column="6" ColumnSpan="1" /&gt;&lt;Control Name="button42" Row="9" RowSpan="1" Column="7" ColumnSpan="1" /&gt;&lt;Control Name="button31" Row="8" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="button32" Row="8" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="button33" Row="8" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="button34" Row="8" RowSpan="1" Column="5" ColumnSpan="1" /&gt;&lt;Control Name="button35" Row="8" RowSpan="1" Column="6" ColumnSpan="1" /&gt;&lt;Control Name="button36" Row="8" RowSpan="1" Column="7" ColumnSpan="1" /&gt;&lt;Control Name="button25" Row="7" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="button26" Row="7" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="button27" Row="7" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="button28" Row="7" RowSpan="1" Column="5" ColumnSpan="1" /&gt;&lt;Control Name="button29" Row="7" RowSpan="1" Column="6" ColumnSpan="1" /&gt;&lt;Control Name="button30" Row="7" RowSpan="1" Column="7" ColumnSpan="1" /&gt;&lt;Control Name="button19" Row="6" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="button20" Row="6" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="button21" Row="6" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="button22" Row="6" RowSpan="1" Column="5" ColumnSpan="1" /&gt;&lt;Control Name="button23" Row="6" RowSpan="1" Column="6" ColumnSpan="1" /&gt;&lt;Control Name="button24" Row="6" RowSpan="1" Column="7" ColumnSpan="1" /&gt;&lt;Control Name="button13" Row="5" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="button14" Row="5" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="button15" Row="5" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="button16" Row="5" RowSpan="1" Column="5" ColumnSpan="1" /&gt;&lt;Control Name="button17" Row="5" RowSpan="1" Column="6" ColumnSpan="1" /&gt;&lt;Control Name="button18" Row="5" RowSpan="1" Column="7" ColumnSpan="1" /&gt;&lt;Control Name="button7" Row="4" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="button8" Row="4" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="button9" Row="4" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="button10" Row="4" RowSpan="1" Column="5" ColumnSpan="1" /&gt;&lt;Control Name="button11" Row="4" RowSpan="1" Column="6" ColumnSpan="1" /&gt;&lt;Control Name="button12" Row="4" RowSpan="1" Column="7" ColumnSpan="1" /&gt;&lt;Control Name="chkSendTruck1" Row="3" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="chkSendTruck2" Row="4" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="chkSendTruck3" Row="5" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="chkSendTruck4" Row="6" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="chkSendTruck5" Row="7" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="chkSendTruck6" Row="8" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="chkSendTruck7" Row="9" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="chkSendTruck8" Row="10" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="chkSendTruck9" Row="11" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="chkSendTruck10" Row="12" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="chkSendTruck11" Row="13" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="chkSendTruck12" Row="14" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label187" Row="0" RowSpan="2" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label188" Row="0" RowSpan="1" Column="2" ColumnSpan="6" /&gt;&lt;Control Name="label189" Row="0" RowSpan="2" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="button1" Row="3" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="button2" Row="3" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="button3" Row="3" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="button4" Row="3" RowSpan="1" Column="5" ColumnSpan="1" /&gt;&lt;Control Name="button5" Row="3" RowSpan="1" Column="6" ColumnSpan="1" /&gt;&lt;Control Name="button6" Row="3" RowSpan="1" Column="7" ColumnSpan="1" /&gt;&lt;Control Name="button73" Row="1" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="button74" Row="1" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="button75" Row="1" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="button76" Row="1" RowSpan="1" Column="5" ColumnSpan="1" /&gt;&lt;Control Name="button77" Row="1" RowSpan="1" Column="6" ColumnSpan="1" /&gt;&lt;Control Name="button78" Row="1" RowSpan="1" Column="7" ColumnSpan="1" /&gt;&lt;Control Name="label190" Row="3" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="label191" Row="4" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="label192" Row="5" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="label193" Row="6" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="label194" Row="7" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="label195" Row="8" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="label196" Row="9" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="label197" Row="10" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="label198" Row="11" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="label199" Row="12" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="label201" Row="14" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="groupBox18" Row="2" RowSpan="1" Column="0" ColumnSpan="8" /&gt;&lt;Control Name="label200" Row="13" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="label207" Row="15" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="label208" Row="16" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="chkSendTruck13" Row="15" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="chkSendTruck14" Row="16" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="AutoSize,0,AutoSize,0,AutoSize,0,AutoSize,0,AutoSize,0,AutoSize,0,AutoSize,0,AutoSize,0" /&gt;&lt;Rows Styles="Absolute,20,AutoSize,0,AutoSize,0,AutoSize,0,AutoSize,0,AutoSize,0,AutoSize,0,AutoSize,0,AutoSize,0,AutoSize,0,AutoSize,0,AutoSize,0,AutoSize,0,AutoSize,0,AutoSize,0,AutoSize,0,AutoSize,0" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
   <data name="groupBox17.Location" type="System.Drawing.Point, System.Drawing">
     <value>7, 75</value>
   </data>
   <data name="groupBox17.Size" type="System.Drawing.Size, System.Drawing">
-    <value>439, 413</value>
+    <value>457, 469</value>
   </data>
   <data name="groupBox17.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -7479,7 +7953,7 @@
     <value>4, 6</value>
   </data>
   <data name="groupBox16.Size" type="System.Drawing.Size, System.Drawing">
-    <value>453, 495</value>
+    <value>470, 550</value>
   </data>
   <data name="groupBox16.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -23533,7 +24007,7 @@
     <value>NoControl</value>
   </data>
   <data name="btnVictimHunting.Location" type="System.Drawing.Point, System.Drawing">
-    <value>5, 562</value>
+    <value>5, 565</value>
   </data>
   <data name="btnVictimHunting.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 3, 3, 3</value>
@@ -23731,7 +24205,7 @@
     <value>5</value>
   </data>
   <data name="grpPlayer2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>2, 324</value>
+    <value>2, 327</value>
   </data>
   <data name="grpPlayer2.Size" type="System.Drawing.Size, System.Drawing">
     <value>221, 233</value>
@@ -24193,7 +24667,7 @@
     <value>NoControl</value>
   </data>
   <data name="chkDebugMode.Location" type="System.Drawing.Point, System.Drawing">
-    <value>871, 465</value>
+    <value>865, 459</value>
   </data>
   <data name="chkDebugMode.Size" type="System.Drawing.Size, System.Drawing">
     <value>114, 18</value>

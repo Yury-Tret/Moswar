@@ -733,8 +733,8 @@ namespace Moswar
             Bot.Settings.SendTrucks = chkSendTrucks.Checked;
             Bot.Settings.TrucksCheckInterval = numTrucksCheckInterval.Value;
             Bot.Settings.TrucksMinPowerPoints = numTrucksMinPowerPoints.Value;
-            Bot.Settings.Trucks = new clsBot.TruckSettings[12];
-            for (int i = 0; i < 12; i++)
+            Bot.Settings.Trucks = new clsBot.TruckSettings[14];
+            for (int i = 0; i < 14; i++)
             {
                 Bot.Settings.Trucks[i].Send = ((CheckBox)tblTrucks.GetControlFromPosition(0, 3 + i)).Checked;
                 Bot.Settings.Trucks[i].Enhancings = new int[6];
@@ -1152,7 +1152,7 @@ namespace Moswar
                     chkSendTrucks.Checked = Bot.Settings.SendTrucks;
                     numTrucksCheckInterval.Value = Bot.Settings.TrucksCheckInterval;
                     numTrucksMinPowerPoints.Value = Bot.Settings.TrucksMinPowerPoints;
-                    for (int i = 0; i < 12; i++)
+                    for (int i = 0; i < 14; i++)
                     {
                         ((CheckBox)tblTrucks.GetControlFromPosition(0, 3 + i)).Checked = Bot.Settings.Trucks[i].Send;
                         for (int j = 0; j < 6; j++)
