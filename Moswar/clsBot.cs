@@ -9179,7 +9179,8 @@ namespace Moswar
                     }
                     else
                     {
-                        if (Regex.Match(frmMain.GetDocument(MainWB).GetElementById("alert-text").InnerText, "Не прошло и дня, как Вождь опять захватил нефтепровод! На этот раз доступен темный нефтепровод! Вперед, на защиту!").Success)
+                        HtmlEl = frmMain.GetDocument(MainWB).GetElementById("alert-text");
+                        if ((HtmlEl!=null) && Regex.Match(HtmlEl.InnerText, "Не прошло и дня, как Вождь опять захватил нефтепровод! На этот раз доступен темный нефтепровод! Вперед, на защиту!").Success)
                         {
                             if (Settings.GoOilDarkLenin)
                             {
