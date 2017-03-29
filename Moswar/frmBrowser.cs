@@ -584,6 +584,7 @@ namespace Moswar
             Bot.Settings.OilIgnoreTimeout = chkOilIgnoreTimeout.Checked;
             Bot.Settings.UseSnikersOil = chkUseSnikersOil.Checked;
             Bot.Settings.GoOilLenin = chkGoOilLenin.Checked;
+            Bot.Settings.GoOilDarkLenin = chkGoOilDarkLenin.Checked;
             if (Bot.Settings.maxOilLeninLvl < cboxOilLeninLvl.SelectedIndex + 1 || chkOilUseOhara.Checked) { Bot.Me.OilLeninHunting.Defeats = 0; Bot.Me.OilLeninHunting.Stop = false; } //При смене уровня прохождения вентилей, скидываем стоппер.
             Bot.Settings.maxOilLeninLvl = cboxOilLeninLvl.SelectedIndex + 1;
             Bot.Settings.OilLeninLeaveNoKey = chkOilLeninLeaveNoKey.Checked;
@@ -970,6 +971,7 @@ namespace Moswar
                 chkOilIgnoreTimeout.Checked = Bot.Settings.OilIgnoreTimeout;
                 chkUseSnikersOil.Checked = Bot.Settings.UseSnikersOil;
                 chkGoOilLenin.Checked = Bot.Settings.GoOilLenin;
+                chkGoOilDarkLenin.Checked = Bot.Settings.GoOilDarkLenin;
                 cboxOilLeninLvl.SelectedIndex = Bot.Settings.maxOilLeninLvl - 1;
                 chkOilLeninLeaveNoKey.Checked = Bot.Settings.OilLeninLeaveNoKey;
                 chkOilLeninLeaveNoElement.Checked = Bot.Settings.OilLeninLeaveNoElement;

@@ -4042,47 +4042,47 @@
     <value>
         AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
         LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
-        ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAAAi
-        CQAAAk1TRnQBSQFMAgEBAwEAAfABAAHwAQABEAEAARABAAT/AQkBAAj/AUIBTQE2AQQGAAE2AQQCAAEo
-        AwABQAMAARADAAEBAQABCAYAAQQYAAGAAgABgAMAAoABAAGAAwABgAEAAYABAAKAAgADwAEAAcAB3AHA
-        AQAB8AHKAaYBAAEzBQABMwEAATMBAAEzAQACMwIAAxYBAAMcAQADIgEAAykBAANVAQADTQEAA0IBAAM5
-        AQABgAF8Af8BAAJQAf8BAAGTAQAB1gEAAf8B7AHMAQABxgHWAe8BAAHWAucBAAGQAakBrQIAAf8BMwMA
-        AWYDAAGZAwABzAIAATMDAAIzAgABMwFmAgABMwGZAgABMwHMAgABMwH/AgABZgMAAWYBMwIAAmYCAAFm
-        AZkCAAFmAcwCAAFmAf8CAAGZAwABmQEzAgABmQFmAgACmQIAAZkBzAIAAZkB/wIAAcwDAAHMATMCAAHM
-        AWYCAAHMAZkCAALMAgABzAH/AgAB/wFmAgAB/wGZAgAB/wHMAQABMwH/AgAB/wEAATMBAAEzAQABZgEA
-        ATMBAAGZAQABMwEAAcwBAAEzAQAB/wEAAf8BMwIAAzMBAAIzAWYBAAIzAZkBAAIzAcwBAAIzAf8BAAEz
-        AWYCAAEzAWYBMwEAATMCZgEAATMBZgGZAQABMwFmAcwBAAEzAWYB/wEAATMBmQIAATMBmQEzAQABMwGZ
-        AWYBAAEzApkBAAEzAZkBzAEAATMBmQH/AQABMwHMAgABMwHMATMBAAEzAcwBZgEAATMBzAGZAQABMwLM
-        AQABMwHMAf8BAAEzAf8BMwEAATMB/wFmAQABMwH/AZkBAAEzAf8BzAEAATMC/wEAAWYDAAFmAQABMwEA
-        AWYBAAFmAQABZgEAAZkBAAFmAQABzAEAAWYBAAH/AQABZgEzAgABZgIzAQABZgEzAWYBAAFmATMBmQEA
-        AWYBMwHMAQABZgEzAf8BAAJmAgACZgEzAQADZgEAAmYBmQEAAmYBzAEAAWYBmQIAAWYBmQEzAQABZgGZ
-        AWYBAAFmApkBAAFmAZkBzAEAAWYBmQH/AQABZgHMAgABZgHMATMBAAFmAcwBmQEAAWYCzAEAAWYBzAH/
-        AQABZgH/AgABZgH/ATMBAAFmAf8BmQEAAWYB/wHMAQABzAEAAf8BAAH/AQABzAEAApkCAAGZATMBmQEA
-        AZkBAAGZAQABmQEAAcwBAAGZAwABmQIzAQABmQEAAWYBAAGZATMBzAEAAZkBAAH/AQABmQFmAgABmQFm
-        ATMBAAGZATMBZgEAAZkBZgGZAQABmQFmAcwBAAGZATMB/wEAApkBMwEAApkBZgEAA5kBAAKZAcwBAAKZ
-        Af8BAAGZAcwCAAGZAcwBMwEAAWYBzAFmAQABmQHMAZkBAAGZAswBAAGZAcwB/wEAAZkB/wIAAZkB/wEz
-        AQABmQHMAWYBAAGZAf8BmQEAAZkB/wHMAQABmQL/AQABzAMAAZkBAAEzAQABzAEAAWYBAAHMAQABmQEA
-        AcwBAAHMAQABmQEzAgABzAIzAQABzAEzAWYBAAHMATMBmQEAAcwBMwHMAQABzAEzAf8BAAHMAWYCAAHM
-        AWYBMwEAAZkCZgEAAcwBZgGZAQABzAFmAcwBAAGZAWYB/wEAAcwBmQIAAcwBmQEzAQABzAGZAWYBAAHM
-        ApkBAAHMAZkBzAEAAcwBmQH/AQACzAIAAswBMwEAAswBZgEAAswBmQEAA8wBAALMAf8BAAHMAf8CAAHM
-        Af8BMwEAAZkB/wFmAQABzAH/AZkBAAHMAf8BzAEAAcwC/wEAAcwBAAEzAQAB/wEAAWYBAAH/AQABmQEA
-        AcwBMwIAAf8CMwEAAf8BMwFmAQAB/wEzAZkBAAH/ATMBzAEAAf8BMwH/AQAB/wFmAgAB/wFmATMBAAHM
-        AmYBAAH/AWYBmQEAAf8BZgHMAQABzAFmAf8BAAH/AZkCAAH/AZkBMwEAAf8BmQFmAQAB/wKZAQAB/wGZ
-        AcwBAAH/AZkB/wEAAf8BzAIAAf8BzAEzAQAB/wHMAWYBAAH/AcwBmQEAAf8CzAEAAf8BzAH/AQAC/wEz
-        AQABzAH/AWYBAAL/AZkBAAL/AcwBAAJmAf8BAAFmAf8BZgEAAWYC/wEAAf8CZgEAAf8BZgH/AQAC/wFm
-        AQABIQEAAaUBAANfAQADdwEAA4YBAAOWAQADywEAA7IBAAPXAQAD3QEAA+MBAAPqAQAD8QEAA/gBAAHw
-        AfsB/wEAAaQCoAEAA4ADAAH/AgAB/wMAAv8BAAH/AwAB/wEAAf8BAAL/AgAD/xYAAfQBlAJGAZQB9AgA
-        AVMBMgUsATIBUygAAb0BJgUlARoGAAEyBiwBMgIsATImAAH0BSYBJQEmASUB9AUAASwKMiYAAZoBUwEs
-        AVkBLAFTASYBUwEmAZoFAAEsCTIBLCYAAU0DMgIsAyYBTAUAASwJMgEsJgABUwJZATgCMgMmAU0FAAEs
-        CTIBLCYAAZoDWQFTATIBLAImAZQFAAEsCTIBLCYAAfYBWQGgAVkBmgEyAVkBJgFTAfQFAAEmBjICegEy
-        ASwnAAEaAVkBMgMsASYBGgYAASYBLAQyAVMBmgF6ATIBLCgAARsBmgFTAU0BlAH0BwABLAUyAXoBmgFT
-        AjIqAAEsASYJAAFZAjIBOAIyAjgCMgFZKgACJgoAAVkBMgF6AVkCUwJ6ATIpAAEyASwEJggAAVIBTAR0
-        ApkBUikAAzgBJgIyBwABSgEiAXkBWAEOAQABDgFKAVgBUQERKgABOAEmCQABcwFKAhoBEgETARIBHAEa
-        ARwBSioAATgBJicAAUIBTQE+BwABPgMAASgDAAFAAwABEAMAAQEBAAEBBQABgBcAA/8BAAL/AfgBHwHg
-        AQ8CAAL/AfABDwHAAQcCAAL/AeABBwHAAQcCAAL/AeABBwHAAQcCAAL/AeABBwHAAQcCAAL/AeABBwHA
-        AQcCAAL/AeABBwHAAQcCAAL/AeABBwHAAQcCAAL/AfABDwHAAQcCAAL/AfgBHwHAAQcCAAL/Af4BfwHA
-        AQcCAAL/Af4BfwHgAQ8CAAL/AfgBHwHgAQ8CAAL/AfgBHwHAAQcCAAL/Af4BfwHAAQcCAAL/Af4BfwL/
-        AgAL
+        ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAAAg
+        CQAAAk1TRnQBSQFMAgEBAwIAAQEBAAEBARABAAEQAQAE/wEJAQAI/wFCAU0BNgEEBgABNgEEAgABKAMA
+        AUADAAEQAwABAQEAAQgGAAEEGAABgAIAAYADAAKAAQABgAMAAYABAAGAAQACgAIAA8ABAAHAAdwBwAEA
+        AfABygGmAQABMwUAATMBAAEzAQABMwEAAjMCAAMWAQADHAEAAyIBAAMpAQADVQEAA00BAANCAQADOQEA
+        AYABfAH/AQACUAH/AQABkwEAAdYBAAH/AewBzAEAAcYB1gHvAQAB1gLnAQABkAGpAa0CAAH/ATMDAAFm
+        AwABmQMAAcwCAAEzAwACMwIAATMBZgIAATMBmQIAATMBzAIAATMB/wIAAWYDAAFmATMCAAJmAgABZgGZ
+        AgABZgHMAgABZgH/AgABmQMAAZkBMwIAAZkBZgIAApkCAAGZAcwCAAGZAf8CAAHMAwABzAEzAgABzAFm
+        AgABzAGZAgACzAIAAcwB/wIAAf8BZgIAAf8BmQIAAf8BzAEAATMB/wIAAf8BAAEzAQABMwEAAWYBAAEz
+        AQABmQEAATMBAAHMAQABMwEAAf8BAAH/ATMCAAMzAQACMwFmAQACMwGZAQACMwHMAQACMwH/AQABMwFm
+        AgABMwFmATMBAAEzAmYBAAEzAWYBmQEAATMBZgHMAQABMwFmAf8BAAEzAZkCAAEzAZkBMwEAATMBmQFm
+        AQABMwKZAQABMwGZAcwBAAEzAZkB/wEAATMBzAIAATMBzAEzAQABMwHMAWYBAAEzAcwBmQEAATMCzAEA
+        ATMBzAH/AQABMwH/ATMBAAEzAf8BZgEAATMB/wGZAQABMwH/AcwBAAEzAv8BAAFmAwABZgEAATMBAAFm
+        AQABZgEAAWYBAAGZAQABZgEAAcwBAAFmAQAB/wEAAWYBMwIAAWYCMwEAAWYBMwFmAQABZgEzAZkBAAFm
+        ATMBzAEAAWYBMwH/AQACZgIAAmYBMwEAA2YBAAJmAZkBAAJmAcwBAAFmAZkCAAFmAZkBMwEAAWYBmQFm
+        AQABZgKZAQABZgGZAcwBAAFmAZkB/wEAAWYBzAIAAWYBzAEzAQABZgHMAZkBAAFmAswBAAFmAcwB/wEA
+        AWYB/wIAAWYB/wEzAQABZgH/AZkBAAFmAf8BzAEAAcwBAAH/AQAB/wEAAcwBAAKZAgABmQEzAZkBAAGZ
+        AQABmQEAAZkBAAHMAQABmQMAAZkCMwEAAZkBAAFmAQABmQEzAcwBAAGZAQAB/wEAAZkBZgIAAZkBZgEz
+        AQABmQEzAWYBAAGZAWYBmQEAAZkBZgHMAQABmQEzAf8BAAKZATMBAAKZAWYBAAOZAQACmQHMAQACmQH/
+        AQABmQHMAgABmQHMATMBAAFmAcwBZgEAAZkBzAGZAQABmQLMAQABmQHMAf8BAAGZAf8CAAGZAf8BMwEA
+        AZkBzAFmAQABmQH/AZkBAAGZAf8BzAEAAZkC/wEAAcwDAAGZAQABMwEAAcwBAAFmAQABzAEAAZkBAAHM
+        AQABzAEAAZkBMwIAAcwCMwEAAcwBMwFmAQABzAEzAZkBAAHMATMBzAEAAcwBMwH/AQABzAFmAgABzAFm
+        ATMBAAGZAmYBAAHMAWYBmQEAAcwBZgHMAQABmQFmAf8BAAHMAZkCAAHMAZkBMwEAAcwBmQFmAQABzAKZ
+        AQABzAGZAcwBAAHMAZkB/wEAAswCAALMATMBAALMAWYBAALMAZkBAAPMAQACzAH/AQABzAH/AgABzAH/
+        ATMBAAGZAf8BZgEAAcwB/wGZAQABzAH/AcwBAAHMAv8BAAHMAQABMwEAAf8BAAFmAQAB/wEAAZkBAAHM
+        ATMCAAH/AjMBAAH/ATMBZgEAAf8BMwGZAQAB/wEzAcwBAAH/ATMB/wEAAf8BZgIAAf8BZgEzAQABzAJm
+        AQAB/wFmAZkBAAH/AWYBzAEAAcwBZgH/AQAB/wGZAgAB/wGZATMBAAH/AZkBZgEAAf8CmQEAAf8BmQHM
+        AQAB/wGZAf8BAAH/AcwCAAH/AcwBMwEAAf8BzAFmAQAB/wHMAZkBAAH/AswBAAH/AcwB/wEAAv8BMwEA
+        AcwB/wFmAQAC/wGZAQAC/wHMAQACZgH/AQABZgH/AWYBAAFmAv8BAAH/AmYBAAH/AWYB/wEAAv8BZgEA
+        ASEBAAGlAQADXwEAA3cBAAOGAQADlgEAA8sBAAOyAQAD1wEAA90BAAPjAQAD6gEAA/EBAAP4AQAB8AH7
+        Af8BAAGkAqABAAOAAwAB/wIAAf8DAAL/AQAB/wMAAf8BAAH/AQAC/wIAA/8WAAH0AZQCRgGUAfQIAAFT
+        ATIFLAEyAVMoAAG9ASYFJQEaBgABMgYsATICLAEyJgAB9AUmASUBJgElAfQFAAEsCjImAAGaAVMBLAFZ
+        ASwBUwEmAVMBJgGaBQABLAkyASwmAAFNAzICLAMmAUwFAAEsCTIBLCYAAVMCWQE4AjIDJgFNBQABLAky
+        ASwmAAGaA1kBUwEyASwCJgGUBQABLAkyASwmAAH2AVkBoAFZAZoBMgFZASYBUwH0BQABJgYyAnoBMgEs
+        JwABGgFZATIDLAEmARoGAAEmASwEMgFTAZoBegEyASwoAAEbAZoBUwFNAZQB9AcAASwFMgF6AZoBUwIy
+        KgABLAEmCQABWQIyATgCMgI4AjIBWSoAAiYKAAFZATIBegFZAlMCegEyKQABMgEsBCYIAAFSAUwEdAKZ
+        AVIpAAM4ASYCMgcAAUoBIgF5AVgBDgEAAQ4BSgFYAVEBESoAATgBJgkAAXMBSgIaARIBEwESARwBGgEc
+        AUoqAAE4ASYnAAFCAU0BPgcAAT4DAAEoAwABQAMAARADAAEBAQABAQUAAYAXAAP/AQAC/wH4AR8B4AEP
+        AgAC/wHwAQ8BwAEHAgAC/wHgAQcBwAEHAgAC/wHgAQcBwAEHAgAC/wHgAQcBwAEHAgAC/wHgAQcBwAEH
+        AgAC/wHgAQcBwAEHAgAC/wHgAQcBwAEHAgAC/wHwAQ8BwAEHAgAC/wH4AR8BwAEHAgAC/wH+AX8BwAEH
+        AgAC/wH+AX8B4AEPAgAC/wH4AR8B4AEPAgAC/wH4AR8BwAEHAgAC/wH+AX8BwAEHAgAC/wH+AX8C/wIA
+        Cw==
 </value>
   </data>
   <data name="button90.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
@@ -7724,11 +7724,14 @@
   <data name="&gt;&gt;label208.ZOrder" xml:space="preserve">
     <value>119</value>
   </data>
+  <data name="chkSendTruck13.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Left</value>
+  </data>
   <data name="chkSendTruck13.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="chkSendTruck13.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 395</value>
+    <value>3, 397</value>
   </data>
   <data name="chkSendTruck13.Size" type="System.Drawing.Size, System.Drawing">
     <value>123, 18</value>
@@ -7751,11 +7754,14 @@
   <data name="&gt;&gt;chkSendTruck13.ZOrder" xml:space="preserve">
     <value>120</value>
   </data>
+  <data name="chkSendTruck14.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Left</value>
+  </data>
   <data name="chkSendTruck14.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="chkSendTruck14.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 423</value>
+    <value>3, 425</value>
   </data>
   <data name="chkSendTruck14.Size" type="System.Drawing.Size, System.Drawing">
     <value>118, 18</value>
@@ -13959,6 +13965,33 @@
   <data name="pnlOilPipeline.AutoScroll" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="chkGoOilDarkLenin.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="chkGoOilDarkLenin.Location" type="System.Drawing.Point, System.Drawing">
+    <value>202, 24</value>
+  </data>
+  <data name="chkGoOilDarkLenin.Size" type="System.Drawing.Size, System.Drawing">
+    <value>201, 18</value>
+  </data>
+  <data name="chkGoOilDarkLenin.TabIndex" type="System.Int32, mscorlib">
+    <value>102</value>
+  </data>
+  <data name="chkGoOilDarkLenin.Text" xml:space="preserve">
+    <value>Проходить темный нефтепровод</value>
+  </data>
+  <data name="&gt;&gt;chkGoOilDarkLenin.Name" xml:space="preserve">
+    <value>chkGoOilDarkLenin</value>
+  </data>
+  <data name="&gt;&gt;chkGoOilDarkLenin.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkGoOilDarkLenin.Parent" xml:space="preserve">
+    <value>groupBox7</value>
+  </data>
+  <data name="&gt;&gt;chkGoOilDarkLenin.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="chkOilLeninLeaveNoTicketMax.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -14032,7 +14065,7 @@
     <value>groupBox7</value>
   </data>
   <data name="&gt;&gt;groupBox21.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="label180.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -14062,7 +14095,7 @@
     <value>groupBox7</value>
   </data>
   <data name="&gt;&gt;label180.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="label179.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -14092,7 +14125,7 @@
     <value>groupBox7</value>
   </data>
   <data name="&gt;&gt;label179.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="chkGoOilLenin.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -14125,7 +14158,7 @@
     <value>groupBox7</value>
   </data>
   <data name="&gt;&gt;chkGoOilLenin.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="chkOilLeninIronHead.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -14155,7 +14188,7 @@
     <value>groupBox7</value>
   </data>
   <data name="&gt;&gt;chkOilLeninIronHead.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="cboxOilLeninGrpFightUseItems.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -14200,7 +14233,7 @@
     <value>groupBox7</value>
   </data>
   <data name="&gt;&gt;cboxOilLeninGrpFightUseItems.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>6</value>
   </data>
   <data name="cboxOilLeninLvl.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -14317,7 +14350,7 @@
     <value>groupBox7</value>
   </data>
   <data name="&gt;&gt;cboxOilLeninLvl.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>7</value>
   </data>
   <data name="numOffsetSyncOilLenin.Location" type="System.Drawing.Point, System.Drawing">
     <value>233, 172</value>
@@ -14341,7 +14374,7 @@
     <value>groupBox7</value>
   </data>
   <data name="&gt;&gt;numOffsetSyncOilLenin.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>8</value>
   </data>
   <data name="chkOilUseOhara.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -14374,7 +14407,7 @@
     <value>groupBox7</value>
   </data>
   <data name="&gt;&gt;chkOilUseOhara.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>9</value>
   </data>
   <data name="chkOilLeninLeaveNoElement.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -14407,7 +14440,7 @@
     <value>groupBox7</value>
   </data>
   <data name="&gt;&gt;chkOilLeninLeaveNoElement.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>10</value>
   </data>
   <data name="chkUseItemOilLeninFightLvl8.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -14437,7 +14470,7 @@
     <value>groupBox7</value>
   </data>
   <data name="&gt;&gt;chkUseItemOilLeninFightLvl8.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>11</value>
   </data>
   <data name="chkOilLeninRobinHood.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -14467,7 +14500,7 @@
     <value>groupBox7</value>
   </data>
   <data name="&gt;&gt;chkOilLeninRobinHood.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>12</value>
   </data>
   <data name="label59.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -14497,7 +14530,7 @@
     <value>groupBox7</value>
   </data>
   <data name="&gt;&gt;label59.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>13</value>
   </data>
   <data name="label102.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -14527,7 +14560,7 @@
     <value>groupBox7</value>
   </data>
   <data name="&gt;&gt;label102.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>14</value>
   </data>
   <data name="chkSyncOilLenin.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -14560,7 +14593,7 @@
     <value>groupBox7</value>
   </data>
   <data name="&gt;&gt;chkSyncOilLenin.ZOrder" xml:space="preserve">
-    <value>14</value>
+    <value>15</value>
   </data>
   <data name="chkUseItemOilLeninFightLvl30.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -14590,7 +14623,7 @@
     <value>groupBox7</value>
   </data>
   <data name="&gt;&gt;chkUseItemOilLeninFightLvl30.ZOrder" xml:space="preserve">
-    <value>15</value>
+    <value>16</value>
   </data>
   <data name="lblOilMaxDefeats.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -14626,7 +14659,7 @@
     <value>groupBox7</value>
   </data>
   <data name="&gt;&gt;lblOilMaxDefeats.ZOrder" xml:space="preserve">
-    <value>16</value>
+    <value>17</value>
   </data>
   <data name="chkOilLeninLeaveNoKey.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -14656,7 +14689,7 @@
     <value>groupBox7</value>
   </data>
   <data name="&gt;&gt;chkOilLeninLeaveNoKey.ZOrder" xml:space="preserve">
-    <value>17</value>
+    <value>18</value>
   </data>
   <data name="chkUseItemOilLeninFightLvl17.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -14686,7 +14719,7 @@
     <value>groupBox7</value>
   </data>
   <data name="&gt;&gt;chkUseItemOilLeninFightLvl17.ZOrder" xml:space="preserve">
-    <value>18</value>
+    <value>19</value>
   </data>
   <data name="label139.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -14716,7 +14749,7 @@
     <value>groupBox7</value>
   </data>
   <data name="&gt;&gt;label139.ZOrder" xml:space="preserve">
-    <value>19</value>
+    <value>20</value>
   </data>
   <data name="label103.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -14746,7 +14779,7 @@
     <value>groupBox7</value>
   </data>
   <data name="&gt;&gt;label103.ZOrder" xml:space="preserve">
-    <value>20</value>
+    <value>21</value>
   </data>
   <data name="chkOilLeninLeaveNoBox.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -14779,7 +14812,7 @@
     <value>groupBox7</value>
   </data>
   <data name="&gt;&gt;chkOilLeninLeaveNoBox.ZOrder" xml:space="preserve">
-    <value>21</value>
+    <value>22</value>
   </data>
   <data name="numMaxOilDefeats.Location" type="System.Drawing.Point, System.Drawing">
     <value>189, 198</value>
@@ -14803,7 +14836,7 @@
     <value>groupBox7</value>
   </data>
   <data name="&gt;&gt;numMaxOilDefeats.ZOrder" xml:space="preserve">
-    <value>22</value>
+    <value>23</value>
   </data>
   <data name="chkUseItemOilLeninFightLvl29.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -14833,7 +14866,7 @@
     <value>groupBox7</value>
   </data>
   <data name="&gt;&gt;chkUseItemOilLeninFightLvl29.ZOrder" xml:space="preserve">
-    <value>23</value>
+    <value>24</value>
   </data>
   <data name="chkUseItemOilLeninFightLvl26.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -14863,7 +14896,7 @@
     <value>groupBox7</value>
   </data>
   <data name="&gt;&gt;chkUseItemOilLeninFightLvl26.ZOrder" xml:space="preserve">
-    <value>24</value>
+    <value>25</value>
   </data>
   <data name="label101.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -14899,7 +14932,7 @@
     <value>groupBox7</value>
   </data>
   <data name="&gt;&gt;label101.ZOrder" xml:space="preserve">
-    <value>25</value>
+    <value>26</value>
   </data>
   <data name="numMaxOilLeninDice.Font" type="System.Drawing.Font, System.Drawing">
     <value>Candara, 9pt</value>
@@ -14926,7 +14959,7 @@
     <value>groupBox7</value>
   </data>
   <data name="&gt;&gt;numMaxOilLeninDice.ZOrder" xml:space="preserve">
-    <value>26</value>
+    <value>27</value>
   </data>
   <data name="label140.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -14956,7 +14989,7 @@
     <value>groupBox7</value>
   </data>
   <data name="&gt;&gt;label140.ZOrder" xml:space="preserve">
-    <value>27</value>
+    <value>28</value>
   </data>
   <data name="groupBox7.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 6</value>
@@ -24007,7 +24040,7 @@
     <value>NoControl</value>
   </data>
   <data name="btnVictimHunting.Location" type="System.Drawing.Point, System.Drawing">
-    <value>5, 565</value>
+    <value>5, 567</value>
   </data>
   <data name="btnVictimHunting.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 3, 3, 3</value>
@@ -24205,7 +24238,7 @@
     <value>5</value>
   </data>
   <data name="grpPlayer2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>2, 327</value>
+    <value>2, 329</value>
   </data>
   <data name="grpPlayer2.Size" type="System.Drawing.Size, System.Drawing">
     <value>221, 233</value>
@@ -24667,7 +24700,7 @@
     <value>NoControl</value>
   </data>
   <data name="chkDebugMode.Location" type="System.Drawing.Point, System.Drawing">
-    <value>865, 459</value>
+    <value>861, 455</value>
   </data>
   <data name="chkDebugMode.Size" type="System.Drawing.Size, System.Drawing">
     <value>114, 18</value>

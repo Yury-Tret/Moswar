@@ -23,8 +23,8 @@ namespace Moswar
         #region Различные определения
         [DllImport("wininet.dll", SetLastError = true)]
         static extern bool InternetGetCookieEx(string pchURL, string pchCookieName, StringBuilder pchCookieData, ref uint pcchCookieData, int dwFlags, IntPtr lpReserved);
-        const int INTERNET_COOKIE_HTTPONLY = 0x00002000;         
- 
+        const int INTERNET_COOKIE_HTTPONLY = 0x00002000;
+
         [DllImport("user32.dll", SetLastError = true)]
         static extern IntPtr FindWindowEx(IntPtr parentHandle, IntPtr childAfter, string lclassName, string windowTitle);
         [DllImport("user32.dll", SetLastError = true)]
@@ -46,11 +46,11 @@ namespace Moswar
         private const int SW_FORCEMINIMIZE = 11;
         private const int SW_SHOWNOACTIVATE = 4;
         private const int SW_SHOWMINNOACTIVE = 7;
-        
+
         [DllImport("user32.dll", SetLastError = true)]
         private static extern int GetWindowLong(IntPtr hWnd, int nIndex);
         [DllImport("user32.dll", SetLastError = true)]
-        private static extern int SetWindowLong(IntPtr hWnd, int nIndex, int dwNewLong);        
+        private static extern int SetWindowLong(IntPtr hWnd, int nIndex, int dwNewLong);
         private const int GWL_EXSTYLE = -20;
         private const int WS_EX_LAYERED = 0x80000;
         private const int WS_EX_NOACTIVATE = 0x08000000;
@@ -70,7 +70,7 @@ namespace Moswar
 
         private struct stcLastBuy
         {
-            public ShopItems LastSI;            
+            public ShopItems LastSI;
             public DateTime LastDT;
             public int Counter;
         }
@@ -86,7 +86,7 @@ namespace Moswar
             public string ID;
             public int WorkTurns;
             public int TillTurn;
-        }        
+        }
 
         public enum FightItemType { None, FixedHeal, ProcHeal, Cheese, FixedBomb, ProcBomb, Helmet, Spring, Shield }
 
@@ -139,7 +139,7 @@ namespace Moswar
         private DateTime ReadLogsDT;
         private stcLastBuy LastBuy; //Блокировщик от массовых покупок
         private stcIgnore Ignore;
-        public Thread[] HCThread = new Thread[2];        
+        public Thread[] HCThread = new Thread[2];
         public decimal[,] TrainWarPetNeed = new decimal[3, 3]; //[Нацеленность, Преданность, Массивность], [деньги, руда, нефть].
         public decimal[,] TrainRunPetNeed = new decimal[4, 4]; //[Ускорение, Скорость, Выносливость, Ловкость], [деньги, руда, нефть, медальки].
         public decimal[,] TrainMeNeed = new decimal[7, 2];     //[], [тек. характеристика, деньги].
@@ -234,7 +234,7 @@ namespace Moswar
             public stcClan Clan;
             public stcWarPet WarPet;
             public stcRunPet RunPet;
-            public DateTime MetroWarPrizeDT;            
+            public DateTime MetroWarPrizeDT;
             public bool Wanted;
             public stcWallet Wallet;
 
@@ -248,7 +248,7 @@ namespace Moswar
             public stcStop Quest;
             public stcStop Rat;
             public stcStop OilHunting;
-            public stcStop NPCHunting;                        
+            public stcStop NPCHunting;
             public stcStop Kubovich;
             public stcStop Loto;
             public stcStop Fishki;
@@ -257,7 +257,7 @@ namespace Moswar
             public stcStop PigProtection;
             public stcStop Major;
             public stcStop QuestFillTonus;
-               
+
             public stcClanWar ClanWarInfo;
             public stcBankDeposit BankDeposit;
             public stcSet SetInfo;
@@ -308,7 +308,7 @@ namespace Moswar
             public long iR;
             public long iN;
             public long iL;
-            public long iB;            
+            public long iB;
             public long iT;
         }
 
@@ -368,7 +368,7 @@ namespace Moswar
             public decimal Endurance;
             public decimal Dexterity;
         }
-        
+
         public struct stcPerk
         {
             public bool On;
@@ -424,7 +424,7 @@ namespace Moswar
             public bool Stop;
         }
 
-        public struct stcHCHunting 
+        public struct stcHCHunting
         {
             public bool Search;
             public int Victims;
@@ -443,7 +443,7 @@ namespace Moswar
             public bool Stop;
         }
 
-        public struct stcPyramid 
+        public struct stcPyramid
         {
             public int Price;
             public DateTime RestartDT;
@@ -458,7 +458,7 @@ namespace Moswar
             public int Bonus;
             public int NeedCoffee;
             public int NeedHoney;
-            public int BlackBook;           
+            public int BlackBook;
             public DateTime LastDT;
             public DateTime RestartDT;
         }
@@ -487,14 +487,14 @@ namespace Moswar
         }
 
         public struct stcGrpFight
-        {            
+        {
             public int Val; // 0-> Выкл., 1-> PVP, 2-> NPC, 3-> Все.
             public string Price; //Tugriki:500 ибо цены на разных уровнях на разные типы боев разные!
             public GroupFightType NextFightType;
-            public DateTime NextFightDT;            
+            public DateTime NextFightDT;
             public DateTime ChaosStartDT;
             public DateTime ClanStartDT;
-            public DateTime PVPStartDT;            
+            public DateTime PVPStartDT;
             public DateTime OreStartDT;
             public DateTime NextCheckDT; //Нужно, только чтоб не ходить кругами на аллею, когда совершенно нечего делать!
             public stcMafia Mafia;
@@ -529,7 +529,7 @@ namespace Moswar
         {
             public bool EnoughGold;
             public int TreasurePrc;
-            public DateTime NextDT;            
+            public DateTime NextDT;
             public DateTime PlayTillDT;
         }
 
@@ -542,12 +542,12 @@ namespace Moswar
             public DateTime LastDT;
         }
 
-        public struct stcBankDeposit 
+        public struct stcBankDeposit
         {
             public int MyMoney;
             public DateTime SafeTillDT;
             public DateTime StartDT;
-        }        
+        }
 
         public struct stcSet
         {
@@ -559,7 +559,7 @@ namespace Moswar
         {
             public string BoxID;
             public string[] BtnID;
-            public string BlockID;            
+            public string BlockID;
             public string PicName;
         }
 
@@ -578,14 +578,14 @@ namespace Moswar
         }
 
         public struct stcCoctailInfo
-        {            
+        {
             public stcSpecialCoctailComponent[] SpecialComponent;
             public stcCoctailComponent[] Component;
             public int RecipeTotalFruitsAmount;
             public DateTime LastCook;
             public DateTime LastCheck;
             public bool Wrong;
-        }        
+        }
 
         public struct stcBug
         {
@@ -673,11 +673,11 @@ namespace Moswar
             public bool AttackRat; //Нападать на крысомаху, если поймалась при копке.
             public decimal maxRatLvl;
             public decimal maxRatDefeats;
-            public decimal maxSearchRatLvl;            
+            public decimal maxSearchRatLvl;
             public bool SearchRatLeaveNoKey;
             public bool SearchRatLeaveNoElement;
             public bool SearchRatLeaveNoBox;
-            public bool SearchRatIgnoreAll;            
+            public bool SearchRatIgnoreAll;
             public bool SearchRatRobinHood;
             public bool SearchRatBambula;
             public decimal maxSearchRatDefeats;
@@ -765,7 +765,7 @@ namespace Moswar
             public bool PlayLoto;
             public bool PlayKubovich;
             public int maxKubovichRotations;
-            public bool BuyFishki;            
+            public bool BuyFishki;
             public bool BuyFishkiAllways;
             public decimal FishkiAmount;
             public bool GoPyramid;
@@ -811,11 +811,12 @@ namespace Moswar
             public bool GoGroupFightOre;
             public bool GoGroupFightMafia;
             public bool MafiaUseLicence;
-            public bool GoOil;            
+            public bool GoOil;
             public int maxOilLvl;
             public bool OilIgnoreTimeout;
             public bool UseSnikersOil;
             public bool GoOilLenin;
+            public bool GoOilDarkLenin;
             public int maxOilLeninLvl;
             public bool OilLeninLeaveNoKey;
             public bool OilLeninLeaveNoElement;
@@ -907,7 +908,7 @@ namespace Moswar
             public bool UseMinFruitIgnoreAmount;
             public decimal MinFruitIgnoreAmount;
             public bool SellBadCoctail;
- 
+
             public bool UseProxy;
 
             public decimal MaxIEVersion;
@@ -951,7 +952,7 @@ namespace Moswar
             public decimal MaxBuyFightItemAmount;
             public int[] FightSlotItemTypes;
             public bool BuyMoreThenOneGranade;
-        } 
+        }
         #endregion
         #endregion
 
@@ -960,8 +961,8 @@ namespace Moswar
         {
             Bug.Logging = true; //Логгирование ошибок.
             #region Инициализация
-            Settings.GagIE = 60;            
-            Settings.minAlleyLvl = 1;            
+            Settings.GagIE = 60;
+            Settings.minAlleyLvl = 1;
             Settings.maxAlleyLvl = 50;
             Settings.AlleyOpponent = Opponent.Weak;
             Settings.minWerewolfLvl = -5;
@@ -1028,70 +1029,70 @@ namespace Moswar
                     #region Попугайчик
                     data.type = 3;
                     break;
-                    #endregion
+                #endregion
                 case 2:
                     #region Кошечка
                     data.type = 1;
                     break;
-                    #endregion
+                #endregion
                 case 3:
                     #region Чихуахуа
                     data.type = 2;
                     break;
-                    #endregion
+                #endregion
                 case 4:
                     #region Доберман
                     data.type = 4;
                     break;
-                    #endregion
+                #endregion
                 case 5:
                     #region Овчарка
                     data.type = 7;
                     break;
-                    #endregion
+                #endregion
                 case 6:
                     #region Ротвейлер
                     data.type = 8;
                     break;
-                    #endregion
+                #endregion
                 case 7:
                     #region Мраморный дог
                     data.type = 21;
                     break;
-                    #endregion
+                #endregion
                 case 8:
                     #region Волк
                     data.type = 22;
                     break;
-                    #endregion
+                #endregion
                 case 9:
                     #region Лев
                     data.type = 80;
                     break;
-                    #endregion
+                #endregion
                 case 10:
                     #region Пантера
                     data.type = 23;
                     break;
-                    #endregion
+                #endregion
                 case 11:
                     #region Котёнок "Гаф"
                     data.type = 24;
                     data.maxState = 700;
                     break;
-                    #endregion
+                #endregion
                 case 12:
                     #region Чёрный дог
                     data.type = 26;
                     data.maxState = 700;
                     break;
-                    #endregion
+                #endregion
                 case 13:
                     #region Хомячок
                     data.type = 25;
                     data.maxState = 700;
                     break;
-                    #endregion
+                #endregion
                 case 14:
                     #region Хаски
                     data.type = 27;
@@ -1115,57 +1116,57 @@ namespace Moswar
                     #region Кошечка
                     data.type = 19;
                     break;
-                    #endregion
+                #endregion
                 case 2:
                     #region Собачка
                     data.type = 20;
                     break;
-                    #endregion
+                #endregion
                 case 3:
                     #region Белочка
                     data.type = 18;
                     break;
-                    #endregion
+                #endregion
                 case 4:
                     #region Енот
                     data.type = 17;
                     break;
-                    #endregion
+                #endregion
                 case 5:
                     #region Лиса
                     data.type = 16;
                     break;
-                    #endregion
+                #endregion
                 case 6:
                     #region Волк
                     data.type = 15;
                     break;
-                    #endregion
+                #endregion
                 case 7:
                     #region Медведь
                     data.type = 13;
                     break;
-                    #endregion
+                #endregion
                 case 8:
                     #region Тигр
                     data.type = 14;
                     break;
-                    #endregion
+                #endregion
                 case 9:
                     #region Страус
                     data.type = 11;
                     break;
-                    #endregion
+                #endregion
                 case 10:
                     #region Кенгуру
                     data.type = 12;
                     break;
-                    #endregion
+                #endregion
                 case 11:
                     #region Единорог
                     data.type = 9;
                     break;
-                    #endregion
+                #endregion
                 case 12:
                     #region Пегас
                     data.type = 10;
@@ -1193,7 +1194,7 @@ namespace Moswar
                 StreamWriter SW = new StreamWriter("BuG-Report\\History " + DateTime.Now.ToShortDateString() + ".txt", true, Encoding.Unicode);
                 SW.WriteLine(Comment);
                 SW.Close();
-            }            
+            }
         }
         private stcWallet GetResources(WebBrowser WB, string[] ArrHtmlInfo, bool Wallet = false)
         {
@@ -1293,7 +1294,7 @@ namespace Moswar
         {
             BugReport("GetMyLife");
 
-        ReTry:
+            ReTry:
             IsWBComplete(WB); //Проверка на клик-клик и прочее.
             try
             {
@@ -1310,7 +1311,7 @@ namespace Moswar
             }
             AnalysePlace(WB);
             goto ReTry;
-        }        
+        }
         private void Wait(int MinMilliSeconds = 0, int MaxMilliSeconds = 0, String S = "")
         {
             //BugReport("Wait-MS");
@@ -1342,7 +1343,7 @@ namespace Moswar
             #region Уже нечего ждать, время истекло?
             if (TS < new TimeSpan()) return;
             #endregion
-            
+
             DT += TS;
             Match match = Regex.Match(S, "^.(?= )"); //Это сообщение должно иметь иную приоритетность?
             if (S != "") UpdateStatus((match.Success ? match.Value : "#") + " " + DateTime.Now + (match.Success ? S.Replace(match.Value, "") : S) + DT.ToString("HH:mm:ss")); //Удаляем начало спец сообщения, оно уже есть в match, чтоб вставить дату.
@@ -1362,8 +1363,8 @@ namespace Moswar
         }
         private bool TimeToGoGrpFight(GroupFightType GFT = GroupFightType.All, DateTime NextDT = new DateTime(), string Price = "tugriki:0", int InMinutes = 0)
         {
-            BugReport("TimeToGoGrpFight");            
-            
+            BugReport("TimeToGoGrpFight");
+
             Match match = Regex.Match(Price, "(?<Unit>(tugriki|ruda|neft|med)):(?<Cost>([0-9])+)");
             DateTime ServerDT = GetServerTime(MainWB);
             //Новый заход с новой дракой или нашёл драку которую можно провести до зарегестрированной драки или зарегистрирован хаос, переписываем более важной дракой.  
@@ -1373,12 +1374,12 @@ namespace Moswar
                 GrpFight.Price = Price; //Запоминаем цену участия в бое.
                 GrpFight.NextFightDT = NextDT; //Пора заносить новое время?                
             }
-            
+
             UpdateMyInfo(MainWB);
 
             return ServerDT < GrpFight.NextFightDT && ServerDT.AddMinutes(InMinutes + 3) >= GrpFight.NextFightDT && (GFT == GroupFightType.All || GrpFight.NextFightType == GFT) &&
                    (
-                       (match.Groups["Unit"].Value == "tugriki" && Me.Wallet.Money >= Convert.ToInt32(match.Groups["Cost"].Value)) 
+                       (match.Groups["Unit"].Value == "tugriki" && Me.Wallet.Money >= Convert.ToInt32(match.Groups["Cost"].Value))
                     || (match.Groups["Unit"].Value == "ruda" && Me.Wallet.Ore >= Convert.ToInt32(match.Groups["Cost"].Value))
                     || (match.Groups["Unit"].Value == "neft" && Me.Wallet.Oil >= Convert.ToInt32(match.Groups["Cost"].Value))
                    );
@@ -1388,7 +1389,7 @@ namespace Moswar
             BugReport("TimeToStopAtack");
 
             int Timeout = 0;
-            
+
             switch (NT)
             {
                 case NextTimeout.Chain:
@@ -1417,21 +1418,22 @@ namespace Moswar
                             break;
                         case GroupFightType.Group:
                         case GroupFightType.Chaos:
-                        default: Timeout = 7;  //Примерное 7 минут нужно для драки в хаоте.
+                        default:
+                            Timeout = 7;  //Примерное 7 минут нужно для драки в хаоте.
                             break;
-                    }                    
+                    }
                     break;
                 case NextTimeout.OilLeninFight:
                     Timeout = 10;
                     break;
             }
 
-            return (   ((STT == StopTimeoutType.GrpFight || STT == StopTimeoutType.All) && TimeToGoGrpFight(GroupFightType.All, new DateTime(), GrpFight.Price, (NT == NextTimeout.Chain || NT == NextTimeout.Metro || NT == NextTimeout.Rat) ? Timeout : 0))
+            return (((STT == StopTimeoutType.GrpFight || STT == StopTimeoutType.All) && TimeToGoGrpFight(GroupFightType.All, new DateTime(), GrpFight.Price, (NT == NextTimeout.Chain || NT == NextTimeout.Metro || NT == NextTimeout.Rat) ? Timeout : 0))
                     || ((STT == StopTimeoutType.RatHunting || STT == StopTimeoutType.All) && Settings.SearchRat && Settings.SearchRatIgnoreAll && DateTime.Now.AddMinutes(Timeout) >= Me.RatHunting.NextDT && (!Me.RatHunting.Stop || DateTime.Now.AddMinutes(Timeout) >= Me.RatHunting.RestartDT))
                     || ((STT == StopTimeoutType.OilLenin || STT == StopTimeoutType.All) && Settings.GoOilLenin && DateTime.Now.AddMinutes(Timeout) >= Me.OilLeninHunting.RestartDT && !Me.OilLeninHunting.RestartDT.Equals(new DateTime()))
                     || ((STT == StopTimeoutType.Mafia || STT == StopTimeoutType.All) && Settings.GoGroupFightMafia && GrpFight.Mafia.FightFound)
                    ) && !Me.Trauma.Stop;
-        }           
+        }
         private bool WaitDrugEated(WebBrowser WB, HtmlElement HtmlEl)
         {
             BugReport("WaitDrugEated");
@@ -1442,7 +1444,7 @@ namespace Moswar
             if (match.Success)
             {
                 Obj[0] = frmMain.GetJavaVar(WB, "moswar.items['" + match.Value + "'].btn['0'].innerText");
-                if (((string) Obj[0]).Contains("уже")) return true; //Уже использовано, незачем продолжать.; //Выпить / Съесть
+                if (((string)Obj[0]).Contains("уже")) return true; //Уже использовано, незачем продолжать.; //Выпить / Съесть
 
                 string Name = (string)frmMain.GetJavaVar(WB, "moswar.items['" + match.Value + "'].info.title");
                 UpdateStatus("@ " + DateTime.Now + " Кушаю " + Name);
@@ -1473,7 +1475,7 @@ namespace Moswar
                     {
                         frmMain.NavigateURL(MainWB, Settings.ServerURL + "/phone/duels/");
                         IsWBComplete(MainWB);
-                    }                    
+                    }
                     int PageNr = 2;
                     do
                     {
@@ -1497,14 +1499,14 @@ namespace Moswar
                                 }
                             }
                             #endregion
-                        }                        
+                        }
                         #region Листание страничек
                         string[] PageInfo = GetArrClassHtml(MainWB, "$(\"#content .block-rounded .num\");", "innerText");
                         if (PageInfo.Count<string>() == 0 || Convert.ToInt32(PageInfo[PageInfo.Count<string>() - 1]) < PageNr)
                         {
                             //frmMain.NavigateURL(MainWB, Settings.ServerURL + "/phone/duels/" + (Me.ArrDuelsDT == null ? LastDT : Me.ArrDuelsDT[Me.ArrDuelsDT.Count<DateTime>() - 1]).AddDays(-1).ToString("yyyyMMdd") + "/");
                             LastDT = LastDT.AddDays(-1);
-                            frmMain.NavigateURL(MainWB, Settings.ServerURL + "/phone/duels/" + LastDT.ToString("yyyyMMdd") + "/");                            
+                            frmMain.NavigateURL(MainWB, Settings.ServerURL + "/phone/duels/" + LastDT.ToString("yyyyMMdd") + "/");
                             PageNr = 2; //Последняя страницка, переходим на прошлый день!
                         }
                         else frmMain.NavigateURL(MainWB, Settings.ServerURL + "/phone/duels/" + LastDT.ToString("yyyyMMdd") + "/" + PageNr++ + "/"); //else frmMain.NavigateURL(MainWB, Settings.ServerURL + "/phone/duels/" + (Me.ArrDuelsDT == null ? LastDT : Me.ArrDuelsDT[Me.ArrDuelsDT.Count<DateTime>() - 1]).ToString("yyyyMMdd") + "/" + PageNr++ + "/"); //
@@ -1536,7 +1538,7 @@ namespace Moswar
                                     {
                                         Me.Thimbles.StartDT = Convert.ToDateTime(match.Groups["Time"].Value, CultureInfo.CreateSpecificCulture("ru-RU")).AddMinutes(44);
                                         UpdateStatus("~ " + DateTime.Now + " Обнаружен иммунитет до: " + DateTime.Now.Add(Me.Thimbles.StartDT - GetServerTime(MainWB)).ToString("HH:mm:ss") + " (Московское время: " + Me.Thimbles.StartDT.ToString("HH:mm:ss") + ")");
-                                    }                                    
+                                    }
                                     #endregion
                                     #region Заказ в ОК
                                     stcPlayerInfo PI = new stcPlayerInfo { Name = match.Groups["Name"].Value, Level = match.Groups["Lvl"].Value, Id = match.Groups["Id"].Value };
@@ -1545,15 +1547,15 @@ namespace Moswar
                                         string URL = "/huntclub/revenge/" + PI.Id + "/"; //Ссылка на заказ игрока в ОК (Без указания сервера ибо, при мултифрэйме выглядит так: www.moswar.eu//huntclub/revenge/4521/)
                                         frmMain.NavigateURL(MainWB, Settings.ServerURL + URL);
                                         IsWBComplete(MainWB);
-                                        if (frmMain.GetDocumentURL(MainWB).Contains(URL)) 
+                                        if (frmMain.GetDocumentURL(MainWB).Contains(URL))
                                         {
-                                            int RevengeCost = Convert.ToInt32(frmMain.GetDocument(MainWB).GetElementById("hunting-order-form-cost-tugriki").InnerText.Replace(",",""));
+                                            int RevengeCost = Convert.ToInt32(frmMain.GetDocument(MainWB).GetElementById("hunting-order-form-cost-tugriki").InnerText.Replace(",", ""));
                                             UpdateMyInfo(MainWB);
                                             if (frmMain.GetDocument(MainWB).GetElementById("nickname-error").InnerText == null && RevengeCost <= Settings.HCRevengeMaxMoney && Me.Wallet.Money > RevengeCost)
                                             {
                                                 frmMain.InvokeMember(MainWB, frmMain.GetElementsById(MainWB, "form-submit")[1], "click"); //Нажимаем кнопку заказа игрока! nickname-error
                                                 IsWBComplete(MainWB);
-                                                if (frmMain.GetElementsById(MainWB, "alert-title")[1].InnerText.Contains("Wanted!")) UpdateStatus("@ " + DateTime.Now + " Сдал " + PI.Name + "[" + PI.Level + "] в ОК на сосиски!");                                                
+                                                if (frmMain.GetElementsById(MainWB, "alert-title")[1].InnerText.Contains("Wanted!")) UpdateStatus("@ " + DateTime.Now + " Сдал " + PI.Name + "[" + PI.Level + "] в ОК на сосиски!");
                                             }
                                         }
                                     }
@@ -1564,7 +1566,7 @@ namespace Moswar
                             #endregion
                             break;
                         }
-                    }                    
+                    }
                     break;
                 case ImmunAction.Tooth:
                     BugReport("CheckImmun.Tooth");
@@ -1579,7 +1581,7 @@ namespace Moswar
                     break;
             }
             return false;
-        }       
+        }
         private bool LevelUP(WebBrowser WB)
         {
             BugReport("LevelUP");
@@ -1604,7 +1606,7 @@ namespace Moswar
             {
                 case SafeAction.Check:
                     if (!frmMain.GetDocumentURL(MainWB).EndsWith(Settings.ServerURL + "/home/")) GoToPlace(MainWB, Place.Home);
-                    
+
                     HtmlElementCollection HC = frmMain.GetDocument(MainWB).GetElementsByTagName("Table")[0].GetElementsByTagName("td")[1].GetElementsByTagName("IMG");
                     if (HC.Count >= 1) //Есть ли картинка сейфа?
                     {
@@ -1615,7 +1617,7 @@ namespace Moswar
                             Me.Safe.LastDT = Convert.ToDateTime(match.Value, CultureInfo.CreateSpecificCulture("ru-RU"));
                             BugReport("@ Сейф годен до: " + match.Value);
                         }
-                      }
+                    }
                     else //сейфа нет
                     {
                         UpdateMyInfo(MainWB);
@@ -1628,7 +1630,7 @@ namespace Moswar
                     {
                         Me.Safe.LastDT = GetServerTime(MainWB).AddHours(1); //Инициализация, если не получится считать время годности сейфа
                         Safe(SafeAction.Check);
-                    } 
+                    }
                     else return false; //Не удалось купить видимо мало ресурсов ...
                     break;
             }
@@ -1639,9 +1641,9 @@ namespace Moswar
             BugReport("TaborPet");
 
             switch (TPA)
-            { 
+            {
                 case TaborPetAction.Check:
-                    GoToPlace(MainWB, Place.Camp);                    
+                    GoToPlace(MainWB, Place.Camp);
                     HtmlElement HtmlEl = frmMain.GetDocument(MainWB).GetElementById("divAutoIncome");
                     if (HtmlEl.Style == null || Regex.IsMatch(HtmlEl.Style, "display: block", RegexOptions.IgnoreCase)) //Блок виден, только тогда, когда собачка накормленна (FIX: ибо сейчас там стоит дата из будующего, хотя собака не кормленна)
                     {
@@ -1651,8 +1653,8 @@ namespace Moswar
                         {
                             UpdateStatus("* " + DateTime.Now + " «Гречка» клянчил мёд, но он же собака а не медведь, видимо ещё сыт.");
                             return true; //Порядок, время следуюшей оплаты известно.
-                        }                    
-                    }                    
+                        }
+                    }
                     if (Settings.FeedTaborPet) return FeedTaborPet(TaborPetAction.Feed);
                     break;
                 case TaborPetAction.Feed:
@@ -1661,7 +1663,7 @@ namespace Moswar
                     foreach (Match match in Regex.Matches(frmMain.GetDocument(MainWB).GetElementById("divAutoPrice").InnerHtml, "class=\"?(?<Unit>(tugriki|ruda|neft|med))\"?[>](?<Cost>([0-9])+)"))
                     {
                         switch (match.Groups["Unit"].Value)
-                        { 
+                        {
                             case "tugriki":
                                 Me.TaborPet.PriceTugriki = Convert.ToInt32(match.Groups["Cost"].Value);
                                 break;
@@ -1673,8 +1675,8 @@ namespace Moswar
                                 break;
                             case "med":
                                 Me.TaborPet.PriceMed = Convert.ToInt32(match.Groups["Cost"].Value);
-                                break;                
-                        } 
+                                break;
+                        }
                     }
                     #endregion
                     if (Me.TaborPet.PriceMed == 0 && Me.TaborPet.PriceTugriki <= Me.Wallet.Money && Me.TaborPet.PriceOre <= Me.Wallet.Ore && Me.TaborPet.PriceOil <= Me.Wallet.Oil)
@@ -1683,7 +1685,7 @@ namespace Moswar
                         frmMain.GetDocument(MainWB).GetElementById("buttonAutoGold").InvokeMember("onclick");
                         IsAjaxCompleteEx(MainWB, "spanAutoTill"); //Появление срока годности. //IsWBComplete(MainWB);
                         return FeedTaborPet(TaborPetAction.Check);
-                    }                    
+                    }
                     break;
             }
             return false;
@@ -1695,11 +1697,11 @@ namespace Moswar
             Match match;
 
             switch (SAA)
-            { 
-              case  SovetAgitatorAction.Check:
+            {
+                case SovetAgitatorAction.Check:
                     GoToPlace(MainWB, Place.Sovet, "/career");
                     HtmlElement HtmlEl = frmMain.GetDocument(MainWB).GetElementById("divAutoIncome");
-                    if (HtmlEl != null && (match = Regex.Match(HtmlEl.InnerText,"(?<=Активно до: )([0-9.])+")).Success) Me.SovetAgitator.LastDT = Convert.ToDateTime(match.Value, CultureInfo.CreateSpecificCulture("ru-RU")).AddDays(1); //Срок оплаты показывается по день включительно, соответсвено истекает в 00:00 следующего дня.
+                    if (HtmlEl != null && (match = Regex.Match(HtmlEl.InnerText, "(?<=Активно до: )([0-9.])+")).Success) Me.SovetAgitator.LastDT = Convert.ToDateTime(match.Value, CultureInfo.CreateSpecificCulture("ru-RU")).AddDays(1); //Срок оплаты показывается по день включительно, соответсвено истекает в 00:00 следующего дня.
                     if (Me.SovetAgitator.LastDT >= GetServerTime(MainWB))
                     {
                         UpdateStatus("* " + DateTime.Now + " Братва! Работаем, агитируем, мёд не клянчим, не расслабляемся, всё ведь уплачено!");
@@ -1708,41 +1710,41 @@ namespace Moswar
                     if (frmMain.GetDocument(MainWB).GetElementById("divAutoPrice") == null)
                     {
                         UpdateStatus("# " + DateTime.Now + " Агитаторы похоже на обеде, зайду позднее!");
-                        Me.SovetAgitator.LastDT = GetServerTime(MainWB).AddMinutes(new Random().Next(40,180));
+                        Me.SovetAgitator.LastDT = GetServerTime(MainWB).AddMinutes(new Random().Next(40, 180));
                         return false;
                     }
                     if (Settings.SovetBuyAgitator) return SovetBuyAgitator(SovetAgitatorAction.Buy);
-                  break;
+                    break;
                 case SovetAgitatorAction.Buy:
-                  UpdateMyInfo(MainWB);
-                  #region Считываем цену агитирования
-                  foreach (Match m in Regex.Matches(frmMain.GetDocument(MainWB).GetElementById("divAutoPrice").InnerHtml, "class=\"?(?<Unit>(tugriki|ruda|neft|med))\"?[>](?<Cost>([0-9])+)"))
-                  {
-                      switch (m.Groups["Unit"].Value)
-                      {
-                          case "tugriki":
-                              Me.SovetAgitator.PriceTugriki = Convert.ToInt32(m.Groups["Cost"].Value);
-                              break;
-                          case "ruda":
-                              Me.SovetAgitator.PriceOre = Convert.ToInt32(m.Groups["Cost"].Value);
-                              break;
-                          case "oil":
-                              Me.SovetAgitator.PriceOil = Convert.ToInt32(m.Groups["Cost"].Value);
-                              break;
-                          case "med":
-                              Me.SovetAgitator.PriceMed = Convert.ToInt32(m.Groups["Cost"].Value);
-                              break;
-                      }
-                  }
-                  #endregion
-                  if (Me.SovetAgitator.PriceMed == 0 && Me.SovetAgitator.PriceTugriki <= Me.Wallet.Money && Me.SovetAgitator.PriceOre <= Me.Wallet.Ore && Me.SovetAgitator.PriceOil <= Me.Wallet.Oil)
-                  {
-                      UpdateStatus("@ " + DateTime.Now + " Мальчики, вот бабло... рассредоточились, проталкиваем мою кандидатуру!");
-                      frmMain.GetDocument(MainWB).GetElementById("buttonAutoGold").InvokeMember("onclick");
-                      IsAjaxCompleteEx(MainWB, "divAutoIncome"); //Появление срока годности. //IsWBComplete(MainWB);
-                      return SovetBuyAgitator(SovetAgitatorAction.Check);
-                  }
-                  break;
+                    UpdateMyInfo(MainWB);
+                    #region Считываем цену агитирования
+                    foreach (Match m in Regex.Matches(frmMain.GetDocument(MainWB).GetElementById("divAutoPrice").InnerHtml, "class=\"?(?<Unit>(tugriki|ruda|neft|med))\"?[>](?<Cost>([0-9])+)"))
+                    {
+                        switch (m.Groups["Unit"].Value)
+                        {
+                            case "tugriki":
+                                Me.SovetAgitator.PriceTugriki = Convert.ToInt32(m.Groups["Cost"].Value);
+                                break;
+                            case "ruda":
+                                Me.SovetAgitator.PriceOre = Convert.ToInt32(m.Groups["Cost"].Value);
+                                break;
+                            case "oil":
+                                Me.SovetAgitator.PriceOil = Convert.ToInt32(m.Groups["Cost"].Value);
+                                break;
+                            case "med":
+                                Me.SovetAgitator.PriceMed = Convert.ToInt32(m.Groups["Cost"].Value);
+                                break;
+                        }
+                    }
+                    #endregion
+                    if (Me.SovetAgitator.PriceMed == 0 && Me.SovetAgitator.PriceTugriki <= Me.Wallet.Money && Me.SovetAgitator.PriceOre <= Me.Wallet.Ore && Me.SovetAgitator.PriceOil <= Me.Wallet.Oil)
+                    {
+                        UpdateStatus("@ " + DateTime.Now + " Мальчики, вот бабло... рассредоточились, проталкиваем мою кандидатуру!");
+                        frmMain.GetDocument(MainWB).GetElementById("buttonAutoGold").InvokeMember("onclick");
+                        IsAjaxCompleteEx(MainWB, "divAutoIncome"); //Появление срока годности. //IsWBComplete(MainWB);
+                        return SovetBuyAgitator(SovetAgitatorAction.Check);
+                    }
+                    break;
             }
             return true;
         }
@@ -1760,7 +1762,7 @@ namespace Moswar
             }
             Me.Azazella.PlayTillDT = DateTime.Now.Add(TSTimeout).AddSeconds(-10); //Играть максимум до этого времени!
             #endregion
-        ReTry:
+            ReTry:
             IsWBComplete(MainWB);
             if (!frmMain.GetDocumentURL(MainWB).EndsWith("/gypsy/")) return;
             object Info = frmMain.GetJavaVar(MainWB, "$(\"#content .log-wrapper .amulet-reward\").text()");
@@ -1769,38 +1771,38 @@ namespace Moswar
                 frmMain.GetJavaVar(MainWB, "Gypsy.feelLucky();");
                 IsWBComplete(MainWB);
                 if (Settings.AzazellaFastPlay) frmMain.NavigateURL(MainWB, Settings.ServerURL + "/camp/gypsy/");
-                else Wait(7000, 8000);               
+                else Wait(7000, 8000);
                 goto ReTry;
             }
-            if (Convert.ToInt32(Info) > Settings.minAzazellaGold && !Me.Azazella.EnoughGold) 
+            if (Convert.ToInt32(Info) > Settings.minAzazellaGold && !Me.Azazella.EnoughGold)
             {
                 UpdateStatus("$ " + DateTime.Now + " Ванга, погадай мне! Вот твоё золотишко!");
                 Me.Azazella.EnoughGold = true; //Запоминаем, что денег хватало, если прибежим на след. паузе доигрывать...
-            }            
+            }
 
             if (Me.Azazella.EnoughGold)
             {
                 //Учитываем % падения метеорита
                 Me.Azazella.TreasurePrc = (frmMain.GetDocument(MainWB).GetElementById("divMeteorProgress").Style != "display: none;")
                     ? Convert.ToInt32(Regex.Match((string)frmMain.GetJavaVar(MainWB, "$(\"#divMeteorProgress .percent\").attr(\"style\")"), "([0-9])+").Value)
-                    : 0;                
+                    : 0;
                 Me.Azazella.NextDT = Settings.AzazellaTreasure ? DateTime.Now.AddSeconds((double)(Settings.AzazellaTreasureChance - Me.Azazella.TreasurePrc) * 5) : DateTime.Now.AddSeconds(30);
 
-                if (Settings.AzazellaTreasure && Me.Azazella.NextDT > DateTime.Now) 
+                if (Settings.AzazellaTreasure && Me.Azazella.NextDT > DateTime.Now)
                 {
                     UpdateStatus("@ " + DateTime.Now + " Не Ванга, вертай всё в зад! Рано ещё, метеорит вот только на " + Me.Azazella.TreasurePrc + "% показался!");
                     return; //Играть ещё рановато, слишком низкий %.
-                }                
+                }
 
                 if (DateTime.Now >= Me.Azazella.PlayTillDT && !Settings.AzazellaTreasure) //Не давать сбежать, если шанс падения метеорита более 95% 
                 {
                     UpdateStatus("@ " + DateTime.Now + " Блин время поджало... может ещё забегу!");
-                    return;                
+                    return;
                 }
 
                 if (Settings.AzazellaTreasure) UpdateStatus("$ " + DateTime.Now + " Ванга, поспеши! Шанс падения то уже " + Me.Azazella.TreasurePrc + "%, а это уже не шутка!");
 
-                if (Settings.PlayAzazella75 && Convert.ToInt32(Info) > 750) 
+                if (Settings.PlayAzazella75 && Convert.ToInt32(Info) > 750)
                 {
                     frmMain.InvokeMember(MainWB, frmMain.GetDocument(MainWB).GetElementById("startGameButton1"), "click"); //Играем за 75 золота
                     goto ReTry;
@@ -1809,31 +1811,31 @@ namespace Moswar
                 {
                     frmMain.InvokeMember(MainWB, frmMain.GetDocument(MainWB).GetElementById("startGameButton0"), "click"); //Играем за 25 золота
                     goto ReTry;
-                }               
+                }
             }
             Me.Azazella.EnoughGold = false; //Всё, золота слишком мало!
             Me.Azazella.NextDT = DateTime.Now.AddHours(6); //Запоминаем, время когда кончилось золото, зайдём не ранее чем через 6 часов!       
         }
         private bool PigProtection(PigProtectionAction PPA)
         {
-            BugReport("PigProtection");            
+            BugReport("PigProtection");
 
             if (!frmMain.GetDocumentURL(MainWB).EndsWith("/home/")) GoToPlace(MainWB, Place.Home);
             switch (PPA)
-            { 
+            {
                 case PigProtectionAction.Check:
                     Match match;
                     Me.PigProtection.Stop = true; //Больше не нужно проверять.
                     foreach (HtmlElement H in frmMain.GetDocument(MainWB).GetElementsByTagName("form"))
                     {
-                        if (H.InnerText != null && (match = Regex.Match(H.InnerText, "Защита от подарков с негативными эффектами включена до(?<Date>([0-9 .:])+)[.]")).Success) 
+                        if (H.InnerText != null && (match = Regex.Match(H.InnerText, "Защита от подарков с негативными эффектами включена до(?<Date>([0-9 .:])+)[.]")).Success)
                         {
                             Me.PigProtection.LastDT = Convert.ToDateTime(match.Groups["Date"].Value, CultureInfo.CreateSpecificCulture("ru-RU")).AddMinutes(1);
                             UpdateStatus("# " + DateTime.Now + " Внимание: обнаружил защиту от зайцев, кто такие не знаю, но работает до: " + Me.PigProtection.LastDT + " (Московское время)");
                             return true;
-                        } 
+                        }
                     }
-                    if (Me.PigProtection.LastDT < GetServerTime(MainWB) && Settings.PigProtection) PigProtection(PigProtectionAction.Pay);                   
+                    if (Me.PigProtection.LastDT < GetServerTime(MainWB) && Settings.PigProtection) PigProtection(PigProtectionAction.Pay);
                     break;
                 case PigProtectionAction.Pay:
                     HtmlElement HtmlEl;
@@ -1851,14 +1853,14 @@ namespace Moswar
                         }
                     }
                     else Me.PigProtection.LastDT = GetServerTime(MainWB).AddMinutes(15);
-                    break;            
+                    break;
             }
             return false;
         }
         private bool Major(MajorAction MA)
         {
             switch (MA)
-            { 
+            {
                 case MajorAction.Check:
                     GoToPlace(MainWB, Place.Stash);
                     Match match = Regex.Match((string)frmMain.GetJavaVar(MainWB, "$(\"#content .stash-major\").text()"), "Ваш статус мажора закончится(([\\s])+)?(?<Time>([0-9 .:])+)[.]");
@@ -1899,23 +1901,23 @@ namespace Moswar
                 if (!Regex.IsMatch(frmMain.GetDocumentURL(MainWB), "/player/$")) GoToPlace(MainWB, Place.Player);
                 HtmlEl = frmMain.GetDocument(MainWB).GetElementById("inventory-antisafe-btn"); //Паяльник
                 if (HtmlEl != null && Regex.Match(HtmlEl.OuterHtml, "(?<=checkbox.*)([0-9])(?=[&]quot)").Value == (Use && !Expert.DoNotUseAntiSafe ? "0" : "1"))  //checkbox&quot;,&quot;v&quot;:&quot;0&quot;
-                {                    
-                    frmMain.GetJavaVar(MainWB, "$.ajax({url: \"/player/json/item-special/switch-weapon/" + HtmlEl.GetAttribute("data-id") + "/\", type: \"post\", data: {\"inventory\": " + HtmlEl.GetAttribute("data-id") + ", \"unlocked\": " + (Use ? "1" : "0") + "}, dataType: \"json\"});");                   
+                {
+                    frmMain.GetJavaVar(MainWB, "$.ajax({url: \"/player/json/item-special/switch-weapon/" + HtmlEl.GetAttribute("data-id") + "/\", type: \"post\", data: {\"inventory\": " + HtmlEl.GetAttribute("data-id") + ", \"unlocked\": " + (Use ? "1" : "0") + "}, dataType: \"json\"});");
                     Wait(1000, 1500);
                 }
                 HtmlEl = frmMain.GetDocument(MainWB).GetElementById("inventory-utjug-btn"); //Утюг
                 if (HtmlEl != null && Regex.Match(HtmlEl.OuterHtml, "(?<=checkbox.*)([0-9])(?=[&]quot)").Value == (Use && !Expert.DoNotUseIron ? "0" : "1"))  //checkbox&quot;,&quot;v&quot;:&quot;0&quot;
-                {                    
+                {
                     frmMain.GetJavaVar(MainWB, "$.ajax({url: \"/player/json/item-special/switch-weapon/" + HtmlEl.GetAttribute("data-id") + "/\", type: \"post\", data: {\"inventory\": " + HtmlEl.GetAttribute("data-id") + ", \"unlocked\": " + (Use ? "1" : "0") + "}, dataType: \"json\"});");
                     Wait(1000, 1500);
                 }
                 HtmlEl = frmMain.GetDocument(MainWB).GetElementById("inventory-angle_grinder-btn"); //Болгарка
                 if (HtmlEl != null && Regex.Match(HtmlEl.OuterHtml, "(?<=checkbox.*)([0-9])(?=[&]quot)").Value == (Use && !Expert.DoNotUseAngleGrinder ? "0" : "1"))  //checkbox&quot;,&quot;v&quot;:&quot;0&quot;
-                {                    
+                {
                     frmMain.GetJavaVar(MainWB, "$.ajax({url: \"/player/json/item-special/switch-weapon/" + HtmlEl.GetAttribute("data-id") + "/\", type: \"post\", data: {\"inventory\": " + HtmlEl.GetAttribute("data-id") + ", \"unlocked\": " + (Use ? "1" : "0") + "}, dataType: \"json\"});");
                     Wait(1000, 1500);
                 }
-            }            
+            }
         }
         private void IsAjaxCompleteEx(WebBrowser WB, string WaitForId, bool ShowId = true)
         {
@@ -1945,12 +1947,12 @@ namespace Moswar
             }
             while (!frmMain.IsBusy(WB) && Info != null && Info.Contains("none") && MonitorDT > DateTime.Now);
             if (DebugMode) BugReport("* Ajax Loading Started");
-            
+
             do
             {
                 if (WB.InvokeRequired) Thread.Sleep(100);
                 else Application.DoEvents();
-                Info = (string)frmMain.GetJavaVar(WB, "$(\".loading-top\").attr(\"style\");");                
+                Info = (string)frmMain.GetJavaVar(WB, "$(\".loading-top\").attr(\"style\");");
             }
             while ((frmMain.IsBusy(WB) || Info == null || Info.Contains("block")) && MonitorDT > DateTime.Now);
             if (DebugMode) BugReport("* Ajax Loading Completed");
@@ -1961,8 +1963,8 @@ namespace Moswar
         }
         private bool Agent(AgentAction AA)
         {
-            BugReport("Agent"); 
-            
+            BugReport("Agent");
+
             GoToPlace(MainWB, Place.Police);
 
             #region Есть Агенты?
@@ -1970,7 +1972,7 @@ namespace Moswar
             if (HtmlEl == null) //Побои Агентов завершены!
             {
                 Me.AgentHunting.LastDT = GetServerTime(MainWB);
-                Me.AgentHunting.StartDT = Me.AgentHunting.LastDT.AddDays(1).Date;                
+                Me.AgentHunting.StartDT = Me.AgentHunting.LastDT.AddDays(1).Date;
                 Me.AgentHunting.Stop = true;
                 return false;
             }
@@ -2032,7 +2034,7 @@ namespace Moswar
                         return true;
                     }
                     else
-                    {                       
+                    {
                         //Погон или 19 мёда одна звезда + за каждую последующую еше по 9 мёда.
                         if (Me.Player.Level >= 5 && (HC.Count == 2) || (Settings.WerewolfPrice != 0 && Me.Wallet.Honey >= Settings.WerewolfPrice * 10 + Settings.WerewolfPrice * 9)) return Werewolf(WerewolfAction.Pay); //Покупка оборотня!                            
                         else { Me.WerewolfHunting.Stop = Me.WerewolfHunting.StartDT <= GetServerTime(MainWB); Me.WerewolfHunting.StartDT = GetServerTime(MainWB).AddHours(1); } //Сейчас нет ресурсов, перепроверить через час!
@@ -2041,7 +2043,7 @@ namespace Moswar
                 case WerewolfAction.Pay:
                     Me.Player.Level = Convert.ToInt32((string)frmMain.GetJavaVar(MainWB, "player['level']")); //Считываем мой настоящий уровень, ибо я сейчас всё ещё могу быть оборотнем!
                     frmMain.GetDocument(MainWB).GetElementById("werewolfLevel").SetAttribute("value", (Me.Player.Level - Settings.WerewolfLevel).ToString()); //Устанавливаем требуемый уровень оборотня.
-                    
+
                     HC = frmMain.GetDocument(MainWB).GetElementsByTagName("FORM")[2].GetElementsByTagName("Button");
                     if (Settings.WerewolfPrice == 0 && HC.Count != 2) return false; //На всякий пожарный ещё раз убеждаемся, что у нас есть погон перед покупкой оборотня!
 
@@ -2059,10 +2061,10 @@ namespace Moswar
                     }
                     #endregion
                     Me.WerewolfHunting.Val = Regex.Matches((string)frmMain.GetJavaVar(MainWB, "$(\"#content .borderdata\").html()"), "icon-star-filled").Count; //Нужно проверить                                    
-                    return Werewolf(WerewolfAction.Check);                    
+                    return Werewolf(WerewolfAction.Check);
             }
             return false;
-        }       
+        }
         private void HCStartMultiThread()
         {
             do
@@ -2110,7 +2112,7 @@ namespace Moswar
             #endregion
             if (WB == null) return false; //Функция запущена не из вспомогательного потока, уходим!
 
-        ReTry:
+            ReTry:
             if (AttackRetries > 15) return false;
             #region Слишком мало жизней для драк, прервать для лечения
             if (Me.HCHunting.Search ? IsHPLow(WB, 99, false) : false)
@@ -2167,7 +2169,7 @@ namespace Moswar
             BugReport("Contact");
 
             Regex regex;
-            HtmlElement HtmlEl;            
+            HtmlElement HtmlEl;
             string URL, CType, Txt;
             int iMaxPage, iCurrPage;
 
@@ -2259,9 +2261,9 @@ namespace Moswar
                         HtmlEl = frmMain.GetDocument(WB).GetElementById("content");
                         //Если 1-ый элемент с конца стрелка -> страничка не одна!
                         if (HtmlEl.All[HtmlEl.All.Count - 1].GetAttribute("className") == "arrow") iMaxPage = Convert.ToInt32(HtmlEl.All[HtmlEl.All.Count - 3].InnerText);  //3-ий эллемент с конца -> кол-во страниц. 
-                    }              
+                    }
                     break;
-                case ContactAction.DeleteClan:                    
+                case ContactAction.DeleteClan:
                     #region Это первый вход?
                     if (frmMain.GetDocumentURL(WB).IndexOf(URL) == -1) //Это первый вход?
                     {
@@ -2306,7 +2308,7 @@ namespace Moswar
                         HtmlEl = frmMain.GetDocument(WB).GetElementById("content");
                         //Если 1-ый элемент с конца стрелка -> страничка не одна!
                         if (HtmlEl.All[HtmlEl.All.Count - 1].GetAttribute("className") == "arrow") iMaxPage = Convert.ToInt32(HtmlEl.All[HtmlEl.All.Count - 3].InnerText);  //3-ий эллемент с конца -> кол-во страниц. 
-                    }              
+                    }
                     break;
                 case ContactAction.DeleteAll:
                     GoToPlace(WB, Place.Contacts);
@@ -2527,7 +2529,7 @@ namespace Moswar
                             x.Endurance[0] += x.Endurance[0] / 100;
                             x.Dexterity[0] += x.Dexterity[0] / 100;
                             x.Cunning[0] += x.Cunning[0] / 100;
-                            x.Attentiveness[0] += x.Attentiveness[0] / 100; 
+                            x.Attentiveness[0] += x.Attentiveness[0] / 100;
                             x.Charisma[0] += x.Charisma[0] / 100;
                             sRegex = Regex.Replace(sRegex, "Монетка с Фейерабендом М10[|]", "");
                             break;
@@ -2604,7 +2606,7 @@ namespace Moswar
                             sRegex = Regex.Replace(sRegex, "Осколок метеорита М10[|]?", "");
                             break;
                         case "Герб Великой Страны М10":
-                            x.Health[0] += x.Health[0] / 33;                            
+                            x.Health[0] += x.Health[0] / 33;
                             x.Cunning[0] += x.Cunning[0] / 33;
                             x.Attentiveness[0] += x.Attentiveness[0] / 100;
                             sRegex = Regex.Replace(sRegex, "Герб Великой Страны М10[|]?", "");
@@ -2621,12 +2623,12 @@ namespace Moswar
                 P.Charisma[0] += x.Charisma[0];
             }
             #endregion
-            
+
             sRegex = Regex.Replace(sRegex, " (M|М)10", ""); //Коллекции у которых не нашлось М10 ("М" Латинская, в первых коллекциях, "М" Русская в последних коллекциях)
 
             sRegex += (sRegex != "" ? "|" : "") + "Консоль Тетрис|Веник|Светофор|Штурвал|Арфа|Морская ракушка|Электрочайник|Матрёшка|Ёлка|Че Гевара|Лидерская трибуна";
             sRegex = "(?<Name>(" + sRegex + "))( .(?<Rang>[0-9]))?";
-  
+
             #region Обычные ставки
             regex = new Regex(sRegex);
             matches = regex.Matches(frmMain.GetDocumentHtmlTextEx(WB));
@@ -2686,7 +2688,7 @@ namespace Moswar
                         break;
                     case "Золотая монета":
                         P.Cunning[0] += 5; P.Charisma[0] += 14;
-                        P.Charisma[0] += matches[i].Groups["Rang"].Success ? Convert.ToInt32(matches[i].Groups["Rang"].Value) : 0; 
+                        P.Charisma[0] += matches[i].Groups["Rang"].Success ? Convert.ToInt32(matches[i].Groups["Rang"].Value) : 0;
                         break;
                     case "Электрочайник":
                         P.Health[0]++; P.Dexterity[0]++; P.Strength[0]++; P.Endurance[0]++; P.Cunning[0]++; P.Attentiveness[0]++; P.Charisma[0]++;
@@ -2733,7 +2735,7 @@ namespace Moswar
                             P.Cunning[0] += x / 2 + (x % 2);
                             P.Attentiveness[0] += x / 2 + (x % 2);
                             P.Charisma[0] += x / 2;
-                        }                        
+                        }
                         break;
                     case "Спутник":
                         P.Health[0] += 3; P.Dexterity[0] += 3; P.Strength[0] += 3; P.Endurance[0] += 3; P.Cunning[0] += 3; P.Attentiveness[0] += 3; P.Charisma[0] += 3;
@@ -2818,7 +2820,7 @@ namespace Moswar
                         break;
                     case "Двуглавый орел":
                         P.Health[0] += 7;
-                        P.Health[0] += matches[i].Groups["Rang"].Success ? Convert.ToInt32(matches[i].Groups["Rang"].Value) : 0; 
+                        P.Health[0] += matches[i].Groups["Rang"].Success ? Convert.ToInt32(matches[i].Groups["Rang"].Value) : 0;
                         break;
                     case "Золотой бюст Вождя":
                         P.Endurance[0] += 7; P.Health[0] += 7;
@@ -2922,7 +2924,7 @@ namespace Moswar
                         break;
                     case "Монетка с Фейерабендом":
                         P.Dexterity[0] += 8;
-                        P.Dexterity[0] += matches[i].Groups["Rang"].Success ? Convert.ToInt32(matches[i].Groups["Rang"].Value) : 0; 
+                        P.Dexterity[0] += matches[i].Groups["Rang"].Success ? Convert.ToInt32(matches[i].Groups["Rang"].Value) : 0;
                         break;
                     case "Фирменный знак":
                         P.Health[0] += 7;
@@ -2959,13 +2961,13 @@ namespace Moswar
                         i++; //В описании самой Регалии снова упоминается "Золотая цепуха" он следущий в матчез, перепрыгиваем!
                         break;
                     case "Магический шар":
-                        P.Cunning[0] += 5; P.Attentiveness[0] +=5; P.Charisma[0] +=5;
+                        P.Cunning[0] += 5; P.Attentiveness[0] += 5; P.Charisma[0] += 5;
                         P.Cunning[0] += matches[i].Groups["Rang"].Success ? 2 * Convert.ToInt32(matches[i].Groups["Rang"].Value) : 0;
                         P.Attentiveness[0] += matches[i].Groups["Rang"].Success ? 2 * Convert.ToInt32(matches[i].Groups["Rang"].Value) : 0;
                         P.Charisma[0] += matches[i].Groups["Rang"].Success ? 2 * Convert.ToInt32(matches[i].Groups["Rang"].Value) : 0;
                         break;
                     case "Модель спирали ДНК":
-                        P.Health[0] += 3; P.Strength[0] += 1; P.Endurance[0] +=3;
+                        P.Health[0] += 3; P.Strength[0] += 1; P.Endurance[0] += 3;
                         P.Health[0] += matches[i].Groups["Rang"].Success ? 2 * Convert.ToInt32(matches[i].Groups["Rang"].Value) : 0;
                         P.Strength[0] += matches[i].Groups["Rang"].Success ? Convert.ToInt32(matches[i].Groups["Rang"].Value) : 0;
                         P.Endurance[0] += matches[i].Groups["Rang"].Success ? 2 * Convert.ToInt32(matches[i].Groups["Rang"].Value) : 0;
@@ -3013,7 +3015,7 @@ namespace Moswar
                                 case 8: P.Dexterity[0] += 17; P.Attentiveness[0] += 13; break;
                                 case 9: P.Dexterity[0] += 19; P.Attentiveness[0] += 22; break;
                             }
-                        }                   
+                        }
                         break;
                     case "Ручной медведь":
                         P.Strength[0] += 8; P.Endurance[0] += 8;
@@ -3031,7 +3033,7 @@ namespace Moswar
                                 case 8: P.Strength[0] += 12; P.Endurance[0] += 13; break;
                                 case 9: P.Strength[0] += 14; P.Endurance[0] += 14; break;
                             }
-                        }                        
+                        }
                         break;
                     case "Осколок метеорита":
                         P.Health[0] += 1; P.Dexterity[0] += 1; P.Strength[0] += 1; P.Endurance[0] += 1; P.Cunning[0] += 1; P.Attentiveness[0] += 1;
@@ -3049,15 +3051,15 @@ namespace Moswar
                                 case 8: P.Health[0] += 3; P.Dexterity[0] += 2; P.Strength[0] += 3; P.Endurance[0] += 3; P.Cunning[0] += 3; P.Attentiveness[0] += 2; break;
                                 case 9: P.Health[0] += 3; P.Dexterity[0] += 3; P.Strength[0] += 3; P.Endurance[0] += 3; P.Cunning[0] += 3; P.Attentiveness[0] += 3; break;
                             }
-                        }                        
+                        }
                         break;
                     case "Герб Великой Страны":
                         P.Health[0] += 6; P.Cunning[0] += 6; P.Attentiveness[0] += 1;
                         if (matches[i].Groups["Rang"].Success)
                         {
                             x = Convert.ToInt32(matches[i].Groups["Rang"].Value);
-                            P.Health[0] += x * 2; 
-                            P.Cunning[0] += x * 2; 
+                            P.Health[0] += x * 2;
+                            P.Cunning[0] += x * 2;
                             P.Attentiveness[0] += x;
                         }
                         break;
@@ -3067,8 +3069,8 @@ namespace Moswar
         }
         private void HideMeFromHC()
         {
-            BugReport("HideMeFromHC");            
-            
+            BugReport("HideMeFromHC");
+
             UpdateMyInfo(MainWB);
             UpdateStatus("@ " + DateTime.Now + " Похоже скакалка на сегодня сломалась ... нас заказали!");
             Me.Wanted = true;
@@ -3078,7 +3080,7 @@ namespace Moswar
                 if (Settings.WantedGoMC) MC(Settings.MCWorkTime);
                 CheckHealthEx(0, 0, Settings.HealPet50, Settings.HealPet100); //Проверка всё ли ешё заказан? и по 0% дабы меня не лечил, только пэта!
             } while (Me.Wanted && Settings.WantedGoMC);
-        }        
+        }
         private void CheckForDayPrize() //OK
         {
             BugReport("CheckForDayPrize");
@@ -3101,7 +3103,7 @@ namespace Moswar
                             #region Забираем вознаграждение, если можем.
                             if (!Prize.Equals(""))
                             {
-                                frmMain.InvokeScript(MainWB, "alleySovetTakeDayPrize", new object[] { Prize } );
+                                frmMain.InvokeScript(MainWB, "alleySovetTakeDayPrize", new object[] { Prize });
                                 IsWBComplete(MainWB); //IsAjaxComplete(MainWB);
                             }
                             #endregion
@@ -3303,14 +3305,14 @@ namespace Moswar
         private void CheckForUsableItems()
         {
             BugReport("CheckForUsableItems");
-            
+
             Match match;
-            MatchCollection matches;            
+            MatchCollection matches;
             TimeSpan MaxTS = new TimeSpan(new Random().Next(2, 7), 0, 0);
             DateTime ServerDT = GetServerTime(MainWB);
             int RepeatTimes;
 
-            if (!frmMain.GetDocumentURL(MainWB).EndsWith("/player/")) GoToPlace(MainWB, Place.Player);           
+            if (!frmMain.GetDocumentURL(MainWB).EndsWith("/player/")) GoToPlace(MainWB, Place.Player);
             string[] ArrInfo = GetArrClassHtml(MainWB, "$(\"#content .equipment-cell .object-thumbs .object-thumb\");", "innerHTML");
 
             RepeatTimes = 0; //Обнуление
@@ -3330,10 +3332,10 @@ namespace Moswar
                         MobilePhone(MobilePhoneAction.MafiaTrade);
                     }
                     break; //Выходим, нет смысла дальше листать
-                }                
+                }
             }
 
-            if (!frmMain.GetDocumentURL(MainWB).EndsWith("/player/")) GoToPlace(MainWB, Place.Player); 
+            if (!frmMain.GetDocumentURL(MainWB).EndsWith("/player/")) GoToPlace(MainWB, Place.Player);
             RepeatTimes = 0; //Обнуление
             HtmlElement HtmlEl = frmMain.GetDocument(MainWB).GetElementById("inventory-stat_stimulator-btn"); //Пельмешка
             if (HtmlEl != null && !Expert.DoNotEatPelmeni)
@@ -3346,8 +3348,8 @@ namespace Moswar
                 for (int i = 0; i < RepeatTimes; i++)
                 {
                     UpdateStatus("@ " + DateTime.Now + " Ой а пельмешки то почти протухли, да пофиг, съем под водку!");
-                    WaitDrugEated(MainWB, HtmlEl); 
-                }       
+                    WaitDrugEated(MainWB, HtmlEl);
+                }
             }
             Me.Events.NextItemCheckDT = ServerDT.Add(new TimeSpan(1, new Random().Next(0, 30), new Random().Next(0, 60)));
         }
@@ -3426,7 +3428,7 @@ namespace Moswar
                 Item.Title = (string)frmMain.GetJavaVar(MainWB, "m.items['" + Item.ItemID + "'].info.title");
                 Info = frmMain.GetJavaVar(MainWB, "m.items['" + Item.ItemID + "'].info.content");
                 Item.ItemType = stcBagFightItem.DetermineType((string)Info);
-                if (Item.ItemType == FightItemType.None) 
+                if (Item.ItemType == FightItemType.None)
                     continue; // Пропускаем неизвестный предмет
                 matches = Regex.Matches((string)Info, "((?<Count>([0-9])+) шт. до (?<Date>([0-9 .:])+))|Срок годности: (?<Date>([0-9 .:])+)"); //Когда все предметы пропадают в один день может быть без количества!
                 foreach (Match m in matches)
@@ -3600,39 +3602,39 @@ namespace Moswar
 
             #region Закупка недостающих средств!
             bool bRet = false;
-/*            foreach (stcBagFightItem BestItem in TakeItems)
-            {
-                if (Expert.BuyFightItemType[(int)BestItem.ItemType]) //Разрешено докупать?
-                {
-                    List<string> ItemToBuy = new List<string>();
-                    if (BestItem.ItemID == null && BestItem.TotalCount == 0) //Нужно купить новый вид с учётом того, что уже в багаже!
-                    {
-                        ItemToBuy = TakeItems.Where(item => item.ItemID != null && item.ItemType == BestItem.ItemType).ToList<stcBagFightItem>().ConvertAll<string>(item => item.Title);
-                        ItemToBuy.Insert(0, "!");
-                    }
-                    else //Докупаем?
-                    {
-                        if (
-                            (BestItem.ItemType == FightItemType.FixedHeal
-                             || BestItem.ItemType == FightItemType.ProcHeal
-                             || BestItem.ItemType == FightItemType.FixedBomb
-                             || BestItem.ItemType == FightItemType.ProcBomb
-                             || BestItem.ItemType == FightItemType.Helmet
-                             || BestItem.ItemType == FightItemType.Spring
-                             || BestItem.ItemType == FightItemType.Shield
-                            ) && BestItem.TotalCount < 3 && !BestItem.Title.Contains("Ультра")
-                           )
-                            ItemToBuy.Add(BestItem.Title);
-                    }
-                    //Устанавливаем какой тип нужно докупить, так как индексация типов начинается с 1, то 1-1 = 0 и равняется лечению,
-                    //таким образом сохранится работоспособнсть при внедрении новых элементов в массив ShopItems
-                    if (ItemToBuy.Count == 1 || (ItemToBuy.Count > 1 && Expert.BuyMoreThenOneGranade))
-                    {
-                        bRet |= BuyItems(MainWB, (int)BestItem.ItemType - 1 + ShopItems.HealPlus, ItemToBuy.ToArray());
-                        Me.Events.NextFightItemCheckDT = DateTime.Now.AddMinutes(10);
-                    }
-                }
-            }*/
+            /*            foreach (stcBagFightItem BestItem in TakeItems)
+                        {
+                            if (Expert.BuyFightItemType[(int)BestItem.ItemType]) //Разрешено докупать?
+                            {
+                                List<string> ItemToBuy = new List<string>();
+                                if (BestItem.ItemID == null && BestItem.TotalCount == 0) //Нужно купить новый вид с учётом того, что уже в багаже!
+                                {
+                                    ItemToBuy = TakeItems.Where(item => item.ItemID != null && item.ItemType == BestItem.ItemType).ToList<stcBagFightItem>().ConvertAll<string>(item => item.Title);
+                                    ItemToBuy.Insert(0, "!");
+                                }
+                                else //Докупаем?
+                                {
+                                    if (
+                                        (BestItem.ItemType == FightItemType.FixedHeal
+                                         || BestItem.ItemType == FightItemType.ProcHeal
+                                         || BestItem.ItemType == FightItemType.FixedBomb
+                                         || BestItem.ItemType == FightItemType.ProcBomb
+                                         || BestItem.ItemType == FightItemType.Helmet
+                                         || BestItem.ItemType == FightItemType.Spring
+                                         || BestItem.ItemType == FightItemType.Shield
+                                        ) && BestItem.TotalCount < 3 && !BestItem.Title.Contains("Ультра")
+                                       )
+                                        ItemToBuy.Add(BestItem.Title);
+                                }
+                                //Устанавливаем какой тип нужно докупить, так как индексация типов начинается с 1, то 1-1 = 0 и равняется лечению,
+                                //таким образом сохранится работоспособнсть при внедрении новых элементов в массив ShopItems
+                                if (ItemToBuy.Count == 1 || (ItemToBuy.Count > 1 && Expert.BuyMoreThenOneGranade))
+                                {
+                                    bRet |= BuyItems(MainWB, (int)BestItem.ItemType - 1 + ShopItems.HealPlus, ItemToBuy.ToArray());
+                                    Me.Events.NextFightItemCheckDT = DateTime.Now.AddMinutes(10);
+                                }
+                            }
+                        }*/
             #endregion
 
             GoToPlace(MainWB, Place.Player);
@@ -3644,7 +3646,7 @@ namespace Moswar
         private void Sovet(SovetAction SA) //OK
         {
             BugReport("CheckForWeekPrize");
-                        
+
             HtmlElement HtmlEl;
             Regex regex;
             Match match;
@@ -3668,7 +3670,7 @@ namespace Moswar
                         }
                         #endregion
                         return;
-                    case SovetAction.Vote:                        
+                    case SovetAction.Vote:
                         HtmlEl = frmMain.GetDocument(MainWB).GetElementsByTagName("TABLE")[1];
                         match = Regex.Match(HtmlEl.InnerText, "(?<=[[]Сегодня[]] )([\\w :«»])+");
                         switch (match.Value)
@@ -3710,7 +3712,7 @@ namespace Moswar
                                     frmMain.InvokeMember(MainWB, frmMain.GetDocument(MainWB).GetElementsByTagName("button")[0], "click");
                                     IsWBComplete(MainWB, 300, 500);
                                 }
-                                else { Me.SovetInfo.LastVoting =GetServerTime(MainWB).AddMinutes(30); return; } //В случае проблемы. Зайдём ещё через 30 минут.
+                                else { Me.SovetInfo.LastVoting = GetServerTime(MainWB).AddMinutes(30); return; } //В случае проблемы. Зайдём ещё через 30 минут.
                                 #endregion
                                 break;
                             case "СР: день дуэлей":
@@ -3730,8 +3732,8 @@ namespace Moswar
                                         HtmlEl.SetAttribute("value", "40");
                                         frmMain.InvokeMember(MainWB, HtmlEl.Parent.Parent.GetElementsByTagName("button")[0], "click");
                                         UpdateStatus("* " + DateTime.Now + " Вот! - Унитаз себе золотой заколотишь, продам ка я 40 золотых очков!");
-                                    }                                    
-                                }                                                                
+                                    }
+                                }
                                 break;
                             case "ПТ: день «стенок»":
                                 if (GetServerTime(MainWB).TimeOfDay < new TimeSpan(23, 45, 0)) //Проверить в пятницу начиная с 23:45! и слить все очки!
@@ -3789,7 +3791,7 @@ namespace Moswar
                                         }
                                     }
                                     #endregion
-                                }                                
+                                }
                                 break;
                             case "Выходные":
                                 #region Пора заберать бонусы
@@ -3806,12 +3808,12 @@ namespace Moswar
                                         Wait(500, 1500);
                                     }
                                     else break; //Кнопку нажать уже нельзя, возможно я уже забрал все бонусы?
-                                }                                    
+                                }
                                 #endregion
                                 break;
-                       }
-                       break;
-                }                
+                        }
+                        break;
+                }
             }
             catch { UpdateStatus("! " + DateTime.Now + " Дохтур, посмотри меня: Голосование проигнорировано!"); }
             Me.SovetInfo.Stop = true; //Уже проголосовал, стоп на сегодня!
@@ -3835,7 +3837,7 @@ namespace Moswar
 
             //([a-z])*)*job/(?<jobNr>([0-9])+)/|(?<=')/nightclub/jobs/(?=';)
             regex = new Regex("(/([\\w/])+job/(?<jobNr>([0-9])+)/)|(?<=')/nightclub/jobs/(?=')"); //Выдераем ссылку на новый или старый Квэст для 2ого и 3ого прохода
-//            match = regex.Match(URL == null ? frmMain.GetDocument(MainWB).GetElementById("statistics-accordion").InnerHtml : URL);             
+                                                                                                  //            match = regex.Match(URL == null ? frmMain.GetDocument(MainWB).GetElementById("statistics-accordion").InnerHtml : URL);             
             match = regex.Match(URL == null ? "'/nightclub/jobs/'" : URL); //Выполняем задания по порядку на 3 прохода сразу
             if (match.Success)
             {
@@ -3845,7 +3847,7 @@ namespace Moswar
                 if (frmMain.GetDocumentURL(MainWB).EndsWith("/nightclub/jobs/"))
                 {
                     #region Квэсты закончились, идём по 2 или 3 ему кругу?
-                    int i;                    
+                    int i;
                     string[] ArrInfo;
                     string BonusQuestURL = "";
                     #region Определение поля деятельности 2-3 круг или бонусная линейка!
@@ -3862,12 +3864,12 @@ namespace Moswar
                     #endregion
                     regex = new Regex("(?<=href=\")([\\w/.])+job/(?<jobNr>([0-9])+)/(?=\"(.*\"?(?<Stars>stars-[0-9])\"?)?(.*\"?percent.*>(?<Prc>([0-9])+)%<)?)"); //href="/bank/job/157/"><i class="hover-area"></i></a><i class="icon img" style="background:url('/@/images/obj/jobs/bank_giulio.jpg')"></i><i class="stars-1"></i><span class="percent">50%</span>
                     for (i = 0; i < ArrInfo.Count<string>(); i++)
-                    { 
+                    {
                         match = regex.Match(ArrInfo[i]);
                         if (!Expert.QuestNotAll && match.Success && match.Groups["Stars"].Success && match.Groups["Prc"].Success) break; //Не доделанный квест 2-3 круга или делать определённый!
-                        if ((!Expert.QuestNotAll || BonusLine) && match.Success && match.Groups["Prc"].Success && Convert.ToInt32(match.Groups["Prc"].Value) < 100 && !(new int[] { 33, 34, 223, 224, 225}).Contains<int>(Convert.ToInt32(match.Groups["jobNr"].Value))) break; //Не доделанный квест 2-3 круга, похоже на праздничный квэст.
+                        if ((!Expert.QuestNotAll || BonusLine) && match.Success && match.Groups["Prc"].Success && Convert.ToInt32(match.Groups["Prc"].Value) < 100 && !(new int[] { 33, 34, 223, 224, 225 }).Contains<int>(Convert.ToInt32(match.Groups["jobNr"].Value))) break; //Не доделанный квест 2-3 круга, похоже на праздничный квэст.
                         if (match.Groups["jobNr"].Success && Convert.ToDecimal(match.Groups["jobNr"].Value) == (Settings.QuestEndMoney ? Expert.QuestMoneyNr : Expert.QuestFruitNr)) BonusQuestURL = match.Value;
-                    }                    
+                    }
                     if ((!Expert.QuestNotAll || BonusLine) && i != ArrInfo.Count<string>()) //есть не доделанные квесты 2-3 круга?
                     {
                         frmMain.NavigateURL(MainWB, Settings.ServerURL + match.Value); //Загружаем страничку с Квэстом
@@ -3881,16 +3883,16 @@ namespace Moswar
                             while (CheckQuest(Settings.ServerURL + BonusQuestURL)) ; //(Settings.QuestEndMoney ? "/alley/job/192/" : "/casino/job/63/")
                             return true;
                         }
-                        else 
+                        else
                         {
                             UpdateStatus("! " + DateTime.Now + " Не могу найти где тут вход на это задание, зайду через полчаса");
                             Me.Quest.LastDT = GetServerTime(MainWB).AddMinutes(30);
                             return false;
-                        }                        
+                        }
                         #endregion
                     }
                     #endregion
-                }                
+                }
 
                 regex = new Regex("((?<=class=\"?tonus\"?>)([0-9])+(?=<))"); //Извлекаем цену нажатия кнопки
                 QE = Convert.ToInt32(regex.Match(frmMain.GetDocument(MainWB).GetElementById("job-" + match.Groups["jobNr"].Value).InnerHtml).Value);
@@ -3951,7 +3953,7 @@ namespace Moswar
                             if (HtmlEl != null && (Expert.QuestUseAllTonusBottle || frmMain.GetJavaVar(MainWB, "m.items['" + HtmlEl.GetAttribute("data-id") + "'].mf['0'].innerText") != null)
                                 && WaitDrugEated(MainWB, HtmlEl)) //Уже тикает время или разрешено пить все?
                             {
-                                UpdateStatus("* " + DateTime.Now + " Глотнул из синей бутылки так, что аж тонус из уха полез.");                                
+                                UpdateStatus("* " + DateTime.Now + " Глотнул из синей бутылки так, что аж тонус из уха полез.");
                             }
                         }
                         if (frmMain.GetDocumentURL(MainWB).EndsWith(Settings.ServerURL + "/player/")) //Пробовал выпить банку? - Вернуть назад к квестам!
@@ -4022,8 +4024,8 @@ namespace Moswar
                         if (HtmlEl != null)
                         {
                             if (HtmlEl.InnerText.Contains("0 из 4")) TimeSpan.TryParse(Regex.Match(HtmlEl.InnerText, "(?<=[(]).*(?=[)])").Value, out TSTimeout); //Закончилась батарея, следующий раз не ранее чем через хх:хх
-                        }                        
-                        else 
+                        }
+                        else
                         {
                             UpdateStatus("@ " + DateTime.Now + " Босс ты гурман! Мобильник в кармане, а номер в чемодане? Не дорогой ли выходит кирпич?");
                             TSTimeout = new TimeSpan(2, 0, 0); //У меня есть телефон но нет номера..., заглянуть через 2 часа.
@@ -4046,7 +4048,7 @@ namespace Moswar
                             GoToPlace(MainWB, Place.Gorbushka, "/" + m.Value);
                             #region Переход к включению + включение телефона (если необходимо) + список телефонов на продажу
                             if (frmMain.GetDocument(MainWB).GetElementById("phone_" + m.Value) == null)
-                            {                                
+                            {
                                 frmMain.InvokeScript(MainWB, "eval", new object[] { "AngryAjax.goToUrl('/phone/call/setPhone/" + m.Value + "');" });
                                 IsWBComplete(MainWB);
                                 #region Включение телефона + список телефонов на продажу.
@@ -4054,7 +4056,7 @@ namespace Moswar
                                 if (HtmlEl != null)
                                 {
                                     frmMain.InvokeMember(MainWB, HtmlEl, "submit");
-                                    IsWBComplete(MainWB);                                    
+                                    IsWBComplete(MainWB);
                                 }
                                 else
                                 {
@@ -4072,7 +4074,7 @@ namespace Moswar
                                         }
                                         if (frmMain.GetDocument(MainWB).GetElementById("table_phone_number") != null) UpdateStatus("@ " + DateTime.Now + " Ядрён-Батон! Получилось! Сломал! - Не не телефон, пин код...");
                                     }
-                                    else 
+                                    else
                                     {
                                         #region Создаём список полностью собранных телефонов.
                                         info = frmMain.GetJavaVar(MainWB, "m.items['" + m.Value + "'].info.title");
@@ -4083,11 +4085,11 @@ namespace Moswar
                                             RepairMobile.ID[RepairMobile.ID.Count<int>() - 1] = Convert.ToInt32(m.Value);
                                         }
                                         #endregion
-                                    }                                                                       
-                                } 
+                                    }
+                                }
                                 #endregion
                                 frmMain.InvokeScript(MainWB, "eval", new object[] { "AngryAjax.goToUrl('/tverskaya/gorbushka/" + m.Value + "');" }); //Телефон включён, переходим к поиску запчастей. 
-                                IsWBComplete(MainWB);                                                               
+                                IsWBComplete(MainWB);
                             }
                             #endregion
 
@@ -4119,7 +4121,7 @@ namespace Moswar
                     }
                     if (RepairMobile.NextDT < DateTime.Now) RepairMobile.NextDT = DateTime.Now.AddHours(2); //Нет телефонов для апгрэйда, проверить позже или докупить.
                     #region Продажа ненужных телефонов.
-                    if (Settings.SellRepairMobile && RepairMobile.ID != null) 
+                    if (Settings.SellRepairMobile && RepairMobile.ID != null)
                     {
                         GoToPlace(MainWB, Place.Shop, "/section/mine");
                         foreach (int ID in RepairMobile.ID)
@@ -4157,10 +4159,10 @@ namespace Moswar
                         #endregion
                         frmMain.InvokeMember(MainWB, HtmlEl.GetElementsByTagName("button")[0], "click");
                         IsWBComplete(MainWB, 500, 1000); //Тут вроде нормально проходит.
-                    } 
+                    }
                     #endregion
                     break;
-            }            
+            }
             return TSTimeout;
         }
         private void RechargeFightBear()
@@ -4239,7 +4241,7 @@ namespace Moswar
                             Me.Turret.LastDT = GetServerTime(MainWB);
                         }
                         break;
-                    }                    
+                    }
                 }
                 if (Me.Turret.Equals(new stcTurret())) Me.Turret.LastDT = GetServerTime(MainWB).Date.AddHours(new Random().Next(25, 29)); //Уже кликали, переносим на следующий день.
             }
@@ -4268,7 +4270,7 @@ namespace Moswar
         private bool CatchHTMLBug(WebBrowser WB)
         {
             if (frmMain.GetDocumentURL(WB) == "about:blank") return false;
-            else 
+            else
             {
                 if (frmMain.GetDocumentText(WB) != null) //Так как работа со многими потоками, из за асинхронности, навигация может начаться, кокраз в момент обработки страницы!
                 {
@@ -4299,7 +4301,7 @@ namespace Moswar
                     #endregion
                     return false;
                 }
-            }            
+            }
             return true;
         }
         private void ReadChat()
@@ -4323,18 +4325,18 @@ namespace Moswar
                                 GrpFight.Mafia.FightFound = true;
                                 GrpFight.Mafia.NextFightDT = StartDT;
                                 GrpFight.Mafia.LastCheckDT = DateTime.Now.AddSeconds(30); //Найден бой, мониторим когда наберётся народ!
-                            }                       
+                            }
                         }
-                    }  
+                    }
                 }
-                Thread.Sleep(10000);               
-            }           
+                Thread.Sleep(10000);
+            }
         }
         /// <param name="AjaxClassPath">Путь вида "$(\"#ID .ClassName\");"</param>
         private int GetArrClassCount(WebBrowser WB, string AjaxClassPath)
         {
             BugReport("GetArrClassCount");
-           
+
             IsWBComplete(WB);
             frmMain.GetJavaVar(WB, "var $ArrClass = " + AjaxClassPath);
             return (int)(frmMain.GetJavaVar(WB, "$ArrClass.length") ?? 0);
@@ -4349,7 +4351,7 @@ namespace Moswar
             frmMain.GetJavaVar(WB, "var $ArrClass = " + AjaxClassPath); //var $ArrClass = $(\"#fightGroupForm .fight-log .helmet\");
             string[] sArrRet = new string[(int)(frmMain.GetJavaVar(WB, "$ArrClass.length") ?? 0)];
             for (int i = 0; i < sArrRet.Count<string>(); i++)
-            {               
+            {
                 sArrRet[i] = (string)frmMain.GetJavaVar(WB, "$ArrClass[" + i + "]." + Attr);
             }
             return sArrRet;
@@ -4440,12 +4442,12 @@ namespace Moswar
 
         #region Main Functions
         public void SetAjaxTrap(WebBrowser WB, bool SetTrap = true)
-        {         
-          frmMain.SetJavaVar(WB, "$.ajaxSettings.beforeSend", "function() {if (!noAjaxLoader)$('.loading-top').show();" + (SetTrap ? "window.external.AjaxCallBack(\"" + WB.Name + "\",\"Loading\");" : "") + " }");
-          frmMain.SetJavaVar(WB, "$.ajaxSettings.complete", "function() {$('.loading-top').hide(); " + (SetTrap ? "window.external.AjaxCallBack(\"" + WB.Name + "\",\"Ready\");" : "") + "}");            
+        {
+            frmMain.SetJavaVar(WB, "$.ajaxSettings.beforeSend", "function() {if (!noAjaxLoader)$('.loading-top').show();" + (SetTrap ? "window.external.AjaxCallBack(\"" + WB.Name + "\",\"Loading\");" : "") + " }");
+            frmMain.SetJavaVar(WB, "$.ajaxSettings.complete", "function() {$('.loading-top').hide(); " + (SetTrap ? "window.external.AjaxCallBack(\"" + WB.Name + "\",\"Ready\");" : "") + "}");
         }
         public void AjaxCallBack(string WBName, string status)
-        {            
+        {
             if (DebugMode) BugReport("* AjaxCallBack: " + status);
             MyMainForm.Controls.Find(WBName, true)[0].Tag = status; //Находим нужный контрол в коллекции и перезаписываем состояние бровзера
         }
@@ -4460,7 +4462,7 @@ namespace Moswar
                 if (CurrentTime > StartTime && CurrentTime < StopTime) return true; //Время в диапозоне!
             }
             return false;
-        }        
+        }
         public void UpdateStatus(string S, int M = 0, int R = 0, int N = 0, int L = 0, int B = 0, int T = 0) //OK 
         {
             Me.Status.iM += M; Me.Status.iR += R; Me.Status.iN += N; Me.Status.iL += L; Me.Status.iB += B; Me.Status.iT += T; //Save new info
@@ -4499,9 +4501,9 @@ namespace Moswar
             IsWBComplete(WB);
             try
             {
-                if (PrivSettings.Email == "" || PrivSettings.Password == "")                   
+                if (PrivSettings.Email == "" || PrivSettings.Password == "")
                 {
-                    if (frmMain.GetDocumentURL(WB).EndsWith(Settings.ServerURL + "/")) 
+                    if (frmMain.GetDocumentURL(WB).EndsWith(Settings.ServerURL + "/"))
                     {
                         UpdateMessageInfo(" Вход в игру невозможен, ввиду отсутствия данных о Логин-Пароле!", true);
                         while (PrivSettings.Email == "" || PrivSettings.Password == "")
@@ -4510,9 +4512,9 @@ namespace Moswar
                         }
                         return WebLogin(WB);
                     }
-                    else UpdateMessageInfo(" Не сохранены данные Логин-Пароля, вход в игру будет невозможен!", true);                  
-                } 
-                else 
+                    else UpdateMessageInfo(" Не сохранены данные Логин-Пароля, вход в игру будет невозможен!", true);
+                }
+                else
                 {
                     if (frmMain.GetDocumentURL(WB).EndsWith(Settings.ServerURL + "/"))
                     {
@@ -4529,7 +4531,7 @@ namespace Moswar
             catch
             {
                 frmMain.NavigateURL(WB, Settings.ServerURL);
-            }            
+            }
             return false;
         }
         public DateTime GetServerTime(WebBrowser WB) //OK
@@ -4549,7 +4551,7 @@ namespace Moswar
             }
             while (ServerDT == new DateTime());
             return ServerDT;
-        }        
+        }
         public bool IsWBComplete(WebBrowser WB, int WaitMinMs = 0, int WaitMaxMs = 0) //OK 
         {
             BugReport("IsWBComplete");
@@ -4561,7 +4563,7 @@ namespace Moswar
             {
                 DateTime MonitorDT = DateTime.Now.AddSeconds((double)Settings.GagIE);
                 while (!frmMain.IsComplete(WB) || !WB.Tag.Equals("Ready")) // WB.Tag.Equals("Loading") || WB.Tag.Equals("Error")
-                {                    
+                {
                     if (WB.InvokeRequired) Thread.Sleep(50);
                     else Application.DoEvents();
                     #region Reconnect?
@@ -4576,7 +4578,7 @@ namespace Moswar
                             UpdateStatus("! " + DateTime.Now + " Всё, устал, так и попу порвать можно! Пробую слабительное.");
                             frmMain.Reconnect(WB, Settings.ServerURL); //Проблема с соединением!
                         }
-                        else 
+                        else
                         {
                             UpdateStatus("! " + DateTime.Now + " Вынимаю затычку из задницы, тужусь!");
                             frmMain.RefreshURL(WB, Settings.ServerURL);
@@ -4662,7 +4664,7 @@ namespace Moswar
             BugReport("IsTimeout");
 
             HtmlElement HtmlEl;
-        ReTry:
+            ReTry:
             IsWBComplete(WB); //Пауза чтоб дать возможность бровзеру обработать считанные данные
             #region Анализ времяпровождения таймаута
             object Info = frmMain.GetJavaVar(WB, "$(\"#personal .bubble\").html()");
@@ -4673,7 +4675,7 @@ namespace Moswar
                 {
                     case "На показе":
                         break;
-                    case "Ожидание боя":                        
+                    case "Ожидание боя":
                         #region Переодевание
                         if (Settings.UseWearSet) WearSet(WB, ArrWearSet, 0);
 
@@ -4681,7 +4683,7 @@ namespace Moswar
                         if (match.Groups["Timeout"].Success)
                         {
                             if (TimeSpan.Parse(match.Groups["Timeout"].Value) > new TimeSpan(0, 15, 0)) goto ReTry; //Считанное время более 15 минут при ожидании драки? -хм...
-                            Wait(TimeSpan.Parse(match.Groups["Timeout"].Value)," Ухты, драчка намечается, загляну ка я на огонёк в: ", TimeOutAction.Busy); //Записан в бой, просто используем таймаут до начала боя.
+                            Wait(TimeSpan.Parse(match.Groups["Timeout"].Value), " Ухты, драчка намечается, загляну ка я на огонёк в: ", TimeOutAction.Busy); //Записан в бой, просто используем таймаут до начала боя.
                         }
                         goto case "В Записи";
                     case "В Записи":
@@ -4690,13 +4692,13 @@ namespace Moswar
                         {
                             Wait(5000, 10000);
                             GoToPlace(WB, Place.Alley, "", false); //
-                            Info = frmMain.GetJavaVar(WB, "$(\"#personal .bubble\").html()");                             
-                        } while (Info != DBNull.Value && Regex.Match((string) Info, "[>]([\\w ])+[<]").Value == "В Записи"); //Всё ещё ожидаем начала боя?
+                            Info = frmMain.GetJavaVar(WB, "$(\"#personal .bubble\").html()");
+                        } while (Info != DBNull.Value && Regex.Match((string)Info, "[>]([\\w ])+[<]").Value == "В Записи"); //Всё ещё ожидаем начала боя?
                         #endregion
                         GroupFight(GroupFightAction.Fight);
-                        break;                    
+                        break;
                     case "Спуск в метро":
-                    case "Ожидание в метро":                    
+                    case "Ожидание в метро":
                     case "Поиск крысомах":
                     case "Игра с Моней Шацом":
                         Metro(MetroAction.Check);
@@ -4705,29 +4707,29 @@ namespace Moswar
                         break;
                     case "Задержан за бои":
                         Police(PoliceAction.Check);
-                        break;                   
+                        break;
                     default:
                         #region Найден неизвестный до сели Баббл, создаем его описание и делаем по старинке.
                         StreamWriter SW = new StreamWriter("Bubble.txt");
                         SW.WriteLine(Info);
-                        SW.Close();                       
-                        
-/*
-                        switch (match.Groups["Area"].Value)
-                        {
-                            case "metro": Metro(MetroAction.Check); break; //Больше не занят в Метро, снова к дракам!
-                            case "police": Police(PoliceAction.Check); break; //Больше не в Милиции, снова к дракам!
-                            case "fight": GroupFight(GroupFightAction.Fight); break;
-                        }
-*/
+                        SW.Close();
+
+                        /*
+                                                switch (match.Groups["Area"].Value)
+                                                {
+                                                    case "metro": Metro(MetroAction.Check); break; //Больше не занят в Метро, снова к дракам!
+                                                    case "police": Police(PoliceAction.Check); break; //Больше не в Милиции, снова к дракам!
+                                                    case "fight": GroupFight(GroupFightAction.Fight); break;
+                                                }
+                        */
                         #endregion
                         break;
                 }
-            }          
-            #endregion 
-         
+            }
+            #endregion
+
             IsWBComplete(WB); //Пауза чтоб дать возможность бровзеру обработать считанные данные
-            HtmlEl = frmMain.GetDocument(WB).GetElementById("timeout"); 
+            HtmlEl = frmMain.GetDocument(WB).GetElementById("timeout");
             TimeSpan TS = new TimeSpan();
             TimeSpan.TryParse(HtmlEl.InnerText, out TS);
 
@@ -4750,7 +4752,7 @@ namespace Moswar
             Match match;
 
             #region Одевание стандартного (защитного сэта)
-            if (Settings.UseWearSet && TA != TimeOutAction.Blocked) WearSet(MainWB, ArrWearSet,  Settings.Lampofob ? 6 : 0); //стандартный сет!
+            if (Settings.UseWearSet && TA != TimeOutAction.Blocked) WearSet(MainWB, ArrWearSet, Settings.Lampofob ? 6 : 0); //стандартный сет!
             #endregion
             #region Отключение режима быстрой загрузки страничек!
             if ((frmMain.GetJavaVar(MainWB, "AngryAjax.turned") ?? "0").Equals("1") && (MainWB.Version.Major < 11 || Settings.MaxIEVersion < 11)) QuickPageLoading(false);
@@ -4765,27 +4767,27 @@ namespace Moswar
                     BugReport("UseTimeOut.All");
                     if (GrpFight.NextCheckDT < DateTime.Now) GroupFight(GroupFightAction.Check, GroupFightType.All); //На всякий случай проверяю не вишу ли во время таймаута в какой нибудь записи в стенку!
                     #region ClanWar + Police + Thimbles + Major + Fitness + Automobile + Pyramid + Casino + Pet + Sovet + Factory + Quest + OilLenin
-                        UseTimeOut(TimeOutAction.Free);
-                        #endregion
+                    UseTimeOut(TimeOutAction.Free);
+                    #endregion
 
-                        bool bRet = false;
-                        if (!Ignore.Timeout) //Блокировка активного таймаута (Запретить патруль, копание в метро, хаос).
-                        {
-                            #region Инициализация
-                            ServerDT = GetServerTime(MainWB);
-                            #endregion
-                            #region Metro
-                            if (Me.Rat.LastDT.Date != GetServerTime(MainWB).Date) { Me.Rat.Val = 0; Me.Rat.Stop = false; } //Обнуление побегов от крыс в метро!
-                            if (Settings.GoMetro && !Me.Rat.Stop && Me.Player.Level >= 4 && !bRet //Закончился патруль и стоит галка бегать в метро?
-                                && !TimeToStopAtack(GetServerTime(MainWB) > Me.Rat.LastDT.AddHours(2) ? NextTimeout.Metro : NextTimeout.Rat) // Драки в ближайшее время не наблюдается + Сосредоточены на охоте на крыс, и уже пошли обычные крыски? Не ходим на обычных не тратим инструменты
-                                ) bRet = Metro(MetroAction.Dig); //После обычного копания таймер избегает в функции метро, а если напал на крысомаху то повторяем проверяя поход к моне!
-                            #endregion
-                        }
-                        if (!bRet)
-                        {
-                            if (TimeToGoGrpFight(GroupFightType.Chaos)) UseTimeOut(TimeOutAction.NoTask); //На случай, если нужно вбежать в хаос не во время таймаута!
-                            IsTimeout(MainWB, false, true, " Эээх скукотища, список заданий закончен, валяю дурака до: ", TimeOutAction.NoTask); //Небыл ни в Метро ни в Патруле? - Пробуем войти в хаот или тупо ожидаем истичения таймаута!                                                                    
-                        }                                             
+                    bool bRet = false;
+                    if (!Ignore.Timeout) //Блокировка активного таймаута (Запретить патруль, копание в метро, хаос).
+                    {
+                        #region Инициализация
+                        ServerDT = GetServerTime(MainWB);
+                        #endregion
+                        #region Metro
+                        if (Me.Rat.LastDT.Date != GetServerTime(MainWB).Date) { Me.Rat.Val = 0; Me.Rat.Stop = false; } //Обнуление побегов от крыс в метро!
+                        if (Settings.GoMetro && !Me.Rat.Stop && Me.Player.Level >= 4 && !bRet //Закончился патруль и стоит галка бегать в метро?
+                            && !TimeToStopAtack(GetServerTime(MainWB) > Me.Rat.LastDT.AddHours(2) ? NextTimeout.Metro : NextTimeout.Rat) // Драки в ближайшее время не наблюдается + Сосредоточены на охоте на крыс, и уже пошли обычные крыски? Не ходим на обычных не тратим инструменты
+                            ) bRet = Metro(MetroAction.Dig); //После обычного копания таймер избегает в функции метро, а если напал на крысомаху то повторяем проверяя поход к моне!
+                        #endregion
+                    }
+                    if (!bRet)
+                    {
+                        if (TimeToGoGrpFight(GroupFightType.Chaos)) UseTimeOut(TimeOutAction.NoTask); //На случай, если нужно вбежать в хаос не во время таймаута!
+                        IsTimeout(MainWB, false, true, " Эээх скукотища, список заданий закончен, валяю дурака до: ", TimeOutAction.NoTask); //Небыл ни в Метро ни в Патруле? - Пробуем войти в хаот или тупо ожидаем истичения таймаута!                                                                    
+                    }
                     break;
                 case TimeOutAction.NoTask:
                     BugReport("UseTimeOut.NoTask");
@@ -4805,13 +4807,13 @@ namespace Moswar
                             || (match.Groups["Unit"].Value == "ruda" && Me.Wallet.Ore >= Convert.ToInt32(match.Groups["Cost"].Value))
                             || (match.Groups["Unit"].Value == "neft" && Me.Wallet.Oil >= Convert.ToInt32(match.Groups["Cost"].Value))
                            )
-                       ) GroupFight(GroupFightAction.Check, GroupFightType.Chaos); 
-                    #endregion                    
+                       ) GroupFight(GroupFightAction.Check, GroupFightType.Chaos);
+                    #endregion
                     break;
                 case TimeOutAction.Free:
                     BugReport("UseTimeOut.Free");
                     UpdateMyInfo(MainWB); //Проверяем бабки, уровень полиции итд.
-                    ServerDT = GetServerTime(MainWB);    
+                    ServerDT = GetServerTime(MainWB);
                     #region ClanWar Fight
                     if (Settings.GoClanFight && GrpFight.ClanStartDT <= ServerDT && Me.ClanWarInfo.NextDT <= ServerDT) ClanWar(ClanWarAction.Check);
                     #endregion                    
@@ -4828,7 +4830,7 @@ namespace Moswar
                             || (match.Groups["Unit"].Value == "ruda" && Me.Wallet.Ore >= Convert.ToInt32(match.Groups["Cost"].Value))
                             || (match.Groups["Unit"].Value == "neft" && Me.Wallet.Oil >= Convert.ToInt32(match.Groups["Cost"].Value))
                            )
-                       ) GroupFight(GroupFightAction.Check, GroupFightType.Ore); 
+                       ) GroupFight(GroupFightAction.Check, GroupFightType.Ore);
                     #endregion
                     #region Mafia
                     if (Settings.GoGroupFightMafia && Me.Player.Level >= 9 && GrpFight.Mafia.LastCheckDT < DateTime.Now) GroupFight(GroupFightAction.Check, GroupFightType.Mafia);
@@ -4846,7 +4848,7 @@ namespace Moswar
                             if (Me.Police.Val >= Settings.PayPoliceAt) Me.Police.Stop = true; //Уровень слишком высок? - Прекрашаем драки.                              
                         }
                         if (Me.Police.Val == -5) Me.Police.Stop = false; //Уровень упал до -5? -Можно снова драться
-                    }                    
+                    }
                     #endregion
                     #region Thimbles
                     //Проверяем каждые 2 часа + резет в 00:00, быть может мы смогли надыбать билетик.
@@ -4861,9 +4863,9 @@ namespace Moswar
                         if (!Settings.UseBank || Me.Wallet.Money < Settings.ExchangeBankMoney + Settings.minThimblesMoney || Me.Thimbles.BankStartDT > ServerDT || !Bank(BankAction.Exchange))
                         {
                             Metro(MetroAction.Game); //Пора играть с Моней?
-                        }                       
-                    }                                                    
-                    #endregion                                           
+                        }
+                    }
+                    #endregion
                     #region Major + Fitness + Taxi + Patrol + Pyramid + Casino + Pet + Sovet + Factory + Quest
                     UseTimeOut(TimeOutAction.Busy); //Пора тренировать Пэта или варить петрики?
                     #endregion
@@ -4915,7 +4917,7 @@ namespace Moswar
                     #endregion
                     #region Taxi
                     if (Settings.UseCar)
-                    {                        
+                    {
                         if (Me.Automobile.LastDT.Date != ServerDT.Date) Me.Automobile.Stop = false;
                         if (Me.Automobile.LastDT <= ServerDT & !Me.Automobile.Stop) Automobile(AutomobileAction.Taxi);
                     }
@@ -4943,7 +4945,7 @@ namespace Moswar
                             if (Me.Pyramid.Price >= Settings.maxPyramidSell && ServerDT.TimeOfDay > new TimeSpan(0, 6, 0)) Pyramid(PyramidAction.Sell);
                             UpdateMyInfo(MainWB);
                             if (Me.Pyramid.Price >= 100 && Me.Pyramid.Price <= Settings.maxPyramidPrice && Me.Wallet.Money >= Me.Pyramid.Price * Settings.minPyramidAmount) Pyramid(PyramidAction.Buy);
-                        }                        
+                        }
                     }
                     #endregion
                     #region Bank
@@ -4955,7 +4957,7 @@ namespace Moswar
                         if (Settings.UseBank && Me.Wallet.Money >= Settings.ExchangeBankMoney + Settings.minThimblesMoney
                             && (!Settings.GoPyramid || !Me.Pyramid.BlockMonya || !Settings.BlockThimbles) && (Me.BankDeposit.StartDT >= ServerDT.AddHours(2) || !Settings.UseBankDeposit)
                             && ServerDT > Me.Thimbles.BankStartDT && ServerDT > Me.Thimbles.StartDT) Bank(BankAction.Exchange); //Пора менять бабки в банке?
-                    }                                                
+                    }
                     #endregion
                     #region Casino
                     Random WaitS = new Random();
@@ -4979,7 +4981,7 @@ namespace Moswar
                     #region Pet
                     UpdateMyInfo(MainWB);
                     if (Settings.TrainWarPet && ServerDT >= Me.WarPet.TrainTimeOutDT //Пора тренировать Пэта?
-                        && ((Settings.TrainPetFocus && Me.WarPet.Focus < Settings.maxTrainPetFocus && (TrainWarPetNeed[0, 0] == 0 || Me.Wallet.Money - TrainWarPetNeed[0, 0] >= Settings.minTrainPetMoney) && (TrainWarPetNeed[0, 1] == 0 ||Me.Wallet.Ore - TrainWarPetNeed[0, 1] >= Settings.minTrainPetOre) && (TrainWarPetNeed[0, 2] == 0 || Me.Wallet.Oil - TrainWarPetNeed[0, 2] >= Settings.minTrainPetOil))
+                        && ((Settings.TrainPetFocus && Me.WarPet.Focus < Settings.maxTrainPetFocus && (TrainWarPetNeed[0, 0] == 0 || Me.Wallet.Money - TrainWarPetNeed[0, 0] >= Settings.minTrainPetMoney) && (TrainWarPetNeed[0, 1] == 0 || Me.Wallet.Ore - TrainWarPetNeed[0, 1] >= Settings.minTrainPetOre) && (TrainWarPetNeed[0, 2] == 0 || Me.Wallet.Oil - TrainWarPetNeed[0, 2] >= Settings.minTrainPetOil))
                         || (Settings.TrainPetLoyality && Me.WarPet.Loyality < Settings.maxTrainPetLoyality && (TrainWarPetNeed[1, 0] == 0 || Me.Wallet.Money - TrainWarPetNeed[1, 0] >= Settings.minTrainPetMoney) && (TrainWarPetNeed[1, 1] == 0 || Me.Wallet.Ore - TrainWarPetNeed[1, 1] >= Settings.minTrainPetOre) && (TrainWarPetNeed[1, 2] == 0 || Me.Wallet.Oil - TrainWarPetNeed[1, 2] >= Settings.minTrainPetOil))
                         || (Settings.TrainPetMass && Me.WarPet.Mass < Settings.maxTrainPetMass && (TrainWarPetNeed[2, 0] == 0 || Me.Wallet.Money - TrainWarPetNeed[2, 0] >= Settings.minTrainPetMoney) && (TrainWarPetNeed[2, 1] == 0 || Me.Wallet.Ore - TrainWarPetNeed[2, 1] >= Settings.minTrainPetOre) && (TrainWarPetNeed[2, 2] == 0 || Me.Wallet.Oil - TrainWarPetNeed[2, 2] >= Settings.minTrainPetOil)))
                         ) { Petarena(PetAction.TrainWarPet); }
@@ -5011,7 +5013,7 @@ namespace Moswar
                     if (Settings.MakePetriki && (Me.Wallet.Money - Me.Petriki.Money) >= Settings.minPetrikiMoney && (Me.Wallet.Ore - Me.Petriki.Ore) >= Settings.minPetrikiOre && Me.Petriki.RestartDT <= DateTime.Now && Me.Player.Level >= 5) Factory(FactoryAction.Petriki); //Пора варить петрики?
                     #region Разрешение модернизировать цепочки
                     HtmlElement HtmlEl = frmMain.GetDocument(MainWB).GetElementById("timeout");
-                    ChainUpgrade.Release = (Settings.GoFactory && !TimeToStopAtack(NextTimeout.Chain, StopTimeoutType.GrpFight) && ((HtmlEl.GetAttribute("href") != null && Regex.IsMatch(HtmlEl.GetAttribute("href"), "/metro/$|/alley/$"))  
+                    ChainUpgrade.Release = (Settings.GoFactory && !TimeToStopAtack(NextTimeout.Chain, StopTimeoutType.GrpFight) && ((HtmlEl.GetAttribute("href") != null && Regex.IsMatch(HtmlEl.GetAttribute("href"), "/metro/$|/alley/$"))
                         || (!Settings.GoMetro || Me.Rat.Stop))
                         && HtmlEl.InnerText != null && TimeSpan.Parse(HtmlEl.InnerText) >= new TimeSpan(0, 0, Settings.FactoryChainCount > 8 ? 480 : (int)Settings.FactoryChainCount * 45));
                     #endregion
@@ -5037,7 +5039,7 @@ namespace Moswar
                     if (Settings.BuySafe && Me.Wallet.Ore >= 24 && Me.Safe.LastDT < ServerDT) Safe(SafeAction.Check);
                     #endregion
                     #region PigProtection
-                    if (Settings.PigProtection && Me.PigProtection.LastDT < ServerDT && Me.Wallet.Honey >= 10) PigProtection(PigProtectionAction.Check);                    
+                    if (Settings.PigProtection && Me.PigProtection.LastDT < ServerDT && Me.Wallet.Honey >= 10) PigProtection(PigProtectionAction.Check);
                     #endregion
                     #region FightBear
                     if (!Me.Bear.Stop || DateTime.Now > Me.Bear.LastDT) RechargeFightBear(); //Заряжаем и проверяем наличие медведя.
@@ -5047,14 +5049,14 @@ namespace Moswar
                     if (Settings.BuildTurel && Me.Turret.LastDT < ServerDT && Me.Turret.PriceMed == 0 && Me.Turret.PriceTugriki < Me.Wallet.Money && Me.Turret.PriceOre < Me.Wallet.Ore && Me.Turret.PriceOil < Me.Wallet.Oil) BuildTurret();
                     #endregion
                     #region ReadLogs
-                    if ((Settings.ReadLogs || Settings.ReadPrivateMessages) && ReadLogsDT < DateTime.Now) ReadLogsDT = DateTime.Now.Add(MobilePhone(MobilePhoneAction.ReadLogs)); 
+                    if ((Settings.ReadLogs || Settings.ReadPrivateMessages) && ReadLogsDT < DateTime.Now) ReadLogsDT = DateTime.Now.Add(MobilePhone(MobilePhoneAction.ReadLogs));
                     #endregion
                     #region AFK
                     if (Settings.UseAFK && Me.Events.NextAFK < DateTime.Now)
                     {
-                        if (Settings.AFKCahnce >= new Random().Next(0, 100)) Wait(new TimeSpan(0, new Random().Next(0, (Int32)Settings.AFCTime), new Random().Next(0, 60)), "~ Делаю вид, типа ты ушёл за чайком, а я без тебя играть боюсь! Жду до: ", TimeOutAction.Blocked); 
+                        if (Settings.AFKCahnce >= new Random().Next(0, 100)) Wait(new TimeSpan(0, new Random().Next(0, (Int32)Settings.AFCTime), new Random().Next(0, 60)), "~ Делаю вид, типа ты ушёл за чайком, а я без тебя играть боюсь! Жду до: ", TimeOutAction.Blocked);
                         Me.Events.NextAFK = DateTime.Now.AddMinutes(10);
-                    } 
+                    }
                     #endregion
                     break;
                 case TimeOutAction.Blocked:
@@ -5074,7 +5076,7 @@ namespace Moswar
 
             int UpdateTries = 0;
 
-        ReTry:
+            ReTry:
             #region Уже более 3х раз возникли проблемы? обновляем страничку!
             if (UpdateTries >= 3) { frmMain.RefreshURL(MainWB, Settings.ServerURL); UpdateTries = 0; } //
             #endregion
@@ -5138,15 +5140,15 @@ namespace Moswar
         public bool AnalyseFight(WebBrowser WB, int M = 0, int R = 0, int N = 0)
         {
             BugReport("AnalyseFight");
-            
+
             Match match;
             stcPlayerInfo PI = new stcPlayerInfo();
             bool bRet;
             int iM = 0, iR = 0, iN = 0, iL = 0, iB = 0, iT = 0;
             int TryNr = 0;
 
-        ReTry:
-            try 
+            ReTry:
+            try
             {
                 IsWBComplete(WB, (Int32)Expert.AnalyseFightMin, (Int32)Expert.AnalyseFightMax); //На всякий случай, вдруг всё сломалось.
                 string URL = frmMain.GetDocumentURL(WB);
@@ -5184,7 +5186,7 @@ namespace Moswar
                 }
                 match = Regex.Match((string)frmMain.GetJavaVar(WB, "$(\"#content .fighter2 .user\").text()"), "(?<Name>([^[])+)[[](?<Lvl>([0-9])+)[]]");
                 PI.Name = match.Groups["Name"].Value;
-                PI.Level = match.Groups["Lvl"].Value;                
+                PI.Level = match.Groups["Lvl"].Value;
 
                 //HtmlEl = frmMain.GetDocument(WB).GetElementById("fight-log"); //25.11.2o11 Исчезло...
                 match = Regex.Match((string)frmMain.GetJavaVar(WB, "$(\"#content .result\").text()"), "(?<=Победитель:([\\s])+)([^[\\t])+(?= [[])");
@@ -5313,19 +5315,19 @@ namespace Moswar
                 #endregion
                 return bRet;
             }
-            catch 
+            catch
             {
-                if (TryNr < 3) 
+                if (TryNr < 3)
                 {
                     TryNr++;
                     goto ReTry;
                 }
-                else 
+                else
                 {
                     UpdateStatus("! " + DateTime.Now + " Я уже и очки накинул, один чёрт не вижу кто кого тут покусал!");
                     return true; //Не получаеться проанализировать драку, исходим из того, что всё пучком!
                 }
-            }            
+            }
         }
         public bool AnalysePlace(WebBrowser WB)
         {
@@ -5347,7 +5349,7 @@ namespace Moswar
                 case "www.moswar.ru/":
                     return WebLogin(WB); //Автологин, если выбросило
 
-                case "/phone/":                
+                case "/phone/":
                 case "/petrun/race/":
                 case "/huntclub/wanted/":
                 case "/player/":
@@ -5396,8 +5398,8 @@ namespace Moswar
         {
             BugReport("GetMyStats");
 
-            GoToPlace(WB, Place.Player);           
-            
+            GoToPlace(WB, Place.Player);
+
             Me.Clan.Name = (string)frmMain.GetJavaVar(WB, "$(\"#content .clan-icon\").attr(\"title\")");
             object Info = frmMain.GetJavaVar(WB, "$(\"#content .user\").html()"); //<i title="Понаехавший" class="arrived"></i><a href="/clan/3074/"><img title="7 элемент" class="clan-icon" src="/@images/clan/clan_3074_ico.png"></a><a href="/player/354768/">Козыръ</a><span class="level">[19]</span>
             Me.Clan.URL = Me.Clan.Name != null ? "http://" + Settings.ServerURL + Regex.Match((string)Info, "/clan/([0-9])+/").Value : null;
@@ -5417,7 +5419,7 @@ namespace Moswar
             IsWBComplete(WB); //Обязательно иначе бывают казусы!
 
             Info = frmMain.GetJavaVar(WB, "$(\"#pers-player-info .user\").html()");
-            
+
             regex = new Regex("/player/([0-9])+/"); //URL
             P.URL = Settings.ServerURL + regex.Match((string)Info);
 
@@ -5432,7 +5434,7 @@ namespace Moswar
             P.Name = match.Groups["Name"].Value;
             P.Level = Convert.ToInt32(match.Groups["Lvl"].Value);
 
-            
+
 
             HtmlElement HtmlEl = frmMain.GetDocument(WB).GetElementById("stats-accordion");
             P.Health[0] = Convert.ToInt32(Regex.Match(HtmlEl.InnerText, "(?<=Здоровье)([0-9])+").Value);
@@ -5444,7 +5446,7 @@ namespace Moswar
             P.Charisma[0] = Convert.ToInt32(Regex.Match(HtmlEl.InnerText, "(?<=Харизма)([0-9])+").Value);
 
             CheckCollections(WB, ref P);
-            
+
             Info = frmMain.GetJavaVar(WB, "$(\"#pers-player-info .life\").text()");
             regex = new Regex("(?<=Жизни:)([0-9 /\\s])+");
             match = regex.Match((string)Info);
@@ -5464,7 +5466,7 @@ namespace Moswar
             };
 
             return (Convert.ToInt32(Me.Player.LifePkt[0]) >= Convert.ToInt32(vsP.LifePkt[0])) && (Convert.ToInt32(Me.Player.LifePkt[1]) * 1.1 >= Convert.ToInt32(vsP.LifePkt[1])) && (vsP.Steroids ? (StatSum[0] * 0.85 - StatSum[1]) : (StatSum[0] - StatSum[1] - minDiff)) >= 0;
-        }        
+        }
         public bool GoToPlace(WebBrowser WB, Place P, string SubPlace = "", bool chkURL = true) //OK
         {
             BugReport("GoToPlace");
@@ -5513,16 +5515,16 @@ namespace Moswar
                 case Place.Turret: if (Me.Clan.URL == null) return false; Place2Go = "turret" + Regex.Match(Me.Clan.URL, "/([0-9])+"); if (match.Value != "/turret/") GoToPlace(WB, Place.Clan); break;
                 case Place.URL: Place2Go = SubPlace; SubPlace = ""; break;
             }
-        ReTry:
-            if (DebugMode) BugReport("~ GoTo-" + Place2Go);            
+            ReTry:
+            if (DebugMode) BugReport("~ GoTo-" + Place2Go);
             string URL = Settings.ServerURL + (Place2Go.StartsWith("/") ? "" : "/") + Place2Go;
 
             frmMain.NavigateURL(WB, URL + (URL.EndsWith("/") ? "" : "/")); //Распознавание в методе навигации
 
             IsWBComplete(WB, (Int32)Expert.GoToMin, (Int32)Expert.GoToMax);
-            
+
             if (!frmMain.GetDocumentURL(WB).Contains(URL) && chkURL) //Неполучилось перейти на желаемую страничку
-            {                
+            {
                 if (AnalysePlace(WB)) goto ReTry; //Выполняем условия зависания, дабы продвинутся дальше
                 else return false;
             }
@@ -5568,12 +5570,12 @@ namespace Moswar
             #endregion
             #region Атаковать Агентов? + Блокировка нападений на Агентов в дни с NPC
             if (frmMain.GetDocument(MainWB).GetElementById("searchNpcForm") != null) { Me.AgentHunting.LastDT = ServerDT; Me.AgentHunting.Stop = true; } //Блокировка нападений на агентов в дни с NPC
-            if (Settings.UseAgent && !Me.AgentHunting.Stop && !Ignore.PVPAttack) 
+            if (Settings.UseAgent && !Me.AgentHunting.Stop && !Ignore.PVPAttack)
             {
                 if (ServerDT <= Me.AgentHunting.StartDT || Agent(AgentAction.Check)) //Продление лицензии охоты на агентов
                 {
                     maxLvl = Settings.maxAgentLvl; minLvl = Settings.minAgentLvl; O = Settings.AgentOpponent; //Настройки нападения на Агентов
-                } 
+                }
                 if (Settings.AgentOpponent == Opponent.Strong && Me.AgentHunting.Val >= 2) { maxLvl = Me.Player.Level; minLvl = maxLvl; O = Opponent.Equal; } //Меняем условия нападения, когда больше не можем бить сильных агентов. 
             }
             //При стоппере: Менять условия нападения больше не нужно, ибо стандартно передаются аллейные
@@ -5605,7 +5607,7 @@ namespace Moswar
             #region Время мониторинга Берсеркера или поиска Агентов (Часть 1)
             DT = (O == Opponent.EnemyEx || (Settings.UseAgent & !Me.AgentHunting.Stop)) ? DateTime.Now.AddMinutes(10) : DateTime.Now; //При включенном берсеркере до 10 минут подряд пытаться найти соперника, затем бить слабых.
             #endregion
-        ReTry:
+            ReTry:
             if (frmMain.GetDocument(MainWB).GetElementById("searchForm") == null) GoToPlace(MainWB, Place.Alley);
             if (IsHPLow(MainWB, 99, false))
             {
@@ -5677,7 +5679,7 @@ namespace Moswar
                         #endregion
                     }
                     #endregion  
-                }                
+                }
                 if (Me.Wallet.Money == 0 || IsTimeout(MainWB, true, false)) return false; //Закончились деньги, таймаут? ... невозможно напасть...
                 if (TimeToStopAtack(NextTimeout.Atack)) { UpdateStatus("@ " + DateTime.Now + " Драка отменяется иначе на встречу опоздаю, а у меня приказ свыше!"); return false; } //Необходимо остановить нападение!
                 goto ReTry;
@@ -5695,7 +5697,7 @@ namespace Moswar
                 #endregion               
                 #region Нападение или продолжение поиска!
                 switch (O)
-                {                    
+                {
                     case Opponent.Agent:
                     case Opponent.NPC:
                         if (O == Opponent.Agent && DT <= DateTime.Now)
@@ -5763,7 +5765,7 @@ namespace Moswar
                         //Проверка слабее ли игрок?
                         if (!IsPlayerWeak(ref vsPlayer[0], Me.Player.Level * 5, false)) //Устраиваем перебор, может следуюший слабее
                         {
-                            if (AttackRetries >= 20) 
+                            if (AttackRetries >= 20)
                             {
                                 if (O == Opponent.Victim) Torture(false); //Выключаем паяльники прочие, если атаковал жертв!
                                 O = Settings.AlleyOpponent.Equals(Opponent.Major) ? Opponent.Major : Opponent.Weak;
@@ -5775,7 +5777,7 @@ namespace Moswar
                         }
                         else
                         {
-                            if (match.Groups["PVP"].Success) 
+                            if (match.Groups["PVP"].Success)
                             {
                                 frmMain.InvokeScript(MainWB, AttackURL, new object[3] { match.Groups["Id"].Value, match.Groups["Force"].Value, match.Groups["Werewolf"].Value });
                                 #region Обработка Ajax
@@ -5808,9 +5810,9 @@ namespace Moswar
                             else frmMain.NavigateURL(MainWB, AttackURL);
                         }
                         break;
-                }                 
-                #endregion                
-                IsWBComplete(MainWB);               
+                }
+                #endregion
+                IsWBComplete(MainWB);
                 #region Что-то пошло не так?
                 if (frmMain.GetDocument(MainWB).GetElementById("searchForm") != null //Лаг на серваке, снова закинуло на алею!
                     || frmMain.GetDocument(MainWB).GetElementById("content").GetAttribute("classname") == "pers enemy" //Если попалась ссылка с игроком, значит на него напали до меня и сервак снова выделывается!
@@ -5827,7 +5829,7 @@ namespace Moswar
             {
                 case Opponent.Agent:
                     Me.AgentHunting.Val += AnalyseFight(MainWB) ? 0 : 1;
-                    Me.AgentHunting.LastDT = GetServerTime(MainWB);                    
+                    Me.AgentHunting.LastDT = GetServerTime(MainWB);
                     #region Пора включать стоппер?
                     if (Settings.AgentOpponent == Opponent.Strong)
                     {
@@ -5842,7 +5844,7 @@ namespace Moswar
                                     break;
                                 }
                             }
-                        }                        
+                        }
                     }
                     else Me.AgentHunting.Stop = Me.AgentHunting.Val >= 2; //При поиске отличном от сильных, допускается лишь 2 поражения.
                     #endregion                    
@@ -5866,7 +5868,7 @@ namespace Moswar
             int AttackRetrys = 0;
             Regex regex;
 
-        ReTry:
+            ReTry:
             if (frmMain.GetDocument(WB).GetElementById("searchForm") == null) GoToPlace(WB, Place.Alley);
             if (AttackRetrys < 3 & Me.HCHunting.Search) //
             {
@@ -6025,7 +6027,7 @@ namespace Moswar
                         case GroupFightType.PVP:
                             BugReport("PVP Fight");
                             #region PVP
-                            ServerDT = GetServerTime(MainWB);                           
+                            ServerDT = GetServerTime(MainWB);
                             if (Settings.GoPVPFightAllWeek ? true : Enumerable.Range(1, 5).Contains((int)ServerDT.AddMinutes(3).DayOfWeek))
                             {
                                 GoToPlace(MainWB, Place.Sovet, "/map");
@@ -6048,10 +6050,10 @@ namespace Moswar
                                     GrpFight.PVPStartDT = NextFight.AddMinutes(-3); //Для, того чтоб Бот не рефрешил аллею заходя в рудную, снова и снова!
 
                                     if (IsGrpFightTimePermission(GroupFightType.PVP) && TimeToGoGrpFight(GroupFightType.PVP, NextFight, "ruda:10"))
-                                    {                                        
+                                    {
                                         //string AreaId = Regex.Match((string)frmMain.GetJavaVar(MainWB, "$(\"#content .areas\").html()"), "class=\"?icon region(?<ID>([0-9])+)([\\s\\S])+class=\"?time").Groups["ID"].Value;
 
-                                        if (Settings.UseWearSet) WearSet(MainWB, ArrWearSet, 5);                                        
+                                        if (Settings.UseWearSet) WearSet(MainWB, ArrWearSet, 5);
                                         if (Settings.UseAutoFightBagSlots) CheckBagFightItems(GroupFightType.PVP);
                                         Dopings(ref Me.ArrUsualDoping, DopingAction.Check);
 
@@ -6068,7 +6070,7 @@ namespace Moswar
                                             #endregion
 
                                             Wait(NextFight.AddSeconds((double)Settings.GoPVPInstantlyOffset - (double)(Expert.GoToMax / 1000) - 3) - GetServerTime(MainWB), "@ Готовлюсь до: "); //-3s Сдвиг для уточнения!
-                                            
+
                                             UpdateStatus("@ " + DateTime.Now + " Поооосторонись! *рванул в PVP-стенку*");
                                             MonitorDT = DateTime.Now.AddSeconds((int)Settings.GagIE);
                                             do
@@ -6080,10 +6082,10 @@ namespace Moswar
                                                 {
                                                     frmMain.GetJavaVar(MainWB, Regex.Match((string)Info, "Alley.joinMetroFight(.*);").Value);
                                                     IsWBComplete(MainWB, 50, 150);
-                                                }                                        
+                                                }
                                             }
-                                            while (frmMain.GetJavaVar(MainWB, "$(\"#content .fightdesc.fightjoined\").html()") == DBNull.Value && MonitorDT > DateTime.Now);                                
-                                                                                        
+                                            while (frmMain.GetJavaVar(MainWB, "$(\"#content .fightdesc.fightjoined\").html()") == DBNull.Value && MonitorDT > DateTime.Now);
+
                                             do
                                             {
                                                 GoToPlace(MainWB, Place.Alley); //Драка начнётся через AnalysePlace
@@ -6094,7 +6096,7 @@ namespace Moswar
                                         else UpdateStatus("@ " + DateTime.Now + " Поход в PVP-стенку проигнорирован, из-за слабости в уровне живота.");
                                     }
                                     break;
-                                }                                
+                                }
                             }
                             GrpFight.PVPStartDT = ServerDT.Date.Add(new TimeSpan(23, 57, 0)); //Сюда доходит только в субботу воскресенье или если уже провёл свои 30 боёв!
                             #endregion                                                       
@@ -6194,7 +6196,7 @@ namespace Moswar
                                             if (!frmMain.GetDocumentURL(MainWB).EndsWith("/call/")) GoToPlace(MainWB, Place.Mobile); //Бегал лечиться?
                                             frmMain.GetDocument(MainWB).GetElementById("app-desktop").GetElementsByTagName("img")[0].InvokeMember("click"); //Переходим к списку драк! (Без этого кнопка не срабатывает)
                                             IsWBComplete(MainWB, 2000, 2500);
-                                        ReTry:
+                                            ReTry:
                                             HtmlEl = frmMain.GetDocument(MainWB).GetElementById("app-messages").GetElementsByTagName("button")[match.Groups["Started"].Success ? 2 : 1]; //Войти лицензией/записаться на бой!
                                             HtmlEl.InvokeMember("click");
                                             IsWBComplete(MainWB, 500, 1000);
@@ -6213,11 +6215,11 @@ namespace Moswar
                                                 IsWBComplete(MainWB, 2000, 5000);
                                                 return GroupFight(GroupFightAction.Check, GroupFightType.All);
                                             }
-                                            else 
+                                            else
                                             {
                                                 GrpFight.Mafia.FightFound = false; //Нет заряда/аккумулятора, забыть о драке!
                                                 GrpFight.Mafia.LastCheckDT = DateTime.Now.Add(MobilePhone(MobilePhoneAction.CheckBattery));
-                                            } 
+                                            }
                                         }
                                         #endregion
                                     }
@@ -6232,7 +6234,7 @@ namespace Moswar
                                 GrpFight.Mafia.NextFightDT = GetServerTime(MainWB).AddMinutes(-1);
                                 GrpFight.Mafia.LastCheckDT = DateTime.Now.AddMinutes(6);
                                 #endregion
-                            }  
+                            }
                             #endregion
                             break;
                         case GroupFightType.All:
@@ -6241,9 +6243,9 @@ namespace Moswar
                             Info = frmMain.GetJavaVar(MainWB, "$(\"#personal .bubble\").html()");
                             if (Info != DBNull.Value && Regex.IsMatch((string)Info, "[>](В Записи|Ожидание боя)[<]")) //DBNull ибо при ненахождении возврашается класс а не просто строка.
                             {
-                                IsTimeout(MainWB, true); 
+                                IsTimeout(MainWB, true);
                                 return true; //Была драка!
-                            }                                         
+                            }
                             GrpFight.NextCheckDT = DateTime.Now.AddSeconds(30); //Запоминаем время последней глобальной проверки, чтоб не частить сюда.
                             #endregion
                             break;
@@ -6253,7 +6255,7 @@ namespace Moswar
                     #region Fight
                     BugReport("Fight");
                     MonitorDT = DateTime.Now.AddMinutes(1); //Первый мониторинг 60, остальные по 40 секунд во время ходов
-                    MatchCollection matches;                                   
+                    MatchCollection matches;
                     bool ItemUsed;
                     stcFightItem[] FightItems = new stcFightItem[7]; //[0]Лечение, [1]Сыр, [2]Гранаты +, [3]Гранаты %, [4]Каска, [5]Пружина, [6]Щит, [x] -> ItemID
                     string vs;
@@ -6263,7 +6265,7 @@ namespace Moswar
                     string[] Rupor = { null, null, null }; //Инициализация Рупора
                     int CurrOpp = -1; //Индекс комбинацию к которому пытаемся подобрать!
                     double[] Weakness;
-                    int FightNr = 0;                    
+                    int FightNr = 0;
 
                     IsWBComplete(MainWB);
                     #region Убеждаюсь в том, что страничка боя сейчас открыта и идёт бой!
@@ -6272,9 +6274,9 @@ namespace Moswar
                         frmMain.NavigateURL(MainWB, Settings.ServerURL + "/alley/"); //Обновляем страничку!
                         IsWBComplete(MainWB);
                         if (!Regex.IsMatch(frmMain.GetDocumentURL(MainWB), "/fight/")) return false;
-                    }                    
+                    }
                     #endregion
-                                        
+
                     match = Regex.Match((string)frmMain.GetJavaVar(MainWB, "$(\"#fightGroupForm .group2\").text()"), "Группа (Крысомах|Коммунистов)|Понаехавшие|Коренные|Левые|Правые|Захватчики|Мафия|Охрана банка|Коммунисты");
                     switch (match.Value)
                     {
@@ -6299,20 +6301,20 @@ namespace Moswar
                                 case 99: vs = "Королева крысомах"; break;
                             }
                             #endregion
-                        break;
+                            break;
                         case "Коренные":
                         case "Понаехавшие":
-                            vs = Enumerable.Range(1,5).Contains((int)ServerDT.DayOfWeek) ? "PVP" : "Руда";                            
+                            vs = Enumerable.Range(1, 5).Contains((int)ServerDT.DayOfWeek) ? "PVP" : "Руда";
                             break;
                         case "Левые":
                         case "Правые":
-                            vs = "Хаос";                            
+                            vs = "Хаос";
                             break;
                         case "Захватчики":
-                            vs = "NPC";                            
+                            vs = "NPC";
                             break;
                         case "Мафия":
-                            vs = "Мафия";                            
+                            vs = "Мафия";
                             break;
                         case "Охрана банка":
                             vs = "Охрана банка";
@@ -6339,11 +6341,11 @@ namespace Moswar
                             }
                             #endregion
                             break;
-                        default :
+                        default:
                             vs = "Клан";
                             break;
                     }
-                   
+
                     if (frmMain.GetJavaVar(MainWB, "$(\"#fightGroupForm .me\").html()") == DBNull.Value) return false; //Видимо кто-то открыл страничку драки, но я в ней не участвую!
                     #region Считываем мои жизни на случай, если это старт бота
                     Me.Player.LifePkt = ((string)frmMain.GetJavaVar(MainWB, "$(\"#fightGroupForm .me .life\").text()")).Split('/');
@@ -6901,22 +6903,22 @@ namespace Moswar
                                     #region Обработка Ajax
                                     if ((frmMain.GetJavaVar(MainWB, "AngryAjax.turned") ?? "0").Equals("1")) MainWB.Tag = "Ajax"; //Ожидание конца хода                                 
                                     #endregion
-                                }                               
+                                }
                             }
                         }
                         #region Ход затянулся?
                         if (MonitorDT <= DateTime.Now) { frmMain.NavigateURL(MainWB, Settings.ServerURL + "/player/"); MonitorDT = DateTime.Now.AddSeconds(40); }  //Видимо ход затянулся, обновляем страничку!
                         #endregion
-                        
-                        IsWBComplete(MainWB);                        
+
+                        IsWBComplete(MainWB);
                         if (!frmMain.GetDocumentURL(MainWB).EndsWith("/player/") && frmMain.GetJavaVar(MainWB, "$(\"#fightGroupForm .result\").html()") != DBNull.Value) //Всё, бой закончен
                         {
                             #region Махинация, ибо - после некоторых завершенных боев всё ещё остаётся таймер и можем попасть в ловушку!
                             bool bRet = GetArrClassCount(MainWB, "$(\"#fightGroupForm .group:first .alive\");") > 0;
-                            GoToPlace(MainWB, Place.Player);                            
+                            GoToPlace(MainWB, Place.Player);
                             return bRet;
                             #endregion
-                        }                        
+                        }
                     }
                     break;
                     #endregion
@@ -6935,8 +6937,8 @@ namespace Moswar
                     {
                         frmMain.InvokeMember(MainWB, frmMain.GetDocument(MainWB).GetElementById("fine-form"), "submit"); //23.12.12 Обнаружены изменения в оплате взятками, теперь вот так.
                         UpdateMyInfo(MainWB);
-                        return Me.Police.Val < Settings.PayPoliceAt; 
-                    }                   
+                        return Me.Police.Val < Settings.PayPoliceAt;
+                    }
                     return false; //Нехватило денег откупится!
                 case PoliceAction.Relations:
                     UpdateMyInfo(MainWB);
@@ -7047,12 +7049,12 @@ namespace Moswar
         public void Factory(FactoryAction FA) //OK
         {
             BugReport("Factory");
-                        
+
             Match match;
             HtmlElement HtmlEl;
 
             switch (FA)
-            { 
+            {
                 case FactoryAction.Petriki:
                     #region Нужен бонус? Смотрим сколько у нас с собой чёрных бухгалтерий!
                     if (Settings.PetrikiBonus > 0)
@@ -7072,22 +7074,22 @@ namespace Moswar
                             {
                                 Me.Petriki.BlackBook = Convert.ToInt32(Regex.Match((string)frmMain.GetJavaVar(MainWB, "m.items['" + match.Groups["ID"] + "'].count['0'].innerText"), "([0-9])+").Value);
                                 break; //Выходим, нет смысла дальше листать
-                            }                      
+                            }
                         }
                     }
                     #endregion
-                ReTry:
+                    ReTry:
                     if (!frmMain.GetDocumentURL(MainWB).EndsWith("/factory/")) GoToPlace(MainWB, Place.Factory);
-                    
+
                     #region Приобретение бонуса за кофе
                     while ((Me.Petriki.Bonus = GetArrClassCount(MainWB, "$(\"#content .coffee-boost .cup5\");")) < Settings.PetrikiBonus && Me.Petriki.NeedCoffee <= 0 && Me.Petriki.NeedHoney <= Me.Wallet.Honey)
-                    { 
+                    {
                         UpdateMyInfo(MainWB);
                         HtmlEl = frmMain.GetDocument(MainWB).Forms[1].GetElementsByTagName("button")[0];
                         Me.Petriki.NeedCoffee = GetArrClassCount(MainWB, "$(\"#content .labcoffee.none\")");
                         #region Вычисление цены в мёде=)
                         switch (Me.Petriki.Bonus)
-                        { 
+                        {
                             case 4:
                                 Me.Petriki.NeedHoney = 1;
                                 break;
@@ -7105,13 +7107,13 @@ namespace Moswar
                             frmMain.InvokeMember(MainWB, HtmlEl, "click");
                             IsWBComplete(MainWB, 1000, 1500);
                         }
-                        if (!frmMain.GetDocumentURL(MainWB).EndsWith("/factory/")) GoToPlace(MainWB, Place.Factory);      
+                        if (!frmMain.GetDocumentURL(MainWB).EndsWith("/factory/")) GoToPlace(MainWB, Place.Factory);
                     }
                     if (Settings.PetrikiBonus > Me.Petriki.Bonus && Me.Wallet.Honey >= Me.Petriki.NeedHoney)
                     {
                         for (int i = Me.Petriki.BlackBook; i > 0; i--)
                         {
-                            if (Me.Petriki.BlackBook > 0 && Me.Petriki.NeedCoffee > 0 && Me.Petriki.NeedCoffee - 3 * i <= 0) 
+                            if (Me.Petriki.BlackBook > 0 && Me.Petriki.NeedCoffee > 0 && Me.Petriki.NeedCoffee - 3 * i <= 0)
                             {
                                 UpdateStatus("# " + DateTime.Now + " Хлопцы не спать! -Я побежал \"чёрные книжки\" на \"чёрный кофе\" менять!");
                                 MobilePhone(MobilePhoneAction.MafiaTrade);
@@ -7119,9 +7121,9 @@ namespace Moswar
                             else break; //Один чёрт не хватит чашек кофе, не стоит менять последнюю бухгалтерию!
                         }
                         if (Me.Petriki.NeedCoffee <= 0) goto ReTry;
-                    }                    
-                    if (!frmMain.GetDocumentURL(MainWB).EndsWith("/factory/")) GoToPlace(MainWB, Place.Factory);                   
-                    #endregion                    
+                    }
+                    if (!frmMain.GetDocumentURL(MainWB).EndsWith("/factory/")) GoToPlace(MainWB, Place.Factory);
+                    #endregion
                     #region Вычисление цены варения петриков учитывая бонус=)
                     Me.Petriki.Ore = 5 * (Me.Petriki.Bonus + 1 + Me.Petriki.Bonus / 5);
                     Me.Petriki.Money = 500 * (Me.Petriki.Bonus + 1 + Me.Petriki.Bonus / 5);
@@ -7142,84 +7144,113 @@ namespace Moswar
                     break;
                 case FactoryAction.UpdateChain:
                     int[] ArrUpItems = null;
-                    int[] ArrSellItems = null;                    
-                    GoToPlace(MainWB, Place.Factory,"/mf");
+                    int[] ArrSellItems = null;
+                    GoToPlace(MainWB, Place.Factory, "/mf");
                     match = Regex.Match((string)frmMain.GetJavaVar(MainWB, "$(\"#content .factory-mf-skill\").text()"), "Навык мф.:([\\s])*(?<Points>([0-9/])+)([\\s])*Звание: (?<Rang>[А-Я]([а-я ])+)"); //Такой Regex из-за долбанного IE7, в нем Ранг пишется в плотную с остальным текстом в частности с словом "Вместе"
                     #region Points
-                    string[] Points = match.Groups["Points"].Value.Split('/');                    
+                    string[] Points = match.Groups["Points"].Value.Split('/');
                     ChainUpgrade.Points = new int[2] { Convert.ToInt32(Points[0]), Convert.ToInt32(Points[1]) };
                     #endregion
                     #region Rang
                     switch (match.Groups["Rang"].Value)
                     {
-                        case "Стажер": ChainUpgrade.Rang = 0;
+                        case "Стажер":
+                            ChainUpgrade.Rang = 0;
                             break;
-                        case "Студент": ChainUpgrade.Rang = 1;
+                        case "Студент":
+                            ChainUpgrade.Rang = 1;
                             break;
-                        case "Криворучкин": ChainUpgrade.Rang = 2;
+                        case "Криворучкин":
+                            ChainUpgrade.Rang = 2;
                             break;
-                        case "Разбиратель": ChainUpgrade.Rang = 3;
+                        case "Разбиратель":
+                            ChainUpgrade.Rang = 3;
                             break;
-                        case "Юннат": ChainUpgrade.Rang = 4;
+                        case "Юннат":
+                            ChainUpgrade.Rang = 4;
                             break;
-                        case "Эникейщик": ChainUpgrade.Rang = 5;
+                        case "Эникейщик":
+                            ChainUpgrade.Rang = 5;
                             break;
-                        case "Подмастерье": ChainUpgrade.Rang = 6;
+                        case "Подмастерье":
+                            ChainUpgrade.Rang = 6;
                             break;
-                        case "Слесарь": ChainUpgrade.Rang = 7;
+                        case "Слесарь":
+                            ChainUpgrade.Rang = 7;
                             break;
-                        case "Самоделкин": ChainUpgrade.Rang = 8;
+                        case "Самоделкин":
+                            ChainUpgrade.Rang = 8;
                             break;
-                        case "Испытатель": ChainUpgrade.Rang = 9;
+                        case "Испытатель":
+                            ChainUpgrade.Rang = 9;
                             break;
-                        case "Подрядчик": ChainUpgrade.Rang = 10;
+                        case "Подрядчик":
+                            ChainUpgrade.Rang = 10;
                             break;
-                        case "Аппаратчик": ChainUpgrade.Rang = 11;
+                        case "Аппаратчик":
+                            ChainUpgrade.Rang = 11;
                             break;
-                        case "Наладчик": ChainUpgrade.Rang = 12;
+                        case "Наладчик":
+                            ChainUpgrade.Rang = 12;
                             break;
-                        case "Перворазрядник": ChainUpgrade.Rang = 13;
+                        case "Перворазрядник":
+                            ChainUpgrade.Rang = 13;
                             break;
-                        case "Кандидат в мастера": ChainUpgrade.Rang = 14;
+                        case "Кандидат в мастера":
+                            ChainUpgrade.Rang = 14;
                             break;
-                        case "Мастер": ChainUpgrade.Rang = 15;
+                        case "Мастер":
+                            ChainUpgrade.Rang = 15;
                             break;
-                        case "Конструктор": ChainUpgrade.Rang = 16;
+                        case "Конструктор":
+                            ChainUpgrade.Rang = 16;
                             break;
-                        case "Инженер": ChainUpgrade.Rang = 17;
+                        case "Инженер":
+                            ChainUpgrade.Rang = 17;
                             break;
-                        case "Специалист": ChainUpgrade.Rang = 18;
+                        case "Специалист":
+                            ChainUpgrade.Rang = 18;
                             break;
-                        case "Перфекционист": ChainUpgrade.Rang = 19;
+                        case "Перфекционист":
+                            ChainUpgrade.Rang = 19;
                             break;
-                        case "Профессионал": ChainUpgrade.Rang = 20;
+                        case "Профессионал":
+                            ChainUpgrade.Rang = 20;
                             break;
-                        case "Золотые руки": ChainUpgrade.Rang = 21;
+                        case "Золотые руки":
+                            ChainUpgrade.Rang = 21;
                             break;
-                        case "Эксперт": ChainUpgrade.Rang = 22;
+                        case "Эксперт":
+                            ChainUpgrade.Rang = 22;
                             break;
-                        case "Рационализатор": ChainUpgrade.Rang = 23;
+                        case "Рационализатор":
+                            ChainUpgrade.Rang = 23;
                             break;
-                        case "Левша": ChainUpgrade.Rang = 24;
+                        case "Левша":
+                            ChainUpgrade.Rang = 24;
                             break;
-                        case "Ювелир": ChainUpgrade.Rang = 25;
+                        case "Ювелир":
+                            ChainUpgrade.Rang = 25;
                             break;
-                        case "Кулибин": ChainUpgrade.Rang = 26;
+                        case "Кулибин":
+                            ChainUpgrade.Rang = 26;
                             break;
-                        case "Изобретатель": ChainUpgrade.Rang = 27;
+                        case "Изобретатель":
+                            ChainUpgrade.Rang = 27;
                             break;
-                        case "Великий изобретатель": ChainUpgrade.Rang = 28;
+                        case "Великий изобретатель":
+                            ChainUpgrade.Rang = 28;
                             break;
                     }
                     if (ChainUpgrade.Rang >= Settings.FactoryRang) //Выставелнный ранг достигнут, заканчиваем моддинг.
-                    { 
+                    {
                         ChainUpgrade.Stop = true;
                         return;
                     }
                     #endregion                    
                     #region Сбор информации о цепочках в багаже
                     foreach (string ItemId in GetArrClassHtml(MainWB, "$(\"#equipment-accordion img[src$='accessory7.png']\")", "getAttribute(\"data-id\")"))
-                    {                        
+                    {
                         match = Regex.Match(ItemId, "([[](?<MF>([0-9])+)[]])");
                         if ((!match.Success || Convert.ToInt32(match.Groups["MF"].Value) < 3))
                         {
@@ -7230,10 +7261,10 @@ namespace Moswar
                         {
                             Array.Resize<int>(ref ArrSellItems, (ArrSellItems == null ? 1 : ArrSellItems.Count<int>() + 1));
                             ArrSellItems[ArrSellItems.Count<int>() - 1] = Convert.ToInt32(ItemId);
-                        }                       
+                        }
                     }
                     #endregion
-                    
+
                     if (ArrUpItems == null)
                     {
                         UpdateStatus("* " + DateTime.Now + " Пойду-ка я вспомню уроки труда, чтоли ...");
@@ -7269,7 +7300,7 @@ namespace Moswar
                                     #endregion
                                 }
                                 else break; //Нехватает ресурсов для дальнейших модификаций, выходим!
-                            }                            
+                            }
                             #endregion
                             #region Цепочки проаппаные полностью, подлежашие продаже!
                             if (Convert.ToInt32(Regex.Match((string)frmMain.GetJavaVar(MainWB, "$(\"#content .compare .mf\").html()"), "(?<=M)([0-9])+").Value) >= 3)
@@ -7293,16 +7324,16 @@ namespace Moswar
                                 IsWBComplete(MainWB); //IsAjaxComplete(MainWB);
                             }
                             #endregion
-                        }              
+                        }
                     }
-                break;
-            }            
-        }        
+                    break;
+            }
+        }
         public bool Patrol()
         {
             BugReport("Patrol");
 
-            HtmlElement HtmlEl;                        
+            HtmlElement HtmlEl;
 
             GoToPlace(MainWB, Place.Alley);
             if (frmMain.GetDocument(MainWB).GetElementById("alley-patrol-button") != null || frmMain.GetDocument(MainWB).GetElementById("leave-patrol-button") != null) //Есть ли ещё время патруля? (По кнопкам начать и улизнуть)
@@ -7398,7 +7429,7 @@ namespace Moswar
                     frmMain.GetDocument(MainWB).GetElementById("time").SetAttribute("value", Convert.ToInt32(HC[HC.Count - 1].GetAttribute("value")) >= Settings.PatrolTime ? Settings.PatrolTime.ToString() : HC[HC.Count - 1].GetAttribute("value"));
                     frmMain.InvokeMember(MainWB, frmMain.GetDocument(MainWB).GetElementById("patrolForm"), "submit");
                     #endregion
-                }                
+                }
                 IsWBComplete(MainWB);
                 HtmlEl = frmMain.GetDocument(MainWB).GetElementById("patrolForm").All["Patrol"];
                 TimeSpan TS = new TimeSpan();
@@ -7453,7 +7484,8 @@ namespace Moswar
             {
                 UpdateStatus("* " + DateTime.Now + " Следующий бонус за возвращение будет через: " + TS);
                 Me.Events.NextGetReturnBonusDT = GetServerTime(MainWB).Add(TS);
-            } else
+            }
+            else
                 Me.Events.NextGetReturnBonusDT = GetServerTime(MainWB).AddHours(1); // Если таймера нет, проверим еще раз через час
         }
 
@@ -7674,16 +7706,16 @@ namespace Moswar
         public bool Bank(BankAction BA)
         {
             Match match;
-            
+
             GoToPlace(MainWB, Place.Bank);
 
             switch (BA)
-            { 
+            {
                 case BankAction.Exchange:
                     BugReport("Bank.Exchange");
                     #region Обмен тугриков в руду.
                     UpdateStatus("# " + DateTime.Now + " Ох наличности же у меня собралось, закажу ка я грузовик, отвезу в банк!");
-                 ReTry:
+                    ReTry:
                     UpdateMyInfo(MainWB);
                     frmMain.GetDocument(MainWB).GetElementById("ruda_count").InnerText = ((int)(Me.Wallet.Money - Settings.minThimblesMoney) / 750).ToString();
                     string strExchanged = "";
@@ -7706,7 +7738,7 @@ namespace Moswar
                             GoToPlace(MainWB, Place.Bank);
                             goto ReTry;
                         }
-                        else 
+                        else
                         {
                             Me.Thimbles.BankStartDT = GetServerTime(MainWB).AddHours(2);
                             return false;
@@ -7730,23 +7762,23 @@ namespace Moswar
                                 IsWBComplete(MainWB);
                                 return true; //Ячейка в банке куплена!
                             }
-                        }                                                
+                        }
                     }
                     return false; //Нет руды на покупку ячейки!
-                    #endregion
+                #endregion
                 case BankAction.Deposit:
                     BugReport("Bank.Deposit");
                     #region Вклад/Сбор денег из банковской ячейки.
                     HtmlElementCollection HC = frmMain.GetDocument(MainWB).GetElementsByTagName("form");
                     match = Regex.Match(HC[0].InnerText, "Ваша ячейка открыта до: (?<Date>([0-9.: ])+)");
                     if (match.Success || Bank(BankAction.BuySafe)) Me.BankDeposit.SafeTillDT = Convert.ToDateTime(match.Groups["Date"].Value, CultureInfo.CreateSpecificCulture("ru-RU"));
-                    else 
+                    else
                     {
                         Me.BankDeposit.SafeTillDT = GetServerTime(MainWB); //Ячейки у меня нет, не проверять больше.
                         return false; //нет ячейки в банке, уходим.
                     }
 
-                Check:
+                    Check:
                     UpdateMyInfo(MainWB);
                     if (frmMain.GetDocumentURL(MainWB).EndsWith("/Bank/")) return false;
                     match = Regex.Match((string)frmMain.GetJavaVar(MainWB, "$(\"#content .bank-deposit .now\").text()"), "Сейчас на счету: (?<Money>([0-9,])+)([\\s\\S])*Можно забрать: (?<Date>([0-9.: ])+)");
@@ -7764,12 +7796,12 @@ namespace Moswar
                             frmMain.InvokeMember(MainWB, H, "click");
                             goto Check;
                         }
-                    }                      
+                    }
                     #endregion
-                    break; 
+                    break;
                 default: return true;
             }
-            return true;  
+            return true;
         }
         public void HunterClub(bool MultiPageSearch = true) //OK
         {
@@ -7778,7 +7810,7 @@ namespace Moswar
             Regex regex;
             Match match;
             HtmlElement HtmlEl;
-            
+
             int Lvl, i = 0, iCurrPage, iMaxPage;
             HCThread[0] = new Thread(new ThreadStart(HCStartMultiThread));
             HCThread[0].Name = "HCThread[0]";
@@ -7840,7 +7872,7 @@ namespace Moswar
             DateTime StoptDT = DateTime.Now.AddMinutes(10);
             Me.Player.Level = Convert.ToInt32((string)frmMain.GetJavaVar(MainWB, "player['level']")); //Считываем мой настоящий уровень!
             vsPlayer[0].URL = null;
-            vsPlayer[1].URL = null;            
+            vsPlayer[1].URL = null;
 
             while (Me.HCHunting.Search)
             {
@@ -7895,7 +7927,7 @@ namespace Moswar
                                         vsPlayer[1].URL = Settings.ServerURL + match.Groups["URL"].Value;
                                         if (HCThread[1].ThreadState == ThreadState.Stopped) HCThread[1] = new Thread(new ThreadStart(HCStartMultiThread));
                                         if (HCThread[1].ThreadState == ThreadState.Unstarted) HCThread[1].Start();
-                                    }                                    
+                                    }
                                 }
                             }
                         }
@@ -7945,18 +7977,18 @@ namespace Moswar
                     HtmlEl = frmMain.GetDocument(MainWB).GetElementById("content-no-rat").GetElementsByTagName("form")[0];
                     if (HtmlEl.GetElementsByTagName("button")[0].GetAttribute("classname") != "button disabled")
                     {
-                        UpdateStatus("@ " + DateTime.Now + " Вот хвосты, гоните чемоданчеГ!");                       
+                        UpdateStatus("@ " + DateTime.Now + " Вот хвосты, гоните чемоданчеГ!");
                         frmMain.InvokeMember(MainWB, HtmlEl, "submit");
                         IsWBComplete(MainWB);
                     }
                     #endregion
-                    HtmlEl = frmMain.GetDocument(MainWB).GetElementById("timer-rat-fight");                        
+                    HtmlEl = frmMain.GetDocument(MainWB).GetElementById("timer-rat-fight");
                     if (HtmlEl == null)
                     {
                         #region Всё, больше нет крысомах, всех перебил!
                         regex = new Regex("Вы сможете продолжить битву с крысомахами через: (?<Timeout>([0-9:])+)");
                         match = regex.Match(frmMain.GetDocumentText(MainWB));
-                        if (match.Success) 
+                        if (match.Success)
                         {
                             UpdateStatus("@ " + DateTime.Now + " А берлога то пуста, кругом лишь одни трупы ..., вот я проказник ...");
                             Me.RatHunting.RestartDT = DateTime.Now + TimeSpan.Parse(match.Groups["Timeout"].Value);
@@ -7976,7 +8008,7 @@ namespace Moswar
 
                         regex = new Regex("Спуск на (?<RatLvl>([0-9])+) уровень\\s+(?<Timeout>([0-9:])+)?");
                         match = regex.Match(HtmlEl.InnerText);
-                        if (match.Groups["Timeout"].Success) Me.RatHunting.NextDT = DateTime.Now + TimeSpan.Parse(match.Groups["Timeout"].Value);                       
+                        if (match.Groups["Timeout"].Success) Me.RatHunting.NextDT = DateTime.Now + TimeSpan.Parse(match.Groups["Timeout"].Value);
                         Me.RatHunting.Lvl = Convert.ToInt32(match.Groups["RatLvl"].Value);
                         if (match.Groups["RatLvl"].Success) Me.RatHunting.Stop |= Settings.maxSearchRatLvl < Me.RatHunting.Lvl;
 
@@ -8011,7 +8043,7 @@ namespace Moswar
                                     return false;
                                 }
                                 if (Settings.UseWearSet) WearSet(MainWB, ArrWearSet, Me.RatHunting.Lvl % 5 == 0 ? 4 : 1); //Одеваем крысиный сет!
-                                if (Settings.UseAutoFightBagSlots && Me.RatHunting.Lvl % 5 == 0) CheckBagFightItems(GroupFightType.Rat);                      
+                                if (Settings.UseAutoFightBagSlots && Me.RatHunting.Lvl % 5 == 0) CheckBagFightItems(GroupFightType.Rat);
                                 #endregion
                                 if (IsHPLow(MainWB, 100) ? (HealMePlus() ? true : CheckHealthEx(99, 49, Settings.HealPet50, Settings.HealPet100)) : true) //Лечить в любом варианте до 100%
                                 {
@@ -8072,7 +8104,7 @@ namespace Moswar
                             return false;
                         }
                         if (Settings.UseWearSet) WearSet(MainWB, ArrWearSet, Me.RatHunting.Lvl % 5 == 0 ? 4 : 1); //Одеваем крысиный сет!
-                        if (Settings.UseAutoFightBagSlots && Me.RatHunting.Lvl % 5 == 0) CheckBagFightItems(GroupFightType.Rat);                       
+                        if (Settings.UseAutoFightBagSlots && Me.RatHunting.Lvl % 5 == 0) CheckBagFightItems(GroupFightType.Rat);
                         if (!Regex.IsMatch(frmMain.GetDocumentURL(MainWB), "/metro/")) GoToPlace(MainWB, Place.Metro);
                         Wait(Me.RatHunting.NextDT - DateTime.Now, " Межуюсь у входа до: "); //Ожидаем до возможности начать бой
                         #endregion
@@ -8108,7 +8140,7 @@ namespace Moswar
                             Metro(MetroAction.Check);
                         }
                         else return false;
-                    }                    
+                    }
                     return true; //Бот что-то проделал в метро!
                 case MetroAction.Game:
                     BugReport("Metro.Game");
@@ -8160,7 +8192,7 @@ namespace Moswar
                                     if (HtmlEl != null)
                                     {
                                         TimeSpan TS = TimeSpan.Parse(HtmlEl.InnerText);
-                                        
+
                                         if (GetServerTime(MainWB) - Me.Rat.LastDT <= new TimeSpan(1, 0, 0)) //Автолечение перед крысой.
                                         {
                                             Wait(TS.Subtract(new TimeSpan(0, 0, 25)), " Начал раскопку, ожидаем до: "); //За 25 секунд до конца отправим бота проверить жизни...
@@ -8184,7 +8216,7 @@ namespace Moswar
                                     #region Обновляем страничку в метро ибо во время таймаута мог утопать в иное место!
                                     GoToPlace(MainWB, Place.Metro);
                                     #endregion
-                                 
+
                                     #region Копание шаг 2
                                     HtmlEl = frmMain.GetDocument(MainWB).GetElementById("content-no-rat");
                                     if (HtmlEl != null)
@@ -8223,7 +8255,7 @@ namespace Moswar
                                     bool RatDig;
                                     bool Prize;
                                     bool Attack = false;
-                                   
+
                                     HtmlEl = frmMain.GetDocument(MainWB).GetElementById("ratlevel");
                                     if (HtmlEl != null)
                                     {
@@ -8240,7 +8272,7 @@ namespace Moswar
                                         #region Королева Крысомах + Крыса/ы из охоты
                                         RatDig = false;
                                         HtmlEl = frmMain.GetDocument(MainWB).GetElementById("welcome-rat");
-                                        
+
                                         MatchCollection matches = Regex.Matches(HtmlEl.InnerText, "(Крысомаха[[](?<Lvl>([0-9])+)[]])|(Королева Крысомах)");
                                         if (matches.Count == 1 && matches[0].Value == "Королева Крысомах")
                                         {
@@ -8282,7 +8314,7 @@ namespace Moswar
                                                     Prize |= Settings.SearchRatBambula && H.GetAttribute("src").Contains("trainer_weight");
                                                     if ((RatLvl % 5 == 0 && RatLvl <= 15 && Settings.SearchRatRobinHood && !H.GetAttribute("src").Contains("box_metro_key")) //Проходить стенки (до 15 включительно), только если за них дадут ключик! 
                                                         || (RatLvl == 35 && Settings.SearchRatBambula && !H.GetAttribute("src").Contains("trainer_weight") && Me.RatHunting.RestartDT > DateTime.Now.AddMinutes(30)) //Проходить только если найдена гиря.
-                                                        ) Prize = false; 
+                                                        ) Prize = false;
                                                     if (Prize) break;
                                                 }
                                             }
@@ -8291,7 +8323,7 @@ namespace Moswar
                                             if (Attack && !Prize) UpdateStatus("@ " + DateTime.Now + " Эх, тяжела жизнь \"Робингуда\", живи нищая Крысюлька.");
                                             Attack &= Prize; //В принципе всё ОК, для нападения есть ли приз?
                                             #endregion
-                                        }                                        
+                                        }
                                         #endregion
                                         #region Запасное переодевание
                                         if (Attack && Settings.UseWearSet) WearSet(MainWB, ArrWearSet, Me.RatHunting.Lvl % 5 == 0 ? 4 : 1); //Одеваем крысиный сет!
@@ -8299,18 +8331,18 @@ namespace Moswar
                                         if (!regex.IsMatch(frmMain.GetDocumentURL(MainWB))) GoToPlace(MainWB, Place.Metro);
                                         #endregion
                                     }
-                                    
+
                                     if (Attack && !Me.Trauma.Stop)
                                     {
                                         if (RatDig)
                                         {
                                             IsTimeout(MainWB, false, true, " Вцепился в шею Крысомахи[" + RatLvl + "], таймаут до: ", TimeOutAction.Blocked); //Ожидаем окончания времени с последней драки.
-                                            Wait(1000, 3000, " Активирована задержка до: ");                                            
+                                            Wait(1000, 3000, " Активирована задержка до: ");
                                             frmMain.NavigateURL(MainWB, Settings.ServerURL + "/metro"); //Обновляю страничку перед атакой, вдруг на меня кто успел напасть? 
                                             IsWBComplete(MainWB);
                                         }
                                         else UpdateStatus("# " + DateTime.Now + " Всем к стене, снять штаны и нагнуться! Я погнал на [" + RatLvl + "] уровень метро!");
-                                        
+
                                         HtmlEl = frmMain.GetDocument(MainWB).GetElementById("welcome-rat");
                                         if (HtmlEl.GetElementsByTagName("button").Count >= 2)
                                         {
@@ -8402,7 +8434,7 @@ namespace Moswar
                                             if (!Me.RatHunting.Stop && Settings.UseRatFastSearch && Settings.RatFastSearch <= Me.RatHunting.Lvl) Metro(MetroAction.SearchRat);
                                             #endregion                                   
                                             #endregion
-                                        }                                                                                
+                                        }
                                     }
                                     #endregion
                                     return true;
@@ -8416,12 +8448,12 @@ namespace Moswar
                             {
                                 int ThimbleID;
 
-                            RePlay:
+                                RePlay:
                                 HtmlEl = frmMain.GetDocument(MainWB).GetElementById("naperstki-left");
                                 if (HtmlEl != null)
                                 {
                                     while (frmMain.GetDocument(MainWB).GetElementById("naperstki-left").InnerText != "0") //Остались ли ешё попытки для игры?
-                                    {                                        
+                                    {
                                         do //Выискиваем неоткрытый до сели напёрсток!
                                         {   //Во сколько напёрстков играем?                                            
                                             ThimbleID = new Random().Next(0, frmMain.GetDocument(MainWB).GetElementById("thimble8") == null ? 2 : 9);
@@ -8440,7 +8472,7 @@ namespace Moswar
                                                 IsWBComplete(MainWB);
                                             }
                                             #endregion
-                                            if (frmMain.GetDocument(MainWB) != null) frmMain.GetDocument(MainWB).GetElementById("thimble" + ThimbleID).InvokeMember("click");                                       
+                                            if (frmMain.GetDocument(MainWB) != null) frmMain.GetDocument(MainWB).GetElementById("thimble" + ThimbleID).InvokeMember("click");
                                             IsWBComplete(MainWB, 300, 700);
                                         } while (frmMain.GetDocument(MainWB).GetElementById("thimble" + ThimbleID).GetAttribute("ClassName") == "icon thimble-closed-active");
                                     }
@@ -8499,14 +8531,14 @@ namespace Moswar
                                             }
                                         }
                                         #endregion //Лавочку закрыли!
-                                        else frmMain.NavigateURL(MainWB, Settings.ServerURL + "/thimble/play/" + PlayThimbles + "/"); 
+                                        else frmMain.NavigateURL(MainWB, Settings.ServerURL + "/thimble/play/" + PlayThimbles + "/");
                                         IsWBComplete(MainWB, 300, 700);
                                         goto RePlay;
                                     default:
                                         frmMain.NavigateURL(MainWB, Settings.ServerURL + "/thimble/leave/");
                                         IsWBComplete(MainWB, 2000, 3000);
                                         break;
-                                }                                
+                                }
                             }
                             #endregion
                             return true;
@@ -8525,7 +8557,7 @@ namespace Moswar
             HtmlElement HtmlEl;
             int Offset = 0;
             int MaxStat = 0;
-            int UsePetType = 0;  
+            int UsePetType = 0;
 
             switch (PA)
             {
@@ -8555,7 +8587,7 @@ namespace Moswar
                         {
                             GoToPlace(MainWB, Place.Petarena, m.Groups["URL"].Value); //Переходим в тренажерный зал выбранного питомца.
                             break; //Нужный питомец уже найден!
-                        }    
+                        }
                     }
                     #region Нет или не найден нужный питомец?
                     if (frmMain.GetDocumentURL(MainWB).EndsWith("/petarena/"))
@@ -8570,16 +8602,16 @@ namespace Moswar
                     if (HtmlEl != null)
                     {
                         string[] Time = HtmlEl.InnerText.Split(':'); //HH:mm:ss
-                        if (PA == PetAction.SetWarPet) 
+                        if (PA == PetAction.SetWarPet)
                         {
                             UpdateStatus("@ " + DateTime.Now + " Фигасе, моего пушистика крокодилы похоже покусали, пускай пока отдохнёт!");
                             Me.Events.NextSetWarPetDT = GetServerTime(MainWB).Add(new TimeSpan(Convert.ToInt32(Time[0]), Convert.ToInt32(Time[1]), Convert.ToInt32(Time[2]))); //Иначе, если больше 24 часов, вылетает ошибка конвертирования.TimeSpan TS = TimeSpan.ParseExact(HtmlEl.InnerText, "hh:mm:ss", CultureInfo.CreateSpecificCulture("ru-RU"));
                         }
-                        if (PA == PetAction.TrainWarPet) 
+                        if (PA == PetAction.TrainWarPet)
                         {
                             UpdateStatus("@ " + DateTime.Now + " Фигасе, моего пушистика крокодилы похоже покусали, тренировки откладываются!");
                             Me.WarPet.TrainTimeOutDT = GetServerTime(MainWB).Add(new TimeSpan(Convert.ToInt32(Time[0]), Convert.ToInt32(Time[1]), Convert.ToInt32(Time[2]))); //Иначе, если больше 24 часов, вылетает ошибка конвертирования.TimeSpan TS = TimeSpan.ParseExact(HtmlEl.InnerText, "hh:mm:ss", CultureInfo.CreateSpecificCulture("ru-RU"));                    
-                        }                        
+                        }
                         return;
                     }
                     #endregion
@@ -8587,7 +8619,7 @@ namespace Moswar
                     if (PA == PetAction.SetWarPet)
                     {
                         UpdateStatus("# " + DateTime.Now + " Вуаля, мой четвероногий снова со мной, теперь я спокоен, надеюсь шеф не заметил!");
-                        frmMain.InvokeScript(MainWB, "petarenaSetActive", new object[] { Regex.Match(frmMain.GetDocumentURL(MainWB), "([0-9])+").Value, "'battle'"});
+                        frmMain.InvokeScript(MainWB, "petarenaSetActive", new object[] { Regex.Match(frmMain.GetDocumentURL(MainWB), "([0-9])+").Value, "'battle'" });
                         IsWBComplete(MainWB); //IsAjaxComplete(MainWB);
                     }
                     #endregion
@@ -8595,7 +8627,7 @@ namespace Moswar
                     if (PA == PetAction.TrainWarPet)
                     {
                         regex = new Regex("tugriki\"?>(?<Money>([0-9,])+)?([^=])+(=\"?ruda\"?>(?<Ore>([0-9,])+))?([^=])+(=\"?neft\"?>(?<Oil>([0-9,])+))?"); //Выдираем ресурсы необходимые под прокачку
-                    WarPetUpdate:
+                        WarPetUpdate:
                         UpdateMyInfo(MainWB);
                         TimeSpan TSTimeout = new TimeSpan(); //Обнуление таймаута (ибо может быть сохранен прошлый до кнута)            
                         HtmlEl = frmMain.GetDocument(MainWB).GetElementById("train");
@@ -8696,7 +8728,7 @@ namespace Moswar
                         UpdateStatus("# " + DateTime.Now + " Почесал питомца, нахватался блох.");
                     }
                     #endregion
-                    break;                    
+                    break;
                 case PetAction.TrainRunPet:
                     #region Тренировка бегового пэта
                     GoToPlace(MainWB, Place.Petarena);
@@ -8714,7 +8746,7 @@ namespace Moswar
                         {
                             GoToPlace(MainWB, Place.Petarena, m.Groups["URL"].Value); //Переходим в тренажерный зал выбранного питомца.
                             break; //Нужный питомец уже найден!
-                        } 
+                        }
                     }
                     #region Нет или не найден нужный питомец?
                     if (frmMain.GetDocumentURL(MainWB).EndsWith("/petarena/"))
@@ -8724,7 +8756,7 @@ namespace Moswar
                     }
                     #endregion                    
                     regex = new Regex("tugriki\"?>(?<Money>([0-9,])+)?([^=])+(=\"?ruda\"?>(?<Ore>([0-9,])+))?([^=])+(=\"?neft\"?>(?<Oil>([0-9,])+))?([^=])+(=\"?pet-golden\"?>(?<Medal>([0-9,])+))?"); //Выдираем ресурсы необходимые под прокачку
-                RunPetUpdate:
+                    RunPetUpdate:
                     Offset = 0;
                     UpdateMyInfo(MainWB);
                     int Medal = Convert.ToInt32((string)frmMain.GetJavaVar(MainWB, "$(\"#content .pet-golden.counter\").text()")); //Считывание кол-ва медалек.
@@ -8921,7 +8953,7 @@ namespace Moswar
                                             if (HtmlEl == null ? false : HtmlEl.InnerText == "Вам нужен билет чтобы участвовать в забегах.")
                                             {
                                                 if (Me.RunPet.Doping && !Me.RunPet.FreeRuns.Stop) UpdateStatus("@ " + DateTime.Now + " Не подведи меня \"обжора\", начинаю гонять малового по билетам!"); //Если Me.RunPet.FreeRuns.Stop то, уже и дополнительные билеты закончились, а то что мы видим от питомца из другой лиги!
-                                                else 
+                                                else
                                                 {
                                                     UpdateStatus("@ " + DateTime.Now + " К ноге! Усё, бобик сдох, завтра забеги продолжим!");
                                                     Me.RunPet.RunTimeOutDT = ServerDT.AddDays(1).Date; //Билеты закончились, зайти завтра
@@ -8939,17 +8971,17 @@ namespace Moswar
                                             if (Me.RunPet.Doping) //Пьём баночку тонуса.
                                             {
                                                 match = Regex.Match(frmMain.GetDocument(MainWB).GetElementById("content").InnerHtml, "tonus_up.png([^>])+data-id=(\")?(?<Id>([0-9])+)");
-                                                if (match.Groups["Id"].Success) 
+                                                if (match.Groups["Id"].Success)
                                                 {
                                                     UpdateStatus("# " + DateTime.Now + " Залил в бегуна редбулла, теперь он всем покажет!");
                                                     //PRIMER: $.post('/petrun/use_doping/'+petId+'/'+food_id+'/', {ajax: 1}, function(response))
-                                                    frmMain.GetJavaVar(MainWB, "$.post(\"/petrun/use_doping/" + matches[i].Groups["PetID"].Value + "/" + match.Groups["Id"].Value + "/\", {ajax: 1});");                                                    
+                                                    frmMain.GetJavaVar(MainWB, "$.post(\"/petrun/use_doping/" + matches[i].Groups["PetID"].Value + "/" + match.Groups["Id"].Value + "/\", {ajax: 1});");
                                                     Wait(1500, 2000);
                                                     break; //Тонус пополнен, выходим не сдвигая старта!
-                                                }                                                
+                                                }
                                             }
                                             Me.RunPet.RunTimeOutDT = ServerDT.AddMinutes((20 - Me.RunPet.Tonus) * 3); //Раз уж досюда прошёл, то остаётся мало времени для побегов при 100% тонусе
-                                        } 
+                                        }
                                     }
                                     else Me.RunPet.RunTimeOutDT = ServerDT.AddMinutes((100 - Me.RunPet.Tonus) * 3); //Времени предостаточно, но нужно подождать пока станет 100% тонуса!
                                 }
@@ -8972,7 +9004,7 @@ namespace Moswar
 
             if (GoToPlace(MainWB, Place.Trainer)) //Nomer El+11 skol'ko nexvataet deneg, chtob ego prokochat'
             {
-            ReTry:
+                ReTry:
                 UpdateMyInfo(MainWB); //Считываем деньги на данный момент.
 
                 //Здоровье
@@ -9039,7 +9071,7 @@ namespace Moswar
                 {
                     UpdateStatus("# " + DateTime.Now + " Уфф маловат я, руками много нефти не унесёшь!");
                     return false;
-                }                
+                }
                 if (NA == OilAction.LeninFight && Me.Player.Level < 7)
                 {
                     Me.OilLeninHunting.NextDT = DateTime.Now.Add(ServerDT.AddDays(1).Date - ServerDT).AddMinutes(2);
@@ -9047,16 +9079,16 @@ namespace Moswar
                     Me.OilLeninHunting.Stop = true;
                     UpdateStatus("# " + DateTime.Now + " Уфф на Ленина не пойду, маловат я с дедом кувыркаться!");
                     return false;
-                }               
+                }
             }
             #endregion
 
             int Points;
             int Offset;
             HtmlElement HtmlEl;
-            
+
             GoToPlace(MainWB, Place.Oil);
- 
+
             switch (NA)
             {
                 case OilAction.Fight:
@@ -9096,7 +9128,7 @@ namespace Moswar
                                     GoToPlace(MainWB, Place.Player);
                                     HtmlEl = frmMain.GetDocument(MainWB).GetElementById("inventory-snikers-btn"); //Банка с тонусом
                                     if (HtmlEl != null && frmMain.GetJavaVar(MainWB, "m.items['" + HtmlEl.GetAttribute("data-id") + "'].mf['0'].innerText") != null) EatDrog(MainWB, ShopItems.Snikers); //Уже тикает время?
-                                }                                
+                                }
                                 #endregion
                                 #endregion
                                 return true;
@@ -9114,7 +9146,7 @@ namespace Moswar
                         Me.OilHunting.LastDT = GetServerTime(MainWB);
                         Me.OilHunting.Stop = true;
                         return false;
-                    }                    
+                    }
                 case OilAction.LeninFight:
                     #region Инфо о возможных переменных
                     /*
@@ -9147,10 +9179,24 @@ namespace Moswar
                     }
                     else
                     {
+                        if (Regex.Match(frmMain.GetDocument(MainWB).GetElementById("alert-text").InnerText, "Не прошло и дня, как Вождь опять захватил нефтепровод! На этот раз доступен темный нефтепровод! Вперед, на защиту!").Success)
+                        {
+                            if (Settings.GoOilDarkLenin)
+                            {
+                                frmMain.GetDocument(MainWB).GetElementById("alert-text").Parent.Children[1].Children[0].Children[0].InvokeMember("onclick");
+                                IsWBComplete(MainWB);
+                            }
+                            else
+                            {
+                                frmMain.GetDocument(MainWB).GetElementById("alert-text").Parent.Children[1].Children[1].Children[0].InvokeMember("onclick");
+                                IsWBComplete(MainWB);
+                            }
+                        }
+
                         UpdateStatus("# " + DateTime.Now + " Салют комсомолу и рабочему классу! Сейчас я отправлю вас назад в СССР...");
                         Me.OilLeninHunting.AllowPartBilet = false; //Разрешение использовать билеты, сколько понадобится для победы, может быть включено только допингом!
-                        
-                        Me.OilLeninHunting.Lvl = Convert.ToInt32(frmMain.GetJavaVar(MainWB, "NeftLenin.step"));                        
+
+                        Me.OilLeninHunting.Lvl = Convert.ToInt32(frmMain.GetJavaVar(MainWB, "NeftLenin.step"));
 
                         #region Синхронизация обвалов крысопровода и ленинопровода.
                         if (Settings.OilLeninSyncRats && Me.OilLeninHunting.Lvl <= 1 && Settings.SearchRat && !IsTimeInTimespan(new TimeSpan(0, 0, (int)Settings.OffsetSyncOilLenin - 30, 0), new TimeSpan(0, 0, (int)Settings.OffsetSyncOilLenin + 30, 0), DateTime.Now.AddHours(24) - Me.RatHunting.RestartDT))
@@ -9158,7 +9204,7 @@ namespace Moswar
                             Me.OilLeninHunting.RestartDT = Me.RatHunting.RestartDT.AddMinutes((double)Settings.OffsetSyncOilLenin);
                             Me.OilLeninHunting.NextDT = Me.OilLeninHunting.RestartDT;
                             if (Me.OilLeninHunting.NextDT > DateTime.Now) UpdateStatus("@ " + DateTime.Now + " Пытаюсь синхронизировать ленино-крысопровод, скоро буду!");
-                        }                       
+                        }
                         #endregion
 
                         while (!Me.OilLeninHunting.Stop && Me.OilLeninHunting.NextDT < DateTime.Now)
@@ -9187,8 +9233,8 @@ namespace Moswar
                                 switch (Me.OilLeninHunting.FightType)
                                 {
                                     case "b":
-                                        #region Ленин
-                                        #endregion
+                                    #region Ленин
+                                    #endregion
                                     case "g":
                                     case "d":
                                         #region Драки
@@ -9217,18 +9263,18 @@ namespace Moswar
                                             Prize |= Settings.OilLeninLeaveNoKey && H.GetAttribute("src").Contains("key3");
                                             Prize |= Settings.OilLeninLeaveNoElement && H.GetAttribute("src").Contains("collections/71");
                                             Prize |= Settings.OilLeninLeaveNoBox && H.GetAttribute("src").Contains("box3");
-                                            
+
                                             if (IsTicketLevel)
                                             {
                                                 Prize |= Settings.OilLeninLeaveNoTicket && H.GetAttribute("src").Contains("ticket");
-                                                
+
                                                 if (Settings.OilLeninLeaveNoTicketMax && Prize)
                                                 {
                                                     Prize = H.Parent.Children[1].InnerText.Contains("#2");
                                                 }
                                             }
                                             if (Prize) break;
-                                        }                                        
+                                        }
                                         if (Settings.OilLeninRobinHood && Me.OilLeninHunting.Lvl > 28 && Regex.Matches(HtmlEl.InnerHtml, "key3|box35").Count != 2
                                             && Me.OilLeninHunting.RestartDT - DateTime.Now > new TimeSpan(0, (Me.OilLeninHunting.Lvl == 29 ? 4 : 2) * (int)frmMain.GetJavaVar(MainWB, "NeftLenin.suspicionPrice.duel") - (int)frmMain.GetJavaVar(MainWB, "NeftLenin.maxsuspicion") + (int)frmMain.GetJavaVar(MainWB, "NeftLenin.suspicion"), 0)) Prize = false; //Нет ключика или синего ящика?
                                         #endregion
@@ -9262,7 +9308,7 @@ namespace Moswar
                                                         #region Определяем ресурсы, которые получим за победу!
                                                         string[] Resource; //Только для групповых боев
                                                         if (Offset == 4) Resource = new string[] { ((string)frmMain.GetJavaVar(MainWB, "$(\"#" + HtmlEl.Id + " .tugriki\").text()") ?? "0"), ((string)frmMain.GetJavaVar(MainWB, "$(\"#" + HtmlEl.Id + " .ruda\").text()") ?? "0"), ((string)frmMain.GetJavaVar(MainWB, "$(\"#" + HtmlEl.Id + " .neft\").text()") ?? "0") };
-                                                        else Resource = new string[] { "0", "0", "0"};
+                                                        else Resource = new string[] { "0", "0", "0" };
                                                         #endregion
                                                         UpdateStatus("# " + DateTime.Now + " Итак, дверь номер " + Me.OilLeninHunting.Lvl + ", я вхожу!");
                                                         frmMain.InvokeMember(MainWB, HtmlEl.GetElementsByTagName("button")[0], "click"); //Нападаем
@@ -9393,7 +9439,7 @@ namespace Moswar
                             #endregion
                         }
                         return true;
-                    }                    
+                    }
             }
             return false;
         } //OK?
@@ -9418,7 +9464,7 @@ namespace Moswar
                         if (IsGoldKubovich = Regex.Match(HtmlElItem.GetAttribute("href"), "/casino/kubovich/old/").Success ? true : false) break;
                     }
 
-                Rotate:
+                    Rotate:
                     regex = new Regex("casino/kubovich/");
                     if (!regex.IsMatch(frmMain.GetDocumentURL(MainWB))) GoToPlace(MainWB, Place.Casino, "/kubovich"); //Кто-то мешает ... ?
                     HtmlEl = frmMain.GetDocument(MainWB).GetElementById("push-ellow");
@@ -9495,7 +9541,7 @@ namespace Moswar
             BugReport("Pyramid");
 
             Match match;
-            HtmlElement HtmlEl;           
+            HtmlElement HtmlEl;
 
             if (!frmMain.GetDocumentURL(MainWB).EndsWith("/pyramid/")) GoToPlace(MainWB, Place.Pyramid);
 
@@ -9565,7 +9611,7 @@ namespace Moswar
             //
             match = Regex.Match(frmMain.GetDocument(MainWB).GetElementById("nextactiondt").InnerText, "([0-9:])+ ([0-9.])+");
             if (match.Success)
-            {                
+            {
                 if (PA == PyramidAction.Buy) UpdateStatus("$ " + DateTime.Now + " Накупил пирамидок, можно спать спокойно.");
                 if (PA == PyramidAction.Sell) UpdateStatus("$ " + DateTime.Now + " Распродал ВСЕ пирамидки, можно спать спокойно.");
                 Me.Pyramid.Done = true;
@@ -9604,7 +9650,7 @@ namespace Moswar
                     }
                     #region Сбор информации о локациях
                     matches = Regex.Matches(frmMain.GetDocument(MainWB).GetElementById("content").InnerHtml, "direction-(?<Nr>([0-9])+)");
-                    if (matches.Count > 0)                        
+                    if (matches.Count > 0)
                     {
                         Array.Resize<DateTime>(ref Me.CarRide.RideTimeout, Convert.ToInt32((matches[matches.Count - 1]).Groups["Nr"].Value) + 1);
                         foreach (Match m in matches)
@@ -9625,7 +9671,7 @@ namespace Moswar
                     {
                         Array.Resize<stcCar>(ref Me.CarRide.Cars, ArrInfo.Count<string>());
                         for (int i = 0; i < ArrInfo.Count<string>(); i++)
-                        {                            
+                        {
                             Me.CarRide.Cars[i].ID = Convert.ToInt32(Regex.Match(ArrInfo[i], "(?<=carid=\")([0-9])+(?=\")").Value);
                             Me.CarRide.Cars[i].Model = Convert.ToInt32(Regex.Match(ArrInfo[i], "(?<=model=\")([0-9])+(?=\")").Value);
                             Me.CarRide.Cars[i].Lvl = Convert.ToInt32(Regex.Match(ArrInfo[i], "(?<=level=\")([0-9])+(?=\")").Value);
@@ -9660,7 +9706,7 @@ namespace Moswar
                     regex = new Regex("class=\"?(?<Unit>(ruda|neft))\"?[>](?<Cost>([0-9])+)");
                     foreach (HtmlElement H in frmMain.GetElementsById(MainWB, "alert-text"))
                     {
-                        if (H.InnerText.Contains("С пустым баком далеко не уедешь.")) 
+                        if (H.InnerText.Contains("С пустым баком далеко не уедешь."))
                         {
                             HtmlEl = H.Parent.All[2];
                             match = regex.Match(HtmlEl.InnerHtml);
@@ -9678,7 +9724,7 @@ namespace Moswar
                             }
                             break; //Это окошко о заправке, нет смысла искать дальше!
                         }
-                    }             
+                    }
                     #endregion
                     break;
                 case AutomobileAction.Taxi:
@@ -9711,7 +9757,7 @@ namespace Moswar
                             TimeSpan TS = new TimeSpan();
                             #endregion
                             for (int i = 0; i < ArrInfo.Count<string>(); i++)
-                            {                                
+                            {
                                 for (int x = 0; x < Me.CarRide.Cars.Count<stcCar>(); x++)
                                 {
                                     if (Me.CarRide.Cars[x].ID == Convert.ToInt32(Regex.Match(ArrInfo[i], "(?<=carid=\")([0-9])+(?=\")").Value))
@@ -9762,12 +9808,12 @@ namespace Moswar
                                             #region Де-Лориан *-**
                                             case 33:
                                                 SpecialCar = Enumerable.Range(45, 2).Contains(Me.CarRide.Cars[x].Model);
-                                                break;                                          
-                                            #endregion                                           
+                                                break;
+                                            #endregion
                                             default:
                                                 SpecialCar = Me.CarRide.Cars[x].Model == Settings.SpecialCar;
                                                 break;
-                                        }                                            
+                                        }
                                         #endregion
 
                                         if (Settings.UseSpecialCar && SpecialCar) //Кататься на определённой машинке, и она найдена!
@@ -9776,8 +9822,8 @@ namespace Moswar
                                             CarOffset = i; //Сохраняем индекс нужной нам машинки в массиве выбора!
                                             i = ArrInfo.Count<string>(); //Больше искать не нужно, помогаем закончить поиск!
                                             break; //Выходим, всё найдено!
-                                        }                                    
-                                        
+                                        }
+
                                         if ((TS == new TimeSpan() || TS > Me.CarRide.Cars[x].RideTime) && Me.CarRide.Cars[x].Timeout <= DateTime.Now) //Либо специальная машинка не выбрана, либо она попросту недоступна. (break в прошлой функции гарантирует поездку на выбраной машинке!)
                                         {
                                             Me.Automobile.Val = x; //Индекс машинки в массиве машинок на которой будем ездить.
@@ -9814,21 +9860,27 @@ namespace Moswar
                             #endregion
                             #region  Уже наездил желаемые баллы, хватит?
                             regex = new Regex("(?<=Баллов набрано: )(?<Points>([0-9])+) из ([0-9])+");
-                            match = regex.Match((string)frmMain.GetJavaVar(MainWB,"$(\"#content .progress .num\").text()"));
-                            
+                            match = regex.Match((string)frmMain.GetJavaVar(MainWB, "$(\"#content .progress .num\").text()"));
+
                             switch (Settings.CarPrize)
                             {
-                                case 1: if (Convert.ToInt32(match.Groups["Points"].Value) >= 160) goto default;
+                                case 1:
+                                    if (Convert.ToInt32(match.Groups["Points"].Value) >= 160) goto default;
                                     break;
-                                case 2: if (Convert.ToInt32(match.Groups["Points"].Value) >= 400) goto default;
+                                case 2:
+                                    if (Convert.ToInt32(match.Groups["Points"].Value) >= 400) goto default;
                                     break;
-                                case 3: if (Convert.ToInt32(match.Groups["Points"].Value) >= 640) goto default;
+                                case 3:
+                                    if (Convert.ToInt32(match.Groups["Points"].Value) >= 640) goto default;
                                     break;
-                                case 4: if (Convert.ToInt32(match.Groups["Points"].Value) >= 960) goto default;
+                                case 4:
+                                    if (Convert.ToInt32(match.Groups["Points"].Value) >= 960) goto default;
                                     break;
-                                case 5: if (Convert.ToInt32(match.Groups["Points"].Value) >= 1320) goto default;
+                                case 5:
+                                    if (Convert.ToInt32(match.Groups["Points"].Value) >= 1320) goto default;
                                     break;
-                                case 6: if (Convert.ToInt32(match.Groups["Points"].Value) >= 1750) goto default;
+                                case 6:
+                                    if (Convert.ToInt32(match.Groups["Points"].Value) >= 1750) goto default;
                                     break;
                                 default: { Me.Automobile.LastDT = GetServerTime(MainWB).AddDays(1).Date; Me.Automobile.Stop = true; return false; }
                             }
@@ -9868,7 +9920,7 @@ namespace Moswar
                     else //Сегодня не понедельник, стоп!
                     {
                         if (GetServerTime(MainWB).DayOfWeek == DayOfWeek.Monday)
-                        {                            
+                        {
                             if (Me.CarRide.Cars.Count<stcCar>() - Me.CarRide.Helicopter == 0)
                             {
                                 UpdateStatus("@ " + DateTime.Now + "Шеф, у нас даже велосипеда походу нет! А на горбу я пассажира не повезу, даже не проси!");
@@ -9893,7 +9945,7 @@ namespace Moswar
                         {
                             #region Выбиваем MessageBox с машинками!
                             frmMain.GetJavaVar(MainWB, "var Car = $(\"#direction-" + RidePlace + " .car-choose-link\"); Car.click();");
-                            IsAjaxCompleteEx(MainWB, "alert-title");                            
+                            IsAjaxCompleteEx(MainWB, "alert-title");
                             #endregion
                             #region Подбор машинки для поездки
                             CarOffset = -1;
@@ -9906,12 +9958,12 @@ namespace Moswar
                                     break;
                                 #endregion
                                 #region Тигр
-                                case 21: 
+                                case 21:
                                     Car = new stcCar { Lvl = -1, Model = 25 };
                                     break;
                                 #endregion
                                 #region Новогодний грузовик
-                                case 25: 
+                                case 25:
                                     Car = new stcCar { Lvl = -1, Model = 40 };
                                     break;
                                 #endregion
@@ -9930,7 +9982,7 @@ namespace Moswar
                                     break;
                                 #endregion                                
                                 #region Эвакуатор
-                                case 34: 
+                                case 34:
                                     Car = new stcCar { Lvl = -1, Model = 37 };
                                     break;
                                 #endregion
@@ -9958,27 +10010,27 @@ namespace Moswar
                                 default:
                                     Car = new stcCar { Lvl = 1000, Model = 1000 };
                                     break;
-                                #endregion
+                                    #endregion
                             }
                             for (int i = 0; i < Me.CarRide.Cars.Count<stcCar>(); i++)
                             {   //Машинка может поехать по уровню, она не зарезервированна и является самой слабенькой для этой поездки или это специальная поездка тогда едем по модели машинки                                 
-                                if (!Me.CarRide.Cars[i].Reserved && Me.CarRide.Cars[i].Timeout <= DateTime.Now && (Car.Lvl == -1 ? Car.Model == Me.CarRide.Cars[i].Model : Me.CarRide.Cars[i].Lvl >= RidePlace && Me.CarRide.Cars[i].Lvl <= Car.Lvl && Me.CarRide.Cars[i].Model < Car.Model)) 
+                                if (!Me.CarRide.Cars[i].Reserved && Me.CarRide.Cars[i].Timeout <= DateTime.Now && (Car.Lvl == -1 ? Car.Model == Me.CarRide.Cars[i].Model : Me.CarRide.Cars[i].Lvl >= RidePlace && Me.CarRide.Cars[i].Lvl <= Car.Lvl && Me.CarRide.Cars[i].Model < Car.Model))
                                 {
                                     CarOffset = i;   //Запоминаем её индекс
                                     Car.Lvl = Me.CarRide.Cars[i].Lvl;  //Запоминаем уровень найденой машинки
                                     if (Car.Lvl != -1) Car.Model = Me.CarRide.Cars[i].Model;  //Запоминаем модель найденой машинки (не специальная поездка)
-                                }  
+                                }
                             }
                             if (CarOffset != -1) //Есть свободная машинка, способная совершить поездку или дефаульт (как например бронивик у него поездка 27 а Lvl 0)
                             {
                                 #region Выбор машинки с подтверждением
                                 foreach (HtmlElement H in frmMain.GetElementsById(MainWB, "alert-title")) //Ибо в последнее время информация о бонусах тоже под таким ИД вылазит!
                                 {
-                                    if (H.InnerText == "Выберите тачку для поездки") 
+                                    if (H.InnerText == "Выберите тачку для поездки")
                                     {
                                         H.Parent.GetElementsByTagName("IMG")[CarOffset].InvokeMember("click"); //выбираю лучшую возможную машинку для поездки.                                     
                                         IsWBComplete(MainWB, 500, 1000);
-                                    }          
+                                    }
                                 }
                                 #endregion                                                                
                             }
@@ -9995,7 +10047,7 @@ namespace Moswar
                                 foreach (HtmlElement H in frmMain.GetElementsById(MainWB, "alert-text"))
                                 {
                                     if (H.InnerText.Contains("С пустым баком далеко не уедешь.") && Automobile(AutomobileAction.Fuel)) return Automobile(AutomobileAction.Ride, RidePlace); //Если удачно заправились, пробуем поехать заново.
-                                }                                
+                                }
                                 #endregion
                                 return true; //Порядок, машинка уехала!
                             }
@@ -10036,8 +10088,8 @@ namespace Moswar
             HtmlElementCollection HC;
             double dLifePrc;
             bool[] bRet = { true, true }; //Инизиализация
-            
-          ReTry:
+
+            ReTry:
             IsWBComplete(MainWB);
             if (!frmMain.GetDocumentURL(MainWB).EndsWith("/player/")) GoToPlace(MainWB, Place.Player, "", false);
             if (!frmMain.GetDocumentURL(MainWB).EndsWith("/player/")) return false; //Видимо вишу на крыске, раз не смог перейти на страничку игрока.
@@ -10077,12 +10129,12 @@ namespace Moswar
             #endregion
             #region Извлекаем мои жизни.
             GetMyLife(MainWB);
-            dLifePrc = Convert.ToDouble(Me.Player.LifePkt[0]) / Convert.ToDouble(Me.Player.LifePkt[1]) * 100;            
+            dLifePrc = Convert.ToDouble(Me.Player.LifePkt[0]) / Convert.ToDouble(Me.Player.LifePkt[1]) * 100;
             if (dLifePrc < Convert.ToDouble(HealMe100)) bRet[1] = EatDrog(MainWB, ShopItems.Me100) ? true : EatDrog(MainWB, ShopItems.Me50);  //Нет больше микстур? Попробуем сиропами. 
             else if (dLifePrc < Convert.ToDouble(HealMe50)) bRet[1] = EatDrog(MainWB, ShopItems.Me50);  //Присваиваем значение возвращённое функцией и значение прошлой функции
             if (!bRet[1] && !Settings.BuyHealMe) UpdateStatus("! " + DateTime.Now + " Рана видимо сама зарастёт, лечилки мне докупать запретили!");
-            #endregion 
-           
+            #endregion
+
             #region Травма?
             Me.Trauma.Stop = Trauma(TraumaAction.Check);
             #endregion 
@@ -10104,7 +10156,7 @@ namespace Moswar
                     }
                     else UpdateStatus("@ " + DateTime.Now + " вылечиться пока не могу, загляну попозже к: " + Me.Events.NextSlotInjuredDT);
                 }
-            }            
+            }
             #endregion
             #region Действуют Антилампы?
             DateTime ServerDT = GetServerTime(MainWB);
@@ -10122,7 +10174,7 @@ namespace Moswar
                         break;
                     }
                 }
-            }            
+            }
             if (Me.PerkAntiLamp.On && (HtmlEl == null || ServerDT >= Me.PerkAntiLamp.SwitchOffDT))
             {
                 UpdateStatus("@ " + DateTime.Now + (Settings.Lampofob ? " Увы, но" : " Наконецто,") + " лампочка сгорела ...");
@@ -10132,7 +10184,7 @@ namespace Moswar
             #region Я заказан в Клубе?
             if (frmMain.GetJavaVar(MainWB, "$(\"#content .hunting-report\").html()") != DBNull.Value)
             {
-                if (!Me.Wanted && !LockHideMe) HideMeFromHC(); 
+                if (!Me.Wanted && !LockHideMe) HideMeFromHC();
             }
             else Me.Wanted = false;
             #endregion
@@ -10141,7 +10193,7 @@ namespace Moswar
         public bool HealMePlus()
         {
             BugReport("HealMePlus");
-            
+
             object info;
             DateTime MonitorDT = DateTime.Now.AddSeconds(Convert.ToDouble(Settings.GagIE));
             frmMain.GetJavaVar(MainWB, "var $Ret; $.get(\"/player/checkhp/\", function(data) { if (data['sirop'] || data['mikstura']) { $.post(\"/player/checkhp/\", {\"action\": \"restorehp\"}, function(data) { $Ret = data['result']; if (data['result'] != 0) { setHP(maxhp); }; }, \"json\"); } else { $.post(\"/player/restorehp/\", {\"action\": \"restorehp\"}, function(data) { $Ret = data['result']; if (data['result'] != 0) { setHP(maxhp); }; }, \"json\"); }});");
@@ -10151,15 +10203,15 @@ namespace Moswar
             {
                 if (MonitorDT < DateTime.Now) return false;
                 Wait(1000, 1500);
-                info = frmMain.GetJavaVar(MainWB, "$Ret");                
+                info = frmMain.GetJavaVar(MainWB, "$Ret");
             }
-            while (info == null && MonitorDT > DateTime.Now);            
+            while (info == null && MonitorDT > DateTime.Now);
             if (Convert.ToInt32(info) != 0)
             {
                 UpdateStatus("* " + DateTime.Now + " Перебинтовался, сменил подгузники, я готов!");
                 return true;
             }
-            else return false;                       
+            else return false;
         }
         public bool TonusMePlus()
         {
@@ -10175,7 +10227,7 @@ namespace Moswar
                 if (match.Success && match.Groups["Unit"].Value == "ruda" && Me.Wallet.Ore >= Convert.ToInt32(match.Groups["Cost"].Value))
                 {
                     frmMain.InvokeMember(MainWB, H, "click");
-                   // H.InvokeMember("click"); //ajax иначе не сработает IsWBComplete
+                    // H.InvokeMember("click"); //ajax иначе не сработает IsWBComplete
                     UpdateStatus("* " + DateTime.Now + " Заправился энергией, пойду снова горы вертеть!");
                     IsWBComplete(MainWB); //IsAjaxComplete(MainWB);                    
                     return true;
@@ -10613,10 +10665,10 @@ namespace Moswar
                     #region Сбор информации о боевых предметах в берёзке и расчёт возможной покупки
                     foreach (string Info in GetArrClassHtml(WB, "$(\"#content .objects .object\")", "outerHTML"))
                     {
-//                        match = Regex.Match(Info, "<h2>(?<Title>([\\s\\S])+)</h2>([\\s\\S])+((?<Heal>Жизни:([ 0-9+%])+)|Мин. урон по врагам: ((?<PrcBomb>([0-9])+%)|(?<Bomb>([0-9])+))|(?<Cheese>Призыв крысомах в групповой бой)|(?<Helmet>Защита от урона)|(?<Spring>Отражает урон)|(?<Shield>Уменьшение урона от гранат))([\\s\\S])+id=\"?amount_(?<ID>([\\S])+)\"?", RegexOptions.IgnoreCase);
+                        //                        match = Regex.Match(Info, "<h2>(?<Title>([\\s\\S])+)</h2>([\\s\\S])+((?<Heal>Жизни:([ 0-9+%])+)|Мин. урон по врагам: ((?<PrcBomb>([0-9])+%)|(?<Bomb>([0-9])+))|(?<Cheese>Призыв крысомах в групповой бой)|(?<Helmet>Защита от урона)|(?<Spring>Отражает урон)|(?<Shield>Уменьшение урона от гранат))([\\s\\S])+id=\"?amount_(?<ID>([\\S])+)\"?", RegexOptions.IgnoreCase);
                         match = Regex.Match(Info, "<h2>(?<Title>([\\s\\S])+)</h2>([\\s\\S])+(Жизни: ((?<PrcHeal>([0-9+])+%)|(?<Heal>([0-9+])+))|Мин. урон по врагам: ((?<PrcBomb>([0-9])+%)|(?<Bomb>([0-9])+))|(?<Cheese>Призыв крысомах в групповой бой)|(?<Helmet>Защита от урона)|(?<Spring>Отражает урон)|(?<Shield>Уменьшение урона от гранат))([\\s\\S])+Уровень:([\\s])*(?<ItemLvl>([0-9])+)([\\s\\S])+id=\"?amount_(?<ID>([\\w])+)\"?", RegexOptions.IgnoreCase);
                         if (
-                            (  (match.Groups["Heal"].Success && SI == ShopItems.HealPlus)
+                            ((match.Groups["Heal"].Success && SI == ShopItems.HealPlus)
                             || (match.Groups["PrcHeal"].Success && SI == ShopItems.HealPrc)
                             || (match.Groups["Bomb"].Success && SI == ShopItems.GranadePlus)
                             || (match.Groups["PrcBomb"].Success && SI == ShopItems.GranadePrc)
@@ -10655,7 +10707,7 @@ namespace Moswar
                 default: return false;
             }
 
-            if (HtmlButton!= null && HtmlButton.GetAttribute("ClassName") == "button")
+            if (HtmlButton != null && HtmlButton.GetAttribute("ClassName") == "button")
             {
                 // Определяем название покупаемого предмета
                 string ItemID = HtmlButton.GetAttribute("data-button-for-id");
@@ -10685,7 +10737,7 @@ namespace Moswar
 
             switch (TA)
             {
-                case TraumaAction.Check:                  
+                case TraumaAction.Check:
                     if (!frmMain.GetDocumentURL(MainWB).EndsWith("/player/")) GoToPlace(MainWB, Place.Player, "", false);
                     if (!frmMain.GetDocumentURL(MainWB).EndsWith("/player/")) return DetectedTrauma; //Видимо вишу на крыске, раз не смог перейти на страничку игрока.
 
@@ -10703,7 +10755,7 @@ namespace Moswar
                         }
                         if (!Me.Trauma.Stop) UpdateStatus("! " + DateTime.Now + (match.Success ? " Фигасе, я себе коленку разбил посижу ко я на лавочке!" : "Вот изверги, до реанимации довели. Глаза не видят окончания травмы, выйду по самочуствию!"));
                         return Settings.HealTrauma ? !Trauma(TraumaAction.Heal) : true; //Травма осталась?
-                    }                
+                    }
                     return false; //Травмы нет!
                 case TraumaAction.Heal:
                     UpdateMyInfo(MainWB);
@@ -10716,7 +10768,7 @@ namespace Moswar
                             Me.Trauma.LastDT = new DateTime(); //Всё получилось, травмы больше нет!
                         }
                         GoToPlace(MainWB, Place.Player); //Возвращаемся дабы продолжить бесперебойное выполнение функции CheckHealthEx
-                    }                    
+                    }
                     return Me.Trauma.LastDT == new DateTime(); //Получилось?
             }
             return true; //Досюда не должно доходить никогда!
@@ -10733,148 +10785,148 @@ namespace Moswar
             switch (CWA)
             {
                 case ClanWarAction.Check:
-                   GoToPlace(MainWB, Place.Clan);
-                   DateTime ServerDT = GetServerTime(MainWB);
-                   if (frmMain.GetDocument(MainWB).GetElementById("clan-diplomacy-hint") != null) //Я в клане?
-                   {
-                       regex = new Regex("href=\"(?<ClanURL>.+)\"[>](?<ClanName>.+)[<]/a.*война", RegexOptions.IgnoreCase); //href="/clan/105/">Академия</A></SPAN><SPAN class=enemy> — война до 19 мар 2012 23:42</SPAN>
-                       matches = regex.Matches(frmMain.GetDocument(MainWB).GetElementById("clan-diplomacy-hint").Parent.InnerHtml);
-                       Me.ClanWarInfo.Now = matches.Count > 0; //Сохраняем информацию, о том, что война всё ешё продолжается!
+                    GoToPlace(MainWB, Place.Clan);
+                    DateTime ServerDT = GetServerTime(MainWB);
+                    if (frmMain.GetDocument(MainWB).GetElementById("clan-diplomacy-hint") != null) //Я в клане?
+                    {
+                        regex = new Regex("href=\"(?<ClanURL>.+)\"[>](?<ClanName>.+)[<]/a.*война", RegexOptions.IgnoreCase); //href="/clan/105/">Академия</A></SPAN><SPAN class=enemy> — война до 19 мар 2012 23:42</SPAN>
+                        matches = regex.Matches(frmMain.GetDocument(MainWB).GetElementById("clan-diplomacy-hint").Parent.InnerHtml);
+                        Me.ClanWarInfo.Now = matches.Count > 0; //Сохраняем информацию, о том, что война всё ешё продолжается!
 
-                       if (Me.ClanWarInfo.Now) //Идёт война!
-                       {                           
-                           #region Новая война? (Не нужно ли добавить клан для фарма)
-                           for (int i = 0; i < matches.Count; i++)
-                           {
-                               //Тут необходимо либо полностью очистить список кланов, либо убить определенный.
-                               if (Me.ClanWarInfo.vsClan[i].Name != matches[i].Groups["ClanName"].Value.Replace("&amp;", "&") && Settings.AddClan && Settings.FarmClan) //Replace("&amp;", "&") для поимки кланов с подобным названием: • Брат за брата ©²º¹²
-                               {
-                                   Contact(MainWB, i == 0 ? (ContactAction.DeleteAll) : (ContactAction.DeleteClan), ContactType.Enemy, Me.ClanWarInfo.vsClan[i].Name);
-                                   Contact(MainWB, ContactAction.AddClan, ContactType.Enemy, matches[i].Groups["ClanName"].Value.Replace("&amp;", "&")); //Заносим клан в враги! (непосредственный фарм в Attack)
-                               }
-                               Me.ClanWarInfo.vsClan[i].Name = matches[i].Groups["ClanName"].Value.Replace("&amp;", "&"); //Replace("&amp;", "&") для поимки кланов с подобным названием: • Брат за брата ©²º¹²
-                               Me.ClanWarInfo.vsClan[i].URL = "http://" + Settings.ServerURL + matches[i].Groups["ClanURL"].Value;
-                           }
-                           #endregion
+                        if (Me.ClanWarInfo.Now) //Идёт война!
+                        {
+                            #region Новая война? (Не нужно ли добавить клан для фарма)
+                            for (int i = 0; i < matches.Count; i++)
+                            {
+                                //Тут необходимо либо полностью очистить список кланов, либо убить определенный.
+                                if (Me.ClanWarInfo.vsClan[i].Name != matches[i].Groups["ClanName"].Value.Replace("&amp;", "&") && Settings.AddClan && Settings.FarmClan) //Replace("&amp;", "&") для поимки кланов с подобным названием: • Брат за брата ©²º¹²
+                                {
+                                    Contact(MainWB, i == 0 ? (ContactAction.DeleteAll) : (ContactAction.DeleteClan), ContactType.Enemy, Me.ClanWarInfo.vsClan[i].Name);
+                                    Contact(MainWB, ContactAction.AddClan, ContactType.Enemy, matches[i].Groups["ClanName"].Value.Replace("&amp;", "&")); //Заносим клан в враги! (непосредственный фарм в Attack)
+                                }
+                                Me.ClanWarInfo.vsClan[i].Name = matches[i].Groups["ClanName"].Value.Replace("&amp;", "&"); //Replace("&amp;", "&") для поимки кланов с подобным названием: • Брат за брата ©²º¹²
+                                Me.ClanWarInfo.vsClan[i].URL = "http://" + Settings.ServerURL + matches[i].Groups["ClanURL"].Value;
+                            }
+                            #endregion
 
-                           GoToPlace(MainWB, Place.Clan, "/warstats"); //Лезем смотреть на какой стадии война!
-                           if (frmMain.GetDocument(MainWB).GetElementById("menu_result").GetAttribute("ClassName") == "button disabled") //Битва закончена!
-                           {
-                               if (frmMain.GetDocument(MainWB).GetElementById("menu_step2").GetAttribute("ClassName") != "button disabled") //Сейчас идут стенки.
-                               {
-                                   #region Инициализация
-                                   Me.ClanWarInfo.NextDT = new DateTime();
-                                   Me.ClanWarInfo.Pacifism = null;
-                                   #endregion
-                                   if (Settings.FarmClan && Me.ClanWarInfo.WarStep == 1) Contact(MainWB, ContactAction.AddClan, ContactType.Enemy, Me.ClanWarInfo.EnemyClan.Name); //Пришёл после выбивания зубов, многие были удалены ... передобавляем! 
-                                   regex = new Regex("(?<=class=\"?fight-time\"?>)([0-9])*(?=[<])"); //class=fight-time>18<
-                                   matches = regex.Matches(frmMain.GetDocumentHtmlText(MainWB));
-                                   foreach (Match m in matches)
-                                   {
-                                       //Сразу после инизиализации запомнить значение которое меньше времени сейчас если, не найду больШего, значит это время нападения но уже следуюшего дня!
-                                       if (Convert.ToInt32(m.Value) <= ServerDT.Hour && Me.ClanWarInfo.NextDT == new DateTime()) Me.ClanWarInfo.NextDT = ServerDT.Date.AddHours(Convert.ToInt32(m.Value) + 24).AddMinutes(-15);
-                                       if (Convert.ToInt32(m.Value) > ServerDT.Hour) { Me.ClanWarInfo.NextDT = ServerDT.Date.AddHours(Convert.ToInt32(m.Value)).AddMinutes(-15); break; } //После первого нахождения нужно покинуть дальнейший поиск!
-                                   }
-                                   if (matches.Count >= 1)
-                                   {
-                                       Me.ClanWarInfo.WarStep = 2; //Война в разгаре, стенки.
-                                       if (Me.ClanWarInfo.NextDT <= GetServerTime(MainWB)) GroupFight(GroupFightAction.Check, GroupFightType.Clan); //Пора драться?
-                                   }
-                                   else //Круглосуточный пацифизм
-                                   {
-                                       UpdateStatus("@ " + DateTime.Now + " О чёрт, да тут одни пацифисты блин собрались, драк не будет!"); 
-                                       Me.ClanWarInfo.Now = false; //Война продолжается формально, стенок не будет
-                                       Me.ClanWarInfo.WarStep = -1; //Война продолжается формально, стенок не будет
-                                       Me.ClanWarInfo.NextDT = ServerDT.Date.AddHours(ServerDT.Hour + 5);
-                                   }                                    
-                                   return;
-                               }
-                               else //Нет клан стенок, выбиваем зубы?
-                               {
-                                   if (frmMain.GetDocument(MainWB).GetElementById("menu_step1").GetAttribute("ClassName") != "button disabled") //Уже как минимум можно выбивать зубы!
-                                   {
-                                       HtmlEl = frmMain.GetDocument(MainWB).GetElementById("clan-warstat1-table").GetElementsByTagName("TR")[0];
-                                       matches = Regex.Matches(HtmlEl.InnerHtml, "href=\"(?<ClanURL>.+)\"[>](?<ClanName>.+)[<]/a", RegexOptions.IgnoreCase);
-                                       if (matches.Count == 2) //Порядок, нашёл оба воюющих клана
-                                       {
-                                           #region Кто на кого напал?
-                                           foreach (stcClan Clan in Me.ClanWarInfo.vsClan) //Replace("&amp;", "&") для поимки кланов с подобным названием: • Брат за брата ©²º¹²
-                                           {                                              
-                                               if (Clan.Name == matches[0].Groups["ClanName"].Value.Replace("&amp;", "&")) //Вражеский клан напал первым!
-                                               {                                                   
-                                                   Me.ClanWarInfo.EnemyClan.Name = Clan.Name;
-                                                   Me.ClanWarInfo.EnemyClan.URL = Clan.URL;
-                                                   Me.ClanWarInfo.MyWar = (Me.Clan.Name == matches[1].Groups["ClanName"].Value.Replace("&amp;", "&")); //Напали на меня или союзника?
-                                                   break;
-                                               }
-                                               if (Clan.Name == matches[1].Groups["ClanName"].Value.Replace("&amp;", "&")) //На вражеский клан напали мы или союзник!
-                                               {
-                                                   Me.ClanWarInfo.EnemyClan.Name = Clan.Name;
-                                                   Me.ClanWarInfo.EnemyClan.URL = Clan.URL;
-                                                   Me.ClanWarInfo.MyWar = (Me.Clan.Name == matches[0].Groups["ClanName"].Value.Replace("&amp;", "&")); //Напали мы или союзник?
-                                                   break;
-                                               }
-                                           }
-                                           #endregion
-                                           #region Если необходимо передобавляю воюющий клан + Определяем времена пацифизма
-                                           if (Settings.AddClan && (Me.ClanWarInfo.MyWar || (Settings.ClanWars && matches[0].Groups["ClanName"].Value == Me.ClanWarInfo.EnemyClan.Name)) && Me.ClanWarInfo.WarStep != 1) //Добавляем клан, воюет мой клан или (я участвую в союзных войнах и на союзника напали) и я ещё тут не был!
-                                           {
-                                               #region Определяем времена пацифизма
-                                               Me.ClanWarInfo.Pacifism = new stcClanImmun[2]; //Если наше время пацифизма также играет роль в боях союза добавить new stcClanImmun[MyWar ? 2 : 3]
-                                               regex = new Regex("(?<=Время ненападения:\\s*)(?<Start>([0-9:])+) — (?<Stop>([0-9:])+)"); //Время ненападения:23:40 — 9:40                                                
-                                               for (int i = 0; i < Me.ClanWarInfo.Pacifism.Count<stcClanImmun>(); i++)
-                                               {
-                                                   switch (i)
-                                                   {
-                                                       case 0:
-                                                       case 1:
-                                                           GoToPlace(MainWB, Place.URL, matches[i].Groups["ClanURL"].Value);    
-                                                           break;
-                                                       case 2:
-                                                           GoToPlace(MainWB, Place.URL, Me.Clan.URL);    
-                                                           break;
-                                                   }
-                                                   match = regex.Match(frmMain.GetDocument(MainWB).GetElementById("content").InnerText);
-                                                   if (match.Success)
-                                                   {
-                                                       Me.ClanWarInfo.Pacifism[i].Start = match.Groups["Start"].Value;
-                                                       Me.ClanWarInfo.Pacifism[i].Stop = match.Groups["Stop"].Value;
-                                                   }
-                                                   else  //Клан не покупал пацифизм!
-                                                   {
-                                                       Me.ClanWarInfo.Pacifism[i].Start = "00:00";
-                                                       Me.ClanWarInfo.Pacifism[i].Stop = "00:00";
-                                                   }
-                                               }
-                                               #endregion
-                                               Contact(MainWB, ContactAction.DeleteAll, ContactType.Enemy);
-                                               Contact(MainWB, ContactAction.AddClan, ContactType.Enemy, Me.ClanWarInfo.EnemyClan.Name); //Заносим клан в враги!
-                                               Me.ClanWarInfo.WarStep = 1;
-                                           }
-                                           #endregion
-                                       }
-                                       else UpdateStatus("! " + DateTime.Now + " Дохтур, посмотри меня: Выбивание зубов проигнорировано!");
-                                       Me.ClanWarInfo.NextDT = ServerDT.Date.AddHours(ServerDT.Hour + (ServerDT.Minute >= 45 ? 2 : 1)).AddMinutes(-15); //За 15 минут до след часа снова проверить!
-                                       return;
-                                   }
-                                   else //Нет клан стенок и зубы пока тоже не выбиваем, проверить через 1 час!
-                                   {
-                                       Me.ClanWarInfo.WarStep = 0; //Война обьявлена, но боевые действия пока не ведутся.
-                                       Me.ClanWarInfo.Pacifism = null;
-                                       Me.ClanWarInfo.NextDT = ServerDT.Date.AddHours(ServerDT.Hour + 1).AddMinutes(2); //Все войны начинаются в хх:01 минуту
-                                       return;
-                                   }
-                               }
-                           }
-                       }
-                   }
-                   Me.ClanWarInfo.Now = false; //Я даже не в клане
-                   Me.ClanWarInfo.WarStep = -1; //Войной отсилы только пахнет в воздухе.
-                   Me.ClanWarInfo.EnemyClan.Name = ""; //Я сейчас не с кем не воюю
-                   Me.ClanWarInfo.EnemyClan.URL = "";  //Я сейчас не с кем не воюю
-                   Me.ClanWarInfo.Pacifism = null;     //Я сейчас не с кем не воюю
-                   Me.ClanWarInfo.NextDT = ServerDT.Date.AddHours(ServerDT.Hour + 5); //Пока даже не пахнет войной!                        
-                   break;
+                            GoToPlace(MainWB, Place.Clan, "/warstats"); //Лезем смотреть на какой стадии война!
+                            if (frmMain.GetDocument(MainWB).GetElementById("menu_result").GetAttribute("ClassName") == "button disabled") //Битва закончена!
+                            {
+                                if (frmMain.GetDocument(MainWB).GetElementById("menu_step2").GetAttribute("ClassName") != "button disabled") //Сейчас идут стенки.
+                                {
+                                    #region Инициализация
+                                    Me.ClanWarInfo.NextDT = new DateTime();
+                                    Me.ClanWarInfo.Pacifism = null;
+                                    #endregion
+                                    if (Settings.FarmClan && Me.ClanWarInfo.WarStep == 1) Contact(MainWB, ContactAction.AddClan, ContactType.Enemy, Me.ClanWarInfo.EnemyClan.Name); //Пришёл после выбивания зубов, многие были удалены ... передобавляем! 
+                                    regex = new Regex("(?<=class=\"?fight-time\"?>)([0-9])*(?=[<])"); //class=fight-time>18<
+                                    matches = regex.Matches(frmMain.GetDocumentHtmlText(MainWB));
+                                    foreach (Match m in matches)
+                                    {
+                                        //Сразу после инизиализации запомнить значение которое меньше времени сейчас если, не найду больШего, значит это время нападения но уже следуюшего дня!
+                                        if (Convert.ToInt32(m.Value) <= ServerDT.Hour && Me.ClanWarInfo.NextDT == new DateTime()) Me.ClanWarInfo.NextDT = ServerDT.Date.AddHours(Convert.ToInt32(m.Value) + 24).AddMinutes(-15);
+                                        if (Convert.ToInt32(m.Value) > ServerDT.Hour) { Me.ClanWarInfo.NextDT = ServerDT.Date.AddHours(Convert.ToInt32(m.Value)).AddMinutes(-15); break; } //После первого нахождения нужно покинуть дальнейший поиск!
+                                    }
+                                    if (matches.Count >= 1)
+                                    {
+                                        Me.ClanWarInfo.WarStep = 2; //Война в разгаре, стенки.
+                                        if (Me.ClanWarInfo.NextDT <= GetServerTime(MainWB)) GroupFight(GroupFightAction.Check, GroupFightType.Clan); //Пора драться?
+                                    }
+                                    else //Круглосуточный пацифизм
+                                    {
+                                        UpdateStatus("@ " + DateTime.Now + " О чёрт, да тут одни пацифисты блин собрались, драк не будет!");
+                                        Me.ClanWarInfo.Now = false; //Война продолжается формально, стенок не будет
+                                        Me.ClanWarInfo.WarStep = -1; //Война продолжается формально, стенок не будет
+                                        Me.ClanWarInfo.NextDT = ServerDT.Date.AddHours(ServerDT.Hour + 5);
+                                    }
+                                    return;
+                                }
+                                else //Нет клан стенок, выбиваем зубы?
+                                {
+                                    if (frmMain.GetDocument(MainWB).GetElementById("menu_step1").GetAttribute("ClassName") != "button disabled") //Уже как минимум можно выбивать зубы!
+                                    {
+                                        HtmlEl = frmMain.GetDocument(MainWB).GetElementById("clan-warstat1-table").GetElementsByTagName("TR")[0];
+                                        matches = Regex.Matches(HtmlEl.InnerHtml, "href=\"(?<ClanURL>.+)\"[>](?<ClanName>.+)[<]/a", RegexOptions.IgnoreCase);
+                                        if (matches.Count == 2) //Порядок, нашёл оба воюющих клана
+                                        {
+                                            #region Кто на кого напал?
+                                            foreach (stcClan Clan in Me.ClanWarInfo.vsClan) //Replace("&amp;", "&") для поимки кланов с подобным названием: • Брат за брата ©²º¹²
+                                            {
+                                                if (Clan.Name == matches[0].Groups["ClanName"].Value.Replace("&amp;", "&")) //Вражеский клан напал первым!
+                                                {
+                                                    Me.ClanWarInfo.EnemyClan.Name = Clan.Name;
+                                                    Me.ClanWarInfo.EnemyClan.URL = Clan.URL;
+                                                    Me.ClanWarInfo.MyWar = (Me.Clan.Name == matches[1].Groups["ClanName"].Value.Replace("&amp;", "&")); //Напали на меня или союзника?
+                                                    break;
+                                                }
+                                                if (Clan.Name == matches[1].Groups["ClanName"].Value.Replace("&amp;", "&")) //На вражеский клан напали мы или союзник!
+                                                {
+                                                    Me.ClanWarInfo.EnemyClan.Name = Clan.Name;
+                                                    Me.ClanWarInfo.EnemyClan.URL = Clan.URL;
+                                                    Me.ClanWarInfo.MyWar = (Me.Clan.Name == matches[0].Groups["ClanName"].Value.Replace("&amp;", "&")); //Напали мы или союзник?
+                                                    break;
+                                                }
+                                            }
+                                            #endregion
+                                            #region Если необходимо передобавляю воюющий клан + Определяем времена пацифизма
+                                            if (Settings.AddClan && (Me.ClanWarInfo.MyWar || (Settings.ClanWars && matches[0].Groups["ClanName"].Value == Me.ClanWarInfo.EnemyClan.Name)) && Me.ClanWarInfo.WarStep != 1) //Добавляем клан, воюет мой клан или (я участвую в союзных войнах и на союзника напали) и я ещё тут не был!
+                                            {
+                                                #region Определяем времена пацифизма
+                                                Me.ClanWarInfo.Pacifism = new stcClanImmun[2]; //Если наше время пацифизма также играет роль в боях союза добавить new stcClanImmun[MyWar ? 2 : 3]
+                                                regex = new Regex("(?<=Время ненападения:\\s*)(?<Start>([0-9:])+) — (?<Stop>([0-9:])+)"); //Время ненападения:23:40 — 9:40                                                
+                                                for (int i = 0; i < Me.ClanWarInfo.Pacifism.Count<stcClanImmun>(); i++)
+                                                {
+                                                    switch (i)
+                                                    {
+                                                        case 0:
+                                                        case 1:
+                                                            GoToPlace(MainWB, Place.URL, matches[i].Groups["ClanURL"].Value);
+                                                            break;
+                                                        case 2:
+                                                            GoToPlace(MainWB, Place.URL, Me.Clan.URL);
+                                                            break;
+                                                    }
+                                                    match = regex.Match(frmMain.GetDocument(MainWB).GetElementById("content").InnerText);
+                                                    if (match.Success)
+                                                    {
+                                                        Me.ClanWarInfo.Pacifism[i].Start = match.Groups["Start"].Value;
+                                                        Me.ClanWarInfo.Pacifism[i].Stop = match.Groups["Stop"].Value;
+                                                    }
+                                                    else  //Клан не покупал пацифизм!
+                                                    {
+                                                        Me.ClanWarInfo.Pacifism[i].Start = "00:00";
+                                                        Me.ClanWarInfo.Pacifism[i].Stop = "00:00";
+                                                    }
+                                                }
+                                                #endregion
+                                                Contact(MainWB, ContactAction.DeleteAll, ContactType.Enemy);
+                                                Contact(MainWB, ContactAction.AddClan, ContactType.Enemy, Me.ClanWarInfo.EnemyClan.Name); //Заносим клан в враги!
+                                                Me.ClanWarInfo.WarStep = 1;
+                                            }
+                                            #endregion
+                                        }
+                                        else UpdateStatus("! " + DateTime.Now + " Дохтур, посмотри меня: Выбивание зубов проигнорировано!");
+                                        Me.ClanWarInfo.NextDT = ServerDT.Date.AddHours(ServerDT.Hour + (ServerDT.Minute >= 45 ? 2 : 1)).AddMinutes(-15); //За 15 минут до след часа снова проверить!
+                                        return;
+                                    }
+                                    else //Нет клан стенок и зубы пока тоже не выбиваем, проверить через 1 час!
+                                    {
+                                        Me.ClanWarInfo.WarStep = 0; //Война обьявлена, но боевые действия пока не ведутся.
+                                        Me.ClanWarInfo.Pacifism = null;
+                                        Me.ClanWarInfo.NextDT = ServerDT.Date.AddHours(ServerDT.Hour + 1).AddMinutes(2); //Все войны начинаются в хх:01 минуту
+                                        return;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    Me.ClanWarInfo.Now = false; //Я даже не в клане
+                    Me.ClanWarInfo.WarStep = -1; //Войной отсилы только пахнет в воздухе.
+                    Me.ClanWarInfo.EnemyClan.Name = ""; //Я сейчас не с кем не воюю
+                    Me.ClanWarInfo.EnemyClan.URL = "";  //Я сейчас не с кем не воюю
+                    Me.ClanWarInfo.Pacifism = null;     //Я сейчас не с кем не воюю
+                    Me.ClanWarInfo.NextDT = ServerDT.Date.AddHours(ServerDT.Hour + 5); //Пока даже не пахнет войной!                        
+                    break;
                 case ClanWarAction.Tooth:
                     ClanWar(ClanWarAction.Check); //Проверка текушего состояния войны и подготвка странички                    
                     if (Me.ClanWarInfo.WarStep == 1) //Всё ещё стадия выбивания зубов?
@@ -10935,7 +10987,7 @@ namespace Moswar
             }
         }
         public bool Dopings(ref clsDoping.stcDopingEx[] ArrD, DopingAction DA, int Index = 0)
-        {            
+        {
             BugReport("Dopings");
 
             HtmlElement[] HC;
@@ -10956,22 +11008,22 @@ namespace Moswar
                     #region Машинки
                     //От CarAll до Car40 , ибо машинки ездят на статы не по порядку.
                     if (Enumerable.Range((int)clsDoping.DopingType.CarAll, (int)clsDoping.DopingType.Car40).Contains((int)ArrD[Index].Items[ArrD[Index].Items.Count<clsDoping.DopingType>() - 1])) //Есть ли среди желаемых допингов машинки?
-                    {                        
+                    {
                         Automobile(AutomobileAction.Check);
                         foreach (clsDoping.DopingType DType in ArrD[Index].Items)
                         {
                             int RidePlace;
                             DT = new DateTime();
-                            
+
                             switch (DType)
                             {
                                 #region Все свободные машинки
                                 case clsDoping.DopingType.CarAll:
-                                   if ( Me.CarRide.RideTimeout.Count(TimeOut => TimeOut < DateTime.Now) > 0 &&
-                                        Me.CarRide.Cars.Count(Car => !Car.Reserved && Car.Timeout < DateTime.Now) > 0
-                                      ) clsDoping.AlreadyEated[Enum.GetValues(typeof(clsDoping.DopingType)).Length] = false; //Как минимум один допинг из списка, ешё не употреблён!
+                                    if (Me.CarRide.RideTimeout.Count(TimeOut => TimeOut < DateTime.Now) > 0 &&
+                                         Me.CarRide.Cars.Count(Car => !Car.Reserved && Car.Timeout < DateTime.Now) > 0
+                                       ) clsDoping.AlreadyEated[Enum.GetValues(typeof(clsDoping.DopingType)).Length] = false; //Как минимум один допинг из списка, ешё не употреблён!
                                     continue;
-                                 #endregion
+                                #endregion
                                 #region Здоровье
                                 case clsDoping.DopingType.Car4:
                                     RidePlace = 4;
@@ -11124,14 +11176,14 @@ namespace Moswar
                                 #endregion
 
                                 #region Маршрут не найден / Иные допинги
-                                default: 
+                                default:
                                     RidePlace = -1;
                                     continue;
-                                #endregion
+                                    #endregion
                             }
                             if (Me.CarRide.Cars == null || RidePlace >= Me.CarRide.RideTimeout.Count<DateTime>() || Me.CarRide.RideTimeout[RidePlace] == new DateTime())
                             {
-                                UpdateStatus("! " + DateTime.Now + " Шеф, пешком я туда не пойду, а такой машинки [" + RidePlace +  "] у нас походу нема!");
+                                UpdateStatus("! " + DateTime.Now + " Шеф, пешком я туда не пойду, а такой машинки [" + RidePlace + "] у нас походу нема!");
                                 return false;
                             }
                             else
@@ -11149,7 +11201,7 @@ namespace Moswar
                                 if (ArrD[Index].Event == clsDoping.DopingEvent.Allways) ArrD[Index].StopDT = (DT < ArrD[Index].StopDT || ArrD[Index].StopDT == new DateTime()) ? DT : ArrD[Index].StopDT;
                                 else ArrD[Index].StopDT = ArrD[Index].StopDT < DT ? DT : ArrD[Index].StopDT;
                             }
-                        }                                            
+                        }
                     }
                     #endregion                     
                     #region Партбилеты
@@ -11186,13 +11238,13 @@ namespace Moswar
                     if (!bRet) return true; //Проверка пройдена, допинг не интересен, нужна синхронизация или партбилеты!
                     #endregion
 
-                    GoToPlace(MainWB, Place.Player);                    
+                    GoToPlace(MainWB, Place.Player);
                     object ToolTipInfo = frmMain.GetJavaVar(MainWB, "m.items['affects'].tooltip['0'].innerText") ?? ""; //Нет тултипа с допингами, значит исходим, из того, что кушать нужно всё!
 
                     ServerDT = GetServerTime(MainWB);
                     regex = new Regex("((?<Doping>[+]([0-9])+)(?<Prc>[%])?)? до (?<Time>([0-9. :])+) — ((?<Ride>Поездка)|(?<Pyani>Пяни)|(?<Tvorog>Волшебный творожок)|(?<Vitamin>Витаминки)|(?<NovajaZhizn>Таблетки «Новая жизнь»)|(?<Barjomi>Бутылка «Бомжори»)|(?<AuqaDeminerale>Бутылка «Аква Деминерале»)|(?<Tea>Чай)|(?<Shoko>Конфета («((?<CandyExp>Умная)|(?<CandyAntiExp>Глупая))»)?|.*конфета|Батончик)|(Табаско «((?<NPC1>Огонек)|(?<NPC2>Обжорка)|(?<NPC3>Усилитель))»)|(?<Valujki>Валуйки[^ ])|(?<ValujkiAdv>Валуйки «Heavy Edition»)|(?<GasMask>Противогаз)|(?<Respirator>Респиратор)|((?<Coctail>Коктейль)|(.*)) (?<Gum>[+%](Здоровье|Сила|Ловкость|Выносливость|Хитрость|Внимательность)))"); //+5% до 29.01.2012 03:24 — Поездка На молодежную дискотеку в Южное Бутово
                     matches = regex.Matches((string)ToolTipInfo);
-                    
+
                     foreach (clsDoping.DopingType DType in ArrD[Index].Items)
                     {
                         DT = new DateTime();
@@ -12388,7 +12440,7 @@ namespace Moswar
                                     #endregion
                                 }
                                 break;
-                            #endregion
+                                #endregion
                         }
                         if (ArrD[Index].Event == clsDoping.DopingEvent.Allways || ArrD[Index].Event == clsDoping.DopingEvent.PVP)
                         {  //Always а также при PVP всегда держать под полным списком допингов, один спал -> перекусить его снова!
@@ -12397,11 +12449,11 @@ namespace Moswar
                         else
                         {  //Кушать допинг только тогда, когда закончилось действие последнего!
                             ArrD[Index].StopDT = ArrD[Index].StopDT < DT ? DT : ArrD[Index].StopDT;
-                        }                           
+                        }
                     }
                     #endregion
                     //При постоянной необходимости объедаться переносим старт так, чтоб постоянно быть под полным желаемым доппингом!
-                    if (ArrD[Index].Event == clsDoping.DopingEvent.Allways) ArrD[Index].StartDT = (ArrD[Index].StartDT < ServerDT || ArrD[Index].StartDT > ArrD[Index].StopDT) ? ArrD[Index].StopDT.AddMinutes(1) : ArrD[Index].StartDT;                                      
+                    if (ArrD[Index].Event == clsDoping.DopingEvent.Allways) ArrD[Index].StartDT = (ArrD[Index].StartDT < ServerDT || ArrD[Index].StartDT > ArrD[Index].StopDT) ? ArrD[Index].StopDT.AddMinutes(1) : ArrD[Index].StartDT;
                     return true; //Проверка пройдена, все необходимые допинги имеются или будут докуплены
                 case DopingAction.Check:
                     if (ArrD.Equals(Me.ArrUsualDoping))
@@ -12426,7 +12478,7 @@ namespace Moswar
                         if (ArrD[i].StartDT < ServerDT) //Проверка, быть может, чегото нехватало и мы сдвинули старт или просто по таймеру или всегда
                         {
                             if (ArrD[i].Event == clsDoping.DopingEvent.EnemyLvl && !ArrD[i].Done &&
-                                (   (ArrD.Equals(Me.ArrRatDoping) && Me.RatHunting.Lvl == ArrD[i].StartLvl && !Me.RatHunting.Stop) 
+                                ((ArrD.Equals(Me.ArrRatDoping) && Me.RatHunting.Lvl == ArrD[i].StartLvl && !Me.RatHunting.Stop)
                                  || (ArrD.Equals(Me.ArrOilLeninDoping) && Me.OilLeninHunting.Lvl == ArrD[i].StartLvl && !Me.OilLeninHunting.Stop)
                                )) bRet &= Dopings(ref ArrD, DopingAction.Use, i);
                             if ((ArrD[i].Event == clsDoping.DopingEvent.Timer || ArrD[i].Event == clsDoping.DopingEvent.Allways) & !ArrD[i].Done) bRet &= Dopings(ref ArrD, DopingAction.Use, i);
@@ -12435,7 +12487,7 @@ namespace Moswar
                             if (ArrD[i].Event == clsDoping.DopingEvent.Neft && Me.OilHunting.Stop && !ArrD[i].Done) bRet &= Dopings(ref ArrD, DopingAction.Use, i);
                             if (ArrD[i].Event == clsDoping.DopingEvent.Agent && Me.AgentHunting.Stop && !ArrD[i].Done) bRet &= Dopings(ref ArrD, DopingAction.Use, i);
                             if (ArrD[i].Event == clsDoping.DopingEvent.HC && !Me.HCHunting.Stop && Me.HCHunting.Victims >= 5 && Me.HCHunting.Search && !ArrD[i].Done) bRet &= Dopings(ref ArrD, DopingAction.Use, i);
-                        }                                                 
+                        }
                     }
                     return bRet;
                 case DopingAction.Use:
@@ -12587,7 +12639,7 @@ namespace Moswar
                                     case clsDoping.DopingType.Shoko15:
                                         if (!clsDoping.AlreadyEated[(int)clsDoping.DopingType.Shoko15] && clsDoping.NeedToBuy[(int)clsDoping.DopingType.Shoko15]) bRet &= BuyItems(MainWB, ShopItems.Shoko15);
                                         break;
-                                    #endregion
+                                        #endregion
                                 }
                             }
                             #endregion
@@ -12609,7 +12661,7 @@ namespace Moswar
                                             frmMain.GetJavaVar(MainWB, "NeftLenin.reset(2);");
                                             IsWBComplete(MainWB, 500, 1500); //IsAjaxComplete(MainWB, 500, 1500);
                                         }
-                                    }                                                                        
+                                    }
                                 }
                                 #endregion
                                 regex = new Regex("((/player/)$)");
@@ -12927,14 +12979,14 @@ namespace Moswar
                                         case clsDoping.DopingType.CandyAntiExp:
                                             bRet &= clsDoping.AlreadyEated[(int)clsDoping.DopingType.CandyAntiExp] || (!clsDoping.NeedToBuy[(int)clsDoping.DopingType.CandyAntiExp] && EatDrog(MainWB, ShopItems.CandyAntiExp)) || Settings.NoCandyNoProblem;
                                             break;
-                                        #endregion
+                                            #endregion
                                     }
                                 }
                                 #endregion
                             }
                             else UpdateStatus("! " + DateTime.Now + " Походу нас обокрали, не нахожу средств на допинги!");
                             #endregion
-                        }                                               
+                        }
                     }
                     else UpdateStatus("! " + DateTime.Now + " Походу нас обокрали, не нахожу спец-допингов на складе!");
                     if (bRet) //Всё прошло успешно?
@@ -12992,19 +13044,19 @@ namespace Moswar
             {
                 switch (SI)
                 {
-                    case ShopItems.Snikers:         DopingInfo = new EatDopingInfo { BlockID = "heal-accordion", BtnID = new string[] { "inventory-snikers-btn" } }; break;
-                    case ShopItems.Me100:           DopingInfo = new EatDopingInfo { BlockID = "heal-accordion", BtnID = new string[] { "inventory-mikstura-btn" } }; break;
-                    case ShopItems.Me50:            DopingInfo = new EatDopingInfo { BlockID = "heal-accordion", BtnID = new string[] { "inventory-sirop-btn" } }; break;
-                    case ShopItems.Pet100:          DopingInfo = new EatDopingInfo { BlockID = "pet-accordion", BtnID = new string[] { "petfood2" } }; break; //Корм для питомца +100%
-                    case ShopItems.Pet50:           DopingInfo = new EatDopingInfo { BlockID = "pet-accordion", BtnID = new string[] { "petfood1" } }; break;  //Корм для питомца +50%
+                    case ShopItems.Snikers: DopingInfo = new EatDopingInfo { BlockID = "heal-accordion", BtnID = new string[] { "inventory-snikers-btn" } }; break;
+                    case ShopItems.Me100: DopingInfo = new EatDopingInfo { BlockID = "heal-accordion", BtnID = new string[] { "inventory-mikstura-btn" } }; break;
+                    case ShopItems.Me50: DopingInfo = new EatDopingInfo { BlockID = "heal-accordion", BtnID = new string[] { "inventory-sirop-btn" } }; break;
+                    case ShopItems.Pet100: DopingInfo = new EatDopingInfo { BlockID = "pet-accordion", BtnID = new string[] { "petfood2" } }; break; //Корм для питомца +100%
+                    case ShopItems.Pet50: DopingInfo = new EatDopingInfo { BlockID = "pet-accordion", BtnID = new string[] { "petfood1" } }; break;  //Корм для питомца +50%
                     //Health, Strength, Dexterity, Endurance, Cunning, Attentiveness                    
                     //Жуйки:
-                    case ShopItems.Gum1Ex:          DopingInfo = new EatDopingInfo { BlockID = "gums-accordion", BtnID = new string[] { "inventory-gum_health-btn" } }; break;
-                    case ShopItems.Gum2Ex:          DopingInfo = new EatDopingInfo { BlockID = "gums-accordion", BtnID = new string[] { "inventory-gum_strength-btn" } }; break;
-                    case ShopItems.Gum3Ex:          DopingInfo = new EatDopingInfo { BlockID = "gums-accordion", BtnID = new string[] { "inventory-gum_dexterity-btn" } }; break;
-                    case ShopItems.Gum4Ex:          DopingInfo = new EatDopingInfo { BlockID = "gums-accordion", BtnID = new string[] { "inventory-gum_resistance-btn" } }; break;
-                    case ShopItems.Gum5Ex:          DopingInfo = new EatDopingInfo { BlockID = "gums-accordion", BtnID = new string[] { "inventory-gum_intuition-btn" } }; break;
-                    case ShopItems.Gum6Ex:          DopingInfo = new EatDopingInfo { BlockID = "gums-accordion", BtnID = new string[] { "inventory-gum_attention-btn" } }; break;
+                    case ShopItems.Gum1Ex: DopingInfo = new EatDopingInfo { BlockID = "gums-accordion", BtnID = new string[] { "inventory-gum_health-btn" } }; break;
+                    case ShopItems.Gum2Ex: DopingInfo = new EatDopingInfo { BlockID = "gums-accordion", BtnID = new string[] { "inventory-gum_strength-btn" } }; break;
+                    case ShopItems.Gum3Ex: DopingInfo = new EatDopingInfo { BlockID = "gums-accordion", BtnID = new string[] { "inventory-gum_dexterity-btn" } }; break;
+                    case ShopItems.Gum4Ex: DopingInfo = new EatDopingInfo { BlockID = "gums-accordion", BtnID = new string[] { "inventory-gum_resistance-btn" } }; break;
+                    case ShopItems.Gum5Ex: DopingInfo = new EatDopingInfo { BlockID = "gums-accordion", BtnID = new string[] { "inventory-gum_intuition-btn" } }; break;
+                    case ShopItems.Gum6Ex: DopingInfo = new EatDopingInfo { BlockID = "gums-accordion", BtnID = new string[] { "inventory-gum_attention-btn" } }; break;
                     case ShopItems.Gum1:
                     case ShopItems.Gum1Adv: DopingInfo = new EatDopingInfo { BlockID = "gums-accordion", BtnID = new string[] { "inventory-gum_health2-btn" } }; break;
                     case ShopItems.Gum2:
@@ -13050,7 +13102,7 @@ namespace Moswar
                     //          
                     default: DopingInfo = new EatDopingInfo(); break;
                 }
-                
+
                 #region Функция вскрытия коробок + мониторинг
                 bool bRet = false;
                 while (DopingInfo.BoxID != null && (HtmlEl = frmMain.GetDocument(WB).GetElementById(DopingInfo.BoxID)) != null) //Нашел то, что было приказано вскрыть!
@@ -13059,7 +13111,7 @@ namespace Moswar
                     for (i = 1; i < 4; i++)
                     {
                         if (WaitDrugEated(WB, HtmlEl)) break;
-                        else 
+                        else
                         {
                             UpdateStatus("@ " + DateTime.Now + " Попытка № " + i + ": Нееепонял, так не пойдеть! Эти коробки, что гвоздями забили?!");
                             frmMain.RefreshURL(WB, Settings.ServerURL);
@@ -13112,7 +13164,7 @@ namespace Moswar
                             }
                         }
                         break;
-                        #endregion
+                    #endregion
                     case "heal-accordion":
                     case "gums-accordion":
                         #region Мои допинги + лечение
@@ -13143,7 +13195,7 @@ namespace Moswar
                                                 {
                                                     Info = frmMain.GetJavaVar(WB, "m.items['" + Regex.Match(H.Parent.InnerHtml, "(?<=data-id=(\")?)([0-9])+").Value + "'].obj.context.nameProp");
                                                     if (Settings.AllowCoctailAdv || Info.Equals(DopingInfo.PicName)) HtmlEl = H;
-                                                }                                                                                              
+                                                }
                                                 break;
                                             #endregion
                                             #region % -ные жвачки
@@ -13153,12 +13205,12 @@ namespace Moswar
                                             case ShopItems.Gum4Ex:
                                             case ShopItems.Gum5Ex:
                                             case ShopItems.Gum6Ex:
-                                                if (HtmlEl == null) 
+                                                if (HtmlEl == null)
                                                 {
                                                     Info = frmMain.GetJavaVar(WB, "m.items['" + Regex.Match(H.Parent.InnerHtml, "(?<=data-id=(\")?)([0-9])+").Value + "'].info.content");
                                                     Info = Regex.Match((string)Info, "(?<=[+])([0-9])+(?=%)").Value;
                                                     if ((Settings.PreferPryanik ? 30 : Settings.PreferShokoZefir ? 25 : Settings.PreferZefir ? 20 : 15) >= Convert.ToInt32(Info)) HtmlEl = H; //Зефирки в багаже сами устанавливаются так, что сверху самые сильные!
-                                                }                                                
+                                                }
                                                 break;
                                             #endregion
                                             #region Моё лечение + сникерс
@@ -13201,7 +13253,7 @@ namespace Moswar
                                                 if (HtmlEl == null)
                                                 {
                                                     HtmlEl = H;
-                                                }                                                
+                                                }
                                                 break;
                                             #endregion
                                             #region Иное (Витаминки, Баржоми, Пяни, Творог, Новая жизнь, Аквадеминерале)
@@ -13209,7 +13261,7 @@ namespace Moswar
                                                 if (HtmlEl == null //Если витаминок ещё небыло найдено!
                                                     || //Берём те на которых тикает таймер предпочитая ультра! (Так как в инвентаре сперва лежит ультра, то заносим её, после сверяем где тикающие, если ультра не тикает берём тикающие витаминки!)
                                                     (Regex.IsMatch((string)frmMain.GetJavaVar(WB, "m.items['" + Regex.Match(HtmlEl.Parent.InnerHtml, "(?<=data-id=\"?)([0-9])+") + "'].info.content"), "(([0-9])+ шт. до|Срок годности:) ([0-9 .:])+") ? false : Regex.IsMatch((string)frmMain.GetJavaVar(WB, "m.items['" + Regex.Match(H.Parent.InnerHtml, "(?<=data-id=\"?)([0-9])+") + "'].info.content"), "(([0-9])+ шт. до|Срок годности:) ([0-9 .:])+"))
-                                                   ) HtmlEl = H;                                               
+                                                   ) HtmlEl = H;
                                                 break;
                                             case ShopItems.Pyani:
                                             case ShopItems.Tvorog:
@@ -13219,8 +13271,8 @@ namespace Moswar
                                                 if (HtmlEl == null)
                                                 {
                                                     HtmlEl = H;
-                                                }                                                
-                                                break;                                            
+                                                }
+                                                break;
                                             #endregion
                                             #region Умные и глупые конфеты
                                             case ShopItems.CandyExp:
@@ -13229,10 +13281,10 @@ namespace Moswar
                                                 {
                                                     Info = frmMain.GetJavaVar(WB, "m.items['" + Regex.Match(H.Parent.InnerHtml, "(?<=data-id=(\")?)([0-9])+").Value + "'].obj.context.nameProp");
                                                     if (Info.Equals(DopingInfo.PicName)) HtmlEl = H;
-                                                }                                                
+                                                }
                                                 break;
-                                            #endregion
-                                        }                                                                  
+                                                #endregion
+                                        }
                                     }
                                     if (HtmlEl != null)
                                     {
@@ -13253,7 +13305,7 @@ namespace Moswar
                                             break;
                                         }
                                         #endregion
-                                    }  
+                                    }
                                 }
                                 else
                                 {
@@ -13262,14 +13314,14 @@ namespace Moswar
                                     i = 4; //Нет смысла пробовать кушать дальше!
                                     break;
                                     #endregion
-                                }                            
-                            }                    
+                                }
+                            }
                         }
                         if (bRet) return true; //Допинг был найден и съеден, нет смысла его покупать и пробовать снова!               
                         break;
-                        #endregion
+                    #endregion
                     default: return false;
-                }                
+                }
                 if (BuyItems(WB, SI)) { GoToPlace(WB, Place.Player); return EatDrog(WB, SI); } //Не нашёл средства, пробуем купить и снова использовать!
             }
             return false;
@@ -13293,13 +13345,13 @@ namespace Moswar
                         string[] URL = { "kok.moskwar.ru" };
                         Me.CocktailRecipe.Wrong = false;
                         #endregion
-                    ReTry:
-                        try 
+                        ReTry:
+                        try
                         {
                             if (Retries >= URL.Count()) return false; //Все сайты в дауне?
                             HttpWebRequest httpRequest = (HttpWebRequest)WebRequest.Create("http://" + URL[Retries] + "//reporter.php?level=" + Me.Player.Level + " уровень");
                             httpRequest.KeepAlive = false;
-                            httpRequest.Timeout = (Int32)(Settings.GagIE) * 1000;                            
+                            httpRequest.Timeout = (Int32)(Settings.GagIE) * 1000;
                             httpRequest.UserAgent = (string)frmMain.GetJavaVar(MainWB, "navigator['userAgent']");
                             HttpWebResponse webResponse = (HttpWebResponse)httpRequest.GetResponse();
                             Response = new StreamReader(webResponse.GetResponseStream()).ReadToEnd();
@@ -13309,7 +13361,7 @@ namespace Moswar
                             Retries++;
                             UpdateStatus("@ " + DateTime.Now + " Сервер: " + URL[Retries] + " в дауне, пробую следующий!");
                             goto ReTry;
-                        }                        
+                        }
                         matches = Regex.Matches(Response, "alt=\"(?<Type>(\\w)+)\"((?!\"ideal\")[\\s\\S])+\"ideal\">(?<Count>([0-9](?<NotReady>-)?)+)"); //\"ideal\">([0-9])+
                         Me.CocktailRecipe.LastCheck = ServerDT;
                         Me.CocktailRecipe.Component = null;
@@ -13385,8 +13437,8 @@ namespace Moswar
                             }
                         }
                         #endregion
-                    }                   
-                    if (Me.CocktailRecipe.Component == null || Me.CocktailRecipe.Component.Count<stcCoctailComponent>() < 6 || Me.CocktailRecipe.Component[Me.CocktailRecipe.Component.Count<stcCoctailComponent>() - 1].Fruit != "gas" || Me.CocktailRecipe.Component[Me.CocktailRecipe.Component.Count<stcCoctailComponent>() - 2].Fruit != "ice") 
+                    }
+                    if (Me.CocktailRecipe.Component == null || Me.CocktailRecipe.Component.Count<stcCoctailComponent>() < 6 || Me.CocktailRecipe.Component[Me.CocktailRecipe.Component.Count<stcCoctailComponent>() - 1].Fruit != "gas" || Me.CocktailRecipe.Component[Me.CocktailRecipe.Component.Count<stcCoctailComponent>() - 2].Fruit != "ice")
                     {
                         UpdateStatus("@ " + DateTime.Now + " Рецептик пока свежеват - в нём не хватает компонентов, я позже загляну!");
                         return false; //Не хватает компонентов для варения, необходимо: минимум 4 фрукта + газ + лёд
@@ -13401,7 +13453,7 @@ namespace Moswar
                     HtmlElementCollection HC = frmMain.GetDocument(MainWB).GetElementById("comments").GetElementsByTagName("button");
                     for (int i = 0; i < frmMain.GetDocument(MainWB).GetElementById("comments").GetElementsByTagName("button").Count; i++)
                     {
-			            UpdateMyInfo(MainWB);
+                        UpdateMyInfo(MainWB);
                         if (Me.Wallet.Ore < 50)
                         {
                             UpdateStatus("@ " + DateTime.Now + " Эх я беднота, нет у меня денег на эти модные коктейльные приборы=(");
@@ -13411,7 +13463,7 @@ namespace Moswar
                         frmMain.InvokeMember(MainWB, frmMain.GetDocument(MainWB).GetElementById("comments").GetElementsByTagName("button")[0], "click");
                     }
                     matches = Regex.Matches(frmMain.GetDocument(MainWB).GetElementById("comments").InnerText, "([0-9])+(?= коктейл(ей|я|ь))");
-                    if (matches.Count != 2) 
+                    if (matches.Count != 2)
                     {
                         UpdateStatus("! " + DateTime.Now + " Дохтур посмотри меня! Проблемы при варении коктейлей!");
                         return false;
@@ -13422,26 +13474,26 @@ namespace Moswar
                     Me.CocktailRecipe.RecipeTotalFruitsAmount = 0;
                     #endregion  
                     #region Проверка наличия фруктов
-                    for (int i = 0; i < Me.CocktailRecipe.Component.Count(); i++) 
+                    for (int i = 0; i < Me.CocktailRecipe.Component.Count(); i++)
                     {
                         if (i < Me.CocktailRecipe.Component.Count() - 2) //Фрукты
                         {
                             Info = frmMain.GetJavaVar(MainWB, "$(\"#content .object-thumbs.fruits .action.action-get[data-code=" + Me.CocktailRecipe.Component[i].Fruit + "]\").attr(\"data-amount\")");
                             Me.CocktailRecipe.Component[i].StorageAmmount = Info == null ? 0 : Convert.ToInt32(Info);
                             Me.CocktailRecipe.Component[i].Use = (!Settings.UseMaxFruitProRecipe || Me.CocktailRecipe.Component[i].RecipeAmount <= Settings.MaxFruitProRecipe || (Settings.UseMinFruitIgnoreAmount && Me.CocktailRecipe.Component[i].StorageAmmount >= Settings.MinFruitIgnoreAmount)) && FruitsFound < 4;
-                            if (Me.CocktailRecipe.Component[i].Use) { Me.CocktailRecipe.RecipeTotalFruitsAmount += Me.CocktailRecipe.Component[i].RecipeAmount; FruitsFound++; }                            
+                            if (Me.CocktailRecipe.Component[i].Use) { Me.CocktailRecipe.RecipeTotalFruitsAmount += Me.CocktailRecipe.Component[i].RecipeAmount; FruitsFound++; }
                         }
                         else //Газ и лёд 
                         {
                             Me.CocktailRecipe.Component[i].StorageAmmount = Convert.ToInt32(matches[i == Me.CocktailRecipe.Component.Count() - 2 ? 0 : 1].Value);
                             Me.CocktailRecipe.Component[i].Use = true; //Лёд и Газ нужны всегда!
-                        }               
+                        }
                     }
                     if (FruitsFound < 4 || Me.CocktailRecipe.RecipeTotalFruitsAmount > Settings.TotalFruitsProRecipe)
                     {
                         UpdateStatus("@ " + DateTime.Now + " Не, коктейли варить не буду дороговато ...");
                         return false; //Не хватает компонентов для варения, необходимо: минимум 4 фрукта + газ + лёд
-                    } 
+                    }
                     #endregion
                     #region Проверка наличия добавок
                     string[] ID = new string[2];
@@ -13485,10 +13537,10 @@ namespace Moswar
                                 ID[0] = "ratingresist";
                                 break;
                         }
-                        
+
                         Info = frmMain.GetJavaVar(MainWB, "$(\"#content .object-thumbs .action.action-get[data-rating=" + ID[0] + "][data-code=" + ID[1] + "]\").attr(\"data-amount\")");
                         Me.CocktailRecipe.SpecialComponent[i].Name = ID[1] + "_" + ID[0];
-                        Me.CocktailRecipe.SpecialComponent[i].StorageAmmount = Info == null ? 0 : Convert.ToInt32(Info);                        
+                        Me.CocktailRecipe.SpecialComponent[i].StorageAmmount = Info == null ? 0 : Convert.ToInt32(Info);
                     }
                     if (CT != CoctailType.None)
                     {
@@ -13499,9 +13551,9 @@ namespace Moswar
                                 UpdateStatus("@ " + DateTime.Now + " Чёрт, добавок маловато..., а шеф без трубочки не пьёт!");
                                 return false;
                             }
-                        } 
-                    }           
-                    #endregion                   
+                        }
+                    }
+                    #endregion
                     break;
                 case CoctailAction.CheckMissing:
                     BugReport("CookCoctail ~CheckMissing");
@@ -13512,14 +13564,14 @@ namespace Moswar
                         {
                             int Index = -1;
                             for (int i = 0; i < 6; i++)
-                            {                                
+                            {
                                 Coctails[i].CoctailName = ((CoctailType)i).ToString().ToLower();
                                 Coctails[i].MissingAmount = (int)Settings.CookCoctailType[i] - GetArrClassCount(MainWB, "$(\"#content #inventory-shake_" + Coctails[i].CoctailName + "-btn\")");
                                 if (!Coctails[i].Ignore && Coctails[i].MissingAmount > 0 && (Index == -1 || Coctails[i].MissingAmount >= Coctails[Index].MissingAmount)) Index = i;
                             }
                             if (Index != -1) Coctails[Index].Ignore = !CookCoctail(CoctailAction.Cook, (CoctailType)Index);
                             else break;
-                        }                        
+                        }
                     }
                     if (!Me.CocktailRecipe.Wrong) Me.CocktailRecipe.LastCook = ServerDT; //Перезаписывать время последнего варения, только успешных действий.
                     break;
@@ -13527,11 +13579,11 @@ namespace Moswar
                     BugReport("CookCoctail ~Cook");
                     #region Составление рецепта.
                     string[] Component = new string[10];
-                    decimal[] ComponentAmount  = new decimal[10];
+                    decimal[] ComponentAmount = new decimal[10];
                     if (!CookCoctail(CoctailAction.CheckRecipe, CT)) return false;
                     foreach (stcCoctailComponent Item in Me.CocktailRecipe.Component)
                     {
-                        if (Item.Use) 
+                        if (Item.Use)
                         {
                             Component[FruitsFound] = Item.Fruit;
                             ComponentAmount[FruitsFound] = Item.RecipeAmount;
@@ -13539,24 +13591,24 @@ namespace Moswar
                             if (FruitsFound == 4) FruitsFound = 8; //Все фрукты найдены, Лёд и Газ должны быть в конце рецепта, резервируем место под добавки!
                         }
                     }
-                    for (int i = 0; i < 4; i++) 
+                    for (int i = 0; i < 4; i++)
                     {
                         Component[4 + i] = Me.CocktailRecipe.SpecialComponent[Settings.CookCoctailSpecials[(int)CT * 8 + i] + i * 7].Name;
                         ComponentAmount[4 + i] = Settings.CookCoctailSpecials[(int)CT * 8 + i + 4];
-                        
+
                     }
                     string PostData = "";
                     int index = 0;
                     #region Сбор формулы для отправки via POST
-                     for (int i = 0; i < 10; i++)
-                     {
-                         if (Component[i] != null)
-                         {
-                             PostData += (PostData == "" ? "" : "&") + "components%5B" + index + "%5D%5Bcode%5D=" + Component[i] + "&components%5B" + index + "%5D%5Bamount%5D=" + ComponentAmount[i];
-                             index++;
-                         }
-                     }
-                     PostData += "&shaker=" + CT.ToString().ToLower();
+                    for (int i = 0; i < 10; i++)
+                    {
+                        if (Component[i] != null)
+                        {
+                            PostData += (PostData == "" ? "" : "&") + "components%5B" + index + "%5D%5Bcode%5D=" + Component[i] + "&components%5B" + index + "%5D%5Bamount%5D=" + ComponentAmount[i];
+                            index++;
+                        }
+                    }
+                    PostData += "&shaker=" + CT.ToString().ToLower();
                     #endregion             
                     #endregion
                     #region Завариваем коктейль.
@@ -13585,7 +13637,7 @@ namespace Moswar
                         Info = frmMain.GetJavaVar(MainWB, "$(\".alert.infoalert.coctail .actions\").html()");
                         if (Settings.SellBadCoctail && Info != DBNull.Value)
                         {
-                           
+
                             string CoctailID = Regex.Match((string)Info, "(?<=/use/)([0-9])+(?=/shake/)").Value;
                             frmMain.NavigateURL(MainWB, Settings.ServerURL + "/shop/section/mine/");
                             IsWBComplete(MainWB);
@@ -13599,8 +13651,8 @@ namespace Moswar
                     }
                     else UpdateStatus("# " + DateTime.Now + " Пиши Босс... : +1 коктейль!");
                     #endregion
-                    break;            
-            }        
+                    break;
+            }
             return true;
         }
         public void WearSet(WebBrowser WB, clsWearSets.stcSet[] ArrSet, int IndexName)
@@ -13614,11 +13666,11 @@ namespace Moswar
             foreach (clsWearSets.stcSet Set in ArrSet)
             {
                 if (Set.IndexName == IndexName)
-                {                    
+                {
                     IsWBComplete(WB);
                     if (!Regex.IsMatch(frmMain.GetDocumentURL(WB), "/player/$")) GoToPlace(WB, Place.Player);
                     Status[1] = true; //Как минимум нужный сет найден.
-                    
+
                     for (int i = 0; i < Set.Item.Count<clsWearSets.stcSetItem>(); i++)
                     {
                         object Info;
@@ -13652,7 +13704,7 @@ namespace Moswar
                                         break;
                                     }
                                 }
-                            }                            
+                            }
                             #endregion
                             #region Переодевание
                             if (HtmlEl != null)
@@ -13672,7 +13724,7 @@ namespace Moswar
                             }
                             else Status[1] = false; //Нужная, шмотка не найдена
                             #endregion
-                        }                  
+                        }
                     }
                     break; //Нужный сет уже был одет
                 }
@@ -13684,8 +13736,8 @@ namespace Moswar
                 Me.SetInfo.LastDT = DateTime.Now;
             }
             #endregion
-            if (Status[0]) UpdateStatus((Status[1] ? "# " : "! ") + DateTime.Now + (Status[1] ? " Теперь я неотразим ..., меня даже в зеркале не видно!" : " Ооо Боже! Меня никак обокрали! Где мой костюм супермена?!?"));   
-        }        
+            if (Status[0]) UpdateStatus((Status[1] ? "# " : "! ") + DateTime.Now + (Status[1] ? " Теперь я неотразим ..., меня даже в зеркале не видно!" : " Ооо Боже! Меня никак обокрали! Где мой костюм супермена?!?"));
+        }
         public bool Bunker()
         {
 
@@ -13701,7 +13753,7 @@ namespace Moswar
 
             //Нумерация комнат начинается в ИД с 0-8, при считывании же номера комнаты в которой нахожусь используется нумерация с 1-9
             MessageBox.Show("Я в комнате N: " + Regex.Match(frmMain.GetDocument(MainWB).GetElementById("bunker-room-number").InnerText, "([0-9])+").Value
-                            + "\r\nБой в бункере закончится через: " + frmMain.GetDocument(MainWB).GetElementById("game-timer").InnerText                            
+                            + "\r\nБой в бункере закончится через: " + frmMain.GetDocument(MainWB).GetElementById("game-timer").InnerText
                             + "\r\nВ комнате N: 1 -> " + frmMain.GetDocument(MainWB).GetElementById("room-0-allies").InnerText + " Союзников, " + frmMain.GetDocument(MainWB).GetElementById("room-0-enemies").InnerText + " Врагов"
                             + "\r\nВ комнате N: 2 -> " + frmMain.GetDocument(MainWB).GetElementById("room-1-allies").InnerText + " Союзников, " + frmMain.GetDocument(MainWB).GetElementById("room-1-enemies").InnerText + " Врагов"
                             + "\r\nВ комнате N: 3 -> " + frmMain.GetDocument(MainWB).GetElementById("room-2-allies").InnerText + " Союзников, " + frmMain.GetDocument(MainWB).GetElementById("room-2-enemies").InnerText + " Врагов"
@@ -13715,7 +13767,7 @@ namespace Moswar
                             + "\r\nМожно сходить в лево? " + (frmMain.GetDocument(MainWB).GetElementById("arrow-left").Style == null) + " Можно сходить в право? " + (frmMain.GetDocument(MainWB).GetElementById("arrow-right").Style == null)
                             + "\r\nМожно ударить через: " + frmMain.GetDocument(MainWB).GetElementById("punch-timer").InnerText + "s, Переход возможен через: " + frmMain.GetDocument(MainWB).GetElementById("move-timer").InnerText + "s"
                             + "\r\n" + frmMain.GetDocument(MainWB).GetElementById("damage-meter").InnerText
-                            + "\r\nМои жизни: " + frmMain.GetDocument(MainWB).GetElementById(match.Groups["Life"].Value).InnerText + ", Питомец: " + frmMain.GetDocument(MainWB).GetElementById(match.Groups["Pet"].Value).GetAttribute("title")                                 
+                            + "\r\nМои жизни: " + frmMain.GetDocument(MainWB).GetElementById(match.Groups["Life"].Value).InnerText + ", Питомец: " + frmMain.GetDocument(MainWB).GetElementById(match.Groups["Pet"].Value).GetAttribute("title")
                             + "\r\nВ комнате есть сейф? " + (frmMain.GetDocument(MainWB).GetElementById("safe").Style == null) + ", В комнате есть сундук? " + (frmMain.GetDocument(MainWB).GetElementById("chest").Style == null)
                             + "\r\n\r\n\r\n Сундук в комнате: " + frmMain.GetJavaVar(MainWB, "bunkerChestRoom") + ", Сейф в комнате: " + frmMain.GetJavaVar(MainWB, "bunkerSafeRoom")
                           );
@@ -13728,7 +13780,7 @@ namespace Moswar
 
             Stream FS = new FileStream("Expert.xml", FileMode.Create);
             XmlExpertSerializer.Serialize(FS, Expert);
-            FS.Close();            
+            FS.Close();
         }
         public void LoadExpertSettings()
         {
@@ -13743,8 +13795,8 @@ namespace Moswar
             if (Expert.RevengerPrc == 0) Expert.RevengerPrc = 150;
             if (Expert.MaxBuyFightItemAmount == 0) Expert.MaxBuyFightItemAmount = 9;
             if (Expert.MaxWebSockets == 0) Expert.MaxWebSockets = 6;
-        } 
-        
+        }
+
         public void SaveSettings()
         {
             BugReport("SaveSettings");
@@ -13758,10 +13810,10 @@ namespace Moswar
             FS.Close();
 
             UpdateStatus("- " + DateTime.Now + " Настройки бота удачно сохранены.");
-        }                    
+        }
         public void LoadSettings()
         {
-            BugReport("LoadSettings");            
+            BugReport("LoadSettings");
 
             Stream FS = new FileStream("BotSettings.xml", FileMode.Open);
             Settings = (stcSettings)XmlSettingsSerializer.Deserialize(FS);
@@ -13773,22 +13825,22 @@ namespace Moswar
 
             #region Инициализация времён
             if (Settings.StartDuelsDT.Equals(new DateTime())) Settings.StartDuelsDT = DateTime.Now.Date;
-            if (Settings.StopDuelsDT.Equals(new DateTime())) Settings.StopDuelsDT = DateTime.Now.Date.Add(new TimeSpan(23,59,59));
+            if (Settings.StopDuelsDT.Equals(new DateTime())) Settings.StopDuelsDT = DateTime.Now.Date.Add(new TimeSpan(23, 59, 59));
             if (Settings.StartHC.Equals(new DateTime())) Settings.StartHC = DateTime.Now.Date;
             if (Settings.StopHC.Equals(new DateTime())) Settings.StopHC = DateTime.Now.Date.Add(new TimeSpan(23, 59, 59));
             #endregion
             UpdateStatus("- " + DateTime.Now + " Настройки бота удачно загружены.");
-        }        
+        }
 
         public void RestartBotInstance(bool ForceRestart = false)
-        {                                                                                 
-            System.Diagnostics.Process MeProc = System.Diagnostics.Process.GetCurrentProcess();          
+        {
+            System.Diagnostics.Process MeProc = System.Diagnostics.Process.GetCurrentProcess();
             if (!ForceRestart && (!Settings.UseRestartMemory || MeProc.PrivateMemorySize64 / 1048576 < Settings.maxRestartMemory)) return; //(1048576 = 1024 * 1024) Byte -> MegaByte
             UpdateStatus("! " + DateTime.Now + " Рестарт " + (ForceRestart ? "[Внутренняя ошибка]" : "[Использование оперативной памяти]"));
             Bug.Logging = false; //Останавливаем логгирование.
             clsAppRestartManager.SaveRecovery(ref Me); //Сохраняем текущие данные для дальнейшего использования
-            System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo { FileName = Application.ExecutablePath, Arguments = "-recovery" +  (MeInTray ? " -tray" : ""), WindowStyle = Settings.RestartHidden ? System.Diagnostics.ProcessWindowStyle.Hidden : System.Diagnostics.ProcessWindowStyle.Minimized }); //Все остальные параметы бот подхватит при удачной загрузке настроек
-            MeProc.Kill();            
+            System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo { FileName = Application.ExecutablePath, Arguments = "-recovery" + (MeInTray ? " -tray" : ""), WindowStyle = Settings.RestartHidden ? System.Diagnostics.ProcessWindowStyle.Hidden : System.Diagnostics.ProcessWindowStyle.Minimized }); //Все остальные параметы бот подхватит при удачной загрузке настроек
+            MeProc.Kill();
         }
         public void BugReport(string AddInfo = "", bool Save = false, string FileName = "", WebBrowser WB = null)
         {
@@ -13807,7 +13859,7 @@ namespace Moswar
 
                     SW = new StreamWriter("BuG-Report\\" + (FileName == "" ? "BugEx" + Bug.Nr++ : FileName + "Ex") + ".Htm");
                     SW.Write(frmMain.GetDocumentHtmlTextEx(WB));
-                    SW.Close();                        
+                    SW.Close();
 
                     if (Bug.Nr >= 10) { Bug.Nr = 0; UpdateStatus("! " + DateTime.Now + " Всё, кина не будет, ибо сели баратейки!"); }
                 }
@@ -13820,7 +13872,7 @@ namespace Moswar
             {
                 if (Bug.Logging)
                 {
-                    string[] sTmp;                    
+                    string[] sTmp;
                     if (Bug.Info == null) Bug.Info = new string('|', 19) + AddInfo; //Инизиализиреум массив на 20 элементов (19 + 1)
                     else
                     {
@@ -13837,7 +13889,7 @@ namespace Moswar
                         }
                         #endregion
                     }
-                }                    
+                }
             }
         }
         public void Shutdown()
@@ -13869,7 +13921,7 @@ namespace Moswar
                 #region StartBotThread
                 UpdateStatus("© " + DateTime.Now + " ОK, босс! - Беру скакалку, скакаю=)");
                 WebLogin(MainWB); //                               
-                Police(PoliceAction.Check);                                
+                Police(PoliceAction.Check);
                 GetMyStats(MainWB);
                 #region Чтение чата
                 ChatThread.Start();
@@ -13881,7 +13933,7 @@ namespace Moswar
                 if (Me.ArrDuelsDT == null) CheckImmun(ImmunAction.Duels);
                 if (Me.Thimbles.StartDT == new DateTime()) CheckImmun(ImmunAction.Mona);
                 if (!Me.Major.Stop) Major(MajorAction.Check);
-                if (Me.ClanWarInfo.NextDT <= GetServerTime(MainWB)) ClanWar(ClanWarAction.Check);                
+                if (Me.ClanWarInfo.NextDT <= GetServerTime(MainWB)) ClanWar(ClanWarAction.Check);
                 if (!Me.PigProtection.Stop) PigProtection(PigProtectionAction.Check);
                 if (!Me.Safe.Stop) Safe(SafeAction.Check);
                 if (Me.CarRide.Cars == null && Me.Player.Level >= 7) Automobile(AutomobileAction.Check);
@@ -13889,35 +13941,35 @@ namespace Moswar
                 do
                 {
                     while (IsTimeout(MainWB, true, false) || Me.Police.Stop || TimeToStopAtack(NextTimeout.Atack) || (Ignore.PVPAttack && (Me.OilHunting.Stop || !Settings.GoOil) && (Me.NPCHunting.Stop || !Settings.AttackNPC))) //Таймаут между драками?
-                    {                       
+                    {
                         DateTime ServerDT = GetServerTime(MainWB);
                         #region Актуализация массива проведённых драк
                         while (Me.ArrDuelsDT != null && Me.ArrDuelsDT.Count<DateTime>() > 0 && ServerDT.AddDays(-1) > Me.ArrDuelsDT[Me.ArrDuelsDT.Count<DateTime>() - 1])
                         {
                             Array.Resize<DateTime>(ref Me.ArrDuelsDT, Me.ArrDuelsDT.Count<DateTime>() - 1);
-                        }                      
+                        }
                         #endregion
                         #region Блокировка нападений в стиле PVP, при охоте на агентов мажорами до 9 утра, слишком большом количестве драк, в запрещенное время!
                         if ((Settings.MrPlushkin && !Me.AgentHunting.Stop && Me.Major.LastDT > ServerDT && ServerDT.Hour < 8)
                              || (Settings.UseMaxDuels && Me.ArrDuelsDT != null && Settings.maxDuels <= Me.ArrDuelsDT.Count<DateTime>())
-                             || (Settings.UseDuelTimes && !IsTimeInTimespan(Settings.StartDuelsDT.TimeOfDay, Settings.StopDuelsDT.TimeOfDay, ServerDT.TimeOfDay))                             
+                             || (Settings.UseDuelTimes && !IsTimeInTimespan(Settings.StartDuelsDT.TimeOfDay, Settings.StopDuelsDT.TimeOfDay, ServerDT.TimeOfDay))
                            )
                         {
-                            if (!Ignore.PVPAttack) UpdateStatus("@ " + DateTime.Now + 
+                            if (!Ignore.PVPAttack) UpdateStatus("@ " + DateTime.Now +
                                 (Settings.MrPlushkin && !Me.AgentHunting.Stop && Me.Major.LastDT > ServerDT && ServerDT.Hour < 8 ?
                                 " Агенты попрятались, но Mr. Плюшкина не провести, я подожду!" :
                                 " Ох и надрался же я сегодня, пора пить чай!")
-                                );                            
+                                );
                             Ignore.PVPAttack = true;
                         }
                         else Ignore.PVPAttack = false;
                         #endregion
-                        
+
                         if (Me.RatHunting.RestartDT < DateTime.Now.AddMinutes(Me.Major.LastDT > ServerDT ? 5 : 15)) { Me.RatHunting.Defeats = 0; Me.RatHunting.Stop = false; } //Охота обновляется каждые 24 часа, на сей раз учитываем конец прошлого обвала
                         if (Me.OilLeninHunting.RestartDT < DateTime.Now) { Me.OilLeninHunting.Defeats = 0; Me.OilLeninHunting.Stop = false; } //Охота обновляется каждые 24 часа
                         //При необходимости проводим драку в метро, и пробуем пойти в стенку или мирно покидаем таймаут ...
                         if (!Me.Trauma.Stop)
-                        {                           
+                        {
                             #region Беспрерывная охота на крысомах или обычный таймаут? (Перехват таймаута, допускаются только мелкие действия) + Допинг + Охота на крыс
                             TimeSpan TSTimeout = new TimeSpan();
                             HtmlElement HtmlEl = frmMain.GetDocument(MainWB).GetElementById("timeout");
@@ -13950,7 +14002,7 @@ namespace Moswar
                                 #endregion
                             }
                             #endregion
-                        }                        
+                        }
                         Thread.Sleep((Int32)Expert.UseTimeout); //Замедляем функцию использования таймаута                         
                     }
                     if (!Me.Trauma.Stop) Me.Trauma.Stop = Trauma(TraumaAction.Check); //Не забегать сюда каждый раз когда уже поймал травму!                    
@@ -13993,7 +14045,7 @@ namespace Moswar
                         }
                         else Ignore.PVPAttack = false;
                         #endregion
-                       
+
                         if (Settings.OpenPrizeBox) CheckForPrizeBox(); //Проверка на наличие ключей и сундуков.
                         DumpInventory();
                         if (CheckHealthEx(99, Settings.HealMe100, Settings.HealPet50, Settings.HealPet100) ? (!Me.Trauma.Stop && !IsHPLow(MainWB, 99, false)) : false) //Пить сироп, если жизней менее 99% или микстуру по расписанию!
@@ -14003,8 +14055,8 @@ namespace Moswar
                             #region Нефтекачка
                             //Проверка не настал ли следуюший день по серверному времени, ибо Нефтекачка востанавливается в 00:00 по серверу!                            
                             if (Settings.GoOil && !Me.OilHunting.Stop && (!Settings.UseWerewolf || Me.WerewolfHunting.Stop)
-                                && (Ignore.PVPAttack || Settings.OilIgnoreTimeout || (Me.ClanWarInfo.WarStep == 1 && Settings.Berserker ? CheckImmun(ImmunAction.Tooth) : true))                                 
-                               ) 
+                                && (Ignore.PVPAttack || Settings.OilIgnoreTimeout || (Me.ClanWarInfo.WarStep == 1 && Settings.Berserker ? CheckImmun(ImmunAction.Tooth) : true))
+                               )
                             {
                                 Oil(OilAction.Fight); //Дерёмся только при полном Хп.
                             }
@@ -14052,7 +14104,7 @@ namespace Moswar
                         do
                         {
                             if (!Trauma(TraumaAction.Check)) break;
-                            UseTimeOut(TimeOutAction.Free);                            
+                            UseTimeOut(TimeOutAction.Free);
                             ServerDT = GetServerTime(MainWB);
                             Wait(Me.Trauma.LastDT > ServerDT.AddMinutes(20) ? new TimeSpan(0, 20, 0) : Me.Trauma.LastDT - ServerDT, " Пока есть травма, жду до: ", TimeOutAction.Free);
                             ServerDT = GetServerTime(MainWB);
@@ -14065,7 +14117,7 @@ namespace Moswar
             }
             catch (Exception e)
             {
-                if (HCThread[0].IsAlive) HCThread[0].Abort(); 
+                if (HCThread[0].IsAlive) HCThread[0].Abort();
                 if (HCThread[1].IsAlive) HCThread[1].Abort();
                 if (ChatThread.IsAlive) ChatThread.Abort();
                 if (Thread.CurrentThread.ThreadState == ThreadState.AbortRequested) return; //Всё в порядке, просто останавливаем бота!
@@ -14077,14 +14129,24 @@ namespace Moswar
                 SW.Close();
                 #endregion
                 BugReport(null, true, "", MainWB);
-            }             
+            }
         }
         #endregion
 
         #region Тестирование
         public void Test()
         {
-         //   SendTrucks();
+            //        Me.Player.Level = 19;
+            //      Oil(OilAction.LeninFight);
+
+            //       HtmlElement h = frmMain.GetDocument(MainWB).GetElementById("alert-text").NextSibling.Children[0].Children[0];
+            //     HtmlElement h = frmMain.GetDocument(MainWB).GetElementById("alert-text").Parent.Children[1].Children[0].Children[0].InvokeMember("onclick");
+  //          HtmlElement h = frmMain.GetDocument(MainWB).GetElementById("content");
+    //        IsWBComplete(MainWB);
+            //frmMain.InvokeMember(MainWB, h, "click");
+
+
+            //   SendTrucks();
             //Metro(MetroAction.SearchRat);
 
             //        Casino(CasinoAction.Kubovich);
@@ -14142,4 +14204,3 @@ namespace Moswar
         #endregion
     }
 }
-        

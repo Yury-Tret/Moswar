@@ -142,8 +142,20 @@
             this.groupBox17 = new System.Windows.Forms.GroupBox();
             this.label203 = new System.Windows.Forms.Label();
             this.tblTrucks = new System.Windows.Forms.TableLayoutPanel();
-            this.button67 = new System.Windows.Forms.Button();
+            this.button90 = new System.Windows.Forms.Button();
             this.imageListlTruckEnhancing = new System.Windows.Forms.ImageList(this.components);
+            this.button89 = new System.Windows.Forms.Button();
+            this.button88 = new System.Windows.Forms.Button();
+            this.button87 = new System.Windows.Forms.Button();
+            this.button86 = new System.Windows.Forms.Button();
+            this.button85 = new System.Windows.Forms.Button();
+            this.button84 = new System.Windows.Forms.Button();
+            this.button83 = new System.Windows.Forms.Button();
+            this.button82 = new System.Windows.Forms.Button();
+            this.button81 = new System.Windows.Forms.Button();
+            this.button80 = new System.Windows.Forms.Button();
+            this.button79 = new System.Windows.Forms.Button();
+            this.button67 = new System.Windows.Forms.Button();
             this.button68 = new System.Windows.Forms.Button();
             this.button69 = new System.Windows.Forms.Button();
             this.button70 = new System.Windows.Forms.Button();
@@ -246,9 +258,13 @@
             this.label197 = new System.Windows.Forms.Label();
             this.label198 = new System.Windows.Forms.Label();
             this.label199 = new System.Windows.Forms.Label();
-            this.label200 = new System.Windows.Forms.Label();
             this.label201 = new System.Windows.Forms.Label();
             this.groupBox18 = new System.Windows.Forms.GroupBox();
+            this.label200 = new System.Windows.Forms.Label();
+            this.label207 = new System.Windows.Forms.Label();
+            this.label208 = new System.Windows.Forms.Label();
+            this.chkSendTruck13 = new System.Windows.Forms.CheckBox();
+            this.chkSendTruck14 = new System.Windows.Forms.CheckBox();
             this.numTrucksMinPowerPoints = new System.Windows.Forms.NumericUpDown();
             this.label185 = new System.Windows.Forms.Label();
             this.chkSendTrucks = new System.Windows.Forms.CheckBox();
@@ -848,22 +864,7 @@
             this.MenuItemSendGiftFix = new System.Windows.Forms.ToolStripMenuItem();
             this.btnFunctions = new System.Windows.Forms.Button();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
-            this.label207 = new System.Windows.Forms.Label();
-            this.label208 = new System.Windows.Forms.Label();
-            this.chkSendTruck13 = new System.Windows.Forms.CheckBox();
-            this.chkSendTruck14 = new System.Windows.Forms.CheckBox();
-            this.button79 = new System.Windows.Forms.Button();
-            this.button80 = new System.Windows.Forms.Button();
-            this.button81 = new System.Windows.Forms.Button();
-            this.button82 = new System.Windows.Forms.Button();
-            this.button83 = new System.Windows.Forms.Button();
-            this.button84 = new System.Windows.Forms.Button();
-            this.button85 = new System.Windows.Forms.Button();
-            this.button86 = new System.Windows.Forms.Button();
-            this.button87 = new System.Windows.Forms.Button();
-            this.button88 = new System.Windows.Forms.Button();
-            this.button89 = new System.Windows.Forms.Button();
-            this.button90 = new System.Windows.Forms.Button();
+            this.chkGoOilDarkLenin = new System.Windows.Forms.CheckBox();
             this.tabControl.SuspendLayout();
             this.tabMainBrowser.SuspendLayout();
             this.AutoUpdateMessage.SuspendLayout();
@@ -2364,13 +2365,13 @@
             this.tblTrucks.Controls.Add(this.chkSendTruck14, 0, 16);
             this.tblTrucks.Name = "tblTrucks";
             // 
-            // button67
+            // button90
             // 
-            resources.ApplyResources(this.button67, "button67");
-            this.button67.ImageList = this.imageListlTruckEnhancing;
-            this.button67.Name = "button67";
-            this.button67.UseVisualStyleBackColor = true;
-            this.button67.Click += new System.EventHandler(this.btnTruckEnhancing_Click);
+            resources.ApplyResources(this.button90, "button90");
+            this.button90.ImageList = this.imageListlTruckEnhancing;
+            this.button90.Name = "button90";
+            this.button90.UseVisualStyleBackColor = true;
+            this.button90.Click += new System.EventHandler(this.btnTruckEnhancing_Click);
             // 
             // imageListlTruckEnhancing
             // 
@@ -2379,6 +2380,102 @@
             this.imageListlTruckEnhancing.Images.SetKeyName(0, "Empty.png");
             this.imageListlTruckEnhancing.Images.SetKeyName(1, "Derzhava.png");
             this.imageListlTruckEnhancing.Images.SetKeyName(2, "Med.png");
+            // 
+            // button89
+            // 
+            resources.ApplyResources(this.button89, "button89");
+            this.button89.ImageList = this.imageListlTruckEnhancing;
+            this.button89.Name = "button89";
+            this.button89.UseVisualStyleBackColor = true;
+            this.button89.Click += new System.EventHandler(this.btnTruckEnhancing_Click);
+            // 
+            // button88
+            // 
+            resources.ApplyResources(this.button88, "button88");
+            this.button88.ImageList = this.imageListlTruckEnhancing;
+            this.button88.Name = "button88";
+            this.button88.UseVisualStyleBackColor = true;
+            this.button88.Click += new System.EventHandler(this.btnTruckEnhancing_Click);
+            // 
+            // button87
+            // 
+            resources.ApplyResources(this.button87, "button87");
+            this.button87.ImageList = this.imageListlTruckEnhancing;
+            this.button87.Name = "button87";
+            this.button87.UseVisualStyleBackColor = true;
+            this.button87.Click += new System.EventHandler(this.btnTruckEnhancing_Click);
+            // 
+            // button86
+            // 
+            resources.ApplyResources(this.button86, "button86");
+            this.button86.ImageList = this.imageListlTruckEnhancing;
+            this.button86.Name = "button86";
+            this.button86.UseVisualStyleBackColor = true;
+            this.button86.Click += new System.EventHandler(this.btnTruckEnhancing_Click);
+            // 
+            // button85
+            // 
+            resources.ApplyResources(this.button85, "button85");
+            this.button85.ImageList = this.imageListlTruckEnhancing;
+            this.button85.Name = "button85";
+            this.button85.UseVisualStyleBackColor = true;
+            this.button85.Click += new System.EventHandler(this.btnTruckEnhancing_Click);
+            // 
+            // button84
+            // 
+            resources.ApplyResources(this.button84, "button84");
+            this.button84.ImageList = this.imageListlTruckEnhancing;
+            this.button84.Name = "button84";
+            this.button84.UseVisualStyleBackColor = true;
+            this.button84.Click += new System.EventHandler(this.btnTruckEnhancing_Click);
+            // 
+            // button83
+            // 
+            resources.ApplyResources(this.button83, "button83");
+            this.button83.ImageList = this.imageListlTruckEnhancing;
+            this.button83.Name = "button83";
+            this.button83.UseVisualStyleBackColor = true;
+            this.button83.Click += new System.EventHandler(this.btnTruckEnhancing_Click);
+            // 
+            // button82
+            // 
+            resources.ApplyResources(this.button82, "button82");
+            this.button82.ImageList = this.imageListlTruckEnhancing;
+            this.button82.Name = "button82";
+            this.button82.UseVisualStyleBackColor = true;
+            this.button82.Click += new System.EventHandler(this.btnTruckEnhancing_Click);
+            // 
+            // button81
+            // 
+            resources.ApplyResources(this.button81, "button81");
+            this.button81.ImageList = this.imageListlTruckEnhancing;
+            this.button81.Name = "button81";
+            this.button81.UseVisualStyleBackColor = true;
+            this.button81.Click += new System.EventHandler(this.btnTruckEnhancing_Click);
+            // 
+            // button80
+            // 
+            resources.ApplyResources(this.button80, "button80");
+            this.button80.ImageList = this.imageListlTruckEnhancing;
+            this.button80.Name = "button80";
+            this.button80.UseVisualStyleBackColor = true;
+            this.button80.Click += new System.EventHandler(this.btnTruckEnhancing_Click);
+            // 
+            // button79
+            // 
+            resources.ApplyResources(this.button79, "button79");
+            this.button79.ImageList = this.imageListlTruckEnhancing;
+            this.button79.Name = "button79";
+            this.button79.UseVisualStyleBackColor = true;
+            this.button79.Click += new System.EventHandler(this.btnTruckEnhancing_Click);
+            // 
+            // button67
+            // 
+            resources.ApplyResources(this.button67, "button67");
+            this.button67.ImageList = this.imageListlTruckEnhancing;
+            this.button67.Name = "button67";
+            this.button67.UseVisualStyleBackColor = true;
+            this.button67.Click += new System.EventHandler(this.btnTruckEnhancing_Click);
             // 
             // button68
             // 
@@ -3130,11 +3227,6 @@
             resources.ApplyResources(this.label199, "label199");
             this.label199.Name = "label199";
             // 
-            // label200
-            // 
-            resources.ApplyResources(this.label200, "label200");
-            this.label200.Name = "label200";
-            // 
             // label201
             // 
             resources.ApplyResources(this.label201, "label201");
@@ -3146,6 +3238,33 @@
             this.tblTrucks.SetColumnSpan(this.groupBox18, 8);
             this.groupBox18.Name = "groupBox18";
             this.groupBox18.TabStop = false;
+            // 
+            // label200
+            // 
+            resources.ApplyResources(this.label200, "label200");
+            this.label200.Name = "label200";
+            // 
+            // label207
+            // 
+            resources.ApplyResources(this.label207, "label207");
+            this.label207.Name = "label207";
+            // 
+            // label208
+            // 
+            resources.ApplyResources(this.label208, "label208");
+            this.label208.Name = "label208";
+            // 
+            // chkSendTruck13
+            // 
+            resources.ApplyResources(this.chkSendTruck13, "chkSendTruck13");
+            this.chkSendTruck13.Name = "chkSendTruck13";
+            this.chkSendTruck13.UseVisualStyleBackColor = true;
+            // 
+            // chkSendTruck14
+            // 
+            resources.ApplyResources(this.chkSendTruck14, "chkSendTruck14");
+            this.chkSendTruck14.Name = "chkSendTruck14";
+            this.chkSendTruck14.UseVisualStyleBackColor = true;
             // 
             // numTrucksMinPowerPoints
             // 
@@ -5091,6 +5210,7 @@
             // 
             // groupBox7
             // 
+            this.groupBox7.Controls.Add(this.chkGoOilDarkLenin);
             this.groupBox7.Controls.Add(this.groupBox21);
             this.groupBox7.Controls.Add(this.label180);
             this.groupBox7.Controls.Add(this.label179);
@@ -8581,123 +8701,11 @@
             this.toolTip.ReshowDelay = 1;
             this.toolTip.UseFading = false;
             // 
-            // label207
+            // chkGoOilDarkLenin
             // 
-            resources.ApplyResources(this.label207, "label207");
-            this.label207.Name = "label207";
-            // 
-            // label208
-            // 
-            resources.ApplyResources(this.label208, "label208");
-            this.label208.Name = "label208";
-            // 
-            // chkSendTruck13
-            // 
-            resources.ApplyResources(this.chkSendTruck13, "chkSendTruck13");
-            this.chkSendTruck13.Name = "chkSendTruck13";
-            this.chkSendTruck13.UseVisualStyleBackColor = true;
-            // 
-            // chkSendTruck14
-            // 
-            resources.ApplyResources(this.chkSendTruck14, "chkSendTruck14");
-            this.chkSendTruck14.Name = "chkSendTruck14";
-            this.chkSendTruck14.UseVisualStyleBackColor = true;
-            // 
-            // button79
-            // 
-            resources.ApplyResources(this.button79, "button79");
-            this.button79.ImageList = this.imageListlTruckEnhancing;
-            this.button79.Name = "button79";
-            this.button79.UseVisualStyleBackColor = true;
-            this.button79.Click += new System.EventHandler(this.btnTruckEnhancing_Click);
-            // 
-            // button80
-            // 
-            resources.ApplyResources(this.button80, "button80");
-            this.button80.ImageList = this.imageListlTruckEnhancing;
-            this.button80.Name = "button80";
-            this.button80.UseVisualStyleBackColor = true;
-            this.button80.Click += new System.EventHandler(this.btnTruckEnhancing_Click);
-            // 
-            // button81
-            // 
-            resources.ApplyResources(this.button81, "button81");
-            this.button81.ImageList = this.imageListlTruckEnhancing;
-            this.button81.Name = "button81";
-            this.button81.UseVisualStyleBackColor = true;
-            this.button81.Click += new System.EventHandler(this.btnTruckEnhancing_Click);
-            // 
-            // button82
-            // 
-            resources.ApplyResources(this.button82, "button82");
-            this.button82.ImageList = this.imageListlTruckEnhancing;
-            this.button82.Name = "button82";
-            this.button82.UseVisualStyleBackColor = true;
-            this.button82.Click += new System.EventHandler(this.btnTruckEnhancing_Click);
-            // 
-            // button83
-            // 
-            resources.ApplyResources(this.button83, "button83");
-            this.button83.ImageList = this.imageListlTruckEnhancing;
-            this.button83.Name = "button83";
-            this.button83.UseVisualStyleBackColor = true;
-            this.button83.Click += new System.EventHandler(this.btnTruckEnhancing_Click);
-            // 
-            // button84
-            // 
-            resources.ApplyResources(this.button84, "button84");
-            this.button84.ImageList = this.imageListlTruckEnhancing;
-            this.button84.Name = "button84";
-            this.button84.UseVisualStyleBackColor = true;
-            this.button84.Click += new System.EventHandler(this.btnTruckEnhancing_Click);
-            // 
-            // button85
-            // 
-            resources.ApplyResources(this.button85, "button85");
-            this.button85.ImageList = this.imageListlTruckEnhancing;
-            this.button85.Name = "button85";
-            this.button85.UseVisualStyleBackColor = true;
-            this.button85.Click += new System.EventHandler(this.btnTruckEnhancing_Click);
-            // 
-            // button86
-            // 
-            resources.ApplyResources(this.button86, "button86");
-            this.button86.ImageList = this.imageListlTruckEnhancing;
-            this.button86.Name = "button86";
-            this.button86.UseVisualStyleBackColor = true;
-            this.button86.Click += new System.EventHandler(this.btnTruckEnhancing_Click);
-            // 
-            // button87
-            // 
-            resources.ApplyResources(this.button87, "button87");
-            this.button87.ImageList = this.imageListlTruckEnhancing;
-            this.button87.Name = "button87";
-            this.button87.UseVisualStyleBackColor = true;
-            this.button87.Click += new System.EventHandler(this.btnTruckEnhancing_Click);
-            // 
-            // button88
-            // 
-            resources.ApplyResources(this.button88, "button88");
-            this.button88.ImageList = this.imageListlTruckEnhancing;
-            this.button88.Name = "button88";
-            this.button88.UseVisualStyleBackColor = true;
-            this.button88.Click += new System.EventHandler(this.btnTruckEnhancing_Click);
-            // 
-            // button89
-            // 
-            resources.ApplyResources(this.button89, "button89");
-            this.button89.ImageList = this.imageListlTruckEnhancing;
-            this.button89.Name = "button89";
-            this.button89.UseVisualStyleBackColor = true;
-            this.button89.Click += new System.EventHandler(this.btnTruckEnhancing_Click);
-            // 
-            // button90
-            // 
-            resources.ApplyResources(this.button90, "button90");
-            this.button90.ImageList = this.imageListlTruckEnhancing;
-            this.button90.Name = "button90";
-            this.button90.UseVisualStyleBackColor = true;
-            this.button90.Click += new System.EventHandler(this.btnTruckEnhancing_Click);
+            resources.ApplyResources(this.chkGoOilDarkLenin, "chkGoOilDarkLenin");
+            this.chkGoOilDarkLenin.Name = "chkGoOilDarkLenin";
+            this.chkGoOilDarkLenin.UseVisualStyleBackColor = true;
             // 
             // frmMain
             // 
@@ -9846,6 +9854,7 @@
         private System.Windows.Forms.Label label208;
         private System.Windows.Forms.CheckBox chkSendTruck13;
         private System.Windows.Forms.CheckBox chkSendTruck14;
+        private System.Windows.Forms.CheckBox chkGoOilDarkLenin;
     }
 }
 
