@@ -743,6 +743,8 @@ namespace Moswar
                     Bot.Settings.Trucks[i].Enhancings[j] = ((Button)tblTrucks.GetControlFromPosition(2 + j, 3 + i)).ImageIndex;
             }
 
+            Bot.Settings.SearchBroneDetails = chkSearchBroneDetails.Checked;
+
             Bot.SaveSettings();
         }
         private void LoadSettings()
@@ -1162,6 +1164,8 @@ namespace Moswar
                     }
                 }
             }
+
+            chkSearchBroneDetails.Checked = Bot.Settings.SearchBroneDetails;
 
             UpdateSettings();
         }

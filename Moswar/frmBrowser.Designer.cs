@@ -43,6 +43,8 @@
             this.treeViewSettings = new System.Windows.Forms.TreeView();
             this.lblSettingsCaption = new System.Windows.Forms.Label();
             this.pnlContainer = new System.Windows.Forms.Panel();
+            this.pnlBronevik = new System.Windows.Forms.Panel();
+            this.chkSearchBroneDetails = new System.Windows.Forms.CheckBox();
             this.pnlShaurburgers = new System.Windows.Forms.Panel();
             this.groupBox20 = new System.Windows.Forms.GroupBox();
             this.chkMCTrain = new System.Windows.Forms.CheckBox();
@@ -471,6 +473,7 @@
             this.chkUseRunPet = new System.Windows.Forms.CheckBox();
             this.pnlOilPipeline = new System.Windows.Forms.Panel();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
+            this.chkGoOilDarkLenin = new System.Windows.Forms.CheckBox();
             this.groupBox21 = new System.Windows.Forms.GroupBox();
             this.chkOilLeninLeaveNoTicketMax = new System.Windows.Forms.CheckBox();
             this.chkOilLeninLeaveNoTicket = new System.Windows.Forms.CheckBox();
@@ -864,13 +867,13 @@
             this.MenuItemSendGiftFix = new System.Windows.Forms.ToolStripMenuItem();
             this.btnFunctions = new System.Windows.Forms.Button();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
-            this.chkGoOilDarkLenin = new System.Windows.Forms.CheckBox();
             this.tabControl.SuspendLayout();
             this.tabMainBrowser.SuspendLayout();
             this.AutoUpdateMessage.SuspendLayout();
             this.tabMainSettings.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.pnlContainer.SuspendLayout();
+            this.pnlBronevik.SuspendLayout();
             this.pnlShaurburgers.SuspendLayout();
             this.groupBox20.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numMCWorkTime)).BeginInit();
@@ -1164,8 +1167,8 @@
             // treeViewSettings
             // 
             this.treeViewSettings.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            resources.ApplyResources(this.treeViewSettings, "treeViewSettings");
             this.treeViewSettings.HideSelection = false;
+            resources.ApplyResources(this.treeViewSettings, "treeViewSettings");
             this.treeViewSettings.Name = "treeViewSettings";
             this.treeViewSettings.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
             ((System.Windows.Forms.TreeNode)(resources.GetObject("treeViewSettings.Nodes"))),
@@ -1186,6 +1189,7 @@
             // 
             // pnlContainer
             // 
+            this.pnlContainer.Controls.Add(this.pnlBronevik);
             this.pnlContainer.Controls.Add(this.pnlShaurburgers);
             this.pnlContainer.Controls.Add(this.pnlGroupFights);
             this.pnlContainer.Controls.Add(this.pnlDopings);
@@ -1241,10 +1245,22 @@
             resources.ApplyResources(this.pnlContainer, "pnlContainer");
             this.pnlContainer.Name = "pnlContainer";
             // 
+            // pnlBronevik
+            // 
+            this.pnlBronevik.Controls.Add(this.chkSearchBroneDetails);
+            resources.ApplyResources(this.pnlBronevik, "pnlBronevik");
+            this.pnlBronevik.Name = "pnlBronevik";
+            // 
+            // chkSearchBroneDetails
+            // 
+            resources.ApplyResources(this.chkSearchBroneDetails, "chkSearchBroneDetails");
+            this.chkSearchBroneDetails.Name = "chkSearchBroneDetails";
+            this.chkSearchBroneDetails.UseVisualStyleBackColor = true;
+            // 
             // pnlShaurburgers
             // 
-            resources.ApplyResources(this.pnlShaurburgers, "pnlShaurburgers");
             this.pnlShaurburgers.Controls.Add(this.groupBox20);
+            resources.ApplyResources(this.pnlShaurburgers, "pnlShaurburgers");
             this.pnlShaurburgers.Name = "pnlShaurburgers";
             // 
             // groupBox20
@@ -5243,6 +5259,12 @@
             this.groupBox7.Name = "groupBox7";
             this.groupBox7.TabStop = false;
             // 
+            // chkGoOilDarkLenin
+            // 
+            resources.ApplyResources(this.chkGoOilDarkLenin, "chkGoOilDarkLenin");
+            this.chkGoOilDarkLenin.Name = "chkGoOilDarkLenin";
+            this.chkGoOilDarkLenin.UseVisualStyleBackColor = true;
+            // 
             // groupBox21
             // 
             this.groupBox21.Controls.Add(this.chkOilLeninLeaveNoTicketMax);
@@ -8701,12 +8723,6 @@
             this.toolTip.ReshowDelay = 1;
             this.toolTip.UseFading = false;
             // 
-            // chkGoOilDarkLenin
-            // 
-            resources.ApplyResources(this.chkGoOilDarkLenin, "chkGoOilDarkLenin");
-            this.chkGoOilDarkLenin.Name = "chkGoOilDarkLenin";
-            this.chkGoOilDarkLenin.UseVisualStyleBackColor = true;
-            // 
             // frmMain
             // 
             resources.ApplyResources(this, "$this");
@@ -8732,6 +8748,8 @@
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.pnlContainer.ResumeLayout(false);
+            this.pnlBronevik.ResumeLayout(false);
+            this.pnlBronevik.PerformLayout();
             this.pnlShaurburgers.ResumeLayout(false);
             this.groupBox20.ResumeLayout(false);
             this.groupBox20.PerformLayout();
@@ -9855,6 +9873,8 @@
         private System.Windows.Forms.CheckBox chkSendTruck13;
         private System.Windows.Forms.CheckBox chkSendTruck14;
         private System.Windows.Forms.CheckBox chkGoOilDarkLenin;
+        private System.Windows.Forms.Panel pnlBronevik;
+        private System.Windows.Forms.CheckBox chkSearchBroneDetails;
     }
 }
 

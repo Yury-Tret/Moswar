@@ -323,6 +323,7 @@ namespace Moswar
             public DateTime NextAFK;
             public DateTime NextGetReturnBonusDT;
             public DateTime NextTrucksCheckDT;
+            public DateTime NextBroneDetailCheckDT;
             public bool StopQuest;
             public bool ShutdownRelease;
         }
@@ -920,6 +921,8 @@ namespace Moswar
             public decimal TrucksCheckInterval;
             public decimal TrucksMinPowerPoints;
             public TruckSettings[] Trucks;
+
+            public bool SearchBroneDetails;
         }
         #endregion
 
@@ -4891,6 +4894,10 @@ namespace Moswar
                     if (Settings.SendTrucks && Me.Events.NextTrucksCheckDT <= ServerDT)
                         SendTrucks();
                     #endregion
+                    #region Поиск деталей броневика
+                    if (Settings.SearchBroneDetails && Me.Events.NextBroneDetailCheckDT <= ServerDT)
+                        SearchBroneDetails();
+                    #endregion
                     #region Werewolf
                     if (Settings.UseWerewolf && Settings.WerewolfPrice != 0 && Me.WerewolfHunting.StartDT != new DateTime() && Me.WerewolfHunting.StartDT <= ServerDT.AddMinutes(5)) Werewolf(WerewolfAction.Check);
                     #endregion
@@ -7520,6 +7527,87 @@ namespace Moswar
             public bool AutoProlong;
         }
 
+        public void SearchBroneDetails()
+        {
+            DateTime ServerDT = GetServerTime(MainWB);
+
+            UpdateStatus("@ " + DateTime.Now + " Иду искать детали для броневика.");
+
+            GoToPlace(MainWB, Place.Factory);
+            frmMain.GetDocument(MainWB).GetElementById("content").Children[0].Children[0].Children[0].Children[2].Children[0].Children[0].InvokeMember("onclick");
+            IsWBComplete(MainWB);
+newDetail:
+            string RegexTotal = "/images/obj/parts/bronevik/(10|4|5|12|6|7).png";
+            string RegexPattern = @"(?<digit>\d+)";
+            string RegexTarget = "/images/obj/parts/bronevik/(";
+            bool IsFirstIn = true;
+            bool IsCountEnough = false;
+
+            HtmlElementCollection HtmlItems = frmMain.GetDocument(MainWB).GetElementById("content").Children[1].Children[0].GetElementsByTagName("img");
+            foreach (HtmlElement HtmlEl in HtmlItems)
+            {
+                if (Regex.Match(HtmlEl.GetAttribute("src"), RegexTotal).Success)
+                {
+                    if (!IsFirstIn)
+                    {
+                        RegexTarget += "|";
+                    }
+                    IsFirstIn = false;
+                    if (!(Regex.Match((HtmlEl.Parent.Children[1].OuterHtml), "count enough").Success))
+                    {
+                        RegexTarget += Regex.Match(HtmlEl.GetAttribute("src"), RegexPattern).Value;
+                    }
+                }
+            }
+            RegexTarget += ").png";
+
+            HtmlItems = frmMain.GetDocument(MainWB).GetElementById("content").Children[1].Children[1].Children[0].Children[0].Children[0].GetElementsByTagName("img");
+            foreach (HtmlElement HtmlEl in HtmlItems)
+            {
+                if (Regex.Match(HtmlEl.GetAttribute("src"), RegexTarget).Success)
+                {
+                    if (IsCountEnough && Me.Wallet.Star > 5 && Me.Wallet.Mobile > 3)
+                    {
+                        frmMain.GetJavaVar(MainWB, "$.post(\"/factory/exchange/\", { action: 'exchange', code: $(\"#factory-build-exchange\").data('code') }, 'post', 1)");
+                        frmMain.InvokeScript(MainWB, "eval", new object[] { "AngryAjax.goToUrl(AngryAjax.getCurrentUrl());" });
+                        
+                        UpdateStatus("@ " + DateTime.Now + " Покупаю " + HtmlEl.GetAttribute("alt"));
+
+                        //     GoToPlace(MainWB, Place.Factory);
+                        //     frmMain.GetDocument(MainWB).GetElementById("content").Children[0].Children[0].Children[0].Children[2].Children[0].Children[0].InvokeMember("onclick");
+                        //     IsWBComplete(MainWB);
+
+                        goto newDetail;
+                    }
+                    break;
+                }
+                else
+                {
+                    if (Regex.Match(HtmlEl.GetAttribute("src"), "/images/obj/parts/bronevik/(1|2|3|8|9|11|13|14).png").Success)
+                    {
+                        if (Regex.Match((HtmlEl.Parent.NextSibling.OuterHtml), "count enough").Success)
+                        {
+                            IsCountEnough = true;
+                        }
+                        else
+                        {
+                            break;
+                        }
+                    }
+                }
+            }
+
+            HtmlItems = frmMain.GetDocument(MainWB).GetElementById("content").Children[1].Children[1].Children[0].Children[0].Children[0].GetElementsByTagName("span");
+            foreach (HtmlElement HtmlEl in HtmlItems)
+            {
+                if (Regex.Match(HtmlEl.OuterHtml, "cooldown").Success)
+                {
+                    Me.Events.NextBroneDetailCheckDT = ServerDT.AddSeconds(Convert.ToInt32(HtmlEl.GetAttribute("timer")) + 60);
+                    break;
+                }
+            }
+        }
+
         public void SendTrucks()
         {
             BugReport("SendTrucks");
@@ -9180,7 +9268,7 @@ namespace Moswar
                     else
                     {
                         HtmlEl = frmMain.GetDocument(MainWB).GetElementById("alert-text");
-                        if ((HtmlEl!=null) && Regex.Match(HtmlEl.InnerText, "Не прошло и дня, как Вождь опять захватил нефтепровод! На этот раз доступен темный нефтепровод! Вперед, на защиту!").Success)
+                        if ((HtmlEl != null) && Regex.Match(HtmlEl.InnerText, "Не прошло и дня, как Вождь опять захватил нефтепровод! На этот раз доступен темный нефтепровод! Вперед, на защиту!").Success)
                         {
                             if (Settings.GoOilDarkLenin)
                             {
@@ -14137,13 +14225,25 @@ namespace Moswar
         #region Тестирование
         public void Test()
         {
-            //        Me.Player.Level = 19;
+
+            SearchBroneDetails();
+
+            /*         DateTime ServerDT = GetServerTime(MainWB);
+                     ServerDT.
+                     DateTime NextBroneDetailCheckDT = ServerDT.AddMinutes((int)Settings.TrucksCheckInterval);
+
+
+                              if (Settings.SendTrucks && Me.Events.NextTrucksCheckDT <= ServerDT)
+
+
+                                  Me.Player.Level = 19;
+                                  */
             //      Oil(OilAction.LeninFight);
 
             //       HtmlElement h = frmMain.GetDocument(MainWB).GetElementById("alert-text").NextSibling.Children[0].Children[0];
             //     HtmlElement h = frmMain.GetDocument(MainWB).GetElementById("alert-text").Parent.Children[1].Children[0].Children[0].InvokeMember("onclick");
-  //          HtmlElement h = frmMain.GetDocument(MainWB).GetElementById("content");
-    //        IsWBComplete(MainWB);
+            //          HtmlElement h = frmMain.GetDocument(MainWB).GetElementById("content");
+            //        IsWBComplete(MainWB);
             //frmMain.InvokeMember(MainWB, h, "click");
 
 
