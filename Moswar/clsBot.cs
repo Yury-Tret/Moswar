@@ -7531,7 +7531,7 @@ namespace Moswar
         {
             DateTime ServerDT = GetServerTime(MainWB);
 
-            UpdateStatus("@ " + DateTime.Now + " Иду искать детали для броневика.");
+            UpdateStatus("# " + DateTime.Now + " Иду искать детали для броневика.");
 
             GoToPlace(MainWB, Place.Factory);
             frmMain.GetDocument(MainWB).GetElementById("content").Children[0].Children[0].Children[0].Children[2].Children[0].Children[0].InvokeMember("onclick");
@@ -7571,7 +7571,7 @@ newDetail:
                         frmMain.GetJavaVar(MainWB, "$.post(\"/factory/exchange/\", { action: 'exchange', code: $(\"#factory-build-exchange\").data('code') }, 'post', 1)");
                         frmMain.InvokeScript(MainWB, "eval", new object[] { "AngryAjax.goToUrl(AngryAjax.getCurrentUrl());" });
                         
-                        UpdateStatus("@ " + DateTime.Now + " Покупаю " + HtmlEl.GetAttribute("alt"));
+                        UpdateStatus("* " + DateTime.Now + " Покупаю " + HtmlEl.GetAttribute("alt"));
 
                         //     GoToPlace(MainWB, Place.Factory);
                         //     frmMain.GetDocument(MainWB).GetElementById("content").Children[0].Children[0].Children[0].Children[2].Children[0].Children[0].InvokeMember("onclick");
@@ -7579,7 +7579,12 @@ newDetail:
 
                         goto newDetail;
                     }
-                    break;
+                    else
+                    {
+                        UpdateStatus("! " + DateTime.Now + " Не хватает средств для покупки " + HtmlEl.GetAttribute("alt"));
+                        break;
+                    }
+                    
                 }
                 else
                 {
