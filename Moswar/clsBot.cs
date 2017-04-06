@@ -9274,6 +9274,8 @@ newDetail:
                     }
                     else
                     {
+
+                        #region Проверка темного нефтепрофода
                         HtmlEl = frmMain.GetDocument(MainWB).GetElementById("alert-text");
                         if ((HtmlEl != null) && Regex.Match(HtmlEl.InnerText, "Не прошло и дня, как Вождь опять захватил нефтепровод! На этот раз доступен темный нефтепровод! Вперед, на защиту!").Success)
                         {
@@ -9288,6 +9290,7 @@ newDetail:
                                 IsWBComplete(MainWB);
                             }
                         }
+                        #endregion
 
                         UpdateStatus("# " + DateTime.Now + " Салют комсомолу и рабочему классу! Сейчас я отправлю вас назад в СССР...");
                         Me.OilLeninHunting.AllowPartBilet = false; //Разрешение использовать билеты, сколько понадобится для победы, может быть включено только допингом!
@@ -9305,6 +9308,23 @@ newDetail:
 
                         while (!Me.OilLeninHunting.Stop && Me.OilLeninHunting.NextDT < DateTime.Now)
                         {
+                            #region Проверка темного нефтепровода    
+                            HtmlEl = frmMain.GetDocument(MainWB).GetElementById("alert-text");
+                            if ((HtmlEl != null) && Regex.Match(HtmlEl.InnerText, "Не прошло и дня, как Вождь опять захватил нефтепровод! На этот раз доступен темный нефтепровод! Вперед, на защиту!").Success)
+                            {
+                                if (Settings.GoOilDarkLenin)
+                                {
+                                    frmMain.GetDocument(MainWB).GetElementById("alert-text").Parent.Children[1].Children[0].Children[0].InvokeMember("onclick");
+                                    IsWBComplete(MainWB);
+                                }
+                                else
+                                {
+                                    frmMain.GetDocument(MainWB).GetElementById("alert-text").Parent.Children[1].Children[1].Children[0].InvokeMember("onclick");
+                                    IsWBComplete(MainWB);
+                                }
+                            }
+                            #endregion
+
                             #region Проверка нынешнего вентиля!
                             if (Me.OilLeninHunting.RestartDT < DateTime.Now) Me.OilLeninHunting.RestartDT = DateTime.Now.AddSeconds((int)frmMain.GetJavaVar(MainWB, "NeftLenin.timerRestart") + 30);
                             if (!Settings.AllowPartBilet || Me.OilLeninHunting.Lvl < Convert.ToInt32(frmMain.GetJavaVar(MainWB, "NeftLenin.step"))) Me.OilLeninHunting.AllowPartBilet = false; //Разрешение использовать билеты, сколько понадобится для победы, может быть включено только допингом!
@@ -14233,7 +14253,7 @@ newDetail:
         public void Test()
         {
 
-            SearchBroneDetails();
+  //          SearchBroneDetails();
 
             /*         DateTime ServerDT = GetServerTime(MainWB);
                      ServerDT.
