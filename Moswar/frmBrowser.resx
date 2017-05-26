@@ -4096,7 +4096,7 @@
         AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
         LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
         ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAAAi
-        CQAAAk1TRnQBSQFMAgEBAwEAATABAQEwAQEBEAEAARABAAT/AQkBAAj/AUIBTQE2AQQGAAE2AQQCAAEo
+        CQAAAk1TRnQBSQFMAgEBAwEAAVABAQFQAQEBEAEAARABAAT/AQkBAAj/AUIBTQE2AQQGAAE2AQQCAAEo
         AwABQAMAARADAAEBAQABCAYAAQQYAAGAAgABgAMAAoABAAGAAwABgAEAAYABAAKAAgADwAEAAcAB3AHA
         AQAB8AHKAaYBAAEzBQABMwEAATMBAAEzAQACMwIAAxYBAAMcAQADIgEAAykBAANVAQADTQEAA0IBAAM5
         AQABgAF8Af8BAAJQAf8BAAGTAQAB1gEAAf8B7AHMAQABxgHWAe8BAAHWAucBAAGQAakBrQIAAf8BMwMA
@@ -17298,7 +17298,7 @@
     <value>Candara, 9pt</value>
   </data>
   <data name="numMinFactoryOre.Location" type="System.Drawing.Point, System.Drawing">
-    <value>229, 64</value>
+    <value>1207, 64</value>
   </data>
   <data name="numMinFactoryOre.Size" type="System.Drawing.Size, System.Drawing">
     <value>74, 22</value>
@@ -17328,7 +17328,7 @@
     <value>Candara, 9pt</value>
   </data>
   <data name="numMinFactoryMoney.Location" type="System.Drawing.Point, System.Drawing">
-    <value>117, 64</value>
+    <value>1095, 64</value>
   </data>
   <data name="numMinFactoryMoney.Size" type="System.Drawing.Size, System.Drawing">
     <value>74, 22</value>
@@ -17394,7 +17394,7 @@
     <value>NoControl</value>
   </data>
   <data name="label82.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1, 38</value>
+    <value>979, 38</value>
   </data>
   <data name="label82.Size" type="System.Drawing.Size, System.Drawing">
     <value>106, 14</value>
@@ -17550,7 +17550,7 @@
     <value>NoControl</value>
   </data>
   <data name="label14.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1, 68</value>
+    <value>979, 68</value>
   </data>
   <data name="label14.Size" type="System.Drawing.Size, System.Drawing">
     <value>113, 14</value>
@@ -18936,7 +18936,7 @@
     <value>NoControl</value>
   </data>
   <data name="label57.Location" type="System.Drawing.Point, System.Drawing">
-    <value>393, 36</value>
+    <value>1569, 36</value>
   </data>
   <data name="label57.Size" type="System.Drawing.Size, System.Drawing">
     <value>24, 14</value>
@@ -19581,7 +19581,7 @@
     <value>Top, Right</value>
   </data>
   <data name="numMaxIEVersion.Location" type="System.Drawing.Point, System.Drawing">
-    <value>186, 4</value>
+    <value>873, 4</value>
   </data>
   <data name="numMaxIEVersion.Size" type="System.Drawing.Size, System.Drawing">
     <value>43, 22</value>
@@ -19647,7 +19647,7 @@
     <value>NoControl</value>
   </data>
   <data name="label98.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1, 8</value>
+    <value>688, 8</value>
   </data>
   <data name="label98.Size" type="System.Drawing.Size, System.Drawing">
     <value>181, 14</value>
@@ -21030,13 +21030,13 @@
     <value>287, 32</value>
   </data>
   <data name="chkUseCoctailMaxAdditivies.Size" type="System.Drawing.Size, System.Drawing">
-    <value>265, 18</value>
+    <value>227, 18</value>
   </data>
   <data name="chkUseCoctailMaxAdditivies.TabIndex" type="System.Int32, mscorlib">
     <value>49</value>
   </data>
   <data name="chkUseCoctailMaxAdditivies.Text" xml:space="preserve">
-    <value>Использовать добавки большего количества</value>
+    <value>Автоматически использовать добавки</value>
   </data>
   <data name="&gt;&gt;chkUseCoctailMaxAdditivies.Name" xml:space="preserve">
     <value>chkUseCoctailMaxAdditivies</value>
@@ -21049,33 +21049,6 @@
   </data>
   <data name="&gt;&gt;chkUseCoctailMaxAdditivies.ZOrder" xml:space="preserve">
     <value>0</value>
-  </data>
-  <data name="chkUseCoctailCookByNeed.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="chkUseCoctailCookByNeed.Location" type="System.Drawing.Point, System.Drawing">
-    <value>287, 6</value>
-  </data>
-  <data name="chkUseCoctailCookByNeed.Size" type="System.Drawing.Size, System.Drawing">
-    <value>222, 18</value>
-  </data>
-  <data name="chkUseCoctailCookByNeed.TabIndex" type="System.Int32, mscorlib">
-    <value>48</value>
-  </data>
-  <data name="chkUseCoctailCookByNeed.Text" xml:space="preserve">
-    <value>Варить коктейль при необходимости</value>
-  </data>
-  <data name="&gt;&gt;chkUseCoctailCookByNeed.Name" xml:space="preserve">
-    <value>chkUseCoctailCookByNeed</value>
-  </data>
-  <data name="&gt;&gt;chkUseCoctailCookByNeed.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;chkUseCoctailCookByNeed.Parent" xml:space="preserve">
-    <value>pnlCocktails</value>
-  </data>
-  <data name="&gt;&gt;chkUseCoctailCookByNeed.ZOrder" xml:space="preserve">
-    <value>1</value>
   </data>
   <data name="numMinFruitIgnoreAmount.Font" type="System.Drawing.Font, System.Drawing">
     <value>Candara, 9pt</value>
@@ -21102,7 +21075,7 @@
     <value>pnlCocktails</value>
   </data>
   <data name="&gt;&gt;numMinFruitIgnoreAmount.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>1</value>
   </data>
   <data name="chkUseCoctailCook.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -21132,7 +21105,7 @@
     <value>pnlCocktails</value>
   </data>
   <data name="&gt;&gt;chkUseCoctailCook.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>2</value>
   </data>
   <data name="cboxCoctailCookUmbrella.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -21180,7 +21153,7 @@
     <value>pnlCocktails</value>
   </data>
   <data name="&gt;&gt;cboxCoctailCookUmbrella.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>3</value>
   </data>
   <data name="label149.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -21204,7 +21177,7 @@
     <value>pnlCocktails</value>
   </data>
   <data name="&gt;&gt;label149.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>4</value>
   </data>
   <data name="numMaxFruitProRecipe.Font" type="System.Drawing.Font, System.Drawing">
     <value>Candara, 9pt</value>
@@ -21231,7 +21204,7 @@
     <value>pnlCocktails</value>
   </data>
   <data name="&gt;&gt;numMaxFruitProRecipe.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>5</value>
   </data>
   <data name="label150.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -21255,7 +21228,7 @@
     <value>pnlCocktails</value>
   </data>
   <data name="&gt;&gt;label150.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>6</value>
   </data>
   <data name="numTotalFruitsProRecipe.Font" type="System.Drawing.Font, System.Drawing">
     <value>Candara, 9pt</value>
@@ -21282,7 +21255,7 @@
     <value>pnlCocktails</value>
   </data>
   <data name="&gt;&gt;numTotalFruitsProRecipe.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>7</value>
   </data>
   <data name="label148.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -21306,7 +21279,7 @@
     <value>pnlCocktails</value>
   </data>
   <data name="&gt;&gt;label148.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>8</value>
   </data>
   <data name="cboxCoctailCookStraw.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -21354,7 +21327,7 @@
     <value>pnlCocktails</value>
   </data>
   <data name="&gt;&gt;cboxCoctailCookStraw.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>9</value>
   </data>
   <data name="numCoctailCookAmount.Location" type="System.Drawing.Point, System.Drawing">
     <value>182, 31</value>
@@ -21378,7 +21351,7 @@
     <value>pnlCocktails</value>
   </data>
   <data name="&gt;&gt;numCoctailCookAmount.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>10</value>
   </data>
   <data name="chkSellBadCoctail.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -21408,7 +21381,7 @@
     <value>pnlCocktails</value>
   </data>
   <data name="&gt;&gt;chkSellBadCoctail.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>11</value>
   </data>
   <data name="label147.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -21432,7 +21405,7 @@
     <value>pnlCocktails</value>
   </data>
   <data name="&gt;&gt;label147.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>12</value>
   </data>
   <data name="cboxCoctailCookPiece.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -21480,7 +21453,7 @@
     <value>pnlCocktails</value>
   </data>
   <data name="&gt;&gt;cboxCoctailCookPiece.ZOrder" xml:space="preserve">
-    <value>14</value>
+    <value>13</value>
   </data>
   <data name="label144.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -21510,7 +21483,7 @@
     <value>pnlCocktails</value>
   </data>
   <data name="&gt;&gt;label144.ZOrder" xml:space="preserve">
-    <value>15</value>
+    <value>14</value>
   </data>
   <data name="chkUseMinFruitIgnoreAmount.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -21540,7 +21513,7 @@
     <value>pnlCocktails</value>
   </data>
   <data name="&gt;&gt;chkUseMinFruitIgnoreAmount.ZOrder" xml:space="preserve">
-    <value>16</value>
+    <value>15</value>
   </data>
   <data name="cboxCoctailCookType.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -21585,7 +21558,7 @@
     <value>pnlCocktails</value>
   </data>
   <data name="&gt;&gt;cboxCoctailCookType.ZOrder" xml:space="preserve">
-    <value>17</value>
+    <value>16</value>
   </data>
   <data name="label154.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -21615,7 +21588,7 @@
     <value>pnlCocktails</value>
   </data>
   <data name="&gt;&gt;label154.ZOrder" xml:space="preserve">
-    <value>18</value>
+    <value>17</value>
   </data>
   <data name="chkUseMaxFruitProRecipe.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -21645,7 +21618,7 @@
     <value>pnlCocktails</value>
   </data>
   <data name="&gt;&gt;chkUseMaxFruitProRecipe.ZOrder" xml:space="preserve">
-    <value>19</value>
+    <value>18</value>
   </data>
   <data name="numCoctailCookIceCream.Location" type="System.Drawing.Point, System.Drawing">
     <value>196, 60</value>
@@ -21669,7 +21642,7 @@
     <value>pnlCocktails</value>
   </data>
   <data name="&gt;&gt;numCoctailCookIceCream.ZOrder" xml:space="preserve">
-    <value>20</value>
+    <value>19</value>
   </data>
   <data name="cboxCoctailCookIceCream.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -21717,7 +21690,7 @@
     <value>pnlCocktails</value>
   </data>
   <data name="&gt;&gt;cboxCoctailCookIceCream.ZOrder" xml:space="preserve">
-    <value>21</value>
+    <value>20</value>
   </data>
   <data name="label153.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -21747,7 +21720,7 @@
     <value>pnlCocktails</value>
   </data>
   <data name="&gt;&gt;label153.ZOrder" xml:space="preserve">
-    <value>22</value>
+    <value>21</value>
   </data>
   <data name="label146.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -21783,7 +21756,7 @@
     <value>pnlCocktails</value>
   </data>
   <data name="&gt;&gt;label146.ZOrder" xml:space="preserve">
-    <value>23</value>
+    <value>22</value>
   </data>
   <data name="numCoctailCookPeace.Location" type="System.Drawing.Point, System.Drawing">
     <value>196, 92</value>
@@ -21807,7 +21780,7 @@
     <value>pnlCocktails</value>
   </data>
   <data name="&gt;&gt;numCoctailCookPeace.ZOrder" xml:space="preserve">
-    <value>24</value>
+    <value>23</value>
   </data>
   <data name="label143.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -21837,7 +21810,7 @@
     <value>pnlCocktails</value>
   </data>
   <data name="&gt;&gt;label143.ZOrder" xml:space="preserve">
-    <value>25</value>
+    <value>24</value>
   </data>
   <data name="label152.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -21867,7 +21840,7 @@
     <value>pnlCocktails</value>
   </data>
   <data name="&gt;&gt;label152.ZOrder" xml:space="preserve">
-    <value>26</value>
+    <value>25</value>
   </data>
   <data name="label145.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -21903,7 +21876,7 @@
     <value>pnlCocktails</value>
   </data>
   <data name="&gt;&gt;label145.ZOrder" xml:space="preserve">
-    <value>27</value>
+    <value>26</value>
   </data>
   <data name="numCoctailCookStraw.Location" type="System.Drawing.Point, System.Drawing">
     <value>196, 124</value>
@@ -21927,7 +21900,7 @@
     <value>pnlCocktails</value>
   </data>
   <data name="&gt;&gt;numCoctailCookStraw.ZOrder" xml:space="preserve">
-    <value>28</value>
+    <value>27</value>
   </data>
   <data name="numCoctailCookUmbrella.Location" type="System.Drawing.Point, System.Drawing">
     <value>196, 156</value>
@@ -21951,7 +21924,7 @@
     <value>pnlCocktails</value>
   </data>
   <data name="&gt;&gt;numCoctailCookUmbrella.ZOrder" xml:space="preserve">
-    <value>29</value>
+    <value>28</value>
   </data>
   <data name="label151.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -21981,7 +21954,7 @@
     <value>pnlCocktails</value>
   </data>
   <data name="&gt;&gt;label151.ZOrder" xml:space="preserve">
-    <value>30</value>
+    <value>29</value>
   </data>
   <data name="pnlCocktails.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -24093,7 +24066,7 @@
     <value>NoControl</value>
   </data>
   <data name="btnVictimHunting.Location" type="System.Drawing.Point, System.Drawing">
-    <value>5, 573</value>
+    <value>5, 577</value>
   </data>
   <data name="btnVictimHunting.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 3, 3, 3</value>
@@ -24291,7 +24264,7 @@
     <value>5</value>
   </data>
   <data name="grpPlayer2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>2, 335</value>
+    <value>2, 339</value>
   </data>
   <data name="grpPlayer2.Size" type="System.Drawing.Size, System.Drawing">
     <value>221, 233</value>
@@ -24753,7 +24726,7 @@
     <value>NoControl</value>
   </data>
   <data name="chkDebugMode.Location" type="System.Drawing.Point, System.Drawing">
-    <value>849, 443</value>
+    <value>841, 435</value>
   </data>
   <data name="chkDebugMode.Size" type="System.Drawing.Size, System.Drawing">
     <value>114, 18</value>

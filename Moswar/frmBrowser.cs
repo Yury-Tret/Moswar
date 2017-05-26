@@ -696,6 +696,7 @@ namespace Moswar
             Bot.Settings.AFCTime = numAFKTime.Value;
 
             Bot.Settings.UseCookCoctail = chkUseCoctailCook.Checked;
+            Bot.Settings.UseCoctailMaxAdditivies = chkUseCoctailMaxAdditivies.Checked;
             #region Матрица варения коктейлей
             if (Bot.Settings.CookCoctailType == null) Bot.Settings.CookCoctailType = new decimal[6]; //6 видов
             Bot.Settings.CookCoctailType[cboxCoctailCookType.SelectedIndex] = numCoctailCookAmount.Value;
@@ -1108,6 +1109,7 @@ namespace Moswar
                 numAFKTime.Value = Bot.Settings.AFCTime;
 
                 chkUseCoctailCook.Checked = Bot.Settings.UseCookCoctail;
+                chkUseCoctailMaxAdditivies.Checked = Bot.Settings.UseCoctailMaxAdditivies;
                 #region Матрица варения коктейлей
                 if (Bot.Settings.CookCoctailType != null)
                 {
@@ -2955,44 +2957,29 @@ function checkName() {
             }
         }
 
-        private void chkUseCoctailCookByNeed_CheckedChanged(object sender, EventArgs e)
+        private void chkUseCoctailMaxAdditivies_CheckedChanged(object sender, EventArgs e)
         {
-            if (chkUseCoctailCookByNeed.Checked)
+            if (chkUseCoctailMaxAdditivies.Checked)
             {
-                chkUseCoctailCook.Enabled = false;
-                cboxCoctailCookType.Enabled = false;
-                numCoctailCookAmount.Enabled = false;
                 cboxCoctailCookIceCream.Enabled = false;
+                numCoctailCookIceCream.Enabled = false;
                 cboxCoctailCookPiece.Enabled = false;
+                numCoctailCookPeace.Enabled = false;
                 cboxCoctailCookStraw.Enabled = false;
+                numCoctailCookStraw.Enabled = false;
                 cboxCoctailCookUmbrella.Enabled = false;
+                numCoctailCookUmbrella.Enabled = false;
             }
             else
             {
-                chkUseCoctailCook.Enabled = true;
-                cboxCoctailCookType.Enabled = true;
-                numCoctailCookAmount.Enabled = true;
                 cboxCoctailCookIceCream.Enabled = true;
+                numCoctailCookIceCream.Enabled = true;
                 cboxCoctailCookPiece.Enabled = true;
+                numCoctailCookPeace.Enabled = true;
                 cboxCoctailCookStraw.Enabled = true;
+                numCoctailCookStraw.Enabled = true;
                 cboxCoctailCookUmbrella.Enabled = true;
-                
-            }
-        }
-
-        private void chkUseCoctailCook_CheckedChanged(object sender, EventArgs e)
-        {
-            if (chkUseCoctailCook.Checked)
-            {
-                chkUseCoctailCookByNeed.Enabled = false;
-                chkUseCoctailMaxAdditivies.Enabled = false;
-                chkUseCoctailMaxAdditivies.Checked = false;
-
-            }
-            else
-            {
-                chkUseCoctailCookByNeed.Enabled = true;
-                chkUseCoctailMaxAdditivies.Enabled = true;
+                numCoctailCookUmbrella.Enabled = true;
             }
         }
     }

@@ -698,7 +698,6 @@
             this.label134 = new System.Windows.Forms.Label();
             this.pnlCocktails = new System.Windows.Forms.Panel();
             this.chkUseCoctailMaxAdditivies = new System.Windows.Forms.CheckBox();
-            this.chkUseCoctailCookByNeed = new System.Windows.Forms.CheckBox();
             this.numMinFruitIgnoreAmount = new System.Windows.Forms.NumericUpDown();
             this.chkUseCoctailCook = new System.Windows.Forms.CheckBox();
             this.cboxCoctailCookUmbrella = new System.Windows.Forms.ComboBox();
@@ -7230,7 +7229,6 @@
             // 
             resources.ApplyResources(this.pnlCocktails, "pnlCocktails");
             this.pnlCocktails.Controls.Add(this.chkUseCoctailMaxAdditivies);
-            this.pnlCocktails.Controls.Add(this.chkUseCoctailCookByNeed);
             this.pnlCocktails.Controls.Add(this.numMinFruitIgnoreAmount);
             this.pnlCocktails.Controls.Add(this.chkUseCoctailCook);
             this.pnlCocktails.Controls.Add(this.cboxCoctailCookUmbrella);
@@ -7267,13 +7265,7 @@
             resources.ApplyResources(this.chkUseCoctailMaxAdditivies, "chkUseCoctailMaxAdditivies");
             this.chkUseCoctailMaxAdditivies.Name = "chkUseCoctailMaxAdditivies";
             this.chkUseCoctailMaxAdditivies.UseVisualStyleBackColor = true;
-            // 
-            // chkUseCoctailCookByNeed
-            // 
-            resources.ApplyResources(this.chkUseCoctailCookByNeed, "chkUseCoctailCookByNeed");
-            this.chkUseCoctailCookByNeed.Name = "chkUseCoctailCookByNeed";
-            this.chkUseCoctailCookByNeed.UseVisualStyleBackColor = true;
-            this.chkUseCoctailCookByNeed.CheckedChanged += new System.EventHandler(this.chkUseCoctailCookByNeed_CheckedChanged);
+            this.chkUseCoctailMaxAdditivies.CheckedChanged += new System.EventHandler(this.chkUseCoctailMaxAdditivies_CheckedChanged);
             // 
             // numMinFruitIgnoreAmount
             // 
@@ -7300,7 +7292,6 @@
             resources.ApplyResources(this.chkUseCoctailCook, "chkUseCoctailCook");
             this.chkUseCoctailCook.Name = "chkUseCoctailCook";
             this.chkUseCoctailCook.UseVisualStyleBackColor = true;
-            this.chkUseCoctailCook.CheckedChanged += new System.EventHandler(this.chkUseCoctailCook_CheckedChanged);
             // 
             // cboxCoctailCookUmbrella
             // 
@@ -9854,7 +9845,6 @@
         private System.Windows.Forms.GroupBox groupBox21;
         private System.Windows.Forms.CheckBox chkOilLeninLeaveNoTicketMax;
         private System.Windows.Forms.CheckBox chkUseCoctailMaxAdditivies;
-        private System.Windows.Forms.CheckBox chkUseCoctailCookByNeed;
         private System.Windows.Forms.CheckBox chkSearchDarkTunnel;
         private System.Windows.Forms.Button button90;
         private System.Windows.Forms.Button button89;

@@ -901,6 +901,7 @@ namespace Moswar
             public decimal AFCTime;
 
             public bool UseCookCoctail;
+            public bool UseCoctailMaxAdditivies;
             public decimal[] CookCoctailType;
             public int[] CookCoctailSpecials;
             public bool UseMaxFruitProRecipe;
@@ -7566,7 +7567,7 @@ newDetail:
             {
                 if (Regex.Match(HtmlEl.GetAttribute("src"), RegexTarget).Success)
                 {
-                    if (IsCountEnough && Me.Wallet.Star > 5 && Me.Wallet.Mobile > 3)
+                    if (IsCountEnough && Me.Wallet.Star >= 5 && Me.Wallet.Mobile >= 3)
                     {
                         frmMain.GetJavaVar(MainWB, "$.post(\"/factory/exchange/\", { action: 'exchange', code: $(\"#factory-build-exchange\").data('code') }, 'post', 1)");
                         Wait(500);
@@ -13442,6 +13443,80 @@ newDetail:
             }
             return false;
         }
+
+        public void UpdateSpecialComponent (int CoctailType)
+        {
+            if (!frmMain.GetDocument(MainWB).GetElementById("content").GetAttribute("classname").Equals("nightclub-coctail-mixer")) GoToPlace(MainWB, Place.Nightclub, "/shakes");
+            int[] BufferStorage = new int[28];
+            #region Проверка наличия добавок
+            object Info;
+            string[] ID = new string[2];
+            for (int i = 0; i < 28; i++)
+            {
+                switch (i / 7)
+                {
+                    case 0:
+                        ID[1] = "icecream";
+                        break;
+                    case 1:
+                        ID[1] = "piece";
+                        break;
+                    case 2:
+                        ID[1] = "straw";
+                        break;
+                    case 3:
+                        ID[1] = "umbrella";
+                        break;
+                }
+                switch (i % 7)
+                {
+                    case 0:
+                        continue;
+                    case 1:
+                        ID[0] = "ratingaccur";
+                        break;
+                    case 2:
+                        ID[0] = "ratinganticrit";
+                        break;
+                    case 3:
+                        ID[0] = "ratingcrit";
+                        break;
+                    case 4:
+                        ID[0] = "ratingdamage";
+                        break;
+                    case 5:
+                        ID[0] = "ratingdodge";
+                        break;
+                    case 6:
+                        ID[0] = "ratingresist";
+                        break;
+                }
+                
+                Info = frmMain.GetJavaVar(MainWB, "$(\"#content .object-thumbs .action.action-get[data-rating=" + ID[0] + "][data-code=" + ID[1] + "]\").attr(\"data-amount\")");
+                // Me.CocktailRecipe.SpecialComponent[i].Name = ID[1] + "_" + ID[0];
+                // Me.CocktailRecipe.SpecialComponent[i].StorageAmmount = Info == null ? 0 : Convert.ToInt32(Info);
+                BufferStorage[i] = Info == null ? 0 : Convert.ToInt32(Info);
+            }
+            #endregion
+
+            for (int i = 0; i < 4; i++)
+            {
+                int buffer = 0;
+                for (int j = ( (i * 8) + 1 ) - i; j < (((i * 8) + 1) - i) + 6; j++ )
+                {
+                    if (BufferStorage[j] > buffer)
+                    {
+                        buffer = BufferStorage[j];
+                    }
+                }
+                Settings.CookCoctailSpecials[CoctailType * 8 + i] = buffer;
+            }
+
+            Settings.CookCoctailSpecials[CoctailType * 8 + 4] = 5;
+            Settings.CookCoctailSpecials[CoctailType * 8 + 5] = 5;
+            Settings.CookCoctailSpecials[CoctailType * 8 + 6] = 5;
+            Settings.CookCoctailSpecials[CoctailType * 8 + 7] = 5;
+        }
         public bool CookCoctail(CoctailAction CA, CoctailType CT = CoctailType.None)
         {
             int FruitsFound = 0;
@@ -13681,6 +13756,11 @@ newDetail:
                             int Index = -1;
                             for (int i = 0; i < 6; i++)
                             {
+                                if (Settings.UseCoctailMaxAdditivies)
+                                {
+                                    UpdateSpecialComponent(i);
+                                }
+                                
                                 Coctails[i].CoctailName = ((CoctailType)i).ToString().ToLower();
                                 Coctails[i].MissingAmount = (int)Settings.CookCoctailType[i] - GetArrClassCount(MainWB, "$(\"#content #inventory-shake_" + Coctails[i].CoctailName + "-btn\")");
                                 if (!Coctails[i].Ignore && Coctails[i].MissingAmount > 0 && (Index == -1 || Coctails[i].MissingAmount >= Coctails[Index].MissingAmount)) Index = i;
@@ -14252,6 +14332,8 @@ newDetail:
         #region Тестирование
         public void Test()
         {
+
+  //          UpdateSpecialComponent(2);
 
   //          SearchBroneDetails();
 
