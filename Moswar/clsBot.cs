@@ -13502,14 +13502,16 @@ newDetail:
             for (int i = 0; i < 4; i++)
             {
                 int buffer = 0;
+                int BufferIndex = 0;
                 for (int j = ( (i * 8) + 1 ) - i; j < (((i * 8) + 1) - i) + 6; j++ )
                 {
                     if (BufferStorage[j] > buffer)
                     {
                         buffer = BufferStorage[j];
+                        BufferIndex = j;
                     }
                 }
-                Settings.CookCoctailSpecials[CoctailType * 8 + i] = buffer;
+                Settings.CookCoctailSpecials[CoctailType * 8 + i] = BufferIndex+i-i*8;
             }
 
             Settings.CookCoctailSpecials[CoctailType * 8 + 4] = 5;
@@ -14333,7 +14335,7 @@ newDetail:
         public void Test()
         {
 
-  //          UpdateSpecialComponent(2);
+    //       UpdateSpecialComponent(2);
 
   //          SearchBroneDetails();
 
