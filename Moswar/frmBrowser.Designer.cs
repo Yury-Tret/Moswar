@@ -866,6 +866,15 @@
             this.MenuItemSendGiftFix = new System.Windows.Forms.ToolStripMenuItem();
             this.btnFunctions = new System.Windows.Forms.Button();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
+            this.pnlTurnOnOffTimer = new System.Windows.Forms.Panel();
+            this.chkEnableTurnOnOffTimer = new System.Windows.Forms.CheckBox();
+            this.grpTurnOnOffTimerSettings = new System.Windows.Forms.GroupBox();
+            this.numTurnOnOffTimerHoursStart = new System.Windows.Forms.NumericUpDown();
+            this.numTurnOnOffTimerMinutesStart = new System.Windows.Forms.NumericUpDown();
+            this.numTurnOnOffTimerHoursStop = new System.Windows.Forms.NumericUpDown();
+            this.numTurnOnOffTimerMinutesStop = new System.Windows.Forms.NumericUpDown();
+            this.label209 = new System.Windows.Forms.Label();
+            this.label210 = new System.Windows.Forms.Label();
             this.tabControl.SuspendLayout();
             this.tabMainBrowser.SuspendLayout();
             this.AutoUpdateMessage.SuspendLayout();
@@ -1075,6 +1084,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.statusStrip.SuspendLayout();
             this.FunctionsMenuStrip.SuspendLayout();
+            this.pnlTurnOnOffTimer.SuspendLayout();
+            this.grpTurnOnOffTimerSettings.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numTurnOnOffTimerHoursStart)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numTurnOnOffTimerMinutesStart)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numTurnOnOffTimerHoursStop)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numTurnOnOffTimerMinutesStop)).BeginInit();
             this.SuspendLayout();
             // 
             // btnStart
@@ -1246,6 +1261,7 @@
             // 
             // pnlBronevik
             // 
+            this.pnlBronevik.Controls.Add(this.pnlTurnOnOffTimer);
             this.pnlBronevik.Controls.Add(this.chkSearchBroneDetails);
             resources.ApplyResources(this.pnlBronevik, "pnlBronevik");
             this.pnlBronevik.Name = "pnlBronevik";
@@ -8714,6 +8730,91 @@
             this.toolTip.ReshowDelay = 1;
             this.toolTip.UseFading = false;
             // 
+            // pnlTurnOnOffTimer
+            // 
+            this.pnlTurnOnOffTimer.Controls.Add(this.grpTurnOnOffTimerSettings);
+            this.pnlTurnOnOffTimer.Controls.Add(this.chkEnableTurnOnOffTimer);
+            resources.ApplyResources(this.pnlTurnOnOffTimer, "pnlTurnOnOffTimer");
+            this.pnlTurnOnOffTimer.Name = "pnlTurnOnOffTimer";
+            // 
+            // chkEnableTurnOnOffTimer
+            // 
+            resources.ApplyResources(this.chkEnableTurnOnOffTimer, "chkEnableTurnOnOffTimer");
+            this.chkEnableTurnOnOffTimer.Name = "chkEnableTurnOnOffTimer";
+            this.chkEnableTurnOnOffTimer.UseVisualStyleBackColor = true;
+            // 
+            // grpTurnOnOffTimerSettings
+            // 
+            this.grpTurnOnOffTimerSettings.Controls.Add(this.label210);
+            this.grpTurnOnOffTimerSettings.Controls.Add(this.label209);
+            this.grpTurnOnOffTimerSettings.Controls.Add(this.numTurnOnOffTimerMinutesStop);
+            this.grpTurnOnOffTimerSettings.Controls.Add(this.numTurnOnOffTimerHoursStop);
+            this.grpTurnOnOffTimerSettings.Controls.Add(this.numTurnOnOffTimerMinutesStart);
+            this.grpTurnOnOffTimerSettings.Controls.Add(this.numTurnOnOffTimerHoursStart);
+            resources.ApplyResources(this.grpTurnOnOffTimerSettings, "grpTurnOnOffTimerSettings");
+            this.grpTurnOnOffTimerSettings.Name = "grpTurnOnOffTimerSettings";
+            this.grpTurnOnOffTimerSettings.TabStop = false;
+            // 
+            // numTurnOnOffTimerHoursStart
+            // 
+            resources.ApplyResources(this.numTurnOnOffTimerHoursStart, "numTurnOnOffTimerHoursStart");
+            this.numTurnOnOffTimerHoursStart.Maximum = new decimal(new int[] {
+            23,
+            0,
+            0,
+            0});
+            this.numTurnOnOffTimerHoursStart.Name = "numTurnOnOffTimerHoursStart";
+            this.numTurnOnOffTimerHoursStart.Value = new decimal(new int[] {
+            8,
+            0,
+            0,
+            0});
+            // 
+            // numTurnOnOffTimerMinutesStart
+            // 
+            resources.ApplyResources(this.numTurnOnOffTimerMinutesStart, "numTurnOnOffTimerMinutesStart");
+            this.numTurnOnOffTimerMinutesStart.Maximum = new decimal(new int[] {
+            59,
+            0,
+            0,
+            0});
+            this.numTurnOnOffTimerMinutesStart.Name = "numTurnOnOffTimerMinutesStart";
+            // 
+            // numTurnOnOffTimerHoursStop
+            // 
+            resources.ApplyResources(this.numTurnOnOffTimerHoursStop, "numTurnOnOffTimerHoursStop");
+            this.numTurnOnOffTimerHoursStop.Maximum = new decimal(new int[] {
+            23,
+            0,
+            0,
+            0});
+            this.numTurnOnOffTimerHoursStop.Name = "numTurnOnOffTimerHoursStop";
+            this.numTurnOnOffTimerHoursStop.Value = new decimal(new int[] {
+            22,
+            0,
+            0,
+            0});
+            // 
+            // numTurnOnOffTimerMinutesStop
+            // 
+            resources.ApplyResources(this.numTurnOnOffTimerMinutesStop, "numTurnOnOffTimerMinutesStop");
+            this.numTurnOnOffTimerMinutesStop.Maximum = new decimal(new int[] {
+            59,
+            0,
+            0,
+            0});
+            this.numTurnOnOffTimerMinutesStop.Name = "numTurnOnOffTimerMinutesStop";
+            // 
+            // label209
+            // 
+            resources.ApplyResources(this.label209, "label209");
+            this.label209.Name = "label209";
+            // 
+            // label210
+            // 
+            resources.ApplyResources(this.label210, "label210");
+            this.label210.Name = "label210";
+            // 
             // frmMain
             // 
             resources.ApplyResources(this, "$this");
@@ -9022,6 +9123,14 @@
             this.statusStrip.ResumeLayout(false);
             this.statusStrip.PerformLayout();
             this.FunctionsMenuStrip.ResumeLayout(false);
+            this.pnlTurnOnOffTimer.ResumeLayout(false);
+            this.pnlTurnOnOffTimer.PerformLayout();
+            this.grpTurnOnOffTimerSettings.ResumeLayout(false);
+            this.grpTurnOnOffTimerSettings.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numTurnOnOffTimerHoursStart)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numTurnOnOffTimerMinutesStart)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numTurnOnOffTimerHoursStop)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numTurnOnOffTimerMinutesStop)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -9865,6 +9974,15 @@
         private System.Windows.Forms.CheckBox chkGoOilDarkLenin;
         private System.Windows.Forms.Panel pnlBronevik;
         private System.Windows.Forms.CheckBox chkSearchBroneDetails;
+        private System.Windows.Forms.Panel pnlTurnOnOffTimer;
+        private System.Windows.Forms.GroupBox grpTurnOnOffTimerSettings;
+        private System.Windows.Forms.Label label210;
+        private System.Windows.Forms.Label label209;
+        private System.Windows.Forms.NumericUpDown numTurnOnOffTimerMinutesStop;
+        private System.Windows.Forms.NumericUpDown numTurnOnOffTimerHoursStop;
+        private System.Windows.Forms.NumericUpDown numTurnOnOffTimerMinutesStart;
+        private System.Windows.Forms.NumericUpDown numTurnOnOffTimerHoursStart;
+        private System.Windows.Forms.CheckBox chkEnableTurnOnOffTimer;
     }
 }
 
