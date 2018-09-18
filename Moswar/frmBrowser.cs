@@ -746,6 +746,13 @@ namespace Moswar
 
             Bot.Settings.SearchBroneDetails = chkSearchBroneDetails.Checked;
 
+            //Bot Timer settings
+            Bot.Settings.EnableTurnOnOffTimer = chkEnableTurnOnOffTimer.Checked;
+            Bot.Settings.TurnOnOffTimerHoursStart = numTurnOnOffTimerHoursStart.Value;
+            Bot.Settings.TurnOnOffTimerMinutesStart = numTurnOnOffTimerMinutesStart.Value;
+            Bot.Settings.TurnOnOffTimerHoursStop = numTurnOnOffTimerHoursStop.Value;
+            Bot.Settings.TurnOnOffTimerMinutesStop = numTurnOnOffTimerMinutesStop.Value;
+
             Bot.SaveSettings();
         }
         private void LoadSettings()
@@ -1152,6 +1159,13 @@ namespace Moswar
                 }           
 
                 chkGetReturnBonus.Checked = Bot.Settings.GetReturnBonus;
+                chkSearchBroneDetails.Checked = Bot.Settings.SearchBroneDetails;
+                //Bot Timer settings
+                chkEnableTurnOnOffTimer.Checked = Bot.Settings.EnableTurnOnOffTimer;
+                numTurnOnOffTimerHoursStart.Value = Bot.Settings.TurnOnOffTimerHoursStart;
+                numTurnOnOffTimerMinutesStart.Value = Bot.Settings.TurnOnOffTimerMinutesStart;
+                numTurnOnOffTimerHoursStop.Value = Bot.Settings.TurnOnOffTimerHoursStop;
+                numTurnOnOffTimerMinutesStop.Value = Bot.Settings.TurnOnOffTimerMinutesStop;
 
                 if (Bot.Settings.TrucksCheckInterval != 0)
                 {
@@ -1166,8 +1180,6 @@ namespace Moswar
                     }
                 }
             }
-
-            chkSearchBroneDetails.Checked = Bot.Settings.SearchBroneDetails;
 
             UpdateSettings();
         }

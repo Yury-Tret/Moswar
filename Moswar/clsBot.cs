@@ -924,6 +924,12 @@ namespace Moswar
             public TruckSettings[] Trucks;
 
             public bool SearchBroneDetails;
+
+            public bool EnableTurnOnOffTimer;
+            public decimal TurnOnOffTimerHoursStart;
+            public decimal TurnOnOffTimerMinutesStart;
+            public decimal TurnOnOffTimerHoursStop;
+            public decimal TurnOnOffTimerMinutesStop;
         }
         #endregion
 

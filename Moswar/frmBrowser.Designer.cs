@@ -785,6 +785,15 @@
             this.label120 = new System.Windows.Forms.Label();
             this.chkBankDeposit = new System.Windows.Forms.CheckBox();
             this.label121 = new System.Windows.Forms.Label();
+            this.pnlTurnOnOffTimer = new System.Windows.Forms.Panel();
+            this.grpTurnOnOffTimerSettings = new System.Windows.Forms.GroupBox();
+            this.label210 = new System.Windows.Forms.Label();
+            this.label209 = new System.Windows.Forms.Label();
+            this.numTurnOnOffTimerMinutesStop = new System.Windows.Forms.NumericUpDown();
+            this.numTurnOnOffTimerHoursStop = new System.Windows.Forms.NumericUpDown();
+            this.numTurnOnOffTimerMinutesStart = new System.Windows.Forms.NumericUpDown();
+            this.numTurnOnOffTimerHoursStart = new System.Windows.Forms.NumericUpDown();
+            this.chkEnableTurnOnOffTimer = new System.Windows.Forms.CheckBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.tabMainExtra = new System.Windows.Forms.TabPage();
             this.scExtension = new System.Windows.Forms.SplitContainer();
@@ -866,15 +875,6 @@
             this.MenuItemSendGiftFix = new System.Windows.Forms.ToolStripMenuItem();
             this.btnFunctions = new System.Windows.Forms.Button();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
-            this.pnlTurnOnOffTimer = new System.Windows.Forms.Panel();
-            this.chkEnableTurnOnOffTimer = new System.Windows.Forms.CheckBox();
-            this.grpTurnOnOffTimerSettings = new System.Windows.Forms.GroupBox();
-            this.numTurnOnOffTimerHoursStart = new System.Windows.Forms.NumericUpDown();
-            this.numTurnOnOffTimerMinutesStart = new System.Windows.Forms.NumericUpDown();
-            this.numTurnOnOffTimerHoursStop = new System.Windows.Forms.NumericUpDown();
-            this.numTurnOnOffTimerMinutesStop = new System.Windows.Forms.NumericUpDown();
-            this.label209 = new System.Windows.Forms.Label();
-            this.label210 = new System.Windows.Forms.Label();
             this.tabControl.SuspendLayout();
             this.tabMainBrowser.SuspendLayout();
             this.AutoUpdateMessage.SuspendLayout();
@@ -1059,6 +1059,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.numMaxPyramidPrice)).BeginInit();
             this.pnlBankDeposit.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numBankDeposit)).BeginInit();
+            this.pnlTurnOnOffTimer.SuspendLayout();
+            this.grpTurnOnOffTimerSettings.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numTurnOnOffTimerMinutesStop)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numTurnOnOffTimerHoursStop)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numTurnOnOffTimerMinutesStart)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numTurnOnOffTimerHoursStart)).BeginInit();
             this.tabMainExtra.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.scExtension)).BeginInit();
             this.scExtension.Panel1.SuspendLayout();
@@ -1084,12 +1090,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.statusStrip.SuspendLayout();
             this.FunctionsMenuStrip.SuspendLayout();
-            this.pnlTurnOnOffTimer.SuspendLayout();
-            this.grpTurnOnOffTimerSettings.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numTurnOnOffTimerHoursStart)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numTurnOnOffTimerMinutesStart)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numTurnOnOffTimerHoursStop)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numTurnOnOffTimerMinutesStop)).BeginInit();
             this.SuspendLayout();
             // 
             // btnStart
@@ -1203,6 +1203,7 @@
             // 
             // pnlContainer
             // 
+            this.pnlContainer.Controls.Add(this.pnlTurnOnOffTimer);
             this.pnlContainer.Controls.Add(this.pnlBronevik);
             this.pnlContainer.Controls.Add(this.pnlShaurburgers);
             this.pnlContainer.Controls.Add(this.pnlGroupFights);
@@ -1261,7 +1262,6 @@
             // 
             // pnlBronevik
             // 
-            this.pnlBronevik.Controls.Add(this.pnlTurnOnOffTimer);
             this.pnlBronevik.Controls.Add(this.chkSearchBroneDetails);
             resources.ApplyResources(this.pnlBronevik, "pnlBronevik");
             this.pnlBronevik.Name = "pnlBronevik";
@@ -8111,6 +8111,91 @@
             this.label121.ForeColor = System.Drawing.Color.Black;
             this.label121.Name = "label121";
             // 
+            // pnlTurnOnOffTimer
+            // 
+            this.pnlTurnOnOffTimer.Controls.Add(this.grpTurnOnOffTimerSettings);
+            this.pnlTurnOnOffTimer.Controls.Add(this.chkEnableTurnOnOffTimer);
+            resources.ApplyResources(this.pnlTurnOnOffTimer, "pnlTurnOnOffTimer");
+            this.pnlTurnOnOffTimer.Name = "pnlTurnOnOffTimer";
+            // 
+            // grpTurnOnOffTimerSettings
+            // 
+            this.grpTurnOnOffTimerSettings.Controls.Add(this.label210);
+            this.grpTurnOnOffTimerSettings.Controls.Add(this.label209);
+            this.grpTurnOnOffTimerSettings.Controls.Add(this.numTurnOnOffTimerMinutesStop);
+            this.grpTurnOnOffTimerSettings.Controls.Add(this.numTurnOnOffTimerHoursStop);
+            this.grpTurnOnOffTimerSettings.Controls.Add(this.numTurnOnOffTimerMinutesStart);
+            this.grpTurnOnOffTimerSettings.Controls.Add(this.numTurnOnOffTimerHoursStart);
+            resources.ApplyResources(this.grpTurnOnOffTimerSettings, "grpTurnOnOffTimerSettings");
+            this.grpTurnOnOffTimerSettings.Name = "grpTurnOnOffTimerSettings";
+            this.grpTurnOnOffTimerSettings.TabStop = false;
+            // 
+            // label210
+            // 
+            resources.ApplyResources(this.label210, "label210");
+            this.label210.Name = "label210";
+            // 
+            // label209
+            // 
+            resources.ApplyResources(this.label209, "label209");
+            this.label209.Name = "label209";
+            // 
+            // numTurnOnOffTimerMinutesStop
+            // 
+            resources.ApplyResources(this.numTurnOnOffTimerMinutesStop, "numTurnOnOffTimerMinutesStop");
+            this.numTurnOnOffTimerMinutesStop.Maximum = new decimal(new int[] {
+            59,
+            0,
+            0,
+            0});
+            this.numTurnOnOffTimerMinutesStop.Name = "numTurnOnOffTimerMinutesStop";
+            // 
+            // numTurnOnOffTimerHoursStop
+            // 
+            resources.ApplyResources(this.numTurnOnOffTimerHoursStop, "numTurnOnOffTimerHoursStop");
+            this.numTurnOnOffTimerHoursStop.Maximum = new decimal(new int[] {
+            23,
+            0,
+            0,
+            0});
+            this.numTurnOnOffTimerHoursStop.Name = "numTurnOnOffTimerHoursStop";
+            this.numTurnOnOffTimerHoursStop.Value = new decimal(new int[] {
+            22,
+            0,
+            0,
+            0});
+            // 
+            // numTurnOnOffTimerMinutesStart
+            // 
+            resources.ApplyResources(this.numTurnOnOffTimerMinutesStart, "numTurnOnOffTimerMinutesStart");
+            this.numTurnOnOffTimerMinutesStart.Maximum = new decimal(new int[] {
+            59,
+            0,
+            0,
+            0});
+            this.numTurnOnOffTimerMinutesStart.Name = "numTurnOnOffTimerMinutesStart";
+            // 
+            // numTurnOnOffTimerHoursStart
+            // 
+            resources.ApplyResources(this.numTurnOnOffTimerHoursStart, "numTurnOnOffTimerHoursStart");
+            this.numTurnOnOffTimerHoursStart.Maximum = new decimal(new int[] {
+            23,
+            0,
+            0,
+            0});
+            this.numTurnOnOffTimerHoursStart.Name = "numTurnOnOffTimerHoursStart";
+            this.numTurnOnOffTimerHoursStart.Value = new decimal(new int[] {
+            8,
+            0,
+            0,
+            0});
+            // 
+            // chkEnableTurnOnOffTimer
+            // 
+            resources.ApplyResources(this.chkEnableTurnOnOffTimer, "chkEnableTurnOnOffTimer");
+            this.chkEnableTurnOnOffTimer.Name = "chkEnableTurnOnOffTimer";
+            this.chkEnableTurnOnOffTimer.UseVisualStyleBackColor = true;
+            // 
             // panel1
             // 
             resources.ApplyResources(this.panel1, "panel1");
@@ -8730,91 +8815,6 @@
             this.toolTip.ReshowDelay = 1;
             this.toolTip.UseFading = false;
             // 
-            // pnlTurnOnOffTimer
-            // 
-            this.pnlTurnOnOffTimer.Controls.Add(this.grpTurnOnOffTimerSettings);
-            this.pnlTurnOnOffTimer.Controls.Add(this.chkEnableTurnOnOffTimer);
-            resources.ApplyResources(this.pnlTurnOnOffTimer, "pnlTurnOnOffTimer");
-            this.pnlTurnOnOffTimer.Name = "pnlTurnOnOffTimer";
-            // 
-            // chkEnableTurnOnOffTimer
-            // 
-            resources.ApplyResources(this.chkEnableTurnOnOffTimer, "chkEnableTurnOnOffTimer");
-            this.chkEnableTurnOnOffTimer.Name = "chkEnableTurnOnOffTimer";
-            this.chkEnableTurnOnOffTimer.UseVisualStyleBackColor = true;
-            // 
-            // grpTurnOnOffTimerSettings
-            // 
-            this.grpTurnOnOffTimerSettings.Controls.Add(this.label210);
-            this.grpTurnOnOffTimerSettings.Controls.Add(this.label209);
-            this.grpTurnOnOffTimerSettings.Controls.Add(this.numTurnOnOffTimerMinutesStop);
-            this.grpTurnOnOffTimerSettings.Controls.Add(this.numTurnOnOffTimerHoursStop);
-            this.grpTurnOnOffTimerSettings.Controls.Add(this.numTurnOnOffTimerMinutesStart);
-            this.grpTurnOnOffTimerSettings.Controls.Add(this.numTurnOnOffTimerHoursStart);
-            resources.ApplyResources(this.grpTurnOnOffTimerSettings, "grpTurnOnOffTimerSettings");
-            this.grpTurnOnOffTimerSettings.Name = "grpTurnOnOffTimerSettings";
-            this.grpTurnOnOffTimerSettings.TabStop = false;
-            // 
-            // numTurnOnOffTimerHoursStart
-            // 
-            resources.ApplyResources(this.numTurnOnOffTimerHoursStart, "numTurnOnOffTimerHoursStart");
-            this.numTurnOnOffTimerHoursStart.Maximum = new decimal(new int[] {
-            23,
-            0,
-            0,
-            0});
-            this.numTurnOnOffTimerHoursStart.Name = "numTurnOnOffTimerHoursStart";
-            this.numTurnOnOffTimerHoursStart.Value = new decimal(new int[] {
-            8,
-            0,
-            0,
-            0});
-            // 
-            // numTurnOnOffTimerMinutesStart
-            // 
-            resources.ApplyResources(this.numTurnOnOffTimerMinutesStart, "numTurnOnOffTimerMinutesStart");
-            this.numTurnOnOffTimerMinutesStart.Maximum = new decimal(new int[] {
-            59,
-            0,
-            0,
-            0});
-            this.numTurnOnOffTimerMinutesStart.Name = "numTurnOnOffTimerMinutesStart";
-            // 
-            // numTurnOnOffTimerHoursStop
-            // 
-            resources.ApplyResources(this.numTurnOnOffTimerHoursStop, "numTurnOnOffTimerHoursStop");
-            this.numTurnOnOffTimerHoursStop.Maximum = new decimal(new int[] {
-            23,
-            0,
-            0,
-            0});
-            this.numTurnOnOffTimerHoursStop.Name = "numTurnOnOffTimerHoursStop";
-            this.numTurnOnOffTimerHoursStop.Value = new decimal(new int[] {
-            22,
-            0,
-            0,
-            0});
-            // 
-            // numTurnOnOffTimerMinutesStop
-            // 
-            resources.ApplyResources(this.numTurnOnOffTimerMinutesStop, "numTurnOnOffTimerMinutesStop");
-            this.numTurnOnOffTimerMinutesStop.Maximum = new decimal(new int[] {
-            59,
-            0,
-            0,
-            0});
-            this.numTurnOnOffTimerMinutesStop.Name = "numTurnOnOffTimerMinutesStop";
-            // 
-            // label209
-            // 
-            resources.ApplyResources(this.label209, "label209");
-            this.label209.Name = "label209";
-            // 
-            // label210
-            // 
-            resources.ApplyResources(this.label210, "label210");
-            this.label210.Name = "label210";
-            // 
             // frmMain
             // 
             resources.ApplyResources(this, "$this");
@@ -9089,6 +9089,14 @@
             this.pnlBankDeposit.ResumeLayout(false);
             this.pnlBankDeposit.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numBankDeposit)).EndInit();
+            this.pnlTurnOnOffTimer.ResumeLayout(false);
+            this.pnlTurnOnOffTimer.PerformLayout();
+            this.grpTurnOnOffTimerSettings.ResumeLayout(false);
+            this.grpTurnOnOffTimerSettings.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numTurnOnOffTimerMinutesStop)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numTurnOnOffTimerHoursStop)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numTurnOnOffTimerMinutesStart)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numTurnOnOffTimerHoursStart)).EndInit();
             this.tabMainExtra.ResumeLayout(false);
             this.scExtension.Panel1.ResumeLayout(false);
             this.scExtension.Panel2.ResumeLayout(false);
@@ -9123,14 +9131,6 @@
             this.statusStrip.ResumeLayout(false);
             this.statusStrip.PerformLayout();
             this.FunctionsMenuStrip.ResumeLayout(false);
-            this.pnlTurnOnOffTimer.ResumeLayout(false);
-            this.pnlTurnOnOffTimer.PerformLayout();
-            this.grpTurnOnOffTimerSettings.ResumeLayout(false);
-            this.grpTurnOnOffTimerSettings.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numTurnOnOffTimerHoursStart)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numTurnOnOffTimerMinutesStart)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numTurnOnOffTimerHoursStop)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numTurnOnOffTimerMinutesStop)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
