@@ -212,6 +212,7 @@ namespace Moswar
 
         static public clsBot Bot = new clsBot();        
         public static Thread BotThread;
+        public static Thread WatchTimerThread;
         private Thread[] VictimThread = new Thread[2];       
         private System.Timers.Timer STimer = new System.Timers.Timer();
         private ToolTip Tip = new ToolTip();
@@ -1330,6 +1331,8 @@ namespace Moswar
             clsWBEx.SetMaxIEConnections(ctrMainBrowser, (int)Bot.Expert.MaxWebSockets);
             clsWBEx.ShutDownIENavigationSound(ctrMainBrowser);
             #endregion
+
+            CheckTurnOnOffTimerStatus();
 
             //#################################### Proxy Authentification test
             //string s = CredentialCache.DefaultNetworkCredentials.UserName + CredentialCache.DefaultNetworkCredentials.Password;
@@ -2988,6 +2991,25 @@ function checkName() {
                 numCoctailCookStraw.Enabled = true;
                 cboxCoctailCookUmbrella.Enabled = true;
                 numCoctailCookUmbrella.Enabled = true;
+            }
+        }
+
+        private void WatchTimerFunc()
+        {
+            Thread.Sleep(50000);
+            MessageBox.Show("Watch thread started!!!!");
+        }
+
+        private void CheckTurnOnOffTimerStatus()
+        {
+            if (chkEnableTurnOnOffTimer.Checked/* && WatchTimerThread.ThreadState != System.Threading.ThreadState.Running*/)
+            {
+                WatchTimerThread = new Thread(new ThreadStart(WatchTimerFunc));
+                WatchTimerThread.Start();
+            }
+            else
+            {
+
             }
         }
     }
