@@ -926,10 +926,8 @@ namespace Moswar
             public bool SearchBroneDetails;
 
             public bool EnableTurnOnOffTimer;
-            public decimal TurnOnOffTimerHoursStart;
-            public decimal TurnOnOffTimerMinutesStart;
-            public decimal TurnOnOffTimerHoursStop;
-            public decimal TurnOnOffTimerMinutesStop;
+            public DateTime TurnOnOffTimerStartDT;
+            public DateTime TurnOnOffTimerStopDT;
         }
         #endregion
 
@@ -988,7 +986,8 @@ namespace Moswar
             Settings.StopDuelsDT = DateTime.Now.Date.Add(new TimeSpan(23, 59, 59));
             Settings.StartHC = DateTime.Now.Date;
             Settings.StopHC = DateTime.Now.Date.Add(new TimeSpan(23, 59, 59));
-
+            //Settings.TurnOnOffTimerStartDT = DateTime.Now.Date;
+            //Settings.TurnOnOffTimerStopDT = DateTime.Now.Date.Add(new TimeSpan(23, 59, 59));
 
             Me.SetInfo.LastSetIndex = -1;
             #endregion

@@ -748,10 +748,8 @@ namespace Moswar
 
             //Bot Timer settings
             Bot.Settings.EnableTurnOnOffTimer = chkEnableTurnOnOffTimer.Checked;
-            Bot.Settings.TurnOnOffTimerHoursStart = numTurnOnOffTimerHoursStart.Value;
-            Bot.Settings.TurnOnOffTimerMinutesStart = numTurnOnOffTimerMinutesStart.Value;
-            Bot.Settings.TurnOnOffTimerHoursStop = numTurnOnOffTimerHoursStop.Value;
-            Bot.Settings.TurnOnOffTimerMinutesStop = numTurnOnOffTimerMinutesStop.Value;
+            Bot.Settings.TurnOnOffTimerStartDT = dtTurnOnOffTimerStart.Value;
+            Bot.Settings.TurnOnOffTimerStopDT = dtTurnOnOffTimerStop.Value;
 
             Bot.SaveSettings();
         }
@@ -1162,10 +1160,8 @@ namespace Moswar
                 chkSearchBroneDetails.Checked = Bot.Settings.SearchBroneDetails;
                 //Bot Timer settings
                 chkEnableTurnOnOffTimer.Checked = Bot.Settings.EnableTurnOnOffTimer;
-                numTurnOnOffTimerHoursStart.Value = Bot.Settings.TurnOnOffTimerHoursStart;
-                numTurnOnOffTimerMinutesStart.Value = Bot.Settings.TurnOnOffTimerMinutesStart;
-                numTurnOnOffTimerHoursStop.Value = Bot.Settings.TurnOnOffTimerHoursStop;
-                numTurnOnOffTimerMinutesStop.Value = Bot.Settings.TurnOnOffTimerMinutesStop;
+                dtTurnOnOffTimerStart.Value = Bot.Settings.TurnOnOffTimerStartDT;
+                dtTurnOnOffTimerStop.Value = Bot.Settings.TurnOnOffTimerStopDT;
 
                 if (Bot.Settings.TrucksCheckInterval != 0)
                 {
