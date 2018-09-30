@@ -2996,8 +2996,33 @@ function checkName() {
 
         private void WatchTimerFunc()
         {
-            Thread.Sleep(50000);
-            MessageBox.Show("Watch thread started!!!!");
+            TimeSpan CurrentTime, TimerStart, TimerStop;
+
+            CurrentTime = DateTime.Now.TimeOfDay;
+            TimerStart = dtTurnOnOffTimerStart.Value.TimeOfDay;
+            TimerStop = dtTurnOnOffTimerStop.Value.TimeOfDay;
+            
+            if (CurrentTime > TimerStart && CurrentTime < TimerStop)
+            {
+                
+            }
+            else
+            {
+
+            }
+
+
+
+            Thread.Sleep();
+
+
+
+            MessageBox.Show("started");
+
+            MessageBox.Show("STOPPED");
+
+
+
         }
 
         private void CheckTurnOnOffTimerStatus()
@@ -3009,7 +3034,10 @@ function checkName() {
             }
             else
             {
-
+                if (WatchTimerThread != null)
+                {
+                    WatchTimerThread.Abort();
+                }
             }
         }
     }
