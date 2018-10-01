@@ -2998,31 +2998,40 @@ function checkName() {
         {
             TimeSpan CurrentTime, TimerStart, TimerStop;
 
-            CurrentTime = DateTime.Now.TimeOfDay;
-            TimerStart = dtTurnOnOffTimerStart.Value.TimeOfDay;
-            TimerStop = dtTurnOnOffTimerStop.Value.TimeOfDay;
-            
-            if (CurrentTime > TimerStart && CurrentTime < TimerStop)
+            while (true)
             {
-                
+                CurrentTime = DateTime.Now.TimeOfDay;
+                TimerStart = dtTurnOnOffTimerStart.Value.TimeOfDay;
+                TimerStop = dtTurnOnOffTimerStop.Value.TimeOfDay;
+
+                if (TimerStart == TimerStop)
+                {
+                    chkEnableTurnOnOffTimer.Checked = false;
+                    WatchTimerThread.Abort();
+                }
+                else if (TimerStart < TimerStop)
+                {
+                    if (CurrentTime >= TimerStart && CurrentTime < TimerStop)
+                    {
+                        Thread.Sleep(Convert.ToInt32(TimerStop.TotalMilliseconds - CurrentTime.TotalMilliseconds));
+                        MessageBox.Show("STOPPED");
+                    }
+                    else if (CurrentTime >= TimerStop)
+                    {
+                        Thread.Sleep(Convert.ToInt32(TimeSpan.FromDays(1).TotalMilliseconds - CurrentTime.TotalMilliseconds + TimerStart.TotalMilliseconds));
+                        MessageBox.Show("started");
+                    }
+                    else if (CurrentTime < TimerStart)
+                    {
+                        Thread.Sleep(Convert.ToInt32(TimerStart.TotalMilliseconds - CurrentTime.TotalMilliseconds));
+                        MessageBox.Show("started");
+                    }
+                }
+                else
+                {
+
+                }
             }
-            else
-            {
-
-            }
-
-
-
-            Thread.Sleep();
-
-
-
-            MessageBox.Show("started");
-
-            MessageBox.Show("STOPPED");
-
-
-
         }
 
         private void CheckTurnOnOffTimerStatus()
