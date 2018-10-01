@@ -1400,6 +1400,7 @@ namespace Moswar
         {
             STimer.Stop();
             if (BotThread.IsAlive) BotThread.Abort();
+            if (WatchTimerThread.IsAlive) WatchTimerThread.Abort();
             if (Bot.HCThread[0].IsAlive) Bot.HCThread[0].Abort();
             if (Bot.HCThread[1].IsAlive) Bot.HCThread[1].Abort();
         }
@@ -3014,29 +3015,77 @@ function checkName() {
                     if (CurrentTime >= TimerStart && CurrentTime < TimerStop)
                     {
                         Thread.Sleep(Convert.ToInt32(TimerStop.TotalMilliseconds - CurrentTime.TotalMilliseconds));
-                        MessageBox.Show("STOPPED");
+                        if (btnStart.Text == "Завершить погром!")
+                        {
+                            Invoke(new Action(() =>
+                            {
+                                btnStart_Click(btnStart, EventArgs.Empty);
+                            }));
+                        }
                     }
                     else if (CurrentTime >= TimerStop)
                     {
                         Thread.Sleep(Convert.ToInt32(TimeSpan.FromDays(1).TotalMilliseconds - CurrentTime.TotalMilliseconds + TimerStart.TotalMilliseconds));
-                        MessageBox.Show("started");
+                        if (btnStart.Text == "Начать погром!")
+                        {
+                            Invoke(new Action(() =>
+                            {
+                                btnStart_Click(btnStart, EventArgs.Empty);
+                            }));
+                        }
                     }
                     else if (CurrentTime < TimerStart)
                     {
                         Thread.Sleep(Convert.ToInt32(TimerStart.TotalMilliseconds - CurrentTime.TotalMilliseconds));
-                        MessageBox.Show("started");
+                        if (btnStart.Text == "Начать погром!")
+                        {
+                            Invoke(new Action(() =>
+                            {
+                                btnStart_Click(btnStart, EventArgs.Empty);
+                            }));
+                        }
                     }
                 }
                 else
                 {
-
+                    if (CurrentTime >= TimerStop && CurrentTime < TimerStart)
+                    {
+                        Thread.Sleep(Convert.ToInt32(TimerStart.TotalMilliseconds - CurrentTime.TotalMilliseconds));
+                        if (btnStart.Text == "Начать погром!")
+                        {
+                            Invoke(new Action(() =>
+                            {
+                                btnStart_Click(btnStart, EventArgs.Empty);
+                            }));
+                        }
+                    }
+                    else if (CurrentTime >= TimerStart)
+                    {
+                        Thread.Sleep(Convert.ToInt32(TimeSpan.FromDays(1).TotalMilliseconds - CurrentTime.TotalMilliseconds + TimerStop.TotalMilliseconds));
+                        if (btnStart.Text == "Завершить погром!")
+                            Invoke(new Action(() =>
+                            {
+                                btnStart_Click(btnStart, EventArgs.Empty);
+                            }));
+                    }
+                    else if (CurrentTime < TimerStop)
+                    {
+                        Thread.Sleep(Convert.ToInt32(TimerStop.TotalMilliseconds - CurrentTime.TotalMilliseconds));
+                        if (btnStart.Text == "Завершить погром!")
+                        {
+                            Invoke(new Action(() =>
+                            {
+                                btnStart_Click(btnStart, EventArgs.Empty);
+                            }));
+                        }
+                    }
                 }
             }
         }
 
         private void CheckTurnOnOffTimerStatus()
         {
-            if (chkEnableTurnOnOffTimer.Checked/* && WatchTimerThread.ThreadState != System.Threading.ThreadState.Running*/)
+            if (chkEnableTurnOnOffTimer.Checked)
             {
                 WatchTimerThread = new Thread(new ThreadStart(WatchTimerFunc));
                 WatchTimerThread.Start();
@@ -3048,6 +3097,11 @@ function checkName() {
                     WatchTimerThread.Abort();
                 }
             }
+        }
+
+        private void chkEnableTurnOnOffTimer_Click(object sender, EventArgs e)
+        {
+            CheckTurnOnOffTimerStatus();
         }
     }
 
